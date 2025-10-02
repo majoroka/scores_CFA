@@ -1,0 +1,22 @@
+# Android/Java
+*.iml
+.gradle
+/local.properties
+/.idea
+/.vscode
+.DS_Store
+/build
+/captures
+
+# Backups
+*.zip
+*.tar.gz
+*.rar
+*.bak
+*.backup
+
+# Logs
+*.log
+
+# macOS system files
+.DS_Store

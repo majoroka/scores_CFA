@@ -108,11 +108,11 @@ body::after {
 
 .back-button img {
     height: 20px;
-    transform: none;
+    transform: rotate(180deg);
     transition: transform 0.2s ease;
 }
 .back-button:hover img {
-    transform: scale(1.1);
+    transform: rotate(180deg) scale(1.1);
 }
 
 .competition-title {
@@ -162,7 +162,7 @@ body::after {
 
 .arrow-icon {
     height: 18px;
-    transform: rotate(180deg);
+    transform: none;
 }
 
 /* --- DETALHE: TABS --- */
@@ -228,8 +228,8 @@ body::after {
 .nav-arrow img { height: 16px; }
 .nav-arrow:disabled { opacity: 0.3; cursor: not-allowed; }
 /* Corrige orientação: anterior para a esquerda, próxima para a direita */
-#prev-round img, #prev-round-class img { transform: none; }
-#next-round img, #next-round-class img { transform: rotate(180deg); }
+#prev-round img, #prev-round-class img { transform: rotate(180deg); }
+#next-round img, #next-round-class img { transform: none; }
 
 /* --- DETALHE: LISTA DE JOGOS (DESKTOP) --- */
 .match-item {
