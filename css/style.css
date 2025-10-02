@@ -1,0 +1,356 @@
+:root {
+    --background-color: #0d1117; /* Dark charcoal, from reference */
+    --primary-color: #e6edf3;    /* Light grey text, from reference */
+    --secondary-color: #7d8590;  /* Muted grey text, from reference */
+    --accent-blue: #00aaff;       /* Nosso azul de destaque */
+    --border-color: #30363d;     /* Border color from reference */
+    --card-bg: #161b22;          /* Hover/layer background from reference */
+    --font-sans: 'Rajdhani', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --font-mono: 'Share Tech Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
+
+/* --- GERAL --- */
+body {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    font-family: var(--font-sans);
+    letter-spacing: 0.2px;
+    margin: 0;
+    padding: 0 1rem;
+    position: relative;
+    z-index: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+a {
+    color: var(--accent-blue);
+    text-decoration: none;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* --- CABEÇALHO (INDEX E DETALHE) --- */
+.site-header, .details-header {
+    padding: 1.5rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.site-logo, .competition-logo {
+    height: 60px;
+    margin-bottom: 0.5rem;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+.site-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+.details-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    background-color: var(--background-color);
+    z-index: 10;
+}
+
+/* Marca d'água fixa de fundo */
+body::after {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 40vw;   /* 40% da largura da página */
+    height: 40vw;  /* manter proporção aproximada */
+    background: url('../img/cruz-cr.png') no-repeat center / contain;
+    transform: translate(-50%, -50%) rotate(30deg);
+    opacity: 0.05; /* ~95% transparência */
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Aumenta 50% o tamanho da marca em smartphones */
+@media (max-width: 480px) {
+  body::after {
+    width: 60vw;
+    height: 60vw;
+  }
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: var(--tap-target-size, 34px);
+    min-height: var(--tap-target-size, 34px);
+}
+
+.back-button img {
+    height: 20px;
+    transform: none;
+    transition: transform 0.2s ease;
+}
+.back-button:hover img {
+    transform: scale(1.1);
+}
+
+.competition-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* Puxa o título para o centro do espaço restante */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.competition-title h1 {
+    margin: 0;
+}
+.competition-logo { height: 40px; }
+
+/* --- INDEX: LISTA DE COMPETIÇÕES --- */
+.competitions-list {
+    border-top: 1px solid var(--border-color);
+}
+
+.competition-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 1.5rem 0.5rem;
+    margin-bottom: 0;
+    border-bottom: 1px solid var(--border-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.competition-card:hover {
+    background-color: var(--card-bg);
+}
+
+.competition-card h3 {
+    margin: 0 0 0.25rem 0;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.competition-card p {
+    margin: 0;
+    color: var(--secondary-color);
+}
+
+.arrow-icon {
+    height: 18px;
+    transform: rotate(180deg);
+}
+
+/* --- DETALHE: TABS --- */
+.tabs {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.tab-link {
+    flex: 1;
+    text-align: center;
+    padding: 0.75rem 0.25rem;
+    color: var(--secondary-color);
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease;
+    font-weight: 600;
+}
+
+.tab-link.active, .tab-link:hover {
+    color: var(--primary-color);
+}
+
+.tab-link.active {
+    border-bottom-color: var(--accent-blue);
+}
+
+/* --- DETALHE: SELETOR DE JORNADA --- */
+.round-selector {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--card-bg);
+    padding: 0.5rem 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+}
+
+/* Mostra o seletor também na aba de classificação */
+
+.round-selector h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.nav-arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: var(--tap-target-size, 34px);
+    min-height: var(--tap-target-size, 34px);
+}
+.nav-arrow img { height: 16px; }
+.nav-arrow:disabled { opacity: 0.3; cursor: not-allowed; }
+/* Corrige orientação: anterior para a esquerda, próxima para a direita */
+#prev-round img, #prev-round-class img { transform: none; }
+#next-round img, #next-round-class img { transform: rotate(180deg); }
+
+/* --- DETALHE: LISTA DE JOGOS (DESKTOP) --- */
+.match-item {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-auto-rows: auto;
+    align-items: center;
+    column-gap: 1rem;
+    row-gap: 0.5rem;
+    padding: 1.25rem 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 1.1rem;
+}
+.matches-list {
+    border-top: 1px solid var(--border-color);
+}
+.match-item:last-child { border-bottom: none; }
+.team-home { text-align: right; display: flex; justify-content: flex-end; align-items: center; }
+.team-away { text-align: left; display: flex; justify-content: flex-start; align-items: center; }
+.team-crest { display: inline-block; width: 30px; height: 30px; }
+.match-score { font-family: var(--font-mono); font-weight: bold; font-size: 1.2rem; font-variant-numeric: tabular-nums; text-align: center; justify-self: center; }
+.team-block { display: inline-flex; align-items: center; gap: 0.5rem; }
+.team-name.highlight { color: var(--accent-blue); }
+
+/* Linha de meta (data/campo) sob o jogo */
+.match-meta {
+    grid-column: 1 / -1;
+    margin-top: 0.125rem;
+    color: var(--secondary-color);
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-align: center;
+}
+.match-meta .meta-date { margin-right: 0.75rem; font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+
+/* --- DETALHE: LISTA DE JOGOS (MOBILE) --- */
+@media (max-width: 480px) {
+    .match-item {
+        grid-template-columns: 60px 1fr 50px; /* Hora/Data | Equipas | Resultado */
+        column-gap: 0.5rem;
+        row-gap: 0.25rem;
+        padding: 0.75rem 0;
+        align-items: center; /* Alinha verticalmente o conteúdo das células do grid */
+    }
+    .match-datetime {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-family: var(--font-mono);
+        font-variant-numeric: tabular-nums;
+        font-size: 0.9rem;
+        color: var(--secondary-color);
+    }
+    .team-home, .team-away { display: none; }
+
+    /* Cria um novo container para as equipas no mobile */
+    .match-teams-mobile {
+        grid-column: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .team-line {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .team-crest { width: 30px; height: 30px; }
+    .team-name {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .match-score {
+        grid-column: 3;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .match-score.match-score-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.35rem;
+        white-space: normal;
+    }
+    .match-score-mobile .score-line {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .match-score-mobile .score-number {
+        font-family: var(--font-mono);
+        font-weight: bold;
+        font-size: 1.15rem;
+        line-height: 1;
+    }
+    /* meta ocupa largura total no mobile também */
+    .match-meta { grid-column: 1 / -1; font-size: 0.85rem; }
+}
+
+/* --- DETALHE: TABELA DE CLASSIFICAÇÃO --- */
+.classification-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+.classification-table th, .classification-table td {
+    padding: 0.85rem 0.5rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+.classification-table thead {
+    background-color: transparent;
+    color: var(--secondary-color);
+}
+.classification-table th { font-weight: 600; }
+.classification-table .pos, .classification-table .pts { font-weight: bold; }
+.classification-table .team-crest-mini { width: 18px; height: 18px; vertical-align: middle; margin-right: 0.5rem; }
+.classification-table .team-name-col { 
+    width: 100%; 
+    font-weight: 600;
+    color: var(--primary-color);
+}
