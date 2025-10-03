@@ -133,6 +133,9 @@ body::after {
 .competitions-list {
     border-top: 1px solid var(--border-color);
 }
+.competition-card + .competition-card {
+    margin-top: 0.4rem;
+}
 
 .competition-card {
     display: flex;
@@ -143,6 +146,8 @@ body::after {
     margin-bottom: 0;
     border-bottom: 1px solid var(--border-color);
     transition: all 0.2s ease-in-out;
+    border-left: 6px solid var(--card-accent, transparent);
+    padding-left: 1.25rem;
 }
 
 .competition-card:hover {
