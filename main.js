@@ -1,4 +1,130 @@
+const ThemeManager = (() => {
+    const STORAGE_KEY = 'cfa-theme';
+    const prefersDark = typeof window !== 'undefined' && window.matchMedia
+        ? window.matchMedia('(prefers-color-scheme: dark)')
+        : null;
+
+    const readStoredTheme = () => {
+        try {
+            const value = window.localStorage.getItem(STORAGE_KEY);
+            return value === 'light' || value === 'dark' ? value : null;
+        } catch (err) {
+            return null;
+        }
+    };
+
+    const writeStoredTheme = (value) => {
+        try {
+            window.localStorage.setItem(STORAGE_KEY, value);
+        } catch (err) {
+            // storage might be unavailable (private mode, etc)
+        }
+    };
+
+    const buttons = new Map();
+    const ICONS = {
+        light: 'img/sun.png',
+        dark: 'img/moon.png',
+    };
+
+    const storedTheme = readStoredTheme();
+    let manualOverride = Boolean(storedTheme);
+    let currentTheme = storedTheme || ((prefersDark && prefersDark.matches) ? 'dark' : 'light');
+
+    const updateButtons = () => {
+        buttons.forEach((button, theme) => {
+            const isActive = currentTheme === theme;
+            button.classList.toggle('is-active', isActive);
+            button.setAttribute('aria-pressed', String(isActive));
+        });
+    };
+
+    const applyTheme = (theme, persist = false) => {
+        currentTheme = theme === 'light' ? 'light' : 'dark';
+        document.documentElement.dataset.theme = currentTheme;
+        if (persist) {
+            manualOverride = true;
+            writeStoredTheme(currentTheme);
+        }
+        updateButtons();
+    };
+
+    const handleButtonClick = (theme) => {
+        if (theme === currentTheme) return;
+        applyTheme(theme, true);
+    };
+
+    const createButton = (theme) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'theme-toggle__btn';
+        button.dataset.theme = theme;
+        button.setAttribute('aria-label', theme === 'light' ? 'Ativar tema claro' : 'Ativar tema escuro');
+        const icon = document.createElement('img');
+        icon.src = ICONS[theme];
+        icon.alt = theme === 'light' ? 'Tema claro' : 'Tema escuro';
+        icon.className = 'theme-toggle__icon';
+        button.appendChild(icon);
+        button.addEventListener('click', () => handleButtonClick(theme));
+        buttons.set(theme, button);
+        return button;
+    };
+
+    const createToggle = () => {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'theme-toggle-wrapper';
+
+        const container = document.createElement('div');
+        container.className = 'theme-toggle';
+
+        container.appendChild(createButton('light'));
+        container.appendChild(createButton('dark'));
+        wrapper.appendChild(container);
+
+        updateButtons();
+        return wrapper;
+    };
+
+    if (prefersDark) {
+        const listener = (event) => {
+            if (!manualOverride) {
+                applyTheme(event.matches ? 'dark' : 'light');
+            }
+        };
+        if (typeof prefersDark.addEventListener === 'function') {
+            prefersDark.addEventListener('change', listener);
+        } else if (typeof prefersDark.addListener === 'function') {
+            prefersDark.addListener(listener);
+        }
+    }
+
+    applyTheme(currentTheme);
+
+    return {
+        initToggle() {
+            const header = document.querySelector('.details-header') || document.querySelector('.site-header');
+            if (!header) return;
+            let wrapper = header.querySelector('.theme-toggle-wrapper');
+            if (!wrapper) {
+                wrapper = createToggle();
+                header.appendChild(wrapper);
+            } else {
+                buttons.clear();
+                const container = wrapper.querySelector('.theme-toggle');
+                if (container) {
+                    container.innerHTML = '';
+                    container.appendChild(createButton('light'));
+                    container.appendChild(createButton('dark'));
+                    updateButtons();
+                }
+            }
+        }
+    };
+})();
+
+
 document.addEventListener('DOMContentLoaded', () => {
+    ThemeManager.initToggle();
     // Verifica se estamos na página de detalhes
     if (!document.getElementById('content-resultados')) {
         return;
