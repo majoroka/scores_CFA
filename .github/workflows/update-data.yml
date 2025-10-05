@@ -76,3 +76,11 @@ jobs:
       - name: Deploy a GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Mostrar mensagem final
+        run: |
+          echo ""
+          echo "=============================================="
+          echo "✅ Site atualizado com sucesso!"
+          echo "🌍 URL: https://majoroka.github.io/scores_CFA/"
+          echo "=============================================="
