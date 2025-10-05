@@ -33,10 +33,11 @@ jobs:
           fi
 
       - name: Correr todos os fetchers
+        timeout-minutes: 6
         run: |
           for f in fetch_*.py; do
-            echo "A correr $f..."
-            python "$f"
+            echo "🔹 A correr $f..."
+            timeout 120s python "$f" || echo "⚠️ $f demorou demais e foi interrompido"
           done
 
       - name: Atualizar manifesto de emblemas (opcional)
