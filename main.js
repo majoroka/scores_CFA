@@ -177,6 +177,114 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
     const remoteRoundCache = new Map();
 
+const MONTH_MAP = {
+    jan: 0, fev: 1, mar: 2, abr: 3, mai: 4, jun: 5,
+    jul: 6, ago: 7, set: 8, out: 9, nov: 10, dez: 11,
+};
+
+const normalizeMonthToken = (value = '') => {
+    if (!value) return null;
+    const normalized = value
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z]/g, '');
+    if (!normalized) return null;
+    return normalized.slice(0, 3);
+};
+
+const parseMatchDate = (value = '') => {
+    const trimmed = (value || '').trim();
+    if (!trimmed) return null;
+    const match = trimmed.match(/(\d{1,2})/);
+    if (!match) return null;
+    const day = Number.parseInt(match[1], 10);
+    if (!Number.isInteger(day)) return null;
+    const tokens = trimmed.split(/\s+/).slice(1);
+    let monthKey = null;
+    for (const token of tokens) {
+        const normalized = normalizeMonthToken(token);
+        if (normalized && Object.prototype.hasOwnProperty.call(MONTH_MAP, normalized)) {
+            monthKey = normalized;
+            break;
+        }
+    }
+    if (!monthKey) return null;
+    const month = MONTH_MAP[monthKey];
+    const today = new Date();
+    const currentMonth = today.getMonth();
+    let year = today.getFullYear();
+    const diff = month - currentMonth;
+    if (diff <= -6) {
+        year += 1;
+    } else if (diff >= 6) {
+        year -= 1;
+    }
+    const result = new Date(year, month, day, 12, 0, 0, 0);
+    return Number.isNaN(result.getTime()) ? null : result;
+};
+
+const getRoundReferenceDate = (round) => {
+    if (!round || !Array.isArray(round.matches)) return null;
+    let latest = null;
+    for (const match of round.matches) {
+        const parsed = parseMatchDate(match?.date);
+        if (!parsed) continue;
+        if (!latest || parsed > latest) {
+            latest = parsed;
+        }
+    }
+    return latest;
+};
+
+const findBestRoundIndexByDate = () => {
+    if (!competitionData || !Array.isArray(competitionData.rounds)) return 0;
+    const rounds = competitionData.rounds;
+    if (!rounds.length) return 0;
+    const today = new Date();
+    today.setHours(12, 0, 0, 0);
+    let previousOrCurrent = null;
+    let firstFuture = null;
+    rounds.forEach((round, idx) => {
+        const reference = getRoundReferenceDate(round);
+        if (!reference) return;
+        if (reference <= today) {
+            previousOrCurrent = idx;
+        } else if (firstFuture === null) {
+            firstFuture = idx;
+        }
+    });
+    if (previousOrCurrent !== null) return previousOrCurrent;
+    if (firstFuture !== null) return firstFuture;
+    return 0;
+};
+
+const initializeRoundBasedOnDate = () => {
+    if (!competitionData || !Array.isArray(competitionData.rounds) || !competitionData.rounds.length) return;
+    const hash = (window.location.hash || '').toLowerCase();
+    let targetTab = 'resultados';
+    let shouldOverride = false;
+    if (!hash || hash === '#') {
+        shouldOverride = true;
+    } else if (/^#resultados(?:-j1)?$/.test(hash)) {
+        shouldOverride = true;
+        targetTab = 'resultados';
+    } else if (/^#classificacao(?:-j1)?$/.test(hash)) {
+        shouldOverride = true;
+        targetTab = 'classificacao';
+    }
+    if (!shouldOverride) return;
+    const suggestedIndex = findBestRoundIndexByDate();
+    const safeIndex = Math.max(0, Math.min(competitionData.rounds.length - 1, suggestedIndex));
+    if (safeIndex === currentRoundIndex && targetTab === 'resultados' && (!hash || hash === '#' || hash === '#resultados' || hash === '#resultados-j1')) {
+        return;
+    }
+    currentRoundIndex = safeIndex;
+    const roundNumber = competitionData.rounds[currentRoundIndex]?.index || (currentRoundIndex + 1);
+    const nextHash = `#${targetTab}-j${roundNumber}`;
+    history.replaceState(null, '', nextHash);
+};
+
     const parseMatchesFragment = (htmlFragment = '') => {
         if (!htmlFragment) return [];
         const wrapper = document.createElement('div');
@@ -608,6 +716,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             competitionData = await competitionResponse.json();
             crestsData = await crestsResponse.json();
+
+            initializeRoundBasedOnDate();
 
             // Renderização inicial com dados locais
             handleHashChange();
