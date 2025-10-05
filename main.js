@@ -136,6 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let crestsData = null;
     let currentRoundIndex = 0;
     let activeTab = 'resultados'; // 'resultados' ou 'classificacao'
+    let userHasManualRoundSelection = false;
 
     // --- ELEMENTOS DO DOM ---
     const tabResultados = document.getElementById('tab-resultados');
@@ -276,10 +277,21 @@ const initializeRoundBasedOnDate = () => {
     if (!shouldOverride) return;
     const suggestedIndex = findBestRoundIndexByDate();
     const safeIndex = Math.max(0, Math.min(competitionData.rounds.length - 1, suggestedIndex));
-    if (safeIndex === currentRoundIndex && targetTab === 'resultados' && (!hash || hash === '#' || hash === '#resultados' || hash === '#resultados-j1')) {
+
+    // Atualiza hash apenas se estivermos em resultado/classificação padrão sem seleção manual
+    if (safeIndex === currentRoundIndex && (!hash || hash === '#' || /^#(?:resultados|classificacao)(?:-j1)?$/.test(hash))) {
+        userHasManualRoundSelection = false;
+        const currentRoundNumber = competitionData.rounds[currentRoundIndex]?.index || (currentRoundIndex + 1);
+        if (/^#classificacao/.test(hash)) {
+            history.replaceState(null, '', `#classificacao-j${currentRoundNumber}`);
+        } else {
+            history.replaceState(null, '', `#resultados-j${currentRoundNumber}`);
+        }
         return;
     }
+
     currentRoundIndex = safeIndex;
+    userHasManualRoundSelection = false;
     const roundNumber = competitionData.rounds[currentRoundIndex]?.index || (currentRoundIndex + 1);
     const nextHash = `#${targetTab}-j${roundNumber}`;
     history.replaceState(null, '', nextHash);
@@ -663,19 +675,20 @@ const initializeRoundBasedOnDate = () => {
         if (nextRoundBtnClass) nextRoundBtnClass.disabled = atEnd;
     };
 
-    const navigate = (newRoundIndex, newTab) => {
-        currentRoundIndex = Math.max(0, Math.min(competitionData.rounds.length - 1, newRoundIndex));
+    const navigate = (newRoundIndex, newTab, markManual = true) => {
+        const boundedIndex = Math.max(0, Math.min(competitionData.rounds.length - 1, newRoundIndex));
+        const previousIndex = currentRoundIndex;
+        currentRoundIndex = boundedIndex;
+        if (markManual && boundedIndex !== previousIndex) {
+            userHasManualRoundSelection = true;
+        }
         activeTab = newTab || activeTab;
-        
+
         const roundNumber = competitionData.rounds[currentRoundIndex].index;
-        
+
         // Atualiza o hash sem disparar o evento hashchange
         let newHash = `#${activeTab}`;
-        if (activeTab === 'resultados') {
-            newHash += `-j${roundNumber}`;
-        } else {
-            newHash += `-j${roundNumber}`; // Também para classificação
-        }
+        newHash += `-j${roundNumber}`;
         history.replaceState(null, '', newHash);
 
         updateUI();
@@ -737,8 +750,16 @@ const initializeRoundBasedOnDate = () => {
     if (nextRoundBtn) nextRoundBtn.addEventListener('click', () => navigate(currentRoundIndex + 1));
     if (prevRoundBtnClass) prevRoundBtnClass.addEventListener('click', () => navigate(currentRoundIndex - 1, 'classificacao'));
     if (nextRoundBtnClass) nextRoundBtnClass.addEventListener('click', () => navigate(currentRoundIndex + 1, 'classificacao'));
-    tabResultados.addEventListener('click', () => navigate(currentRoundIndex, 'resultados'));
-    tabClassificacao.addEventListener('click', () => navigate(currentRoundIndex, 'classificacao'));
+    tabResultados.addEventListener('click', (event) => {
+        if (event) event.preventDefault();
+        const targetIndex = userHasManualRoundSelection ? currentRoundIndex : findBestRoundIndexByDate();
+        navigate(targetIndex, 'resultados', userHasManualRoundSelection);
+    });
+    tabClassificacao.addEventListener('click', (event) => {
+        if (event) event.preventDefault();
+        const targetIndex = userHasManualRoundSelection ? currentRoundIndex : findBestRoundIndexByDate();
+        navigate(targetIndex, 'classificacao', userHasManualRoundSelection);
+    });
     // acessibilidade via teclado
     [tabResultados, tabClassificacao].forEach(tab => {
         tab.addEventListener('keydown', (e) => {
