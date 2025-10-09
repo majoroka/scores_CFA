@@ -610,14 +610,17 @@ const initializeRoundBasedOnDate = () => {
                 </thead>
                 <tbody>
         `;
+        const HIGHLIGHT = normalizeName('CF Os Armacenenses');
         round.classification.forEach(entry => {
             const crestUrl = getCrestUrl(entry.team);
+            const isHighlighted = normalizeName(entry.team) === HIGHLIGHT;
+            const highlightClass = isHighlighted ? ' highlight' : '';
             tableHTML += `
                 <tr>
                     <td class="pos">${entry.position}</td>
                     <td class="team-name-col">
                         <img src="${crestUrl}" alt="${entry.team}" class="team-crest-mini">
-                        ${entry.team}
+                        <span class="team-name${highlightClass}">${entry.team}</span>
                     </td>
                     <td>${entry.played}</td>
                     <td>${entry.wins}</td>

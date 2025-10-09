@@ -432,7 +432,7 @@ body::after {
         gap: 0.2rem;
     }
     .team-crest { width: 30px; height: 30px; }
-    .team-name {
+    .match-teams-mobile .team-name {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
