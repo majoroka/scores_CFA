@@ -36,6 +36,8 @@ def main():
     # Aliases para variações de nomes que aparecem na FPF
     aliases = {
         'fc 11 esperancas': ['fc os 11 esperancas'],
+        'casa slb albufeira': ['casa benfica albufeira'],
+        'nucleo scp olhao': ['nucleo sporting cp olhao'],
     }
     for canon, alts in aliases.items():
         if canon in crest_map:
