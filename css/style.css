@@ -235,10 +235,21 @@ body::after {
 }
 .competition-title h1 {
     margin: 0;
-    font-size: 1.4rem;
+    font-size: clamp(1rem, 4.2vw, 1.4rem);
+    white-space: nowrap;
     margin-top: -10px;
+    text-align: center;
 }
 .competition-logo { height: 44px; }
+
+@media (max-width: 480px) {
+    .competition-title h1 {
+        font-size: clamp(0.85rem, 5.2vw, 1.1rem);
+    }
+    .competition-logo {
+        height: 36px;
+    }
+}
 
 /* --- INDEX: LISTA DE COMPETIÇÕES --- */
 .competitions-list {
