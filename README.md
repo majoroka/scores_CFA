@@ -1,39 +1,62 @@
 # Microsite de Competições - CF Os Armacenenses
 
-Este é um microsite estático para exibir os resultados e classificações das competições do clube.
+Microsite estático que agrega resultados, classificações e calendários das equipas do CF Os Armacenenses. O projeto oferece uma experiência leve que pode ser servida diretamente no GitHub Pages ou em qualquer alojamento estático.
 
-## Como Atualizar os Dados
+## Funcionalidades
 
-Os dados são obtidos a partir do site da FPF através de um script Python.
+- Agregação de várias competições numa página principal com navegação dedicada por equipa.
+- Visualização por jornada e tabelas de classificação com destaque automático para o CF Os Armacenenses.
+- Interface responsiva com alternância de tema claro/escuro e preferência persistida em `localStorage`.
+- Atualização periódica de dados através de scrapers Python que consomem o site oficial da FPF.
+- Manifesto de emblemas para carregamento imediato dos logótipos de cada clube.
 
-### Pré-requisitos
+## Estrutura do projeto
 
-- Python 3.x instalado.
+- `index.html` e `*.html`: páginas estáticas para o hub principal e para cada competição.
+- `main.js`: lógica de UI, carregamento de dados, gestão de tema e renderização dos componentes dinâmicos.
+- `css/`: estilos principais (`css/style.css`) e ativos suplementares.
+- `data/`: ficheiros JSON gerados pelos scrapers (`{competicao}.json`, `crests.json`) consumidos pelo frontend.
+- `img/`: logótipos do clube, emblemas (`img/crests/`) e ícones utilizados nas páginas.
+- `fetch_*.py`: scrapers específicos por competição que extraem dados da FPF e atualizam `data/`.
+- `generate_crest_manifest.py`: gera automaticamente o mapa normalizado de emblemas em `data/crests.json`.
+- `tools/`: utilitários de apoio (ex.: `tools/probe_fixture.py` para inspecionar fixtures da FPF).
+- `.github/workflows/update-data.yml`: pipeline de CI que renova os dados e publica o site no GitHub Pages.
 
-### Passos para Atualização
+## Pré-requisitos
 
-1.  **Configurar o Scraper**:
-    - Abra o arquivo `fetch_fpf.py` (na raiz do projeto).
-    - A `COMPETITION_URL` já está configurada. Se precisar de outra competição, altere esta linha.
-2.  **Executar o Scraper**:
-    - Navegue até a pasta raiz do projeto no seu terminal.
-    - Execute o comando: `python fetch_fpf.py`
-    - Isso irá buscar os dados, criar uma pasta `cache` com os arquivos HTML baixados e gerar o arquivo `data/seniores.json` atualizado.
+- Python 3.9 ou superior com acesso à internet durante a execução dos scrapers.
+- Permissões de escrita no diretório `data/` para armazenar os ficheiros gerados.
 
-3.  **Gerar Manifesto de Emblemas (Opcional)**:
-    - Se você adicionou novos emblemas de clubes em `img/crests/`, execute `python generate_crest_manifest.py` para atualizar o `data/crests.json`.
+## Atualizar dados manualmente
 
-## Como Visualizar Localmente
+1. Escolha o script correspondente à competição (ex.: `python fetch_juniores.py`) ou utilize a versão genérica `python fetch_fpf.py`.
+2. Ajuste as constantes no topo do script se precisar de apontar para outra competição (IDs `competitionId`, `seasonId`, nome do ficheiro de saída).
+3. No terminal, a partir da raiz do projeto, execute `python nome_do_script.py`.
+4. Confirme os JSON atualizados em `data/` e valide se os valores foram normalizados corretamente.
+5. (Opcional) Se novos emblemas forem adicionados a `img/crests/`, execute `python generate_crest_manifest.py` para atualizar `data/crests.json`.
 
-Como este é um site estático sem dependências de build, você pode visualizá-lo de duas formas:
+## Visualizar localmente
 
-1.  **Abrindo o `index.html` diretamente no navegador.** (Pode causar erros de CORS ao buscar os arquivos JSON).
-2.  **Usando um servidor local simples (Recomendado)**:
-    - No terminal, na pasta raiz do projeto, execute: `python -m http.server`
-    - Abra o seu navegador e acesse `http://localhost:8000`.
+- Abra qualquer `*.html` diretamente no navegador para verificações rápidas (pode ocorrer bloqueio CORS ao ler JSON).
+- Para evitar CORS, sirva a pasta via HTTP simples: `python -m http.server` e aceda a `http://localhost:8000`.
 
-## Automação (Para um Site Online)
+## Automação com GitHub Actions
 
-Para manter os dados atualizados automaticamente num site publicado, a abordagem recomendada é usar um serviço de CI/CD como o **GitHub Actions**.
+O workflow `.github/workflows/update-data.yml`:
 
-Um ficheiro de workflow (`.github/workflows/update-data.yml`) está incluído no projeto. Se o projeto for alojado no GitHub, este "robô" pode ser configurado para executar o script `fetch_fpf.py` em intervalos regulares (ex: a cada 4 horas), fazer commit do novo ficheiro `data/seniores.json` e publicar o site, garantindo que os dados estão sempre frescos sem qualquer intervenção manual.
+- Pode ser acionado manualmente ou corre a cada 4 horas.
+- Instala Python, executa todos os scrapers `fetch_*.py` com timeout controlado e atualiza `data/`.
+- Regera o manifesto de emblemas quando necessário.
+- Realiza commit automático dos JSON alterados e publica o site em GitHub Pages.
+
+## Scripts auxiliares
+
+- `fetch_fpf.py`: implementação base usada como referência para os restantes scrapers.
+- `generate_crest_manifest.py`: cria o mapa normalizado entre nomes de clubes e emblemas.
+- `tools/probe_fixture.py`: descarrega o HTML bruto de um fixture da FPF para análise e guarda em `cache/`.
+
+## Contribuir
+
+1. Crie uma branch dedicada e assegure que os scrapers geram dados consistentes antes de submeter alterações.
+2. Prefira assets otimizados (PNG ≤ 512px) ao adicionar emblemas.
+3. Atualize a documentação (`README.md`, `ARQUITETURA.md`, `ROADMAP.md`) sempre que modificar fluxos ou dependências relevantes.
