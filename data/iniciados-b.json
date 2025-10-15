@@ -5,31 +5,31 @@
             "fixtureId": "607587",
             "matches": [
                 {
-                    "home": "Fc Ferreiras",
-                    "away": "Internacional Ca",
-                    "date": "11 out",
-                    "time": "11:00",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Sr Almancilense",
                     "away": "Guia Fc",
-                    "date": "11 out",
-                    "time": "11:00",
+                    "date": "12 - 1                            \r\n                \r\n                    11 out",
+                    "time": "",
                     "stadium": "Estadio Municipal De Almancil",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 12,
+                    "awayScore": 1
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Internacional Ca",
+                    "date": "5 - 2                            \r\n                \r\n                    11 out",
+                    "time": "",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": 5,
+                    "awayScore": 2
                 },
                 {
                     "home": "Cdr Quarteirense",
                     "away": "Js Campinense",
-                    "date": "12 out",
-                    "time": "09:00",
+                    "date": "2 - 2                            \r\n                \r\n                    12 out",
+                    "time": "",
                     "stadium": "Estadio Municipal Quarteira Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 2,
+                    "awayScore": 2
                 },
                 {
                     "home": "A Indicar",
@@ -44,6 +44,50 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Sr Almancilense",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 12,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Fc Ferreiras",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Cdr Quarteirense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 3,
+                    "team": "Js Campinense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 5,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -54,7 +98,7 @@
                     "points": 0
                 },
                 {
-                    "position": 2,
+                    "position": 6,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -65,62 +109,7 @@
                     "points": 0
                 },
                 {
-                    "position": 2,
-                    "team": "Cdr Quarteirense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 2,
-                    "team": "Fc Ferreiras",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 2,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 2,
-                    "team": "Internacional Ca",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 2,
-                    "team": "Js Campinense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 2,
+                    "position": 6,
                     "team": "Louletano Dc",
                     "played": 0,
                     "wins": 0,
@@ -131,14 +120,25 @@
                     "points": 0
                 },
                 {
-                    "position": 2,
-                    "team": "Sr Almancilense",
-                    "played": 0,
+                    "position": 8,
+                    "team": "Internacional Ca",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 5,
+                    "points": 0
+                },
+                {
+                    "position": 9,
+                    "team": "Guia Fc",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 12,
                     "points": 0
                 }
             ]
@@ -147,15 +147,6 @@
             "index": 2,
             "fixtureId": "607588",
             "matches": [
-                {
-                    "home": "Internacional Ca",
-                    "away": "Cdr Quarteirense",
-                    "date": "19 out",
-                    "time": "11:00",
-                    "stadium": "Estadio Municipal De Almancil",
-                    "homeScore": null,
-                    "awayScore": null
-                },
                 {
                     "home": "Guia Fc",
                     "away": "Fc Ferreiras",
@@ -171,6 +162,15 @@
                     "date": "19 out",
                     "time": "11:00",
                     "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Internacional Ca",
+                    "away": "Cdr Quarteirense",
+                    "date": "19 out",
+                    "time": "11:00",
+                    "stadium": "Estadio Municipal De Almancil",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -187,28 +187,50 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "A Indicar",
-                    "played": 0,
-                    "wins": 0,
+                    "team": "Sr Almancilense",
+                    "played": 1,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
+                    "goalsFor": 12,
+                    "goalsAgainst": 1,
+                    "points": 3
                 },
                 {
-                    "position": 1,
+                    "position": 2,
+                    "team": "Fc Ferreiras",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Js Campinense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 4,
                     "team": "Cdr Quarteirense",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
                 },
                 {
-                    "position": 1,
+                    "position": 5,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -219,8 +241,8 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Fc Ferreiras",
+                    "position": 6,
+                    "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
                     "draws": 0,
@@ -230,40 +252,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Internacional Ca",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Js Campinense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 6,
                     "team": "Louletano Dc",
                     "played": 0,
                     "wins": 0,
@@ -274,14 +263,25 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Sr Almancilense",
-                    "played": 0,
+                    "position": 8,
+                    "team": "Internacional Ca",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 5,
+                    "points": 0
+                },
+                {
+                    "position": 9,
+                    "team": "Guia Fc",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 12,
                     "points": 0
                 }
             ]
@@ -291,10 +291,19 @@
             "fixtureId": "607589",
             "matches": [
                 {
+                    "home": "Cdr Quarteirense",
+                    "away": "Guia Fc",
+                    "date": "26 out",
+                    "time": "09:00",
+                    "stadium": "Estadio Municipal Quarteira Nº 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Sr Almancilense",
                     "away": "Cf Os Armacenenses",
                     "date": "26 out",
-                    "time": "11:00",
+                    "time": "09:00",
                     "stadium": "Estadio Municipal De Almancil",
                     "homeScore": null,
                     "awayScore": null
@@ -303,17 +312,8 @@
                     "home": "Js Campinense",
                     "away": "Internacional Ca",
                     "date": "26 out",
-                    "time": "11:00",
+                    "time": "09:00",
                     "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Cdr Quarteirense",
-                    "away": "Guia Fc",
-                    "date": "26 out",
-                    "time": "11:00",
-                    "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -330,6 +330,50 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Sr Almancilense",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 12,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Fc Ferreiras",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Js Campinense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 4,
+                    "team": "Cdr Quarteirense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 5,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -340,18 +384,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Cdr Quarteirense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -362,51 +395,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Fc Ferreiras",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Internacional Ca",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Js Campinense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Louletano Dc",
                     "played": 0,
                     "wins": 0,
@@ -417,14 +406,25 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Sr Almancilense",
-                    "played": 0,
+                    "position": 8,
+                    "team": "Internacional Ca",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 5,
+                    "points": 0
+                },
+                {
+                    "position": 9,
+                    "team": "Guia Fc",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 12,
                     "points": 0
                 }
             ]
@@ -434,29 +434,20 @@
             "fixtureId": "607590",
             "matches": [
                 {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Fc Ferreiras",
+                    "date": "2 nov",
+                    "time": "09:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Guia Fc",
                     "away": "Js Campinense",
                     "date": "2 nov",
                     "time": "11:00",
                     "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Louletano Dc",
-                    "away": "Cdr Quarteirense",
-                    "date": "2 nov",
-                    "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Fc Ferreiras",
-                    "date": "2 nov",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -468,11 +459,64 @@
                     "stadium": "A Indicar",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Louletano Dc",
+                    "away": "Cdr Quarteirense",
+                    "date": "2 nov",
+                    "time": "17:00",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": null,
+                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
+                    "team": "Sr Almancilense",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 12,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Fc Ferreiras",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Js Campinense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 4,
+                    "team": "Cdr Quarteirense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 5,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -483,18 +527,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Cdr Quarteirense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -505,51 +538,18 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Fc Ferreiras",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Internacional Ca",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Js Campinense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Louletano Dc",
                     "played": 0,
                     "wins": 0,
@@ -560,14 +560,14 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Sr Almancilense",
-                    "played": 0,
+                    "position": 9,
+                    "team": "Guia Fc",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 12,
                     "points": 0
                 }
             ]
@@ -576,6 +576,24 @@
             "index": 5,
             "fixtureId": "607591",
             "matches": [
+                {
+                    "home": "Js Campinense",
+                    "away": "Louletano Dc",
+                    "date": "9 nov",
+                    "time": "11:00",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Internacional Ca",
+                    "away": "Guia Fc",
+                    "date": "9 nov",
+                    "time": "11:00",
+                    "stadium": "Estadio Municipal De Almancil",
+                    "homeScore": null,
+                    "awayScore": null
+                },
                 {
                     "home": "Cdr Quarteirense",
                     "away": "Cf Os Armacenenses",
@@ -593,29 +611,55 @@
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": null,
                     "awayScore": null
-                },
-                {
-                    "home": "Internacional Ca",
-                    "away": "Guia Fc",
-                    "date": "9 nov",
-                    "time": "11:00",
-                    "stadium": "Estadio Municipal De Almancil",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Js Campinense",
-                    "away": "Louletano Dc",
-                    "date": "9 nov",
-                    "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": null,
-                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
+                    "team": "Sr Almancilense",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 12,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Fc Ferreiras",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Js Campinense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 4,
+                    "team": "Cdr Quarteirense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 5,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -626,18 +670,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Cdr Quarteirense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -648,51 +681,18 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Fc Ferreiras",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Internacional Ca",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Js Campinense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Louletano Dc",
                     "played": 0,
                     "wins": 0,
@@ -703,14 +703,14 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Sr Almancilense",
-                    "played": 0,
+                    "position": 9,
+                    "team": "Guia Fc",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 12,
                     "points": 0
                 }
             ]
@@ -720,29 +720,20 @@
             "fixtureId": "607592",
             "matches": [
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Js Campinense",
-                    "date": "16 nov",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "A Indicar",
-                    "away": "Cdr Quarteirense",
-                    "date": "16 nov",
-                    "time": "11:00",
-                    "stadium": "A Indicar",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Sr Almancilense",
                     "away": "Fc Ferreiras",
                     "date": "16 nov",
                     "time": "11:00",
                     "stadium": "Estadio Municipal De Almancil",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Js Campinense",
+                    "date": "16 nov",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -754,11 +745,64 @@
                     "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "A Indicar",
+                    "away": "Cdr Quarteirense",
+                    "date": "16 nov",
+                    "time": "11:00",
+                    "stadium": "A Indicar",
+                    "homeScore": null,
+                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
+                    "team": "Sr Almancilense",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 12,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Fc Ferreiras",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Js Campinense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 4,
+                    "team": "Cdr Quarteirense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 5,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -769,18 +813,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Cdr Quarteirense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -791,63 +824,30 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Fc Ferreiras",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Internacional Ca",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Js Campinense",
-                    "played": 0,
+                    "position": 8,
+                    "team": "Guia Fc",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 12,
                     "points": 0
                 },
                 {
-                    "position": 1,
+                    "position": 9,
                     "team": "Louletano Dc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Sr Almancilense",
                     "played": 0,
                     "wins": 0,
                     "draws": 0,
@@ -863,11 +863,11 @@
             "fixtureId": "607593",
             "matches": [
                 {
-                    "home": "Internacional Ca",
-                    "away": "Cf Os Armacenenses",
+                    "home": "Guia Fc",
+                    "away": "Louletano Dc",
                     "date": "23 nov",
                     "time": "11:00",
-                    "stadium": "Estadio Municipal De Almancil",
+                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -881,6 +881,15 @@
                     "awayScore": null
                 },
                 {
+                    "home": "Internacional Ca",
+                    "away": "Cf Os Armacenenses",
+                    "date": "23 nov",
+                    "time": "11:00",
+                    "stadium": "Estadio Municipal De Almancil",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Js Campinense",
                     "away": "A Indicar",
                     "date": "23 nov",
@@ -888,20 +897,55 @@
                     "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
                     "awayScore": null
-                },
-                {
-                    "home": "Guia Fc",
-                    "away": "Louletano Dc",
-                    "date": "23 nov",
-                    "time": "11:00",
-                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
-                    "homeScore": null,
-                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
+                    "team": "Sr Almancilense",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 12,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Fc Ferreiras",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Js Campinense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 4,
+                    "team": "Cdr Quarteirense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 5,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -912,18 +956,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Cdr Quarteirense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -934,63 +967,30 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Fc Ferreiras",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Internacional Ca",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Js Campinense",
-                    "played": 0,
+                    "position": 8,
+                    "team": "Guia Fc",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 12,
                     "points": 0
                 },
                 {
-                    "position": 1,
+                    "position": 9,
                     "team": "Louletano Dc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Sr Almancilense",
                     "played": 0,
                     "wins": 0,
                     "draws": 0,
@@ -1006,20 +1006,20 @@
             "fixtureId": "607594",
             "matches": [
                 {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Guia Fc",
+                    "date": "30 nov",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Sr Almancilense",
                     "away": "Js Campinense",
                     "date": "30 nov",
                     "time": "11:00",
                     "stadium": "Estadio Municipal De Almancil",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Fc Ferreiras",
-                    "away": "Cdr Quarteirense",
-                    "date": "30 nov",
-                    "time": "11:00",
-                    "stadium": "Estádio Nora Nº 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1033,11 +1033,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Guia Fc",
+                    "home": "Fc Ferreiras",
+                    "away": "Cdr Quarteirense",
                     "date": "30 nov",
                     "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "stadium": "Estádio Nora Nº 2",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1045,6 +1045,50 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Sr Almancilense",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 12,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Fc Ferreiras",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Js Campinense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 4,
+                    "team": "Cdr Quarteirense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 5,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -1055,18 +1099,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Cdr Quarteirense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -1077,51 +1110,18 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Fc Ferreiras",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Internacional Ca",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Js Campinense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Louletano Dc",
                     "played": 0,
                     "wins": 0,
@@ -1132,14 +1132,14 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Sr Almancilense",
-                    "played": 0,
+                    "position": 9,
+                    "team": "Guia Fc",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 12,
                     "points": 0
                 }
             ]
@@ -1149,15 +1149,6 @@
             "fixtureId": "607595",
             "matches": [
                 {
-                    "home": "Louletano Dc",
-                    "away": "Cf Os Armacenenses",
-                    "date": "7 dez",
-                    "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Js Campinense",
                     "away": "Fc Ferreiras",
                     "date": "7 dez",
@@ -1176,6 +1167,15 @@
                     "awayScore": null
                 },
                 {
+                    "home": "Louletano Dc",
+                    "away": "Cf Os Armacenenses",
+                    "date": "7 dez",
+                    "time": "11:00",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Guia Fc",
                     "away": "A Indicar",
                     "date": "7 dez",
@@ -1188,6 +1188,50 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Sr Almancilense",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 12,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Fc Ferreiras",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Cdr Quarteirense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 3,
+                    "team": "Js Campinense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 5,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -1198,29 +1242,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Ac Salir (DS)",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Cdr Quarteirense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -1231,51 +1253,18 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Fc Ferreiras",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Internacional Ca",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Js Campinense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Louletano Dc",
                     "played": 0,
                     "wins": 0,
@@ -1283,6 +1272,17 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
+                    "points": 0
+                },
+                {
+                    "position": 9,
+                    "team": "Guia Fc",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 12,
                     "points": 0
                 }
             ]
@@ -1292,15 +1292,6 @@
             "fixtureId": "607596",
             "matches": [
                 {
-                    "home": "Js Campinense",
-                    "away": "Cdr Quarteirense",
-                    "date": "14 dez",
-                    "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Internacional Ca",
                     "away": "Fc Ferreiras",
                     "date": "14 dez",
@@ -1326,11 +1317,64 @@
                     "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Js Campinense",
+                    "away": "Cdr Quarteirense",
+                    "date": "14 dez",
+                    "time": "11:00",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": null,
+                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
+                    "team": "Sr Almancilense",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 12,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Fc Ferreiras",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Cdr Quarteirense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 3,
+                    "team": "Js Campinense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 5,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -1341,7 +1385,7 @@
                     "points": 0
                 },
                 {
-                    "position": 2,
+                    "position": 6,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -1352,73 +1396,18 @@
                     "points": 0
                 },
                 {
-                    "position": 2,
-                    "team": "Ac Salir (DS)",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 2,
-                    "team": "Cdr Quarteirense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 2,
-                    "team": "Fc Ferreiras",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 2,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 2,
+                    "position": 6,
                     "team": "Internacional Ca",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
-                    "position": 2,
-                    "team": "Js Campinense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 2,
+                    "position": 6,
                     "team": "Louletano Dc",
                     "played": 0,
                     "wins": 0,
@@ -1426,6 +1415,17 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
+                    "points": 0
+                },
+                {
+                    "position": 9,
+                    "team": "Guia Fc",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 12,
                     "points": 0
                 }
             ]
@@ -1435,6 +1435,24 @@
             "fixtureId": "607597",
             "matches": [
                 {
+                    "home": "Sr Almancilense",
+                    "away": "Louletano Dc",
+                    "date": "21 dez",
+                    "time": "11:00",
+                    "stadium": "Estadio Municipal De Almancil",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Guia Fc",
+                    "date": "21 dez",
+                    "time": "11:00",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "A Indicar",
                     "away": "Cf Os Armacenenses",
                     "date": "21 dez",
@@ -1451,62 +1469,55 @@
                     "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": null,
                     "awayScore": null
-                },
-                {
-                    "home": "Fc Ferreiras",
-                    "away": "Guia Fc",
-                    "date": "21 dez",
-                    "time": "11:00",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Sr Almancilense",
-                    "away": "Louletano Dc",
-                    "date": "21 dez",
-                    "time": "11:00",
-                    "stadium": "Estadio Municipal De Almancil",
-                    "homeScore": null,
-                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
-                    "team": "A Indicar",
-                    "played": 0,
-                    "wins": 0,
+                    "team": "Sr Almancilense",
+                    "played": 1,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
+                    "goalsFor": 12,
+                    "goalsAgainst": 1,
+                    "points": 3
                 },
                 {
-                    "position": 1,
-                    "team": "Ac Salir (DS)",
-                    "played": 0,
-                    "wins": 0,
+                    "position": 2,
+                    "team": "Fc Ferreiras",
+                    "played": 1,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
+                    "goalsFor": 5,
+                    "goalsAgainst": 2,
+                    "points": 3
                 },
                 {
-                    "position": 1,
+                    "position": 3,
+                    "team": "Js Campinense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 4,
                     "team": "Cdr Quarteirense",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
                 },
                 {
-                    "position": 1,
+                    "position": 5,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -1517,8 +1528,8 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Fc Ferreiras",
+                    "position": 6,
+                    "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
                     "draws": 0,
@@ -1528,40 +1539,18 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 6,
                     "team": "Internacional Ca",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Js Campinense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 6,
                     "team": "Louletano Dc",
                     "played": 0,
                     "wins": 0,
@@ -1569,6 +1558,17 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
+                    "points": 0
+                },
+                {
+                    "position": 9,
+                    "team": "Guia Fc",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 12,
                     "points": 0
                 }
             ]
@@ -1578,29 +1578,20 @@
             "fixtureId": "607598",
             "matches": [
                 {
-                    "home": "Internacional Ca",
-                    "away": "Js Campinense",
-                    "date": "4 jan",
-                    "time": "11:00",
-                    "stadium": "Estadio Municipal De Almancil",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Guia Fc",
-                    "away": "Cdr Quarteirense",
-                    "date": "4 jan",
-                    "time": "11:00",
-                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Louletano Dc",
                     "away": "Fc Ferreiras",
                     "date": "4 jan",
                     "time": "11:00",
                     "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Internacional Ca",
+                    "away": "Js Campinense",
+                    "date": "4 jan",
+                    "time": "11:00",
+                    "stadium": "Estadio Municipal De Almancil",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1612,11 +1603,64 @@
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Guia Fc",
+                    "away": "Cdr Quarteirense",
+                    "date": "4 jan",
+                    "time": "11:00",
+                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
+                    "homeScore": null,
+                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
+                    "team": "Sr Almancilense",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 12,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Fc Ferreiras",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Js Campinense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 4,
+                    "team": "Cdr Quarteirense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 5,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -1627,29 +1671,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Ac Salir (DS)",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Cdr Quarteirense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -1660,51 +1682,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Fc Ferreiras",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Internacional Ca",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Js Campinense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 7,
                     "team": "Louletano Dc",
                     "played": 0,
                     "wins": 0,
@@ -1713,6 +1691,28 @@
                     "goalsFor": 0,
                     "goalsAgainst": 0,
                     "points": 0
+                },
+                {
+                    "position": 8,
+                    "team": "Internacional Ca",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 5,
+                    "points": 0
+                },
+                {
+                    "position": 9,
+                    "team": "Guia Fc",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 12,
+                    "points": 0
                 }
             ]
         },
@@ -1720,6 +1720,24 @@
             "index": 13,
             "fixtureId": "607599",
             "matches": [
+                {
+                    "home": "Cdr Quarteirense",
+                    "away": "Louletano Dc",
+                    "date": "11 jan",
+                    "time": "11:00",
+                    "stadium": "Estadio Municipal Quarteira Nº 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Js Campinense",
+                    "away": "Guia Fc",
+                    "date": "11 jan",
+                    "time": "11:00",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": null,
+                    "awayScore": null
+                },
                 {
                     "home": "Fc Ferreiras",
                     "away": "Cf Os Armacenenses",
@@ -1737,29 +1755,55 @@
                     "stadium": "Estadio Municipal De Almancil",
                     "homeScore": null,
                     "awayScore": null
-                },
-                {
-                    "home": "Js Campinense",
-                    "away": "Guia Fc",
-                    "date": "11 jan",
-                    "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Cdr Quarteirense",
-                    "away": "Louletano Dc",
-                    "date": "11 jan",
-                    "time": "11:00",
-                    "stadium": "Estadio Municipal Quarteira Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
+                    "team": "Sr Almancilense",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 12,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Fc Ferreiras",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Js Campinense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 4,
+                    "team": "Cdr Quarteirense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 5,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -1770,29 +1814,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Ac Salir (DS)",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Cdr Quarteirense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -1803,51 +1825,18 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Fc Ferreiras",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 7,
                     "team": "Internacional Ca",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Js Campinense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 7,
                     "team": "Louletano Dc",
                     "played": 0,
                     "wins": 0,
@@ -1855,6 +1844,17 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
+                    "points": 0
+                },
+                {
+                    "position": 9,
+                    "team": "Guia Fc",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 12,
                     "points": 0
                 }
             ]
@@ -1864,29 +1864,20 @@
             "fixtureId": "607600",
             "matches": [
                 {
-                    "home": "Louletano Dc",
-                    "away": "Js Campinense",
-                    "date": "18 jan",
-                    "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Cdr Quarteirense",
-                    "date": "18 jan",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "A Indicar",
                     "away": "Fc Ferreiras",
                     "date": "18 jan",
                     "time": "11:00",
                     "stadium": "A Indicar",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Louletano Dc",
+                    "away": "Js Campinense",
+                    "date": "18 jan",
+                    "time": "11:00",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1898,11 +1889,64 @@
                     "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Cdr Quarteirense",
+                    "date": "18 jan",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
+                    "team": "Sr Almancilense",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 12,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Fc Ferreiras",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Js Campinense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 4,
+                    "team": "Cdr Quarteirense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 5,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -1913,29 +1957,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Ac Salir (DS)",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Cdr Quarteirense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -1946,51 +1968,18 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Fc Ferreiras",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 7,
                     "team": "Internacional Ca",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Js Campinense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 7,
                     "team": "Louletano Dc",
                     "played": 0,
                     "wins": 0,
@@ -1998,6 +1987,17 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
+                    "points": 0
+                },
+                {
+                    "position": 9,
+                    "team": "Guia Fc",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 12,
                     "points": 0
                 }
             ]
@@ -2007,11 +2007,11 @@
             "fixtureId": "607601",
             "matches": [
                 {
-                    "home": "Js Campinense",
-                    "away": "Cf Os Armacenenses",
+                    "home": "Internacional Ca",
+                    "away": "Louletano Dc",
                     "date": "25 jan",
                     "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "stadium": "Estadio Municipal De Almancil",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2025,6 +2025,15 @@
                     "awayScore": null
                 },
                 {
+                    "home": "Js Campinense",
+                    "away": "Cf Os Armacenenses",
+                    "date": "25 jan",
+                    "time": "11:00",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Cdr Quarteirense",
                     "away": "A Indicar",
                     "date": "25 jan",
@@ -2032,20 +2041,55 @@
                     "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": null,
                     "awayScore": null
-                },
-                {
-                    "home": "Internacional Ca",
-                    "away": "Louletano Dc",
-                    "date": "25 jan",
-                    "time": "11:00",
-                    "stadium": "Estadio Municipal De Almancil",
-                    "homeScore": null,
-                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
+                    "team": "Sr Almancilense",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 12,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Fc Ferreiras",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Js Campinense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 4,
+                    "team": "Cdr Quarteirense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 5,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -2056,29 +2100,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Ac Salir (DS)",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Cdr Quarteirense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -2089,51 +2111,29 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Fc Ferreiras",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 7,
                     "team": "Internacional Ca",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Js Campinense",
-                    "played": 0,
+                    "position": 8,
+                    "team": "Guia Fc",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 12,
                     "points": 0
                 },
                 {
-                    "position": 1,
+                    "position": 9,
                     "team": "Louletano Dc",
                     "played": 0,
                     "wins": 0,
@@ -2150,20 +2150,20 @@
             "fixtureId": "607602",
             "matches": [
                 {
+                    "home": "Louletano Dc",
+                    "away": "Guia Fc",
+                    "date": "1 fev",
+                    "time": "11:00",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "A Indicar",
                     "away": "Js Campinense",
                     "date": "1 fev",
                     "time": "11:00",
                     "stadium": "A Indicar",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Sr Almancilense",
-                    "away": "Cdr Quarteirense",
-                    "date": "1 fev",
-                    "time": "11:00",
-                    "stadium": "Estadio Municipal De Almancil",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2177,11 +2177,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Louletano Dc",
-                    "away": "Guia Fc",
+                    "home": "Sr Almancilense",
+                    "away": "Cdr Quarteirense",
                     "date": "1 fev",
                     "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "stadium": "Estadio Municipal De Almancil",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -2189,6 +2189,50 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Sr Almancilense",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 12,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Fc Ferreiras",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Js Campinense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 4,
+                    "team": "Cdr Quarteirense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 5,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -2199,29 +2243,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Ac Salir (DS)",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Cdr Quarteirense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -2232,51 +2254,29 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Fc Ferreiras",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 7,
                     "team": "Internacional Ca",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Js Campinense",
-                    "played": 0,
+                    "position": 8,
+                    "team": "Guia Fc",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 12,
                     "points": 0
                 },
                 {
-                    "position": 1,
+                    "position": 9,
                     "team": "Louletano Dc",
                     "played": 0,
                     "wins": 0,
@@ -2292,15 +2292,6 @@
             "index": 17,
             "fixtureId": "607603",
             "matches": [
-                {
-                    "home": "Guia Fc",
-                    "away": "Cf Os Armacenenses",
-                    "date": "8 fev",
-                    "time": "11:00",
-                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
                 {
                     "home": "Cdr Quarteirense",
                     "away": "Fc Ferreiras",
@@ -2320,6 +2311,15 @@
                     "awayScore": null
                 },
                 {
+                    "home": "Guia Fc",
+                    "away": "Cf Os Armacenenses",
+                    "date": "8 fev",
+                    "time": "11:00",
+                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Internacional Ca",
                     "away": "A Indicar",
                     "date": "8 fev",
@@ -2332,6 +2332,50 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Sr Almancilense",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 12,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Fc Ferreiras",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Js Campinense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 4,
+                    "team": "Cdr Quarteirense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 5,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -2342,7 +2386,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
+                    "position": 5,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -2353,51 +2397,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Fc Ferreiras",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Internacional Ca",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Js Campinense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Louletano Dc",
                     "played": 0,
                     "wins": 0,
@@ -2408,25 +2408,25 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Sr Almancilense",
-                    "played": 0,
+                    "position": 8,
+                    "team": "Internacional Ca",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
                     "position": 9,
-                    "team": "Cdr Quarteirense",
-                    "played": 0,
+                    "team": "Guia Fc",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 12,
                     "points": 0
                 }
             ]
@@ -2435,6 +2435,24 @@
             "index": 18,
             "fixtureId": "607604",
             "matches": [
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Louletano Dc",
+                    "date": "15 fev",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "A Indicar",
+                    "away": "Guia Fc",
+                    "date": "15 fev",
+                    "time": "11:00",
+                    "stadium": "A Indicar",
+                    "homeScore": null,
+                    "awayScore": null
+                },
                 {
                     "home": "Fc Ferreiras",
                     "away": "Js Campinense",
@@ -2452,29 +2470,55 @@
                     "stadium": "Estadio Municipal De Almancil",
                     "homeScore": null,
                     "awayScore": null
-                },
-                {
-                    "home": "A Indicar",
-                    "away": "Guia Fc",
-                    "date": "15 fev",
-                    "time": "11:00",
-                    "stadium": "A Indicar",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Louletano Dc",
-                    "date": "15 fev",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
+                    "team": "Sr Almancilense",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 12,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Fc Ferreiras",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Cdr Quarteirense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 3,
+                    "team": "Js Campinense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 2,
+                    "points": 1
+                },
+                {
+                    "position": 5,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -2485,29 +2529,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Ac Salir (DS)",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Cdr Quarteirense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -2518,51 +2540,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Fc Ferreiras",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Internacional Ca",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Js Campinense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Louletano Dc",
                     "played": 0,
                     "wins": 0,
@@ -2570,6 +2548,28 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
+                    "points": 0
+                },
+                {
+                    "position": 8,
+                    "team": "Internacional Ca",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 5,
+                    "points": 0
+                },
+                {
+                    "position": 9,
+                    "team": "Guia Fc",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 12,
                     "points": 0
                 }
             ]
