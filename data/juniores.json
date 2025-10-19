@@ -240,25 +240,36 @@
                 {
                     "home": "Cf Esperança Lagos",
                     "away": "Mexilhoeira Grande Fc",
-                    "date": "19 out",
-                    "time": "15:00",
+                    "date": "0 - 0                            \r\n                \r\n                    19 out",
+                    "time": "",
                     "stadium": "Estádio Municipal De Lagos N.º 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 0,
+                    "awayScore": 0
                 },
                 {
                     "home": "Cd Odiáxere",
                     "away": "Silves Fc",
-                    "date": "19 out",
-                    "time": "15:00",
+                    "date": "6 - 0                            \r\n                \r\n                    19 out",
+                    "time": "",
                     "stadium": "Campo Eiras",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 6,
+                    "awayScore": 0
                 }
             ],
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cd Odiáxere",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 2,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 4,
+                    "points": 5
+                },
+                {
+                    "position": 2,
                     "team": "Gd Lagoa",
                     "played": 2,
                     "wins": 1,
@@ -269,7 +280,7 @@
                     "points": 4
                 },
                 {
-                    "position": 2,
+                    "position": 3,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 1,
@@ -280,29 +291,40 @@
                     "points": 4
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 3,
-                    "goalsAgainst": 7,
+                    "goalsAgainst": 13,
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cd Odiáxere",
+                    "position": 5,
+                    "team": "Mexilhoeira Grande Fc",
                     "played": 2,
                     "wins": 0,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 4,
-                    "goalsAgainst": 4,
-                    "points": 2
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 5,
+                    "points": 1
                 },
                 {
-                    "position": 5,
+                    "position": 6,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
+                    "points": 1
+                },
+                {
+                    "position": 7,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -310,28 +332,6 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 6,
-                    "team": "Cf Esperança Lagos",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 3,
-                    "points": 0
-                },
-                {
-                    "position": 6,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 5,
                     "points": 0
                 }
             ]
@@ -371,6 +371,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cd Odiáxere",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 2,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 4,
+                    "points": 5
+                },
+                {
+                    "position": 2,
                     "team": "Gd Lagoa",
                     "played": 2,
                     "wins": 1,
@@ -381,7 +392,7 @@
                     "points": 4
                 },
                 {
-                    "position": 2,
+                    "position": 3,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 1,
@@ -392,29 +403,40 @@
                     "points": 4
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 3,
-                    "goalsAgainst": 7,
+                    "goalsAgainst": 13,
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cd Odiáxere",
+                    "position": 5,
+                    "team": "Cf Esperança Lagos",
                     "played": 2,
                     "wins": 0,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 4,
-                    "goalsAgainst": 4,
-                    "points": 2
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
+                    "points": 1
                 },
                 {
-                    "position": 5,
+                    "position": 6,
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 5,
+                    "points": 1
+                },
+                {
+                    "position": 7,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -422,28 +444,6 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 6,
-                    "team": "Cf Esperança Lagos",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 3,
-                    "points": 0
-                },
-                {
-                    "position": 7,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 5,
                     "points": 0
                 }
             ]
@@ -483,6 +483,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cd Odiáxere",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 2,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 4,
+                    "points": 5
+                },
+                {
+                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 1,
@@ -493,7 +504,7 @@
                     "points": 4
                 },
                 {
-                    "position": 2,
+                    "position": 3,
                     "team": "Gd Lagoa",
                     "played": 2,
                     "wins": 1,
@@ -504,29 +515,40 @@
                     "points": 4
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 3,
-                    "goalsAgainst": 7,
+                    "goalsAgainst": 13,
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cd Odiáxere",
+                    "position": 5,
+                    "team": "Cf Esperança Lagos",
                     "played": 2,
                     "wins": 0,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 4,
-                    "goalsAgainst": 4,
-                    "points": 2
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
+                    "points": 1
                 },
                 {
-                    "position": 5,
+                    "position": 6,
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 5,
+                    "points": 1
+                },
+                {
+                    "position": 7,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -534,28 +556,6 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 6,
-                    "team": "Cf Esperança Lagos",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 3,
-                    "points": 0
-                },
-                {
-                    "position": 7,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 5,
                     "points": 0
                 }
             ]
@@ -595,6 +595,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cd Odiáxere",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 2,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 4,
+                    "points": 5
+                },
+                {
+                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 1,
@@ -605,7 +616,7 @@
                     "points": 4
                 },
                 {
-                    "position": 2,
+                    "position": 3,
                     "team": "Gd Lagoa",
                     "played": 2,
                     "wins": 1,
@@ -616,29 +627,40 @@
                     "points": 4
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 3,
-                    "goalsAgainst": 7,
+                    "goalsAgainst": 13,
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cd Odiáxere",
+                    "position": 5,
+                    "team": "Cf Esperança Lagos",
                     "played": 2,
                     "wins": 0,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 4,
-                    "goalsAgainst": 4,
-                    "points": 2
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
+                    "points": 1
                 },
                 {
-                    "position": 5,
+                    "position": 6,
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 5,
+                    "points": 1
+                },
+                {
+                    "position": 7,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -646,28 +668,6 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 6,
-                    "team": "Cf Esperança Lagos",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 3,
-                    "points": 0
-                },
-                {
-                    "position": 7,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 5,
                     "points": 0
                 }
             ]
@@ -707,6 +707,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cd Odiáxere",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 2,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 4,
+                    "points": 5
+                },
+                {
+                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 1,
@@ -717,7 +728,7 @@
                     "points": 4
                 },
                 {
-                    "position": 2,
+                    "position": 3,
                     "team": "Gd Lagoa",
                     "played": 2,
                     "wins": 1,
@@ -728,29 +739,40 @@
                     "points": 4
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 3,
-                    "goalsAgainst": 7,
+                    "goalsAgainst": 13,
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cd Odiáxere",
+                    "position": 5,
+                    "team": "Cf Esperança Lagos",
                     "played": 2,
                     "wins": 0,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 4,
-                    "goalsAgainst": 4,
-                    "points": 2
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
+                    "points": 1
                 },
                 {
-                    "position": 5,
+                    "position": 6,
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 5,
+                    "points": 1
+                },
+                {
+                    "position": 7,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -758,28 +780,6 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 6,
-                    "team": "Cf Esperança Lagos",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 3,
-                    "points": 0
-                },
-                {
-                    "position": 7,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 5,
                     "points": 0
                 }
             ]
@@ -819,6 +819,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cd Odiáxere",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 2,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 4,
+                    "points": 5
+                },
+                {
+                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 1,
@@ -829,7 +840,7 @@
                     "points": 4
                 },
                 {
-                    "position": 2,
+                    "position": 3,
                     "team": "Gd Lagoa",
                     "played": 2,
                     "wins": 1,
@@ -840,29 +851,40 @@
                     "points": 4
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 3,
-                    "goalsAgainst": 7,
+                    "goalsAgainst": 13,
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cd Odiáxere",
+                    "position": 5,
+                    "team": "Cf Esperança Lagos",
                     "played": 2,
                     "wins": 0,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 4,
-                    "goalsAgainst": 4,
-                    "points": 2
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
+                    "points": 1
                 },
                 {
-                    "position": 5,
+                    "position": 6,
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 5,
+                    "points": 1
+                },
+                {
+                    "position": 7,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -870,28 +892,6 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 6,
-                    "team": "Cf Esperança Lagos",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 3,
-                    "points": 0
-                },
-                {
-                    "position": 7,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 5,
                     "points": 0
                 }
             ]
@@ -931,6 +931,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cd Odiáxere",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 2,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 4,
+                    "points": 5
+                },
+                {
+                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 1,
@@ -941,7 +952,7 @@
                     "points": 4
                 },
                 {
-                    "position": 2,
+                    "position": 3,
                     "team": "Gd Lagoa",
                     "played": 2,
                     "wins": 1,
@@ -952,29 +963,40 @@
                     "points": 4
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 3,
-                    "goalsAgainst": 7,
+                    "goalsAgainst": 13,
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cd Odiáxere",
+                    "position": 5,
+                    "team": "Mexilhoeira Grande Fc",
                     "played": 2,
                     "wins": 0,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 4,
-                    "goalsAgainst": 4,
-                    "points": 2
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 5,
+                    "points": 1
                 },
                 {
-                    "position": 5,
+                    "position": 6,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
+                    "points": 1
+                },
+                {
+                    "position": 7,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -982,28 +1004,6 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 6,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 5,
-                    "points": 0
-                },
-                {
-                    "position": 7,
-                    "team": "Cf Esperança Lagos",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 3,
                     "points": 0
                 }
             ]
@@ -1043,6 +1043,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cd Odiáxere",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 2,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 4,
+                    "points": 5
+                },
+                {
+                    "position": 2,
                     "team": "Gd Lagoa",
                     "played": 2,
                     "wins": 1,
@@ -1053,7 +1064,7 @@
                     "points": 4
                 },
                 {
-                    "position": 2,
+                    "position": 3,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 1,
@@ -1064,29 +1075,40 @@
                     "points": 4
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 3,
-                    "goalsAgainst": 7,
+                    "goalsAgainst": 13,
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cd Odiáxere",
+                    "position": 5,
+                    "team": "Mexilhoeira Grande Fc",
                     "played": 2,
                     "wins": 0,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 4,
-                    "goalsAgainst": 4,
-                    "points": 2
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 5,
+                    "points": 1
                 },
                 {
-                    "position": 5,
+                    "position": 6,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
+                    "points": 1
+                },
+                {
+                    "position": 7,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -1094,28 +1116,6 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 6,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 5,
-                    "points": 0
-                },
-                {
-                    "position": 7,
-                    "team": "Cf Esperança Lagos",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 3,
                     "points": 0
                 }
             ]
@@ -1155,6 +1155,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cd Odiáxere",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 2,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 4,
+                    "points": 5
+                },
+                {
+                    "position": 2,
                     "team": "Gd Lagoa",
                     "played": 2,
                     "wins": 1,
@@ -1165,7 +1176,7 @@
                     "points": 4
                 },
                 {
-                    "position": 2,
+                    "position": 3,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 1,
@@ -1176,29 +1187,40 @@
                     "points": 4
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 3,
-                    "goalsAgainst": 7,
+                    "goalsAgainst": 13,
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cd Odiáxere",
+                    "position": 5,
+                    "team": "Cf Esperança Lagos",
                     "played": 2,
                     "wins": 0,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 4,
-                    "goalsAgainst": 4,
-                    "points": 2
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
+                    "points": 1
                 },
                 {
-                    "position": 5,
+                    "position": 6,
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 5,
+                    "points": 1
+                },
+                {
+                    "position": 7,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -1206,28 +1228,6 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 6,
-                    "team": "Cf Esperança Lagos",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 3,
-                    "points": 0
-                },
-                {
-                    "position": 7,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 5,
                     "points": 0
                 }
             ]
@@ -1267,6 +1267,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cd Odiáxere",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 2,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 4,
+                    "points": 5
+                },
+                {
+                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 1,
@@ -1277,7 +1288,7 @@
                     "points": 4
                 },
                 {
-                    "position": 2,
+                    "position": 3,
                     "team": "Gd Lagoa",
                     "played": 2,
                     "wins": 1,
@@ -1288,29 +1299,40 @@
                     "points": 4
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 3,
-                    "goalsAgainst": 7,
+                    "goalsAgainst": 13,
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cd Odiáxere",
+                    "position": 5,
+                    "team": "Cf Esperança Lagos",
                     "played": 2,
                     "wins": 0,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 4,
-                    "goalsAgainst": 4,
-                    "points": 2
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
+                    "points": 1
                 },
                 {
-                    "position": 5,
+                    "position": 6,
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 5,
+                    "points": 1
+                },
+                {
+                    "position": 7,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -1318,28 +1340,6 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 6,
-                    "team": "Cf Esperança Lagos",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 3,
-                    "points": 0
-                },
-                {
-                    "position": 7,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 5,
                     "points": 0
                 }
             ]
@@ -1379,6 +1379,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cd Odiáxere",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 2,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 4,
+                    "points": 5
+                },
+                {
+                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 1,
@@ -1389,7 +1400,7 @@
                     "points": 4
                 },
                 {
-                    "position": 2,
+                    "position": 3,
                     "team": "Gd Lagoa",
                     "played": 2,
                     "wins": 1,
@@ -1400,29 +1411,40 @@
                     "points": 4
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 3,
-                    "goalsAgainst": 7,
+                    "goalsAgainst": 13,
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cd Odiáxere",
+                    "position": 5,
+                    "team": "Cf Esperança Lagos",
                     "played": 2,
                     "wins": 0,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 4,
-                    "goalsAgainst": 4,
-                    "points": 2
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
+                    "points": 1
                 },
                 {
-                    "position": 5,
+                    "position": 6,
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 5,
+                    "points": 1
+                },
+                {
+                    "position": 7,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -1430,28 +1452,6 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 6,
-                    "team": "Cf Esperança Lagos",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 3,
-                    "points": 0
-                },
-                {
-                    "position": 7,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 5,
                     "points": 0
                 }
             ]
@@ -1491,6 +1491,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cd Odiáxere",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 2,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 4,
+                    "points": 5
+                },
+                {
+                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 1,
@@ -1501,7 +1512,7 @@
                     "points": 4
                 },
                 {
-                    "position": 2,
+                    "position": 3,
                     "team": "Gd Lagoa",
                     "played": 2,
                     "wins": 1,
@@ -1512,29 +1523,40 @@
                     "points": 4
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 3,
-                    "goalsAgainst": 7,
+                    "goalsAgainst": 13,
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cd Odiáxere",
+                    "position": 5,
+                    "team": "Cf Esperança Lagos",
                     "played": 2,
                     "wins": 0,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 4,
-                    "goalsAgainst": 4,
-                    "points": 2
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
+                    "points": 1
                 },
                 {
-                    "position": 5,
+                    "position": 6,
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 5,
+                    "points": 1
+                },
+                {
+                    "position": 7,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -1542,28 +1564,6 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 6,
-                    "team": "Cf Esperança Lagos",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 3,
-                    "points": 0
-                },
-                {
-                    "position": 7,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 5,
                     "points": 0
                 }
             ]
