@@ -5,22 +5,22 @@
             "fixtureId": "616158",
             "matches": [
                 {
-                    "home": "Portimonense Sc",
-                    "away": "Ud Messinense",
-                    "date": "25 out",
-                    "time": "09:00",
-                    "stadium": "Campo Major David Neto 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Gd Lagoa",
                     "away": "Casa Benfica Albufeira",
                     "date": "25 out",
-                    "time": "09:00",
+                    "time": "",
                     "stadium": "Campo De Futebol Sete - Espamol",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 6,
+                    "awayScore": 2
+                },
+                {
+                    "home": "Portimonense Sc",
+                    "away": "Ud Messinense",
+                    "date": "25 out",
+                    "time": "",
+                    "stadium": "Campo Major David Neto 2",
+                    "homeScore": 15,
+                    "awayScore": 1
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -35,26 +35,48 @@
                     "home": "Guia Fc",
                     "away": "Padernense Clube",
                     "date": "25 out",
-                    "time": "12:00",
+                    "time": "",
                     "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 5,
+                    "awayScore": 3
                 }
             ],
             "classification": [
                 {
                     "position": 1,
-                    "team": "Casa Benfica Albufeira",
-                    "played": 0,
-                    "wins": 0,
+                    "team": "Portimonense Sc",
+                    "played": 1,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
+                    "goalsFor": 15,
+                    "goalsAgainst": 1,
+                    "points": 3
                 },
                 {
-                    "position": 1,
+                    "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 6,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Guia Fc",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 3,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -65,29 +87,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Gd Lagoa",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 4,
                     "team": "Imortal Dc",
                     "played": 0,
                     "wins": 0,
@@ -98,25 +98,25 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
+                    "position": 6,
                     "team": "Padernense Clube",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Portimonense Sc",
-                    "played": 0,
+                    "position": 7,
+                    "team": "Casa Benfica Albufeira",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 6,
                     "points": 0
                 }
             ]
@@ -165,17 +165,39 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Casa Benfica Albufeira",
-                    "played": 0,
-                    "wins": 0,
+                    "team": "Portimonense Sc",
+                    "played": 1,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
+                    "goalsFor": 15,
+                    "goalsAgainst": 1,
+                    "points": 3
                 },
                 {
-                    "position": 1,
+                    "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 6,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Guia Fc",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 3,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -186,29 +208,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Gd Lagoa",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 4,
                     "team": "Imortal Dc",
                     "played": 0,
                     "wins": 0,
@@ -219,25 +219,25 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
+                    "position": 6,
                     "team": "Padernense Clube",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Portimonense Sc",
-                    "played": 0,
+                    "position": 7,
+                    "team": "Casa Benfica Albufeira",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 6,
                     "points": 0
                 }
             ]
@@ -286,17 +286,39 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Casa Benfica Albufeira",
-                    "played": 0,
-                    "wins": 0,
+                    "team": "Portimonense Sc",
+                    "played": 1,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
+                    "goalsFor": 15,
+                    "goalsAgainst": 1,
+                    "points": 3
                 },
                 {
-                    "position": 1,
+                    "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 6,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Guia Fc",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 3,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -307,29 +329,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Gd Lagoa",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 4,
                     "team": "Imortal Dc",
                     "played": 0,
                     "wins": 0,
@@ -340,25 +340,25 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
+                    "position": 6,
                     "team": "Padernense Clube",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Portimonense Sc",
-                    "played": 0,
+                    "position": 7,
+                    "team": "Casa Benfica Albufeira",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 6,
                     "points": 0
                 }
             ]
@@ -407,17 +407,39 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Casa Benfica Albufeira",
-                    "played": 0,
-                    "wins": 0,
+                    "team": "Portimonense Sc",
+                    "played": 1,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
+                    "goalsFor": 15,
+                    "goalsAgainst": 1,
+                    "points": 3
                 },
                 {
-                    "position": 1,
+                    "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 6,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Guia Fc",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 3,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -428,29 +450,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Gd Lagoa",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 4,
                     "team": "Imortal Dc",
                     "played": 0,
                     "wins": 0,
@@ -461,25 +461,25 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
+                    "position": 6,
                     "team": "Padernense Clube",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Portimonense Sc",
-                    "played": 0,
+                    "position": 7,
+                    "team": "Casa Benfica Albufeira",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 6,
                     "points": 0
                 }
             ]
@@ -528,17 +528,39 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Casa Benfica Albufeira",
-                    "played": 0,
-                    "wins": 0,
+                    "team": "Portimonense Sc",
+                    "played": 1,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
+                    "goalsFor": 15,
+                    "goalsAgainst": 1,
+                    "points": 3
                 },
                 {
-                    "position": 1,
+                    "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 6,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Guia Fc",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 3,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -549,29 +571,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Gd Lagoa",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 4,
                     "team": "Imortal Dc",
                     "played": 0,
                     "wins": 0,
@@ -582,25 +582,25 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
+                    "position": 6,
                     "team": "Padernense Clube",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Portimonense Sc",
-                    "played": 0,
+                    "position": 7,
+                    "team": "Casa Benfica Albufeira",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 6,
                     "points": 0
                 }
             ]
@@ -649,17 +649,39 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Casa Benfica Albufeira",
-                    "played": 0,
-                    "wins": 0,
+                    "team": "Portimonense Sc",
+                    "played": 1,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
+                    "goalsFor": 15,
+                    "goalsAgainst": 1,
+                    "points": 3
                 },
                 {
-                    "position": 1,
+                    "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 6,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Guia Fc",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 3,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -670,29 +692,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Gd Lagoa",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 4,
                     "team": "Imortal Dc",
                     "played": 0,
                     "wins": 0,
@@ -703,25 +703,25 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
+                    "position": 6,
                     "team": "Padernense Clube",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Portimonense Sc",
-                    "played": 0,
+                    "position": 7,
+                    "team": "Casa Benfica Albufeira",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 6,
                     "points": 0
                 }
             ]
@@ -770,17 +770,39 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Casa Benfica Albufeira",
-                    "played": 0,
-                    "wins": 0,
+                    "team": "Portimonense Sc",
+                    "played": 1,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
+                    "goalsFor": 15,
+                    "goalsAgainst": 1,
+                    "points": 3
                 },
                 {
-                    "position": 1,
+                    "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 6,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Guia Fc",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 3,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -791,29 +813,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Gd Lagoa",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 4,
                     "team": "Imortal Dc",
                     "played": 0,
                     "wins": 0,
@@ -824,25 +824,25 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
+                    "position": 6,
                     "team": "Padernense Clube",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Portimonense Sc",
-                    "played": 0,
+                    "position": 7,
+                    "team": "Casa Benfica Albufeira",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 6,
                     "points": 0
                 }
             ]
@@ -891,17 +891,39 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Casa Benfica Albufeira",
-                    "played": 0,
-                    "wins": 0,
+                    "team": "Portimonense Sc",
+                    "played": 1,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
+                    "goalsFor": 15,
+                    "goalsAgainst": 1,
+                    "points": 3
                 },
                 {
-                    "position": 1,
+                    "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 6,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Guia Fc",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 3,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -912,29 +934,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Gd Lagoa",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 4,
                     "team": "Imortal Dc",
                     "played": 0,
                     "wins": 0,
@@ -945,25 +945,25 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
+                    "position": 6,
                     "team": "Padernense Clube",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Portimonense Sc",
-                    "played": 0,
+                    "position": 7,
+                    "team": "Casa Benfica Albufeira",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 6,
                     "points": 0
                 }
             ]
@@ -1012,17 +1012,39 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Casa Benfica Albufeira",
-                    "played": 0,
-                    "wins": 0,
+                    "team": "Portimonense Sc",
+                    "played": 1,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
+                    "goalsFor": 15,
+                    "goalsAgainst": 1,
+                    "points": 3
                 },
                 {
-                    "position": 1,
+                    "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 6,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Guia Fc",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 3,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -1033,29 +1055,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Gd Lagoa",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 4,
                     "team": "Imortal Dc",
                     "played": 0,
                     "wins": 0,
@@ -1066,25 +1066,25 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
+                    "position": 6,
                     "team": "Padernense Clube",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Portimonense Sc",
-                    "played": 0,
+                    "position": 7,
+                    "team": "Casa Benfica Albufeira",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 6,
                     "points": 0
                 }
             ]
@@ -1133,17 +1133,39 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Casa Benfica Albufeira",
-                    "played": 0,
-                    "wins": 0,
+                    "team": "Portimonense Sc",
+                    "played": 1,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
+                    "goalsFor": 15,
+                    "goalsAgainst": 1,
+                    "points": 3
                 },
                 {
-                    "position": 1,
+                    "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 6,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Guia Fc",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 3,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -1154,29 +1176,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Gd Lagoa",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 4,
                     "team": "Imortal Dc",
                     "played": 0,
                     "wins": 0,
@@ -1187,25 +1187,25 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
+                    "position": 6,
                     "team": "Padernense Clube",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Portimonense Sc",
-                    "played": 0,
+                    "position": 7,
+                    "team": "Casa Benfica Albufeira",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 6,
                     "points": 0
                 }
             ]
@@ -1254,17 +1254,39 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Casa Benfica Albufeira",
-                    "played": 0,
-                    "wins": 0,
+                    "team": "Portimonense Sc",
+                    "played": 1,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
+                    "goalsFor": 15,
+                    "goalsAgainst": 1,
+                    "points": 3
                 },
                 {
-                    "position": 1,
+                    "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 6,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Guia Fc",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 3,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -1275,29 +1297,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Gd Lagoa",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 4,
                     "team": "Imortal Dc",
                     "played": 0,
                     "wins": 0,
@@ -1308,25 +1308,25 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
+                    "position": 6,
                     "team": "Padernense Clube",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Portimonense Sc",
-                    "played": 0,
+                    "position": 7,
+                    "team": "Casa Benfica Albufeira",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 6,
                     "points": 0
                 }
             ]
@@ -1375,17 +1375,39 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Casa Benfica Albufeira",
-                    "played": 0,
-                    "wins": 0,
+                    "team": "Portimonense Sc",
+                    "played": 1,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
+                    "goalsFor": 15,
+                    "goalsAgainst": 1,
+                    "points": 3
                 },
                 {
-                    "position": 1,
+                    "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 6,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Guia Fc",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 3,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -1396,29 +1418,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Gd Lagoa",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 4,
                     "team": "Imortal Dc",
                     "played": 0,
                     "wins": 0,
@@ -1429,25 +1429,25 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
+                    "position": 6,
                     "team": "Padernense Clube",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Portimonense Sc",
-                    "played": 0,
+                    "position": 7,
+                    "team": "Casa Benfica Albufeira",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 6,
                     "points": 0
                 }
             ]
@@ -1496,17 +1496,39 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Casa Benfica Albufeira",
-                    "played": 0,
-                    "wins": 0,
+                    "team": "Portimonense Sc",
+                    "played": 1,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
+                    "goalsFor": 15,
+                    "goalsAgainst": 1,
+                    "points": 3
                 },
                 {
-                    "position": 1,
+                    "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 6,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Guia Fc",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 3,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -1517,29 +1539,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Gd Lagoa",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 4,
                     "team": "Imortal Dc",
                     "played": 0,
                     "wins": 0,
@@ -1550,25 +1550,25 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
+                    "position": 6,
                     "team": "Padernense Clube",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Portimonense Sc",
-                    "played": 0,
+                    "position": 7,
+                    "team": "Casa Benfica Albufeira",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 6,
                     "points": 0
                 }
             ]
@@ -1617,17 +1617,39 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Casa Benfica Albufeira",
-                    "played": 0,
-                    "wins": 0,
+                    "team": "Portimonense Sc",
+                    "played": 1,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
+                    "goalsFor": 15,
+                    "goalsAgainst": 1,
+                    "points": 3
                 },
                 {
-                    "position": 1,
+                    "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 6,
+                    "goalsAgainst": 2,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Guia Fc",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 3,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -1638,29 +1660,7 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Gd Lagoa",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 4,
                     "team": "Imortal Dc",
                     "played": 0,
                     "wins": 0,
@@ -1671,25 +1671,25 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
+                    "position": 6,
                     "team": "Padernense Clube",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Portimonense Sc",
-                    "played": 0,
+                    "position": 7,
+                    "team": "Casa Benfica Albufeira",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 6,
                     "points": 0
                 }
             ]

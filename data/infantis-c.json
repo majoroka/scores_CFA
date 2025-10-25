@@ -7,20 +7,11 @@
                 {
                     "home": "Guia Fc",
                     "away": "Cf Os Armacenenses",
-                    "date": "25 out",
-                    "time": "10:30",
+                    "date": "0 - 3                            \r\n                \r\n                    25 out",
+                    "time": "",
                     "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Silves Fc",
-                    "away": "Gd Lagoa",
-                    "date": "25 out",
-                    "time": "11:00",
-                    "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 0,
+                    "awayScore": 3
                 },
                 {
                     "home": "A Indicar",
@@ -30,11 +21,42 @@
                     "stadium": "A Indicar",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Silves Fc",
+                    "away": "Gd Lagoa",
+                    "date": "3 - 5                            \r\n                \r\n                    25 out",
+                    "time": "",
+                    "stadium": "Estádio Dr. Francisco Vieira",
+                    "homeScore": 3,
+                    "awayScore": 5
                 }
             ],
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cf Os Armacenenses",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 3,
+                    "points": 3
+                },
+                {
+                    "position": 3,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -45,8 +67,8 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Cf Os Armacenenses",
+                    "position": 3,
+                    "team": "Ud Messinense",
                     "played": 0,
                     "wins": 0,
                     "draws": 0,
@@ -56,36 +78,14 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Gd Lagoa",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Silves Fc",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 5,
                     "points": 0
                 }
             ]
@@ -125,6 +125,28 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cf Os Armacenenses",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 3,
+                    "points": 3
+                },
+                {
+                    "position": 3,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -135,8 +157,8 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Cf Os Armacenenses",
+                    "position": 3,
+                    "team": "Ud Messinense",
                     "played": 0,
                     "wins": 0,
                     "draws": 0,
@@ -146,36 +168,14 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Gd Lagoa",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Silves Fc",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 5,
                     "points": 0
                 }
             ]
@@ -215,6 +215,28 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cf Os Armacenenses",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 3,
+                    "points": 3
+                },
+                {
+                    "position": 3,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -225,8 +247,8 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Cf Os Armacenenses",
+                    "position": 3,
+                    "team": "Ud Messinense",
                     "played": 0,
                     "wins": 0,
                     "draws": 0,
@@ -236,36 +258,14 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Gd Lagoa",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Silves Fc",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 5,
                     "points": 0
                 }
             ]
@@ -305,6 +305,28 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cf Os Armacenenses",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 3,
+                    "points": 3
+                },
+                {
+                    "position": 3,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -315,8 +337,8 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Cf Os Armacenenses",
+                    "position": 3,
+                    "team": "Ud Messinense",
                     "played": 0,
                     "wins": 0,
                     "draws": 0,
@@ -326,36 +348,14 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Gd Lagoa",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Silves Fc",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 5,
                     "points": 0
                 }
             ]
@@ -395,6 +395,28 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cf Os Armacenenses",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 3,
+                    "points": 3
+                },
+                {
+                    "position": 3,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -405,8 +427,8 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Cf Os Armacenenses",
+                    "position": 3,
+                    "team": "Ud Messinense",
                     "played": 0,
                     "wins": 0,
                     "draws": 0,
@@ -416,36 +438,14 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Gd Lagoa",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Silves Fc",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 5,
                     "points": 0
                 }
             ]
@@ -485,6 +485,28 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cf Os Armacenenses",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 3,
+                    "points": 3
+                },
+                {
+                    "position": 3,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -495,8 +517,8 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Cf Os Armacenenses",
+                    "position": 3,
+                    "team": "Ud Messinense",
                     "played": 0,
                     "wins": 0,
                     "draws": 0,
@@ -506,36 +528,14 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Gd Lagoa",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Silves Fc",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 5,
                     "points": 0
                 }
             ]
@@ -575,6 +575,28 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cf Os Armacenenses",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 3,
+                    "points": 3
+                },
+                {
+                    "position": 3,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -585,8 +607,8 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Cf Os Armacenenses",
+                    "position": 3,
+                    "team": "Ud Messinense",
                     "played": 0,
                     "wins": 0,
                     "draws": 0,
@@ -596,36 +618,14 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Gd Lagoa",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Silves Fc",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 5,
                     "points": 0
                 }
             ]
@@ -665,6 +665,28 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cf Os Armacenenses",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 3,
+                    "points": 3
+                },
+                {
+                    "position": 3,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -675,8 +697,8 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Cf Os Armacenenses",
+                    "position": 3,
+                    "team": "Ud Messinense",
                     "played": 0,
                     "wins": 0,
                     "draws": 0,
@@ -686,36 +708,14 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Gd Lagoa",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Silves Fc",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 5,
                     "points": 0
                 }
             ]
@@ -755,6 +755,28 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cf Os Armacenenses",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 3,
+                    "points": 3
+                },
+                {
+                    "position": 3,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -765,8 +787,8 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Cf Os Armacenenses",
+                    "position": 3,
+                    "team": "Ud Messinense",
                     "played": 0,
                     "wins": 0,
                     "draws": 0,
@@ -776,36 +798,14 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Gd Lagoa",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Silves Fc",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 5,
                     "points": 0
                 }
             ]
@@ -845,6 +845,28 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cf Os Armacenenses",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 3,
+                    "points": 3
+                },
+                {
+                    "position": 3,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -855,8 +877,8 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Cf Os Armacenenses",
+                    "position": 3,
+                    "team": "Ud Messinense",
                     "played": 0,
                     "wins": 0,
                     "draws": 0,
@@ -866,36 +888,14 @@
                     "points": 0
                 },
                 {
-                    "position": 1,
-                    "team": "Gd Lagoa",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
-                    "team": "Guia Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 1,
+                    "position": 5,
                     "team": "Silves Fc",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 5,
                     "points": 0
                 }
             ]

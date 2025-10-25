@@ -97,11 +97,20 @@
                 {
                     "home": "Vilamoura Saa",
                     "away": "Imortal Dc",
-                    "date": "25 out",
-                    "time": "09:30",
+                    "date": "10 - 0                            \r\n                \r\n                    25 out",
+                    "time": "",
                     "stadium": "Campo Montes Elois",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 10,
+                    "awayScore": 0
+                },
+                {
+                    "home": "Mexilhoeira Grande Fc",
+                    "away": "Cf Os Armacenenses",
+                    "date": "4 - 4                            \r\n                \r\n                    25 out",
+                    "time": "",
+                    "stadium": "Campo Municipal Mexilhoeira Grande",
+                    "homeScore": 4,
+                    "awayScore": 4
                 },
                 {
                     "home": "Aa Belavista",
@@ -111,28 +120,19 @@
                     "stadium": "Estádio Municipal Da Bela Vista",
                     "homeScore": null,
                     "awayScore": null
-                },
-                {
-                    "home": "Mexilhoeira Grande Fc",
-                    "away": "Cf Os Armacenenses",
-                    "date": "25 out",
-                    "time": "11:00",
-                    "stadium": "Campo Municipal Mexilhoeira Grande",
-                    "homeScore": null,
-                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Vilamoura Saa",
-                    "played": 1,
-                    "wins": 1,
+                    "played": 2,
+                    "wins": 2,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 4,
+                    "goalsFor": 14,
                     "goalsAgainst": 1,
-                    "points": 3
+                    "points": 6
                 },
                 {
                     "position": 2,
@@ -147,6 +147,28 @@
                 },
                 {
                     "position": 3,
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 4,
+                    "points": 1
+                },
+                {
+                    "position": 4,
+                    "team": "Cf Os Armacenenses",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 5,
+                    "goalsAgainst": 8,
+                    "points": 1
+                },
+                {
+                    "position": 5,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -154,28 +176,6 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 3,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 5,
-                    "team": "Imortal Dc",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 2,
                     "points": 0
                 }
             ]
@@ -216,13 +216,13 @@
                 {
                     "position": 1,
                     "team": "Vilamoura Saa",
-                    "played": 1,
-                    "wins": 1,
+                    "played": 2,
+                    "wins": 2,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 4,
+                    "goalsFor": 14,
                     "goalsAgainst": 1,
-                    "points": 3
+                    "points": 6
                 },
                 {
                     "position": 2,
@@ -237,6 +237,28 @@
                 },
                 {
                     "position": 3,
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 4,
+                    "points": 1
+                },
+                {
+                    "position": 4,
+                    "team": "Cf Os Armacenenses",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 5,
+                    "goalsAgainst": 8,
+                    "points": 1
+                },
+                {
+                    "position": 5,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -244,28 +266,6 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 3,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 5,
-                    "team": "Imortal Dc",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 2,
                     "points": 0
                 }
             ]
@@ -306,13 +306,13 @@
                 {
                     "position": 1,
                     "team": "Vilamoura Saa",
-                    "played": 1,
-                    "wins": 1,
+                    "played": 2,
+                    "wins": 2,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 4,
+                    "goalsFor": 14,
                     "goalsAgainst": 1,
-                    "points": 3
+                    "points": 6
                 },
                 {
                     "position": 2,
@@ -327,6 +327,28 @@
                 },
                 {
                     "position": 3,
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 4,
+                    "points": 1
+                },
+                {
+                    "position": 4,
+                    "team": "Cf Os Armacenenses",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 5,
+                    "goalsAgainst": 8,
+                    "points": 1
+                },
+                {
+                    "position": 5,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -334,28 +356,6 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 3,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 5,
-                    "team": "Imortal Dc",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 2,
                     "points": 0
                 }
             ]
@@ -396,13 +396,13 @@
                 {
                     "position": 1,
                     "team": "Vilamoura Saa",
-                    "played": 1,
-                    "wins": 1,
+                    "played": 2,
+                    "wins": 2,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 4,
+                    "goalsFor": 14,
                     "goalsAgainst": 1,
-                    "points": 3
+                    "points": 6
                 },
                 {
                     "position": 2,
@@ -417,6 +417,28 @@
                 },
                 {
                     "position": 3,
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 4,
+                    "points": 1
+                },
+                {
+                    "position": 4,
+                    "team": "Cf Os Armacenenses",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 5,
+                    "goalsAgainst": 8,
+                    "points": 1
+                },
+                {
+                    "position": 5,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -424,28 +446,6 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 3,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 5,
-                    "team": "Imortal Dc",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 2,
                     "points": 0
                 }
             ]
@@ -486,13 +486,13 @@
                 {
                     "position": 1,
                     "team": "Vilamoura Saa",
-                    "played": 1,
-                    "wins": 1,
+                    "played": 2,
+                    "wins": 2,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 4,
+                    "goalsFor": 14,
                     "goalsAgainst": 1,
-                    "points": 3
+                    "points": 6
                 },
                 {
                     "position": 2,
@@ -507,6 +507,28 @@
                 },
                 {
                     "position": 3,
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 4,
+                    "points": 1
+                },
+                {
+                    "position": 4,
+                    "team": "Cf Os Armacenenses",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 5,
+                    "goalsAgainst": 8,
+                    "points": 1
+                },
+                {
+                    "position": 5,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -514,28 +536,6 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 3,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 5,
-                    "team": "Imortal Dc",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 2,
                     "points": 0
                 }
             ]
@@ -576,13 +576,13 @@
                 {
                     "position": 1,
                     "team": "Vilamoura Saa",
-                    "played": 1,
-                    "wins": 1,
+                    "played": 2,
+                    "wins": 2,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 4,
+                    "goalsFor": 14,
                     "goalsAgainst": 1,
-                    "points": 3
+                    "points": 6
                 },
                 {
                     "position": 2,
@@ -597,6 +597,28 @@
                 },
                 {
                     "position": 3,
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 4,
+                    "points": 1
+                },
+                {
+                    "position": 4,
+                    "team": "Cf Os Armacenenses",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 5,
+                    "goalsAgainst": 8,
+                    "points": 1
+                },
+                {
+                    "position": 5,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -604,28 +626,6 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 3,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 5,
-                    "team": "Imortal Dc",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 2,
                     "points": 0
                 }
             ]
@@ -666,13 +666,13 @@
                 {
                     "position": 1,
                     "team": "Vilamoura Saa",
-                    "played": 1,
-                    "wins": 1,
+                    "played": 2,
+                    "wins": 2,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 4,
+                    "goalsFor": 14,
                     "goalsAgainst": 1,
-                    "points": 3
+                    "points": 6
                 },
                 {
                     "position": 2,
@@ -687,6 +687,28 @@
                 },
                 {
                     "position": 3,
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 4,
+                    "points": 1
+                },
+                {
+                    "position": 4,
+                    "team": "Cf Os Armacenenses",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 5,
+                    "goalsAgainst": 8,
+                    "points": 1
+                },
+                {
+                    "position": 5,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -694,28 +716,6 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 3,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 5,
-                    "team": "Imortal Dc",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 2,
                     "points": 0
                 }
             ]
@@ -756,13 +756,13 @@
                 {
                     "position": 1,
                     "team": "Vilamoura Saa",
-                    "played": 1,
-                    "wins": 1,
+                    "played": 2,
+                    "wins": 2,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 4,
+                    "goalsFor": 14,
                     "goalsAgainst": 1,
-                    "points": 3
+                    "points": 6
                 },
                 {
                     "position": 2,
@@ -777,6 +777,28 @@
                 },
                 {
                     "position": 3,
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 4,
+                    "points": 1
+                },
+                {
+                    "position": 4,
+                    "team": "Cf Os Armacenenses",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 5,
+                    "goalsAgainst": 8,
+                    "points": 1
+                },
+                {
+                    "position": 5,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -784,28 +806,6 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 3,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 5,
-                    "team": "Imortal Dc",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 2,
                     "points": 0
                 }
             ]
@@ -846,13 +846,13 @@
                 {
                     "position": 1,
                     "team": "Vilamoura Saa",
-                    "played": 1,
-                    "wins": 1,
+                    "played": 2,
+                    "wins": 2,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 4,
+                    "goalsFor": 14,
                     "goalsAgainst": 1,
-                    "points": 3
+                    "points": 6
                 },
                 {
                     "position": 2,
@@ -867,6 +867,28 @@
                 },
                 {
                     "position": 3,
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 4,
+                    "points": 1
+                },
+                {
+                    "position": 4,
+                    "team": "Cf Os Armacenenses",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 5,
+                    "goalsAgainst": 8,
+                    "points": 1
+                },
+                {
+                    "position": 5,
                     "team": "A Indicar",
                     "played": 0,
                     "wins": 0,
@@ -874,28 +896,6 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 3,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 5,
-                    "team": "Imortal Dc",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 2,
                     "points": 0
                 }
             ]
