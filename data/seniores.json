@@ -737,6 +737,15 @@
             "fixtureId": "600934",
             "matches": [
                 {
+                    "home": "Ud Messinense",
+                    "away": "Quarteirense Sad",
+                    "date": "2 - 2                            \r\n                \r\n                    25 out",
+                    "time": "",
+                    "stadium": "Estádio Municipal Messines",
+                    "homeScore": 2,
+                    "awayScore": 2
+                },
+                {
                     "home": "Silves Fc",
                     "away": "Cu Culatrense",
                     "date": "4 - 2                            \r\n                \r\n                    25 out",
@@ -746,13 +755,31 @@
                     "awayScore": 2
                 },
                 {
-                    "home": "Ud Messinense",
-                    "away": "Quarteirense Sad",
-                    "date": "25 out",
-                    "time": "15:00",
-                    "stadium": "Estádio Municipal Messines",
-                    "homeScore": null,
-                    "awayScore": null
+                    "home": "Imortal Dc",
+                    "away": "Cf Esperança Lagos",
+                    "date": "1 - 0                            \r\n                \r\n                    25 out",
+                    "time": "",
+                    "stadium": "Estádio Municipal Albufeira",
+                    "homeScore": 1,
+                    "awayScore": 0
+                },
+                {
+                    "home": "Louletano Dc",
+                    "away": "Fc Ferreiras",
+                    "date": "0 - 2                            \r\n                \r\n                    25 out",
+                    "time": "",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": 0,
+                    "awayScore": 2
+                },
+                {
+                    "home": "Sc Olhanense",
+                    "away": "Cd Odiáxere",
+                    "date": "3 - 3                            \r\n                \r\n                    25 out",
+                    "time": "",
+                    "stadium": "Estádio José Arcanjo",
+                    "homeScore": 3,
+                    "awayScore": 3
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -762,60 +789,44 @@
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 3,
                     "awayScore": 2
-                },
-                {
-                    "home": "Louletano Dc",
-                    "away": "Fc Ferreiras",
-                    "date": "25 out",
-                    "time": "15:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Sc Olhanense",
-                    "away": "Cd Odiáxere",
-                    "date": "25 out",
-                    "time": "15:00",
-                    "stadium": "Estádio José Arcanjo",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Imortal Dc",
-                    "away": "Cf Esperança Lagos",
-                    "date": "25 out",
-                    "time": "15:00",
-                    "stadium": "Estádio Municipal Albufeira",
-                    "homeScore": null,
-                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Quarteirense Sad",
-                    "points": 12,
-                    "played": 4,
+                    "points": 13,
+                    "played": 5,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 1
+                    "goalsFor": 12,
+                    "goalsAgainst": 3
                 },
                 {
                     "position": 2,
                     "team": "Imortal Dc",
+                    "points": 12,
+                    "played": 5,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2
+                },
+                {
+                    "position": 3,
+                    "team": "Fc Ferreiras",
                     "points": 9,
                     "played": 4,
                     "wins": 3,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 10,
+                    "goalsFor": 9,
                     "goalsAgainst": 2
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
                     "points": 7,
                     "played": 4,
@@ -826,40 +837,40 @@
                     "goalsAgainst": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Louletano Dc",
                     "points": 7,
-                    "played": 4,
+                    "played": 5,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 8,
-                    "goalsAgainst": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Fc Ferreiras",
-                    "points": 6,
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 2
+                    "goalsAgainst": 9
                 },
                 {
                     "position": 6,
-                    "team": "Cf Esperança Lagos",
+                    "team": "Cd Odiáxere",
                     "points": 6,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 3,
-                    "losses": 0,
-                    "goalsFor": 6,
-                    "goalsAgainst": 5
+                    "losses": 1,
+                    "goalsFor": 12,
+                    "goalsAgainst": 12
                 },
                 {
                     "position": 7,
+                    "team": "Cf Esperança Lagos",
+                    "points": 6,
+                    "played": 5,
+                    "wins": 1,
+                    "draws": 3,
+                    "losses": 1,
+                    "goalsFor": 6,
+                    "goalsAgainst": 6
+                },
+                {
+                    "position": 8,
                     "team": "Cu Culatrense",
                     "points": 6,
                     "played": 5,
@@ -870,18 +881,18 @@
                     "goalsAgainst": 16
                 },
                 {
-                    "position": 8,
-                    "team": "Cd Odiáxere",
+                    "position": 9,
+                    "team": "Sc Olhanense",
                     "points": 5,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 9,
-                    "goalsAgainst": 9
+                    "losses": 2,
+                    "goalsFor": 11,
+                    "goalsAgainst": 13
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Cf Os Armacenenses",
                     "points": 4,
                     "played": 5,
@@ -892,7 +903,7 @@
                     "goalsAgainst": 13
                 },
                 {
-                    "position": 10,
+                    "position": 11,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 5,
@@ -901,17 +912,6 @@
                     "losses": 3,
                     "goalsFor": 8,
                     "goalsAgainst": 9
-                },
-                {
-                    "position": 11,
-                    "team": "Sc Olhanense",
-                    "points": 4,
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 10
                 }
             ]
         },
@@ -978,27 +978,38 @@
                 {
                     "position": 1,
                     "team": "Quarteirense Sad",
-                    "points": 12,
-                    "played": 4,
+                    "points": 13,
+                    "played": 5,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 1
+                    "goalsFor": 12,
+                    "goalsAgainst": 3
                 },
                 {
                     "position": 2,
                     "team": "Imortal Dc",
+                    "points": 12,
+                    "played": 5,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2
+                },
+                {
+                    "position": 3,
+                    "team": "Fc Ferreiras",
                     "points": 9,
                     "played": 4,
                     "wins": 3,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 10,
+                    "goalsFor": 9,
                     "goalsAgainst": 2
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
                     "points": 7,
                     "played": 4,
@@ -1009,40 +1020,40 @@
                     "goalsAgainst": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Louletano Dc",
                     "points": 7,
-                    "played": 4,
+                    "played": 5,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 8,
-                    "goalsAgainst": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Fc Ferreiras",
-                    "points": 6,
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 2
+                    "goalsAgainst": 9
                 },
                 {
                     "position": 6,
-                    "team": "Cf Esperança Lagos",
+                    "team": "Cd Odiáxere",
                     "points": 6,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 3,
-                    "losses": 0,
-                    "goalsFor": 6,
-                    "goalsAgainst": 5
+                    "losses": 1,
+                    "goalsFor": 12,
+                    "goalsAgainst": 12
                 },
                 {
                     "position": 7,
+                    "team": "Cf Esperança Lagos",
+                    "points": 6,
+                    "played": 5,
+                    "wins": 1,
+                    "draws": 3,
+                    "losses": 1,
+                    "goalsFor": 6,
+                    "goalsAgainst": 6
+                },
+                {
+                    "position": 8,
                     "team": "Cu Culatrense",
                     "points": 6,
                     "played": 5,
@@ -1053,18 +1064,18 @@
                     "goalsAgainst": 16
                 },
                 {
-                    "position": 8,
-                    "team": "Cd Odiáxere",
+                    "position": 9,
+                    "team": "Sc Olhanense",
                     "points": 5,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 9,
-                    "goalsAgainst": 9
+                    "losses": 2,
+                    "goalsFor": 11,
+                    "goalsAgainst": 13
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Cf Os Armacenenses",
                     "points": 4,
                     "played": 5,
@@ -1075,7 +1086,7 @@
                     "goalsAgainst": 13
                 },
                 {
-                    "position": 10,
+                    "position": 11,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 5,
@@ -1084,17 +1095,6 @@
                     "losses": 3,
                     "goalsFor": 8,
                     "goalsAgainst": 9
-                },
-                {
-                    "position": 11,
-                    "team": "Sc Olhanense",
-                    "points": 4,
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 10
                 }
             ]
         },
@@ -1161,27 +1161,38 @@
                 {
                     "position": 1,
                     "team": "Quarteirense Sad",
-                    "points": 12,
-                    "played": 4,
+                    "points": 13,
+                    "played": 5,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 1
+                    "goalsFor": 12,
+                    "goalsAgainst": 3
                 },
                 {
                     "position": 2,
                     "team": "Imortal Dc",
+                    "points": 12,
+                    "played": 5,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2
+                },
+                {
+                    "position": 3,
+                    "team": "Fc Ferreiras",
                     "points": 9,
                     "played": 4,
                     "wins": 3,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 10,
+                    "goalsFor": 9,
                     "goalsAgainst": 2
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
                     "points": 7,
                     "played": 4,
@@ -1192,40 +1203,40 @@
                     "goalsAgainst": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Louletano Dc",
                     "points": 7,
-                    "played": 4,
+                    "played": 5,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 8,
-                    "goalsAgainst": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Fc Ferreiras",
-                    "points": 6,
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 2
+                    "goalsAgainst": 9
                 },
                 {
                     "position": 6,
-                    "team": "Cf Esperança Lagos",
+                    "team": "Cd Odiáxere",
                     "points": 6,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 3,
-                    "losses": 0,
-                    "goalsFor": 6,
-                    "goalsAgainst": 5
+                    "losses": 1,
+                    "goalsFor": 12,
+                    "goalsAgainst": 12
                 },
                 {
                     "position": 7,
+                    "team": "Cf Esperança Lagos",
+                    "points": 6,
+                    "played": 5,
+                    "wins": 1,
+                    "draws": 3,
+                    "losses": 1,
+                    "goalsFor": 6,
+                    "goalsAgainst": 6
+                },
+                {
+                    "position": 8,
                     "team": "Cu Culatrense",
                     "points": 6,
                     "played": 5,
@@ -1236,18 +1247,18 @@
                     "goalsAgainst": 16
                 },
                 {
-                    "position": 8,
-                    "team": "Cd Odiáxere",
+                    "position": 9,
+                    "team": "Sc Olhanense",
                     "points": 5,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 9,
-                    "goalsAgainst": 9
+                    "losses": 2,
+                    "goalsFor": 11,
+                    "goalsAgainst": 13
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Cf Os Armacenenses",
                     "points": 4,
                     "played": 5,
@@ -1258,7 +1269,7 @@
                     "goalsAgainst": 13
                 },
                 {
-                    "position": 10,
+                    "position": 11,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 5,
@@ -1267,17 +1278,6 @@
                     "losses": 3,
                     "goalsFor": 8,
                     "goalsAgainst": 9
-                },
-                {
-                    "position": 11,
-                    "team": "Sc Olhanense",
-                    "points": 4,
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 10
                 }
             ]
         },
@@ -1344,27 +1344,38 @@
                 {
                     "position": 1,
                     "team": "Quarteirense Sad",
-                    "points": 12,
-                    "played": 4,
+                    "points": 13,
+                    "played": 5,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 1
+                    "goalsFor": 12,
+                    "goalsAgainst": 3
                 },
                 {
                     "position": 2,
                     "team": "Imortal Dc",
+                    "points": 12,
+                    "played": 5,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2
+                },
+                {
+                    "position": 3,
+                    "team": "Fc Ferreiras",
                     "points": 9,
                     "played": 4,
                     "wins": 3,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 10,
+                    "goalsFor": 9,
                     "goalsAgainst": 2
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
                     "points": 7,
                     "played": 4,
@@ -1375,40 +1386,40 @@
                     "goalsAgainst": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Louletano Dc",
                     "points": 7,
-                    "played": 4,
+                    "played": 5,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 8,
-                    "goalsAgainst": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Fc Ferreiras",
-                    "points": 6,
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 2
+                    "goalsAgainst": 9
                 },
                 {
                     "position": 6,
-                    "team": "Cf Esperança Lagos",
+                    "team": "Cd Odiáxere",
                     "points": 6,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 3,
-                    "losses": 0,
-                    "goalsFor": 6,
-                    "goalsAgainst": 5
+                    "losses": 1,
+                    "goalsFor": 12,
+                    "goalsAgainst": 12
                 },
                 {
                     "position": 7,
+                    "team": "Cf Esperança Lagos",
+                    "points": 6,
+                    "played": 5,
+                    "wins": 1,
+                    "draws": 3,
+                    "losses": 1,
+                    "goalsFor": 6,
+                    "goalsAgainst": 6
+                },
+                {
+                    "position": 8,
                     "team": "Cu Culatrense",
                     "points": 6,
                     "played": 5,
@@ -1419,18 +1430,18 @@
                     "goalsAgainst": 16
                 },
                 {
-                    "position": 8,
-                    "team": "Cd Odiáxere",
+                    "position": 9,
+                    "team": "Sc Olhanense",
                     "points": 5,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 9,
-                    "goalsAgainst": 9
+                    "losses": 2,
+                    "goalsFor": 11,
+                    "goalsAgainst": 13
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Cf Os Armacenenses",
                     "points": 4,
                     "played": 5,
@@ -1441,7 +1452,7 @@
                     "goalsAgainst": 13
                 },
                 {
-                    "position": 10,
+                    "position": 11,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 5,
@@ -1450,17 +1461,6 @@
                     "losses": 3,
                     "goalsFor": 8,
                     "goalsAgainst": 9
-                },
-                {
-                    "position": 11,
-                    "team": "Sc Olhanense",
-                    "points": 4,
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 10
                 }
             ]
         },
@@ -1527,27 +1527,38 @@
                 {
                     "position": 1,
                     "team": "Quarteirense Sad",
-                    "points": 12,
-                    "played": 4,
+                    "points": 13,
+                    "played": 5,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 1
+                    "goalsFor": 12,
+                    "goalsAgainst": 3
                 },
                 {
                     "position": 2,
                     "team": "Imortal Dc",
+                    "points": 12,
+                    "played": 5,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2
+                },
+                {
+                    "position": 3,
+                    "team": "Fc Ferreiras",
                     "points": 9,
                     "played": 4,
                     "wins": 3,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 10,
+                    "goalsFor": 9,
                     "goalsAgainst": 2
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
                     "points": 7,
                     "played": 4,
@@ -1558,40 +1569,40 @@
                     "goalsAgainst": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Louletano Dc",
                     "points": 7,
-                    "played": 4,
+                    "played": 5,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 8,
-                    "goalsAgainst": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Fc Ferreiras",
-                    "points": 6,
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 2
+                    "goalsAgainst": 9
                 },
                 {
                     "position": 6,
-                    "team": "Cf Esperança Lagos",
+                    "team": "Cd Odiáxere",
                     "points": 6,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 3,
-                    "losses": 0,
-                    "goalsFor": 6,
-                    "goalsAgainst": 5
+                    "losses": 1,
+                    "goalsFor": 12,
+                    "goalsAgainst": 12
                 },
                 {
                     "position": 7,
+                    "team": "Cf Esperança Lagos",
+                    "points": 6,
+                    "played": 5,
+                    "wins": 1,
+                    "draws": 3,
+                    "losses": 1,
+                    "goalsFor": 6,
+                    "goalsAgainst": 6
+                },
+                {
+                    "position": 8,
                     "team": "Cu Culatrense",
                     "points": 6,
                     "played": 5,
@@ -1602,18 +1613,18 @@
                     "goalsAgainst": 16
                 },
                 {
-                    "position": 8,
-                    "team": "Cd Odiáxere",
+                    "position": 9,
+                    "team": "Sc Olhanense",
                     "points": 5,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 9,
-                    "goalsAgainst": 9
+                    "losses": 2,
+                    "goalsFor": 11,
+                    "goalsAgainst": 13
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Cf Os Armacenenses",
                     "points": 4,
                     "played": 5,
@@ -1624,7 +1635,7 @@
                     "goalsAgainst": 13
                 },
                 {
-                    "position": 10,
+                    "position": 11,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 5,
@@ -1633,17 +1644,6 @@
                     "losses": 3,
                     "goalsFor": 8,
                     "goalsAgainst": 9
-                },
-                {
-                    "position": 11,
-                    "team": "Sc Olhanense",
-                    "points": 4,
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 10
                 }
             ]
         },
@@ -1710,27 +1710,38 @@
                 {
                     "position": 1,
                     "team": "Quarteirense Sad",
-                    "points": 12,
-                    "played": 4,
+                    "points": 13,
+                    "played": 5,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 1
+                    "goalsFor": 12,
+                    "goalsAgainst": 3
                 },
                 {
                     "position": 2,
                     "team": "Imortal Dc",
+                    "points": 12,
+                    "played": 5,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2
+                },
+                {
+                    "position": 3,
+                    "team": "Fc Ferreiras",
                     "points": 9,
                     "played": 4,
                     "wins": 3,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 10,
+                    "goalsFor": 9,
                     "goalsAgainst": 2
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
                     "points": 7,
                     "played": 4,
@@ -1741,40 +1752,40 @@
                     "goalsAgainst": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Louletano Dc",
                     "points": 7,
-                    "played": 4,
+                    "played": 5,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 8,
-                    "goalsAgainst": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Fc Ferreiras",
-                    "points": 6,
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 2
+                    "goalsAgainst": 9
                 },
                 {
                     "position": 6,
-                    "team": "Cf Esperança Lagos",
+                    "team": "Cd Odiáxere",
                     "points": 6,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 3,
-                    "losses": 0,
-                    "goalsFor": 6,
-                    "goalsAgainst": 5
+                    "losses": 1,
+                    "goalsFor": 12,
+                    "goalsAgainst": 12
                 },
                 {
                     "position": 7,
+                    "team": "Cf Esperança Lagos",
+                    "points": 6,
+                    "played": 5,
+                    "wins": 1,
+                    "draws": 3,
+                    "losses": 1,
+                    "goalsFor": 6,
+                    "goalsAgainst": 6
+                },
+                {
+                    "position": 8,
                     "team": "Cu Culatrense",
                     "points": 6,
                     "played": 5,
@@ -1785,18 +1796,18 @@
                     "goalsAgainst": 16
                 },
                 {
-                    "position": 8,
-                    "team": "Cd Odiáxere",
+                    "position": 9,
+                    "team": "Sc Olhanense",
                     "points": 5,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 9,
-                    "goalsAgainst": 9
+                    "losses": 2,
+                    "goalsFor": 11,
+                    "goalsAgainst": 13
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Cf Os Armacenenses",
                     "points": 4,
                     "played": 5,
@@ -1807,7 +1818,7 @@
                     "goalsAgainst": 13
                 },
                 {
-                    "position": 10,
+                    "position": 11,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 5,
@@ -1816,17 +1827,6 @@
                     "losses": 3,
                     "goalsFor": 8,
                     "goalsAgainst": 9
-                },
-                {
-                    "position": 11,
-                    "team": "Sc Olhanense",
-                    "points": 4,
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 10
                 }
             ]
         },
@@ -1893,27 +1893,38 @@
                 {
                     "position": 1,
                     "team": "Quarteirense Sad",
-                    "points": 12,
-                    "played": 4,
+                    "points": 13,
+                    "played": 5,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 1
+                    "goalsFor": 12,
+                    "goalsAgainst": 3
                 },
                 {
                     "position": 2,
                     "team": "Imortal Dc",
+                    "points": 12,
+                    "played": 5,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2
+                },
+                {
+                    "position": 3,
+                    "team": "Fc Ferreiras",
                     "points": 9,
                     "played": 4,
                     "wins": 3,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 10,
+                    "goalsFor": 9,
                     "goalsAgainst": 2
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
                     "points": 7,
                     "played": 4,
@@ -1924,40 +1935,40 @@
                     "goalsAgainst": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Louletano Dc",
                     "points": 7,
-                    "played": 4,
+                    "played": 5,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 8,
-                    "goalsAgainst": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Fc Ferreiras",
-                    "points": 6,
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 2
+                    "goalsAgainst": 9
                 },
                 {
                     "position": 6,
-                    "team": "Cf Esperança Lagos",
+                    "team": "Cd Odiáxere",
                     "points": 6,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 3,
-                    "losses": 0,
-                    "goalsFor": 6,
-                    "goalsAgainst": 5
+                    "losses": 1,
+                    "goalsFor": 12,
+                    "goalsAgainst": 12
                 },
                 {
                     "position": 7,
+                    "team": "Cf Esperança Lagos",
+                    "points": 6,
+                    "played": 5,
+                    "wins": 1,
+                    "draws": 3,
+                    "losses": 1,
+                    "goalsFor": 6,
+                    "goalsAgainst": 6
+                },
+                {
+                    "position": 8,
                     "team": "Cu Culatrense",
                     "points": 6,
                     "played": 5,
@@ -1968,18 +1979,18 @@
                     "goalsAgainst": 16
                 },
                 {
-                    "position": 8,
-                    "team": "Cd Odiáxere",
+                    "position": 9,
+                    "team": "Sc Olhanense",
                     "points": 5,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 9,
-                    "goalsAgainst": 9
+                    "losses": 2,
+                    "goalsFor": 11,
+                    "goalsAgainst": 13
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Cf Os Armacenenses",
                     "points": 4,
                     "played": 5,
@@ -1990,7 +2001,7 @@
                     "goalsAgainst": 13
                 },
                 {
-                    "position": 10,
+                    "position": 11,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 5,
@@ -1999,17 +2010,6 @@
                     "losses": 3,
                     "goalsFor": 8,
                     "goalsAgainst": 9
-                },
-                {
-                    "position": 11,
-                    "team": "Sc Olhanense",
-                    "points": 4,
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 10
                 }
             ]
         },
@@ -2076,27 +2076,38 @@
                 {
                     "position": 1,
                     "team": "Quarteirense Sad",
-                    "points": 12,
-                    "played": 4,
+                    "points": 13,
+                    "played": 5,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 1
+                    "goalsFor": 12,
+                    "goalsAgainst": 3
                 },
                 {
                     "position": 2,
                     "team": "Imortal Dc",
+                    "points": 12,
+                    "played": 5,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2
+                },
+                {
+                    "position": 3,
+                    "team": "Fc Ferreiras",
                     "points": 9,
                     "played": 4,
                     "wins": 3,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 10,
+                    "goalsFor": 9,
                     "goalsAgainst": 2
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
                     "points": 7,
                     "played": 4,
@@ -2107,40 +2118,40 @@
                     "goalsAgainst": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Louletano Dc",
                     "points": 7,
-                    "played": 4,
+                    "played": 5,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 8,
-                    "goalsAgainst": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Fc Ferreiras",
-                    "points": 6,
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 2
+                    "goalsAgainst": 9
                 },
                 {
                     "position": 6,
-                    "team": "Cf Esperança Lagos",
+                    "team": "Cd Odiáxere",
                     "points": 6,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 3,
-                    "losses": 0,
-                    "goalsFor": 6,
-                    "goalsAgainst": 5
+                    "losses": 1,
+                    "goalsFor": 12,
+                    "goalsAgainst": 12
                 },
                 {
                     "position": 7,
+                    "team": "Cf Esperança Lagos",
+                    "points": 6,
+                    "played": 5,
+                    "wins": 1,
+                    "draws": 3,
+                    "losses": 1,
+                    "goalsFor": 6,
+                    "goalsAgainst": 6
+                },
+                {
+                    "position": 8,
                     "team": "Cu Culatrense",
                     "points": 6,
                     "played": 5,
@@ -2151,18 +2162,18 @@
                     "goalsAgainst": 16
                 },
                 {
-                    "position": 8,
-                    "team": "Cd Odiáxere",
+                    "position": 9,
+                    "team": "Sc Olhanense",
                     "points": 5,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 9,
-                    "goalsAgainst": 9
+                    "losses": 2,
+                    "goalsFor": 11,
+                    "goalsAgainst": 13
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Cf Os Armacenenses",
                     "points": 4,
                     "played": 5,
@@ -2173,7 +2184,7 @@
                     "goalsAgainst": 13
                 },
                 {
-                    "position": 10,
+                    "position": 11,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 5,
@@ -2182,17 +2193,6 @@
                     "losses": 3,
                     "goalsFor": 8,
                     "goalsAgainst": 9
-                },
-                {
-                    "position": 11,
-                    "team": "Sc Olhanense",
-                    "points": 4,
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 10
                 }
             ]
         },
@@ -2259,27 +2259,38 @@
                 {
                     "position": 1,
                     "team": "Quarteirense Sad",
-                    "points": 12,
-                    "played": 4,
+                    "points": 13,
+                    "played": 5,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 1
+                    "goalsFor": 12,
+                    "goalsAgainst": 3
                 },
                 {
                     "position": 2,
                     "team": "Imortal Dc",
+                    "points": 12,
+                    "played": 5,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2
+                },
+                {
+                    "position": 3,
+                    "team": "Fc Ferreiras",
                     "points": 9,
                     "played": 4,
                     "wins": 3,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 10,
+                    "goalsFor": 9,
                     "goalsAgainst": 2
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
                     "points": 7,
                     "played": 4,
@@ -2290,40 +2301,40 @@
                     "goalsAgainst": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Louletano Dc",
                     "points": 7,
-                    "played": 4,
+                    "played": 5,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 8,
-                    "goalsAgainst": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Fc Ferreiras",
-                    "points": 6,
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 2
+                    "goalsAgainst": 9
                 },
                 {
                     "position": 6,
-                    "team": "Cf Esperança Lagos",
+                    "team": "Cd Odiáxere",
                     "points": 6,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 3,
-                    "losses": 0,
-                    "goalsFor": 6,
-                    "goalsAgainst": 5
+                    "losses": 1,
+                    "goalsFor": 12,
+                    "goalsAgainst": 12
                 },
                 {
                     "position": 7,
+                    "team": "Cf Esperança Lagos",
+                    "points": 6,
+                    "played": 5,
+                    "wins": 1,
+                    "draws": 3,
+                    "losses": 1,
+                    "goalsFor": 6,
+                    "goalsAgainst": 6
+                },
+                {
+                    "position": 8,
                     "team": "Cu Culatrense",
                     "points": 6,
                     "played": 5,
@@ -2334,18 +2345,18 @@
                     "goalsAgainst": 16
                 },
                 {
-                    "position": 8,
-                    "team": "Cd Odiáxere",
+                    "position": 9,
+                    "team": "Sc Olhanense",
                     "points": 5,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 9,
-                    "goalsAgainst": 9
+                    "losses": 2,
+                    "goalsFor": 11,
+                    "goalsAgainst": 13
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Cf Os Armacenenses",
                     "points": 4,
                     "played": 5,
@@ -2356,7 +2367,7 @@
                     "goalsAgainst": 13
                 },
                 {
-                    "position": 10,
+                    "position": 11,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 5,
@@ -2365,17 +2376,6 @@
                     "losses": 3,
                     "goalsFor": 8,
                     "goalsAgainst": 9
-                },
-                {
-                    "position": 11,
-                    "team": "Sc Olhanense",
-                    "points": 4,
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 10
                 }
             ]
         },
@@ -2442,27 +2442,38 @@
                 {
                     "position": 1,
                     "team": "Quarteirense Sad",
-                    "points": 12,
-                    "played": 4,
+                    "points": 13,
+                    "played": 5,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 1
+                    "goalsFor": 12,
+                    "goalsAgainst": 3
                 },
                 {
                     "position": 2,
                     "team": "Imortal Dc",
+                    "points": 12,
+                    "played": 5,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2
+                },
+                {
+                    "position": 3,
+                    "team": "Fc Ferreiras",
                     "points": 9,
                     "played": 4,
                     "wins": 3,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 10,
+                    "goalsFor": 9,
                     "goalsAgainst": 2
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
                     "points": 7,
                     "played": 4,
@@ -2473,40 +2484,40 @@
                     "goalsAgainst": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Louletano Dc",
                     "points": 7,
-                    "played": 4,
+                    "played": 5,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 8,
-                    "goalsAgainst": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Fc Ferreiras",
-                    "points": 6,
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 2
+                    "goalsAgainst": 9
                 },
                 {
                     "position": 6,
-                    "team": "Cf Esperança Lagos",
+                    "team": "Cd Odiáxere",
                     "points": 6,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 3,
-                    "losses": 0,
-                    "goalsFor": 6,
-                    "goalsAgainst": 5
+                    "losses": 1,
+                    "goalsFor": 12,
+                    "goalsAgainst": 12
                 },
                 {
                     "position": 7,
+                    "team": "Cf Esperança Lagos",
+                    "points": 6,
+                    "played": 5,
+                    "wins": 1,
+                    "draws": 3,
+                    "losses": 1,
+                    "goalsFor": 6,
+                    "goalsAgainst": 6
+                },
+                {
+                    "position": 8,
                     "team": "Cu Culatrense",
                     "points": 6,
                     "played": 5,
@@ -2517,18 +2528,18 @@
                     "goalsAgainst": 16
                 },
                 {
-                    "position": 8,
-                    "team": "Cd Odiáxere",
+                    "position": 9,
+                    "team": "Sc Olhanense",
                     "points": 5,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 9,
-                    "goalsAgainst": 9
+                    "losses": 2,
+                    "goalsFor": 11,
+                    "goalsAgainst": 13
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Cf Os Armacenenses",
                     "points": 4,
                     "played": 5,
@@ -2539,7 +2550,7 @@
                     "goalsAgainst": 13
                 },
                 {
-                    "position": 10,
+                    "position": 11,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 5,
@@ -2548,17 +2559,6 @@
                     "losses": 3,
                     "goalsFor": 8,
                     "goalsAgainst": 9
-                },
-                {
-                    "position": 11,
-                    "team": "Sc Olhanense",
-                    "points": 4,
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 10
                 }
             ]
         },
@@ -2625,27 +2625,38 @@
                 {
                     "position": 1,
                     "team": "Quarteirense Sad",
-                    "points": 12,
-                    "played": 4,
+                    "points": 13,
+                    "played": 5,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 1
+                    "goalsFor": 12,
+                    "goalsAgainst": 3
                 },
                 {
                     "position": 2,
                     "team": "Imortal Dc",
+                    "points": 12,
+                    "played": 5,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2
+                },
+                {
+                    "position": 3,
+                    "team": "Fc Ferreiras",
                     "points": 9,
                     "played": 4,
                     "wins": 3,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 10,
+                    "goalsFor": 9,
                     "goalsAgainst": 2
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
                     "points": 7,
                     "played": 4,
@@ -2656,40 +2667,40 @@
                     "goalsAgainst": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Louletano Dc",
                     "points": 7,
-                    "played": 4,
+                    "played": 5,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 8,
-                    "goalsAgainst": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Fc Ferreiras",
-                    "points": 6,
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 2
+                    "goalsAgainst": 9
                 },
                 {
                     "position": 6,
-                    "team": "Cf Esperança Lagos",
+                    "team": "Cd Odiáxere",
                     "points": 6,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 3,
-                    "losses": 0,
-                    "goalsFor": 6,
-                    "goalsAgainst": 5
+                    "losses": 1,
+                    "goalsFor": 12,
+                    "goalsAgainst": 12
                 },
                 {
                     "position": 7,
+                    "team": "Cf Esperança Lagos",
+                    "points": 6,
+                    "played": 5,
+                    "wins": 1,
+                    "draws": 3,
+                    "losses": 1,
+                    "goalsFor": 6,
+                    "goalsAgainst": 6
+                },
+                {
+                    "position": 8,
                     "team": "Cu Culatrense",
                     "points": 6,
                     "played": 5,
@@ -2700,18 +2711,18 @@
                     "goalsAgainst": 16
                 },
                 {
-                    "position": 8,
-                    "team": "Cd Odiáxere",
+                    "position": 9,
+                    "team": "Sc Olhanense",
                     "points": 5,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 9,
-                    "goalsAgainst": 9
+                    "losses": 2,
+                    "goalsFor": 11,
+                    "goalsAgainst": 13
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Cf Os Armacenenses",
                     "points": 4,
                     "played": 5,
@@ -2722,7 +2733,7 @@
                     "goalsAgainst": 13
                 },
                 {
-                    "position": 10,
+                    "position": 11,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 5,
@@ -2731,17 +2742,6 @@
                     "losses": 3,
                     "goalsFor": 8,
                     "goalsAgainst": 9
-                },
-                {
-                    "position": 11,
-                    "team": "Sc Olhanense",
-                    "points": 4,
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 10
                 }
             ]
         },
@@ -2808,27 +2808,38 @@
                 {
                     "position": 1,
                     "team": "Quarteirense Sad",
-                    "points": 12,
-                    "played": 4,
+                    "points": 13,
+                    "played": 5,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 1
+                    "goalsFor": 12,
+                    "goalsAgainst": 3
                 },
                 {
                     "position": 2,
                     "team": "Imortal Dc",
+                    "points": 12,
+                    "played": 5,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2
+                },
+                {
+                    "position": 3,
+                    "team": "Fc Ferreiras",
                     "points": 9,
                     "played": 4,
                     "wins": 3,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 10,
+                    "goalsFor": 9,
                     "goalsAgainst": 2
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
                     "points": 7,
                     "played": 4,
@@ -2839,40 +2850,40 @@
                     "goalsAgainst": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Louletano Dc",
                     "points": 7,
-                    "played": 4,
+                    "played": 5,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 8,
-                    "goalsAgainst": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Fc Ferreiras",
-                    "points": 6,
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 2
+                    "goalsAgainst": 9
                 },
                 {
                     "position": 6,
-                    "team": "Cf Esperança Lagos",
+                    "team": "Cd Odiáxere",
                     "points": 6,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 3,
-                    "losses": 0,
-                    "goalsFor": 6,
-                    "goalsAgainst": 5
+                    "losses": 1,
+                    "goalsFor": 12,
+                    "goalsAgainst": 12
                 },
                 {
                     "position": 7,
+                    "team": "Cf Esperança Lagos",
+                    "points": 6,
+                    "played": 5,
+                    "wins": 1,
+                    "draws": 3,
+                    "losses": 1,
+                    "goalsFor": 6,
+                    "goalsAgainst": 6
+                },
+                {
+                    "position": 8,
                     "team": "Cu Culatrense",
                     "points": 6,
                     "played": 5,
@@ -2883,18 +2894,18 @@
                     "goalsAgainst": 16
                 },
                 {
-                    "position": 8,
-                    "team": "Cd Odiáxere",
+                    "position": 9,
+                    "team": "Sc Olhanense",
                     "points": 5,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 9,
-                    "goalsAgainst": 9
+                    "losses": 2,
+                    "goalsFor": 11,
+                    "goalsAgainst": 13
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Cf Os Armacenenses",
                     "points": 4,
                     "played": 5,
@@ -2905,7 +2916,7 @@
                     "goalsAgainst": 13
                 },
                 {
-                    "position": 10,
+                    "position": 11,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 5,
@@ -2914,17 +2925,6 @@
                     "losses": 3,
                     "goalsFor": 8,
                     "goalsAgainst": 9
-                },
-                {
-                    "position": 11,
-                    "team": "Sc Olhanense",
-                    "points": 4,
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 10
                 }
             ]
         },
@@ -2991,27 +2991,38 @@
                 {
                     "position": 1,
                     "team": "Quarteirense Sad",
-                    "points": 12,
-                    "played": 4,
+                    "points": 13,
+                    "played": 5,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 1
+                    "goalsFor": 12,
+                    "goalsAgainst": 3
                 },
                 {
                     "position": 2,
                     "team": "Imortal Dc",
+                    "points": 12,
+                    "played": 5,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2
+                },
+                {
+                    "position": 3,
+                    "team": "Fc Ferreiras",
                     "points": 9,
                     "played": 4,
                     "wins": 3,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 10,
+                    "goalsFor": 9,
                     "goalsAgainst": 2
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
                     "points": 7,
                     "played": 4,
@@ -3022,40 +3033,40 @@
                     "goalsAgainst": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Louletano Dc",
                     "points": 7,
-                    "played": 4,
+                    "played": 5,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 8,
-                    "goalsAgainst": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Fc Ferreiras",
-                    "points": 6,
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 2
+                    "goalsAgainst": 9
                 },
                 {
                     "position": 6,
-                    "team": "Cf Esperança Lagos",
+                    "team": "Cd Odiáxere",
                     "points": 6,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 3,
-                    "losses": 0,
-                    "goalsFor": 6,
-                    "goalsAgainst": 5
+                    "losses": 1,
+                    "goalsFor": 12,
+                    "goalsAgainst": 12
                 },
                 {
                     "position": 7,
+                    "team": "Cf Esperança Lagos",
+                    "points": 6,
+                    "played": 5,
+                    "wins": 1,
+                    "draws": 3,
+                    "losses": 1,
+                    "goalsFor": 6,
+                    "goalsAgainst": 6
+                },
+                {
+                    "position": 8,
                     "team": "Cu Culatrense",
                     "points": 6,
                     "played": 5,
@@ -3066,18 +3077,18 @@
                     "goalsAgainst": 16
                 },
                 {
-                    "position": 8,
-                    "team": "Cd Odiáxere",
+                    "position": 9,
+                    "team": "Sc Olhanense",
                     "points": 5,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 9,
-                    "goalsAgainst": 9
+                    "losses": 2,
+                    "goalsFor": 11,
+                    "goalsAgainst": 13
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Cf Os Armacenenses",
                     "points": 4,
                     "played": 5,
@@ -3088,7 +3099,7 @@
                     "goalsAgainst": 13
                 },
                 {
-                    "position": 10,
+                    "position": 11,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 5,
@@ -3097,17 +3108,6 @@
                     "losses": 3,
                     "goalsFor": 8,
                     "goalsAgainst": 9
-                },
-                {
-                    "position": 11,
-                    "team": "Sc Olhanense",
-                    "points": 4,
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 10
                 }
             ]
         },
@@ -3174,27 +3174,38 @@
                 {
                     "position": 1,
                     "team": "Quarteirense Sad",
-                    "points": 12,
-                    "played": 4,
+                    "points": 13,
+                    "played": 5,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 1
+                    "goalsFor": 12,
+                    "goalsAgainst": 3
                 },
                 {
                     "position": 2,
                     "team": "Imortal Dc",
+                    "points": 12,
+                    "played": 5,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2
+                },
+                {
+                    "position": 3,
+                    "team": "Fc Ferreiras",
                     "points": 9,
                     "played": 4,
                     "wins": 3,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 10,
+                    "goalsFor": 9,
                     "goalsAgainst": 2
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
                     "points": 7,
                     "played": 4,
@@ -3205,40 +3216,40 @@
                     "goalsAgainst": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Louletano Dc",
                     "points": 7,
-                    "played": 4,
+                    "played": 5,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 8,
-                    "goalsAgainst": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Fc Ferreiras",
-                    "points": 6,
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 2
+                    "goalsAgainst": 9
                 },
                 {
                     "position": 6,
-                    "team": "Cf Esperança Lagos",
+                    "team": "Cd Odiáxere",
                     "points": 6,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 3,
-                    "losses": 0,
-                    "goalsFor": 6,
-                    "goalsAgainst": 5
+                    "losses": 1,
+                    "goalsFor": 12,
+                    "goalsAgainst": 12
                 },
                 {
                     "position": 7,
+                    "team": "Cf Esperança Lagos",
+                    "points": 6,
+                    "played": 5,
+                    "wins": 1,
+                    "draws": 3,
+                    "losses": 1,
+                    "goalsFor": 6,
+                    "goalsAgainst": 6
+                },
+                {
+                    "position": 8,
                     "team": "Cu Culatrense",
                     "points": 6,
                     "played": 5,
@@ -3249,18 +3260,18 @@
                     "goalsAgainst": 16
                 },
                 {
-                    "position": 8,
-                    "team": "Cd Odiáxere",
+                    "position": 9,
+                    "team": "Sc Olhanense",
                     "points": 5,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 9,
-                    "goalsAgainst": 9
+                    "losses": 2,
+                    "goalsFor": 11,
+                    "goalsAgainst": 13
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Cf Os Armacenenses",
                     "points": 4,
                     "played": 5,
@@ -3271,7 +3282,7 @@
                     "goalsAgainst": 13
                 },
                 {
-                    "position": 10,
+                    "position": 11,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 5,
@@ -3280,17 +3291,6 @@
                     "losses": 3,
                     "goalsFor": 8,
                     "goalsAgainst": 9
-                },
-                {
-                    "position": 11,
-                    "team": "Sc Olhanense",
-                    "points": 4,
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 10
                 }
             ]
         },
@@ -3357,27 +3357,38 @@
                 {
                     "position": 1,
                     "team": "Quarteirense Sad",
-                    "points": 12,
-                    "played": 4,
+                    "points": 13,
+                    "played": 5,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 1
+                    "goalsFor": 12,
+                    "goalsAgainst": 3
                 },
                 {
                     "position": 2,
                     "team": "Imortal Dc",
+                    "points": 12,
+                    "played": 5,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2
+                },
+                {
+                    "position": 3,
+                    "team": "Fc Ferreiras",
                     "points": 9,
                     "played": 4,
                     "wins": 3,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 10,
+                    "goalsFor": 9,
                     "goalsAgainst": 2
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
                     "points": 7,
                     "played": 4,
@@ -3388,40 +3399,40 @@
                     "goalsAgainst": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Louletano Dc",
                     "points": 7,
-                    "played": 4,
+                    "played": 5,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 8,
-                    "goalsAgainst": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Fc Ferreiras",
-                    "points": 6,
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 2
+                    "goalsAgainst": 9
                 },
                 {
                     "position": 6,
-                    "team": "Cf Esperança Lagos",
+                    "team": "Cd Odiáxere",
                     "points": 6,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 3,
-                    "losses": 0,
-                    "goalsFor": 6,
-                    "goalsAgainst": 5
+                    "losses": 1,
+                    "goalsFor": 12,
+                    "goalsAgainst": 12
                 },
                 {
                     "position": 7,
+                    "team": "Cf Esperança Lagos",
+                    "points": 6,
+                    "played": 5,
+                    "wins": 1,
+                    "draws": 3,
+                    "losses": 1,
+                    "goalsFor": 6,
+                    "goalsAgainst": 6
+                },
+                {
+                    "position": 8,
                     "team": "Cu Culatrense",
                     "points": 6,
                     "played": 5,
@@ -3432,18 +3443,18 @@
                     "goalsAgainst": 16
                 },
                 {
-                    "position": 8,
-                    "team": "Cd Odiáxere",
+                    "position": 9,
+                    "team": "Sc Olhanense",
                     "points": 5,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 9,
-                    "goalsAgainst": 9
+                    "losses": 2,
+                    "goalsFor": 11,
+                    "goalsAgainst": 13
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Cf Os Armacenenses",
                     "points": 4,
                     "played": 5,
@@ -3454,7 +3465,7 @@
                     "goalsAgainst": 13
                 },
                 {
-                    "position": 10,
+                    "position": 11,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 5,
@@ -3463,17 +3474,6 @@
                     "losses": 3,
                     "goalsFor": 8,
                     "goalsAgainst": 9
-                },
-                {
-                    "position": 11,
-                    "team": "Sc Olhanense",
-                    "points": 4,
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 10
                 }
             ]
         },
@@ -3540,27 +3540,38 @@
                 {
                     "position": 1,
                     "team": "Quarteirense Sad",
-                    "points": 12,
-                    "played": 4,
+                    "points": 13,
+                    "played": 5,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 1
+                    "goalsFor": 12,
+                    "goalsAgainst": 3
                 },
                 {
                     "position": 2,
                     "team": "Imortal Dc",
+                    "points": 12,
+                    "played": 5,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2
+                },
+                {
+                    "position": 3,
+                    "team": "Fc Ferreiras",
                     "points": 9,
                     "played": 4,
                     "wins": 3,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 10,
+                    "goalsFor": 9,
                     "goalsAgainst": 2
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
                     "points": 7,
                     "played": 4,
@@ -3571,40 +3582,40 @@
                     "goalsAgainst": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Louletano Dc",
                     "points": 7,
-                    "played": 4,
+                    "played": 5,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 8,
-                    "goalsAgainst": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Fc Ferreiras",
-                    "points": 6,
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 2
+                    "goalsAgainst": 9
                 },
                 {
                     "position": 6,
-                    "team": "Cf Esperança Lagos",
+                    "team": "Cd Odiáxere",
                     "points": 6,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 3,
-                    "losses": 0,
-                    "goalsFor": 6,
-                    "goalsAgainst": 5
+                    "losses": 1,
+                    "goalsFor": 12,
+                    "goalsAgainst": 12
                 },
                 {
                     "position": 7,
+                    "team": "Cf Esperança Lagos",
+                    "points": 6,
+                    "played": 5,
+                    "wins": 1,
+                    "draws": 3,
+                    "losses": 1,
+                    "goalsFor": 6,
+                    "goalsAgainst": 6
+                },
+                {
+                    "position": 8,
                     "team": "Cu Culatrense",
                     "points": 6,
                     "played": 5,
@@ -3615,18 +3626,18 @@
                     "goalsAgainst": 16
                 },
                 {
-                    "position": 8,
-                    "team": "Cd Odiáxere",
+                    "position": 9,
+                    "team": "Sc Olhanense",
                     "points": 5,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 9,
-                    "goalsAgainst": 9
+                    "losses": 2,
+                    "goalsFor": 11,
+                    "goalsAgainst": 13
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Cf Os Armacenenses",
                     "points": 4,
                     "played": 5,
@@ -3637,7 +3648,7 @@
                     "goalsAgainst": 13
                 },
                 {
-                    "position": 10,
+                    "position": 11,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 5,
@@ -3646,17 +3657,6 @@
                     "losses": 3,
                     "goalsFor": 8,
                     "goalsAgainst": 9
-                },
-                {
-                    "position": 11,
-                    "team": "Sc Olhanense",
-                    "points": 4,
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 10
                 }
             ]
         },
@@ -3723,27 +3723,38 @@
                 {
                     "position": 1,
                     "team": "Quarteirense Sad",
-                    "points": 12,
-                    "played": 4,
+                    "points": 13,
+                    "played": 5,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 1
+                    "goalsFor": 12,
+                    "goalsAgainst": 3
                 },
                 {
                     "position": 2,
                     "team": "Imortal Dc",
+                    "points": 12,
+                    "played": 5,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2
+                },
+                {
+                    "position": 3,
+                    "team": "Fc Ferreiras",
                     "points": 9,
                     "played": 4,
                     "wins": 3,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 10,
+                    "goalsFor": 9,
                     "goalsAgainst": 2
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
                     "points": 7,
                     "played": 4,
@@ -3754,40 +3765,40 @@
                     "goalsAgainst": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Louletano Dc",
                     "points": 7,
-                    "played": 4,
+                    "played": 5,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 8,
-                    "goalsAgainst": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Fc Ferreiras",
-                    "points": 6,
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 2
+                    "goalsAgainst": 9
                 },
                 {
                     "position": 6,
-                    "team": "Cf Esperança Lagos",
+                    "team": "Cd Odiáxere",
                     "points": 6,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 3,
-                    "losses": 0,
-                    "goalsFor": 6,
-                    "goalsAgainst": 5
+                    "losses": 1,
+                    "goalsFor": 12,
+                    "goalsAgainst": 12
                 },
                 {
                     "position": 7,
+                    "team": "Cf Esperança Lagos",
+                    "points": 6,
+                    "played": 5,
+                    "wins": 1,
+                    "draws": 3,
+                    "losses": 1,
+                    "goalsFor": 6,
+                    "goalsAgainst": 6
+                },
+                {
+                    "position": 8,
                     "team": "Cu Culatrense",
                     "points": 6,
                     "played": 5,
@@ -3798,18 +3809,18 @@
                     "goalsAgainst": 16
                 },
                 {
-                    "position": 8,
-                    "team": "Cd Odiáxere",
+                    "position": 9,
+                    "team": "Sc Olhanense",
                     "points": 5,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 9,
-                    "goalsAgainst": 9
+                    "losses": 2,
+                    "goalsFor": 11,
+                    "goalsAgainst": 13
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Cf Os Armacenenses",
                     "points": 4,
                     "played": 5,
@@ -3820,7 +3831,7 @@
                     "goalsAgainst": 13
                 },
                 {
-                    "position": 10,
+                    "position": 11,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 5,
@@ -3829,17 +3840,6 @@
                     "losses": 3,
                     "goalsFor": 8,
                     "goalsAgainst": 9
-                },
-                {
-                    "position": 11,
-                    "team": "Sc Olhanense",
-                    "points": 4,
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 10
                 }
             ]
         },
@@ -3906,27 +3906,38 @@
                 {
                     "position": 1,
                     "team": "Quarteirense Sad",
-                    "points": 12,
-                    "played": 4,
+                    "points": 13,
+                    "played": 5,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 1
+                    "goalsFor": 12,
+                    "goalsAgainst": 3
                 },
                 {
                     "position": 2,
                     "team": "Imortal Dc",
+                    "points": 12,
+                    "played": 5,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2
+                },
+                {
+                    "position": 3,
+                    "team": "Fc Ferreiras",
                     "points": 9,
                     "played": 4,
                     "wins": 3,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 10,
+                    "goalsFor": 9,
                     "goalsAgainst": 2
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Silves Fc",
                     "points": 7,
                     "played": 4,
@@ -3937,40 +3948,40 @@
                     "goalsAgainst": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Louletano Dc",
                     "points": 7,
-                    "played": 4,
+                    "played": 5,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 8,
-                    "goalsAgainst": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Fc Ferreiras",
-                    "points": 6,
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 2
+                    "goalsAgainst": 9
                 },
                 {
                     "position": 6,
-                    "team": "Cf Esperança Lagos",
+                    "team": "Cd Odiáxere",
                     "points": 6,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 3,
-                    "losses": 0,
-                    "goalsFor": 6,
-                    "goalsAgainst": 5
+                    "losses": 1,
+                    "goalsFor": 12,
+                    "goalsAgainst": 12
                 },
                 {
                     "position": 7,
+                    "team": "Cf Esperança Lagos",
+                    "points": 6,
+                    "played": 5,
+                    "wins": 1,
+                    "draws": 3,
+                    "losses": 1,
+                    "goalsFor": 6,
+                    "goalsAgainst": 6
+                },
+                {
+                    "position": 8,
                     "team": "Cu Culatrense",
                     "points": 6,
                     "played": 5,
@@ -3981,18 +3992,18 @@
                     "goalsAgainst": 16
                 },
                 {
-                    "position": 8,
-                    "team": "Cd Odiáxere",
+                    "position": 9,
+                    "team": "Sc Olhanense",
                     "points": 5,
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 9,
-                    "goalsAgainst": 9
+                    "losses": 2,
+                    "goalsFor": 11,
+                    "goalsAgainst": 13
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Cf Os Armacenenses",
                     "points": 4,
                     "played": 5,
@@ -4003,7 +4014,7 @@
                     "goalsAgainst": 13
                 },
                 {
-                    "position": 10,
+                    "position": 11,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 5,
@@ -4012,17 +4023,6 @@
                     "losses": 3,
                     "goalsFor": 8,
                     "goalsAgainst": 9
-                },
-                {
-                    "position": 11,
-                    "team": "Sc Olhanense",
-                    "points": 4,
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 10
                 }
             ]
         }
