@@ -14,6 +14,15 @@
                     "awayScore": 3
                 },
                 {
+                    "home": "Aef Faro",
+                    "away": "Fc Bias",
+                    "date": "1 - 2                            \r\n                \r\n                    11 out",
+                    "time": "",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": 1,
+                    "awayScore": 2
+                },
+                {
                     "home": "Cd Montenegro",
                     "away": "Cf Os Armacenenses",
                     "date": "7 - 0                            \r\n                \r\n                    11 out",
@@ -30,15 +39,6 @@
                     "stadium": "Estádio José Arcanjo",
                     "homeScore": null,
                     "awayScore": null
-                },
-                {
-                    "home": "Aef Faro",
-                    "away": "Fc Bias",
-                    "date": "1 - 2                            \r\n                \r\n                    11 out",
-                    "time": "",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": 1,
-                    "awayScore": 2
                 },
                 {
                     "home": "Js Campinense",
@@ -166,15 +166,6 @@
                     "awayScore": 0
                 },
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Js Campinense",
-                    "date": "0 - 16                            \r\n                \r\n                    19 out",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 0,
-                    "awayScore": 16
-                },
-                {
                     "home": "Sr 1º Janeiro",
                     "away": "Cd Montenegro",
                     "date": "11 - 1                            \r\n                \r\n                    19 out",
@@ -182,6 +173,15 @@
                     "stadium": "Campo Polidesportivo",
                     "homeScore": 11,
                     "awayScore": 1
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Js Campinense",
+                    "date": "0 - 16                            \r\n                \r\n                    19 out",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 0,
+                    "awayScore": 16
                 },
                 {
                     "home": "Sc Farense",
@@ -613,20 +613,20 @@
             "fixtureId": "607609",
             "matches": [
                 {
-                    "home": "Sc Olhanense",
-                    "away": "Cf Os Armacenenses",
-                    "date": "9 nov",
-                    "time": "09:00",
-                    "stadium": "Estádio José Arcanjo",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Cd Montenegro",
                     "away": "Aef Faro",
                     "date": "9 nov",
                     "time": "09:00",
                     "stadium": "Campo Horta Da Areia",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Sc Olhanense",
+                    "away": "Cf Os Armacenenses",
+                    "date": "9 nov",
+                    "time": "09:00",
+                    "stadium": "Estádio José Arcanjo",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -765,33 +765,6 @@
             "fixtureId": "607610",
             "matches": [
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Sr 1º Janeiro",
-                    "date": "16 nov",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Aef Faro",
-                    "away": "Ad Geração Génios",
-                    "date": "16 nov",
-                    "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Fc Bias",
-                    "away": "Cd Montenegro",
-                    "date": "16 nov",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Olhão",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Louletano Dc",
                     "away": "Sc Farense",
                     "date": "16 nov",
@@ -806,6 +779,33 @@
                     "date": "16 nov",
                     "time": "11:00",
                     "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Sr 1º Janeiro",
+                    "date": "16 nov",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Fc Bias",
+                    "away": "Cd Montenegro",
+                    "date": "16 nov",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Olhão",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Aef Faro",
+                    "away": "Ad Geração Génios",
+                    "date": "16 nov",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -926,20 +926,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Sr 1º Janeiro",
-                    "away": "Js Campinense",
-                    "date": "23 nov",
-                    "time": "11:00",
-                    "stadium": "Campo Polidesportivo",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Sc Farense",
                     "away": "Cf Os Armacenenses",
                     "date": "23 nov",
                     "time": "11:00",
                     "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Sc Olhanense",
+                    "away": "Aef Faro",
+                    "date": "23 nov",
+                    "time": "11:00",
+                    "stadium": "Estádio José Arcanjo",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -953,11 +953,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Sc Olhanense",
-                    "away": "Aef Faro",
+                    "home": "Sr 1º Janeiro",
+                    "away": "Js Campinense",
                     "date": "23 nov",
                     "time": "11:00",
-                    "stadium": "Estádio José Arcanjo",
+                    "stadium": "Campo Polidesportivo",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1069,11 +1069,11 @@
             "fixtureId": "607612",
             "matches": [
                 {
-                    "home": "Aef Faro",
-                    "away": "Sr 1º Janeiro",
+                    "home": "Cd Montenegro",
+                    "away": "Louletano Dc",
                     "date": "30 nov",
                     "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
+                    "stadium": "Campo Horta Da Areia",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1087,11 +1087,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cd Montenegro",
-                    "away": "Louletano Dc",
+                    "home": "Cf Os Armacenenses",
+                    "away": "Fc Bias",
                     "date": "30 nov",
                     "time": "11:00",
-                    "stadium": "Campo Horta Da Areia",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Aef Faro",
+                    "away": "Sr 1º Janeiro",
+                    "date": "30 nov",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1101,15 +1110,6 @@
                     "date": "30 nov",
                     "time": "11:00",
                     "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Fc Bias",
-                    "date": "30 nov",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1221,33 +1221,6 @@
             "fixtureId": "607613",
             "matches": [
                 {
-                    "home": "Sr 1º Janeiro",
-                    "away": "Ad Geração Génios",
-                    "date": "7 dez",
-                    "time": "11:00",
-                    "stadium": "Campo Polidesportivo",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Fc Bias",
-                    "away": "Js Campinense",
-                    "date": "7 dez",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Olhão",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Sc Olhanense",
-                    "away": "Cd Montenegro",
-                    "date": "7 dez",
-                    "time": "11:00",
-                    "stadium": "Estádio José Arcanjo",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Louletano Dc",
                     "away": "Cf Os Armacenenses",
                     "date": "7 dez",
@@ -1262,6 +1235,33 @@
                     "date": "7 dez",
                     "time": "11:00",
                     "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Sc Olhanense",
+                    "away": "Cd Montenegro",
+                    "date": "7 dez",
+                    "time": "11:00",
+                    "stadium": "Estádio José Arcanjo",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Fc Bias",
+                    "away": "Js Campinense",
+                    "date": "7 dez",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Olhão",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Sr 1º Janeiro",
+                    "away": "Ad Geração Génios",
+                    "date": "7 dez",
+                    "time": "11:00",
+                    "stadium": "Campo Polidesportivo",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1373,20 +1373,20 @@
             "fixtureId": "607614",
             "matches": [
                 {
-                    "home": "Sc Farense",
-                    "away": "Ad Geração Génios",
-                    "date": "14 dez",
-                    "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Louletano Dc",
                     "away": "Js Campinense",
                     "date": "14 dez",
                     "time": "11:00",
                     "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Sc Farense",
+                    "away": "Ad Geração Génios",
+                    "date": "14 dez",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1400,20 +1400,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Sr 1º Janeiro",
-                    "away": "Sc Olhanense",
-                    "date": "14 dez",
-                    "time": "11:00",
-                    "stadium": "Campo Polidesportivo",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Fc Bias",
                     "away": "Aef Faro",
                     "date": "14 dez",
                     "time": "11:00",
                     "stadium": "Estádio Municipal Olhão",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Sr 1º Janeiro",
+                    "away": "Sc Olhanense",
+                    "date": "14 dez",
+                    "time": "11:00",
+                    "stadium": "Campo Polidesportivo",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1677,20 +1677,20 @@
             "fixtureId": "607616",
             "matches": [
                 {
-                    "home": "Sc Farense",
-                    "away": "Sr 1º Janeiro",
-                    "date": "4 jan",
-                    "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Louletano Dc",
                     "away": "Ad Geração Génios",
                     "date": "4 jan",
                     "time": "11:00",
                     "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Sc Farense",
+                    "away": "Sr 1º Janeiro",
+                    "date": "4 jan",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1704,20 +1704,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Fc Bias",
-                    "away": "Sc Olhanense",
-                    "date": "4 jan",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Olhão",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Cf Os Armacenenses",
                     "away": "Aef Faro",
                     "date": "4 jan",
                     "time": "11:00",
                     "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Fc Bias",
+                    "away": "Sc Olhanense",
+                    "date": "4 jan",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Olhão",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1829,29 +1829,11 @@
             "fixtureId": "607617",
             "matches": [
                 {
-                    "home": "Aef Faro",
-                    "away": "Js Campinense",
-                    "date": "11 jan",
-                    "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Cd Montenegro",
                     "away": "Sc Farense",
                     "date": "11 jan",
                     "time": "11:00",
                     "stadium": "Campo Horta Da Areia",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Ad Geração Génios",
-                    "away": "Cf Os Armacenenses",
-                    "date": "11 jan",
-                    "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1870,6 +1852,24 @@
                     "date": "11 jan",
                     "time": "11:00",
                     "stadium": "Campo Polidesportivo",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Aef Faro",
+                    "away": "Js Campinense",
+                    "date": "11 jan",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Ad Geração Génios",
+                    "away": "Cf Os Armacenenses",
+                    "date": "11 jan",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1999,11 +1999,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Aef Faro",
-                    "away": "Cd Montenegro",
+                    "home": "Cf Os Armacenenses",
+                    "away": "Sc Olhanense",
                     "date": "18 jan",
                     "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
+                    "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2017,11 +2017,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Sc Olhanense",
+                    "home": "Aef Faro",
+                    "away": "Cd Montenegro",
                     "date": "18 jan",
                     "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -2133,6 +2133,24 @@
             "fixtureId": "607619",
             "matches": [
                 {
+                    "home": "Cd Montenegro",
+                    "away": "Fc Bias",
+                    "date": "25 jan",
+                    "time": "11:00",
+                    "stadium": "Campo Horta Da Areia",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Sc Farense",
+                    "away": "Louletano Dc",
+                    "date": "25 jan",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Sc Olhanense",
                     "away": "Js Campinense",
                     "date": "25 jan",
@@ -2147,24 +2165,6 @@
                     "date": "25 jan",
                     "time": "11:00",
                     "stadium": "Campo Polidesportivo",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Sc Farense",
-                    "away": "Louletano Dc",
-                    "date": "25 jan",
-                    "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Cd Montenegro",
-                    "away": "Fc Bias",
-                    "date": "25 jan",
-                    "time": "11:00",
-                    "stadium": "Campo Horta Da Areia",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2285,8 +2285,8 @@
             "fixtureId": "607620",
             "matches": [
                 {
-                    "home": "Js Campinense",
-                    "away": "Sr 1º Janeiro",
+                    "home": "Louletano Dc",
+                    "away": "Fc Bias",
                     "date": "1 fev",
                     "time": "11:00",
                     "stadium": "Campo Municipal Nº 2 De Loule",
@@ -2294,11 +2294,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Ad Geração Génios",
-                    "away": "Cd Montenegro",
+                    "home": "Js Campinense",
+                    "away": "Sr 1º Janeiro",
                     "date": "1 fev",
                     "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2321,11 +2321,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Louletano Dc",
-                    "away": "Fc Bias",
+                    "home": "Ad Geração Génios",
+                    "away": "Cd Montenegro",
                     "date": "1 fev",
                     "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -2437,11 +2437,11 @@
             "fixtureId": "607621",
             "matches": [
                 {
-                    "home": "Sc Olhanense",
-                    "away": "Ad Geração Génios",
+                    "home": "Louletano Dc",
+                    "away": "Cd Montenegro",
                     "date": "8 fev",
                     "time": "11:00",
-                    "stadium": "Estádio José Arcanjo",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2455,11 +2455,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Louletano Dc",
-                    "away": "Cd Montenegro",
+                    "home": "Sc Olhanense",
+                    "away": "Ad Geração Génios",
                     "date": "8 fev",
                     "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "stadium": "Estádio José Arcanjo",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2589,33 +2589,6 @@
             "fixtureId": "607622",
             "matches": [
                 {
-                    "home": "Ad Geração Génios",
-                    "away": "Sr 1º Janeiro",
-                    "date": "15 fev",
-                    "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Aef Faro",
-                    "away": "Sc Farense",
-                    "date": "15 fev",
-                    "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Louletano Dc",
-                    "date": "15 fev",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Cd Montenegro",
                     "away": "Sc Olhanense",
                     "date": "15 fev",
@@ -2630,6 +2603,33 @@
                     "date": "15 fev",
                     "time": "11:00",
                     "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Louletano Dc",
+                    "date": "15 fev",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Aef Faro",
+                    "away": "Sc Farense",
+                    "date": "15 fev",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Ad Geração Génios",
+                    "away": "Sr 1º Janeiro",
+                    "date": "15 fev",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 }
