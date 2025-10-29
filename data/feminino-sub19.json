@@ -7,11 +7,11 @@
                 {
                     "home": "Damaiense Sad",
                     "away": "Fc Ferreiras",
-                    "date": "",
+                    "date": "0 - 3",
                     "time": "",
                     "stadium": "Estadio Algarve",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 0,
+                    "awayScore": 3
                 },
                 {
                     "home": "Cd Beja",
@@ -26,6 +26,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Fc Ferreiras",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 2,
                     "team": "Cd Beja",
                     "played": 1,
                     "wins": 0,
@@ -36,7 +47,7 @@
                     "points": 1
                 },
                 {
-                    "position": 2,
+                    "position": 3,
                     "team": "Cf Os Armacenenses",
                     "played": 1,
                     "wins": 0,
@@ -47,19 +58,8 @@
                     "points": 1
                 },
                 {
-                    "position": 3,
-                    "team": "Damaiense Sad",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
                     "position": 4,
-                    "team": "Fc Ferreiras",
+                    "team": "Portimonense Sc",
                     "played": 0,
                     "wins": 0,
                     "draws": 0,
@@ -70,7 +70,7 @@
                 },
                 {
                     "position": 5,
-                    "team": "Portimonense Sc",
+                    "team": "Damaiense Sad",
                     "played": 0,
                     "wins": 0,
                     "draws": 0,
@@ -108,13 +108,13 @@
                 {
                     "position": 1,
                     "team": "Fc Ferreiras",
-                    "played": 1,
-                    "wins": 1,
+                    "played": 2,
+                    "wins": 2,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 7,
+                    "goalsFor": 10,
                     "goalsAgainst": 2,
-                    "points": 3
+                    "points": 6
                 },
                 {
                     "position": 2,
@@ -140,7 +140,7 @@
                 },
                 {
                     "position": 4,
-                    "team": "Damaiense Sad",
+                    "team": "Portimonense Sc",
                     "played": 0,
                     "wins": 0,
                     "draws": 0,
@@ -151,7 +151,7 @@
                 },
                 {
                     "position": 5,
-                    "team": "Portimonense Sc",
+                    "team": "Damaiense Sad",
                     "played": 0,
                     "wins": 0,
                     "draws": 0,
@@ -189,13 +189,13 @@
                 {
                     "position": 1,
                     "team": "Fc Ferreiras",
-                    "played": 2,
-                    "wins": 1,
+                    "played": 3,
+                    "wins": 2,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 9,
+                    "goalsFor": 12,
                     "goalsAgainst": 4,
-                    "points": 4
+                    "points": 7
                 },
                 {
                     "position": 2,
@@ -221,7 +221,7 @@
                 },
                 {
                     "position": 4,
-                    "team": "Damaiense Sad",
+                    "team": "Portimonense Sc",
                     "played": 0,
                     "wins": 0,
                     "draws": 0,
@@ -232,7 +232,7 @@
                 },
                 {
                     "position": 5,
-                    "team": "Portimonense Sc",
+                    "team": "Damaiense Sad",
                     "played": 0,
                     "wins": 0,
                     "draws": 0,
@@ -248,20 +248,20 @@
             "fixtureId": "604755",
             "matches": [
                 {
-                    "home": "Portimonense Sc",
-                    "away": "Cf Os Armacenenses",
-                    "date": "22 nov",
-                    "time": "15:00",
-                    "stadium": "Campo Major David Neto 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Damaiense Sad",
                     "away": "Cd Beja",
                     "date": "22 nov",
                     "time": "15:00",
                     "stadium": "Estadio Algarve",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Portimonense Sc",
+                    "away": "Cf Os Armacenenses",
+                    "date": "22 nov",
+                    "time": "15:00",
+                    "stadium": "Campo Major David Neto 2",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -270,13 +270,13 @@
                 {
                     "position": 1,
                     "team": "Fc Ferreiras",
-                    "played": 2,
-                    "wins": 1,
+                    "played": 3,
+                    "wins": 2,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 9,
+                    "goalsFor": 12,
                     "goalsAgainst": 4,
-                    "points": 4
+                    "points": 7
                 },
                 {
                     "position": 2,
@@ -302,7 +302,7 @@
                 },
                 {
                     "position": 4,
-                    "team": "Damaiense Sad",
+                    "team": "Portimonense Sc",
                     "played": 0,
                     "wins": 0,
                     "draws": 0,
@@ -313,7 +313,7 @@
                 },
                 {
                     "position": 5,
-                    "team": "Portimonense Sc",
+                    "team": "Damaiense Sad",
                     "played": 0,
                     "wins": 0,
                     "draws": 0,
@@ -350,6 +350,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Fc Ferreiras",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 12,
+                    "goalsAgainst": 4,
+                    "points": 7
+                },
+                {
+                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 3,
                     "wins": 1,
@@ -358,17 +369,6 @@
                     "goalsFor": 11,
                     "goalsAgainst": 3,
                     "points": 5
-                },
-                {
-                    "position": 2,
-                    "team": "Fc Ferreiras",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 9,
-                    "goalsAgainst": 4,
-                    "points": 4
                 },
                 {
                     "position": 3,
@@ -431,6 +431,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Fc Ferreiras",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 12,
+                    "goalsAgainst": 4,
+                    "points": 7
+                },
+                {
+                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 3,
                     "wins": 1,
@@ -439,17 +450,6 @@
                     "goalsFor": 11,
                     "goalsAgainst": 3,
                     "points": 5
-                },
-                {
-                    "position": 2,
-                    "team": "Fc Ferreiras",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 9,
-                    "goalsAgainst": 4,
-                    "points": 4
                 },
                 {
                     "position": 3,
@@ -491,15 +491,6 @@
             "fixtureId": "604758",
             "matches": [
                 {
-                    "home": "Cd Beja",
-                    "away": "Fc Ferreiras",
-                    "date": "8 nov",
-                    "time": "15:00",
-                    "stadium": "Compl. Desp. Fernando Mamede Campo 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Damaiense Sad",
                     "away": "Portimonense Sc",
                     "date": "8 nov",
@@ -507,11 +498,31 @@
                     "stadium": "Estadio Algarve",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Cd Beja",
+                    "away": "Fc Ferreiras",
+                    "date": "8 nov",
+                    "time": "15:00",
+                    "stadium": "Compl. Desp. Fernando Mamede Campo 2",
+                    "homeScore": null,
+                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
+                    "team": "Fc Ferreiras",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 12,
+                    "goalsAgainst": 4,
+                    "points": 7
+                },
+                {
+                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 3,
                     "wins": 1,
@@ -520,17 +531,6 @@
                     "goalsFor": 11,
                     "goalsAgainst": 3,
                     "points": 5
-                },
-                {
-                    "position": 2,
-                    "team": "Fc Ferreiras",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 9,
-                    "goalsAgainst": 4,
-                    "points": 4
                 },
                 {
                     "position": 3,
@@ -593,6 +593,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Fc Ferreiras",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 12,
+                    "goalsAgainst": 4,
+                    "points": 7
+                },
+                {
+                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 3,
                     "wins": 1,
@@ -601,17 +612,6 @@
                     "goalsFor": 11,
                     "goalsAgainst": 3,
                     "points": 5
-                },
-                {
-                    "position": 2,
-                    "team": "Fc Ferreiras",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 9,
-                    "goalsAgainst": 4,
-                    "points": 4
                 },
                 {
                     "position": 3,
@@ -674,6 +674,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Fc Ferreiras",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 12,
+                    "goalsAgainst": 4,
+                    "points": 7
+                },
+                {
+                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 3,
                     "wins": 1,
@@ -682,17 +693,6 @@
                     "goalsFor": 11,
                     "goalsAgainst": 3,
                     "points": 5
-                },
-                {
-                    "position": 2,
-                    "team": "Fc Ferreiras",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 9,
-                    "goalsAgainst": 4,
-                    "points": 4
                 },
                 {
                     "position": 3,
@@ -755,6 +755,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Fc Ferreiras",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 12,
+                    "goalsAgainst": 4,
+                    "points": 7
+                },
+                {
+                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 3,
                     "wins": 1,
@@ -763,17 +774,6 @@
                     "goalsFor": 11,
                     "goalsAgainst": 3,
                     "points": 5
-                },
-                {
-                    "position": 2,
-                    "team": "Fc Ferreiras",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 9,
-                    "goalsAgainst": 4,
-                    "points": 4
                 },
                 {
                     "position": 3,
