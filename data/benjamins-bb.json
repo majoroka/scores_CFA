@@ -5,15 +5,6 @@
             "fixtureId": "616342",
             "matches": [
                 {
-                    "home": "Gd Lagoa",
-                    "away": "Imortal Dc",
-                    "date": "1 nov",
-                    "time": "",
-                    "stadium": "Campo De Futebol Sete - Espamol",
-                    "homeScore": 4,
-                    "awayScore": 5
-                },
-                {
                     "home": "Cf Os Armacenenses",
                     "away": "Casa Benfica Albufeira",
                     "date": "1 nov",
@@ -21,6 +12,15 @@
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 2,
                     "awayScore": 16
+                },
+                {
+                    "home": "Gd Lagoa",
+                    "away": "Imortal Dc",
+                    "date": "1 nov",
+                    "time": "",
+                    "stadium": "Campo De Futebol Sete - Espamol",
+                    "homeScore": 4,
+                    "awayScore": 5
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -39,6 +39,15 @@
             "fixtureId": "616343",
             "matches": [
                 {
+                    "home": "Nucleo Sporting C.P. Olhao",
+                    "away": "Gd Lagoa",
+                    "date": "8 nov",
+                    "time": "12:00",
+                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Imortal Dc",
                     "away": "Cf Os Armacenenses",
                     "date": "8 nov",
@@ -53,15 +62,6 @@
                     "date": "8 nov",
                     "time": "12:00",
                     "stadium": "Estádio Municipal Messines",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Nucleo Sporting C.P. Olhao",
-                    "away": "Gd Lagoa",
-                    "date": "8 nov",
-                    "time": "12:00",
-                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -107,11 +107,11 @@
             "fixtureId": "616345",
             "matches": [
                 {
-                    "home": "Imortal Dc",
-                    "away": "Nucleo Sporting C.P. Olhao",
+                    "home": "Cf Os Armacenenses",
+                    "away": "Fc Ferreiras",
                     "date": "22 nov",
-                    "time": "11:00",
-                    "stadium": "Campo Da Palmeira Nº 2",
+                    "time": "10:30",
+                    "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -119,17 +119,17 @@
                     "home": "Gd Lagoa",
                     "away": "Casa Benfica Albufeira",
                     "date": "22 nov",
-                    "time": "11:00",
+                    "time": "12:00",
                     "stadium": "Campo De Futebol Sete - Espamol",
                     "homeScore": null,
                     "awayScore": null
                 },
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Fc Ferreiras",
+                    "home": "Imortal Dc",
+                    "away": "Nucleo Sporting C.P. Olhao",
                     "date": "22 nov",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "time": "12:00",
+                    "stadium": "Campo Da Palmeira Nº 2",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -150,20 +150,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Casa Benfica Albufeira",
-                    "away": "Imortal Dc",
-                    "date": "29 nov",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Messines",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Nucleo Sporting C.P. Olhao",
                     "away": "Cf Os Armacenenses",
                     "date": "29 nov",
                     "time": "11:00",
                     "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Casa Benfica Albufeira",
+                    "away": "Imortal Dc",
+                    "date": "29 nov",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Messines",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -209,6 +209,15 @@
             "fixtureId": "616348",
             "matches": [
                 {
+                    "home": "Fc Ferreiras",
+                    "away": "Casa Benfica Albufeira",
+                    "date": "13 dez",
+                    "time": "11:00",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Gd Lagoa",
                     "away": "Nucleo Sporting C.P. Olhao",
                     "date": "13 dez",
@@ -225,15 +234,6 @@
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": null,
                     "awayScore": null
-                },
-                {
-                    "home": "Fc Ferreiras",
-                    "away": "Casa Benfica Albufeira",
-                    "date": "13 dez",
-                    "time": "11:00",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
                 }
             ],
             "classification": []
@@ -242,15 +242,6 @@
             "index": 8,
             "fixtureId": "616349",
             "matches": [
-                {
-                    "home": "Imortal Dc",
-                    "away": "Fc Ferreiras",
-                    "date": "20 dez",
-                    "time": "11:00",
-                    "stadium": "Campo Da Palmeira Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
                 {
                     "home": "Cf Os Armacenenses",
                     "away": "Gd Lagoa",
@@ -268,6 +259,15 @@
                     "stadium": "Estádio Municipal Messines",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Imortal Dc",
+                    "away": "Fc Ferreiras",
+                    "date": "20 dez",
+                    "time": "11:00",
+                    "stadium": "Campo Da Palmeira Nº 2",
+                    "homeScore": null,
+                    "awayScore": null
                 }
             ],
             "classification": []
@@ -277,20 +277,20 @@
             "fixtureId": "616350",
             "matches": [
                 {
-                    "home": "Fc Ferreiras",
-                    "away": "Cf Os Armacenenses",
-                    "date": "3 jan",
-                    "time": "11:00",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Casa Benfica Albufeira",
                     "away": "Gd Lagoa",
                     "date": "3 jan",
                     "time": "11:00",
                     "stadium": "Estádio Municipal Messines",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Cf Os Armacenenses",
+                    "date": "3 jan",
+                    "time": "11:00",
+                    "stadium": "Estádio Nora Nº 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -320,20 +320,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Gd Lagoa",
-                    "away": "Fc Ferreiras",
-                    "date": "10 jan",
-                    "time": "11:00",
-                    "stadium": "Campo De Futebol Sete - Espamol",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Cf Os Armacenenses",
                     "away": "Nucleo Sporting C.P. Olhao",
                     "date": "10 jan",
                     "time": "11:00",
                     "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Gd Lagoa",
+                    "away": "Fc Ferreiras",
+                    "date": "10 jan",
+                    "time": "11:00",
+                    "stadium": "Campo De Futebol Sete - Espamol",
                     "homeScore": null,
                     "awayScore": null
                 }
