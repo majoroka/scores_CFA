@@ -14,15 +14,6 @@
                     "awayScore": 2
                 },
                 {
-                    "home": "A Indicar",
-                    "away": "Mexilhoeira Grande Fc",
-                    "date": "18 out",
-                    "time": "11:00",
-                    "stadium": "A Indicar",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Cf Os Armacenenses",
                     "away": "Vilamoura Saa",
                     "date": "1 - 4                            \r\n                \r\n                    18 out",
@@ -30,6 +21,15 @@
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 1,
                     "awayScore": 4
+                },
+                {
+                    "home": "A Indicar",
+                    "away": "Mexilhoeira Grande Fc",
+                    "date": "18 out",
+                    "time": "11:00",
+                    "stadium": "A Indicar",
+                    "homeScore": null,
+                    "awayScore": null
                 }
             ],
             "classification": [
@@ -104,15 +104,6 @@
                     "awayScore": 0
                 },
                 {
-                    "home": "Aa Belavista",
-                    "away": "A Indicar",
-                    "date": "25 out",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Da Bela Vista",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Mexilhoeira Grande Fc",
                     "away": "Cf Os Armacenenses",
                     "date": "4 - 4                            \r\n                \r\n                    25 out",
@@ -120,6 +111,15 @@
                     "stadium": "Campo Municipal Mexilhoeira Grande",
                     "homeScore": 4,
                     "awayScore": 4
+                },
+                {
+                    "home": "Aa Belavista",
+                    "away": "A Indicar",
+                    "date": "25 out",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Da Bela Vista",
+                    "homeScore": null,
+                    "awayScore": null
                 }
             ],
             "classification": [
@@ -518,20 +518,20 @@
             "fixtureId": "609878",
             "matches": [
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Mexilhoeira Grande Fc",
-                    "date": "29 nov",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Imortal Dc",
                     "away": "Vilamoura Saa",
                     "date": "29 nov",
                     "time": "11:00",
                     "stadium": "Campo Da Palmeira Nº 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Mexilhoeira Grande Fc",
+                    "date": "29 nov",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": null,
                     "awayScore": null
                 }
