@@ -260,6 +260,52 @@ const findBestRoundIndexByDate = () => {
     return 0;
 };
 
+const findLatestCompletedRoundIndex = () => {
+    if (!competitionData || !Array.isArray(competitionData.rounds)) return null;
+    const today = new Date();
+    today.setHours(12, 0, 0, 0);
+
+    let bestPastIndex = null;
+    let smallestPastDiff = Number.POSITIVE_INFINITY;
+    let closestAnyIndex = null;
+    let closestAnyDiff = Number.POSITIVE_INFINITY;
+
+    competitionData.rounds.forEach((round, idx) => {
+        if (!round || !Array.isArray(round.matches)) return;
+        const hasCompletedMatch = round.matches.some((match) => (
+            Number.isInteger(match?.homeScore) && Number.isInteger(match?.awayScore)
+        ));
+        if (!hasCompletedMatch) return;
+        const reference = getRoundReferenceDate(round);
+        if (!reference) return;
+
+        const diff = today.getTime() - reference.getTime();
+        const absDiff = Math.abs(diff);
+
+        if (absDiff < closestAnyDiff) {
+            closestAnyDiff = absDiff;
+            closestAnyIndex = idx;
+        }
+
+        if (diff >= 0 && diff < smallestPastDiff) {
+            smallestPastDiff = diff;
+            bestPastIndex = idx;
+        }
+    });
+
+    if (bestPastIndex !== null) return bestPastIndex;
+    if (closestAnyIndex !== null) return closestAnyIndex;
+    return null;
+};
+
+const findBestRoundIndex = () => {
+    const latestCompleted = findLatestCompletedRoundIndex();
+    if (latestCompleted !== null) {
+        return latestCompleted;
+    }
+    return findBestRoundIndexByDate();
+};
+
 const initializeRoundBasedOnDate = () => {
     if (!competitionData || !Array.isArray(competitionData.rounds) || !competitionData.rounds.length) return;
     const hash = (window.location.hash || '').toLowerCase();
@@ -275,7 +321,7 @@ const initializeRoundBasedOnDate = () => {
         targetTab = 'classificacao';
     }
     if (!shouldOverride) return;
-    const suggestedIndex = findBestRoundIndexByDate();
+    const suggestedIndex = findBestRoundIndex();
     const safeIndex = Math.max(0, Math.min(competitionData.rounds.length - 1, suggestedIndex));
 
     // Atualiza hash apenas se estivermos em resultado/classificação padrão sem seleção manual
@@ -755,12 +801,12 @@ const initializeRoundBasedOnDate = () => {
     if (nextRoundBtnClass) nextRoundBtnClass.addEventListener('click', () => navigate(currentRoundIndex + 1, 'classificacao'));
     tabResultados.addEventListener('click', (event) => {
         if (event) event.preventDefault();
-        const targetIndex = userHasManualRoundSelection ? currentRoundIndex : findBestRoundIndexByDate();
+        const targetIndex = userHasManualRoundSelection ? currentRoundIndex : findBestRoundIndex();
         navigate(targetIndex, 'resultados', userHasManualRoundSelection);
     });
     tabClassificacao.addEventListener('click', (event) => {
         if (event) event.preventDefault();
-        const targetIndex = userHasManualRoundSelection ? currentRoundIndex : findBestRoundIndexByDate();
+        const targetIndex = userHasManualRoundSelection ? currentRoundIndex : findBestRoundIndex();
         navigate(targetIndex, 'classificacao', userHasManualRoundSelection);
     });
     // acessibilidade via teclado

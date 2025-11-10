@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feminino Sub15 - Resultados e Classificação</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-competition="feminino-sub15">
+
+    <header class="details-header">
+        <a href="index.html" class="back-button" aria-label="Voltar à lista de competições">
+            <img src="img/seta.png" alt="Voltar">
+        </a>
+        <div class="competition-title">
+            <img src="img/logo.png" alt="Logo CF Os Armacenenses" class="competition-logo">
+            <h1>Feminino - Sub15</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <nav class="tabs" role="tablist" aria-label="Resultados e Classificação">
+            <a href="#resultados" class="tab-link" id="tab-resultados" role="tab" aria-controls="content-resultados" aria-selected="true" tabindex="0">Resultados</a>
+            <a href="#classificacao" class="tab-link" id="tab-classificacao" role="tab" aria-controls="content-classificacao" aria-selected="false" tabindex="-1">Classificação</a>
+        </nav>
+
+        <div id="content-resultados" class="tab-content" role="tabpanel">
+            <div class="round-selector">
+                <button id="prev-round" class="nav-arrow" aria-label="Jornada anterior" style="--tap-target-size: 34px;">
+                    <img src="img/seta.png" alt="Anterior">
+                </button>
+                <h2 id="round-title">Jornada 1</h2>
+                <button id="next-round" class="nav-arrow" aria-label="Próxima jornada" style="--tap-target-size: 34px;">
+                    <img src="img/seta.png" alt="Próxima">
+                </button>
+            </div>
+            <div id="matches-container" class="matches-list">
+                <!-- Os jogos da jornada serão inseridos aqui pelo JS -->
+            </div>
+        </div>
+
+        <div id="content-classificacao" class="tab-content hidden" role="tabpanel">
+             <div class="round-selector">
+                <button id="prev-round-class" class="nav-arrow" aria-label="Jornada anterior" style="--tap-target-size: 34px;">
+                    <img src="img/seta.png" alt="Anterior">
+                </button>
+                <h2 id="classification-round-title">Classificação à Jornada 1</h2>
+                <button id="next-round-class" class="nav-arrow" aria-label="Próxima jornada" style="--tap-target-size: 34px;">
+                    <img src="img/seta.png" alt="Próxima">
+                </button>
+            </div>
+            <div id="classification-container" class="classification-table-wrapper">
+                <!-- A tabela de classificação será inserida aqui pelo JS -->
+            </div>
+        </div>
+
+    </main>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
