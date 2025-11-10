@@ -33,7 +33,7 @@ jobs:
           fi
 
       - name: Correr todos os fetchers
-        timeout-minutes: 6
+        timeout-minutes: 20
         run: |
           for f in fetch_*.py; do
             echo "🔹 A correr $f..."
