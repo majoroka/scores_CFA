@@ -23,6 +23,15 @@
                     "awayScore": 4
                 },
                 {
+                    "home": "Fc Os 11 Esperanças",
+                    "away": "Cu Culatrense",
+                    "date": "0 - 3                            \r\n                \r\n                    27 set",
+                    "time": "",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": 0,
+                    "awayScore": 3
+                },
+                {
                     "home": "Silves Fc",
                     "away": "Louletano Dc",
                     "date": "1 - 1                            \r\n                \r\n                    27 set",
@@ -41,15 +50,6 @@
                     "awayScore": 4
                 },
                 {
-                    "home": "Fc Os 11 Esperanças",
-                    "away": "Cu Culatrense",
-                    "date": "0 - 1                            \r\n                \r\n                    27 set",
-                    "time": "",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": 0,
-                    "awayScore": 1
-                },
-                {
                     "home": "Imortal Dc",
                     "away": "Ud Messinense",
                     "date": "1 - 0                            \r\n                \r\n                    27 set",
@@ -62,17 +62,6 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Quarteirense Sad",
-                    "points": 3,
-                    "played": 1,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 4,
-                    "goalsAgainst": 0
-                },
-                {
-                    "position": 2,
                     "team": "Fc Ferreiras",
                     "points": 3,
                     "played": 1,
@@ -83,6 +72,17 @@
                     "goalsAgainst": 1
                 },
                 {
+                    "position": 1,
+                    "team": "Quarteirense Sad",
+                    "points": 3,
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 0
+                },
+                {
                     "position": 3,
                     "team": "Cu Culatrense",
                     "points": 3,
@@ -90,11 +90,11 @@
                     "wins": 1,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 1,
+                    "goalsFor": 3,
                     "goalsAgainst": 0
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Imortal Dc",
                     "points": 3,
                     "played": 1,
@@ -150,17 +150,6 @@
                 },
                 {
                     "position": 9,
-                    "team": "Fc Os 11 Esperanças",
-                    "points": 0,
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 1
-                },
-                {
-                    "position": 9,
                     "team": "Ud Messinense",
                     "points": 0,
                     "played": 1,
@@ -171,7 +160,7 @@
                     "goalsAgainst": 1
                 },
                 {
-                    "position": 11,
+                    "position": 10,
                     "team": "Cd Odiáxere",
                     "points": 0,
                     "played": 1,
@@ -179,6 +168,28 @@
                     "draws": 0,
                     "losses": 1,
                     "goalsFor": 1,
+                    "goalsAgainst": 4
+                },
+                {
+                    "position": 11,
+                    "team": "Fc Os 11 Esperanças",
+                    "points": 0,
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 3
+                },
+                {
+                    "position": 12,
+                    "team": "Cf Os Armacenenses",
+                    "points": 0,
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 0,
                     "goalsAgainst": 4
                 }
             ]
@@ -311,6 +322,17 @@
                 },
                 {
                     "position": 7,
+                    "team": "Cu Culatrense",
+                    "points": 3,
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 4,
+                    "goalsAgainst": 4
+                },
+                {
+                    "position": 8,
                     "team": "Imortal Dc",
                     "points": 3,
                     "played": 2,
@@ -319,17 +341,6 @@
                     "losses": 1,
                     "goalsFor": 2,
                     "goalsAgainst": 2
-                },
-                {
-                    "position": 8,
-                    "team": "Cu Culatrense",
-                    "points": 3,
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 4
                 },
                 {
                     "position": 9,
@@ -344,7 +355,7 @@
                 },
                 {
                     "position": 10,
-                    "team": "Fc Os 11 Esperanças",
+                    "team": "Ud Messinense",
                     "points": 0,
                     "played": 2,
                     "wins": 0,
@@ -354,15 +365,26 @@
                     "goalsAgainst": 2
                 },
                 {
-                    "position": 10,
-                    "team": "Ud Messinense",
+                    "position": 11,
+                    "team": "Fc Os 11 Esperanças",
                     "points": 0,
                     "played": 2,
                     "wins": 0,
                     "draws": 0,
                     "losses": 2,
                     "goalsFor": 0,
-                    "goalsAgainst": 2
+                    "goalsAgainst": 4
+                },
+                {
+                    "position": 12,
+                    "team": "Cf Os Armacenenses",
+                    "points": 0,
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 0,
+                    "goalsAgainst": 7
                 }
             ]
         },
@@ -478,7 +500,7 @@
                     "wins": 2,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 4,
+                    "goalsFor": 6,
                     "goalsAgainst": 5
                 },
                 {
@@ -523,7 +545,7 @@
                     "draws": 0,
                     "losses": 2,
                     "goalsFor": 4,
-                    "goalsAgainst": 4
+                    "goalsAgainst": 6
                 },
                 {
                     "position": 10,
@@ -546,6 +568,17 @@
                     "losses": 3,
                     "goalsFor": 0,
                     "goalsAgainst": 5
+                },
+                {
+                    "position": 12,
+                    "team": "Cf Os Armacenenses",
+                    "points": 0,
+                    "played": 3,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 1,
+                    "goalsAgainst": 9
                 }
             ]
         },
@@ -672,7 +705,7 @@
                     "wins": 2,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 4,
+                    "goalsFor": 6,
                     "goalsAgainst": 12
                 },
                 {
@@ -706,7 +739,7 @@
                     "draws": 1,
                     "losses": 2,
                     "goalsFor": 6,
-                    "goalsAgainst": 6
+                    "goalsAgainst": 8
                 },
                 {
                     "position": 10,
@@ -729,6 +762,17 @@
                     "losses": 3,
                     "goalsFor": 3,
                     "goalsAgainst": 11
+                },
+                {
+                    "position": 12,
+                    "team": "Ud Messinense",
+                    "points": 0,
+                    "played": 4,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 1,
+                    "goalsAgainst": 7
                 }
             ]
         },
@@ -877,7 +921,7 @@
                     "wins": 2,
                     "draws": 0,
                     "losses": 3,
-                    "goalsFor": 6,
+                    "goalsFor": 8,
                     "goalsAgainst": 16
                 },
                 {
@@ -911,6 +955,17 @@
                     "draws": 1,
                     "losses": 3,
                     "goalsFor": 8,
+                    "goalsAgainst": 11
+                },
+                {
+                    "position": 12,
+                    "team": "Ud Messinense",
+                    "points": 1,
+                    "played": 5,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 4,
+                    "goalsFor": 3,
                     "goalsAgainst": 9
                 }
             ]
@@ -1071,7 +1126,7 @@
                     "wins": 2,
                     "draws": 0,
                     "losses": 4,
-                    "goalsFor": 6,
+                    "goalsFor": 8,
                     "goalsAgainst": 17
                 },
                 {
@@ -1094,6 +1149,17 @@
                     "draws": 1,
                     "losses": 4,
                     "goalsFor": 8,
+                    "goalsAgainst": 13
+                },
+                {
+                    "position": 12,
+                    "team": "Ud Messinense",
+                    "points": 1,
+                    "played": 6,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 5,
+                    "goalsFor": 3,
                     "goalsAgainst": 11
                 }
             ]
@@ -1121,15 +1187,6 @@
                     "awayScore": 1
                 },
                 {
-                    "home": "Louletano Dc",
-                    "away": "Cf Esperança Lagos",
-                    "date": "2 - 0                            \r\n                \r\n                    8 nov",
-                    "time": "",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": 2,
-                    "awayScore": 0
-                },
-                {
                     "home": "Quarteirense Sad",
                     "away": "Fc Ferreiras",
                     "date": "2 - 1                            \r\n                \r\n                    8 nov",
@@ -1137,6 +1194,15 @@
                     "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": 2,
                     "awayScore": 1
+                },
+                {
+                    "home": "Louletano Dc",
+                    "away": "Cf Esperança Lagos",
+                    "date": "2 - 0                            \r\n                \r\n                    8 nov",
+                    "time": "",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": 2,
+                    "awayScore": 0
                 },
                 {
                     "home": "Imortal Dc",
@@ -1254,7 +1320,7 @@
                     "wins": 2,
                     "draws": 0,
                     "losses": 5,
-                    "goalsFor": 6,
+                    "goalsFor": 8,
                     "goalsAgainst": 19
                 },
                 {
@@ -1270,6 +1336,17 @@
                 },
                 {
                     "position": 11,
+                    "team": "Ud Messinense",
+                    "points": 4,
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 5,
+                    "goalsFor": 5,
+                    "goalsAgainst": 11
+                },
+                {
+                    "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 7,
@@ -1277,7 +1354,7 @@
                     "draws": 1,
                     "losses": 5,
                     "goalsFor": 9,
-                    "goalsAgainst": 14
+                    "goalsAgainst": 16
                 }
             ]
         },
@@ -1437,7 +1514,7 @@
                     "wins": 2,
                     "draws": 0,
                     "losses": 5,
-                    "goalsFor": 6,
+                    "goalsFor": 8,
                     "goalsAgainst": 19
                 },
                 {
@@ -1453,6 +1530,17 @@
                 },
                 {
                     "position": 11,
+                    "team": "Ud Messinense",
+                    "points": 4,
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 5,
+                    "goalsFor": 5,
+                    "goalsAgainst": 11
+                },
+                {
+                    "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 7,
@@ -1460,7 +1548,7 @@
                     "draws": 1,
                     "losses": 5,
                     "goalsFor": 9,
-                    "goalsAgainst": 14
+                    "goalsAgainst": 16
                 }
             ]
         },
@@ -1620,7 +1708,7 @@
                     "wins": 2,
                     "draws": 0,
                     "losses": 5,
-                    "goalsFor": 6,
+                    "goalsFor": 8,
                     "goalsAgainst": 19
                 },
                 {
@@ -1636,6 +1724,17 @@
                 },
                 {
                     "position": 11,
+                    "team": "Ud Messinense",
+                    "points": 4,
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 5,
+                    "goalsFor": 5,
+                    "goalsAgainst": 11
+                },
+                {
+                    "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 7,
@@ -1643,7 +1742,7 @@
                     "draws": 1,
                     "losses": 5,
                     "goalsFor": 9,
-                    "goalsAgainst": 14
+                    "goalsAgainst": 16
                 }
             ]
         },
@@ -1670,11 +1769,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Fc Os 11 Esperanças",
-                    "away": "Quarteirense Sad",
+                    "home": "Cf Esperança Lagos",
+                    "away": "Fc Ferreiras",
                     "date": "29 nov",
                     "time": "15:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
+                    "stadium": "Estádio Municipal De Lagos N.º 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1697,11 +1796,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cf Esperança Lagos",
-                    "away": "Fc Ferreiras",
+                    "home": "Fc Os 11 Esperanças",
+                    "away": "Quarteirense Sad",
                     "date": "29 nov",
-                    "time": "15:00",
-                    "stadium": "Estadio Municipal Lagos",
+                    "time": "17:30",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1803,7 +1902,7 @@
                     "wins": 2,
                     "draws": 0,
                     "losses": 5,
-                    "goalsFor": 6,
+                    "goalsFor": 8,
                     "goalsAgainst": 19
                 },
                 {
@@ -1819,6 +1918,17 @@
                 },
                 {
                     "position": 11,
+                    "team": "Ud Messinense",
+                    "points": 4,
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 5,
+                    "goalsFor": 5,
+                    "goalsAgainst": 11
+                },
+                {
+                    "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 7,
@@ -1826,7 +1936,7 @@
                     "draws": 1,
                     "losses": 5,
                     "goalsFor": 9,
-                    "goalsAgainst": 14
+                    "goalsAgainst": 16
                 }
             ]
         },
@@ -1986,7 +2096,7 @@
                     "wins": 2,
                     "draws": 0,
                     "losses": 5,
-                    "goalsFor": 6,
+                    "goalsFor": 8,
                     "goalsAgainst": 19
                 },
                 {
@@ -2002,6 +2112,17 @@
                 },
                 {
                     "position": 11,
+                    "team": "Ud Messinense",
+                    "points": 4,
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 5,
+                    "goalsFor": 5,
+                    "goalsAgainst": 11
+                },
+                {
+                    "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 7,
@@ -2009,7 +2130,7 @@
                     "draws": 1,
                     "losses": 5,
                     "goalsFor": 9,
-                    "goalsAgainst": 14
+                    "goalsAgainst": 16
                 }
             ]
         },
@@ -2169,7 +2290,7 @@
                     "wins": 2,
                     "draws": 0,
                     "losses": 5,
-                    "goalsFor": 6,
+                    "goalsFor": 8,
                     "goalsAgainst": 19
                 },
                 {
@@ -2185,6 +2306,17 @@
                 },
                 {
                     "position": 11,
+                    "team": "Ud Messinense",
+                    "points": 4,
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 5,
+                    "goalsFor": 5,
+                    "goalsAgainst": 11
+                },
+                {
+                    "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 7,
@@ -2192,7 +2324,7 @@
                     "draws": 1,
                     "losses": 5,
                     "goalsFor": 9,
-                    "goalsAgainst": 14
+                    "goalsAgainst": 16
                 }
             ]
         },
@@ -2352,7 +2484,7 @@
                     "wins": 2,
                     "draws": 0,
                     "losses": 5,
-                    "goalsFor": 6,
+                    "goalsFor": 8,
                     "goalsAgainst": 19
                 },
                 {
@@ -2368,6 +2500,17 @@
                 },
                 {
                     "position": 11,
+                    "team": "Ud Messinense",
+                    "points": 4,
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 5,
+                    "goalsFor": 5,
+                    "goalsAgainst": 11
+                },
+                {
+                    "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 7,
@@ -2375,7 +2518,7 @@
                     "draws": 1,
                     "losses": 5,
                     "goalsFor": 9,
-                    "goalsAgainst": 14
+                    "goalsAgainst": 16
                 }
             ]
         },
@@ -2535,7 +2678,7 @@
                     "wins": 2,
                     "draws": 0,
                     "losses": 5,
-                    "goalsFor": 6,
+                    "goalsFor": 8,
                     "goalsAgainst": 19
                 },
                 {
@@ -2551,6 +2694,17 @@
                 },
                 {
                     "position": 11,
+                    "team": "Ud Messinense",
+                    "points": 4,
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 5,
+                    "goalsFor": 5,
+                    "goalsAgainst": 11
+                },
+                {
+                    "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 7,
@@ -2558,7 +2712,7 @@
                     "draws": 1,
                     "losses": 5,
                     "goalsFor": 9,
-                    "goalsAgainst": 14
+                    "goalsAgainst": 16
                 }
             ]
         },
@@ -2718,7 +2872,7 @@
                     "wins": 2,
                     "draws": 0,
                     "losses": 5,
-                    "goalsFor": 6,
+                    "goalsFor": 8,
                     "goalsAgainst": 19
                 },
                 {
@@ -2734,6 +2888,17 @@
                 },
                 {
                     "position": 11,
+                    "team": "Ud Messinense",
+                    "points": 4,
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 5,
+                    "goalsFor": 5,
+                    "goalsAgainst": 11
+                },
+                {
+                    "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 7,
@@ -2741,7 +2906,7 @@
                     "draws": 1,
                     "losses": 5,
                     "goalsFor": 9,
-                    "goalsAgainst": 14
+                    "goalsAgainst": 16
                 }
             ]
         },
@@ -2901,7 +3066,7 @@
                     "wins": 2,
                     "draws": 0,
                     "losses": 5,
-                    "goalsFor": 6,
+                    "goalsFor": 8,
                     "goalsAgainst": 19
                 },
                 {
@@ -2917,6 +3082,17 @@
                 },
                 {
                     "position": 11,
+                    "team": "Ud Messinense",
+                    "points": 4,
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 5,
+                    "goalsFor": 5,
+                    "goalsAgainst": 11
+                },
+                {
+                    "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 7,
@@ -2924,7 +3100,7 @@
                     "draws": 1,
                     "losses": 5,
                     "goalsFor": 9,
-                    "goalsAgainst": 14
+                    "goalsAgainst": 16
                 }
             ]
         },
@@ -3084,7 +3260,7 @@
                     "wins": 2,
                     "draws": 0,
                     "losses": 5,
-                    "goalsFor": 6,
+                    "goalsFor": 8,
                     "goalsAgainst": 19
                 },
                 {
@@ -3100,6 +3276,17 @@
                 },
                 {
                     "position": 11,
+                    "team": "Ud Messinense",
+                    "points": 4,
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 5,
+                    "goalsFor": 5,
+                    "goalsAgainst": 11
+                },
+                {
+                    "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 7,
@@ -3107,7 +3294,7 @@
                     "draws": 1,
                     "losses": 5,
                     "goalsFor": 9,
-                    "goalsAgainst": 14
+                    "goalsAgainst": 16
                 }
             ]
         },
@@ -3267,7 +3454,7 @@
                     "wins": 2,
                     "draws": 0,
                     "losses": 5,
-                    "goalsFor": 6,
+                    "goalsFor": 8,
                     "goalsAgainst": 19
                 },
                 {
@@ -3283,6 +3470,17 @@
                 },
                 {
                     "position": 11,
+                    "team": "Ud Messinense",
+                    "points": 4,
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 5,
+                    "goalsFor": 5,
+                    "goalsAgainst": 11
+                },
+                {
+                    "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 7,
@@ -3290,7 +3488,7 @@
                     "draws": 1,
                     "losses": 5,
                     "goalsFor": 9,
-                    "goalsAgainst": 14
+                    "goalsAgainst": 16
                 }
             ]
         },
@@ -3450,7 +3648,7 @@
                     "wins": 2,
                     "draws": 0,
                     "losses": 5,
-                    "goalsFor": 6,
+                    "goalsFor": 8,
                     "goalsAgainst": 19
                 },
                 {
@@ -3466,6 +3664,17 @@
                 },
                 {
                     "position": 11,
+                    "team": "Ud Messinense",
+                    "points": 4,
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 5,
+                    "goalsFor": 5,
+                    "goalsAgainst": 11
+                },
+                {
+                    "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 7,
@@ -3473,7 +3682,7 @@
                     "draws": 1,
                     "losses": 5,
                     "goalsFor": 9,
-                    "goalsAgainst": 14
+                    "goalsAgainst": 16
                 }
             ]
         },
@@ -3633,7 +3842,7 @@
                     "wins": 2,
                     "draws": 0,
                     "losses": 5,
-                    "goalsFor": 6,
+                    "goalsFor": 8,
                     "goalsAgainst": 19
                 },
                 {
@@ -3649,6 +3858,17 @@
                 },
                 {
                     "position": 11,
+                    "team": "Ud Messinense",
+                    "points": 4,
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 5,
+                    "goalsFor": 5,
+                    "goalsAgainst": 11
+                },
+                {
+                    "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 7,
@@ -3656,7 +3876,7 @@
                     "draws": 1,
                     "losses": 5,
                     "goalsFor": 9,
-                    "goalsAgainst": 14
+                    "goalsAgainst": 16
                 }
             ]
         },
@@ -3816,7 +4036,7 @@
                     "wins": 2,
                     "draws": 0,
                     "losses": 5,
-                    "goalsFor": 6,
+                    "goalsFor": 8,
                     "goalsAgainst": 19
                 },
                 {
@@ -3832,6 +4052,17 @@
                 },
                 {
                     "position": 11,
+                    "team": "Ud Messinense",
+                    "points": 4,
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 5,
+                    "goalsFor": 5,
+                    "goalsAgainst": 11
+                },
+                {
+                    "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 7,
@@ -3839,7 +4070,7 @@
                     "draws": 1,
                     "losses": 5,
                     "goalsFor": 9,
-                    "goalsAgainst": 14
+                    "goalsAgainst": 16
                 }
             ]
         },
@@ -3999,7 +4230,7 @@
                     "wins": 2,
                     "draws": 0,
                     "losses": 5,
-                    "goalsFor": 6,
+                    "goalsFor": 8,
                     "goalsAgainst": 19
                 },
                 {
@@ -4015,6 +4246,17 @@
                 },
                 {
                     "position": 11,
+                    "team": "Ud Messinense",
+                    "points": 4,
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 5,
+                    "goalsFor": 5,
+                    "goalsAgainst": 11
+                },
+                {
+                    "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
                     "played": 7,
@@ -4022,7 +4264,7 @@
                     "draws": 1,
                     "losses": 5,
                     "goalsFor": 9,
-                    "goalsAgainst": 14
+                    "goalsAgainst": 16
                 }
             ]
         }

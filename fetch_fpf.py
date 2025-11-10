@@ -108,7 +108,10 @@ def parse_classification_from_fragment_v2(html_fragment: str):
     classification = []
     section_match = re.search(r'<div id="classification">([\s\S]*?)</div>\s*<div id="matches">', html_fragment, re.IGNORECASE)
     section_html = section_match.group(1) if section_match else html_fragment
-    row_pattern = re.compile(r'<div class="game classification[^\"]*">\s*([\s\S]*?)\s*(?=</div><div class="game classification|</div>\s*</div>\s*<div id="matches">)', re.IGNORECASE)
+    row_pattern = re.compile(
+        r'<div class="game classification[^\"]*">\s*([\s\S]*?)\s*(?=</div>\s*(?:<div class="game classification|$))',
+        re.IGNORECASE
+    )
     rows = re.findall(row_pattern, section_html)
     for row_html in rows:
         cols = re.findall(r'<div class="[^>]*?col-[^\"]*">([\s\S]*?)</div>', row_html)

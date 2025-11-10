@@ -90,7 +90,7 @@ def parse_classification(html_fragment: str):
     )
     section_html = section_match.group(1) if section_match else html_fragment
     row_pattern = re.compile(
-        r'<div class="game classification[^\"]*">\s*([\s\S]*?)\s*(?=</div><div class="game classification|</div>\s*</div>\s*<div id="matches">)',
+        r'<div class="game classification[^\"]*">\s*([\s\S]*?)\s*(?=</div>\s*(?:<div class="game classification|$))',
         re.IGNORECASE
     )
     rows = re.findall(row_pattern, section_html)

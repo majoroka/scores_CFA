@@ -14,6 +14,15 @@
                     "awayScore": 1
                 },
                 {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Gd Lagoa",
+                    "date": "3 - 0                            \r\n                \r\n                    11 out",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 3,
+                    "awayScore": 0
+                },
+                {
                     "home": "Silves Fc",
                     "away": "Padernense Clube",
                     "date": "3 - 0                            \r\n                \r\n                    11 out",
@@ -21,15 +30,6 @@
                     "stadium": "Estádio Dr. Francisco Vieira",
                     "homeScore": 3,
                     "awayScore": 0
-                },
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Gd Lagoa",
-                    "date": "(Não iniciado)\r\n                     \r\n                11 out",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
                 },
                 {
                     "home": "Guia Fc",
@@ -148,6 +148,17 @@
                     "losses": 1,
                     "goalsFor": 0,
                     "goalsAgainst": 3,
+                    "points": 0
+                },
+                {
+                    "position": 10,
+                    "team": "Imortal Dc",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 4,
                     "points": 0
                 }
             ]
@@ -299,6 +310,17 @@
                     "draws": 0,
                     "losses": 2,
                     "goalsFor": 2,
+                    "goalsAgainst": 8,
+                    "points": 0
+                },
+                {
+                    "position": 10,
+                    "team": "Padernense Clube",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 1,
                     "goalsAgainst": 8,
                     "points": 0
                 }
@@ -453,6 +475,17 @@
                     "goalsFor": 1,
                     "goalsAgainst": 8,
                     "points": 0
+                },
+                {
+                    "position": 10,
+                    "team": "Gd Lagoa",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 11,
+                    "points": 0
                 }
             ]
         },
@@ -604,6 +637,17 @@
                     "losses": 3,
                     "goalsFor": 2,
                     "goalsAgainst": 18,
+                    "points": 0
+                },
+                {
+                    "position": 10,
+                    "team": "Gd Lagoa",
+                    "played": 3,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 1,
+                    "goalsAgainst": 20,
                     "points": 0
                 }
             ]
@@ -757,6 +801,17 @@
                     "goalsFor": 5,
                     "goalsAgainst": 20,
                     "points": 3
+                },
+                {
+                    "position": 10,
+                    "team": "Padernense Clube",
+                    "played": 4,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 2,
+                    "goalsAgainst": 22,
+                    "points": 0
                 }
             ]
         },
@@ -909,6 +964,17 @@
                     "goalsFor": 5,
                     "goalsAgainst": 20,
                     "points": 3
+                },
+                {
+                    "position": 10,
+                    "team": "Padernense Clube",
+                    "played": 4,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 2,
+                    "goalsAgainst": 22,
+                    "points": 0
                 }
             ]
         },
@@ -1061,6 +1127,17 @@
                     "goalsFor": 5,
                     "goalsAgainst": 20,
                     "points": 3
+                },
+                {
+                    "position": 10,
+                    "team": "Padernense Clube",
+                    "played": 4,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 2,
+                    "goalsAgainst": 22,
+                    "points": 0
                 }
             ]
         },
@@ -1069,29 +1146,11 @@
             "fixtureId": "607576",
             "matches": [
                 {
-                    "home": "Guia Fc",
-                    "away": "Cf Os Armacenenses",
-                    "date": "30 nov",
-                    "time": "11:00",
-                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Aef João Moutinho",
                     "away": "Padernense Clube",
                     "date": "30 nov",
-                    "time": "11:00",
+                    "time": "09:00",
                     "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Imortal Dc",
-                    "away": "Gd Lagoa",
-                    "date": "30 nov",
-                    "time": "11:00",
-                    "stadium": "Campo Da Palmeira Nº 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1099,8 +1158,17 @@
                     "home": "Silves Fc",
                     "away": "Aa Belavista",
                     "date": "30 nov",
-                    "time": "11:00",
+                    "time": "09:00",
                     "stadium": "Estádio Dr. Francisco Vieira",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Imortal Dc",
+                    "away": "Gd Lagoa",
+                    "date": "30 nov",
+                    "time": "09:00",
+                    "stadium": "Campo Da Palmeira Nº 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1110,6 +1178,15 @@
                     "date": "30 nov",
                     "time": "11:00",
                     "stadium": "Estádio Municipal Messines",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Guia Fc",
+                    "away": "Cf Os Armacenenses",
+                    "date": "30 nov",
+                    "time": "11:00",
+                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1213,6 +1290,17 @@
                     "goalsFor": 5,
                     "goalsAgainst": 20,
                     "points": 3
+                },
+                {
+                    "position": 10,
+                    "team": "Padernense Clube",
+                    "played": 4,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 2,
+                    "goalsAgainst": 22,
+                    "points": 0
                 }
             ]
         },
@@ -1365,6 +1453,17 @@
                     "goalsFor": 5,
                     "goalsAgainst": 20,
                     "points": 3
+                },
+                {
+                    "position": 10,
+                    "team": "Padernense Clube",
+                    "played": 4,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 2,
+                    "goalsAgainst": 22,
+                    "points": 0
                 }
             ]
         },
@@ -1517,6 +1616,17 @@
                     "goalsFor": 5,
                     "goalsAgainst": 20,
                     "points": 3
+                },
+                {
+                    "position": 10,
+                    "team": "Padernense Clube",
+                    "played": 4,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 2,
+                    "goalsAgainst": 22,
+                    "points": 0
                 }
             ]
         },
@@ -1669,6 +1779,17 @@
                     "goalsFor": 5,
                     "goalsAgainst": 20,
                     "points": 3
+                },
+                {
+                    "position": 10,
+                    "team": "Padernense Clube",
+                    "played": 4,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 2,
+                    "goalsAgainst": 22,
+                    "points": 0
                 }
             ]
         },
@@ -1821,6 +1942,17 @@
                     "goalsFor": 5,
                     "goalsAgainst": 20,
                     "points": 3
+                },
+                {
+                    "position": 10,
+                    "team": "Padernense Clube",
+                    "played": 4,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 2,
+                    "goalsAgainst": 22,
+                    "points": 0
                 }
             ]
         },
@@ -1973,6 +2105,17 @@
                     "goalsFor": 5,
                     "goalsAgainst": 20,
                     "points": 3
+                },
+                {
+                    "position": 10,
+                    "team": "Padernense Clube",
+                    "played": 4,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 2,
+                    "goalsAgainst": 22,
+                    "points": 0
                 }
             ]
         },
@@ -2125,6 +2268,17 @@
                     "goalsFor": 5,
                     "goalsAgainst": 20,
                     "points": 3
+                },
+                {
+                    "position": 10,
+                    "team": "Padernense Clube",
+                    "played": 4,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 2,
+                    "goalsAgainst": 22,
+                    "points": 0
                 }
             ]
         },
@@ -2277,6 +2431,17 @@
                     "goalsFor": 5,
                     "goalsAgainst": 20,
                     "points": 3
+                },
+                {
+                    "position": 10,
+                    "team": "Padernense Clube",
+                    "played": 4,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 2,
+                    "goalsAgainst": 22,
+                    "points": 0
                 }
             ]
         },
@@ -2429,6 +2594,17 @@
                     "goalsFor": 5,
                     "goalsAgainst": 20,
                     "points": 3
+                },
+                {
+                    "position": 10,
+                    "team": "Padernense Clube",
+                    "played": 4,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 2,
+                    "goalsAgainst": 22,
+                    "points": 0
                 }
             ]
         },
@@ -2581,6 +2757,17 @@
                     "goalsFor": 5,
                     "goalsAgainst": 20,
                     "points": 3
+                },
+                {
+                    "position": 10,
+                    "team": "Padernense Clube",
+                    "played": 4,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 2,
+                    "goalsAgainst": 22,
+                    "points": 0
                 }
             ]
         },
@@ -2733,6 +2920,17 @@
                     "goalsFor": 5,
                     "goalsAgainst": 20,
                     "points": 3
+                },
+                {
+                    "position": 10,
+                    "team": "Padernense Clube",
+                    "played": 4,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 2,
+                    "goalsAgainst": 22,
+                    "points": 0
                 }
             ]
         }
