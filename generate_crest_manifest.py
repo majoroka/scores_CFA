@@ -38,6 +38,10 @@ def main():
         'fc 11 esperancas': ['fc os 11 esperancas'],
         'casa slb albufeira': ['casa benfica albufeira'],
         'nucleo scp olhao': ['nucleo sporting cp olhao'],
+        'fc ferreiras': ['fc ferreiras a', 'fc ferreiras b'],
+        '4 ao cubo ado': ['4 ao cubo ad olhao'],
+        'lusitano fc': ['lusitano fc vrsa'],
+        'ef monte gordo': ['aef monte gordo 2019'],
     }
     for canon, alts in aliases.items():
         if canon in crest_map:
