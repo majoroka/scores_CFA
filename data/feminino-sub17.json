@@ -14,15 +14,6 @@
                     "awayScore": 3
                 },
                 {
-                    "home": "Aef Faro",
-                    "away": "Fc Bias",
-                    "date": "1 - 2                            \r\n                \r\n                    11 out",
-                    "time": "",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": 1,
-                    "awayScore": 2
-                },
-                {
                     "home": "Cd Montenegro",
                     "away": "Cf Os Armacenenses",
                     "date": "7 - 0                            \r\n                \r\n                    11 out",
@@ -30,6 +21,15 @@
                     "stadium": "Campo Horta Da Areia",
                     "homeScore": 7,
                     "awayScore": 0
+                },
+                {
+                    "home": "Aef Faro",
+                    "away": "Fc Bias",
+                    "date": "1 - 2                            \r\n                \r\n                    11 out",
+                    "time": "",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": 1,
+                    "awayScore": 2
                 },
                 {
                     "home": "Sc Olhanense",
@@ -470,15 +470,6 @@
                     "awayScore": 1
                 },
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Ad Geração Génios",
-                    "date": "1 - 11                            \r\n                \r\n                    2 nov",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 1,
-                    "awayScore": 11
-                },
-                {
                     "home": "Louletano Dc",
                     "away": "Sc Olhanense",
                     "date": "3 - 2                            \r\n                \r\n                    2 nov",
@@ -486,6 +477,15 @@
                     "stadium": "Parque Desp. Joaquim António Teixeira",
                     "homeScore": 3,
                     "awayScore": 2
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Ad Geração Génios",
+                    "date": "1 - 11                            \r\n                \r\n                    2 nov",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 1,
+                    "awayScore": 11
                 },
                 {
                     "home": "Sc Farense",
@@ -615,20 +615,20 @@
                 {
                     "home": "Cd Montenegro",
                     "away": "Aef Faro",
-                    "date": "9 nov",
-                    "time": "09:00",
+                    "date": "2 - 6                            \r\n                \r\n                    9 nov",
+                    "time": "",
                     "stadium": "Campo Horta Da Areia",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 2,
+                    "awayScore": 6
                 },
                 {
                     "home": "Sc Olhanense",
                     "away": "Cf Os Armacenenses",
-                    "date": "9 nov",
-                    "time": "09:00",
+                    "date": "14 - 1                            \r\n                \r\n                    9 nov",
+                    "time": "",
                     "stadium": "Estádio José Arcanjo",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 14,
+                    "awayScore": 1
                 },
                 {
                     "home": "Sr 1º Janeiro",
@@ -642,69 +642,80 @@
                 {
                     "home": "Ad Geração Génios",
                     "away": "Js Campinense",
-                    "date": "9 nov",
-                    "time": "17:00",
+                    "date": "0 - 8                            \r\n                \r\n                    9 nov",
+                    "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 0,
+                    "awayScore": 8
                 },
                 {
                     "home": "Sc Farense",
                     "away": "Fc Bias",
-                    "date": "9 nov",
-                    "time": "19:00",
+                    "date": "1 - 2                            \r\n                \r\n                    9 nov",
+                    "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 1,
+                    "awayScore": 2
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Js Campinense",
-                    "played": 4,
-                    "wins": 4,
+                    "played": 5,
+                    "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 46,
+                    "goalsFor": 54,
                     "goalsAgainst": 0,
-                    "points": 12
+                    "points": 15
                 },
                 {
                     "position": 2,
                     "team": "Fc Bias",
-                    "played": 4,
-                    "wins": 3,
+                    "played": 5,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 7,
-                    "points": 9
+                    "goalsFor": 9,
+                    "goalsAgainst": 8,
+                    "points": 12
                 },
                 {
                     "position": 3,
-                    "team": "Sc Farense",
-                    "played": 3,
+                    "team": "Sc Olhanense",
+                    "played": 4,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 12,
-                    "goalsAgainst": 2,
+                    "losses": 1,
+                    "goalsFor": 22,
+                    "goalsAgainst": 5,
                     "points": 7
                 },
                 {
                     "position": 4,
-                    "team": "Ad Geração Génios",
+                    "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 12,
-                    "goalsAgainst": 6,
-                    "points": 6
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 7
                 },
                 {
                     "position": 5,
+                    "team": "Ad Geração Génios",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 12,
+                    "goalsAgainst": 14,
+                    "points": 6
+                },
+                {
+                    "position": 6,
                     "team": "Louletano Dc",
                     "played": 4,
                     "wins": 2,
@@ -715,18 +726,18 @@
                     "points": 6
                 },
                 {
-                    "position": 6,
-                    "team": "Sc Olhanense",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 8,
-                    "goalsAgainst": 4,
-                    "points": 4
+                    "position": 7,
+                    "team": "Aef Faro",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 14,
+                    "goalsAgainst": 21,
+                    "points": 6
                 },
                 {
-                    "position": 7,
+                    "position": 8,
                     "team": "Sr 1º Janeiro",
                     "played": 2,
                     "wins": 1,
@@ -737,25 +748,14 @@
                     "points": 3
                 },
                 {
-                    "position": 8,
-                    "team": "Aef Faro",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 8,
-                    "goalsAgainst": 19,
-                    "points": 3
-                },
-                {
                     "position": 9,
                     "team": "Cd Montenegro",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 9,
-                    "goalsAgainst": 31,
+                    "losses": 4,
+                    "goalsFor": 11,
+                    "goalsAgainst": 37,
                     "points": 3
                 }
             ]
@@ -814,49 +814,60 @@
                 {
                     "position": 1,
                     "team": "Js Campinense",
-                    "played": 4,
-                    "wins": 4,
+                    "played": 5,
+                    "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 46,
+                    "goalsFor": 54,
                     "goalsAgainst": 0,
-                    "points": 12
+                    "points": 15
                 },
                 {
                     "position": 2,
                     "team": "Fc Bias",
-                    "played": 4,
-                    "wins": 3,
+                    "played": 5,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 7,
-                    "points": 9
+                    "goalsFor": 9,
+                    "goalsAgainst": 8,
+                    "points": 12
                 },
                 {
                     "position": 3,
-                    "team": "Sc Farense",
-                    "played": 3,
+                    "team": "Sc Olhanense",
+                    "played": 4,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 12,
-                    "goalsAgainst": 2,
+                    "losses": 1,
+                    "goalsFor": 22,
+                    "goalsAgainst": 5,
                     "points": 7
                 },
                 {
                     "position": 4,
-                    "team": "Ad Geração Génios",
+                    "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 12,
-                    "goalsAgainst": 6,
-                    "points": 6
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 7
                 },
                 {
                     "position": 5,
+                    "team": "Ad Geração Génios",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 12,
+                    "goalsAgainst": 14,
+                    "points": 6
+                },
+                {
+                    "position": 6,
                     "team": "Louletano Dc",
                     "played": 4,
                     "wins": 2,
@@ -867,18 +878,18 @@
                     "points": 6
                 },
                 {
-                    "position": 6,
-                    "team": "Sc Olhanense",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 8,
-                    "goalsAgainst": 4,
-                    "points": 4
+                    "position": 7,
+                    "team": "Aef Faro",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 14,
+                    "goalsAgainst": 21,
+                    "points": 6
                 },
                 {
-                    "position": 7,
+                    "position": 8,
                     "team": "Sr 1º Janeiro",
                     "played": 2,
                     "wins": 1,
@@ -889,25 +900,14 @@
                     "points": 3
                 },
                 {
-                    "position": 8,
-                    "team": "Aef Faro",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 8,
-                    "goalsAgainst": 19,
-                    "points": 3
-                },
-                {
                     "position": 9,
                     "team": "Cd Montenegro",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 9,
-                    "goalsAgainst": 31,
+                    "losses": 4,
+                    "goalsFor": 11,
+                    "goalsAgainst": 37,
                     "points": 3
                 }
             ]
@@ -917,20 +917,20 @@
             "fixtureId": "607611",
             "matches": [
                 {
-                    "home": "Cd Montenegro",
-                    "away": "Ad Geração Génios",
-                    "date": "23 nov",
-                    "time": "09:00",
-                    "stadium": "Campo Horta Da Areia",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Fc Bias",
                     "away": "Louletano Dc",
                     "date": "23 nov",
                     "time": "09:00",
                     "stadium": "Estádio Municipal Olhão",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cd Montenegro",
+                    "away": "Ad Geração Génios",
+                    "date": "23 nov",
+                    "time": "09:00",
+                    "stadium": "Campo Horta Da Areia",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -966,49 +966,60 @@
                 {
                     "position": 1,
                     "team": "Js Campinense",
-                    "played": 4,
-                    "wins": 4,
+                    "played": 5,
+                    "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 46,
+                    "goalsFor": 54,
                     "goalsAgainst": 0,
-                    "points": 12
+                    "points": 15
                 },
                 {
                     "position": 2,
                     "team": "Fc Bias",
-                    "played": 4,
-                    "wins": 3,
+                    "played": 5,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 7,
-                    "points": 9
+                    "goalsFor": 9,
+                    "goalsAgainst": 8,
+                    "points": 12
                 },
                 {
                     "position": 3,
-                    "team": "Sc Farense",
-                    "played": 3,
+                    "team": "Sc Olhanense",
+                    "played": 4,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 12,
-                    "goalsAgainst": 2,
+                    "losses": 1,
+                    "goalsFor": 22,
+                    "goalsAgainst": 5,
                     "points": 7
                 },
                 {
                     "position": 4,
-                    "team": "Ad Geração Génios",
+                    "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 12,
-                    "goalsAgainst": 6,
-                    "points": 6
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 7
                 },
                 {
                     "position": 5,
+                    "team": "Ad Geração Génios",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 12,
+                    "goalsAgainst": 14,
+                    "points": 6
+                },
+                {
+                    "position": 6,
                     "team": "Louletano Dc",
                     "played": 4,
                     "wins": 2,
@@ -1019,18 +1030,18 @@
                     "points": 6
                 },
                 {
-                    "position": 6,
-                    "team": "Sc Olhanense",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 8,
-                    "goalsAgainst": 4,
-                    "points": 4
+                    "position": 7,
+                    "team": "Aef Faro",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 14,
+                    "goalsAgainst": 21,
+                    "points": 6
                 },
                 {
-                    "position": 7,
+                    "position": 8,
                     "team": "Sr 1º Janeiro",
                     "played": 2,
                     "wins": 1,
@@ -1041,25 +1052,14 @@
                     "points": 3
                 },
                 {
-                    "position": 8,
-                    "team": "Aef Faro",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 8,
-                    "goalsAgainst": 19,
-                    "points": 3
-                },
-                {
                     "position": 9,
                     "team": "Cd Montenegro",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 9,
-                    "goalsAgainst": 31,
+                    "losses": 4,
+                    "goalsFor": 11,
+                    "goalsAgainst": 37,
                     "points": 3
                 }
             ]
@@ -1069,11 +1069,11 @@
             "fixtureId": "607612",
             "matches": [
                 {
-                    "home": "Cd Montenegro",
-                    "away": "Louletano Dc",
+                    "home": "Aef Faro",
+                    "away": "Sr 1º Janeiro",
                     "date": "30 nov",
                     "time": "11:00",
-                    "stadium": "Campo Horta Da Areia",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1087,20 +1087,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Fc Bias",
+                    "home": "Cd Montenegro",
+                    "away": "Louletano Dc",
                     "date": "30 nov",
                     "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Aef Faro",
-                    "away": "Sr 1º Janeiro",
-                    "date": "30 nov",
-                    "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
+                    "stadium": "Campo Horta Da Areia",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1112,55 +1103,75 @@
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Fc Bias",
+                    "date": "30 nov",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Js Campinense",
-                    "played": 4,
-                    "wins": 4,
+                    "played": 5,
+                    "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 46,
+                    "goalsFor": 54,
                     "goalsAgainst": 0,
-                    "points": 12
+                    "points": 15
                 },
                 {
                     "position": 2,
                     "team": "Fc Bias",
-                    "played": 4,
-                    "wins": 3,
+                    "played": 5,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 7,
-                    "points": 9
+                    "goalsFor": 9,
+                    "goalsAgainst": 8,
+                    "points": 12
                 },
                 {
                     "position": 3,
-                    "team": "Sc Farense",
-                    "played": 3,
+                    "team": "Sc Olhanense",
+                    "played": 4,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 12,
-                    "goalsAgainst": 2,
+                    "losses": 1,
+                    "goalsFor": 22,
+                    "goalsAgainst": 5,
                     "points": 7
                 },
                 {
                     "position": 4,
-                    "team": "Ad Geração Génios",
+                    "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 12,
-                    "goalsAgainst": 6,
-                    "points": 6
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 7
                 },
                 {
                     "position": 5,
+                    "team": "Ad Geração Génios",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 12,
+                    "goalsAgainst": 14,
+                    "points": 6
+                },
+                {
+                    "position": 6,
                     "team": "Louletano Dc",
                     "played": 4,
                     "wins": 2,
@@ -1171,18 +1182,18 @@
                     "points": 6
                 },
                 {
-                    "position": 6,
-                    "team": "Sc Olhanense",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 8,
-                    "goalsAgainst": 4,
-                    "points": 4
+                    "position": 7,
+                    "team": "Aef Faro",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 14,
+                    "goalsAgainst": 21,
+                    "points": 6
                 },
                 {
-                    "position": 7,
+                    "position": 8,
                     "team": "Sr 1º Janeiro",
                     "played": 2,
                     "wins": 1,
@@ -1193,25 +1204,14 @@
                     "points": 3
                 },
                 {
-                    "position": 8,
-                    "team": "Aef Faro",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 8,
-                    "goalsAgainst": 19,
-                    "points": 3
-                },
-                {
                     "position": 9,
                     "team": "Cd Montenegro",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 9,
-                    "goalsAgainst": 31,
+                    "losses": 4,
+                    "goalsFor": 11,
+                    "goalsAgainst": 37,
                     "points": 3
                 }
             ]
@@ -1221,11 +1221,11 @@
             "fixtureId": "607613",
             "matches": [
                 {
-                    "home": "Louletano Dc",
-                    "away": "Cf Os Armacenenses",
+                    "home": "Sc Olhanense",
+                    "away": "Cd Montenegro",
                     "date": "7 dez",
                     "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "stadium": "Estádio José Arcanjo",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1235,15 +1235,6 @@
                     "date": "7 dez",
                     "time": "11:00",
                     "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Sc Olhanense",
-                    "away": "Cd Montenegro",
-                    "date": "7 dez",
-                    "time": "11:00",
-                    "stadium": "Estádio José Arcanjo",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1264,55 +1255,75 @@
                     "stadium": "Campo Polidesportivo",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Louletano Dc",
+                    "away": "Cf Os Armacenenses",
+                    "date": "7 dez",
+                    "time": "11:00",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": null,
+                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Js Campinense",
-                    "played": 4,
-                    "wins": 4,
+                    "played": 5,
+                    "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 46,
+                    "goalsFor": 54,
                     "goalsAgainst": 0,
-                    "points": 12
+                    "points": 15
                 },
                 {
                     "position": 2,
                     "team": "Fc Bias",
-                    "played": 4,
-                    "wins": 3,
+                    "played": 5,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 7,
-                    "points": 9
+                    "goalsFor": 9,
+                    "goalsAgainst": 8,
+                    "points": 12
                 },
                 {
                     "position": 3,
-                    "team": "Sc Farense",
-                    "played": 3,
+                    "team": "Sc Olhanense",
+                    "played": 4,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 12,
-                    "goalsAgainst": 2,
+                    "losses": 1,
+                    "goalsFor": 22,
+                    "goalsAgainst": 5,
                     "points": 7
                 },
                 {
                     "position": 4,
-                    "team": "Ad Geração Génios",
+                    "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 12,
-                    "goalsAgainst": 6,
-                    "points": 6
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 7
                 },
                 {
                     "position": 5,
+                    "team": "Ad Geração Génios",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 12,
+                    "goalsAgainst": 14,
+                    "points": 6
+                },
+                {
+                    "position": 6,
                     "team": "Louletano Dc",
                     "played": 4,
                     "wins": 2,
@@ -1323,18 +1334,18 @@
                     "points": 6
                 },
                 {
-                    "position": 6,
-                    "team": "Sc Olhanense",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 8,
-                    "goalsAgainst": 4,
-                    "points": 4
+                    "position": 7,
+                    "team": "Aef Faro",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 14,
+                    "goalsAgainst": 21,
+                    "points": 6
                 },
                 {
-                    "position": 7,
+                    "position": 8,
                     "team": "Sr 1º Janeiro",
                     "played": 2,
                     "wins": 1,
@@ -1345,25 +1356,14 @@
                     "points": 3
                 },
                 {
-                    "position": 8,
-                    "team": "Aef Faro",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 8,
-                    "goalsAgainst": 19,
-                    "points": 3
-                },
-                {
                     "position": 9,
                     "team": "Cd Montenegro",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 9,
-                    "goalsAgainst": 31,
+                    "losses": 4,
+                    "goalsFor": 11,
+                    "goalsAgainst": 37,
                     "points": 3
                 }
             ]
@@ -1372,24 +1372,6 @@
             "index": 10,
             "fixtureId": "607614",
             "matches": [
-                {
-                    "home": "Louletano Dc",
-                    "away": "Js Campinense",
-                    "date": "14 dez",
-                    "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Sc Farense",
-                    "away": "Ad Geração Génios",
-                    "date": "14 dez",
-                    "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
                 {
                     "home": "Cf Os Armacenenses",
                     "away": "Cd Montenegro",
@@ -1409,11 +1391,29 @@
                     "awayScore": null
                 },
                 {
+                    "home": "Louletano Dc",
+                    "away": "Js Campinense",
+                    "date": "14 dez",
+                    "time": "11:00",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Sr 1º Janeiro",
                     "away": "Sc Olhanense",
                     "date": "14 dez",
                     "time": "11:00",
                     "stadium": "Campo Polidesportivo",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Sc Farense",
+                    "away": "Ad Geração Génios",
+                    "date": "14 dez",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1422,49 +1422,60 @@
                 {
                     "position": 1,
                     "team": "Js Campinense",
-                    "played": 4,
-                    "wins": 4,
+                    "played": 5,
+                    "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 46,
+                    "goalsFor": 54,
                     "goalsAgainst": 0,
-                    "points": 12
+                    "points": 15
                 },
                 {
                     "position": 2,
                     "team": "Fc Bias",
-                    "played": 4,
-                    "wins": 3,
+                    "played": 5,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 7,
-                    "points": 9
+                    "goalsFor": 9,
+                    "goalsAgainst": 8,
+                    "points": 12
                 },
                 {
                     "position": 3,
-                    "team": "Sc Farense",
-                    "played": 3,
+                    "team": "Sc Olhanense",
+                    "played": 4,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 12,
-                    "goalsAgainst": 2,
+                    "losses": 1,
+                    "goalsFor": 22,
+                    "goalsAgainst": 5,
                     "points": 7
                 },
                 {
                     "position": 4,
-                    "team": "Ad Geração Génios",
+                    "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 12,
-                    "goalsAgainst": 6,
-                    "points": 6
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 7
                 },
                 {
                     "position": 5,
+                    "team": "Ad Geração Génios",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 12,
+                    "goalsAgainst": 14,
+                    "points": 6
+                },
+                {
+                    "position": 6,
                     "team": "Louletano Dc",
                     "played": 4,
                     "wins": 2,
@@ -1475,18 +1486,18 @@
                     "points": 6
                 },
                 {
-                    "position": 6,
-                    "team": "Sc Olhanense",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 8,
-                    "goalsAgainst": 4,
-                    "points": 4
+                    "position": 7,
+                    "team": "Aef Faro",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 14,
+                    "goalsAgainst": 21,
+                    "points": 6
                 },
                 {
-                    "position": 7,
+                    "position": 8,
                     "team": "Sr 1º Janeiro",
                     "played": 2,
                     "wins": 1,
@@ -1497,25 +1508,14 @@
                     "points": 3
                 },
                 {
-                    "position": 8,
-                    "team": "Aef Faro",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 8,
-                    "goalsAgainst": 19,
-                    "points": 3
-                },
-                {
                     "position": 9,
                     "team": "Cd Montenegro",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 9,
-                    "goalsAgainst": 31,
+                    "losses": 4,
+                    "goalsFor": 11,
+                    "goalsAgainst": 37,
                     "points": 3
                 }
             ]
@@ -1543,20 +1543,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Js Campinense",
-                    "away": "Cf Os Armacenenses",
-                    "date": "21 dez",
-                    "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Aef Faro",
                     "away": "Louletano Dc",
                     "date": "21 dez",
                     "time": "11:00",
                     "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Js Campinense",
+                    "away": "Cf Os Armacenenses",
+                    "date": "21 dez",
+                    "time": "11:00",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1574,49 +1574,60 @@
                 {
                     "position": 1,
                     "team": "Js Campinense",
-                    "played": 4,
-                    "wins": 4,
+                    "played": 5,
+                    "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 46,
+                    "goalsFor": 54,
                     "goalsAgainst": 0,
-                    "points": 12
+                    "points": 15
                 },
                 {
                     "position": 2,
                     "team": "Fc Bias",
-                    "played": 4,
-                    "wins": 3,
+                    "played": 5,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 7,
-                    "points": 9
+                    "goalsFor": 9,
+                    "goalsAgainst": 8,
+                    "points": 12
                 },
                 {
                     "position": 3,
-                    "team": "Sc Farense",
-                    "played": 3,
+                    "team": "Sc Olhanense",
+                    "played": 4,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 12,
-                    "goalsAgainst": 2,
+                    "losses": 1,
+                    "goalsFor": 22,
+                    "goalsAgainst": 5,
                     "points": 7
                 },
                 {
                     "position": 4,
-                    "team": "Ad Geração Génios",
+                    "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 12,
-                    "goalsAgainst": 6,
-                    "points": 6
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 7
                 },
                 {
                     "position": 5,
+                    "team": "Ad Geração Génios",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 12,
+                    "goalsAgainst": 14,
+                    "points": 6
+                },
+                {
+                    "position": 6,
                     "team": "Louletano Dc",
                     "played": 4,
                     "wins": 2,
@@ -1627,18 +1638,18 @@
                     "points": 6
                 },
                 {
-                    "position": 6,
-                    "team": "Sc Olhanense",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 8,
-                    "goalsAgainst": 4,
-                    "points": 4
+                    "position": 7,
+                    "team": "Aef Faro",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 14,
+                    "goalsAgainst": 21,
+                    "points": 6
                 },
                 {
-                    "position": 7,
+                    "position": 8,
                     "team": "Sr 1º Janeiro",
                     "played": 2,
                     "wins": 1,
@@ -1649,25 +1660,14 @@
                     "points": 3
                 },
                 {
-                    "position": 8,
-                    "team": "Aef Faro",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 8,
-                    "goalsAgainst": 19,
-                    "points": 3
-                },
-                {
                     "position": 9,
                     "team": "Cd Montenegro",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 9,
-                    "goalsAgainst": 31,
+                    "losses": 4,
+                    "goalsFor": 11,
+                    "goalsAgainst": 37,
                     "points": 3
                 }
             ]
@@ -1676,24 +1676,6 @@
             "index": 12,
             "fixtureId": "607616",
             "matches": [
-                {
-                    "home": "Louletano Dc",
-                    "away": "Ad Geração Génios",
-                    "date": "4 jan",
-                    "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Sc Farense",
-                    "away": "Sr 1º Janeiro",
-                    "date": "4 jan",
-                    "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
                 {
                     "home": "Js Campinense",
                     "away": "Cd Montenegro",
@@ -1713,11 +1695,29 @@
                     "awayScore": null
                 },
                 {
+                    "home": "Sc Farense",
+                    "away": "Sr 1º Janeiro",
+                    "date": "4 jan",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Fc Bias",
                     "away": "Sc Olhanense",
                     "date": "4 jan",
                     "time": "11:00",
                     "stadium": "Estádio Municipal Olhão",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Louletano Dc",
+                    "away": "Ad Geração Génios",
+                    "date": "4 jan",
+                    "time": "11:00",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1726,49 +1726,60 @@
                 {
                     "position": 1,
                     "team": "Js Campinense",
-                    "played": 4,
-                    "wins": 4,
+                    "played": 5,
+                    "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 46,
+                    "goalsFor": 54,
                     "goalsAgainst": 0,
-                    "points": 12
+                    "points": 15
                 },
                 {
                     "position": 2,
                     "team": "Fc Bias",
-                    "played": 4,
-                    "wins": 3,
+                    "played": 5,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 7,
-                    "points": 9
+                    "goalsFor": 9,
+                    "goalsAgainst": 8,
+                    "points": 12
                 },
                 {
                     "position": 3,
-                    "team": "Sc Farense",
-                    "played": 3,
+                    "team": "Sc Olhanense",
+                    "played": 4,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 12,
-                    "goalsAgainst": 2,
+                    "losses": 1,
+                    "goalsFor": 22,
+                    "goalsAgainst": 5,
                     "points": 7
                 },
                 {
                     "position": 4,
-                    "team": "Ad Geração Génios",
+                    "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 12,
-                    "goalsAgainst": 6,
-                    "points": 6
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 7
                 },
                 {
                     "position": 5,
+                    "team": "Ad Geração Génios",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 12,
+                    "goalsAgainst": 14,
+                    "points": 6
+                },
+                {
+                    "position": 6,
                     "team": "Louletano Dc",
                     "played": 4,
                     "wins": 2,
@@ -1779,18 +1790,18 @@
                     "points": 6
                 },
                 {
-                    "position": 6,
-                    "team": "Sc Olhanense",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 8,
-                    "goalsAgainst": 4,
-                    "points": 4
+                    "position": 7,
+                    "team": "Aef Faro",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 14,
+                    "goalsAgainst": 21,
+                    "points": 6
                 },
                 {
-                    "position": 7,
+                    "position": 8,
                     "team": "Sr 1º Janeiro",
                     "played": 2,
                     "wins": 1,
@@ -1801,25 +1812,14 @@
                     "points": 3
                 },
                 {
-                    "position": 8,
-                    "team": "Aef Faro",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 8,
-                    "goalsAgainst": 19,
-                    "points": 3
-                },
-                {
                     "position": 9,
                     "team": "Cd Montenegro",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 9,
-                    "goalsAgainst": 31,
+                    "losses": 4,
+                    "goalsFor": 11,
+                    "goalsAgainst": 37,
                     "points": 3
                 }
             ]
@@ -1838,29 +1838,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Sc Olhanense",
-                    "away": "Louletano Dc",
-                    "date": "11 jan",
-                    "time": "11:00",
-                    "stadium": "Estádio José Arcanjo",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Sr 1º Janeiro",
-                    "away": "Fc Bias",
-                    "date": "11 jan",
-                    "time": "11:00",
-                    "stadium": "Campo Polidesportivo",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Aef Faro",
                     "away": "Js Campinense",
                     "date": "11 jan",
                     "time": "11:00",
                     "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Sc Olhanense",
+                    "away": "Louletano Dc",
+                    "date": "11 jan",
+                    "time": "11:00",
+                    "stadium": "Estádio José Arcanjo",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1872,55 +1863,75 @@
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Sr 1º Janeiro",
+                    "away": "Fc Bias",
+                    "date": "11 jan",
+                    "time": "11:00",
+                    "stadium": "Campo Polidesportivo",
+                    "homeScore": null,
+                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Js Campinense",
-                    "played": 4,
-                    "wins": 4,
+                    "played": 5,
+                    "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 46,
+                    "goalsFor": 54,
                     "goalsAgainst": 0,
-                    "points": 12
+                    "points": 15
                 },
                 {
                     "position": 2,
                     "team": "Fc Bias",
-                    "played": 4,
-                    "wins": 3,
+                    "played": 5,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 7,
-                    "points": 9
+                    "goalsFor": 9,
+                    "goalsAgainst": 8,
+                    "points": 12
                 },
                 {
                     "position": 3,
-                    "team": "Sc Farense",
-                    "played": 3,
+                    "team": "Sc Olhanense",
+                    "played": 4,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 12,
-                    "goalsAgainst": 2,
+                    "losses": 1,
+                    "goalsFor": 22,
+                    "goalsAgainst": 5,
                     "points": 7
                 },
                 {
                     "position": 4,
-                    "team": "Ad Geração Génios",
+                    "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 12,
-                    "goalsAgainst": 6,
-                    "points": 6
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 7
                 },
                 {
                     "position": 5,
+                    "team": "Ad Geração Génios",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 12,
+                    "goalsAgainst": 14,
+                    "points": 6
+                },
+                {
+                    "position": 6,
                     "team": "Louletano Dc",
                     "played": 4,
                     "wins": 2,
@@ -1931,18 +1942,18 @@
                     "points": 6
                 },
                 {
-                    "position": 6,
-                    "team": "Sc Olhanense",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 8,
-                    "goalsAgainst": 4,
-                    "points": 4
+                    "position": 7,
+                    "team": "Aef Faro",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 14,
+                    "goalsAgainst": 21,
+                    "points": 6
                 },
                 {
-                    "position": 7,
+                    "position": 8,
                     "team": "Sr 1º Janeiro",
                     "played": 2,
                     "wins": 1,
@@ -1953,25 +1964,14 @@
                     "points": 3
                 },
                 {
-                    "position": 8,
-                    "team": "Aef Faro",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 8,
-                    "goalsAgainst": 19,
-                    "points": 3
-                },
-                {
                     "position": 9,
                     "team": "Cd Montenegro",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 9,
-                    "goalsAgainst": 31,
+                    "losses": 4,
+                    "goalsFor": 11,
+                    "goalsAgainst": 37,
                     "points": 3
                 }
             ]
@@ -1981,29 +1981,20 @@
             "fixtureId": "607618",
             "matches": [
                 {
+                    "home": "Aef Faro",
+                    "away": "Cd Montenegro",
+                    "date": "18 jan",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Louletano Dc",
                     "away": "Sr 1º Janeiro",
                     "date": "18 jan",
                     "time": "11:00",
                     "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Js Campinense",
-                    "away": "Ad Geração Génios",
-                    "date": "18 jan",
-                    "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Sc Olhanense",
-                    "date": "18 jan",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2017,11 +2008,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Aef Faro",
-                    "away": "Cd Montenegro",
+                    "home": "Cf Os Armacenenses",
+                    "away": "Sc Olhanense",
                     "date": "18 jan",
                     "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Js Campinense",
+                    "away": "Ad Geração Génios",
+                    "date": "18 jan",
+                    "time": "11:00",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -2030,49 +2030,60 @@
                 {
                     "position": 1,
                     "team": "Js Campinense",
-                    "played": 4,
-                    "wins": 4,
+                    "played": 5,
+                    "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 46,
+                    "goalsFor": 54,
                     "goalsAgainst": 0,
-                    "points": 12
+                    "points": 15
                 },
                 {
                     "position": 2,
                     "team": "Fc Bias",
-                    "played": 4,
-                    "wins": 3,
+                    "played": 5,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 7,
-                    "points": 9
+                    "goalsFor": 9,
+                    "goalsAgainst": 8,
+                    "points": 12
                 },
                 {
                     "position": 3,
-                    "team": "Sc Farense",
-                    "played": 3,
+                    "team": "Sc Olhanense",
+                    "played": 4,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 12,
-                    "goalsAgainst": 2,
+                    "losses": 1,
+                    "goalsFor": 22,
+                    "goalsAgainst": 5,
                     "points": 7
                 },
                 {
                     "position": 4,
-                    "team": "Ad Geração Génios",
+                    "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 12,
-                    "goalsAgainst": 6,
-                    "points": 6
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 7
                 },
                 {
                     "position": 5,
+                    "team": "Ad Geração Génios",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 12,
+                    "goalsAgainst": 14,
+                    "points": 6
+                },
+                {
+                    "position": 6,
                     "team": "Louletano Dc",
                     "played": 4,
                     "wins": 2,
@@ -2083,18 +2094,18 @@
                     "points": 6
                 },
                 {
-                    "position": 6,
-                    "team": "Sc Olhanense",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 8,
-                    "goalsAgainst": 4,
-                    "points": 4
+                    "position": 7,
+                    "team": "Aef Faro",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 14,
+                    "goalsAgainst": 21,
+                    "points": 6
                 },
                 {
-                    "position": 7,
+                    "position": 8,
                     "team": "Sr 1º Janeiro",
                     "played": 2,
                     "wins": 1,
@@ -2105,25 +2116,14 @@
                     "points": 3
                 },
                 {
-                    "position": 8,
-                    "team": "Aef Faro",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 8,
-                    "goalsAgainst": 19,
-                    "points": 3
-                },
-                {
                     "position": 9,
                     "team": "Cd Montenegro",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 9,
-                    "goalsAgainst": 31,
+                    "losses": 4,
+                    "goalsFor": 11,
+                    "goalsAgainst": 37,
                     "points": 3
                 }
             ]
@@ -2133,17 +2133,8 @@
             "fixtureId": "607619",
             "matches": [
                 {
-                    "home": "Cd Montenegro",
-                    "away": "Fc Bias",
-                    "date": "25 jan",
-                    "time": "11:00",
-                    "stadium": "Campo Horta Da Areia",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Sc Farense",
-                    "away": "Louletano Dc",
+                    "home": "Ad Geração Génios",
+                    "away": "Aef Faro",
                     "date": "25 jan",
                     "time": "11:00",
                     "stadium": "Campo Complexo Desportivo Penha",
@@ -2160,6 +2151,15 @@
                     "awayScore": null
                 },
                 {
+                    "home": "Sc Farense",
+                    "away": "Louletano Dc",
+                    "date": "25 jan",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Sr 1º Janeiro",
                     "away": "Cf Os Armacenenses",
                     "date": "25 jan",
@@ -2169,11 +2169,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Ad Geração Génios",
-                    "away": "Aef Faro",
+                    "home": "Cd Montenegro",
+                    "away": "Fc Bias",
                     "date": "25 jan",
                     "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
+                    "stadium": "Campo Horta Da Areia",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -2182,49 +2182,60 @@
                 {
                     "position": 1,
                     "team": "Js Campinense",
-                    "played": 4,
-                    "wins": 4,
+                    "played": 5,
+                    "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 46,
+                    "goalsFor": 54,
                     "goalsAgainst": 0,
-                    "points": 12
+                    "points": 15
                 },
                 {
                     "position": 2,
                     "team": "Fc Bias",
-                    "played": 4,
-                    "wins": 3,
+                    "played": 5,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 7,
-                    "points": 9
+                    "goalsFor": 9,
+                    "goalsAgainst": 8,
+                    "points": 12
                 },
                 {
                     "position": 3,
-                    "team": "Sc Farense",
-                    "played": 3,
+                    "team": "Sc Olhanense",
+                    "played": 4,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 12,
-                    "goalsAgainst": 2,
+                    "losses": 1,
+                    "goalsFor": 22,
+                    "goalsAgainst": 5,
                     "points": 7
                 },
                 {
                     "position": 4,
-                    "team": "Ad Geração Génios",
+                    "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 12,
-                    "goalsAgainst": 6,
-                    "points": 6
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 7
                 },
                 {
                     "position": 5,
+                    "team": "Ad Geração Génios",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 12,
+                    "goalsAgainst": 14,
+                    "points": 6
+                },
+                {
+                    "position": 6,
                     "team": "Louletano Dc",
                     "played": 4,
                     "wins": 2,
@@ -2235,18 +2246,18 @@
                     "points": 6
                 },
                 {
-                    "position": 6,
-                    "team": "Sc Olhanense",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 8,
-                    "goalsAgainst": 4,
-                    "points": 4
+                    "position": 7,
+                    "team": "Aef Faro",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 14,
+                    "goalsAgainst": 21,
+                    "points": 6
                 },
                 {
-                    "position": 7,
+                    "position": 8,
                     "team": "Sr 1º Janeiro",
                     "played": 2,
                     "wins": 1,
@@ -2257,25 +2268,14 @@
                     "points": 3
                 },
                 {
-                    "position": 8,
-                    "team": "Aef Faro",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 8,
-                    "goalsAgainst": 19,
-                    "points": 3
-                },
-                {
                     "position": 9,
                     "team": "Cd Montenegro",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 9,
-                    "goalsAgainst": 31,
+                    "losses": 4,
+                    "goalsFor": 11,
+                    "goalsAgainst": 37,
                     "points": 3
                 }
             ]
@@ -2285,11 +2285,11 @@
             "fixtureId": "607620",
             "matches": [
                 {
-                    "home": "Louletano Dc",
-                    "away": "Fc Bias",
+                    "home": "Ad Geração Génios",
+                    "away": "Cd Montenegro",
                     "date": "1 fev",
                     "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2321,11 +2321,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Ad Geração Génios",
-                    "away": "Cd Montenegro",
+                    "home": "Louletano Dc",
+                    "away": "Fc Bias",
                     "date": "1 fev",
                     "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -2334,49 +2334,60 @@
                 {
                     "position": 1,
                     "team": "Js Campinense",
-                    "played": 4,
-                    "wins": 4,
+                    "played": 5,
+                    "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 46,
+                    "goalsFor": 54,
                     "goalsAgainst": 0,
-                    "points": 12
+                    "points": 15
                 },
                 {
                     "position": 2,
                     "team": "Fc Bias",
-                    "played": 4,
-                    "wins": 3,
+                    "played": 5,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 7,
-                    "points": 9
+                    "goalsFor": 9,
+                    "goalsAgainst": 8,
+                    "points": 12
                 },
                 {
                     "position": 3,
-                    "team": "Sc Farense",
-                    "played": 3,
+                    "team": "Sc Olhanense",
+                    "played": 4,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 12,
-                    "goalsAgainst": 2,
+                    "losses": 1,
+                    "goalsFor": 22,
+                    "goalsAgainst": 5,
                     "points": 7
                 },
                 {
                     "position": 4,
-                    "team": "Ad Geração Génios",
+                    "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 12,
-                    "goalsAgainst": 6,
-                    "points": 6
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 7
                 },
                 {
                     "position": 5,
+                    "team": "Ad Geração Génios",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 12,
+                    "goalsAgainst": 14,
+                    "points": 6
+                },
+                {
+                    "position": 6,
                     "team": "Louletano Dc",
                     "played": 4,
                     "wins": 2,
@@ -2387,18 +2398,18 @@
                     "points": 6
                 },
                 {
-                    "position": 6,
-                    "team": "Sc Olhanense",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 8,
-                    "goalsAgainst": 4,
-                    "points": 4
+                    "position": 7,
+                    "team": "Aef Faro",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 14,
+                    "goalsAgainst": 21,
+                    "points": 6
                 },
                 {
-                    "position": 7,
+                    "position": 8,
                     "team": "Sr 1º Janeiro",
                     "played": 2,
                     "wins": 1,
@@ -2409,25 +2420,14 @@
                     "points": 3
                 },
                 {
-                    "position": 8,
-                    "team": "Aef Faro",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 8,
-                    "goalsAgainst": 19,
-                    "points": 3
-                },
-                {
                     "position": 9,
                     "team": "Cd Montenegro",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 9,
-                    "goalsAgainst": 31,
+                    "losses": 4,
+                    "goalsFor": 11,
+                    "goalsAgainst": 37,
                     "points": 3
                 }
             ]
@@ -2446,6 +2446,15 @@
                     "awayScore": null
                 },
                 {
+                    "home": "Sr 1º Janeiro",
+                    "away": "Aef Faro",
+                    "date": "8 fev",
+                    "time": "11:00",
+                    "stadium": "Campo Polidesportivo",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Sc Farense",
                     "away": "Js Campinense",
                     "date": "8 fev",
@@ -2471,64 +2480,66 @@
                     "stadium": "Estádio Municipal Olhão",
                     "homeScore": null,
                     "awayScore": null
-                },
-                {
-                    "home": "Sr 1º Janeiro",
-                    "away": "Aef Faro",
-                    "date": "8 fev",
-                    "time": "11:00",
-                    "stadium": "Campo Polidesportivo",
-                    "homeScore": null,
-                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Js Campinense",
-                    "played": 4,
-                    "wins": 4,
+                    "played": 5,
+                    "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 46,
+                    "goalsFor": 54,
                     "goalsAgainst": 0,
-                    "points": 12
+                    "points": 15
                 },
                 {
                     "position": 2,
                     "team": "Fc Bias",
-                    "played": 4,
-                    "wins": 3,
+                    "played": 5,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 7,
-                    "points": 9
+                    "goalsFor": 9,
+                    "goalsAgainst": 8,
+                    "points": 12
                 },
                 {
                     "position": 3,
-                    "team": "Sc Farense",
-                    "played": 3,
+                    "team": "Sc Olhanense",
+                    "played": 4,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 12,
-                    "goalsAgainst": 2,
+                    "losses": 1,
+                    "goalsFor": 22,
+                    "goalsAgainst": 5,
                     "points": 7
                 },
                 {
                     "position": 4,
-                    "team": "Ad Geração Génios",
+                    "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 12,
-                    "goalsAgainst": 6,
-                    "points": 6
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 7
                 },
                 {
                     "position": 5,
+                    "team": "Ad Geração Génios",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 12,
+                    "goalsAgainst": 14,
+                    "points": 6
+                },
+                {
+                    "position": 6,
                     "team": "Louletano Dc",
                     "played": 4,
                     "wins": 2,
@@ -2539,18 +2550,18 @@
                     "points": 6
                 },
                 {
-                    "position": 6,
-                    "team": "Sc Olhanense",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 8,
-                    "goalsAgainst": 4,
-                    "points": 4
+                    "position": 7,
+                    "team": "Aef Faro",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 14,
+                    "goalsAgainst": 21,
+                    "points": 6
                 },
                 {
-                    "position": 7,
+                    "position": 8,
                     "team": "Sr 1º Janeiro",
                     "played": 2,
                     "wins": 1,
@@ -2561,25 +2572,14 @@
                     "points": 3
                 },
                 {
-                    "position": 8,
-                    "team": "Aef Faro",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 8,
-                    "goalsAgainst": 19,
-                    "points": 3
-                },
-                {
                     "position": 9,
                     "team": "Cd Montenegro",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 9,
-                    "goalsAgainst": 31,
+                    "losses": 4,
+                    "goalsFor": 11,
+                    "goalsAgainst": 37,
                     "points": 3
                 }
             ]
@@ -2588,6 +2588,33 @@
             "index": 18,
             "fixtureId": "607622",
             "matches": [
+                {
+                    "home": "Ad Geração Génios",
+                    "away": "Sr 1º Janeiro",
+                    "date": "15 fev",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Aef Faro",
+                    "away": "Sc Farense",
+                    "date": "15 fev",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Louletano Dc",
+                    "date": "15 fev",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
                 {
                     "home": "Cd Montenegro",
                     "away": "Sc Olhanense",
@@ -2605,82 +2632,66 @@
                     "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
                     "awayScore": null
-                },
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Louletano Dc",
-                    "date": "15 fev",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Aef Faro",
-                    "away": "Sc Farense",
-                    "date": "15 fev",
-                    "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Ad Geração Génios",
-                    "away": "Sr 1º Janeiro",
-                    "date": "15 fev",
-                    "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Js Campinense",
-                    "played": 4,
-                    "wins": 4,
+                    "played": 5,
+                    "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 46,
+                    "goalsFor": 54,
                     "goalsAgainst": 0,
-                    "points": 12
+                    "points": 15
                 },
                 {
                     "position": 2,
                     "team": "Fc Bias",
-                    "played": 4,
-                    "wins": 3,
+                    "played": 5,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 7,
-                    "points": 9
+                    "goalsFor": 9,
+                    "goalsAgainst": 8,
+                    "points": 12
                 },
                 {
                     "position": 3,
-                    "team": "Sc Farense",
-                    "played": 3,
+                    "team": "Sc Olhanense",
+                    "played": 4,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 12,
-                    "goalsAgainst": 2,
+                    "losses": 1,
+                    "goalsFor": 22,
+                    "goalsAgainst": 5,
                     "points": 7
                 },
                 {
                     "position": 4,
-                    "team": "Ad Geração Génios",
+                    "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 12,
-                    "goalsAgainst": 6,
-                    "points": 6
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 7
                 },
                 {
                     "position": 5,
+                    "team": "Ad Geração Génios",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 12,
+                    "goalsAgainst": 14,
+                    "points": 6
+                },
+                {
+                    "position": 6,
                     "team": "Louletano Dc",
                     "played": 4,
                     "wins": 2,
@@ -2691,18 +2702,18 @@
                     "points": 6
                 },
                 {
-                    "position": 6,
-                    "team": "Sc Olhanense",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 8,
-                    "goalsAgainst": 4,
-                    "points": 4
+                    "position": 7,
+                    "team": "Aef Faro",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 14,
+                    "goalsAgainst": 21,
+                    "points": 6
                 },
                 {
-                    "position": 7,
+                    "position": 8,
                     "team": "Sr 1º Janeiro",
                     "played": 2,
                     "wins": 1,
@@ -2713,25 +2724,14 @@
                     "points": 3
                 },
                 {
-                    "position": 8,
-                    "team": "Aef Faro",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 8,
-                    "goalsAgainst": 19,
-                    "points": 3
-                },
-                {
                     "position": 9,
                     "team": "Cd Montenegro",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 9,
-                    "goalsAgainst": 31,
+                    "losses": 4,
+                    "goalsFor": 11,
+                    "goalsAgainst": 37,
                     "points": 3
                 }
             ]
