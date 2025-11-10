@@ -197,20 +197,37 @@ const normalizeMonthToken = (value = '') => {
 const parseMatchDate = (value = '') => {
     const trimmed = (value || '').trim();
     if (!trimmed) return null;
-    const match = trimmed.match(/(\d{1,2})/);
-    if (!match) return null;
-    const day = Number.parseInt(match[1], 10);
-    if (!Number.isInteger(day)) return null;
-    const tokens = trimmed.split(/\s+/).slice(1);
+    const tokens = trimmed.split(/\s+/).filter(Boolean);
+    if (!tokens.length) return null;
+
     let monthKey = null;
-    for (const token of tokens) {
-        const normalized = normalizeMonthToken(token);
-        if (normalized && Object.prototype.hasOwnProperty.call(MONTH_MAP, normalized)) {
-            monthKey = normalized;
+    let day = null;
+
+    for (let i = 0; i < tokens.length; i += 1) {
+        const normalized = normalizeMonthToken(tokens[i]);
+        if (!normalized || !Object.prototype.hasOwnProperty.call(MONTH_MAP, normalized)) {
+            continue;
+        }
+        monthKey = normalized;
+        for (let j = i - 1; j >= 0; j -= 1) {
+            const match = tokens[j].match(/(\d{1,2})/);
+            if (match) {
+                day = Number.parseInt(match[1], 10);
+                break;
+            }
+        }
+        if (day === null && tokens[i + 1]) {
+            const match = tokens[i + 1].match(/(\d{1,2})/);
+            if (match) {
+                day = Number.parseInt(match[1], 10);
+            }
+        }
+        if (day !== null) {
             break;
         }
     }
-    if (!monthKey) return null;
+
+    if (!monthKey || day === null || !Number.isInteger(day)) return null;
     const month = MONTH_MAP[monthKey];
     const today = new Date();
     const currentMonth = today.getMonth();
@@ -227,15 +244,20 @@ const parseMatchDate = (value = '') => {
 
 const getRoundReferenceDate = (round) => {
     if (!round || !Array.isArray(round.matches)) return null;
-    let latest = null;
+    let latestCompleted = null;
+    let latestAny = null;
     for (const match of round.matches) {
         const parsed = parseMatchDate(match?.date);
         if (!parsed) continue;
-        if (!latest || parsed > latest) {
-            latest = parsed;
+        const hasScore = Number.isInteger(match?.homeScore) && Number.isInteger(match?.awayScore);
+        if (hasScore && (!latestCompleted || parsed > latestCompleted)) {
+            latestCompleted = parsed;
+        }
+        if (!latestAny || parsed > latestAny) {
+            latestAny = parsed;
         }
     }
-    return latest;
+    return latestCompleted || latestAny;
 };
 
 const findBestRoundIndexByDate = () => {
