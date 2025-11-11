@@ -179,11 +179,11 @@
                 {
                     "home": "Internacional Ca",
                     "away": "Cdr Quarteirense",
-                    "date": "19 out",
-                    "time": "11:00",
+                    "date": "5 - 0                            \r\n                \r\n                    19 out",
+                    "time": "",
                     "stadium": "Estadio Municipal De Almancil",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 5,
+                    "awayScore": 0
                 },
                 {
                     "home": "Louletano Dc",
@@ -220,6 +220,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Internacional Ca",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 7,
+                    "goalsAgainst": 5,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Js Campinense",
                     "played": 1,
                     "wins": 0,
@@ -230,18 +241,18 @@
                     "points": 1
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Cdr Quarteirense",
-                    "played": 1,
+                    "played": 2,
                     "wins": 0,
                     "draws": 1,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 2,
-                    "goalsAgainst": 2,
+                    "goalsAgainst": 7,
                     "points": 1
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Cf Os Armacenenses",
                     "played": 0,
                     "wins": 0,
@@ -249,17 +260,6 @@
                     "losses": 0,
                     "goalsFor": 0,
                     "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 6,
-                    "team": "Internacional Ca",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
@@ -374,25 +374,25 @@
                 },
                 {
                     "position": 3,
-                    "team": "Cdr Quarteirense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 6,
-                    "goalsAgainst": 3,
-                    "points": 4
+                    "team": "Internacional Ca",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 21,
+                    "goalsAgainst": 6,
+                    "points": 6
                 },
                 {
                     "position": 4,
-                    "team": "Internacional Ca",
-                    "played": 2,
+                    "team": "Cdr Quarteirense",
+                    "played": 3,
                     "wins": 1,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 1,
-                    "goalsFor": 16,
-                    "goalsAgainst": 6,
-                    "points": 3
+                    "goalsFor": 6,
+                    "goalsAgainst": 8,
+                    "points": 4
                 },
                 {
                     "position": 5,
@@ -529,24 +529,24 @@
                 {
                     "position": 3,
                     "team": "Cdr Quarteirense",
-                    "played": 3,
+                    "played": 4,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 7,
-                    "goalsAgainst": 3,
+                    "goalsAgainst": 8,
                     "points": 7
                 },
                 {
                     "position": 4,
                     "team": "Internacional Ca",
-                    "played": 2,
-                    "wins": 1,
+                    "played": 3,
+                    "wins": 2,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 16,
+                    "goalsFor": 21,
                     "goalsAgainst": 6,
-                    "points": 3
+                    "points": 6
                 },
                 {
                     "position": 5,
@@ -663,16 +663,27 @@
                 {
                     "position": 2,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 3,
                     "draws": 1,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 10,
-                    "goalsAgainst": 5,
+                    "goalsAgainst": 10,
                     "points": 10
                 },
                 {
                     "position": 3,
+                    "team": "Internacional Ca",
+                    "played": 4,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 32,
+                    "goalsAgainst": 6,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sr Almancilense",
                     "played": 3,
                     "wins": 3,
@@ -681,17 +692,6 @@
                     "goalsFor": 20,
                     "goalsAgainst": 2,
                     "points": 9
-                },
-                {
-                    "position": 4,
-                    "team": "Internacional Ca",
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 27,
-                    "goalsAgainst": 6,
-                    "points": 6
                 },
                 {
                     "position": 5,
@@ -808,16 +808,27 @@
                 {
                     "position": 2,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 3,
                     "draws": 1,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 10,
-                    "goalsAgainst": 5,
+                    "goalsAgainst": 10,
                     "points": 10
                 },
                 {
                     "position": 3,
+                    "team": "Internacional Ca",
+                    "played": 4,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 32,
+                    "goalsAgainst": 6,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sr Almancilense",
                     "played": 3,
                     "wins": 3,
@@ -826,17 +837,6 @@
                     "goalsFor": 20,
                     "goalsAgainst": 2,
                     "points": 9
-                },
-                {
-                    "position": 4,
-                    "team": "Internacional Ca",
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 27,
-                    "goalsAgainst": 6,
-                    "points": 6
                 },
                 {
                     "position": 5,
@@ -953,16 +953,27 @@
                 {
                     "position": 2,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 3,
                     "draws": 1,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 10,
-                    "goalsAgainst": 5,
+                    "goalsAgainst": 10,
                     "points": 10
                 },
                 {
                     "position": 3,
+                    "team": "Internacional Ca",
+                    "played": 4,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 32,
+                    "goalsAgainst": 6,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sr Almancilense",
                     "played": 3,
                     "wins": 3,
@@ -971,17 +982,6 @@
                     "goalsFor": 20,
                     "goalsAgainst": 2,
                     "points": 9
-                },
-                {
-                    "position": 4,
-                    "team": "Internacional Ca",
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 27,
-                    "goalsAgainst": 6,
-                    "points": 6
                 },
                 {
                     "position": 5,
@@ -1098,16 +1098,27 @@
                 {
                     "position": 2,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 3,
                     "draws": 1,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 10,
-                    "goalsAgainst": 5,
+                    "goalsAgainst": 10,
                     "points": 10
                 },
                 {
                     "position": 3,
+                    "team": "Internacional Ca",
+                    "played": 4,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 32,
+                    "goalsAgainst": 6,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sr Almancilense",
                     "played": 3,
                     "wins": 3,
@@ -1116,17 +1127,6 @@
                     "goalsFor": 20,
                     "goalsAgainst": 2,
                     "points": 9
-                },
-                {
-                    "position": 4,
-                    "team": "Internacional Ca",
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 27,
-                    "goalsAgainst": 6,
-                    "points": 6
                 },
                 {
                     "position": 5,
@@ -1201,11 +1201,11 @@
             "fixtureId": "607595",
             "matches": [
                 {
-                    "home": "Louletano Dc",
-                    "away": "Cf Os Armacenenses",
+                    "home": "Internacional Ca",
+                    "away": "Sr Almancilense",
                     "date": "7 dez",
                     "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "stadium": "Estadio Municipal De Almancil",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1213,17 +1213,17 @@
                     "home": "Js Campinense",
                     "away": "Fc Ferreiras",
                     "date": "7 dez",
-                    "time": "11:00",
+                    "time": "15:00",
                     "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
                     "awayScore": null
                 },
                 {
-                    "home": "Internacional Ca",
-                    "away": "Sr Almancilense",
+                    "home": "Louletano Dc",
+                    "away": "Cf Os Armacenenses",
                     "date": "7 dez",
-                    "time": "11:00",
-                    "stadium": "Estadio Municipal De Almancil",
+                    "time": "17:00",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1243,16 +1243,27 @@
                 {
                     "position": 2,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 3,
                     "draws": 1,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 10,
-                    "goalsAgainst": 5,
+                    "goalsAgainst": 10,
                     "points": 10
                 },
                 {
                     "position": 3,
+                    "team": "Internacional Ca",
+                    "played": 4,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 32,
+                    "goalsAgainst": 6,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sr Almancilense",
                     "played": 3,
                     "wins": 3,
@@ -1261,17 +1272,6 @@
                     "goalsFor": 20,
                     "goalsAgainst": 2,
                     "points": 9
-                },
-                {
-                    "position": 4,
-                    "team": "Internacional Ca",
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 27,
-                    "goalsAgainst": 6,
-                    "points": 6
                 },
                 {
                     "position": 5,
@@ -1388,16 +1388,27 @@
                 {
                     "position": 2,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 3,
                     "draws": 1,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 10,
-                    "goalsAgainst": 5,
+                    "goalsAgainst": 10,
                     "points": 10
                 },
                 {
                     "position": 3,
+                    "team": "Internacional Ca",
+                    "played": 4,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 32,
+                    "goalsAgainst": 6,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sr Almancilense",
                     "played": 3,
                     "wins": 3,
@@ -1406,17 +1417,6 @@
                     "goalsFor": 20,
                     "goalsAgainst": 2,
                     "points": 9
-                },
-                {
-                    "position": 4,
-                    "team": "Internacional Ca",
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 27,
-                    "goalsAgainst": 6,
-                    "points": 6
                 },
                 {
                     "position": 5,
@@ -1533,16 +1533,27 @@
                 {
                     "position": 2,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 3,
                     "draws": 1,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 10,
-                    "goalsAgainst": 5,
+                    "goalsAgainst": 10,
                     "points": 10
                 },
                 {
                     "position": 3,
+                    "team": "Internacional Ca",
+                    "played": 4,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 32,
+                    "goalsAgainst": 6,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sr Almancilense",
                     "played": 3,
                     "wins": 3,
@@ -1551,17 +1562,6 @@
                     "goalsFor": 20,
                     "goalsAgainst": 2,
                     "points": 9
-                },
-                {
-                    "position": 4,
-                    "team": "Internacional Ca",
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 27,
-                    "goalsAgainst": 6,
-                    "points": 6
                 },
                 {
                     "position": 5,
@@ -1687,16 +1687,27 @@
                 {
                     "position": 2,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 3,
                     "draws": 1,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 10,
-                    "goalsAgainst": 5,
+                    "goalsAgainst": 10,
                     "points": 10
                 },
                 {
                     "position": 3,
+                    "team": "Internacional Ca",
+                    "played": 4,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 32,
+                    "goalsAgainst": 6,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sr Almancilense",
                     "played": 3,
                     "wins": 3,
@@ -1705,17 +1716,6 @@
                     "goalsFor": 20,
                     "goalsAgainst": 2,
                     "points": 9
-                },
-                {
-                    "position": 4,
-                    "team": "Internacional Ca",
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 27,
-                    "goalsAgainst": 6,
-                    "points": 6
                 },
                 {
                     "position": 5,
@@ -1832,16 +1832,27 @@
                 {
                     "position": 2,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 3,
                     "draws": 1,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 10,
-                    "goalsAgainst": 5,
+                    "goalsAgainst": 10,
                     "points": 10
                 },
                 {
                     "position": 3,
+                    "team": "Internacional Ca",
+                    "played": 4,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 32,
+                    "goalsAgainst": 6,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sr Almancilense",
                     "played": 3,
                     "wins": 3,
@@ -1850,17 +1861,6 @@
                     "goalsFor": 20,
                     "goalsAgainst": 2,
                     "points": 9
-                },
-                {
-                    "position": 4,
-                    "team": "Internacional Ca",
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 27,
-                    "goalsAgainst": 6,
-                    "points": 6
                 },
                 {
                     "position": 5,
@@ -1977,16 +1977,27 @@
                 {
                     "position": 2,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 3,
                     "draws": 1,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 10,
-                    "goalsAgainst": 5,
+                    "goalsAgainst": 10,
                     "points": 10
                 },
                 {
                     "position": 3,
+                    "team": "Internacional Ca",
+                    "played": 4,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 32,
+                    "goalsAgainst": 6,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sr Almancilense",
                     "played": 3,
                     "wins": 3,
@@ -1995,17 +2006,6 @@
                     "goalsFor": 20,
                     "goalsAgainst": 2,
                     "points": 9
-                },
-                {
-                    "position": 4,
-                    "team": "Internacional Ca",
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 27,
-                    "goalsAgainst": 6,
-                    "points": 6
                 },
                 {
                     "position": 5,
@@ -2122,16 +2122,27 @@
                 {
                     "position": 2,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 3,
                     "draws": 1,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 10,
-                    "goalsAgainst": 5,
+                    "goalsAgainst": 10,
                     "points": 10
                 },
                 {
                     "position": 3,
+                    "team": "Internacional Ca",
+                    "played": 4,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 32,
+                    "goalsAgainst": 6,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sr Almancilense",
                     "played": 3,
                     "wins": 3,
@@ -2140,17 +2151,6 @@
                     "goalsFor": 20,
                     "goalsAgainst": 2,
                     "points": 9
-                },
-                {
-                    "position": 4,
-                    "team": "Internacional Ca",
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 27,
-                    "goalsAgainst": 6,
-                    "points": 6
                 },
                 {
                     "position": 5,
@@ -2267,16 +2267,27 @@
                 {
                     "position": 2,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 3,
                     "draws": 1,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 10,
-                    "goalsAgainst": 5,
+                    "goalsAgainst": 10,
                     "points": 10
                 },
                 {
                     "position": 3,
+                    "team": "Internacional Ca",
+                    "played": 4,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 32,
+                    "goalsAgainst": 6,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sr Almancilense",
                     "played": 3,
                     "wins": 3,
@@ -2285,17 +2296,6 @@
                     "goalsFor": 20,
                     "goalsAgainst": 2,
                     "points": 9
-                },
-                {
-                    "position": 4,
-                    "team": "Internacional Ca",
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 27,
-                    "goalsAgainst": 6,
-                    "points": 6
                 },
                 {
                     "position": 5,
@@ -2412,16 +2412,27 @@
                 {
                     "position": 2,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 3,
                     "draws": 1,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 10,
-                    "goalsAgainst": 5,
+                    "goalsAgainst": 10,
                     "points": 10
                 },
                 {
                     "position": 3,
+                    "team": "Internacional Ca",
+                    "played": 4,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 32,
+                    "goalsAgainst": 6,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sr Almancilense",
                     "played": 3,
                     "wins": 3,
@@ -2430,17 +2441,6 @@
                     "goalsFor": 20,
                     "goalsAgainst": 2,
                     "points": 9
-                },
-                {
-                    "position": 4,
-                    "team": "Internacional Ca",
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 27,
-                    "goalsAgainst": 6,
-                    "points": 6
                 },
                 {
                     "position": 5,
@@ -2557,16 +2557,27 @@
                 {
                     "position": 2,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 3,
                     "draws": 1,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 10,
-                    "goalsAgainst": 5,
+                    "goalsAgainst": 10,
                     "points": 10
                 },
                 {
                     "position": 3,
+                    "team": "Internacional Ca",
+                    "played": 4,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 32,
+                    "goalsAgainst": 6,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sr Almancilense",
                     "played": 3,
                     "wins": 3,
@@ -2575,17 +2586,6 @@
                     "goalsFor": 20,
                     "goalsAgainst": 2,
                     "points": 9
-                },
-                {
-                    "position": 4,
-                    "team": "Internacional Ca",
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 27,
-                    "goalsAgainst": 6,
-                    "points": 6
                 },
                 {
                     "position": 5,
