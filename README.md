@@ -6,6 +6,7 @@ Microsite estático que agrega resultados, classificações e calendários das e
 
 - Agregação de várias competições numa página principal com navegação dedicada por equipa.
 - Visualização por jornada e tabelas de classificação com destaque automático para o CF Os Armacenenses.
+- Dados locais completos por jornada: mesmo sem hidratação em tempo real, todas as equipas da classificação aparecem imediatamente (essencial para smartphones/tablets).
 - Interface responsiva com alternância de tema claro/escuro e preferência persistida em `localStorage`.
 - Atualização periódica de dados através de scrapers Python que consomem o site oficial da FPF.
 - Manifesto de emblemas para carregamento imediato dos logótipos de cada clube.
@@ -32,8 +33,9 @@ Microsite estático que agrega resultados, classificações e calendários das e
 1. Escolha o script correspondente à competição (ex.: `python fetch_juniores.py`) ou utilize a versão genérica `python fetch_fpf.py`.
 2. Ajuste as constantes no topo do script se precisar de apontar para outra competição (IDs `competitionId`, `seasonId`, nome do ficheiro de saída).
 3. No terminal, a partir da raiz do projeto, execute `python nome_do_script.py`.
-4. Confirme os JSON atualizados em `data/` e valide se os valores foram normalizados corretamente.
+4. Confirme os JSON atualizados em `data/` e valide se os valores foram normalizados corretamente (ex.: `python3 -m json.tool data/seniores.json`).
 5. (Opcional) Se novos emblemas forem adicionados a `img/crests/`, execute `python generate_crest_manifest.py` para atualizar `data/crests.json`.
+6. Caso ocorram conflitos de merge nos JSON, remova os marcadores (`<<<<<<<`, `=======`, `>>>>>>>`) e volte a executar o `fetch_*.py` respetivo para gerar um ficheiro limpo antes de o commitar.
 
 ## Visualizar localmente
 
@@ -53,6 +55,7 @@ O workflow `.github/workflows/update-data.yml`:
 
 - `fetch_fpf.py`: implementação base usada como referência para os restantes scrapers.
 - `generate_crest_manifest.py`: cria o mapa normalizado entre nomes de clubes e emblemas.
+- Todos os `fetch_*.py` partilham um parser robusto de classificação (lookahead tolerante ao fim da secção) que impede a perda do último classificado quando o HTML da FPF muda subtilmente.
 - `tools/probe_fixture.py`: descarrega o HTML bruto de um fixture da FPF para análise e guarda em `cache/`.
 
 ## Contribuir

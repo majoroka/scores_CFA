@@ -9,12 +9,14 @@ O microsite é constituído por páginas estáticas HTML, uma folha de estilos c
 - Cada página de competição (`seniores.html`, `juniores.html`, etc.) declara em `data-competition` a chave que identifica o ficheiro JSON correspondente (`data/{chave}.json`).
 - `main.js` é carregado em todas as páginas e divide-se em dois blocos: `ThemeManager`, responsável por sincronizar o tema claro/escuro com `localStorage` e com a preferência do sistema operativo, e o motor da competição, que lê os dados, gere o estado da jornada ativa e renderiza resultados e classificação.
 - Durante o carregamento (`DOMContentLoaded`), o script obtém `data/{competition}.json` e `data/crests.json`, inicializa o estado com a jornada mais relevante (com base nas datas) e ativa a navegação por hash (`#resultados-jX`, `#classificacao-jX`).
+- A renderização usa sempre os dados locais como primeira fonte para garantir que todas as linhas da classificação aparecem imediatamente (principalmente em mobile). As chamadas em tempo real servem apenas para hidratar resultados recentes assim que a rede o permitir.
 - As jornadas incluem identificadores `fixtureId` que permitem ao frontend tentar hidratar os dados com chamadas diretas ao endpoint `Competition/GetClassificationAndMatchesByFixture` da FPF. Existem três URLs de fallback (domínio direto e dois proxies) para contornar CORS. As respostas são parseadas no browser para atualizar resultados e classificação sem necessidade de recompilar o JSON local.
 - A renderização é responsiva: o layout alterna automaticamente entre versões mobile e desktop, aplicando destaque visual à equipa CF Os Armacenenses e recuperando os emblemas a partir de `crests.json`.
 
 ## Dados e Armazenamento
 
 - `data/{competicao}.json` contém um array `rounds` com a estrutura `{ index, fixtureId, matches[], classification[] }`. Cada jogo guarda equipas, data, hora, estádio e resultado; a classificação inclui métricas agregadas (jogos, vitórias, golos, pontos).
+- As classificações locais foram corrigidas para incluir sempre todas as equipas (o parser já não depende do surgimento do bloco `#matches` no HTML da FPF). Isto evita “listas cortadas” em dispositivos que ficam apenas com os dados empacotados.
 - `data/crests.json` é um mapa de nomes normalizados de clubes para caminhos relativos de imagem (`img/crests/*.png`). O frontend normaliza os nomes (remoção de acentos, pontuação e duplicação de espaços) antes de procurar neste mapa.
 - A pasta `cache/` guarda HTML bruto das jornadas descarregado pelos scrapers Python. Pode ser reutilizado em execuções futuras ativando a flag `USE_CACHE` para reduzir chamadas à FPF durante o desenvolvimento.
 - Os assets visuais vivem em `img/` (logótipo principal) e `img/crests/` (emblemas). A folha de estilos comum (`css/style.css`) aplica identidade consistente a todas as páginas.
@@ -22,6 +24,7 @@ O microsite é constituído por páginas estáticas HTML, uma folha de estilos c
 ## Scrapers e Geração de Conteúdo
 
 - Cada ficheiro `fetch_<competicao>.py` herda o padrão de `fetch_fpf.py`: descarrega a página da competição na FPF, encontra todos os `fixtureId`, obtém o HTML de cada jornada e extrai resultados e classificação para JSON. Os IDs de competição/época e o ficheiro de saída são configuráveis no topo de cada script.
+- Todos os scrapers partilham agora o mesmo padrão de regex para a classificação, com lookahead que aceita o fim da secção. Esta alteração elimina perdas da última linha quando a FPF altera ligeiramente a marcação, garantindo JSON consistente entre competições.
 - Os scrapers tratam das normalizações básicas (remoção de `<br>`, trimming, parsing de pontuações). Variações no HTML da FPF podem exigir ajustes nas regex; por isso, cada script isola a lógica de parsing para facilitar manutenção.
 - `generate_crest_manifest.py` percorre `img/crests/`, normaliza os nomes de ficheiros (retirando acentos e símbolos) e cria o manifesto `data/crests.json`, adicionando aliases para variações comuns dos nomes.
 - `tools/probe_fixture.py` é um utilitário rápido para descarregar o HTML de um `fixtureId` específico, gravando a resposta em `cache/fixture_<id>.html` para apoiar a criação ou debugging dos scrapers.

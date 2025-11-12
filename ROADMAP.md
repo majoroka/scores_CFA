@@ -2,6 +2,7 @@
 
 ## Objetivos imediatos (0-1 mês)
 
+- ✅ Corrigir o parser de classificação dos scrapers para garantir que todas as equipas aparecem nos JSON locais (resolvido em nov/2023).
 - Consolidar um comando único (ex.: `python tools/run_fetchers.py`) que execute todos os `fetch_*.py` e produza um relatório de sucesso/falha por competição.
 - Formalizar um ficheiro de configuração partilhado para IDs de competição/época, evitando duplicação de constantes em cada scraper.
 - Adicionar validações automáticas aos JSON gerados (estrutura `rounds`, campos obrigatórios, tipos), falhando o workflow caso haja dados incompletos.
