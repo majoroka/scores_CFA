@@ -23,15 +23,6 @@
                     "awayScore": 2
                 },
                 {
-                    "home": "Sc Olhanense",
-                    "away": "Sr 1º Janeiro",
-                    "date": "11 out",
-                    "time": "11:00",
-                    "stadium": "Estádio José Arcanjo",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Cd Montenegro",
                     "away": "Cf Os Armacenenses",
                     "date": "7 - 0                            \r\n                \r\n                    11 out",
@@ -39,6 +30,15 @@
                     "stadium": "Campo Horta Da Areia",
                     "homeScore": 7,
                     "awayScore": 0
+                },
+                {
+                    "home": "Sc Olhanense",
+                    "away": "Sr 1º Janeiro",
+                    "date": "11 out",
+                    "time": "11:00",
+                    "stadium": "Estádio José Arcanjo",
+                    "homeScore": null,
+                    "awayScore": null
                 },
                 {
                     "home": "Js Campinense",
@@ -177,15 +177,6 @@
                     "awayScore": 0
                 },
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Js Campinense",
-                    "date": "0 - 16                            \r\n                \r\n                    19 out",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 0,
-                    "awayScore": 16
-                },
-                {
                     "home": "Sr 1º Janeiro",
                     "away": "Cd Montenegro",
                     "date": "11 - 1                            \r\n                \r\n                    19 out",
@@ -193,6 +184,15 @@
                     "stadium": "Campo Polidesportivo",
                     "homeScore": 11,
                     "awayScore": 1
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Js Campinense",
+                    "date": "0 - 16                            \r\n                \r\n                    19 out",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 0,
+                    "awayScore": 16
                 },
                 {
                     "home": "Sc Farense",
@@ -331,15 +331,6 @@
             "fixtureId": "607607",
             "matches": [
                 {
-                    "home": "Sc Olhanense",
-                    "away": "Fc Bias",
-                    "date": "5 - 0                            \r\n                \r\n                    26 out",
-                    "time": "",
-                    "stadium": "Estádio José Arcanjo",
-                    "homeScore": 5,
-                    "awayScore": 0
-                },
-                {
                     "home": "Cd Montenegro",
                     "away": "Js Campinense",
                     "date": "0 - 12                            \r\n                \r\n                    26 out",
@@ -347,6 +338,15 @@
                     "stadium": "Campo Horta Da Areia",
                     "homeScore": 0,
                     "awayScore": 12
+                },
+                {
+                    "home": "Sc Olhanense",
+                    "away": "Fc Bias",
+                    "date": "5 - 0                            \r\n                \r\n                    26 out",
+                    "time": "",
+                    "stadium": "Estádio José Arcanjo",
+                    "homeScore": 5,
+                    "awayScore": 0
                 },
                 {
                     "home": "Sr 1º Janeiro",
@@ -503,15 +503,6 @@
                     "awayScore": 1
                 },
                 {
-                    "home": "Louletano Dc",
-                    "away": "Sc Olhanense",
-                    "date": "3 - 2                            \r\n                \r\n                    2 nov",
-                    "time": "",
-                    "stadium": "Parque Desp. Joaquim António Teixeira",
-                    "homeScore": 3,
-                    "awayScore": 2
-                },
-                {
                     "home": "Cf Os Armacenenses",
                     "away": "Ad Geração Génios",
                     "date": "1 - 11                            \r\n                \r\n                    2 nov",
@@ -519,6 +510,15 @@
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 1,
                     "awayScore": 11
+                },
+                {
+                    "home": "Louletano Dc",
+                    "away": "Sc Olhanense",
+                    "date": "3 - 2                            \r\n                \r\n                    2 nov",
+                    "time": "",
+                    "stadium": "Parque Desp. Joaquim António Teixeira",
+                    "homeScore": 3,
+                    "awayScore": 2
                 },
                 {
                     "home": "Sc Farense",
@@ -858,11 +858,11 @@
                 {
                     "home": "Aef Faro",
                     "away": "Ad Geração Génios",
-                    "date": "16 nov",
-                    "time": "18:30",
+                    "date": "2 - 3                            \r\n                \r\n                    16 nov",
+                    "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 2,
+                    "awayScore": 3
                 }
             ],
             "classification": [
@@ -890,6 +890,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Ad Geração Génios",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 15,
+                    "goalsAgainst": 16,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sc Olhanense",
                     "played": 4,
                     "wins": 2,
@@ -900,7 +911,7 @@
                     "points": 7
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
@@ -909,17 +920,6 @@
                     "goalsFor": 13,
                     "goalsAgainst": 4,
                     "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Ad Geração Génios",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 12,
-                    "goalsAgainst": 14,
-                    "points": 6
                 },
                 {
                     "position": 6,
@@ -946,12 +946,12 @@
                 {
                     "position": 8,
                     "team": "Aef Faro",
-                    "played": 5,
+                    "played": 6,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 14,
-                    "goalsAgainst": 21,
+                    "losses": 4,
+                    "goalsFor": 16,
+                    "goalsAgainst": 24,
                     "points": 6
                 },
                 {
@@ -983,20 +983,20 @@
             "fixtureId": "607611",
             "matches": [
                 {
-                    "home": "Fc Bias",
-                    "away": "Louletano Dc",
-                    "date": "23 nov",
-                    "time": "09:00",
-                    "stadium": "Estádio Municipal Olhão",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Cd Montenegro",
                     "away": "Ad Geração Génios",
                     "date": "23 nov",
                     "time": "09:00",
                     "stadium": "Campo Horta Da Areia",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Fc Bias",
+                    "away": "Louletano Dc",
+                    "date": "23 nov",
+                    "time": "09:00",
+                    "stadium": "Estádio Municipal Olhão",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1053,6 +1053,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Ad Geração Génios",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 15,
+                    "goalsAgainst": 16,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sc Olhanense",
                     "played": 4,
                     "wins": 2,
@@ -1063,7 +1074,7 @@
                     "points": 7
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
@@ -1072,17 +1083,6 @@
                     "goalsFor": 13,
                     "goalsAgainst": 4,
                     "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Ad Geração Génios",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 12,
-                    "goalsAgainst": 14,
-                    "points": 6
                 },
                 {
                     "position": 6,
@@ -1109,12 +1109,12 @@
                 {
                     "position": 8,
                     "team": "Aef Faro",
-                    "played": 5,
+                    "played": 6,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 14,
-                    "goalsAgainst": 21,
+                    "losses": 4,
+                    "goalsFor": 16,
+                    "goalsAgainst": 24,
                     "points": 6
                 },
                 {
@@ -1216,6 +1216,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Ad Geração Génios",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 15,
+                    "goalsAgainst": 16,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sc Olhanense",
                     "played": 4,
                     "wins": 2,
@@ -1226,7 +1237,7 @@
                     "points": 7
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
@@ -1235,17 +1246,6 @@
                     "goalsFor": 13,
                     "goalsAgainst": 4,
                     "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Ad Geração Génios",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 12,
-                    "goalsAgainst": 14,
-                    "points": 6
                 },
                 {
                     "position": 6,
@@ -1272,12 +1272,12 @@
                 {
                     "position": 8,
                     "team": "Aef Faro",
-                    "played": 5,
+                    "played": 6,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 14,
-                    "goalsAgainst": 21,
+                    "losses": 4,
+                    "goalsFor": 16,
+                    "goalsAgainst": 24,
                     "points": 6
                 },
                 {
@@ -1379,6 +1379,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Ad Geração Génios",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 15,
+                    "goalsAgainst": 16,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sc Olhanense",
                     "played": 4,
                     "wins": 2,
@@ -1389,7 +1400,7 @@
                     "points": 7
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
@@ -1398,17 +1409,6 @@
                     "goalsFor": 13,
                     "goalsAgainst": 4,
                     "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Ad Geração Génios",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 12,
-                    "goalsAgainst": 14,
-                    "points": 6
                 },
                 {
                     "position": 6,
@@ -1435,12 +1435,12 @@
                 {
                     "position": 8,
                     "team": "Aef Faro",
-                    "played": 5,
+                    "played": 6,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 14,
-                    "goalsAgainst": 21,
+                    "losses": 4,
+                    "goalsFor": 16,
+                    "goalsAgainst": 24,
                     "points": 6
                 },
                 {
@@ -1472,20 +1472,20 @@
             "fixtureId": "607614",
             "matches": [
                 {
-                    "home": "Sc Farense",
-                    "away": "Ad Geração Génios",
-                    "date": "14 dez",
-                    "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Louletano Dc",
                     "away": "Js Campinense",
                     "date": "14 dez",
                     "time": "11:00",
                     "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Sc Farense",
+                    "away": "Ad Geração Génios",
+                    "date": "14 dez",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1499,20 +1499,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Sr 1º Janeiro",
-                    "away": "Sc Olhanense",
-                    "date": "14 dez",
-                    "time": "11:00",
-                    "stadium": "Campo Polidesportivo",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Fc Bias",
                     "away": "Aef Faro",
                     "date": "14 dez",
                     "time": "11:00",
                     "stadium": "Estádio Municipal Olhão",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Sr 1º Janeiro",
+                    "away": "Sc Olhanense",
+                    "date": "14 dez",
+                    "time": "11:00",
+                    "stadium": "Campo Polidesportivo",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1542,6 +1542,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Ad Geração Génios",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 15,
+                    "goalsAgainst": 16,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sc Olhanense",
                     "played": 4,
                     "wins": 2,
@@ -1552,7 +1563,7 @@
                     "points": 7
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
@@ -1561,17 +1572,6 @@
                     "goalsFor": 13,
                     "goalsAgainst": 4,
                     "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Ad Geração Génios",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 12,
-                    "goalsAgainst": 14,
-                    "points": 6
                 },
                 {
                     "position": 6,
@@ -1598,12 +1598,12 @@
                 {
                     "position": 8,
                     "team": "Aef Faro",
-                    "played": 5,
+                    "played": 6,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 14,
-                    "goalsAgainst": 21,
+                    "losses": 4,
+                    "goalsFor": 16,
+                    "goalsAgainst": 24,
                     "points": 6
                 },
                 {
@@ -1635,29 +1635,20 @@
             "fixtureId": "607615",
             "matches": [
                 {
-                    "home": "Ad Geração Génios",
-                    "away": "Fc Bias",
-                    "date": "21 dez",
-                    "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Aef Faro",
-                    "away": "Louletano Dc",
-                    "date": "21 dez",
-                    "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Cd Montenegro",
                     "away": "Sr 1º Janeiro",
                     "date": "21 dez",
                     "time": "11:00",
                     "stadium": "Campo Horta Da Areia",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Sc Olhanense",
+                    "away": "Sc Farense",
+                    "date": "21 dez",
+                    "time": "11:00",
+                    "stadium": "Estádio José Arcanjo",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1671,11 +1662,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Sc Olhanense",
-                    "away": "Sc Farense",
+                    "home": "Aef Faro",
+                    "away": "Louletano Dc",
                     "date": "21 dez",
                     "time": "11:00",
-                    "stadium": "Estádio José Arcanjo",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Ad Geração Génios",
+                    "away": "Fc Bias",
+                    "date": "21 dez",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1705,6 +1705,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Ad Geração Génios",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 15,
+                    "goalsAgainst": 16,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sc Olhanense",
                     "played": 4,
                     "wins": 2,
@@ -1715,7 +1726,7 @@
                     "points": 7
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
@@ -1724,17 +1735,6 @@
                     "goalsFor": 13,
                     "goalsAgainst": 4,
                     "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Ad Geração Génios",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 12,
-                    "goalsAgainst": 14,
-                    "points": 6
                 },
                 {
                     "position": 6,
@@ -1761,12 +1761,12 @@
                 {
                     "position": 8,
                     "team": "Aef Faro",
-                    "played": 5,
+                    "played": 6,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 14,
-                    "goalsAgainst": 21,
+                    "losses": 4,
+                    "goalsFor": 16,
+                    "goalsAgainst": 24,
                     "points": 6
                 },
                 {
@@ -1807,15 +1807,6 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Js Campinense",
-                    "away": "Cd Montenegro",
-                    "date": "4 jan",
-                    "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Sc Farense",
                     "away": "Sr 1º Janeiro",
                     "date": "4 jan",
@@ -1825,11 +1816,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Fc Bias",
-                    "away": "Sc Olhanense",
+                    "home": "Js Campinense",
+                    "away": "Cd Montenegro",
                     "date": "4 jan",
                     "time": "11:00",
-                    "stadium": "Estádio Municipal Olhão",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1839,6 +1830,15 @@
                     "date": "4 jan",
                     "time": "11:00",
                     "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Fc Bias",
+                    "away": "Sc Olhanense",
+                    "date": "4 jan",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Olhão",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1868,6 +1868,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Ad Geração Génios",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 15,
+                    "goalsAgainst": 16,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sc Olhanense",
                     "played": 4,
                     "wins": 2,
@@ -1878,7 +1889,7 @@
                     "points": 7
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
@@ -1887,17 +1898,6 @@
                     "goalsFor": 13,
                     "goalsAgainst": 4,
                     "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Ad Geração Génios",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 12,
-                    "goalsAgainst": 14,
-                    "points": 6
                 },
                 {
                     "position": 6,
@@ -1924,12 +1924,12 @@
                 {
                     "position": 8,
                     "team": "Aef Faro",
-                    "played": 5,
+                    "played": 6,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 14,
-                    "goalsAgainst": 21,
+                    "losses": 4,
+                    "goalsFor": 16,
+                    "goalsAgainst": 24,
                     "points": 6
                 },
                 {
@@ -1961,11 +1961,11 @@
             "fixtureId": "607617",
             "matches": [
                 {
-                    "home": "Sr 1º Janeiro",
-                    "away": "Fc Bias",
+                    "home": "Cd Montenegro",
+                    "away": "Sc Farense",
                     "date": "11 jan",
                     "time": "11:00",
-                    "stadium": "Campo Polidesportivo",
+                    "stadium": "Campo Horta Da Areia",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1975,6 +1975,15 @@
                     "date": "11 jan",
                     "time": "11:00",
                     "stadium": "Estádio José Arcanjo",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Sr 1º Janeiro",
+                    "away": "Fc Bias",
+                    "date": "11 jan",
+                    "time": "11:00",
+                    "stadium": "Campo Polidesportivo",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1993,15 +2002,6 @@
                     "date": "11 jan",
                     "time": "11:00",
                     "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Cd Montenegro",
-                    "away": "Sc Farense",
-                    "date": "11 jan",
-                    "time": "11:00",
-                    "stadium": "Campo Horta Da Areia",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -2031,6 +2031,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Ad Geração Génios",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 15,
+                    "goalsAgainst": 16,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sc Olhanense",
                     "played": 4,
                     "wins": 2,
@@ -2041,7 +2052,7 @@
                     "points": 7
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
@@ -2050,17 +2061,6 @@
                     "goalsFor": 13,
                     "goalsAgainst": 4,
                     "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Ad Geração Génios",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 12,
-                    "goalsAgainst": 14,
-                    "points": 6
                 },
                 {
                     "position": 6,
@@ -2087,12 +2087,12 @@
                 {
                     "position": 8,
                     "team": "Aef Faro",
-                    "played": 5,
+                    "played": 6,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 14,
-                    "goalsAgainst": 21,
+                    "losses": 4,
+                    "goalsFor": 16,
+                    "goalsAgainst": 24,
                     "points": 6
                 },
                 {
@@ -2124,6 +2124,15 @@
             "fixtureId": "607618",
             "matches": [
                 {
+                    "home": "Louletano Dc",
+                    "away": "Sr 1º Janeiro",
+                    "date": "18 jan",
+                    "time": "11:00",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Js Campinense",
                     "away": "Ad Geração Génios",
                     "date": "18 jan",
@@ -2133,20 +2142,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Aef Faro",
-                    "away": "Cd Montenegro",
+                    "home": "Cf Os Armacenenses",
+                    "away": "Sc Olhanense",
                     "date": "18 jan",
                     "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Louletano Dc",
-                    "away": "Sr 1º Janeiro",
-                    "date": "18 jan",
-                    "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2160,11 +2160,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Sc Olhanense",
+                    "home": "Aef Faro",
+                    "away": "Cd Montenegro",
                     "date": "18 jan",
                     "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -2194,6 +2194,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Ad Geração Génios",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 15,
+                    "goalsAgainst": 16,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sc Olhanense",
                     "played": 4,
                     "wins": 2,
@@ -2204,7 +2215,7 @@
                     "points": 7
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
@@ -2213,17 +2224,6 @@
                     "goalsFor": 13,
                     "goalsAgainst": 4,
                     "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Ad Geração Génios",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 12,
-                    "goalsAgainst": 14,
-                    "points": 6
                 },
                 {
                     "position": 6,
@@ -2250,12 +2250,12 @@
                 {
                     "position": 8,
                     "team": "Aef Faro",
-                    "played": 5,
+                    "played": 6,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 14,
-                    "goalsAgainst": 21,
+                    "losses": 4,
+                    "goalsFor": 16,
+                    "goalsAgainst": 24,
                     "points": 6
                 },
                 {
@@ -2286,15 +2286,6 @@
             "index": 15,
             "fixtureId": "607619",
             "matches": [
-                {
-                    "home": "Ad Geração Génios",
-                    "away": "Aef Faro",
-                    "date": "25 jan",
-                    "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
                 {
                     "home": "Cd Montenegro",
                     "away": "Fc Bias",
@@ -2330,6 +2321,15 @@
                     "stadium": "Campo Polidesportivo",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Ad Geração Génios",
+                    "away": "Aef Faro",
+                    "date": "25 jan",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
                 }
             ],
             "classification": [
@@ -2357,6 +2357,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Ad Geração Génios",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 15,
+                    "goalsAgainst": 16,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sc Olhanense",
                     "played": 4,
                     "wins": 2,
@@ -2367,7 +2378,7 @@
                     "points": 7
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
@@ -2376,17 +2387,6 @@
                     "goalsFor": 13,
                     "goalsAgainst": 4,
                     "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Ad Geração Génios",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 12,
-                    "goalsAgainst": 14,
-                    "points": 6
                 },
                 {
                     "position": 6,
@@ -2413,12 +2413,12 @@
                 {
                     "position": 8,
                     "team": "Aef Faro",
-                    "played": 5,
+                    "played": 6,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 14,
-                    "goalsAgainst": 21,
+                    "losses": 4,
+                    "goalsFor": 16,
+                    "goalsAgainst": 24,
                     "points": 6
                 },
                 {
@@ -2459,15 +2459,6 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Ad Geração Génios",
-                    "away": "Cd Montenegro",
-                    "date": "1 fev",
-                    "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Js Campinense",
                     "away": "Sr 1º Janeiro",
                     "date": "1 fev",
@@ -2488,6 +2479,15 @@
                 {
                     "home": "Aef Faro",
                     "away": "Sc Olhanense",
+                    "date": "1 fev",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Ad Geração Génios",
+                    "away": "Cd Montenegro",
                     "date": "1 fev",
                     "time": "11:00",
                     "stadium": "Campo Complexo Desportivo Penha",
@@ -2520,6 +2520,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Ad Geração Génios",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 15,
+                    "goalsAgainst": 16,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sc Olhanense",
                     "played": 4,
                     "wins": 2,
@@ -2530,7 +2541,7 @@
                     "points": 7
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
@@ -2539,17 +2550,6 @@
                     "goalsFor": 13,
                     "goalsAgainst": 4,
                     "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Ad Geração Génios",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 12,
-                    "goalsAgainst": 14,
-                    "points": 6
                 },
                 {
                     "position": 6,
@@ -2576,12 +2576,12 @@
                 {
                     "position": 8,
                     "team": "Aef Faro",
-                    "played": 5,
+                    "played": 6,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 14,
-                    "goalsAgainst": 21,
+                    "losses": 4,
+                    "goalsFor": 16,
+                    "goalsAgainst": 24,
                     "points": 6
                 },
                 {
@@ -2613,11 +2613,11 @@
             "fixtureId": "607621",
             "matches": [
                 {
-                    "home": "Sc Olhanense",
-                    "away": "Ad Geração Génios",
+                    "home": "Louletano Dc",
+                    "away": "Cd Montenegro",
                     "date": "8 fev",
                     "time": "11:00",
-                    "stadium": "Estádio José Arcanjo",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2631,11 +2631,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Louletano Dc",
-                    "away": "Cd Montenegro",
+                    "home": "Sc Olhanense",
+                    "away": "Ad Geração Génios",
                     "date": "8 fev",
                     "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "stadium": "Estádio José Arcanjo",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2683,6 +2683,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Ad Geração Génios",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 15,
+                    "goalsAgainst": 16,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sc Olhanense",
                     "played": 4,
                     "wins": 2,
@@ -2693,7 +2704,7 @@
                     "points": 7
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
@@ -2702,17 +2713,6 @@
                     "goalsFor": 13,
                     "goalsAgainst": 4,
                     "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Ad Geração Génios",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 12,
-                    "goalsAgainst": 14,
-                    "points": 6
                 },
                 {
                     "position": 6,
@@ -2739,12 +2739,12 @@
                 {
                     "position": 8,
                     "team": "Aef Faro",
-                    "played": 5,
+                    "played": 6,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 14,
-                    "goalsAgainst": 21,
+                    "losses": 4,
+                    "goalsFor": 16,
+                    "goalsAgainst": 24,
                     "points": 6
                 },
                 {
@@ -2776,6 +2776,15 @@
             "fixtureId": "607622",
             "matches": [
                 {
+                    "home": "Cd Montenegro",
+                    "away": "Sc Olhanense",
+                    "date": "15 fev",
+                    "time": "11:00",
+                    "stadium": "Campo Horta Da Areia",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Js Campinense",
                     "away": "Fc Bias",
                     "date": "15 fev",
@@ -2794,15 +2803,6 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Ad Geração Génios",
-                    "away": "Sr 1º Janeiro",
-                    "date": "15 fev",
-                    "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Aef Faro",
                     "away": "Sc Farense",
                     "date": "15 fev",
@@ -2812,11 +2812,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cd Montenegro",
-                    "away": "Sc Olhanense",
+                    "home": "Ad Geração Génios",
+                    "away": "Sr 1º Janeiro",
                     "date": "15 fev",
                     "time": "11:00",
-                    "stadium": "Campo Horta Da Areia",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -2846,6 +2846,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Ad Geração Génios",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 15,
+                    "goalsAgainst": 16,
+                    "points": 9
+                },
+                {
+                    "position": 4,
                     "team": "Sc Olhanense",
                     "played": 4,
                     "wins": 2,
@@ -2856,7 +2867,7 @@
                     "points": 7
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 4,
                     "wins": 2,
@@ -2865,17 +2876,6 @@
                     "goalsFor": 13,
                     "goalsAgainst": 4,
                     "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Ad Geração Génios",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 12,
-                    "goalsAgainst": 14,
-                    "points": 6
                 },
                 {
                     "position": 6,
@@ -2902,12 +2902,12 @@
                 {
                     "position": 8,
                     "team": "Aef Faro",
-                    "played": 5,
+                    "played": 6,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 14,
-                    "goalsAgainst": 21,
+                    "losses": 4,
+                    "goalsFor": 16,
+                    "goalsAgainst": 24,
                     "points": 6
                 },
                 {
