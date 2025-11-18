@@ -16,11 +16,11 @@
                 {
                     "home": "Sc Olhanense",
                     "away": "Sr 1º Janeiro",
-                    "date": "11 out",
-                    "time": "11:00",
+                    "date": "6 - 3                            \r\n                \r\n                    11 out",
+                    "time": "",
                     "stadium": "Estádio José Arcanjo",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 6,
+                    "awayScore": 3
                 },
                 {
                     "home": "Cd Montenegro",
@@ -75,6 +75,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Sc Olhanense",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 6,
+                    "goalsAgainst": 3,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Sc Farense",
                     "played": 1,
                     "wins": 1,
@@ -85,7 +96,7 @@
                     "points": 3
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Fc Bias",
                     "played": 1,
                     "wins": 1,
@@ -96,29 +107,7 @@
                     "points": 3
                 },
                 {
-                    "position": 5,
-                    "team": "Sc Olhanense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 5,
-                    "team": "Sr 1º Janeiro",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 7,
+                    "position": 6,
                     "team": "Aef Faro",
                     "played": 1,
                     "wins": 0,
@@ -126,6 +115,17 @@
                     "losses": 1,
                     "goalsFor": 1,
                     "goalsAgainst": 2,
+                    "points": 0
+                },
+                {
+                    "position": 7,
+                    "team": "Sr 1º Janeiro",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 6,
                     "points": 0
                 },
                 {
@@ -238,6 +238,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Sc Olhanense",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 4,
+                    "points": 4
+                },
+                {
+                    "position": 4,
                     "team": "Sc Farense",
                     "played": 2,
                     "wins": 1,
@@ -248,18 +259,18 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sr 1º Janeiro",
-                    "played": 1,
+                    "played": 2,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 1,
+                    "losses": 1,
+                    "goalsFor": 14,
+                    "goalsAgainst": 7,
                     "points": 3
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Cd Montenegro",
                     "played": 2,
                     "wins": 1,
@@ -270,7 +281,7 @@
                     "points": 3
                 },
                 {
-                    "position": 6,
+                    "position": 7,
                     "team": "Louletano Dc",
                     "played": 2,
                     "wins": 1,
@@ -279,17 +290,6 @@
                     "goalsFor": 7,
                     "goalsAgainst": 10,
                     "points": 3
-                },
-                {
-                    "position": 7,
-                    "team": "Sc Olhanense",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 1,
-                    "goalsAgainst": 1,
-                    "points": 1
                 },
                 {
                     "position": 8,
@@ -351,11 +351,11 @@
                 {
                     "home": "Sr 1º Janeiro",
                     "away": "Sc Farense",
-                    "date": "26 out",
-                    "time": "11:00",
+                    "date": "1 - 2                            \r\n                \r\n                    26 out",
+                    "time": "",
                     "stadium": "Campo Polidesportivo",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 1,
+                    "awayScore": 2
                 },
                 {
                     "home": "Aef Faro",
@@ -390,6 +390,28 @@
                 },
                 {
                     "position": 2,
+                    "team": "Sc Olhanense",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 12,
+                    "goalsAgainst": 4,
+                    "points": 7
+                },
+                {
+                    "position": 3,
+                    "team": "Sc Farense",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 6,
+                    "goalsAgainst": 2,
+                    "points": 7
+                },
+                {
+                    "position": 4,
                     "team": "Fc Bias",
                     "played": 3,
                     "wins": 2,
@@ -398,28 +420,6 @@
                     "goalsFor": 4,
                     "goalsAgainst": 6,
                     "points": 6
-                },
-                {
-                    "position": 3,
-                    "team": "Sc Olhanense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 6,
-                    "goalsAgainst": 1,
-                    "points": 4
-                },
-                {
-                    "position": 4,
-                    "team": "Sc Farense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 4,
-                    "goalsAgainst": 1,
-                    "points": 4
                 },
                 {
                     "position": 5,
@@ -435,12 +435,12 @@
                 {
                     "position": 6,
                     "team": "Sr 1º Janeiro",
-                    "played": 1,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 1,
+                    "losses": 2,
+                    "goalsFor": 15,
+                    "goalsAgainst": 9,
                     "points": 3
                 },
                 {
@@ -553,6 +553,17 @@
                 },
                 {
                     "position": 2,
+                    "team": "Sc Farense",
+                    "played": 4,
+                    "wins": 3,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 14,
+                    "goalsAgainst": 3,
+                    "points": 10
+                },
+                {
+                    "position": 3,
                     "team": "Fc Bias",
                     "played": 4,
                     "wins": 3,
@@ -563,18 +574,18 @@
                     "points": 9
                 },
                 {
-                    "position": 3,
-                    "team": "Sc Farense",
-                    "played": 3,
+                    "position": 4,
+                    "team": "Sc Olhanense",
+                    "played": 4,
                     "wins": 2,
                     "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 12,
-                    "goalsAgainst": 2,
+                    "losses": 1,
+                    "goalsFor": 14,
+                    "goalsAgainst": 7,
                     "points": 7
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Ad Geração Génios",
                     "played": 4,
                     "wins": 2,
@@ -585,7 +596,7 @@
                     "points": 6
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Louletano Dc",
                     "played": 4,
                     "wins": 2,
@@ -596,25 +607,14 @@
                     "points": 6
                 },
                 {
-                    "position": 6,
-                    "team": "Sc Olhanense",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 8,
-                    "goalsAgainst": 4,
-                    "points": 4
-                },
-                {
                     "position": 7,
                     "team": "Sr 1º Janeiro",
-                    "played": 2,
+                    "played": 4,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 12,
-                    "goalsAgainst": 4,
+                    "losses": 3,
+                    "goalsFor": 16,
+                    "goalsAgainst": 12,
                     "points": 3
                 },
                 {
@@ -728,24 +728,24 @@
                 {
                     "position": 3,
                     "team": "Sc Olhanense",
-                    "played": 4,
-                    "wins": 2,
+                    "played": 5,
+                    "wins": 3,
                     "draws": 1,
                     "losses": 1,
-                    "goalsFor": 22,
-                    "goalsAgainst": 5,
-                    "points": 7
+                    "goalsFor": 28,
+                    "goalsAgainst": 8,
+                    "points": 10
                 },
                 {
                     "position": 4,
                     "team": "Sc Farense",
-                    "played": 4,
-                    "wins": 2,
+                    "played": 5,
+                    "wins": 3,
                     "draws": 1,
                     "losses": 1,
-                    "goalsFor": 13,
-                    "goalsAgainst": 4,
-                    "points": 7
+                    "goalsFor": 15,
+                    "goalsAgainst": 5,
+                    "points": 10
                 },
                 {
                     "position": 5,
@@ -783,12 +783,12 @@
                 {
                     "position": 8,
                     "team": "Sr 1º Janeiro",
-                    "played": 2,
+                    "played": 4,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 12,
-                    "goalsAgainst": 4,
+                    "losses": 3,
+                    "goalsFor": 16,
+                    "goalsAgainst": 12,
                     "points": 3
                 },
                 {
@@ -891,16 +891,27 @@
                 {
                     "position": 3,
                     "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 3,
+                    "played": 6,
+                    "wins": 4,
                     "draws": 1,
                     "losses": 1,
-                    "goalsFor": 17,
-                    "goalsAgainst": 5,
-                    "points": 10
+                    "goalsFor": 19,
+                    "goalsAgainst": 6,
+                    "points": 13
                 },
                 {
                     "position": 4,
+                    "team": "Sc Olhanense",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 28,
+                    "goalsAgainst": 12,
+                    "points": 10
+                },
+                {
+                    "position": 5,
                     "team": "Ad Geração Génios",
                     "played": 6,
                     "wins": 3,
@@ -909,17 +920,6 @@
                     "goalsFor": 15,
                     "goalsAgainst": 16,
                     "points": 9
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 22,
-                    "goalsAgainst": 9,
-                    "points": 7
                 },
                 {
                     "position": 6,
@@ -935,12 +935,12 @@
                 {
                     "position": 7,
                     "team": "Sr 1º Janeiro",
-                    "played": 3,
+                    "played": 5,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 16,
-                    "goalsAgainst": 4,
+                    "losses": 3,
+                    "goalsFor": 20,
+                    "goalsAgainst": 12,
                     "points": 6
                 },
                 {
@@ -1054,16 +1054,27 @@
                 {
                     "position": 3,
                     "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 3,
+                    "played": 6,
+                    "wins": 4,
                     "draws": 1,
                     "losses": 1,
-                    "goalsFor": 17,
-                    "goalsAgainst": 5,
-                    "points": 10
+                    "goalsFor": 19,
+                    "goalsAgainst": 6,
+                    "points": 13
                 },
                 {
                     "position": 4,
+                    "team": "Sc Olhanense",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 28,
+                    "goalsAgainst": 12,
+                    "points": 10
+                },
+                {
+                    "position": 5,
                     "team": "Ad Geração Génios",
                     "played": 6,
                     "wins": 3,
@@ -1072,17 +1083,6 @@
                     "goalsFor": 15,
                     "goalsAgainst": 16,
                     "points": 9
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 22,
-                    "goalsAgainst": 9,
-                    "points": 7
                 },
                 {
                     "position": 6,
@@ -1098,12 +1098,12 @@
                 {
                     "position": 7,
                     "team": "Sr 1º Janeiro",
-                    "played": 3,
+                    "played": 5,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 16,
-                    "goalsAgainst": 4,
+                    "losses": 3,
+                    "goalsFor": 20,
+                    "goalsAgainst": 12,
                     "points": 6
                 },
                 {
@@ -1217,16 +1217,27 @@
                 {
                     "position": 3,
                     "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 3,
+                    "played": 6,
+                    "wins": 4,
                     "draws": 1,
                     "losses": 1,
-                    "goalsFor": 17,
-                    "goalsAgainst": 5,
-                    "points": 10
+                    "goalsFor": 19,
+                    "goalsAgainst": 6,
+                    "points": 13
                 },
                 {
                     "position": 4,
+                    "team": "Sc Olhanense",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 28,
+                    "goalsAgainst": 12,
+                    "points": 10
+                },
+                {
+                    "position": 5,
                     "team": "Ad Geração Génios",
                     "played": 6,
                     "wins": 3,
@@ -1235,17 +1246,6 @@
                     "goalsFor": 15,
                     "goalsAgainst": 16,
                     "points": 9
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 22,
-                    "goalsAgainst": 9,
-                    "points": 7
                 },
                 {
                     "position": 6,
@@ -1261,12 +1261,12 @@
                 {
                     "position": 7,
                     "team": "Sr 1º Janeiro",
-                    "played": 3,
+                    "played": 5,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 16,
-                    "goalsAgainst": 4,
+                    "losses": 3,
+                    "goalsFor": 20,
+                    "goalsAgainst": 12,
                     "points": 6
                 },
                 {
@@ -1380,16 +1380,27 @@
                 {
                     "position": 3,
                     "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 3,
+                    "played": 6,
+                    "wins": 4,
                     "draws": 1,
                     "losses": 1,
-                    "goalsFor": 17,
-                    "goalsAgainst": 5,
-                    "points": 10
+                    "goalsFor": 19,
+                    "goalsAgainst": 6,
+                    "points": 13
                 },
                 {
                     "position": 4,
+                    "team": "Sc Olhanense",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 28,
+                    "goalsAgainst": 12,
+                    "points": 10
+                },
+                {
+                    "position": 5,
                     "team": "Ad Geração Génios",
                     "played": 6,
                     "wins": 3,
@@ -1398,17 +1409,6 @@
                     "goalsFor": 15,
                     "goalsAgainst": 16,
                     "points": 9
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 22,
-                    "goalsAgainst": 9,
-                    "points": 7
                 },
                 {
                     "position": 6,
@@ -1424,12 +1424,12 @@
                 {
                     "position": 7,
                     "team": "Sr 1º Janeiro",
-                    "played": 3,
+                    "played": 5,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 16,
-                    "goalsAgainst": 4,
+                    "losses": 3,
+                    "goalsFor": 20,
+                    "goalsAgainst": 12,
                     "points": 6
                 },
                 {
@@ -1543,16 +1543,27 @@
                 {
                     "position": 3,
                     "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 3,
+                    "played": 6,
+                    "wins": 4,
                     "draws": 1,
                     "losses": 1,
-                    "goalsFor": 17,
-                    "goalsAgainst": 5,
-                    "points": 10
+                    "goalsFor": 19,
+                    "goalsAgainst": 6,
+                    "points": 13
                 },
                 {
                     "position": 4,
+                    "team": "Sc Olhanense",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 28,
+                    "goalsAgainst": 12,
+                    "points": 10
+                },
+                {
+                    "position": 5,
                     "team": "Ad Geração Génios",
                     "played": 6,
                     "wins": 3,
@@ -1561,17 +1572,6 @@
                     "goalsFor": 15,
                     "goalsAgainst": 16,
                     "points": 9
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 22,
-                    "goalsAgainst": 9,
-                    "points": 7
                 },
                 {
                     "position": 6,
@@ -1587,12 +1587,12 @@
                 {
                     "position": 7,
                     "team": "Sr 1º Janeiro",
-                    "played": 3,
+                    "played": 5,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 16,
-                    "goalsAgainst": 4,
+                    "losses": 3,
+                    "goalsFor": 20,
+                    "goalsAgainst": 12,
                     "points": 6
                 },
                 {
@@ -1706,16 +1706,27 @@
                 {
                     "position": 3,
                     "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 3,
+                    "played": 6,
+                    "wins": 4,
                     "draws": 1,
                     "losses": 1,
-                    "goalsFor": 17,
-                    "goalsAgainst": 5,
-                    "points": 10
+                    "goalsFor": 19,
+                    "goalsAgainst": 6,
+                    "points": 13
                 },
                 {
                     "position": 4,
+                    "team": "Sc Olhanense",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 28,
+                    "goalsAgainst": 12,
+                    "points": 10
+                },
+                {
+                    "position": 5,
                     "team": "Ad Geração Génios",
                     "played": 6,
                     "wins": 3,
@@ -1724,17 +1735,6 @@
                     "goalsFor": 15,
                     "goalsAgainst": 16,
                     "points": 9
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 22,
-                    "goalsAgainst": 9,
-                    "points": 7
                 },
                 {
                     "position": 6,
@@ -1750,12 +1750,12 @@
                 {
                     "position": 7,
                     "team": "Sr 1º Janeiro",
-                    "played": 3,
+                    "played": 5,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 16,
-                    "goalsAgainst": 4,
+                    "losses": 3,
+                    "goalsFor": 20,
+                    "goalsAgainst": 12,
                     "points": 6
                 },
                 {
@@ -1869,16 +1869,27 @@
                 {
                     "position": 3,
                     "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 3,
+                    "played": 6,
+                    "wins": 4,
                     "draws": 1,
                     "losses": 1,
-                    "goalsFor": 17,
-                    "goalsAgainst": 5,
-                    "points": 10
+                    "goalsFor": 19,
+                    "goalsAgainst": 6,
+                    "points": 13
                 },
                 {
                     "position": 4,
+                    "team": "Sc Olhanense",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 28,
+                    "goalsAgainst": 12,
+                    "points": 10
+                },
+                {
+                    "position": 5,
                     "team": "Ad Geração Génios",
                     "played": 6,
                     "wins": 3,
@@ -1887,17 +1898,6 @@
                     "goalsFor": 15,
                     "goalsAgainst": 16,
                     "points": 9
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 22,
-                    "goalsAgainst": 9,
-                    "points": 7
                 },
                 {
                     "position": 6,
@@ -1913,12 +1913,12 @@
                 {
                     "position": 7,
                     "team": "Sr 1º Janeiro",
-                    "played": 3,
+                    "played": 5,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 16,
-                    "goalsAgainst": 4,
+                    "losses": 3,
+                    "goalsFor": 20,
+                    "goalsAgainst": 12,
                     "points": 6
                 },
                 {
@@ -2032,16 +2032,27 @@
                 {
                     "position": 3,
                     "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 3,
+                    "played": 6,
+                    "wins": 4,
                     "draws": 1,
                     "losses": 1,
-                    "goalsFor": 17,
-                    "goalsAgainst": 5,
-                    "points": 10
+                    "goalsFor": 19,
+                    "goalsAgainst": 6,
+                    "points": 13
                 },
                 {
                     "position": 4,
+                    "team": "Sc Olhanense",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 28,
+                    "goalsAgainst": 12,
+                    "points": 10
+                },
+                {
+                    "position": 5,
                     "team": "Ad Geração Génios",
                     "played": 6,
                     "wins": 3,
@@ -2050,17 +2061,6 @@
                     "goalsFor": 15,
                     "goalsAgainst": 16,
                     "points": 9
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 22,
-                    "goalsAgainst": 9,
-                    "points": 7
                 },
                 {
                     "position": 6,
@@ -2076,12 +2076,12 @@
                 {
                     "position": 7,
                     "team": "Sr 1º Janeiro",
-                    "played": 3,
+                    "played": 5,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 16,
-                    "goalsAgainst": 4,
+                    "losses": 3,
+                    "goalsFor": 20,
+                    "goalsAgainst": 12,
                     "points": 6
                 },
                 {
@@ -2195,16 +2195,27 @@
                 {
                     "position": 3,
                     "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 3,
+                    "played": 6,
+                    "wins": 4,
                     "draws": 1,
                     "losses": 1,
-                    "goalsFor": 17,
-                    "goalsAgainst": 5,
-                    "points": 10
+                    "goalsFor": 19,
+                    "goalsAgainst": 6,
+                    "points": 13
                 },
                 {
                     "position": 4,
+                    "team": "Sc Olhanense",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 28,
+                    "goalsAgainst": 12,
+                    "points": 10
+                },
+                {
+                    "position": 5,
                     "team": "Ad Geração Génios",
                     "played": 6,
                     "wins": 3,
@@ -2213,17 +2224,6 @@
                     "goalsFor": 15,
                     "goalsAgainst": 16,
                     "points": 9
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 22,
-                    "goalsAgainst": 9,
-                    "points": 7
                 },
                 {
                     "position": 6,
@@ -2239,12 +2239,12 @@
                 {
                     "position": 7,
                     "team": "Sr 1º Janeiro",
-                    "played": 3,
+                    "played": 5,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 16,
-                    "goalsAgainst": 4,
+                    "losses": 3,
+                    "goalsFor": 20,
+                    "goalsAgainst": 12,
                     "points": 6
                 },
                 {
@@ -2358,16 +2358,27 @@
                 {
                     "position": 3,
                     "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 3,
+                    "played": 6,
+                    "wins": 4,
                     "draws": 1,
                     "losses": 1,
-                    "goalsFor": 17,
-                    "goalsAgainst": 5,
-                    "points": 10
+                    "goalsFor": 19,
+                    "goalsAgainst": 6,
+                    "points": 13
                 },
                 {
                     "position": 4,
+                    "team": "Sc Olhanense",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 28,
+                    "goalsAgainst": 12,
+                    "points": 10
+                },
+                {
+                    "position": 5,
                     "team": "Ad Geração Génios",
                     "played": 6,
                     "wins": 3,
@@ -2376,17 +2387,6 @@
                     "goalsFor": 15,
                     "goalsAgainst": 16,
                     "points": 9
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 22,
-                    "goalsAgainst": 9,
-                    "points": 7
                 },
                 {
                     "position": 6,
@@ -2402,12 +2402,12 @@
                 {
                     "position": 7,
                     "team": "Sr 1º Janeiro",
-                    "played": 3,
+                    "played": 5,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 16,
-                    "goalsAgainst": 4,
+                    "losses": 3,
+                    "goalsFor": 20,
+                    "goalsAgainst": 12,
                     "points": 6
                 },
                 {
@@ -2521,16 +2521,27 @@
                 {
                     "position": 3,
                     "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 3,
+                    "played": 6,
+                    "wins": 4,
                     "draws": 1,
                     "losses": 1,
-                    "goalsFor": 17,
-                    "goalsAgainst": 5,
-                    "points": 10
+                    "goalsFor": 19,
+                    "goalsAgainst": 6,
+                    "points": 13
                 },
                 {
                     "position": 4,
+                    "team": "Sc Olhanense",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 28,
+                    "goalsAgainst": 12,
+                    "points": 10
+                },
+                {
+                    "position": 5,
                     "team": "Ad Geração Génios",
                     "played": 6,
                     "wins": 3,
@@ -2539,17 +2550,6 @@
                     "goalsFor": 15,
                     "goalsAgainst": 16,
                     "points": 9
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 22,
-                    "goalsAgainst": 9,
-                    "points": 7
                 },
                 {
                     "position": 6,
@@ -2565,12 +2565,12 @@
                 {
                     "position": 7,
                     "team": "Sr 1º Janeiro",
-                    "played": 3,
+                    "played": 5,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 16,
-                    "goalsAgainst": 4,
+                    "losses": 3,
+                    "goalsFor": 20,
+                    "goalsAgainst": 12,
                     "points": 6
                 },
                 {
@@ -2684,16 +2684,27 @@
                 {
                     "position": 3,
                     "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 3,
+                    "played": 6,
+                    "wins": 4,
                     "draws": 1,
                     "losses": 1,
-                    "goalsFor": 17,
-                    "goalsAgainst": 5,
-                    "points": 10
+                    "goalsFor": 19,
+                    "goalsAgainst": 6,
+                    "points": 13
                 },
                 {
                     "position": 4,
+                    "team": "Sc Olhanense",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 28,
+                    "goalsAgainst": 12,
+                    "points": 10
+                },
+                {
+                    "position": 5,
                     "team": "Ad Geração Génios",
                     "played": 6,
                     "wins": 3,
@@ -2702,17 +2713,6 @@
                     "goalsFor": 15,
                     "goalsAgainst": 16,
                     "points": 9
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 22,
-                    "goalsAgainst": 9,
-                    "points": 7
                 },
                 {
                     "position": 6,
@@ -2728,12 +2728,12 @@
                 {
                     "position": 7,
                     "team": "Sr 1º Janeiro",
-                    "played": 3,
+                    "played": 5,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 16,
-                    "goalsAgainst": 4,
+                    "losses": 3,
+                    "goalsFor": 20,
+                    "goalsAgainst": 12,
                     "points": 6
                 },
                 {
@@ -2847,16 +2847,27 @@
                 {
                     "position": 3,
                     "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 3,
+                    "played": 6,
+                    "wins": 4,
                     "draws": 1,
                     "losses": 1,
-                    "goalsFor": 17,
-                    "goalsAgainst": 5,
-                    "points": 10
+                    "goalsFor": 19,
+                    "goalsAgainst": 6,
+                    "points": 13
                 },
                 {
                     "position": 4,
+                    "team": "Sc Olhanense",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 28,
+                    "goalsAgainst": 12,
+                    "points": 10
+                },
+                {
+                    "position": 5,
                     "team": "Ad Geração Génios",
                     "played": 6,
                     "wins": 3,
@@ -2865,17 +2876,6 @@
                     "goalsFor": 15,
                     "goalsAgainst": 16,
                     "points": 9
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 22,
-                    "goalsAgainst": 9,
-                    "points": 7
                 },
                 {
                     "position": 6,
@@ -2891,12 +2891,12 @@
                 {
                     "position": 7,
                     "team": "Sr 1º Janeiro",
-                    "played": 3,
+                    "played": 5,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 16,
-                    "goalsAgainst": 4,
+                    "losses": 3,
+                    "goalsFor": 20,
+                    "goalsAgainst": 12,
                     "points": 6
                 },
                 {
