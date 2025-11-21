@@ -137,15 +137,6 @@
                     "awayScore": 6
                 },
                 {
-                    "home": "A Indicar",
-                    "away": "Cf Esperança Lagos",
-                    "date": "12 out",
-                    "time": "15:00",
-                    "stadium": "A Indicar",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Cd Odiáxere",
                     "away": "Gd Lagoa",
                     "date": "2 - 2                            \r\n                \r\n                    12 out",
@@ -153,6 +144,15 @@
                     "stadium": "Campo Eiras",
                     "homeScore": 2,
                     "awayScore": 2
+                },
+                {
+                    "home": "A Indicar",
+                    "away": "Cf Esperança Lagos",
+                    "date": "12 out",
+                    "time": "15:00",
+                    "stadium": "A Indicar",
+                    "homeScore": null,
+                    "awayScore": null
                 }
             ],
             "classification": [
@@ -260,15 +260,6 @@
                     "awayScore": 0
                 },
                 {
-                    "home": "Cd Odiáxere",
-                    "away": "Silves Fc",
-                    "date": "6 - 0                            \r\n                \r\n                    19 out",
-                    "time": "",
-                    "stadium": "Campo Eiras",
-                    "homeScore": 6,
-                    "awayScore": 0
-                },
-                {
                     "home": "Cf Os Armacenenses",
                     "away": "A Indicar",
                     "date": "19 out",
@@ -276,6 +267,15 @@
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Cd Odiáxere",
+                    "away": "Silves Fc",
+                    "date": "6 - 0                            \r\n                \r\n                    19 out",
+                    "time": "",
+                    "stadium": "Campo Eiras",
+                    "homeScore": 6,
+                    "awayScore": 0
                 }
             ],
             "classification": [
@@ -374,6 +374,15 @@
             "fixtureId": "602992",
             "matches": [
                 {
+                    "home": "Silves Fc",
+                    "away": "Gd Lagoa",
+                    "date": "0 - 2                            \r\n                \r\n                    26 out",
+                    "time": "",
+                    "stadium": "Estádio Dr. Francisco Vieira",
+                    "homeScore": 0,
+                    "awayScore": 2
+                },
+                {
                     "home": "Mexilhoeira Grande Fc",
                     "away": "Cf Os Armacenenses",
                     "date": "0 - 3                            \r\n                \r\n                    26 out",
@@ -390,15 +399,6 @@
                     "stadium": "A Indicar",
                     "homeScore": null,
                     "awayScore": null
-                },
-                {
-                    "home": "Silves Fc",
-                    "away": "Gd Lagoa",
-                    "date": "0 - 2                            \r\n                \r\n                    26 out",
-                    "time": "",
-                    "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": 0,
-                    "awayScore": 2
                 }
             ],
             "classification": [
@@ -497,6 +497,15 @@
             "fixtureId": "602993",
             "matches": [
                 {
+                    "home": "Silves Fc",
+                    "away": "A Indicar",
+                    "date": "2 nov",
+                    "time": "15:00",
+                    "stadium": "Estádio Dr. Francisco Vieira",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Gd Lagoa",
                     "away": "Cf Esperança Lagos",
                     "date": "1 - 2                            \r\n                \r\n                    2 nov",
@@ -513,15 +522,6 @@
                     "stadium": "Campo Eiras",
                     "homeScore": 8,
                     "awayScore": 0
-                },
-                {
-                    "home": "Silves Fc",
-                    "away": "A Indicar",
-                    "date": "2 nov",
-                    "time": "15:00",
-                    "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": null,
-                    "awayScore": null
                 }
             ],
             "classification": [
@@ -734,15 +734,6 @@
             "fixtureId": "602995",
             "matches": [
                 {
-                    "home": "Cd Odiáxere",
-                    "away": "Cf Esperança Lagos",
-                    "date": "1 - 0                            \r\n                \r\n                    16 nov",
-                    "time": "",
-                    "stadium": "Campo Eiras",
-                    "homeScore": 1,
-                    "awayScore": 0
-                },
-                {
                     "home": "Cf Os Armacenenses",
                     "away": "Gd Lagoa",
                     "date": "2 - 1                            \r\n                \r\n                    16 nov",
@@ -750,6 +741,15 @@
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 2,
                     "awayScore": 1
+                },
+                {
+                    "home": "Cd Odiáxere",
+                    "away": "Cf Esperança Lagos",
+                    "date": "1 - 0                            \r\n                \r\n                    16 nov",
+                    "time": "",
+                    "stadium": "Campo Eiras",
+                    "homeScore": 1,
+                    "awayScore": 0
                 }
             ],
             "classification": [
@@ -1085,20 +1085,20 @@
             "fixtureId": "602998",
             "matches": [
                 {
-                    "home": "Mexilhoeira Grande Fc",
-                    "away": "Cf Esperança Lagos",
-                    "date": "7 dez",
-                    "time": "15:00",
-                    "stadium": "Campo Municipal Mexilhoeira Grande",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Silves Fc",
                     "away": "Cd Odiáxere",
                     "date": "7 dez",
                     "time": "15:00",
                     "stadium": "Estádio Dr. Francisco Vieira",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Mexilhoeira Grande Fc",
+                    "away": "Cf Esperança Lagos",
+                    "date": "7 dez",
+                    "time": "15:00",
+                    "stadium": "Campo Municipal Mexilhoeira Grande",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1313,20 +1313,20 @@
             "fixtureId": "603000",
             "matches": [
                 {
-                    "home": "Mexilhoeira Grande Fc",
-                    "away": "Cd Odiáxere",
-                    "date": "21 dez",
-                    "time": "15:00",
-                    "stadium": "Campo Municipal Mexilhoeira Grande",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Cf Esperança Lagos",
                     "away": "Gd Lagoa",
                     "date": "21 dez",
                     "time": "15:00",
                     "stadium": "Estádio Municipal De Lagos N.º 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Mexilhoeira Grande Fc",
+                    "away": "Cd Odiáxere",
+                    "date": "21 dez",
+                    "time": "15:00",
+                    "stadium": "Campo Municipal Mexilhoeira Grande",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1427,20 +1427,20 @@
             "fixtureId": "603001",
             "matches": [
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Cf Esperança Lagos",
-                    "date": "4 jan",
-                    "time": "15:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Silves Fc",
                     "away": "Mexilhoeira Grande Fc",
                     "date": "4 jan",
                     "time": "15:00",
                     "stadium": "Estádio Dr. Francisco Vieira",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Cf Esperança Lagos",
+                    "date": "4 jan",
+                    "time": "15:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1541,20 +1541,20 @@
             "fixtureId": "603002",
             "matches": [
                 {
-                    "home": "Gd Lagoa",
-                    "away": "Cf Os Armacenenses",
-                    "date": "11 jan",
-                    "time": "15:00",
-                    "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Cf Esperança Lagos",
                     "away": "Cd Odiáxere",
                     "date": "11 jan",
                     "time": "15:00",
                     "stadium": "Estádio Municipal De Lagos N.º 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Gd Lagoa",
+                    "away": "Cf Os Armacenenses",
+                    "date": "11 jan",
+                    "time": "15:00",
+                    "stadium": "Parque Desportivo Municipal Estombar",
                     "homeScore": null,
                     "awayScore": null
                 }
