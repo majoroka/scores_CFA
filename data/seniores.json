@@ -1557,40 +1557,40 @@
             "fixtureId": "600938",
             "matches": [
                 {
-                    "home": "Fc Ferreiras",
-                    "away": "Cu Culatrense",
-                    "date": "22 nov",
-                    "time": "15:00",
-                    "stadium": "Estadio Nora",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Louletano Dc",
-                    "away": "Cd Odiáxere",
-                    "date": "22 nov",
-                    "time": "15:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Ud Messinense",
                     "away": "Fc Os 11 Esperanças",
-                    "date": "22 nov",
-                    "time": "15:00",
+                    "date": "3 - 2                            \r\n                \r\n                    22 nov",
+                    "time": "",
                     "stadium": "Estádio Municipal Messines",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 3,
+                    "awayScore": 2
                 },
                 {
                     "home": "Quarteirense Sad",
                     "away": "Cf Esperança Lagos",
-                    "date": "22 nov",
-                    "time": "15:00",
+                    "date": "2 - 0                            \r\n                \r\n                    22 nov",
+                    "time": "",
                     "stadium": "Estadio Municipal Quarteira Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 2,
+                    "awayScore": 0
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Cu Culatrense",
+                    "date": "3 - 0                            \r\n                \r\n                    22 nov",
+                    "time": "",
+                    "stadium": "Estadio Nora",
+                    "homeScore": 3,
+                    "awayScore": 0
+                },
+                {
+                    "home": "Louletano Dc",
+                    "away": "Cd Odiáxere",
+                    "date": "2 - 1                            \r\n                \r\n                    22 nov",
+                    "time": "",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": 2,
+                    "awayScore": 1
                 },
                 {
                     "home": "Sc Olhanense",
@@ -1637,23 +1637,23 @@
                 {
                     "position": 3,
                     "team": "Louletano Dc",
-                    "points": 16,
-                    "played": 8,
-                    "wins": 5,
+                    "points": 19,
+                    "played": 9,
+                    "wins": 6,
                     "draws": 1,
                     "losses": 2,
-                    "goalsFor": 13,
-                    "goalsAgainst": 9
+                    "goalsFor": 15,
+                    "goalsAgainst": 10
                 },
                 {
                     "position": 4,
                     "team": "Fc Ferreiras",
-                    "points": 15,
-                    "played": 7,
-                    "wins": 5,
+                    "points": 18,
+                    "played": 8,
+                    "wins": 6,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 13,
+                    "goalsFor": 16,
                     "goalsAgainst": 4
                 },
                 {
@@ -1693,26 +1693,37 @@
                     "position": 8,
                     "team": "Cd Odiáxere",
                     "points": 8,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 5,
-                    "losses": 2,
-                    "goalsFor": 15,
-                    "goalsAgainst": 17
+                    "losses": 3,
+                    "goalsFor": 16,
+                    "goalsAgainst": 19
                 },
                 {
                     "position": 9,
-                    "team": "Cu Culatrense",
-                    "points": 6,
-                    "played": 8,
+                    "team": "Ud Messinense",
+                    "points": 7,
+                    "played": 9,
                     "wins": 2,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 6,
                     "goalsFor": 8,
-                    "goalsAgainst": 23
+                    "goalsAgainst": 14
                 },
                 {
                     "position": 10,
+                    "team": "Cu Culatrense",
+                    "points": 6,
+                    "played": 9,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 7,
+                    "goalsFor": 8,
+                    "goalsAgainst": 26
+                },
+                {
+                    "position": 11,
                     "team": "Cf Os Armacenenses",
                     "points": 5,
                     "played": 8,
@@ -1723,26 +1734,15 @@
                     "goalsAgainst": 21
                 },
                 {
-                    "position": 11,
-                    "team": "Ud Messinense",
-                    "points": 4,
-                    "played": 8,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 5,
-                    "goalsAgainst": 12
-                },
-                {
                     "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 9,
-                    "goalsAgainst": 18
+                    "losses": 7,
+                    "goalsFor": 11,
+                    "goalsAgainst": 21
                 }
             ]
         },
@@ -1831,23 +1831,23 @@
                 {
                     "position": 3,
                     "team": "Louletano Dc",
-                    "points": 16,
-                    "played": 8,
-                    "wins": 5,
+                    "points": 19,
+                    "played": 9,
+                    "wins": 6,
                     "draws": 1,
                     "losses": 2,
-                    "goalsFor": 13,
-                    "goalsAgainst": 9
+                    "goalsFor": 15,
+                    "goalsAgainst": 10
                 },
                 {
                     "position": 4,
                     "team": "Fc Ferreiras",
-                    "points": 15,
-                    "played": 7,
-                    "wins": 5,
+                    "points": 18,
+                    "played": 8,
+                    "wins": 6,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 13,
+                    "goalsFor": 16,
                     "goalsAgainst": 4
                 },
                 {
@@ -1887,26 +1887,37 @@
                     "position": 8,
                     "team": "Cd Odiáxere",
                     "points": 8,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 5,
-                    "losses": 2,
-                    "goalsFor": 15,
-                    "goalsAgainst": 17
+                    "losses": 3,
+                    "goalsFor": 16,
+                    "goalsAgainst": 19
                 },
                 {
                     "position": 9,
-                    "team": "Cu Culatrense",
-                    "points": 6,
-                    "played": 8,
+                    "team": "Ud Messinense",
+                    "points": 7,
+                    "played": 9,
                     "wins": 2,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 6,
                     "goalsFor": 8,
-                    "goalsAgainst": 23
+                    "goalsAgainst": 14
                 },
                 {
                     "position": 10,
+                    "team": "Cu Culatrense",
+                    "points": 6,
+                    "played": 9,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 7,
+                    "goalsFor": 8,
+                    "goalsAgainst": 26
+                },
+                {
+                    "position": 11,
                     "team": "Cf Os Armacenenses",
                     "points": 5,
                     "played": 8,
@@ -1917,26 +1928,15 @@
                     "goalsAgainst": 21
                 },
                 {
-                    "position": 11,
-                    "team": "Ud Messinense",
-                    "points": 4,
-                    "played": 8,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 5,
-                    "goalsAgainst": 12
-                },
-                {
                     "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 9,
-                    "goalsAgainst": 18
+                    "losses": 7,
+                    "goalsFor": 11,
+                    "goalsAgainst": 21
                 }
             ]
         },
@@ -2025,23 +2025,23 @@
                 {
                     "position": 3,
                     "team": "Louletano Dc",
-                    "points": 16,
-                    "played": 8,
-                    "wins": 5,
+                    "points": 19,
+                    "played": 9,
+                    "wins": 6,
                     "draws": 1,
                     "losses": 2,
-                    "goalsFor": 13,
-                    "goalsAgainst": 9
+                    "goalsFor": 15,
+                    "goalsAgainst": 10
                 },
                 {
                     "position": 4,
                     "team": "Fc Ferreiras",
-                    "points": 15,
-                    "played": 7,
-                    "wins": 5,
+                    "points": 18,
+                    "played": 8,
+                    "wins": 6,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 13,
+                    "goalsFor": 16,
                     "goalsAgainst": 4
                 },
                 {
@@ -2081,26 +2081,37 @@
                     "position": 8,
                     "team": "Cd Odiáxere",
                     "points": 8,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 5,
-                    "losses": 2,
-                    "goalsFor": 15,
-                    "goalsAgainst": 17
+                    "losses": 3,
+                    "goalsFor": 16,
+                    "goalsAgainst": 19
                 },
                 {
                     "position": 9,
-                    "team": "Cu Culatrense",
-                    "points": 6,
-                    "played": 8,
+                    "team": "Ud Messinense",
+                    "points": 7,
+                    "played": 9,
                     "wins": 2,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 6,
                     "goalsFor": 8,
-                    "goalsAgainst": 23
+                    "goalsAgainst": 14
                 },
                 {
                     "position": 10,
+                    "team": "Cu Culatrense",
+                    "points": 6,
+                    "played": 9,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 7,
+                    "goalsFor": 8,
+                    "goalsAgainst": 26
+                },
+                {
+                    "position": 11,
                     "team": "Cf Os Armacenenses",
                     "points": 5,
                     "played": 8,
@@ -2111,26 +2122,15 @@
                     "goalsAgainst": 21
                 },
                 {
-                    "position": 11,
-                    "team": "Ud Messinense",
-                    "points": 4,
-                    "played": 8,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 5,
-                    "goalsAgainst": 12
-                },
-                {
                     "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 9,
-                    "goalsAgainst": 18
+                    "losses": 7,
+                    "goalsFor": 11,
+                    "goalsAgainst": 21
                 }
             ]
         },
@@ -2219,23 +2219,23 @@
                 {
                     "position": 3,
                     "team": "Louletano Dc",
-                    "points": 16,
-                    "played": 8,
-                    "wins": 5,
+                    "points": 19,
+                    "played": 9,
+                    "wins": 6,
                     "draws": 1,
                     "losses": 2,
-                    "goalsFor": 13,
-                    "goalsAgainst": 9
+                    "goalsFor": 15,
+                    "goalsAgainst": 10
                 },
                 {
                     "position": 4,
                     "team": "Fc Ferreiras",
-                    "points": 15,
-                    "played": 7,
-                    "wins": 5,
+                    "points": 18,
+                    "played": 8,
+                    "wins": 6,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 13,
+                    "goalsFor": 16,
                     "goalsAgainst": 4
                 },
                 {
@@ -2275,26 +2275,37 @@
                     "position": 8,
                     "team": "Cd Odiáxere",
                     "points": 8,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 5,
-                    "losses": 2,
-                    "goalsFor": 15,
-                    "goalsAgainst": 17
+                    "losses": 3,
+                    "goalsFor": 16,
+                    "goalsAgainst": 19
                 },
                 {
                     "position": 9,
-                    "team": "Cu Culatrense",
-                    "points": 6,
-                    "played": 8,
+                    "team": "Ud Messinense",
+                    "points": 7,
+                    "played": 9,
                     "wins": 2,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 6,
                     "goalsFor": 8,
-                    "goalsAgainst": 23
+                    "goalsAgainst": 14
                 },
                 {
                     "position": 10,
+                    "team": "Cu Culatrense",
+                    "points": 6,
+                    "played": 9,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 7,
+                    "goalsFor": 8,
+                    "goalsAgainst": 26
+                },
+                {
+                    "position": 11,
                     "team": "Cf Os Armacenenses",
                     "points": 5,
                     "played": 8,
@@ -2305,26 +2316,15 @@
                     "goalsAgainst": 21
                 },
                 {
-                    "position": 11,
-                    "team": "Ud Messinense",
-                    "points": 4,
-                    "played": 8,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 5,
-                    "goalsAgainst": 12
-                },
-                {
                     "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 9,
-                    "goalsAgainst": 18
+                    "losses": 7,
+                    "goalsFor": 11,
+                    "goalsAgainst": 21
                 }
             ]
         },
@@ -2413,23 +2413,23 @@
                 {
                     "position": 3,
                     "team": "Louletano Dc",
-                    "points": 16,
-                    "played": 8,
-                    "wins": 5,
+                    "points": 19,
+                    "played": 9,
+                    "wins": 6,
                     "draws": 1,
                     "losses": 2,
-                    "goalsFor": 13,
-                    "goalsAgainst": 9
+                    "goalsFor": 15,
+                    "goalsAgainst": 10
                 },
                 {
                     "position": 4,
                     "team": "Fc Ferreiras",
-                    "points": 15,
-                    "played": 7,
-                    "wins": 5,
+                    "points": 18,
+                    "played": 8,
+                    "wins": 6,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 13,
+                    "goalsFor": 16,
                     "goalsAgainst": 4
                 },
                 {
@@ -2469,26 +2469,37 @@
                     "position": 8,
                     "team": "Cd Odiáxere",
                     "points": 8,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 5,
-                    "losses": 2,
-                    "goalsFor": 15,
-                    "goalsAgainst": 17
+                    "losses": 3,
+                    "goalsFor": 16,
+                    "goalsAgainst": 19
                 },
                 {
                     "position": 9,
-                    "team": "Cu Culatrense",
-                    "points": 6,
-                    "played": 8,
+                    "team": "Ud Messinense",
+                    "points": 7,
+                    "played": 9,
                     "wins": 2,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 6,
                     "goalsFor": 8,
-                    "goalsAgainst": 23
+                    "goalsAgainst": 14
                 },
                 {
                     "position": 10,
+                    "team": "Cu Culatrense",
+                    "points": 6,
+                    "played": 9,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 7,
+                    "goalsFor": 8,
+                    "goalsAgainst": 26
+                },
+                {
+                    "position": 11,
                     "team": "Cf Os Armacenenses",
                     "points": 5,
                     "played": 8,
@@ -2499,26 +2510,15 @@
                     "goalsAgainst": 21
                 },
                 {
-                    "position": 11,
-                    "team": "Ud Messinense",
-                    "points": 4,
-                    "played": 8,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 5,
-                    "goalsAgainst": 12
-                },
-                {
                     "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 9,
-                    "goalsAgainst": 18
+                    "losses": 7,
+                    "goalsFor": 11,
+                    "goalsAgainst": 21
                 }
             ]
         },
@@ -2607,23 +2607,23 @@
                 {
                     "position": 3,
                     "team": "Louletano Dc",
-                    "points": 16,
-                    "played": 8,
-                    "wins": 5,
+                    "points": 19,
+                    "played": 9,
+                    "wins": 6,
                     "draws": 1,
                     "losses": 2,
-                    "goalsFor": 13,
-                    "goalsAgainst": 9
+                    "goalsFor": 15,
+                    "goalsAgainst": 10
                 },
                 {
                     "position": 4,
                     "team": "Fc Ferreiras",
-                    "points": 15,
-                    "played": 7,
-                    "wins": 5,
+                    "points": 18,
+                    "played": 8,
+                    "wins": 6,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 13,
+                    "goalsFor": 16,
                     "goalsAgainst": 4
                 },
                 {
@@ -2663,26 +2663,37 @@
                     "position": 8,
                     "team": "Cd Odiáxere",
                     "points": 8,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 5,
-                    "losses": 2,
-                    "goalsFor": 15,
-                    "goalsAgainst": 17
+                    "losses": 3,
+                    "goalsFor": 16,
+                    "goalsAgainst": 19
                 },
                 {
                     "position": 9,
-                    "team": "Cu Culatrense",
-                    "points": 6,
-                    "played": 8,
+                    "team": "Ud Messinense",
+                    "points": 7,
+                    "played": 9,
                     "wins": 2,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 6,
                     "goalsFor": 8,
-                    "goalsAgainst": 23
+                    "goalsAgainst": 14
                 },
                 {
                     "position": 10,
+                    "team": "Cu Culatrense",
+                    "points": 6,
+                    "played": 9,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 7,
+                    "goalsFor": 8,
+                    "goalsAgainst": 26
+                },
+                {
+                    "position": 11,
                     "team": "Cf Os Armacenenses",
                     "points": 5,
                     "played": 8,
@@ -2693,26 +2704,15 @@
                     "goalsAgainst": 21
                 },
                 {
-                    "position": 11,
-                    "team": "Ud Messinense",
-                    "points": 4,
-                    "played": 8,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 5,
-                    "goalsAgainst": 12
-                },
-                {
                     "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 9,
-                    "goalsAgainst": 18
+                    "losses": 7,
+                    "goalsFor": 11,
+                    "goalsAgainst": 21
                 }
             ]
         },
@@ -2801,23 +2801,23 @@
                 {
                     "position": 3,
                     "team": "Louletano Dc",
-                    "points": 16,
-                    "played": 8,
-                    "wins": 5,
+                    "points": 19,
+                    "played": 9,
+                    "wins": 6,
                     "draws": 1,
                     "losses": 2,
-                    "goalsFor": 13,
-                    "goalsAgainst": 9
+                    "goalsFor": 15,
+                    "goalsAgainst": 10
                 },
                 {
                     "position": 4,
                     "team": "Fc Ferreiras",
-                    "points": 15,
-                    "played": 7,
-                    "wins": 5,
+                    "points": 18,
+                    "played": 8,
+                    "wins": 6,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 13,
+                    "goalsFor": 16,
                     "goalsAgainst": 4
                 },
                 {
@@ -2857,26 +2857,37 @@
                     "position": 8,
                     "team": "Cd Odiáxere",
                     "points": 8,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 5,
-                    "losses": 2,
-                    "goalsFor": 15,
-                    "goalsAgainst": 17
+                    "losses": 3,
+                    "goalsFor": 16,
+                    "goalsAgainst": 19
                 },
                 {
                     "position": 9,
-                    "team": "Cu Culatrense",
-                    "points": 6,
-                    "played": 8,
+                    "team": "Ud Messinense",
+                    "points": 7,
+                    "played": 9,
                     "wins": 2,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 6,
                     "goalsFor": 8,
-                    "goalsAgainst": 23
+                    "goalsAgainst": 14
                 },
                 {
                     "position": 10,
+                    "team": "Cu Culatrense",
+                    "points": 6,
+                    "played": 9,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 7,
+                    "goalsFor": 8,
+                    "goalsAgainst": 26
+                },
+                {
+                    "position": 11,
                     "team": "Cf Os Armacenenses",
                     "points": 5,
                     "played": 8,
@@ -2887,26 +2898,15 @@
                     "goalsAgainst": 21
                 },
                 {
-                    "position": 11,
-                    "team": "Ud Messinense",
-                    "points": 4,
-                    "played": 8,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 5,
-                    "goalsAgainst": 12
-                },
-                {
                     "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 9,
-                    "goalsAgainst": 18
+                    "losses": 7,
+                    "goalsFor": 11,
+                    "goalsAgainst": 21
                 }
             ]
         },
@@ -2995,23 +2995,23 @@
                 {
                     "position": 3,
                     "team": "Louletano Dc",
-                    "points": 16,
-                    "played": 8,
-                    "wins": 5,
+                    "points": 19,
+                    "played": 9,
+                    "wins": 6,
                     "draws": 1,
                     "losses": 2,
-                    "goalsFor": 13,
-                    "goalsAgainst": 9
+                    "goalsFor": 15,
+                    "goalsAgainst": 10
                 },
                 {
                     "position": 4,
                     "team": "Fc Ferreiras",
-                    "points": 15,
-                    "played": 7,
-                    "wins": 5,
+                    "points": 18,
+                    "played": 8,
+                    "wins": 6,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 13,
+                    "goalsFor": 16,
                     "goalsAgainst": 4
                 },
                 {
@@ -3051,26 +3051,37 @@
                     "position": 8,
                     "team": "Cd Odiáxere",
                     "points": 8,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 5,
-                    "losses": 2,
-                    "goalsFor": 15,
-                    "goalsAgainst": 17
+                    "losses": 3,
+                    "goalsFor": 16,
+                    "goalsAgainst": 19
                 },
                 {
                     "position": 9,
-                    "team": "Cu Culatrense",
-                    "points": 6,
-                    "played": 8,
+                    "team": "Ud Messinense",
+                    "points": 7,
+                    "played": 9,
                     "wins": 2,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 6,
                     "goalsFor": 8,
-                    "goalsAgainst": 23
+                    "goalsAgainst": 14
                 },
                 {
                     "position": 10,
+                    "team": "Cu Culatrense",
+                    "points": 6,
+                    "played": 9,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 7,
+                    "goalsFor": 8,
+                    "goalsAgainst": 26
+                },
+                {
+                    "position": 11,
                     "team": "Cf Os Armacenenses",
                     "points": 5,
                     "played": 8,
@@ -3081,26 +3092,15 @@
                     "goalsAgainst": 21
                 },
                 {
-                    "position": 11,
-                    "team": "Ud Messinense",
-                    "points": 4,
-                    "played": 8,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 5,
-                    "goalsAgainst": 12
-                },
-                {
                     "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 9,
-                    "goalsAgainst": 18
+                    "losses": 7,
+                    "goalsFor": 11,
+                    "goalsAgainst": 21
                 }
             ]
         },
@@ -3189,23 +3189,23 @@
                 {
                     "position": 3,
                     "team": "Louletano Dc",
-                    "points": 16,
-                    "played": 8,
-                    "wins": 5,
+                    "points": 19,
+                    "played": 9,
+                    "wins": 6,
                     "draws": 1,
                     "losses": 2,
-                    "goalsFor": 13,
-                    "goalsAgainst": 9
+                    "goalsFor": 15,
+                    "goalsAgainst": 10
                 },
                 {
                     "position": 4,
                     "team": "Fc Ferreiras",
-                    "points": 15,
-                    "played": 7,
-                    "wins": 5,
+                    "points": 18,
+                    "played": 8,
+                    "wins": 6,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 13,
+                    "goalsFor": 16,
                     "goalsAgainst": 4
                 },
                 {
@@ -3245,26 +3245,37 @@
                     "position": 8,
                     "team": "Cd Odiáxere",
                     "points": 8,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 5,
-                    "losses": 2,
-                    "goalsFor": 15,
-                    "goalsAgainst": 17
+                    "losses": 3,
+                    "goalsFor": 16,
+                    "goalsAgainst": 19
                 },
                 {
                     "position": 9,
-                    "team": "Cu Culatrense",
-                    "points": 6,
-                    "played": 8,
+                    "team": "Ud Messinense",
+                    "points": 7,
+                    "played": 9,
                     "wins": 2,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 6,
                     "goalsFor": 8,
-                    "goalsAgainst": 23
+                    "goalsAgainst": 14
                 },
                 {
                     "position": 10,
+                    "team": "Cu Culatrense",
+                    "points": 6,
+                    "played": 9,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 7,
+                    "goalsFor": 8,
+                    "goalsAgainst": 26
+                },
+                {
+                    "position": 11,
                     "team": "Cf Os Armacenenses",
                     "points": 5,
                     "played": 8,
@@ -3275,26 +3286,15 @@
                     "goalsAgainst": 21
                 },
                 {
-                    "position": 11,
-                    "team": "Ud Messinense",
-                    "points": 4,
-                    "played": 8,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 5,
-                    "goalsAgainst": 12
-                },
-                {
                     "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 9,
-                    "goalsAgainst": 18
+                    "losses": 7,
+                    "goalsFor": 11,
+                    "goalsAgainst": 21
                 }
             ]
         },
@@ -3383,23 +3383,23 @@
                 {
                     "position": 3,
                     "team": "Louletano Dc",
-                    "points": 16,
-                    "played": 8,
-                    "wins": 5,
+                    "points": 19,
+                    "played": 9,
+                    "wins": 6,
                     "draws": 1,
                     "losses": 2,
-                    "goalsFor": 13,
-                    "goalsAgainst": 9
+                    "goalsFor": 15,
+                    "goalsAgainst": 10
                 },
                 {
                     "position": 4,
                     "team": "Fc Ferreiras",
-                    "points": 15,
-                    "played": 7,
-                    "wins": 5,
+                    "points": 18,
+                    "played": 8,
+                    "wins": 6,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 13,
+                    "goalsFor": 16,
                     "goalsAgainst": 4
                 },
                 {
@@ -3439,26 +3439,37 @@
                     "position": 8,
                     "team": "Cd Odiáxere",
                     "points": 8,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 5,
-                    "losses": 2,
-                    "goalsFor": 15,
-                    "goalsAgainst": 17
+                    "losses": 3,
+                    "goalsFor": 16,
+                    "goalsAgainst": 19
                 },
                 {
                     "position": 9,
-                    "team": "Cu Culatrense",
-                    "points": 6,
-                    "played": 8,
+                    "team": "Ud Messinense",
+                    "points": 7,
+                    "played": 9,
                     "wins": 2,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 6,
                     "goalsFor": 8,
-                    "goalsAgainst": 23
+                    "goalsAgainst": 14
                 },
                 {
                     "position": 10,
+                    "team": "Cu Culatrense",
+                    "points": 6,
+                    "played": 9,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 7,
+                    "goalsFor": 8,
+                    "goalsAgainst": 26
+                },
+                {
+                    "position": 11,
                     "team": "Cf Os Armacenenses",
                     "points": 5,
                     "played": 8,
@@ -3469,26 +3480,15 @@
                     "goalsAgainst": 21
                 },
                 {
-                    "position": 11,
-                    "team": "Ud Messinense",
-                    "points": 4,
-                    "played": 8,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 5,
-                    "goalsAgainst": 12
-                },
-                {
                     "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 9,
-                    "goalsAgainst": 18
+                    "losses": 7,
+                    "goalsFor": 11,
+                    "goalsAgainst": 21
                 }
             ]
         },
@@ -3577,23 +3577,23 @@
                 {
                     "position": 3,
                     "team": "Louletano Dc",
-                    "points": 16,
-                    "played": 8,
-                    "wins": 5,
+                    "points": 19,
+                    "played": 9,
+                    "wins": 6,
                     "draws": 1,
                     "losses": 2,
-                    "goalsFor": 13,
-                    "goalsAgainst": 9
+                    "goalsFor": 15,
+                    "goalsAgainst": 10
                 },
                 {
                     "position": 4,
                     "team": "Fc Ferreiras",
-                    "points": 15,
-                    "played": 7,
-                    "wins": 5,
+                    "points": 18,
+                    "played": 8,
+                    "wins": 6,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 13,
+                    "goalsFor": 16,
                     "goalsAgainst": 4
                 },
                 {
@@ -3633,26 +3633,37 @@
                     "position": 8,
                     "team": "Cd Odiáxere",
                     "points": 8,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 5,
-                    "losses": 2,
-                    "goalsFor": 15,
-                    "goalsAgainst": 17
+                    "losses": 3,
+                    "goalsFor": 16,
+                    "goalsAgainst": 19
                 },
                 {
                     "position": 9,
-                    "team": "Cu Culatrense",
-                    "points": 6,
-                    "played": 8,
+                    "team": "Ud Messinense",
+                    "points": 7,
+                    "played": 9,
                     "wins": 2,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 6,
                     "goalsFor": 8,
-                    "goalsAgainst": 23
+                    "goalsAgainst": 14
                 },
                 {
                     "position": 10,
+                    "team": "Cu Culatrense",
+                    "points": 6,
+                    "played": 9,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 7,
+                    "goalsFor": 8,
+                    "goalsAgainst": 26
+                },
+                {
+                    "position": 11,
                     "team": "Cf Os Armacenenses",
                     "points": 5,
                     "played": 8,
@@ -3663,26 +3674,15 @@
                     "goalsAgainst": 21
                 },
                 {
-                    "position": 11,
-                    "team": "Ud Messinense",
-                    "points": 4,
-                    "played": 8,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 5,
-                    "goalsAgainst": 12
-                },
-                {
                     "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 9,
-                    "goalsAgainst": 18
+                    "losses": 7,
+                    "goalsFor": 11,
+                    "goalsAgainst": 21
                 }
             ]
         },
@@ -3771,23 +3771,23 @@
                 {
                     "position": 3,
                     "team": "Louletano Dc",
-                    "points": 16,
-                    "played": 8,
-                    "wins": 5,
+                    "points": 19,
+                    "played": 9,
+                    "wins": 6,
                     "draws": 1,
                     "losses": 2,
-                    "goalsFor": 13,
-                    "goalsAgainst": 9
+                    "goalsFor": 15,
+                    "goalsAgainst": 10
                 },
                 {
                     "position": 4,
                     "team": "Fc Ferreiras",
-                    "points": 15,
-                    "played": 7,
-                    "wins": 5,
+                    "points": 18,
+                    "played": 8,
+                    "wins": 6,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 13,
+                    "goalsFor": 16,
                     "goalsAgainst": 4
                 },
                 {
@@ -3827,26 +3827,37 @@
                     "position": 8,
                     "team": "Cd Odiáxere",
                     "points": 8,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 5,
-                    "losses": 2,
-                    "goalsFor": 15,
-                    "goalsAgainst": 17
+                    "losses": 3,
+                    "goalsFor": 16,
+                    "goalsAgainst": 19
                 },
                 {
                     "position": 9,
-                    "team": "Cu Culatrense",
-                    "points": 6,
-                    "played": 8,
+                    "team": "Ud Messinense",
+                    "points": 7,
+                    "played": 9,
                     "wins": 2,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 6,
                     "goalsFor": 8,
-                    "goalsAgainst": 23
+                    "goalsAgainst": 14
                 },
                 {
                     "position": 10,
+                    "team": "Cu Culatrense",
+                    "points": 6,
+                    "played": 9,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 7,
+                    "goalsFor": 8,
+                    "goalsAgainst": 26
+                },
+                {
+                    "position": 11,
                     "team": "Cf Os Armacenenses",
                     "points": 5,
                     "played": 8,
@@ -3857,26 +3868,15 @@
                     "goalsAgainst": 21
                 },
                 {
-                    "position": 11,
-                    "team": "Ud Messinense",
-                    "points": 4,
-                    "played": 8,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 5,
-                    "goalsAgainst": 12
-                },
-                {
                     "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 9,
-                    "goalsAgainst": 18
+                    "losses": 7,
+                    "goalsFor": 11,
+                    "goalsAgainst": 21
                 }
             ]
         },
@@ -3965,23 +3965,23 @@
                 {
                     "position": 3,
                     "team": "Louletano Dc",
-                    "points": 16,
-                    "played": 8,
-                    "wins": 5,
+                    "points": 19,
+                    "played": 9,
+                    "wins": 6,
                     "draws": 1,
                     "losses": 2,
-                    "goalsFor": 13,
-                    "goalsAgainst": 9
+                    "goalsFor": 15,
+                    "goalsAgainst": 10
                 },
                 {
                     "position": 4,
                     "team": "Fc Ferreiras",
-                    "points": 15,
-                    "played": 7,
-                    "wins": 5,
+                    "points": 18,
+                    "played": 8,
+                    "wins": 6,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 13,
+                    "goalsFor": 16,
                     "goalsAgainst": 4
                 },
                 {
@@ -4021,26 +4021,37 @@
                     "position": 8,
                     "team": "Cd Odiáxere",
                     "points": 8,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 5,
-                    "losses": 2,
-                    "goalsFor": 15,
-                    "goalsAgainst": 17
+                    "losses": 3,
+                    "goalsFor": 16,
+                    "goalsAgainst": 19
                 },
                 {
                     "position": 9,
-                    "team": "Cu Culatrense",
-                    "points": 6,
-                    "played": 8,
+                    "team": "Ud Messinense",
+                    "points": 7,
+                    "played": 9,
                     "wins": 2,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 6,
                     "goalsFor": 8,
-                    "goalsAgainst": 23
+                    "goalsAgainst": 14
                 },
                 {
                     "position": 10,
+                    "team": "Cu Culatrense",
+                    "points": 6,
+                    "played": 9,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 7,
+                    "goalsFor": 8,
+                    "goalsAgainst": 26
+                },
+                {
+                    "position": 11,
                     "team": "Cf Os Armacenenses",
                     "points": 5,
                     "played": 8,
@@ -4051,26 +4062,15 @@
                     "goalsAgainst": 21
                 },
                 {
-                    "position": 11,
-                    "team": "Ud Messinense",
-                    "points": 4,
-                    "played": 8,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 5,
-                    "goalsAgainst": 12
-                },
-                {
                     "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 9,
-                    "goalsAgainst": 18
+                    "losses": 7,
+                    "goalsFor": 11,
+                    "goalsAgainst": 21
                 }
             ]
         },
@@ -4159,23 +4159,23 @@
                 {
                     "position": 3,
                     "team": "Louletano Dc",
-                    "points": 16,
-                    "played": 8,
-                    "wins": 5,
+                    "points": 19,
+                    "played": 9,
+                    "wins": 6,
                     "draws": 1,
                     "losses": 2,
-                    "goalsFor": 13,
-                    "goalsAgainst": 9
+                    "goalsFor": 15,
+                    "goalsAgainst": 10
                 },
                 {
                     "position": 4,
                     "team": "Fc Ferreiras",
-                    "points": 15,
-                    "played": 7,
-                    "wins": 5,
+                    "points": 18,
+                    "played": 8,
+                    "wins": 6,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 13,
+                    "goalsFor": 16,
                     "goalsAgainst": 4
                 },
                 {
@@ -4215,26 +4215,37 @@
                     "position": 8,
                     "team": "Cd Odiáxere",
                     "points": 8,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 5,
-                    "losses": 2,
-                    "goalsFor": 15,
-                    "goalsAgainst": 17
+                    "losses": 3,
+                    "goalsFor": 16,
+                    "goalsAgainst": 19
                 },
                 {
                     "position": 9,
-                    "team": "Cu Culatrense",
-                    "points": 6,
-                    "played": 8,
+                    "team": "Ud Messinense",
+                    "points": 7,
+                    "played": 9,
                     "wins": 2,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 6,
                     "goalsFor": 8,
-                    "goalsAgainst": 23
+                    "goalsAgainst": 14
                 },
                 {
                     "position": 10,
+                    "team": "Cu Culatrense",
+                    "points": 6,
+                    "played": 9,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 7,
+                    "goalsFor": 8,
+                    "goalsAgainst": 26
+                },
+                {
+                    "position": 11,
                     "team": "Cf Os Armacenenses",
                     "points": 5,
                     "played": 8,
@@ -4245,26 +4256,15 @@
                     "goalsAgainst": 21
                 },
                 {
-                    "position": 11,
-                    "team": "Ud Messinense",
-                    "points": 4,
-                    "played": 8,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 5,
-                    "goalsAgainst": 12
-                },
-                {
                     "position": 12,
                     "team": "Fc Os 11 Esperanças",
                     "points": 4,
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 9,
-                    "goalsAgainst": 18
+                    "losses": 7,
+                    "goalsFor": 11,
+                    "goalsAgainst": 21
                 }
             ]
         }
