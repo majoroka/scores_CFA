@@ -259,11 +259,11 @@
                 {
                     "home": "Damaiense Sad",
                     "away": "Cd Beja",
-                    "date": "23 nov",
-                    "time": "15:00",
+                    "date": "0 - 11                            \r\n                \r\n                    23 nov",
+                    "time": "",
                     "stadium": "Campo Sousa Uva",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 0,
+                    "awayScore": 11
                 }
             ],
             "classification": [
@@ -280,6 +280,17 @@
                 },
                 {
                     "position": 2,
+                    "team": "Cd Beja",
+                    "played": 4,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 21,
+                    "goalsAgainst": 8,
+                    "points": 7
+                },
+                {
+                    "position": 3,
                     "team": "Cf Os Armacenenses",
                     "played": 3,
                     "wins": 1,
@@ -290,29 +301,7 @@
                     "points": 5
                 },
                 {
-                    "position": 3,
-                    "team": "Cd Beja",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 10,
-                    "goalsAgainst": 8,
-                    "points": 4
-                },
-                {
                     "position": 4,
-                    "team": "Damaiense Sad",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 3,
-                    "points": 0
-                },
-                {
-                    "position": 5,
                     "team": "Portimonense Sc",
                     "played": 2,
                     "wins": 0,
@@ -320,6 +309,17 @@
                     "losses": 2,
                     "goalsFor": 1,
                     "goalsAgainst": 10,
+                    "points": 0
+                },
+                {
+                    "position": 5,
+                    "team": "Damaiense Sad",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 0,
+                    "goalsAgainst": 14,
                     "points": 0
                 }
             ]
@@ -373,13 +373,13 @@
                 {
                     "position": 3,
                     "team": "Cd Beja",
-                    "played": 3,
-                    "wins": 1,
+                    "played": 4,
+                    "wins": 2,
                     "draws": 1,
                     "losses": 1,
-                    "goalsFor": 10,
+                    "goalsFor": 21,
                     "goalsAgainst": 8,
-                    "points": 4
+                    "points": 7
                 },
                 {
                     "position": 4,
@@ -395,12 +395,12 @@
                 {
                     "position": 5,
                     "team": "Damaiense Sad",
-                    "played": 2,
+                    "played": 3,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 2,
+                    "losses": 3,
                     "goalsFor": 0,
-                    "goalsAgainst": 11,
+                    "goalsAgainst": 22,
                     "points": 0
                 }
             ]
@@ -454,13 +454,13 @@
                 {
                     "position": 3,
                     "team": "Cd Beja",
-                    "played": 4,
-                    "wins": 1,
+                    "played": 5,
+                    "wins": 2,
                     "draws": 1,
                     "losses": 2,
-                    "goalsFor": 11,
+                    "goalsFor": 22,
                     "goalsAgainst": 11,
-                    "points": 4
+                    "points": 7
                 },
                 {
                     "position": 4,
@@ -476,12 +476,12 @@
                 {
                     "position": 5,
                     "team": "Damaiense Sad",
-                    "played": 3,
+                    "played": 4,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 3,
+                    "losses": 4,
                     "goalsFor": 0,
-                    "goalsAgainst": 28,
+                    "goalsAgainst": 39,
                     "points": 0
                 }
             ]
@@ -535,13 +535,13 @@
                 {
                     "position": 3,
                     "team": "Cd Beja",
-                    "played": 5,
-                    "wins": 1,
+                    "played": 6,
+                    "wins": 2,
                     "draws": 2,
                     "losses": 2,
-                    "goalsFor": 11,
+                    "goalsFor": 22,
                     "goalsAgainst": 11,
-                    "points": 5
+                    "points": 8
                 },
                 {
                     "position": 4,
@@ -557,12 +557,12 @@
                 {
                     "position": 5,
                     "team": "Damaiense Sad",
-                    "played": 4,
+                    "played": 5,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 4,
-                    "goalsAgainst": 35,
+                    "goalsAgainst": 46,
                     "points": 0
                 }
             ]
@@ -616,13 +616,13 @@
                 {
                     "position": 3,
                     "team": "Cd Beja",
-                    "played": 5,
-                    "wins": 1,
+                    "played": 6,
+                    "wins": 2,
                     "draws": 2,
                     "losses": 2,
-                    "goalsFor": 11,
+                    "goalsFor": 22,
                     "goalsAgainst": 11,
-                    "points": 5
+                    "points": 8
                 },
                 {
                     "position": 4,
@@ -638,12 +638,12 @@
                 {
                     "position": 5,
                     "team": "Damaiense Sad",
-                    "played": 4,
+                    "played": 5,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 4,
-                    "goalsAgainst": 35,
+                    "goalsAgainst": 46,
                     "points": 0
                 }
             ]
@@ -697,13 +697,13 @@
                 {
                     "position": 3,
                     "team": "Cd Beja",
-                    "played": 5,
-                    "wins": 1,
+                    "played": 6,
+                    "wins": 2,
                     "draws": 2,
                     "losses": 2,
-                    "goalsFor": 11,
+                    "goalsFor": 22,
                     "goalsAgainst": 11,
-                    "points": 5
+                    "points": 8
                 },
                 {
                     "position": 4,
@@ -719,12 +719,12 @@
                 {
                     "position": 5,
                     "team": "Damaiense Sad",
-                    "played": 4,
+                    "played": 5,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 4,
-                    "goalsAgainst": 35,
+                    "goalsAgainst": 46,
                     "points": 0
                 }
             ]
@@ -778,13 +778,13 @@
                 {
                     "position": 3,
                     "team": "Cd Beja",
-                    "played": 5,
-                    "wins": 1,
+                    "played": 6,
+                    "wins": 2,
                     "draws": 2,
                     "losses": 2,
-                    "goalsFor": 11,
+                    "goalsFor": 22,
                     "goalsAgainst": 11,
-                    "points": 5
+                    "points": 8
                 },
                 {
                     "position": 4,
@@ -800,12 +800,12 @@
                 {
                     "position": 5,
                     "team": "Damaiense Sad",
-                    "played": 4,
+                    "played": 5,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 4,
-                    "goalsAgainst": 35,
+                    "goalsAgainst": 46,
                     "points": 0
                 }
             ]
