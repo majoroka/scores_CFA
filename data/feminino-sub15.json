@@ -34,11 +34,11 @@
                 {
                     "home": "Cdr Quarteirense",
                     "away": "4 Ao Cubo Ad Olhão",
-                    "date": "1 dez",
-                    "time": "11:00",
+                    "date": "1 - 2                            \r\n                \r\n                    1 dez",
+                    "time": "",
                     "stadium": "Estadio Municipal Quarteira Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 1,
+                    "awayScore": 2
                 }
             ],
             "classification": [
@@ -78,23 +78,23 @@
                 {
                     "position": 4,
                     "team": "4 Ao Cubo Ad Olhão",
-                    "played": 0,
-                    "wins": 0,
+                    "played": 1,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
+                    "goalsFor": 2,
+                    "goalsAgainst": 1,
+                    "points": 3
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Cdr Quarteirense",
-                    "played": 0,
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 2,
                     "points": 0
                 },
                 {
@@ -188,13 +188,13 @@
                 {
                     "position": 2,
                     "team": "4 Ao Cubo Ad Olhão",
-                    "played": 1,
-                    "wins": 1,
+                    "played": 2,
+                    "wins": 2,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 4,
-                    "goalsAgainst": 0,
-                    "points": 3
+                    "goalsFor": 6,
+                    "goalsAgainst": 1,
+                    "points": 6
                 },
                 {
                     "position": 3,
@@ -243,12 +243,12 @@
                 {
                     "position": 7,
                     "team": "Cdr Quarteirense",
-                    "played": 1,
+                    "played": 2,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 3,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 5,
                     "points": 0
                 },
                 {
@@ -316,11 +316,11 @@
                 {
                     "home": "Aef Monte Gordo 2019",
                     "away": "Cf Os Armacenenses",
-                    "date": "1 dez",
-                    "time": "11:00",
+                    "date": "0 - 11                            \r\n                \r\n                    1 dez",
+                    "time": "",
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 0,
+                    "awayScore": 11
                 }
             ],
             "classification": [
@@ -337,6 +337,28 @@
                 },
                 {
                     "position": 2,
+                    "team": "4 Ao Cubo Ad Olhão",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 6,
+                    "goalsAgainst": 1,
+                    "points": 6
+                },
+                {
+                    "position": 3,
+                    "team": "Cf Os Armacenenses",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 22,
+                    "goalsAgainst": 3,
+                    "points": 6
+                },
+                {
+                    "position": 4,
                     "team": "Portimonense Sc",
                     "played": 3,
                     "wins": 2,
@@ -347,40 +369,7 @@
                     "points": 6
                 },
                 {
-                    "position": 3,
-                    "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 11,
-                    "goalsAgainst": 3,
-                    "points": 3
-                },
-                {
-                    "position": 4,
-                    "team": "4 Ao Cubo Ad Olhão",
-                    "played": 1,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 4,
-                    "goalsAgainst": 0,
-                    "points": 3
-                },
-                {
                     "position": 5,
-                    "team": "Aef Monte Gordo 2019",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 12,
-                    "points": 3
-                },
-                {
-                    "position": 6,
                     "team": "Fc Ferreiras - B",
                     "played": 3,
                     "wins": 1,
@@ -391,14 +380,25 @@
                     "points": 3
                 },
                 {
-                    "position": 7,
-                    "team": "Cdr Quarteirense",
-                    "played": 2,
-                    "wins": 0,
+                    "position": 6,
+                    "team": "Aef Monte Gordo 2019",
+                    "played": 3,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 1,
-                    "goalsAgainst": 10,
+                    "goalsFor": 3,
+                    "goalsAgainst": 23,
+                    "points": 3
+                },
+                {
+                    "position": 7,
+                    "team": "Cdr Quarteirense",
+                    "played": 3,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 2,
+                    "goalsAgainst": 12,
                     "points": 0
                 },
                 {
@@ -469,6 +469,17 @@
                 },
                 {
                     "position": 2,
+                    "team": "Cf Os Armacenenses",
+                    "played": 4,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 27,
+                    "goalsAgainst": 4,
+                    "points": 9
+                },
+                {
+                    "position": 3,
                     "team": "Portimonense Sc",
                     "played": 4,
                     "wins": 3,
@@ -479,37 +490,26 @@
                     "points": 9
                 },
                 {
-                    "position": 3,
-                    "team": "Cf Os Armacenenses",
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 16,
-                    "goalsAgainst": 4,
-                    "points": 6
-                },
-                {
                     "position": 4,
-                    "team": "Aef Monte Gordo 2019",
+                    "team": "4 Ao Cubo Ad Olhão",
                     "played": 3,
                     "wins": 2,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 10,
-                    "goalsAgainst": 14,
+                    "goalsFor": 7,
+                    "goalsAgainst": 3,
                     "points": 6
                 },
                 {
                     "position": 5,
-                    "team": "4 Ao Cubo Ad Olhão",
-                    "played": 2,
-                    "wins": 1,
+                    "team": "Aef Monte Gordo 2019",
+                    "played": 4,
+                    "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 5,
-                    "goalsAgainst": 2,
-                    "points": 3
+                    "losses": 2,
+                    "goalsFor": 10,
+                    "goalsAgainst": 25,
+                    "points": 6
                 },
                 {
                     "position": 6,
@@ -525,12 +525,12 @@
                 {
                     "position": 7,
                     "team": "Cdr Quarteirense",
-                    "played": 3,
+                    "played": 4,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 2,
-                    "goalsAgainst": 15,
+                    "losses": 4,
+                    "goalsFor": 3,
+                    "goalsAgainst": 17,
                     "points": 0
                 },
                 {
@@ -612,35 +612,35 @@
                 },
                 {
                     "position": 3,
-                    "team": "4 Ao Cubo Ad Olhão",
-                    "played": 3,
-                    "wins": 2,
+                    "team": "Cf Os Armacenenses",
+                    "played": 4,
+                    "wins": 3,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 14,
-                    "goalsAgainst": 3,
-                    "points": 6
+                    "goalsFor": 27,
+                    "goalsAgainst": 4,
+                    "points": 9
                 },
                 {
                     "position": 4,
-                    "team": "Cf Os Armacenenses",
-                    "played": 3,
-                    "wins": 2,
+                    "team": "4 Ao Cubo Ad Olhão",
+                    "played": 4,
+                    "wins": 3,
                     "draws": 0,
                     "losses": 1,
                     "goalsFor": 16,
                     "goalsAgainst": 4,
-                    "points": 6
+                    "points": 9
                 },
                 {
                     "position": 5,
                     "team": "Aef Monte Gordo 2019",
-                    "played": 4,
+                    "played": 5,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 2,
+                    "losses": 3,
                     "goalsFor": 11,
-                    "goalsAgainst": 23,
+                    "goalsAgainst": 34,
                     "points": 6
                 },
                 {
@@ -668,12 +668,12 @@
                 {
                     "position": 8,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 4,
-                    "goalsAgainst": 22,
+                    "losses": 5,
+                    "goalsFor": 5,
+                    "goalsAgainst": 24,
                     "points": 0
                 }
             ]
@@ -744,35 +744,35 @@
                 },
                 {
                     "position": 3,
-                    "team": "4 Ao Cubo Ad Olhão",
-                    "played": 3,
-                    "wins": 2,
+                    "team": "Cf Os Armacenenses",
+                    "played": 4,
+                    "wins": 3,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 14,
-                    "goalsAgainst": 3,
-                    "points": 6
+                    "goalsFor": 27,
+                    "goalsAgainst": 4,
+                    "points": 9
                 },
                 {
                     "position": 4,
-                    "team": "Cf Os Armacenenses",
-                    "played": 3,
-                    "wins": 2,
+                    "team": "4 Ao Cubo Ad Olhão",
+                    "played": 4,
+                    "wins": 3,
                     "draws": 0,
                     "losses": 1,
                     "goalsFor": 16,
                     "goalsAgainst": 4,
-                    "points": 6
+                    "points": 9
                 },
                 {
                     "position": 5,
                     "team": "Aef Monte Gordo 2019",
-                    "played": 4,
+                    "played": 5,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 2,
+                    "losses": 3,
                     "goalsFor": 11,
-                    "goalsAgainst": 23,
+                    "goalsAgainst": 34,
                     "points": 6
                 },
                 {
@@ -800,12 +800,12 @@
                 {
                     "position": 8,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 4,
-                    "goalsAgainst": 22,
+                    "losses": 5,
+                    "goalsFor": 5,
+                    "goalsAgainst": 24,
                     "points": 0
                 }
             ]
@@ -876,35 +876,35 @@
                 },
                 {
                     "position": 3,
-                    "team": "4 Ao Cubo Ad Olhão",
-                    "played": 3,
-                    "wins": 2,
+                    "team": "Cf Os Armacenenses",
+                    "played": 4,
+                    "wins": 3,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 14,
-                    "goalsAgainst": 3,
-                    "points": 6
+                    "goalsFor": 27,
+                    "goalsAgainst": 4,
+                    "points": 9
                 },
                 {
                     "position": 4,
-                    "team": "Cf Os Armacenenses",
-                    "played": 3,
-                    "wins": 2,
+                    "team": "4 Ao Cubo Ad Olhão",
+                    "played": 4,
+                    "wins": 3,
                     "draws": 0,
                     "losses": 1,
                     "goalsFor": 16,
                     "goalsAgainst": 4,
-                    "points": 6
+                    "points": 9
                 },
                 {
                     "position": 5,
                     "team": "Aef Monte Gordo 2019",
-                    "played": 4,
+                    "played": 5,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 2,
+                    "losses": 3,
                     "goalsFor": 11,
-                    "goalsAgainst": 23,
+                    "goalsAgainst": 34,
                     "points": 6
                 },
                 {
@@ -932,12 +932,12 @@
                 {
                     "position": 8,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 4,
-                    "goalsAgainst": 22,
+                    "losses": 5,
+                    "goalsFor": 5,
+                    "goalsAgainst": 24,
                     "points": 0
                 }
             ]
