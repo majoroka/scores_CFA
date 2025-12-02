@@ -766,6 +766,15 @@
             "fixtureId": "607592",
             "matches": [
                 {
+                    "home": "Sr Almancilense",
+                    "away": "Fc Ferreiras",
+                    "date": "2 - 2                            \r\n                \r\n                    16 nov",
+                    "time": "",
+                    "stadium": "Estadio Municipal De Almancil",
+                    "homeScore": 2,
+                    "awayScore": 2
+                },
+                {
                     "home": "Cf Os Armacenenses",
                     "away": "Js Campinense",
                     "date": "1 - 6                            \r\n                \r\n                    16 nov",
@@ -773,15 +782,6 @@
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 1,
                     "awayScore": 6
-                },
-                {
-                    "home": "Sr Almancilense",
-                    "away": "Fc Ferreiras",
-                    "date": "16 nov",
-                    "time": "11:00",
-                    "stadium": "Estadio Municipal De Almancil",
-                    "homeScore": null,
-                    "awayScore": null
                 },
                 {
                     "home": "Louletano Dc",
@@ -797,13 +797,13 @@
                 {
                     "position": 1,
                     "team": "Fc Ferreiras",
-                    "played": 4,
+                    "played": 5,
                     "wins": 4,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 24,
-                    "goalsAgainst": 4,
-                    "points": 12
+                    "goalsFor": 26,
+                    "goalsAgainst": 6,
+                    "points": 13
                 },
                 {
                     "position": 2,
@@ -818,6 +818,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Sr Almancilense",
+                    "played": 4,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 22,
+                    "goalsAgainst": 4,
+                    "points": 10
+                },
+                {
+                    "position": 4,
                     "team": "Cdr Quarteirense",
                     "played": 5,
                     "wins": 3,
@@ -826,17 +837,6 @@
                     "goalsFor": 10,
                     "goalsAgainst": 10,
                     "points": 10
-                },
-                {
-                    "position": 4,
-                    "team": "Sr Almancilense",
-                    "played": 3,
-                    "wins": 3,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 20,
-                    "goalsAgainst": 2,
-                    "points": 9
                 },
                 {
                     "position": 5,
@@ -931,11 +931,11 @@
                 {
                     "home": "Guia Fc",
                     "away": "Louletano Dc",
-                    "date": "23 nov",
-                    "time": "11:00",
+                    "date": "0 - 2                            \r\n                \r\n                    23 nov",
+                    "time": "",
                     "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 0,
+                    "awayScore": 2
                 }
             ],
             "classification": [
@@ -953,16 +953,27 @@
                 {
                     "position": 2,
                     "team": "Fc Ferreiras",
-                    "played": 4,
+                    "played": 5,
                     "wins": 4,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 24,
-                    "goalsAgainst": 4,
-                    "points": 12
+                    "goalsFor": 26,
+                    "goalsAgainst": 6,
+                    "points": 13
                 },
                 {
                     "position": 3,
+                    "team": "Sr Almancilense",
+                    "played": 5,
+                    "wins": 3,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 23,
+                    "goalsAgainst": 5,
+                    "points": 11
+                },
+                {
+                    "position": 4,
                     "team": "Cdr Quarteirense",
                     "played": 6,
                     "wins": 3,
@@ -973,18 +984,18 @@
                     "points": 11
                 },
                 {
-                    "position": 4,
-                    "team": "Sr Almancilense",
-                    "played": 4,
-                    "wins": 3,
-                    "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 21,
-                    "goalsAgainst": 3,
-                    "points": 10
+                    "position": 5,
+                    "team": "Louletano Dc",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 8,
+                    "goalsAgainst": 16,
+                    "points": 6
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Js Campinense",
                     "played": 5,
                     "wins": 1,
@@ -995,25 +1006,14 @@
                     "points": 4
                 },
                 {
-                    "position": 6,
-                    "team": "Louletano Dc",
-                    "played": 5,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 6,
-                    "goalsAgainst": 16,
-                    "points": 3
-                },
-                {
                     "position": 7,
                     "team": "Guia Fc",
-                    "played": 5,
+                    "played": 6,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 7,
-                    "goalsAgainst": 42,
+                    "goalsAgainst": 44,
                     "points": 3
                 },
                 {
@@ -1098,24 +1098,24 @@
                 {
                     "position": 2,
                     "team": "Sr Almancilense",
-                    "played": 5,
+                    "played": 6,
                     "wins": 4,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 32,
-                    "goalsAgainst": 3,
-                    "points": 13
+                    "goalsFor": 34,
+                    "goalsAgainst": 5,
+                    "points": 14
                 },
                 {
                     "position": 3,
                     "team": "Fc Ferreiras",
-                    "played": 4,
+                    "played": 5,
                     "wins": 4,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 24,
-                    "goalsAgainst": 4,
-                    "points": 12
+                    "goalsFor": 26,
+                    "goalsAgainst": 6,
+                    "points": 13
                 },
                 {
                     "position": 4,
@@ -1130,6 +1130,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Louletano Dc",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 8,
+                    "goalsAgainst": 16,
+                    "points": 6
+                },
+                {
+                    "position": 6,
                     "team": "Js Campinense",
                     "played": 6,
                     "wins": 1,
@@ -1140,25 +1151,14 @@
                     "points": 4
                 },
                 {
-                    "position": 6,
-                    "team": "Louletano Dc",
-                    "played": 5,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 6,
-                    "goalsAgainst": 16,
-                    "points": 3
-                },
-                {
                     "position": 7,
                     "team": "Guia Fc",
-                    "played": 5,
+                    "played": 6,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 7,
-                    "goalsAgainst": 42,
+                    "goalsAgainst": 44,
                     "points": 3
                 },
                 {
@@ -1232,13 +1232,13 @@
                 {
                     "position": 1,
                     "team": "Fc Ferreiras",
-                    "played": 5,
+                    "played": 6,
                     "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 29,
-                    "goalsAgainst": 4,
-                    "points": 15
+                    "goalsFor": 31,
+                    "goalsAgainst": 6,
+                    "points": 16
                 },
                 {
                     "position": 2,
@@ -1254,13 +1254,13 @@
                 {
                     "position": 3,
                     "team": "Sr Almancilense",
-                    "played": 5,
+                    "played": 6,
                     "wins": 4,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 32,
-                    "goalsAgainst": 3,
-                    "points": 13
+                    "goalsFor": 34,
+                    "goalsAgainst": 5,
+                    "points": 14
                 },
                 {
                     "position": 4,
@@ -1275,6 +1275,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Louletano Dc",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 8,
+                    "goalsAgainst": 16,
+                    "points": 6
+                },
+                {
+                    "position": 6,
                     "team": "Js Campinense",
                     "played": 7,
                     "wins": 1,
@@ -1285,25 +1296,14 @@
                     "points": 4
                 },
                 {
-                    "position": 6,
-                    "team": "Louletano Dc",
-                    "played": 5,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 6,
-                    "goalsAgainst": 16,
-                    "points": 3
-                },
-                {
                     "position": 7,
                     "team": "Guia Fc",
-                    "played": 5,
+                    "played": 6,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 7,
-                    "goalsAgainst": 42,
+                    "goalsAgainst": 44,
                     "points": 3
                 },
                 {
@@ -1377,13 +1377,13 @@
                 {
                     "position": 1,
                     "team": "Fc Ferreiras",
-                    "played": 5,
+                    "played": 6,
                     "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 29,
-                    "goalsAgainst": 4,
-                    "points": 15
+                    "goalsFor": 31,
+                    "goalsAgainst": 6,
+                    "points": 16
                 },
                 {
                     "position": 2,
@@ -1399,13 +1399,13 @@
                 {
                     "position": 3,
                     "team": "Sr Almancilense",
-                    "played": 5,
+                    "played": 6,
                     "wins": 4,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 32,
-                    "goalsAgainst": 3,
-                    "points": 13
+                    "goalsFor": 34,
+                    "goalsAgainst": 5,
+                    "points": 14
                 },
                 {
                     "position": 4,
@@ -1420,6 +1420,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Louletano Dc",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 8,
+                    "goalsAgainst": 16,
+                    "points": 6
+                },
+                {
+                    "position": 6,
                     "team": "Js Campinense",
                     "played": 7,
                     "wins": 1,
@@ -1430,25 +1441,14 @@
                     "points": 4
                 },
                 {
-                    "position": 6,
-                    "team": "Louletano Dc",
-                    "played": 5,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 6,
-                    "goalsAgainst": 16,
-                    "points": 3
-                },
-                {
                     "position": 7,
                     "team": "Guia Fc",
-                    "played": 5,
+                    "played": 6,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 7,
-                    "goalsAgainst": 42,
+                    "goalsAgainst": 44,
                     "points": 3
                 },
                 {
@@ -1522,13 +1522,13 @@
                 {
                     "position": 1,
                     "team": "Fc Ferreiras",
-                    "played": 5,
+                    "played": 6,
                     "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 29,
-                    "goalsAgainst": 4,
-                    "points": 15
+                    "goalsFor": 31,
+                    "goalsAgainst": 6,
+                    "points": 16
                 },
                 {
                     "position": 2,
@@ -1544,13 +1544,13 @@
                 {
                     "position": 3,
                     "team": "Sr Almancilense",
-                    "played": 5,
+                    "played": 6,
                     "wins": 4,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 32,
-                    "goalsAgainst": 3,
-                    "points": 13
+                    "goalsFor": 34,
+                    "goalsAgainst": 5,
+                    "points": 14
                 },
                 {
                     "position": 4,
@@ -1565,6 +1565,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Louletano Dc",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 8,
+                    "goalsAgainst": 16,
+                    "points": 6
+                },
+                {
+                    "position": 6,
                     "team": "Js Campinense",
                     "played": 7,
                     "wins": 1,
@@ -1575,25 +1586,14 @@
                     "points": 4
                 },
                 {
-                    "position": 6,
-                    "team": "Louletano Dc",
-                    "played": 5,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 6,
-                    "goalsAgainst": 16,
-                    "points": 3
-                },
-                {
                     "position": 7,
                     "team": "Guia Fc",
-                    "played": 5,
+                    "played": 6,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 7,
-                    "goalsAgainst": 42,
+                    "goalsAgainst": 44,
                     "points": 3
                 },
                 {
@@ -1676,13 +1676,13 @@
                 {
                     "position": 1,
                     "team": "Fc Ferreiras",
-                    "played": 5,
+                    "played": 6,
                     "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 29,
-                    "goalsAgainst": 4,
-                    "points": 15
+                    "goalsFor": 31,
+                    "goalsAgainst": 6,
+                    "points": 16
                 },
                 {
                     "position": 2,
@@ -1698,13 +1698,13 @@
                 {
                     "position": 3,
                     "team": "Sr Almancilense",
-                    "played": 5,
+                    "played": 6,
                     "wins": 4,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 32,
-                    "goalsAgainst": 3,
-                    "points": 13
+                    "goalsFor": 34,
+                    "goalsAgainst": 5,
+                    "points": 14
                 },
                 {
                     "position": 4,
@@ -1719,6 +1719,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Louletano Dc",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 8,
+                    "goalsAgainst": 16,
+                    "points": 6
+                },
+                {
+                    "position": 6,
                     "team": "Js Campinense",
                     "played": 7,
                     "wins": 1,
@@ -1729,25 +1740,14 @@
                     "points": 4
                 },
                 {
-                    "position": 6,
-                    "team": "Louletano Dc",
-                    "played": 5,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 6,
-                    "goalsAgainst": 16,
-                    "points": 3
-                },
-                {
                     "position": 7,
                     "team": "Guia Fc",
-                    "played": 5,
+                    "played": 6,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 7,
-                    "goalsAgainst": 42,
+                    "goalsAgainst": 44,
                     "points": 3
                 },
                 {
@@ -1821,13 +1821,13 @@
                 {
                     "position": 1,
                     "team": "Fc Ferreiras",
-                    "played": 5,
+                    "played": 6,
                     "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 29,
-                    "goalsAgainst": 4,
-                    "points": 15
+                    "goalsFor": 31,
+                    "goalsAgainst": 6,
+                    "points": 16
                 },
                 {
                     "position": 2,
@@ -1843,13 +1843,13 @@
                 {
                     "position": 3,
                     "team": "Sr Almancilense",
-                    "played": 5,
+                    "played": 6,
                     "wins": 4,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 32,
-                    "goalsAgainst": 3,
-                    "points": 13
+                    "goalsFor": 34,
+                    "goalsAgainst": 5,
+                    "points": 14
                 },
                 {
                     "position": 4,
@@ -1864,6 +1864,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Louletano Dc",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 8,
+                    "goalsAgainst": 16,
+                    "points": 6
+                },
+                {
+                    "position": 6,
                     "team": "Js Campinense",
                     "played": 7,
                     "wins": 1,
@@ -1874,25 +1885,14 @@
                     "points": 4
                 },
                 {
-                    "position": 6,
-                    "team": "Louletano Dc",
-                    "played": 5,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 6,
-                    "goalsAgainst": 16,
-                    "points": 3
-                },
-                {
                     "position": 7,
                     "team": "Guia Fc",
-                    "played": 5,
+                    "played": 6,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 7,
-                    "goalsAgainst": 42,
+                    "goalsAgainst": 44,
                     "points": 3
                 },
                 {
@@ -1966,13 +1966,13 @@
                 {
                     "position": 1,
                     "team": "Fc Ferreiras",
-                    "played": 5,
+                    "played": 6,
                     "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 29,
-                    "goalsAgainst": 4,
-                    "points": 15
+                    "goalsFor": 31,
+                    "goalsAgainst": 6,
+                    "points": 16
                 },
                 {
                     "position": 2,
@@ -1988,13 +1988,13 @@
                 {
                     "position": 3,
                     "team": "Sr Almancilense",
-                    "played": 5,
+                    "played": 6,
                     "wins": 4,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 32,
-                    "goalsAgainst": 3,
-                    "points": 13
+                    "goalsFor": 34,
+                    "goalsAgainst": 5,
+                    "points": 14
                 },
                 {
                     "position": 4,
@@ -2009,6 +2009,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Louletano Dc",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 8,
+                    "goalsAgainst": 16,
+                    "points": 6
+                },
+                {
+                    "position": 6,
                     "team": "Js Campinense",
                     "played": 7,
                     "wins": 1,
@@ -2019,25 +2030,14 @@
                     "points": 4
                 },
                 {
-                    "position": 6,
-                    "team": "Louletano Dc",
-                    "played": 5,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 6,
-                    "goalsAgainst": 16,
-                    "points": 3
-                },
-                {
                     "position": 7,
                     "team": "Guia Fc",
-                    "played": 5,
+                    "played": 6,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 7,
-                    "goalsAgainst": 42,
+                    "goalsAgainst": 44,
                     "points": 3
                 },
                 {
@@ -2111,13 +2111,13 @@
                 {
                     "position": 1,
                     "team": "Fc Ferreiras",
-                    "played": 5,
+                    "played": 6,
                     "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 29,
-                    "goalsAgainst": 4,
-                    "points": 15
+                    "goalsFor": 31,
+                    "goalsAgainst": 6,
+                    "points": 16
                 },
                 {
                     "position": 2,
@@ -2133,13 +2133,13 @@
                 {
                     "position": 3,
                     "team": "Sr Almancilense",
-                    "played": 5,
+                    "played": 6,
                     "wins": 4,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 32,
-                    "goalsAgainst": 3,
-                    "points": 13
+                    "goalsFor": 34,
+                    "goalsAgainst": 5,
+                    "points": 14
                 },
                 {
                     "position": 4,
@@ -2154,6 +2154,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Louletano Dc",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 8,
+                    "goalsAgainst": 16,
+                    "points": 6
+                },
+                {
+                    "position": 6,
                     "team": "Js Campinense",
                     "played": 7,
                     "wins": 1,
@@ -2164,25 +2175,14 @@
                     "points": 4
                 },
                 {
-                    "position": 6,
-                    "team": "Louletano Dc",
-                    "played": 5,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 6,
-                    "goalsAgainst": 16,
-                    "points": 3
-                },
-                {
                     "position": 7,
                     "team": "Guia Fc",
-                    "played": 5,
+                    "played": 6,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 7,
-                    "goalsAgainst": 42,
+                    "goalsAgainst": 44,
                     "points": 3
                 },
                 {
@@ -2256,13 +2256,13 @@
                 {
                     "position": 1,
                     "team": "Fc Ferreiras",
-                    "played": 5,
+                    "played": 6,
                     "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 29,
-                    "goalsAgainst": 4,
-                    "points": 15
+                    "goalsFor": 31,
+                    "goalsAgainst": 6,
+                    "points": 16
                 },
                 {
                     "position": 2,
@@ -2278,13 +2278,13 @@
                 {
                     "position": 3,
                     "team": "Sr Almancilense",
-                    "played": 5,
+                    "played": 6,
                     "wins": 4,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 32,
-                    "goalsAgainst": 3,
-                    "points": 13
+                    "goalsFor": 34,
+                    "goalsAgainst": 5,
+                    "points": 14
                 },
                 {
                     "position": 4,
@@ -2299,6 +2299,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Louletano Dc",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 8,
+                    "goalsAgainst": 16,
+                    "points": 6
+                },
+                {
+                    "position": 6,
                     "team": "Js Campinense",
                     "played": 7,
                     "wins": 1,
@@ -2309,25 +2320,14 @@
                     "points": 4
                 },
                 {
-                    "position": 6,
-                    "team": "Louletano Dc",
-                    "played": 5,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 6,
-                    "goalsAgainst": 16,
-                    "points": 3
-                },
-                {
                     "position": 7,
                     "team": "Guia Fc",
-                    "played": 5,
+                    "played": 6,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 7,
-                    "goalsAgainst": 42,
+                    "goalsAgainst": 44,
                     "points": 3
                 },
                 {
@@ -2401,13 +2401,13 @@
                 {
                     "position": 1,
                     "team": "Fc Ferreiras",
-                    "played": 5,
+                    "played": 6,
                     "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 29,
-                    "goalsAgainst": 4,
-                    "points": 15
+                    "goalsFor": 31,
+                    "goalsAgainst": 6,
+                    "points": 16
                 },
                 {
                     "position": 2,
@@ -2423,13 +2423,13 @@
                 {
                     "position": 3,
                     "team": "Sr Almancilense",
-                    "played": 5,
+                    "played": 6,
                     "wins": 4,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 32,
-                    "goalsAgainst": 3,
-                    "points": 13
+                    "goalsFor": 34,
+                    "goalsAgainst": 5,
+                    "points": 14
                 },
                 {
                     "position": 4,
@@ -2444,6 +2444,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Louletano Dc",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 8,
+                    "goalsAgainst": 16,
+                    "points": 6
+                },
+                {
+                    "position": 6,
                     "team": "Js Campinense",
                     "played": 7,
                     "wins": 1,
@@ -2454,25 +2465,14 @@
                     "points": 4
                 },
                 {
-                    "position": 6,
-                    "team": "Louletano Dc",
-                    "played": 5,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 6,
-                    "goalsAgainst": 16,
-                    "points": 3
-                },
-                {
                     "position": 7,
                     "team": "Guia Fc",
-                    "played": 5,
+                    "played": 6,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 7,
-                    "goalsAgainst": 42,
+                    "goalsAgainst": 44,
                     "points": 3
                 },
                 {
@@ -2546,13 +2546,13 @@
                 {
                     "position": 1,
                     "team": "Fc Ferreiras",
-                    "played": 5,
+                    "played": 6,
                     "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 29,
-                    "goalsAgainst": 4,
-                    "points": 15
+                    "goalsFor": 31,
+                    "goalsAgainst": 6,
+                    "points": 16
                 },
                 {
                     "position": 2,
@@ -2568,13 +2568,13 @@
                 {
                     "position": 3,
                     "team": "Sr Almancilense",
-                    "played": 5,
+                    "played": 6,
                     "wins": 4,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 32,
-                    "goalsAgainst": 3,
-                    "points": 13
+                    "goalsFor": 34,
+                    "goalsAgainst": 5,
+                    "points": 14
                 },
                 {
                     "position": 4,
@@ -2589,6 +2589,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Louletano Dc",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 8,
+                    "goalsAgainst": 16,
+                    "points": 6
+                },
+                {
+                    "position": 6,
                     "team": "Js Campinense",
                     "played": 7,
                     "wins": 1,
@@ -2599,25 +2610,14 @@
                     "points": 4
                 },
                 {
-                    "position": 6,
-                    "team": "Louletano Dc",
-                    "played": 5,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 6,
-                    "goalsAgainst": 16,
-                    "points": 3
-                },
-                {
                     "position": 7,
                     "team": "Guia Fc",
-                    "played": 5,
+                    "played": 6,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 7,
-                    "goalsAgainst": 42,
+                    "goalsAgainst": 44,
                     "points": 3
                 },
                 {
