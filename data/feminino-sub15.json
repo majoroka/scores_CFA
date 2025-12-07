@@ -694,11 +694,11 @@
                 {
                     "home": "Lusitano Fc Vrsa",
                     "away": "Fc Ferreiras - A",
-                    "date": "6 dez",
-                    "time": "11:00",
+                    "date": "0 - 15                            \r\n                \r\n                    6 dez",
+                    "time": "",
                     "stadium": "Campo Francisco Gomes Socorro",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 0,
+                    "awayScore": 15
                 },
                 {
                     "home": "4 Ao Cubo Ad Olhão",
@@ -722,6 +722,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Fc Ferreiras - A",
+                    "played": 6,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 43,
+                    "goalsAgainst": 5,
+                    "points": 16
+                },
+                {
+                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 6,
                     "wins": 5,
@@ -730,17 +741,6 @@
                     "goalsFor": 42,
                     "goalsAgainst": 7,
                     "points": 15
-                },
-                {
-                    "position": 2,
-                    "team": "Fc Ferreiras - A",
-                    "played": 5,
-                    "wins": 4,
-                    "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 28,
-                    "goalsAgainst": 5,
-                    "points": 13
                 },
                 {
                     "position": 3,
@@ -789,12 +789,12 @@
                 {
                     "position": 7,
                     "team": "Lusitano Fc Vrsa",
-                    "played": 5,
+                    "played": 6,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 14,
-                    "goalsAgainst": 40,
+                    "goalsAgainst": 55,
                     "points": 3
                 },
                 {
@@ -854,6 +854,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Fc Ferreiras - A",
+                    "played": 6,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 43,
+                    "goalsAgainst": 5,
+                    "points": 16
+                },
+                {
+                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 6,
                     "wins": 5,
@@ -862,17 +873,6 @@
                     "goalsFor": 42,
                     "goalsAgainst": 7,
                     "points": 15
-                },
-                {
-                    "position": 2,
-                    "team": "Fc Ferreiras - A",
-                    "played": 5,
-                    "wins": 4,
-                    "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 28,
-                    "goalsAgainst": 5,
-                    "points": 13
                 },
                 {
                     "position": 3,
@@ -921,12 +921,12 @@
                 {
                     "position": 7,
                     "team": "Lusitano Fc Vrsa",
-                    "played": 5,
+                    "played": 6,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 14,
-                    "goalsAgainst": 40,
+                    "goalsAgainst": 55,
                     "points": 3
                 },
                 {
