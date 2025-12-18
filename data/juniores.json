@@ -128,15 +128,6 @@
             "fixtureId": "602990",
             "matches": [
                 {
-                    "home": "Silves Fc",
-                    "away": "Cf Os Armacenenses",
-                    "date": "0 - 6                            \r\n                \r\n                    12 out",
-                    "time": "",
-                    "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": 0,
-                    "awayScore": 6
-                },
-                {
                     "home": "Cd Odiáxere",
                     "away": "Gd Lagoa",
                     "date": "2 - 2                            \r\n                \r\n                    12 out",
@@ -144,6 +135,15 @@
                     "stadium": "Campo Eiras",
                     "homeScore": 2,
                     "awayScore": 2
+                },
+                {
+                    "home": "Silves Fc",
+                    "away": "Cf Os Armacenenses",
+                    "date": "0 - 6                            \r\n                \r\n                    12 out",
+                    "time": "",
+                    "stadium": "Estádio Dr. Francisco Vieira",
+                    "homeScore": 0,
+                    "awayScore": 6
                 },
                 {
                     "home": "A Indicar",
@@ -251,15 +251,6 @@
             "fixtureId": "602991",
             "matches": [
                 {
-                    "home": "Cf Esperança Lagos",
-                    "away": "Mexilhoeira Grande Fc",
-                    "date": "0 - 0                            \r\n                \r\n                    19 out",
-                    "time": "",
-                    "stadium": "Estádio Municipal De Lagos N.º 2",
-                    "homeScore": 0,
-                    "awayScore": 0
-                },
-                {
                     "home": "Cf Os Armacenenses",
                     "away": "A Indicar",
                     "date": "19 out",
@@ -275,6 +266,15 @@
                     "time": "",
                     "stadium": "Campo Eiras",
                     "homeScore": 6,
+                    "awayScore": 0
+                },
+                {
+                    "home": "Cf Esperança Lagos",
+                    "away": "Mexilhoeira Grande Fc",
+                    "date": "0 - 0                            \r\n                \r\n                    19 out",
+                    "time": "",
+                    "stadium": "Estádio Municipal De Lagos N.º 2",
+                    "homeScore": 0,
                     "awayScore": 0
                 }
             ],
@@ -383,15 +383,6 @@
                     "awayScore": 2
                 },
                 {
-                    "home": "Mexilhoeira Grande Fc",
-                    "away": "Cf Os Armacenenses",
-                    "date": "0 - 3                            \r\n                \r\n                    26 out",
-                    "time": "",
-                    "stadium": "Campo Municipal Mexilhoeira Grande",
-                    "homeScore": 0,
-                    "awayScore": 3
-                },
-                {
                     "home": "A Indicar",
                     "away": "Cd Odiáxere",
                     "date": "26 out",
@@ -399,6 +390,15 @@
                     "stadium": "A Indicar",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Mexilhoeira Grande Fc",
+                    "away": "Cf Os Armacenenses",
+                    "date": "0 - 3                            \r\n                \r\n                    26 out",
+                    "time": "",
+                    "stadium": "Campo Municipal Mexilhoeira Grande",
+                    "homeScore": 0,
+                    "awayScore": 3
                 }
             ],
             "classification": [
@@ -848,15 +848,6 @@
             "fixtureId": "602996",
             "matches": [
                 {
-                    "home": "Cd Odiáxere",
-                    "away": "Cf Os Armacenenses",
-                    "date": "0 - 2                            \r\n                \r\n                    23 nov",
-                    "time": "",
-                    "stadium": "Campo Eiras",
-                    "homeScore": 0,
-                    "awayScore": 2
-                },
-                {
                     "home": "Mexilhoeira Grande Fc",
                     "away": "Gd Lagoa",
                     "date": "0 - 4                            \r\n                \r\n                    23 nov",
@@ -866,13 +857,22 @@
                     "awayScore": 4
                 },
                 {
+                    "home": "Cd Odiáxere",
+                    "away": "Cf Os Armacenenses",
+                    "date": "0 - 2                            \r\n                \r\n                    23 nov",
+                    "time": "",
+                    "stadium": "Campo Eiras",
+                    "homeScore": 0,
+                    "awayScore": 2
+                },
+                {
                     "home": "Silves Fc",
                     "away": "Cf Esperança Lagos",
-                    "date": "17 dez",
-                    "time": "20:30",
+                    "date": "0 - 1                            \r\n                \r\n                    17 dez",
+                    "time": "",
                     "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 0,
+                    "awayScore": 1
                 }
             ],
             "classification": [
@@ -911,25 +911,25 @@
                 },
                 {
                     "position": 4,
-                    "team": "Silves Fc",
-                    "played": 5,
+                    "team": "Cf Esperança Lagos",
+                    "played": 6,
                     "wins": 2,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 3,
-                    "goalsFor": 8,
-                    "goalsAgainst": 16,
-                    "points": 6
+                    "goalsFor": 4,
+                    "goalsAgainst": 9,
+                    "points": 7
                 },
                 {
                     "position": 5,
-                    "team": "Cf Esperança Lagos",
-                    "played": 5,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 3,
-                    "goalsFor": 3,
-                    "goalsAgainst": 9,
-                    "points": 4
+                    "team": "Silves Fc",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 8,
+                    "goalsAgainst": 17,
+                    "points": 6
                 },
                 {
                     "position": 6,
@@ -1025,25 +1025,25 @@
                 },
                 {
                     "position": 4,
-                    "team": "Silves Fc",
+                    "team": "Cf Esperança Lagos",
                     "played": 6,
                     "wins": 2,
-                    "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 8,
-                    "goalsAgainst": 18,
-                    "points": 6
+                    "draws": 1,
+                    "losses": 3,
+                    "goalsFor": 4,
+                    "goalsAgainst": 9,
+                    "points": 7
                 },
                 {
                     "position": 5,
-                    "team": "Cf Esperança Lagos",
-                    "played": 5,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 3,
-                    "goalsFor": 3,
-                    "goalsAgainst": 9,
-                    "points": 4
+                    "team": "Silves Fc",
+                    "played": 7,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 5,
+                    "goalsFor": 8,
+                    "goalsAgainst": 19,
+                    "points": 6
                 },
                 {
                     "position": 6,
@@ -1128,6 +1128,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Cf Esperança Lagos",
+                    "played": 7,
+                    "wins": 3,
+                    "draws": 1,
+                    "losses": 3,
+                    "goalsFor": 9,
+                    "goalsAgainst": 9,
+                    "points": 10
+                },
+                {
+                    "position": 4,
                     "team": "Gd Lagoa",
                     "played": 7,
                     "wins": 3,
@@ -1138,25 +1149,14 @@
                     "points": 10
                 },
                 {
-                    "position": 4,
-                    "team": "Cf Esperança Lagos",
-                    "played": 6,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 3,
-                    "goalsFor": 8,
-                    "goalsAgainst": 9,
-                    "points": 7
-                },
-                {
                     "position": 5,
                     "team": "Silves Fc",
-                    "played": 7,
+                    "played": 8,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 5,
+                    "losses": 6,
                     "goalsFor": 8,
-                    "goalsAgainst": 25,
+                    "goalsAgainst": 26,
                     "points": 6
                 },
                 {
@@ -1254,23 +1254,23 @@
                 {
                     "position": 4,
                     "team": "Cf Esperança Lagos",
-                    "played": 6,
-                    "wins": 2,
+                    "played": 7,
+                    "wins": 3,
                     "draws": 1,
                     "losses": 3,
-                    "goalsFor": 8,
+                    "goalsFor": 9,
                     "goalsAgainst": 9,
-                    "points": 7
+                    "points": 10
                 },
                 {
                     "position": 5,
                     "team": "Silves Fc",
-                    "played": 8,
+                    "played": 9,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 6,
+                    "losses": 7,
                     "goalsFor": 8,
-                    "goalsAgainst": 29,
+                    "goalsAgainst": 30,
                     "points": 6
                 },
                 {
@@ -1368,23 +1368,23 @@
                 {
                     "position": 4,
                     "team": "Cf Esperança Lagos",
-                    "played": 6,
-                    "wins": 2,
+                    "played": 7,
+                    "wins": 3,
                     "draws": 1,
                     "losses": 3,
-                    "goalsFor": 8,
+                    "goalsFor": 9,
                     "goalsAgainst": 9,
-                    "points": 7
+                    "points": 10
                 },
                 {
                     "position": 5,
                     "team": "Silves Fc",
-                    "played": 8,
+                    "played": 9,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 6,
+                    "losses": 7,
                     "goalsFor": 8,
-                    "goalsAgainst": 29,
+                    "goalsAgainst": 30,
                     "points": 6
                 },
                 {
@@ -1482,23 +1482,23 @@
                 {
                     "position": 4,
                     "team": "Cf Esperança Lagos",
-                    "played": 6,
-                    "wins": 2,
+                    "played": 7,
+                    "wins": 3,
                     "draws": 1,
                     "losses": 3,
-                    "goalsFor": 8,
+                    "goalsFor": 9,
                     "goalsAgainst": 9,
-                    "points": 7
+                    "points": 10
                 },
                 {
                     "position": 5,
                     "team": "Silves Fc",
-                    "played": 8,
+                    "played": 9,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 6,
+                    "losses": 7,
                     "goalsFor": 8,
-                    "goalsAgainst": 29,
+                    "goalsAgainst": 30,
                     "points": 6
                 },
                 {
@@ -1596,23 +1596,23 @@
                 {
                     "position": 4,
                     "team": "Cf Esperança Lagos",
-                    "played": 6,
-                    "wins": 2,
+                    "played": 7,
+                    "wins": 3,
                     "draws": 1,
                     "losses": 3,
-                    "goalsFor": 8,
+                    "goalsFor": 9,
                     "goalsAgainst": 9,
-                    "points": 7
+                    "points": 10
                 },
                 {
                     "position": 5,
                     "team": "Silves Fc",
-                    "played": 8,
+                    "played": 9,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 6,
+                    "losses": 7,
                     "goalsFor": 8,
-                    "goalsAgainst": 29,
+                    "goalsAgainst": 30,
                     "points": 6
                 },
                 {
