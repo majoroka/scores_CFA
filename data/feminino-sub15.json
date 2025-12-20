@@ -815,6 +815,15 @@
             "fixtureId": "619475",
             "matches": [
                 {
+                    "home": "Fc Ferreiras - B",
+                    "away": "4 Ao Cubo Ad Olhão",
+                    "date": "0 - 4                            \r\n                \r\n                    20 dez",
+                    "time": "",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": 0,
+                    "awayScore": 4
+                },
+                {
                     "home": "Cf Os Armacenenses",
                     "away": "Portimonense Sc",
                     "date": "7 - 0                            \r\n                \r\n                    20 dez",
@@ -835,25 +844,27 @@
                 {
                     "home": "Fc Ferreiras - A",
                     "away": "Cdr Quarteirense",
-                    "date": "20 dez",
-                    "time": "12:00",
+                    "date": "9 - 1                            \r\n                \r\n                    20 dez",
+                    "time": "",
                     "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Fc Ferreiras - B",
-                    "away": "4 Ao Cubo Ad Olhão",
-                    "date": "20 dez",
-                    "time": "12:00",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 9,
+                    "awayScore": 1
                 }
             ],
             "classification": [
                 {
                     "position": 1,
+                    "team": "Fc Ferreiras - A",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 52,
+                    "goalsAgainst": 6,
+                    "points": 19
+                },
+                {
+                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 7,
                     "wins": 6,
@@ -864,26 +875,15 @@
                     "points": 18
                 },
                 {
-                    "position": 2,
-                    "team": "Fc Ferreiras - A",
-                    "played": 6,
-                    "wins": 5,
-                    "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 43,
-                    "goalsAgainst": 5,
-                    "points": 16
-                },
-                {
                     "position": 3,
                     "team": "4 Ao Cubo Ad Olhão",
-                    "played": 6,
-                    "wins": 4,
+                    "played": 7,
+                    "wins": 5,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 32,
+                    "goalsFor": 36,
                     "goalsAgainst": 9,
-                    "points": 12
+                    "points": 15
                 },
                 {
                     "position": 4,
@@ -910,12 +910,12 @@
                 {
                     "position": 6,
                     "team": "Fc Ferreiras - B",
-                    "played": 6,
+                    "played": 7,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 12,
-                    "goalsAgainst": 38,
+                    "goalsAgainst": 42,
                     "points": 6
                 },
                 {
@@ -932,12 +932,12 @@
                 {
                     "position": 8,
                     "team": "Cdr Quarteirense",
-                    "played": 6,
+                    "played": 7,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 8,
-                    "goalsAgainst": 28,
+                    "losses": 7,
+                    "goalsFor": 9,
+                    "goalsAgainst": 37,
                     "points": 0
                 }
             ]
