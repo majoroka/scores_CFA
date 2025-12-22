@@ -851,15 +851,6 @@
             "fixtureId": "615915",
             "matches": [
                 {
-                    "home": "Silves Fc",
-                    "away": "Guia Fc",
-                    "date": "10 jan",
-                    "time": "10:30",
-                    "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Gd Lagoa",
                     "away": "Ud Messinense",
                     "date": "10 jan",
@@ -867,9 +858,85 @@
                     "stadium": "Campo De Futebol Sete - Espamol",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Silves Fc",
+                    "away": "Guia Fc",
+                    "date": "10 jan",
+                    "time": "10:30",
+                    "stadium": "Estádio Dr. Francisco Vieira",
+                    "homeScore": null,
+                    "awayScore": null
                 }
             ],
-            "classification": []
+            "classification": [
+                {
+                    "position": 1,
+                    "team": "Cf Os Armacenenses",
+                    "played": 8,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 43,
+                    "goalsAgainst": 22,
+                    "points": 18
+                },
+                {
+                    "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 30,
+                    "goalsAgainst": 20,
+                    "points": 18
+                },
+                {
+                    "position": 3,
+                    "team": "Guia Fc",
+                    "played": 7,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 25,
+                    "goalsAgainst": 21,
+                    "points": 12
+                },
+                {
+                    "position": 4,
+                    "team": "Ud Messinense",
+                    "played": 7,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 5,
+                    "goalsFor": 14,
+                    "goalsAgainst": 26,
+                    "points": 6
+                },
+                {
+                    "position": 5,
+                    "team": "Silves Fc",
+                    "played": 7,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 7,
+                    "goalsFor": 22,
+                    "goalsAgainst": 45,
+                    "points": 0
+                },
+                {
+                    "position": 6,
+                    "team": "A Indicar (DS)",
+                    "played": 0,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 0,
+                    "goalsAgainst": 0,
+                    "points": 0
+                }
+            ]
         }
     ]
 }
