@@ -195,15 +195,6 @@
                     "awayScore": 2
                 },
                 {
-                    "home": "Aa Belavista",
-                    "away": "Silves Fc",
-                    "date": "22 nov",
-                    "time": "",
-                    "stadium": "Estádio Municipal Da Bela Vista",
-                    "homeScore": 1,
-                    "awayScore": 8
-                },
-                {
                     "home": "Cf Os Armacenenses",
                     "away": "Gd Lagoa",
                     "date": "22 nov",
@@ -211,6 +202,15 @@
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 5,
                     "awayScore": 6
+                },
+                {
+                    "home": "Aa Belavista",
+                    "away": "Silves Fc",
+                    "date": "22 nov",
+                    "time": "",
+                    "stadium": "Estádio Municipal Da Bela Vista",
+                    "homeScore": 1,
+                    "awayScore": 8
                 },
                 {
                     "home": "Gdr Alvorense",
@@ -410,6 +410,15 @@
                     "awayScore": null
                 },
                 {
+                    "home": "Mexilhoeira Grande Fc",
+                    "away": "Aa Belavista",
+                    "date": "10 jan",
+                    "time": "10:30",
+                    "stadium": "Campo Municipal Mexilhoeira Grande",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Silves Fc",
                     "away": "Gd Lagoa",
                     "date": "10 jan",
@@ -424,15 +433,6 @@
                     "date": "10 jan",
                     "time": "10:30",
                     "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Mexilhoeira Grande Fc",
-                    "away": "Aa Belavista",
-                    "date": "10 jan",
-                    "time": "10:30",
-                    "stadium": "Campo Municipal Mexilhoeira Grande",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -462,20 +462,20 @@
                     "awayScore": 0
                 },
                 {
-                    "home": "Aa Belavista",
-                    "away": "Portimonense Sc",
-                    "date": "17 jan",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Da Bela Vista",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Gd Lagoa",
                     "away": "Aef João Moutinho",
                     "date": "17 jan",
                     "time": "11:00",
                     "stadium": "Campo De Futebol Sete - Espamol",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Aa Belavista",
+                    "away": "Portimonense Sc",
+                    "date": "17 jan",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Da Bela Vista",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -487,24 +487,6 @@
             "fixtureId": "616155",
             "matches": [
                 {
-                    "home": "Portimonense Sc",
-                    "away": "Mexilhoeira Grande Fc",
-                    "date": "24 jan",
-                    "time": "11:00",
-                    "stadium": "Campo Major David Neto 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Silves Fc",
-                    "away": "Aa Belavista",
-                    "date": "24 jan",
-                    "time": "11:00",
-                    "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Gd Lagoa",
                     "away": "Cf Os Armacenenses",
                     "date": "24 jan",
@@ -514,11 +496,29 @@
                     "awayScore": null
                 },
                 {
+                    "home": "Portimonense Sc",
+                    "away": "Mexilhoeira Grande Fc",
+                    "date": "24 jan",
+                    "time": "11:00",
+                    "stadium": "Campo Major David Neto 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Aef João Moutinho",
                     "away": "Gdr Alvorense",
                     "date": "24 jan",
                     "time": "11:00",
                     "stadium": "Parque Desportivo Municipal Estombar",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Silves Fc",
+                    "away": "Aa Belavista",
+                    "date": "24 jan",
+                    "time": "11:00",
+                    "stadium": "Estádio Dr. Francisco Vieira",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -539,20 +539,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Gdr Alvorense",
-                    "away": "Gd Lagoa",
-                    "date": "31 jan",
-                    "time": "11:00",
-                    "stadium": "Estádio Restinga Nº 1",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Mexilhoeira Grande Fc",
                     "away": "Silves Fc",
                     "date": "31 jan",
                     "time": "11:00",
                     "stadium": "Campo Municipal Mexilhoeira Grande",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Gdr Alvorense",
+                    "away": "Gd Lagoa",
+                    "date": "31 jan",
+                    "time": "11:00",
+                    "stadium": "Estádio Restinga Nº 1",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -573,20 +573,11 @@
             "fixtureId": "616157",
             "matches": [
                 {
-                    "home": "Silves Fc",
-                    "away": "Portimonense Sc",
+                    "home": "Aef João Moutinho",
+                    "away": "Mexilhoeira Grande Fc",
                     "date": "7 fev",
                     "time": "11:00",
-                    "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Gd Lagoa",
-                    "away": "Aa Belavista",
-                    "date": "7 fev",
-                    "time": "11:00",
-                    "stadium": "Campo De Futebol Sete - Espamol",
+                    "stadium": "Parque Desportivo Municipal Estombar",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -600,11 +591,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Aef João Moutinho",
-                    "away": "Mexilhoeira Grande Fc",
+                    "home": "Gd Lagoa",
+                    "away": "Aa Belavista",
                     "date": "7 fev",
                     "time": "11:00",
-                    "stadium": "Parque Desportivo Municipal Estombar",
+                    "stadium": "Campo De Futebol Sete - Espamol",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Silves Fc",
+                    "away": "Portimonense Sc",
+                    "date": "7 fev",
+                    "time": "11:00",
+                    "stadium": "Estádio Dr. Francisco Vieira",
                     "homeScore": null,
                     "awayScore": null
                 }
