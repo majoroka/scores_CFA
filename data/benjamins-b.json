@@ -114,15 +114,6 @@
             "fixtureId": "616266",
             "matches": [
                 {
-                    "home": "Silves Fc",
-                    "away": "Gd Lagoa",
-                    "date": "29 nov",
-                    "time": "",
-                    "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": 1,
-                    "awayScore": 11
-                },
-                {
                     "home": "Portimonense Sc",
                     "away": "Ud Messinense",
                     "date": "29 nov",
@@ -130,6 +121,15 @@
                     "stadium": "Campo Major David Neto 2",
                     "homeScore": 4,
                     "awayScore": 5
+                },
+                {
+                    "home": "Silves Fc",
+                    "away": "Gd Lagoa",
+                    "date": "29 nov",
+                    "time": "",
+                    "stadium": "Estádio Dr. Francisco Vieira",
+                    "homeScore": 1,
+                    "awayScore": 11
                 }
             ],
             "classification": []
@@ -214,20 +214,20 @@
             "fixtureId": "616270",
             "matches": [
                 {
-                    "home": "Silves Fc",
-                    "away": "Cf Os Armacenenses",
-                    "date": "3 jan",
-                    "time": "09:30",
-                    "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Portimonense Sc",
                     "away": "Gd Lagoa",
                     "date": "3 jan",
                     "time": "09:30",
                     "stadium": "Campo Major David Neto 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Silves Fc",
+                    "away": "Cf Os Armacenenses",
+                    "date": "3 jan",
+                    "time": "09:30",
+                    "stadium": "Estádio Dr. Francisco Vieira",
                     "homeScore": null,
                     "awayScore": null
                 }
