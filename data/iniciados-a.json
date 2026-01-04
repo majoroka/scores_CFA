@@ -1809,87 +1809,98 @@
                 {
                     "home": "Aa Belavista",
                     "away": "Gd Lagoa",
-                    "date": "4 jan",
-                    "time": "09:00",
+                    "date": "3 - 0                            \r\n                \r\n                    4 jan",
+                    "time": "",
                     "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 3,
+                    "awayScore": 0
                 },
                 {
                     "home": "Ud Messinense",
                     "away": "Imortal Dc",
-                    "date": "4 jan",
-                    "time": "11:00",
+                    "date": "0 - 6                            \r\n                \r\n                    4 jan",
+                    "time": "",
                     "stadium": "Estádio Municipal Messines",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 0,
+                    "awayScore": 6
                 },
                 {
                     "home": "Fc Ferreiras",
                     "away": "Cf Os Armacenenses",
-                    "date": "4 jan",
-                    "time": "11:00",
+                    "date": "4 - 0                            \r\n                \r\n                    4 jan",
+                    "time": "",
                     "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 4,
+                    "awayScore": 0
                 },
                 {
                     "home": "Padernense Clube",
                     "away": "Guia Fc",
-                    "date": "4 jan",
-                    "time": "11:00",
+                    "date": "3 - 2                            \r\n                \r\n                    4 jan",
+                    "time": "",
                     "stadium": "Campo Montes Elois",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 3,
+                    "awayScore": 2
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Fc Ferreiras",
-                    "played": 11,
-                    "wins": 11,
+                    "played": 12,
+                    "wins": 12,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 72,
+                    "goalsFor": 76,
                     "goalsAgainst": 3,
-                    "points": 33
+                    "points": 36
                 },
                 {
                     "position": 2,
                     "team": "Cf Os Armacenenses",
-                    "played": 11,
+                    "played": 12,
                     "wins": 10,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 86,
-                    "goalsAgainst": 7,
+                    "goalsAgainst": 11,
                     "points": 30
                 },
                 {
                     "position": 3,
                     "team": "Aa Belavista",
-                    "played": 11,
-                    "wins": 8,
+                    "played": 12,
+                    "wins": 9,
                     "draws": 0,
                     "losses": 3,
-                    "goalsFor": 45,
+                    "goalsFor": 48,
                     "goalsAgainst": 12,
-                    "points": 24
+                    "points": 27
                 },
                 {
                     "position": 4,
-                    "team": "Guia Fc",
-                    "played": 11,
+                    "team": "Imortal Dc",
+                    "played": 12,
                     "wins": 6,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 5,
-                    "goalsFor": 46,
-                    "goalsAgainst": 30,
-                    "points": 18
+                    "goalsFor": 38,
+                    "goalsAgainst": 48,
+                    "points": 19
                 },
                 {
                     "position": 5,
+                    "team": "Guia Fc",
+                    "played": 12,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 48,
+                    "goalsAgainst": 33,
+                    "points": 18
+                },
+                {
+                    "position": 6,
                     "team": "Silves Fc",
                     "played": 12,
                     "wins": 5,
@@ -1900,36 +1911,25 @@
                     "points": 16
                 },
                 {
-                    "position": 6,
-                    "team": "Imortal Dc",
-                    "played": 11,
-                    "wins": 5,
-                    "draws": 1,
-                    "losses": 5,
-                    "goalsFor": 32,
-                    "goalsAgainst": 48,
-                    "points": 16
-                },
-                {
                     "position": 7,
                     "team": "Gd Lagoa",
-                    "played": 11,
+                    "played": 12,
                     "wins": 3,
                     "draws": 1,
-                    "losses": 7,
+                    "losses": 8,
                     "goalsFor": 19,
-                    "goalsAgainst": 46,
+                    "goalsAgainst": 49,
                     "points": 10
                 },
                 {
                     "position": 8,
                     "team": "Ud Messinense",
-                    "played": 10,
+                    "played": 11,
                     "wins": 2,
                     "draws": 2,
-                    "losses": 6,
+                    "losses": 7,
                     "goalsFor": 17,
-                    "goalsAgainst": 49,
+                    "goalsAgainst": 55,
                     "points": 8
                 },
                 {
@@ -1946,13 +1946,13 @@
                 {
                     "position": 10,
                     "team": "Padernense Clube",
-                    "played": 10,
-                    "wins": 0,
+                    "played": 11,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 10,
-                    "goalsFor": 15,
-                    "goalsAgainst": 63,
-                    "points": 0
+                    "goalsFor": 18,
+                    "goalsAgainst": 65,
+                    "points": 3
                 }
             ]
         },
@@ -2010,49 +2010,60 @@
                 {
                     "position": 1,
                     "team": "Fc Ferreiras",
-                    "played": 11,
-                    "wins": 11,
+                    "played": 12,
+                    "wins": 12,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 72,
+                    "goalsFor": 76,
                     "goalsAgainst": 3,
-                    "points": 33
+                    "points": 36
                 },
                 {
                     "position": 2,
                     "team": "Cf Os Armacenenses",
-                    "played": 11,
+                    "played": 12,
                     "wins": 10,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 86,
-                    "goalsAgainst": 7,
+                    "goalsAgainst": 11,
                     "points": 30
                 },
                 {
                     "position": 3,
                     "team": "Aa Belavista",
-                    "played": 11,
-                    "wins": 8,
+                    "played": 12,
+                    "wins": 9,
                     "draws": 0,
                     "losses": 3,
-                    "goalsFor": 45,
+                    "goalsFor": 48,
                     "goalsAgainst": 12,
-                    "points": 24
+                    "points": 27
                 },
                 {
                     "position": 4,
-                    "team": "Guia Fc",
-                    "played": 11,
+                    "team": "Imortal Dc",
+                    "played": 12,
                     "wins": 6,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 5,
-                    "goalsFor": 46,
-                    "goalsAgainst": 30,
-                    "points": 18
+                    "goalsFor": 38,
+                    "goalsAgainst": 48,
+                    "points": 19
                 },
                 {
                     "position": 5,
+                    "team": "Guia Fc",
+                    "played": 12,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 48,
+                    "goalsAgainst": 33,
+                    "points": 18
+                },
+                {
+                    "position": 6,
                     "team": "Silves Fc",
                     "played": 12,
                     "wins": 5,
@@ -2063,36 +2074,25 @@
                     "points": 16
                 },
                 {
-                    "position": 6,
-                    "team": "Imortal Dc",
-                    "played": 11,
-                    "wins": 5,
-                    "draws": 1,
-                    "losses": 5,
-                    "goalsFor": 32,
-                    "goalsAgainst": 48,
-                    "points": 16
-                },
-                {
                     "position": 7,
                     "team": "Gd Lagoa",
-                    "played": 11,
+                    "played": 12,
                     "wins": 3,
                     "draws": 1,
-                    "losses": 7,
+                    "losses": 8,
                     "goalsFor": 19,
-                    "goalsAgainst": 46,
+                    "goalsAgainst": 49,
                     "points": 10
                 },
                 {
                     "position": 8,
                     "team": "Ud Messinense",
-                    "played": 10,
+                    "played": 11,
                     "wins": 2,
                     "draws": 2,
-                    "losses": 6,
+                    "losses": 7,
                     "goalsFor": 17,
-                    "goalsAgainst": 49,
+                    "goalsAgainst": 55,
                     "points": 8
                 },
                 {
@@ -2109,13 +2109,13 @@
                 {
                     "position": 10,
                     "team": "Padernense Clube",
-                    "played": 10,
-                    "wins": 0,
+                    "played": 11,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 10,
-                    "goalsFor": 15,
-                    "goalsAgainst": 63,
-                    "points": 0
+                    "goalsFor": 18,
+                    "goalsAgainst": 65,
+                    "points": 3
                 }
             ]
         },
@@ -2173,49 +2173,60 @@
                 {
                     "position": 1,
                     "team": "Fc Ferreiras",
-                    "played": 11,
-                    "wins": 11,
+                    "played": 12,
+                    "wins": 12,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 72,
+                    "goalsFor": 76,
                     "goalsAgainst": 3,
-                    "points": 33
+                    "points": 36
                 },
                 {
                     "position": 2,
                     "team": "Cf Os Armacenenses",
-                    "played": 11,
+                    "played": 12,
                     "wins": 10,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 86,
-                    "goalsAgainst": 7,
+                    "goalsAgainst": 11,
                     "points": 30
                 },
                 {
                     "position": 3,
                     "team": "Aa Belavista",
-                    "played": 11,
-                    "wins": 8,
+                    "played": 12,
+                    "wins": 9,
                     "draws": 0,
                     "losses": 3,
-                    "goalsFor": 45,
+                    "goalsFor": 48,
                     "goalsAgainst": 12,
-                    "points": 24
+                    "points": 27
                 },
                 {
                     "position": 4,
-                    "team": "Guia Fc",
-                    "played": 11,
+                    "team": "Imortal Dc",
+                    "played": 12,
                     "wins": 6,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 5,
-                    "goalsFor": 46,
-                    "goalsAgainst": 30,
-                    "points": 18
+                    "goalsFor": 38,
+                    "goalsAgainst": 48,
+                    "points": 19
                 },
                 {
                     "position": 5,
+                    "team": "Guia Fc",
+                    "played": 12,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 48,
+                    "goalsAgainst": 33,
+                    "points": 18
+                },
+                {
+                    "position": 6,
                     "team": "Silves Fc",
                     "played": 12,
                     "wins": 5,
@@ -2226,36 +2237,25 @@
                     "points": 16
                 },
                 {
-                    "position": 6,
-                    "team": "Imortal Dc",
-                    "played": 11,
-                    "wins": 5,
-                    "draws": 1,
-                    "losses": 5,
-                    "goalsFor": 32,
-                    "goalsAgainst": 48,
-                    "points": 16
-                },
-                {
                     "position": 7,
                     "team": "Gd Lagoa",
-                    "played": 11,
+                    "played": 12,
                     "wins": 3,
                     "draws": 1,
-                    "losses": 7,
+                    "losses": 8,
                     "goalsFor": 19,
-                    "goalsAgainst": 46,
+                    "goalsAgainst": 49,
                     "points": 10
                 },
                 {
                     "position": 8,
                     "team": "Ud Messinense",
-                    "played": 10,
+                    "played": 11,
                     "wins": 2,
                     "draws": 2,
-                    "losses": 6,
+                    "losses": 7,
                     "goalsFor": 17,
-                    "goalsAgainst": 49,
+                    "goalsAgainst": 55,
                     "points": 8
                 },
                 {
@@ -2272,13 +2272,13 @@
                 {
                     "position": 10,
                     "team": "Padernense Clube",
-                    "played": 10,
-                    "wins": 0,
+                    "played": 11,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 10,
-                    "goalsFor": 15,
-                    "goalsAgainst": 63,
-                    "points": 0
+                    "goalsFor": 18,
+                    "goalsAgainst": 65,
+                    "points": 3
                 }
             ]
         },
@@ -2336,49 +2336,60 @@
                 {
                     "position": 1,
                     "team": "Fc Ferreiras",
-                    "played": 11,
-                    "wins": 11,
+                    "played": 12,
+                    "wins": 12,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 72,
+                    "goalsFor": 76,
                     "goalsAgainst": 3,
-                    "points": 33
+                    "points": 36
                 },
                 {
                     "position": 2,
                     "team": "Cf Os Armacenenses",
-                    "played": 11,
+                    "played": 12,
                     "wins": 10,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 86,
-                    "goalsAgainst": 7,
+                    "goalsAgainst": 11,
                     "points": 30
                 },
                 {
                     "position": 3,
                     "team": "Aa Belavista",
-                    "played": 11,
-                    "wins": 8,
+                    "played": 12,
+                    "wins": 9,
                     "draws": 0,
                     "losses": 3,
-                    "goalsFor": 45,
+                    "goalsFor": 48,
                     "goalsAgainst": 12,
-                    "points": 24
+                    "points": 27
                 },
                 {
                     "position": 4,
-                    "team": "Guia Fc",
-                    "played": 11,
+                    "team": "Imortal Dc",
+                    "played": 12,
                     "wins": 6,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 5,
-                    "goalsFor": 46,
-                    "goalsAgainst": 30,
-                    "points": 18
+                    "goalsFor": 38,
+                    "goalsAgainst": 48,
+                    "points": 19
                 },
                 {
                     "position": 5,
+                    "team": "Guia Fc",
+                    "played": 12,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 48,
+                    "goalsAgainst": 33,
+                    "points": 18
+                },
+                {
+                    "position": 6,
                     "team": "Silves Fc",
                     "played": 12,
                     "wins": 5,
@@ -2389,36 +2400,25 @@
                     "points": 16
                 },
                 {
-                    "position": 6,
-                    "team": "Imortal Dc",
-                    "played": 11,
-                    "wins": 5,
-                    "draws": 1,
-                    "losses": 5,
-                    "goalsFor": 32,
-                    "goalsAgainst": 48,
-                    "points": 16
-                },
-                {
                     "position": 7,
                     "team": "Gd Lagoa",
-                    "played": 11,
+                    "played": 12,
                     "wins": 3,
                     "draws": 1,
-                    "losses": 7,
+                    "losses": 8,
                     "goalsFor": 19,
-                    "goalsAgainst": 46,
+                    "goalsAgainst": 49,
                     "points": 10
                 },
                 {
                     "position": 8,
                     "team": "Ud Messinense",
-                    "played": 10,
+                    "played": 11,
                     "wins": 2,
                     "draws": 2,
-                    "losses": 6,
+                    "losses": 7,
                     "goalsFor": 17,
-                    "goalsAgainst": 49,
+                    "goalsAgainst": 55,
                     "points": 8
                 },
                 {
@@ -2435,13 +2435,13 @@
                 {
                     "position": 10,
                     "team": "Padernense Clube",
-                    "played": 10,
-                    "wins": 0,
+                    "played": 11,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 10,
-                    "goalsFor": 15,
-                    "goalsAgainst": 63,
-                    "points": 0
+                    "goalsFor": 18,
+                    "goalsAgainst": 65,
+                    "points": 3
                 }
             ]
         },
@@ -2499,49 +2499,60 @@
                 {
                     "position": 1,
                     "team": "Fc Ferreiras",
-                    "played": 11,
-                    "wins": 11,
+                    "played": 12,
+                    "wins": 12,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 72,
+                    "goalsFor": 76,
                     "goalsAgainst": 3,
-                    "points": 33
+                    "points": 36
                 },
                 {
                     "position": 2,
                     "team": "Cf Os Armacenenses",
-                    "played": 11,
+                    "played": 12,
                     "wins": 10,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 86,
-                    "goalsAgainst": 7,
+                    "goalsAgainst": 11,
                     "points": 30
                 },
                 {
                     "position": 3,
                     "team": "Aa Belavista",
-                    "played": 11,
-                    "wins": 8,
+                    "played": 12,
+                    "wins": 9,
                     "draws": 0,
                     "losses": 3,
-                    "goalsFor": 45,
+                    "goalsFor": 48,
                     "goalsAgainst": 12,
-                    "points": 24
+                    "points": 27
                 },
                 {
                     "position": 4,
-                    "team": "Guia Fc",
-                    "played": 11,
+                    "team": "Imortal Dc",
+                    "played": 12,
                     "wins": 6,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 5,
-                    "goalsFor": 46,
-                    "goalsAgainst": 30,
-                    "points": 18
+                    "goalsFor": 38,
+                    "goalsAgainst": 48,
+                    "points": 19
                 },
                 {
                     "position": 5,
+                    "team": "Guia Fc",
+                    "played": 12,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 48,
+                    "goalsAgainst": 33,
+                    "points": 18
+                },
+                {
+                    "position": 6,
                     "team": "Silves Fc",
                     "played": 12,
                     "wins": 5,
@@ -2552,36 +2563,25 @@
                     "points": 16
                 },
                 {
-                    "position": 6,
-                    "team": "Imortal Dc",
-                    "played": 11,
-                    "wins": 5,
-                    "draws": 1,
-                    "losses": 5,
-                    "goalsFor": 32,
-                    "goalsAgainst": 48,
-                    "points": 16
-                },
-                {
                     "position": 7,
                     "team": "Gd Lagoa",
-                    "played": 11,
+                    "played": 12,
                     "wins": 3,
                     "draws": 1,
-                    "losses": 7,
+                    "losses": 8,
                     "goalsFor": 19,
-                    "goalsAgainst": 46,
+                    "goalsAgainst": 49,
                     "points": 10
                 },
                 {
                     "position": 8,
                     "team": "Ud Messinense",
-                    "played": 10,
+                    "played": 11,
                     "wins": 2,
                     "draws": 2,
-                    "losses": 6,
+                    "losses": 7,
                     "goalsFor": 17,
-                    "goalsAgainst": 49,
+                    "goalsAgainst": 55,
                     "points": 8
                 },
                 {
@@ -2598,13 +2598,13 @@
                 {
                     "position": 10,
                     "team": "Padernense Clube",
-                    "played": 10,
-                    "wins": 0,
+                    "played": 11,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 10,
-                    "goalsFor": 15,
-                    "goalsAgainst": 63,
-                    "points": 0
+                    "goalsFor": 18,
+                    "goalsAgainst": 65,
+                    "points": 3
                 }
             ]
         },
@@ -2662,49 +2662,60 @@
                 {
                     "position": 1,
                     "team": "Fc Ferreiras",
-                    "played": 11,
-                    "wins": 11,
+                    "played": 12,
+                    "wins": 12,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 72,
+                    "goalsFor": 76,
                     "goalsAgainst": 3,
-                    "points": 33
+                    "points": 36
                 },
                 {
                     "position": 2,
                     "team": "Cf Os Armacenenses",
-                    "played": 11,
+                    "played": 12,
                     "wins": 10,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 86,
-                    "goalsAgainst": 7,
+                    "goalsAgainst": 11,
                     "points": 30
                 },
                 {
                     "position": 3,
                     "team": "Aa Belavista",
-                    "played": 11,
-                    "wins": 8,
+                    "played": 12,
+                    "wins": 9,
                     "draws": 0,
                     "losses": 3,
-                    "goalsFor": 45,
+                    "goalsFor": 48,
                     "goalsAgainst": 12,
-                    "points": 24
+                    "points": 27
                 },
                 {
                     "position": 4,
-                    "team": "Guia Fc",
-                    "played": 11,
+                    "team": "Imortal Dc",
+                    "played": 12,
                     "wins": 6,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 5,
-                    "goalsFor": 46,
-                    "goalsAgainst": 30,
-                    "points": 18
+                    "goalsFor": 38,
+                    "goalsAgainst": 48,
+                    "points": 19
                 },
                 {
                     "position": 5,
+                    "team": "Guia Fc",
+                    "played": 12,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 48,
+                    "goalsAgainst": 33,
+                    "points": 18
+                },
+                {
+                    "position": 6,
                     "team": "Silves Fc",
                     "played": 12,
                     "wins": 5,
@@ -2715,36 +2726,25 @@
                     "points": 16
                 },
                 {
-                    "position": 6,
-                    "team": "Imortal Dc",
-                    "played": 11,
-                    "wins": 5,
-                    "draws": 1,
-                    "losses": 5,
-                    "goalsFor": 32,
-                    "goalsAgainst": 48,
-                    "points": 16
-                },
-                {
                     "position": 7,
                     "team": "Gd Lagoa",
-                    "played": 11,
+                    "played": 12,
                     "wins": 3,
                     "draws": 1,
-                    "losses": 7,
+                    "losses": 8,
                     "goalsFor": 19,
-                    "goalsAgainst": 46,
+                    "goalsAgainst": 49,
                     "points": 10
                 },
                 {
                     "position": 8,
                     "team": "Ud Messinense",
-                    "played": 10,
+                    "played": 11,
                     "wins": 2,
                     "draws": 2,
-                    "losses": 6,
+                    "losses": 7,
                     "goalsFor": 17,
-                    "goalsAgainst": 49,
+                    "goalsAgainst": 55,
                     "points": 8
                 },
                 {
@@ -2761,13 +2761,13 @@
                 {
                     "position": 10,
                     "team": "Padernense Clube",
-                    "played": 10,
-                    "wins": 0,
+                    "played": 11,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 10,
-                    "goalsFor": 15,
-                    "goalsAgainst": 63,
-                    "points": 0
+                    "goalsFor": 18,
+                    "goalsAgainst": 65,
+                    "points": 3
                 }
             ]
         },
@@ -2825,49 +2825,60 @@
                 {
                     "position": 1,
                     "team": "Fc Ferreiras",
-                    "played": 11,
-                    "wins": 11,
+                    "played": 12,
+                    "wins": 12,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 72,
+                    "goalsFor": 76,
                     "goalsAgainst": 3,
-                    "points": 33
+                    "points": 36
                 },
                 {
                     "position": 2,
                     "team": "Cf Os Armacenenses",
-                    "played": 11,
+                    "played": 12,
                     "wins": 10,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 86,
-                    "goalsAgainst": 7,
+                    "goalsAgainst": 11,
                     "points": 30
                 },
                 {
                     "position": 3,
                     "team": "Aa Belavista",
-                    "played": 11,
-                    "wins": 8,
+                    "played": 12,
+                    "wins": 9,
                     "draws": 0,
                     "losses": 3,
-                    "goalsFor": 45,
+                    "goalsFor": 48,
                     "goalsAgainst": 12,
-                    "points": 24
+                    "points": 27
                 },
                 {
                     "position": 4,
-                    "team": "Guia Fc",
-                    "played": 11,
+                    "team": "Imortal Dc",
+                    "played": 12,
                     "wins": 6,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 5,
-                    "goalsFor": 46,
-                    "goalsAgainst": 30,
-                    "points": 18
+                    "goalsFor": 38,
+                    "goalsAgainst": 48,
+                    "points": 19
                 },
                 {
                     "position": 5,
+                    "team": "Guia Fc",
+                    "played": 12,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 48,
+                    "goalsAgainst": 33,
+                    "points": 18
+                },
+                {
+                    "position": 6,
                     "team": "Silves Fc",
                     "played": 12,
                     "wins": 5,
@@ -2878,36 +2889,25 @@
                     "points": 16
                 },
                 {
-                    "position": 6,
-                    "team": "Imortal Dc",
-                    "played": 11,
-                    "wins": 5,
-                    "draws": 1,
-                    "losses": 5,
-                    "goalsFor": 32,
-                    "goalsAgainst": 48,
-                    "points": 16
-                },
-                {
                     "position": 7,
                     "team": "Gd Lagoa",
-                    "played": 11,
+                    "played": 12,
                     "wins": 3,
                     "draws": 1,
-                    "losses": 7,
+                    "losses": 8,
                     "goalsFor": 19,
-                    "goalsAgainst": 46,
+                    "goalsAgainst": 49,
                     "points": 10
                 },
                 {
                     "position": 8,
                     "team": "Ud Messinense",
-                    "played": 10,
+                    "played": 11,
                     "wins": 2,
                     "draws": 2,
-                    "losses": 6,
+                    "losses": 7,
                     "goalsFor": 17,
-                    "goalsAgainst": 49,
+                    "goalsAgainst": 55,
                     "points": 8
                 },
                 {
@@ -2924,13 +2924,13 @@
                 {
                     "position": 10,
                     "team": "Padernense Clube",
-                    "played": 10,
-                    "wins": 0,
+                    "played": 11,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 10,
-                    "goalsFor": 15,
-                    "goalsAgainst": 63,
-                    "points": 0
+                    "goalsFor": 18,
+                    "goalsAgainst": 65,
+                    "points": 3
                 }
             ]
         }
