@@ -5,15 +5,6 @@
             "fixtureId": "626080",
             "matches": [
                 {
-                    "home": "Silves Fc",
-                    "away": "Js Campinense",
-                    "date": "2 - 1                            \r\n                \r\n                    10 jan",
-                    "time": "",
-                    "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": 2,
-                    "awayScore": 1
-                },
-                {
                     "home": "Cf Os Armacenenses",
                     "away": "Nucleo Sporting C.P. Olhão",
                     "date": "4 - 2                            \r\n                \r\n                    10 jan",
@@ -21,6 +12,15 @@
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 4,
                     "awayScore": 2
+                },
+                {
+                    "home": "Silves Fc",
+                    "away": "Js Campinense",
+                    "date": "2 - 1                            \r\n                \r\n                    10 jan",
+                    "time": "",
+                    "stadium": "Estádio Dr. Francisco Vieira",
+                    "homeScore": 2,
+                    "awayScore": 1
                 },
                 {
                     "home": "Cd Montenegro",
@@ -34,11 +34,11 @@
                 {
                     "home": "Cf Esperança Lagos",
                     "away": "Adt - Ass. Desp. Tavira",
-                    "date": "10 jan",
-                    "time": "12:00",
+                    "date": "7 - 0                            \r\n                \r\n                    10 jan",
+                    "time": "",
                     "stadium": "Estádio Municipal De Lagos N.º 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 7,
+                    "awayScore": 0
                 },
                 {
                     "home": "Sc Farense",
@@ -75,6 +75,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Cf Esperança Lagos",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cd Montenegro",
                     "played": 1,
                     "wins": 1,
@@ -85,18 +96,7 @@
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cf Esperança Lagos",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 0,
                     "wins": 0,
@@ -119,17 +119,6 @@
                 },
                 {
                     "position": 7,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 8,
                     "team": "Js Campinense",
                     "played": 1,
                     "wins": 0,
@@ -140,7 +129,7 @@
                     "points": 0
                 },
                 {
-                    "position": 9,
+                    "position": 8,
                     "team": "Nucleo Sporting C.P. Olhão",
                     "played": 1,
                     "wins": 0,
@@ -151,7 +140,7 @@
                     "points": 0
                 },
                 {
-                    "position": 10,
+                    "position": 9,
                     "team": "Fc Ferreiras",
                     "played": 1,
                     "wins": 0,
@@ -159,6 +148,17 @@
                     "losses": 1,
                     "goalsFor": 1,
                     "goalsAgainst": 5,
+                    "points": 0
+                },
+                {
+                    "position": 10,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 7,
                     "points": 0
                 }
             ]
@@ -238,6 +238,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Cf Esperança Lagos",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cd Montenegro",
                     "played": 1,
                     "wins": 1,
@@ -248,18 +259,7 @@
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cf Esperança Lagos",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 0,
                     "wins": 0,
@@ -282,17 +282,6 @@
                 },
                 {
                     "position": 7,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 8,
                     "team": "Js Campinense",
                     "played": 1,
                     "wins": 0,
@@ -303,7 +292,7 @@
                     "points": 0
                 },
                 {
-                    "position": 9,
+                    "position": 8,
                     "team": "Nucleo Sporting C.P. Olhão",
                     "played": 1,
                     "wins": 0,
@@ -314,7 +303,7 @@
                     "points": 0
                 },
                 {
-                    "position": 10,
+                    "position": 9,
                     "team": "Fc Ferreiras",
                     "played": 1,
                     "wins": 0,
@@ -322,6 +311,17 @@
                     "losses": 1,
                     "goalsFor": 1,
                     "goalsAgainst": 5,
+                    "points": 0
+                },
+                {
+                    "position": 10,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 7,
                     "points": 0
                 }
             ]
@@ -331,11 +331,11 @@
             "fixtureId": "626082",
             "matches": [
                 {
-                    "home": "Cf Esperança Lagos",
-                    "away": "Portimonense Sc",
+                    "home": "Nucleo Sporting C.P. Olhão",
+                    "away": "Adt - Ass. Desp. Tavira",
                     "date": "24 jan",
                     "time": "09:00",
-                    "stadium": "Estádio Municipal De Lagos N.º 2",
+                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -358,11 +358,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Nucleo Sporting C.P. Olhão",
-                    "away": "Adt - Ass. Desp. Tavira",
+                    "home": "Cf Esperança Lagos",
+                    "away": "Portimonense Sc",
                     "date": "24 jan",
                     "time": "09:00",
-                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
+                    "stadium": "Estádio Municipal De Lagos N.º 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -401,6 +401,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Cf Esperança Lagos",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cd Montenegro",
                     "played": 1,
                     "wins": 1,
@@ -411,18 +422,7 @@
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cf Esperança Lagos",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 0,
                     "wins": 0,
@@ -445,17 +445,6 @@
                 },
                 {
                     "position": 7,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 8,
                     "team": "Js Campinense",
                     "played": 1,
                     "wins": 0,
@@ -466,7 +455,7 @@
                     "points": 0
                 },
                 {
-                    "position": 9,
+                    "position": 8,
                     "team": "Nucleo Sporting C.P. Olhão",
                     "played": 1,
                     "wins": 0,
@@ -477,7 +466,7 @@
                     "points": 0
                 },
                 {
-                    "position": 10,
+                    "position": 9,
                     "team": "Fc Ferreiras",
                     "played": 1,
                     "wins": 0,
@@ -485,6 +474,17 @@
                     "losses": 1,
                     "goalsFor": 1,
                     "goalsAgainst": 5,
+                    "points": 0
+                },
+                {
+                    "position": 10,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 7,
                     "points": 0
                 }
             ]
@@ -494,20 +494,11 @@
             "fixtureId": "626083",
             "matches": [
                 {
-                    "home": "Portimonense Sc",
-                    "away": "Cf Os Armacenenses",
+                    "home": "Fc Ferreiras",
+                    "away": "Nucleo Sporting C.P. Olhão",
                     "date": "31 jan",
                     "time": "11:00",
-                    "stadium": "Campo Major David Neto 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Sc Farense",
-                    "away": "Cd Montenegro",
-                    "date": "31 jan",
-                    "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
+                    "stadium": "Estádio Nora Nº 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -521,20 +512,29 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Fc Ferreiras",
-                    "away": "Nucleo Sporting C.P. Olhão",
-                    "date": "31 jan",
-                    "time": "11:00",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Adt - Ass. Desp. Tavira",
                     "away": "Silves Fc",
                     "date": "31 jan",
                     "time": "11:00",
                     "stadium": "Estádio Ginásio Clube Tavira",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Sc Farense",
+                    "away": "Cd Montenegro",
+                    "date": "31 jan",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Portimonense Sc",
+                    "away": "Cf Os Armacenenses",
+                    "date": "31 jan",
+                    "time": "11:00",
+                    "stadium": "Campo Major David Neto 2",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -564,6 +564,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Cf Esperança Lagos",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cd Montenegro",
                     "played": 1,
                     "wins": 1,
@@ -574,18 +585,7 @@
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cf Esperança Lagos",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 0,
                     "wins": 0,
@@ -608,17 +608,6 @@
                 },
                 {
                     "position": 7,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 8,
                     "team": "Js Campinense",
                     "played": 1,
                     "wins": 0,
@@ -629,7 +618,7 @@
                     "points": 0
                 },
                 {
-                    "position": 9,
+                    "position": 8,
                     "team": "Nucleo Sporting C.P. Olhão",
                     "played": 1,
                     "wins": 0,
@@ -640,7 +629,7 @@
                     "points": 0
                 },
                 {
-                    "position": 10,
+                    "position": 9,
                     "team": "Fc Ferreiras",
                     "played": 1,
                     "wins": 0,
@@ -648,6 +637,17 @@
                     "losses": 1,
                     "goalsFor": 1,
                     "goalsAgainst": 5,
+                    "points": 0
+                },
+                {
+                    "position": 10,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 7,
                     "points": 0
                 }
             ]
@@ -657,6 +657,15 @@
             "fixtureId": "626084",
             "matches": [
                 {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Js Campinense",
+                    "date": "7 fev",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Cf Esperança Lagos",
                     "away": "Sc Farense",
                     "date": "7 fev",
@@ -675,11 +684,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Js Campinense",
+                    "home": "Adt - Ass. Desp. Tavira",
+                    "away": "Fc Ferreiras",
                     "date": "7 fev",
                     "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -689,15 +698,6 @@
                     "date": "7 fev",
                     "time": "11:00",
                     "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Adt - Ass. Desp. Tavira",
-                    "away": "Fc Ferreiras",
-                    "date": "7 fev",
-                    "time": "11:00",
-                    "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -727,6 +727,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Cf Esperança Lagos",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cd Montenegro",
                     "played": 1,
                     "wins": 1,
@@ -737,18 +748,7 @@
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cf Esperança Lagos",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 0,
                     "wins": 0,
@@ -771,17 +771,6 @@
                 },
                 {
                     "position": 7,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 8,
                     "team": "Js Campinense",
                     "played": 1,
                     "wins": 0,
@@ -792,7 +781,7 @@
                     "points": 0
                 },
                 {
-                    "position": 9,
+                    "position": 8,
                     "team": "Nucleo Sporting C.P. Olhão",
                     "played": 1,
                     "wins": 0,
@@ -803,7 +792,7 @@
                     "points": 0
                 },
                 {
-                    "position": 10,
+                    "position": 9,
                     "team": "Fc Ferreiras",
                     "played": 1,
                     "wins": 0,
@@ -812,6 +801,17 @@
                     "goalsFor": 1,
                     "goalsAgainst": 5,
                     "points": 0
+                },
+                {
+                    "position": 10,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 7,
+                    "points": 0
                 }
             ]
         },
@@ -819,15 +819,6 @@
             "index": 6,
             "fixtureId": "626085",
             "matches": [
-                {
-                    "home": "Cd Montenegro",
-                    "away": "Cf Esperança Lagos",
-                    "date": "21 fev",
-                    "time": "11:00",
-                    "stadium": "Campo Horta Da Areia",
-                    "homeScore": null,
-                    "awayScore": null
-                },
                 {
                     "home": "Portimonense Sc",
                     "away": "Adt - Ass. Desp. Tavira",
@@ -838,20 +829,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Sc Farense",
-                    "away": "Cf Os Armacenenses",
-                    "date": "21 fev",
-                    "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Js Campinense",
                     "away": "Nucleo Sporting C.P. Olhão",
                     "date": "21 fev",
                     "time": "11:00",
                     "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cd Montenegro",
+                    "away": "Cf Esperança Lagos",
+                    "date": "21 fev",
+                    "time": "11:00",
+                    "stadium": "Campo Horta Da Areia",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -863,6 +854,15 @@
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Sc Farense",
+                    "away": "Cf Os Armacenenses",
+                    "date": "21 fev",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
                 }
             ],
             "classification": [
@@ -890,6 +890,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Cf Esperança Lagos",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cd Montenegro",
                     "played": 1,
                     "wins": 1,
@@ -900,18 +911,7 @@
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cf Esperança Lagos",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 0,
                     "wins": 0,
@@ -934,17 +934,6 @@
                 },
                 {
                     "position": 7,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 8,
                     "team": "Js Campinense",
                     "played": 1,
                     "wins": 0,
@@ -955,7 +944,7 @@
                     "points": 0
                 },
                 {
-                    "position": 9,
+                    "position": 8,
                     "team": "Nucleo Sporting C.P. Olhão",
                     "played": 1,
                     "wins": 0,
@@ -966,7 +955,7 @@
                     "points": 0
                 },
                 {
-                    "position": 10,
+                    "position": 9,
                     "team": "Fc Ferreiras",
                     "played": 1,
                     "wins": 0,
@@ -975,6 +964,17 @@
                     "goalsFor": 1,
                     "goalsAgainst": 5,
                     "points": 0
+                },
+                {
+                    "position": 10,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 7,
+                    "points": 0
                 }
             ]
         },
@@ -982,6 +982,24 @@
             "index": 7,
             "fixtureId": "626086",
             "matches": [
+                {
+                    "home": "Adt - Ass. Desp. Tavira",
+                    "away": "Js Campinense",
+                    "date": "28 fev",
+                    "time": "11:00",
+                    "stadium": "Estádio Ginásio Clube Tavira",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Nucleo Sporting C.P. Olhão",
+                    "away": "Sc Farense",
+                    "date": "28 fev",
+                    "time": "11:00",
+                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
                 {
                     "home": "Silves Fc",
                     "away": "Cf Esperança Lagos",
@@ -1008,24 +1026,6 @@
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": null,
                     "awayScore": null
-                },
-                {
-                    "home": "Nucleo Sporting C.P. Olhão",
-                    "away": "Sc Farense",
-                    "date": "28 fev",
-                    "time": "11:00",
-                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Adt - Ass. Desp. Tavira",
-                    "away": "Js Campinense",
-                    "date": "28 fev",
-                    "time": "11:00",
-                    "stadium": "Estádio Ginásio Clube Tavira",
-                    "homeScore": null,
-                    "awayScore": null
                 }
             ],
             "classification": [
@@ -1053,6 +1053,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Cf Esperança Lagos",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cd Montenegro",
                     "played": 1,
                     "wins": 1,
@@ -1063,18 +1074,7 @@
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cf Esperança Lagos",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 0,
                     "wins": 0,
@@ -1097,17 +1097,6 @@
                 },
                 {
                     "position": 7,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 8,
                     "team": "Js Campinense",
                     "played": 1,
                     "wins": 0,
@@ -1118,7 +1107,7 @@
                     "points": 0
                 },
                 {
-                    "position": 9,
+                    "position": 8,
                     "team": "Nucleo Sporting C.P. Olhão",
                     "played": 1,
                     "wins": 0,
@@ -1129,7 +1118,7 @@
                     "points": 0
                 },
                 {
-                    "position": 10,
+                    "position": 9,
                     "team": "Fc Ferreiras",
                     "played": 1,
                     "wins": 0,
@@ -1138,6 +1127,17 @@
                     "goalsFor": 1,
                     "goalsAgainst": 5,
                     "points": 0
+                },
+                {
+                    "position": 10,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 7,
+                    "points": 0
                 }
             ]
         },
@@ -1145,6 +1145,15 @@
             "index": 8,
             "fixtureId": "626087",
             "matches": [
+                {
+                    "home": "Sc Farense",
+                    "away": "Adt - Ass. Desp. Tavira",
+                    "date": "7 mar",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
                 {
                     "home": "Cd Montenegro",
                     "away": "Nucleo Sporting C.P. Olhão",
@@ -1155,11 +1164,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cf Esperança Lagos",
-                    "away": "Cf Os Armacenenses",
+                    "home": "Js Campinense",
+                    "away": "Fc Ferreiras",
                     "date": "7 mar",
                     "time": "11:00",
-                    "stadium": "Estádio Municipal De Lagos N.º 2",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1173,20 +1182,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Sc Farense",
-                    "away": "Adt - Ass. Desp. Tavira",
+                    "home": "Cf Esperança Lagos",
+                    "away": "Cf Os Armacenenses",
                     "date": "7 mar",
                     "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Js Campinense",
-                    "away": "Fc Ferreiras",
-                    "date": "7 mar",
-                    "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "stadium": "Estádio Municipal De Lagos N.º 2",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1216,6 +1216,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Cf Esperança Lagos",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cd Montenegro",
                     "played": 1,
                     "wins": 1,
@@ -1226,18 +1237,7 @@
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cf Esperança Lagos",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 0,
                     "wins": 0,
@@ -1260,17 +1260,6 @@
                 },
                 {
                     "position": 7,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 8,
                     "team": "Js Campinense",
                     "played": 1,
                     "wins": 0,
@@ -1281,7 +1270,7 @@
                     "points": 0
                 },
                 {
-                    "position": 9,
+                    "position": 8,
                     "team": "Nucleo Sporting C.P. Olhão",
                     "played": 1,
                     "wins": 0,
@@ -1292,7 +1281,7 @@
                     "points": 0
                 },
                 {
-                    "position": 10,
+                    "position": 9,
                     "team": "Fc Ferreiras",
                     "played": 1,
                     "wins": 0,
@@ -1300,6 +1289,17 @@
                     "losses": 1,
                     "goalsFor": 1,
                     "goalsAgainst": 5,
+                    "points": 0
+                },
+                {
+                    "position": 10,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 7,
                     "points": 0
                 }
             ]
@@ -1318,15 +1318,6 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Silves Fc",
-                    "date": "14 mar",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Fc Ferreiras",
                     "away": "Sc Farense",
                     "date": "14 mar",
@@ -1341,6 +1332,15 @@
                     "date": "14 mar",
                     "time": "11:00",
                     "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Silves Fc",
+                    "date": "14 mar",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1379,6 +1379,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Cf Esperança Lagos",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cd Montenegro",
                     "played": 1,
                     "wins": 1,
@@ -1389,18 +1400,7 @@
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cf Esperança Lagos",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 0,
                     "wins": 0,
@@ -1423,17 +1423,6 @@
                 },
                 {
                     "position": 7,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 8,
                     "team": "Js Campinense",
                     "played": 1,
                     "wins": 0,
@@ -1444,7 +1433,7 @@
                     "points": 0
                 },
                 {
-                    "position": 9,
+                    "position": 8,
                     "team": "Nucleo Sporting C.P. Olhão",
                     "played": 1,
                     "wins": 0,
@@ -1455,7 +1444,7 @@
                     "points": 0
                 },
                 {
-                    "position": 10,
+                    "position": 9,
                     "team": "Fc Ferreiras",
                     "played": 1,
                     "wins": 0,
@@ -1463,6 +1452,17 @@
                     "losses": 1,
                     "goalsFor": 1,
                     "goalsAgainst": 5,
+                    "points": 0
+                },
+                {
+                    "position": 10,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 7,
                     "points": 0
                 }
             ]
@@ -1481,6 +1481,15 @@
                     "awayScore": null
                 },
                 {
+                    "home": "Adt - Ass. Desp. Tavira",
+                    "away": "Cf Esperança Lagos",
+                    "date": "21 mar",
+                    "time": "11:00",
+                    "stadium": "Estádio Ginásio Clube Tavira",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Js Campinense",
                     "away": "Silves Fc",
                     "date": "21 mar",
@@ -1504,15 +1513,6 @@
                     "date": "21 mar",
                     "time": "11:00",
                     "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Adt - Ass. Desp. Tavira",
-                    "away": "Cf Esperança Lagos",
-                    "date": "21 mar",
-                    "time": "11:00",
-                    "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1542,6 +1542,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Cf Esperança Lagos",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cd Montenegro",
                     "played": 1,
                     "wins": 1,
@@ -1552,18 +1563,7 @@
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cf Esperança Lagos",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 0,
                     "wins": 0,
@@ -1586,17 +1586,6 @@
                 },
                 {
                     "position": 7,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 8,
                     "team": "Js Campinense",
                     "played": 1,
                     "wins": 0,
@@ -1607,7 +1596,7 @@
                     "points": 0
                 },
                 {
-                    "position": 9,
+                    "position": 8,
                     "team": "Nucleo Sporting C.P. Olhão",
                     "played": 1,
                     "wins": 0,
@@ -1618,7 +1607,7 @@
                     "points": 0
                 },
                 {
-                    "position": 10,
+                    "position": 9,
                     "team": "Fc Ferreiras",
                     "played": 1,
                     "wins": 0,
@@ -1626,6 +1615,17 @@
                     "losses": 1,
                     "goalsFor": 1,
                     "goalsAgainst": 5,
+                    "points": 0
+                },
+                {
+                    "position": 10,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 7,
                     "points": 0
                 }
             ]
@@ -1635,20 +1635,11 @@
             "fixtureId": "626090",
             "matches": [
                 {
-                    "home": "Cd Montenegro",
-                    "away": "Portimonense Sc",
+                    "home": "Cf Os Armacenenses",
+                    "away": "Adt - Ass. Desp. Tavira",
                     "date": "28 mar",
                     "time": "11:00",
-                    "stadium": "Campo Horta Da Areia",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Cf Esperança Lagos",
-                    "away": "Fc Ferreiras",
-                    "date": "28 mar",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal De Lagos N.º 2",
+                    "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1671,11 +1662,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Adt - Ass. Desp. Tavira",
+                    "home": "Cf Esperança Lagos",
+                    "away": "Fc Ferreiras",
                     "date": "28 mar",
                     "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "stadium": "Estádio Municipal De Lagos N.º 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cd Montenegro",
+                    "away": "Portimonense Sc",
+                    "date": "28 mar",
+                    "time": "11:00",
+                    "stadium": "Campo Horta Da Areia",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1705,6 +1705,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Cf Esperança Lagos",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cd Montenegro",
                     "played": 1,
                     "wins": 1,
@@ -1715,18 +1726,7 @@
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cf Esperança Lagos",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 0,
                     "wins": 0,
@@ -1749,17 +1749,6 @@
                 },
                 {
                     "position": 7,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 8,
                     "team": "Js Campinense",
                     "played": 1,
                     "wins": 0,
@@ -1770,7 +1759,7 @@
                     "points": 0
                 },
                 {
-                    "position": 9,
+                    "position": 8,
                     "team": "Nucleo Sporting C.P. Olhão",
                     "played": 1,
                     "wins": 0,
@@ -1781,7 +1770,7 @@
                     "points": 0
                 },
                 {
-                    "position": 10,
+                    "position": 9,
                     "team": "Fc Ferreiras",
                     "played": 1,
                     "wins": 0,
@@ -1789,6 +1778,17 @@
                     "losses": 1,
                     "goalsFor": 1,
                     "goalsAgainst": 5,
+                    "points": 0
+                },
+                {
+                    "position": 10,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 7,
                     "points": 0
                 }
             ]
@@ -1798,6 +1798,15 @@
             "fixtureId": "626091",
             "matches": [
                 {
+                    "home": "Adt - Ass. Desp. Tavira",
+                    "away": "Nucleo Sporting C.P. Olhão",
+                    "date": "11 abr",
+                    "time": "11:00",
+                    "stadium": "Estádio Ginásio Clube Tavira",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Portimonense Sc",
                     "away": "Cf Esperança Lagos",
                     "date": "11 abr",
@@ -1832,15 +1841,6 @@
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": null,
                     "awayScore": null
-                },
-                {
-                    "home": "Adt - Ass. Desp. Tavira",
-                    "away": "Nucleo Sporting C.P. Olhão",
-                    "date": "11 abr",
-                    "time": "11:00",
-                    "stadium": "Estádio Ginásio Clube Tavira",
-                    "homeScore": null,
-                    "awayScore": null
                 }
             ],
             "classification": [
@@ -1868,6 +1868,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Cf Esperança Lagos",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cd Montenegro",
                     "played": 1,
                     "wins": 1,
@@ -1878,18 +1889,7 @@
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cf Esperança Lagos",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 0,
                     "wins": 0,
@@ -1912,17 +1912,6 @@
                 },
                 {
                     "position": 7,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 8,
                     "team": "Js Campinense",
                     "played": 1,
                     "wins": 0,
@@ -1933,7 +1922,7 @@
                     "points": 0
                 },
                 {
-                    "position": 9,
+                    "position": 8,
                     "team": "Nucleo Sporting C.P. Olhão",
                     "played": 1,
                     "wins": 0,
@@ -1944,7 +1933,7 @@
                     "points": 0
                 },
                 {
-                    "position": 10,
+                    "position": 9,
                     "team": "Fc Ferreiras",
                     "played": 1,
                     "wins": 0,
@@ -1952,6 +1941,17 @@
                     "losses": 1,
                     "goalsFor": 1,
                     "goalsAgainst": 5,
+                    "points": 0
+                },
+                {
+                    "position": 10,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 7,
                     "points": 0
                 }
             ]
@@ -1961,11 +1961,11 @@
             "fixtureId": "626092",
             "matches": [
                 {
-                    "home": "Cd Montenegro",
-                    "away": "Sc Farense",
+                    "home": "Silves Fc",
+                    "away": "Adt - Ass. Desp. Tavira",
                     "date": "18 abr",
                     "time": "11:00",
-                    "stadium": "Campo Horta Da Areia",
+                    "stadium": "Estádio Dr. Francisco Vieira",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1979,20 +1979,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Silves Fc",
-                    "away": "Adt - Ass. Desp. Tavira",
+                    "home": "Cd Montenegro",
+                    "away": "Sc Farense",
                     "date": "18 abr",
                     "time": "11:00",
-                    "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Portimonense Sc",
-                    "date": "18 abr",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "stadium": "Campo Horta Da Areia",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2002,6 +1993,15 @@
                     "date": "18 abr",
                     "time": "11:00",
                     "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Portimonense Sc",
+                    "date": "18 abr",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -2031,6 +2031,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Cf Esperança Lagos",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cd Montenegro",
                     "played": 1,
                     "wins": 1,
@@ -2041,18 +2052,7 @@
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cf Esperança Lagos",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 0,
                     "wins": 0,
@@ -2075,17 +2075,6 @@
                 },
                 {
                     "position": 7,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 8,
                     "team": "Js Campinense",
                     "played": 1,
                     "wins": 0,
@@ -2096,7 +2085,7 @@
                     "points": 0
                 },
                 {
-                    "position": 9,
+                    "position": 8,
                     "team": "Nucleo Sporting C.P. Olhão",
                     "played": 1,
                     "wins": 0,
@@ -2107,7 +2096,7 @@
                     "points": 0
                 },
                 {
-                    "position": 10,
+                    "position": 9,
                     "team": "Fc Ferreiras",
                     "played": 1,
                     "wins": 0,
@@ -2115,6 +2104,17 @@
                     "losses": 1,
                     "goalsFor": 1,
                     "goalsAgainst": 5,
+                    "points": 0
+                },
+                {
+                    "position": 10,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 7,
                     "points": 0
                 }
             ]
@@ -2124,11 +2124,11 @@
             "fixtureId": "626093",
             "matches": [
                 {
-                    "home": "Cd Montenegro",
-                    "away": "Silves Fc",
+                    "home": "Fc Ferreiras",
+                    "away": "Adt - Ass. Desp. Tavira",
                     "date": "25 abr",
                     "time": "11:00",
-                    "stadium": "Campo Horta Da Areia",
+                    "stadium": "Estádio Nora Nº 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2151,20 +2151,20 @@
                     "awayScore": null
                 },
                 {
+                    "home": "Cd Montenegro",
+                    "away": "Silves Fc",
+                    "date": "25 abr",
+                    "time": "11:00",
+                    "stadium": "Campo Horta Da Areia",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Js Campinense",
                     "away": "Cf Os Armacenenses",
                     "date": "25 abr",
                     "time": "11:00",
                     "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Fc Ferreiras",
-                    "away": "Adt - Ass. Desp. Tavira",
-                    "date": "25 abr",
-                    "time": "11:00",
-                    "stadium": "Estádio Nora Nº 2",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -2194,6 +2194,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Cf Esperança Lagos",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cd Montenegro",
                     "played": 1,
                     "wins": 1,
@@ -2204,18 +2215,7 @@
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cf Esperança Lagos",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 0,
                     "wins": 0,
@@ -2238,17 +2238,6 @@
                 },
                 {
                     "position": 7,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 8,
                     "team": "Js Campinense",
                     "played": 1,
                     "wins": 0,
@@ -2259,7 +2248,7 @@
                     "points": 0
                 },
                 {
-                    "position": 9,
+                    "position": 8,
                     "team": "Nucleo Sporting C.P. Olhão",
                     "played": 1,
                     "wins": 0,
@@ -2270,7 +2259,7 @@
                     "points": 0
                 },
                 {
-                    "position": 10,
+                    "position": 9,
                     "team": "Fc Ferreiras",
                     "played": 1,
                     "wins": 0,
@@ -2279,6 +2268,17 @@
                     "goalsFor": 1,
                     "goalsAgainst": 5,
                     "points": 0
+                },
+                {
+                    "position": 10,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 7,
+                    "points": 0
                 }
             ]
         },
@@ -2286,6 +2286,24 @@
             "index": 15,
             "fixtureId": "626094",
             "matches": [
+                {
+                    "home": "Nucleo Sporting C.P. Olhão",
+                    "away": "Js Campinense",
+                    "date": "2 mai",
+                    "time": "11:00",
+                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Sc Farense",
+                    "date": "2 mai",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
                 {
                     "home": "Cf Esperança Lagos",
                     "away": "Cd Montenegro",
@@ -2301,24 +2319,6 @@
                     "date": "2 mai",
                     "time": "11:00",
                     "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Sc Farense",
-                    "date": "2 mai",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Nucleo Sporting C.P. Olhão",
-                    "away": "Js Campinense",
-                    "date": "2 mai",
-                    "time": "11:00",
-                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2357,6 +2357,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Cf Esperança Lagos",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cd Montenegro",
                     "played": 1,
                     "wins": 1,
@@ -2367,18 +2378,7 @@
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cf Esperança Lagos",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 0,
                     "wins": 0,
@@ -2401,17 +2401,6 @@
                 },
                 {
                     "position": 7,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 8,
                     "team": "Js Campinense",
                     "played": 1,
                     "wins": 0,
@@ -2422,7 +2411,7 @@
                     "points": 0
                 },
                 {
-                    "position": 9,
+                    "position": 8,
                     "team": "Nucleo Sporting C.P. Olhão",
                     "played": 1,
                     "wins": 0,
@@ -2433,7 +2422,7 @@
                     "points": 0
                 },
                 {
-                    "position": 10,
+                    "position": 9,
                     "team": "Fc Ferreiras",
                     "played": 1,
                     "wins": 0,
@@ -2441,6 +2430,17 @@
                     "losses": 1,
                     "goalsFor": 1,
                     "goalsAgainst": 5,
+                    "points": 0
+                },
+                {
+                    "position": 10,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 7,
                     "points": 0
                 }
             ]
@@ -2450,11 +2450,20 @@
             "fixtureId": "626095",
             "matches": [
                 {
-                    "home": "Cd Montenegro",
-                    "away": "Cf Os Armacenenses",
+                    "home": "Js Campinense",
+                    "away": "Adt - Ass. Desp. Tavira",
                     "date": "9 mai",
                     "time": "11:00",
-                    "stadium": "Campo Horta Da Areia",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Sc Farense",
+                    "away": "Nucleo Sporting C.P. Olhão",
+                    "date": "9 mai",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2477,20 +2486,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Sc Farense",
-                    "away": "Nucleo Sporting C.P. Olhão",
+                    "home": "Cd Montenegro",
+                    "away": "Cf Os Armacenenses",
                     "date": "9 mai",
                     "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Js Campinense",
-                    "away": "Adt - Ass. Desp. Tavira",
-                    "date": "9 mai",
-                    "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "stadium": "Campo Horta Da Areia",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -2520,6 +2520,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Cf Esperança Lagos",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cd Montenegro",
                     "played": 1,
                     "wins": 1,
@@ -2530,18 +2541,7 @@
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cf Esperança Lagos",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 0,
                     "wins": 0,
@@ -2564,17 +2564,6 @@
                 },
                 {
                     "position": 7,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 8,
                     "team": "Js Campinense",
                     "played": 1,
                     "wins": 0,
@@ -2585,7 +2574,7 @@
                     "points": 0
                 },
                 {
-                    "position": 9,
+                    "position": 8,
                     "team": "Nucleo Sporting C.P. Olhão",
                     "played": 1,
                     "wins": 0,
@@ -2596,7 +2585,7 @@
                     "points": 0
                 },
                 {
-                    "position": 10,
+                    "position": 9,
                     "team": "Fc Ferreiras",
                     "played": 1,
                     "wins": 0,
@@ -2604,6 +2593,17 @@
                     "losses": 1,
                     "goalsFor": 1,
                     "goalsAgainst": 5,
+                    "points": 0
+                },
+                {
+                    "position": 10,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 7,
                     "points": 0
                 }
             ]
@@ -2613,11 +2613,20 @@
             "fixtureId": "626096",
             "matches": [
                 {
-                    "home": "Portimonense Sc",
-                    "away": "Silves Fc",
+                    "home": "Fc Ferreiras",
+                    "away": "Js Campinense",
                     "date": "16 mai",
                     "time": "11:00",
-                    "stadium": "Campo Major David Neto 2",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Adt - Ass. Desp. Tavira",
+                    "away": "Sc Farense",
+                    "date": "16 mai",
+                    "time": "11:00",
+                    "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2631,11 +2640,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Fc Ferreiras",
-                    "away": "Js Campinense",
+                    "home": "Portimonense Sc",
+                    "away": "Silves Fc",
                     "date": "16 mai",
                     "time": "11:00",
-                    "stadium": "Estádio Nora Nº 2",
+                    "stadium": "Campo Major David Neto 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2645,15 +2654,6 @@
                     "date": "16 mai",
                     "time": "11:00",
                     "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Adt - Ass. Desp. Tavira",
-                    "away": "Sc Farense",
-                    "date": "16 mai",
-                    "time": "11:00",
-                    "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -2683,6 +2683,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Cf Esperança Lagos",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cd Montenegro",
                     "played": 1,
                     "wins": 1,
@@ -2693,18 +2704,7 @@
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cf Esperança Lagos",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 0,
                     "wins": 0,
@@ -2727,17 +2727,6 @@
                 },
                 {
                     "position": 7,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 8,
                     "team": "Js Campinense",
                     "played": 1,
                     "wins": 0,
@@ -2748,7 +2737,7 @@
                     "points": 0
                 },
                 {
-                    "position": 9,
+                    "position": 8,
                     "team": "Nucleo Sporting C.P. Olhão",
                     "played": 1,
                     "wins": 0,
@@ -2759,7 +2748,7 @@
                     "points": 0
                 },
                 {
-                    "position": 10,
+                    "position": 9,
                     "team": "Fc Ferreiras",
                     "played": 1,
                     "wins": 0,
@@ -2767,6 +2756,17 @@
                     "losses": 1,
                     "goalsFor": 1,
                     "goalsAgainst": 5,
+                    "points": 0
+                },
+                {
+                    "position": 10,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 7,
                     "points": 0
                 }
             ]
@@ -2794,15 +2794,6 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Silves Fc",
-                    "away": "Cf Os Armacenenses",
-                    "date": "23 mai",
-                    "time": "11:00",
-                    "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Sc Farense",
                     "away": "Fc Ferreiras",
                     "date": "23 mai",
@@ -2817,6 +2808,15 @@
                     "date": "23 mai",
                     "time": "11:00",
                     "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Silves Fc",
+                    "away": "Cf Os Armacenenses",
+                    "date": "23 mai",
+                    "time": "11:00",
+                    "stadium": "Estádio Dr. Francisco Vieira",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -2846,6 +2846,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Cf Esperança Lagos",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cd Montenegro",
                     "played": 1,
                     "wins": 1,
@@ -2856,18 +2867,7 @@
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cf Esperança Lagos",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Farense",
                     "played": 0,
                     "wins": 0,
@@ -2890,17 +2890,6 @@
                 },
                 {
                     "position": 7,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
-                    "position": 8,
                     "team": "Js Campinense",
                     "played": 1,
                     "wins": 0,
@@ -2911,7 +2900,7 @@
                     "points": 0
                 },
                 {
-                    "position": 9,
+                    "position": 8,
                     "team": "Nucleo Sporting C.P. Olhão",
                     "played": 1,
                     "wins": 0,
@@ -2922,7 +2911,7 @@
                     "points": 0
                 },
                 {
-                    "position": 10,
+                    "position": 9,
                     "team": "Fc Ferreiras",
                     "played": 1,
                     "wins": 0,
@@ -2930,6 +2919,17 @@
                     "losses": 1,
                     "goalsFor": 1,
                     "goalsAgainst": 5,
+                    "points": 0
+                },
+                {
+                    "position": 10,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 7,
                     "points": 0
                 }
             ]

@@ -220,15 +220,6 @@
             "fixtureId": "616163",
             "matches": [
                 {
-                    "home": "Gd Lagoa",
-                    "away": "Guia Fc",
-                    "date": "29 nov",
-                    "time": "",
-                    "stadium": "Campo De Futebol Sete - Espamol",
-                    "homeScore": 14,
-                    "awayScore": 0
-                },
-                {
                     "home": "Cf Os Armacenenses",
                     "away": "Padernense Clube",
                     "date": "29 nov",
@@ -236,6 +227,15 @@
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 3,
                     "awayScore": 10
+                },
+                {
+                    "home": "Gd Lagoa",
+                    "away": "Guia Fc",
+                    "date": "29 nov",
+                    "time": "",
+                    "stadium": "Campo De Futebol Sete - Espamol",
+                    "homeScore": 14,
+                    "awayScore": 0
                 },
                 {
                     "home": "Ud Messinense",
@@ -392,15 +392,6 @@
             "fixtureId": "616167",
             "matches": [
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Portimonense Sc",
-                    "date": "10 jan",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 1,
-                    "awayScore": 16
-                },
-                {
                     "home": "Ud Messinense",
                     "away": "Gd Lagoa",
                     "date": "10 jan",
@@ -408,6 +399,15 @@
                     "stadium": "Estádio Municipal Messines",
                     "homeScore": 1,
                     "awayScore": 31
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Portimonense Sc",
+                    "date": "10 jan",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 1,
+                    "awayScore": 16
                 },
                 {
                     "home": "Casa Benfica Albufeira",
@@ -435,11 +435,11 @@
             "fixtureId": "616168",
             "matches": [
                 {
-                    "home": "Portimonense Sc",
-                    "away": "Casa Benfica Albufeira",
+                    "home": "Guia Fc",
+                    "away": "Ud Messinense",
                     "date": "17 jan",
                     "time": "10:30",
-                    "stadium": "Campo Major David Neto 2",
+                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -453,11 +453,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Guia Fc",
-                    "away": "Ud Messinense",
+                    "home": "Portimonense Sc",
+                    "away": "Casa Benfica Albufeira",
                     "date": "17 jan",
                     "time": "10:30",
-                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
+                    "stadium": "Campo Major David Neto 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -478,15 +478,6 @@
             "fixtureId": "616169",
             "matches": [
                 {
-                    "home": "Imortal Dc",
-                    "away": "Casa Benfica Albufeira",
-                    "date": "24 jan",
-                    "time": "09:00",
-                    "stadium": "Campo Da Palmeira Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Gd Lagoa",
                     "away": "Portimonense Sc",
                     "date": "24 jan",
@@ -496,11 +487,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Guia Fc",
+                    "home": "Imortal Dc",
+                    "away": "Casa Benfica Albufeira",
                     "date": "24 jan",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "time": "09:00",
+                    "stadium": "Campo Da Palmeira Nº 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -512,6 +503,15 @@
                     "stadium": "Estádio Municipal Messines",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Guia Fc",
+                    "date": "24 jan",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
                 }
             ],
             "classification": []
@@ -521,20 +521,11 @@
             "fixtureId": "616170",
             "matches": [
                 {
-                    "home": "Imortal Dc",
-                    "away": "Portimonense Sc",
+                    "home": "Casa Benfica Albufeira",
+                    "away": "Ud Messinense",
                     "date": "31 jan",
                     "time": "11:00",
-                    "stadium": "Campo Da Palmeira Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Padernense Clube",
-                    "away": "Cf Os Armacenenses",
-                    "date": "31 jan",
-                    "time": "11:00",
-                    "stadium": "Campo Montes Elois",
+                    "stadium": "Estádio Municipal Messines",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -548,11 +539,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Casa Benfica Albufeira",
-                    "away": "Ud Messinense",
+                    "home": "Padernense Clube",
+                    "away": "Cf Os Armacenenses",
                     "date": "31 jan",
                     "time": "11:00",
-                    "stadium": "Estádio Municipal Messines",
+                    "stadium": "Campo Montes Elois",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Imortal Dc",
+                    "away": "Portimonense Sc",
+                    "date": "31 jan",
+                    "time": "11:00",
+                    "stadium": "Campo Da Palmeira Nº 2",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -564,20 +564,20 @@
             "fixtureId": "616171",
             "matches": [
                 {
-                    "home": "Portimonense Sc",
-                    "away": "Guia Fc",
-                    "date": "7 fev",
-                    "time": "11:00",
-                    "stadium": "Campo Major David Neto 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Gd Lagoa",
                     "away": "Padernense Clube",
                     "date": "7 fev",
                     "time": "11:00",
                     "stadium": "Campo De Futebol Sete - Espamol",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Portimonense Sc",
+                    "away": "Guia Fc",
+                    "date": "7 fev",
+                    "time": "11:00",
+                    "stadium": "Campo Major David Neto 2",
                     "homeScore": null,
                     "awayScore": null
                 },
