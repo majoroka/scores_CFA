@@ -43,11 +43,11 @@
                 {
                     "home": "Sc Farense",
                     "away": "Portimonense Sc",
-                    "date": "10 jan",
-                    "time": "17:30",
+                    "date": "1 - 2                            \r\n                \r\n                    10 jan",
+                    "time": "",
                     "stadium": "Campo Horta Da Areia",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 1,
+                    "awayScore": 2
                 }
             ],
             "classification": [
@@ -75,6 +75,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Portimonense Sc",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 2,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Cf Esperança Lagos",
                     "played": 1,
                     "wins": 1,
@@ -85,7 +96,7 @@
                     "points": 3
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Cd Montenegro",
                     "played": 1,
                     "wins": 1,
@@ -96,25 +107,14 @@
                     "points": 3
                 },
                 {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 0,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
-                    "points": 0
-                },
-                {
                     "position": 6,
-                    "team": "Portimonense Sc",
-                    "played": 0,
+                    "team": "Sc Farense",
+                    "played": 1,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 0,
-                    "goalsAgainst": 0,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 2,
                     "points": 0
                 },
                 {
@@ -216,17 +216,6 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cf Esperança Lagos",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 2,
@@ -237,7 +226,29 @@
                     "points": 6
                 },
                 {
+                    "position": 2,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
                     "position": 3,
+                    "team": "Portimonense Sc",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
+                    "position": 4,
                     "team": "Silves Fc",
                     "played": 2,
                     "wins": 1,
@@ -248,7 +259,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Js Campinense",
                     "played": 2,
                     "wins": 1,
@@ -256,17 +267,6 @@
                     "losses": 1,
                     "goalsFor": 2,
                     "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 5,
-                    "team": "Portimonense Sc",
-                    "played": 1,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 2,
-                    "goalsAgainst": 1,
                     "points": 3
                 },
                 {
@@ -294,12 +294,12 @@
                 {
                     "position": 8,
                     "team": "Sc Farense",
-                    "played": 1,
+                    "played": 2,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 1,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
                     "points": 0
                 },
                 {
@@ -379,17 +379,6 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cf Esperança Lagos",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 2,
@@ -400,7 +389,29 @@
                     "points": 6
                 },
                 {
+                    "position": 2,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
                     "position": 3,
+                    "team": "Portimonense Sc",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
+                    "position": 4,
                     "team": "Silves Fc",
                     "played": 2,
                     "wins": 1,
@@ -411,7 +422,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Js Campinense",
                     "played": 2,
                     "wins": 1,
@@ -419,17 +430,6 @@
                     "losses": 1,
                     "goalsFor": 2,
                     "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 5,
-                    "team": "Portimonense Sc",
-                    "played": 1,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 2,
-                    "goalsAgainst": 1,
                     "points": 3
                 },
                 {
@@ -457,12 +457,12 @@
                 {
                     "position": 8,
                     "team": "Sc Farense",
-                    "played": 1,
+                    "played": 2,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 1,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
                     "points": 0
                 },
                 {
@@ -494,24 +494,6 @@
             "fixtureId": "626083",
             "matches": [
                 {
-                    "home": "Fc Ferreiras",
-                    "away": "Nucleo Sporting C.P. Olhão",
-                    "date": "31 jan",
-                    "time": "09:00",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Portimonense Sc",
-                    "away": "Cf Os Armacenenses",
-                    "date": "31 jan",
-                    "time": "10:30",
-                    "stadium": "Campo Major David Neto 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Adt - Ass. Desp. Tavira",
                     "away": "Silves Fc",
                     "date": "31 jan",
@@ -530,10 +512,28 @@
                     "awayScore": null
                 },
                 {
+                    "home": "Fc Ferreiras",
+                    "away": "Nucleo Sporting C.P. Olhão",
+                    "date": "31 jan",
+                    "time": "15:00",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Portimonense Sc",
+                    "away": "Cf Os Armacenenses",
+                    "date": "31 jan",
+                    "time": "15:00",
+                    "stadium": "Campo Major David Neto 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Sc Farense",
                     "away": "Cd Montenegro",
                     "date": "31 jan",
-                    "time": "15:00",
+                    "time": "18:00",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
@@ -542,17 +542,6 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cf Esperança Lagos",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 2,
@@ -563,7 +552,29 @@
                     "points": 6
                 },
                 {
+                    "position": 2,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
                     "position": 3,
+                    "team": "Portimonense Sc",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
+                    "position": 4,
                     "team": "Silves Fc",
                     "played": 2,
                     "wins": 1,
@@ -574,7 +585,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Js Campinense",
                     "played": 2,
                     "wins": 1,
@@ -582,17 +593,6 @@
                     "losses": 1,
                     "goalsFor": 2,
                     "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 5,
-                    "team": "Portimonense Sc",
-                    "played": 1,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 2,
-                    "goalsAgainst": 1,
                     "points": 3
                 },
                 {
@@ -620,12 +620,12 @@
                 {
                     "position": 8,
                     "team": "Sc Farense",
-                    "played": 1,
+                    "played": 2,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 1,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
                     "points": 0
                 },
                 {
@@ -705,17 +705,6 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cf Esperança Lagos",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 2,
@@ -726,7 +715,29 @@
                     "points": 6
                 },
                 {
+                    "position": 2,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
                     "position": 3,
+                    "team": "Portimonense Sc",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
+                    "position": 4,
                     "team": "Silves Fc",
                     "played": 2,
                     "wins": 1,
@@ -737,7 +748,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Js Campinense",
                     "played": 2,
                     "wins": 1,
@@ -745,17 +756,6 @@
                     "losses": 1,
                     "goalsFor": 2,
                     "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 5,
-                    "team": "Portimonense Sc",
-                    "played": 1,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 2,
-                    "goalsAgainst": 1,
                     "points": 3
                 },
                 {
@@ -783,12 +783,12 @@
                 {
                     "position": 8,
                     "team": "Sc Farense",
-                    "played": 1,
+                    "played": 2,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 1,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
                     "points": 0
                 },
                 {
@@ -868,17 +868,6 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cf Esperança Lagos",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 2,
@@ -889,7 +878,29 @@
                     "points": 6
                 },
                 {
+                    "position": 2,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
                     "position": 3,
+                    "team": "Portimonense Sc",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
+                    "position": 4,
                     "team": "Silves Fc",
                     "played": 2,
                     "wins": 1,
@@ -900,7 +911,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Js Campinense",
                     "played": 2,
                     "wins": 1,
@@ -908,17 +919,6 @@
                     "losses": 1,
                     "goalsFor": 2,
                     "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 5,
-                    "team": "Portimonense Sc",
-                    "played": 1,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 2,
-                    "goalsAgainst": 1,
                     "points": 3
                 },
                 {
@@ -946,12 +946,12 @@
                 {
                     "position": 8,
                     "team": "Sc Farense",
-                    "played": 1,
+                    "played": 2,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 1,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
                     "points": 0
                 },
                 {
@@ -1031,17 +1031,6 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cf Esperança Lagos",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 2,
@@ -1052,7 +1041,29 @@
                     "points": 6
                 },
                 {
+                    "position": 2,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
                     "position": 3,
+                    "team": "Portimonense Sc",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
+                    "position": 4,
                     "team": "Silves Fc",
                     "played": 2,
                     "wins": 1,
@@ -1063,7 +1074,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Js Campinense",
                     "played": 2,
                     "wins": 1,
@@ -1071,17 +1082,6 @@
                     "losses": 1,
                     "goalsFor": 2,
                     "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 5,
-                    "team": "Portimonense Sc",
-                    "played": 1,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 2,
-                    "goalsAgainst": 1,
                     "points": 3
                 },
                 {
@@ -1109,12 +1109,12 @@
                 {
                     "position": 8,
                     "team": "Sc Farense",
-                    "played": 1,
+                    "played": 2,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 1,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
                     "points": 0
                 },
                 {
@@ -1194,17 +1194,6 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cf Esperança Lagos",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 2,
@@ -1215,7 +1204,29 @@
                     "points": 6
                 },
                 {
+                    "position": 2,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
                     "position": 3,
+                    "team": "Portimonense Sc",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
+                    "position": 4,
                     "team": "Silves Fc",
                     "played": 2,
                     "wins": 1,
@@ -1226,7 +1237,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Js Campinense",
                     "played": 2,
                     "wins": 1,
@@ -1234,17 +1245,6 @@
                     "losses": 1,
                     "goalsFor": 2,
                     "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 5,
-                    "team": "Portimonense Sc",
-                    "played": 1,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 2,
-                    "goalsAgainst": 1,
                     "points": 3
                 },
                 {
@@ -1272,12 +1272,12 @@
                 {
                     "position": 8,
                     "team": "Sc Farense",
-                    "played": 1,
+                    "played": 2,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 1,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
                     "points": 0
                 },
                 {
@@ -1357,17 +1357,6 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cf Esperança Lagos",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 2,
@@ -1378,7 +1367,29 @@
                     "points": 6
                 },
                 {
+                    "position": 2,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
                     "position": 3,
+                    "team": "Portimonense Sc",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
+                    "position": 4,
                     "team": "Silves Fc",
                     "played": 2,
                     "wins": 1,
@@ -1389,7 +1400,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Js Campinense",
                     "played": 2,
                     "wins": 1,
@@ -1397,17 +1408,6 @@
                     "losses": 1,
                     "goalsFor": 2,
                     "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 5,
-                    "team": "Portimonense Sc",
-                    "played": 1,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 2,
-                    "goalsAgainst": 1,
                     "points": 3
                 },
                 {
@@ -1435,12 +1435,12 @@
                 {
                     "position": 8,
                     "team": "Sc Farense",
-                    "played": 1,
+                    "played": 2,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 1,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
                     "points": 0
                 },
                 {
@@ -1520,17 +1520,6 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cf Esperança Lagos",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 2,
@@ -1541,7 +1530,29 @@
                     "points": 6
                 },
                 {
+                    "position": 2,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
                     "position": 3,
+                    "team": "Portimonense Sc",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
+                    "position": 4,
                     "team": "Silves Fc",
                     "played": 2,
                     "wins": 1,
@@ -1552,7 +1563,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Js Campinense",
                     "played": 2,
                     "wins": 1,
@@ -1560,17 +1571,6 @@
                     "losses": 1,
                     "goalsFor": 2,
                     "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 5,
-                    "team": "Portimonense Sc",
-                    "played": 1,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 2,
-                    "goalsAgainst": 1,
                     "points": 3
                 },
                 {
@@ -1598,12 +1598,12 @@
                 {
                     "position": 8,
                     "team": "Sc Farense",
-                    "played": 1,
+                    "played": 2,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 1,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
                     "points": 0
                 },
                 {
@@ -1683,17 +1683,6 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cf Esperança Lagos",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 2,
@@ -1704,7 +1693,29 @@
                     "points": 6
                 },
                 {
+                    "position": 2,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
                     "position": 3,
+                    "team": "Portimonense Sc",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
+                    "position": 4,
                     "team": "Silves Fc",
                     "played": 2,
                     "wins": 1,
@@ -1715,7 +1726,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Js Campinense",
                     "played": 2,
                     "wins": 1,
@@ -1723,17 +1734,6 @@
                     "losses": 1,
                     "goalsFor": 2,
                     "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 5,
-                    "team": "Portimonense Sc",
-                    "played": 1,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 2,
-                    "goalsAgainst": 1,
                     "points": 3
                 },
                 {
@@ -1761,12 +1761,12 @@
                 {
                     "position": 8,
                     "team": "Sc Farense",
-                    "played": 1,
+                    "played": 2,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 1,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
                     "points": 0
                 },
                 {
@@ -1846,17 +1846,6 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cf Esperança Lagos",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 2,
@@ -1867,7 +1856,29 @@
                     "points": 6
                 },
                 {
+                    "position": 2,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
                     "position": 3,
+                    "team": "Portimonense Sc",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
+                    "position": 4,
                     "team": "Silves Fc",
                     "played": 2,
                     "wins": 1,
@@ -1878,7 +1889,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Js Campinense",
                     "played": 2,
                     "wins": 1,
@@ -1886,17 +1897,6 @@
                     "losses": 1,
                     "goalsFor": 2,
                     "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 5,
-                    "team": "Portimonense Sc",
-                    "played": 1,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 2,
-                    "goalsAgainst": 1,
                     "points": 3
                 },
                 {
@@ -1924,12 +1924,12 @@
                 {
                     "position": 8,
                     "team": "Sc Farense",
-                    "played": 1,
+                    "played": 2,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 1,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
                     "points": 0
                 },
                 {
@@ -2009,17 +2009,6 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cf Esperança Lagos",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 2,
@@ -2030,7 +2019,29 @@
                     "points": 6
                 },
                 {
+                    "position": 2,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
                     "position": 3,
+                    "team": "Portimonense Sc",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
+                    "position": 4,
                     "team": "Silves Fc",
                     "played": 2,
                     "wins": 1,
@@ -2041,7 +2052,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Js Campinense",
                     "played": 2,
                     "wins": 1,
@@ -2049,17 +2060,6 @@
                     "losses": 1,
                     "goalsFor": 2,
                     "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 5,
-                    "team": "Portimonense Sc",
-                    "played": 1,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 2,
-                    "goalsAgainst": 1,
                     "points": 3
                 },
                 {
@@ -2087,12 +2087,12 @@
                 {
                     "position": 8,
                     "team": "Sc Farense",
-                    "played": 1,
+                    "played": 2,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 1,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
                     "points": 0
                 },
                 {
@@ -2172,17 +2172,6 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cf Esperança Lagos",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 2,
@@ -2193,7 +2182,29 @@
                     "points": 6
                 },
                 {
+                    "position": 2,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
                     "position": 3,
+                    "team": "Portimonense Sc",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
+                    "position": 4,
                     "team": "Silves Fc",
                     "played": 2,
                     "wins": 1,
@@ -2204,7 +2215,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Js Campinense",
                     "played": 2,
                     "wins": 1,
@@ -2212,17 +2223,6 @@
                     "losses": 1,
                     "goalsFor": 2,
                     "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 5,
-                    "team": "Portimonense Sc",
-                    "played": 1,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 2,
-                    "goalsAgainst": 1,
                     "points": 3
                 },
                 {
@@ -2250,12 +2250,12 @@
                 {
                     "position": 8,
                     "team": "Sc Farense",
-                    "played": 1,
+                    "played": 2,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 1,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
                     "points": 0
                 },
                 {
@@ -2335,17 +2335,6 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cf Esperança Lagos",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 2,
@@ -2356,7 +2345,29 @@
                     "points": 6
                 },
                 {
+                    "position": 2,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
                     "position": 3,
+                    "team": "Portimonense Sc",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
+                    "position": 4,
                     "team": "Silves Fc",
                     "played": 2,
                     "wins": 1,
@@ -2367,7 +2378,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Js Campinense",
                     "played": 2,
                     "wins": 1,
@@ -2375,17 +2386,6 @@
                     "losses": 1,
                     "goalsFor": 2,
                     "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 5,
-                    "team": "Portimonense Sc",
-                    "played": 1,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 2,
-                    "goalsAgainst": 1,
                     "points": 3
                 },
                 {
@@ -2413,12 +2413,12 @@
                 {
                     "position": 8,
                     "team": "Sc Farense",
-                    "played": 1,
+                    "played": 2,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 1,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
                     "points": 0
                 },
                 {
@@ -2498,17 +2498,6 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cf Esperança Lagos",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 2,
@@ -2519,7 +2508,29 @@
                     "points": 6
                 },
                 {
+                    "position": 2,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
                     "position": 3,
+                    "team": "Portimonense Sc",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
+                    "position": 4,
                     "team": "Silves Fc",
                     "played": 2,
                     "wins": 1,
@@ -2530,7 +2541,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Js Campinense",
                     "played": 2,
                     "wins": 1,
@@ -2538,17 +2549,6 @@
                     "losses": 1,
                     "goalsFor": 2,
                     "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 5,
-                    "team": "Portimonense Sc",
-                    "played": 1,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 2,
-                    "goalsAgainst": 1,
                     "points": 3
                 },
                 {
@@ -2576,12 +2576,12 @@
                 {
                     "position": 8,
                     "team": "Sc Farense",
-                    "played": 1,
+                    "played": 2,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 1,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
                     "points": 0
                 },
                 {
@@ -2661,17 +2661,6 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cf Esperança Lagos",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 2,
@@ -2682,7 +2671,29 @@
                     "points": 6
                 },
                 {
+                    "position": 2,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
                     "position": 3,
+                    "team": "Portimonense Sc",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
+                    "position": 4,
                     "team": "Silves Fc",
                     "played": 2,
                     "wins": 1,
@@ -2693,7 +2704,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Js Campinense",
                     "played": 2,
                     "wins": 1,
@@ -2701,17 +2712,6 @@
                     "losses": 1,
                     "goalsFor": 2,
                     "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 5,
-                    "team": "Portimonense Sc",
-                    "played": 1,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 2,
-                    "goalsAgainst": 1,
                     "points": 3
                 },
                 {
@@ -2739,12 +2739,12 @@
                 {
                     "position": 8,
                     "team": "Sc Farense",
-                    "played": 1,
+                    "played": 2,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 1,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
                     "points": 0
                 },
                 {
@@ -2824,17 +2824,6 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cf Esperança Lagos",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 2,
@@ -2845,7 +2834,29 @@
                     "points": 6
                 },
                 {
+                    "position": 2,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
                     "position": 3,
+                    "team": "Portimonense Sc",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
+                    "position": 4,
                     "team": "Silves Fc",
                     "played": 2,
                     "wins": 1,
@@ -2856,7 +2867,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Js Campinense",
                     "played": 2,
                     "wins": 1,
@@ -2864,17 +2875,6 @@
                     "losses": 1,
                     "goalsFor": 2,
                     "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 5,
-                    "team": "Portimonense Sc",
-                    "played": 1,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 2,
-                    "goalsAgainst": 1,
                     "points": 3
                 },
                 {
@@ -2902,12 +2902,12 @@
                 {
                     "position": 8,
                     "team": "Sc Farense",
-                    "played": 1,
+                    "played": 2,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 0,
-                    "goalsAgainst": 1,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
                     "points": 0
                 },
                 {
