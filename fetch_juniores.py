@@ -11,7 +11,7 @@ COMPETITION_URL = "https://resultados.fpf.pt/Competition/Details?competitionId=2
 OUTPUT_FILE = "data/juniores.json"
 CACHE_DIR = "cache"
 USE_CACHE = False
-TARGET_SERIE_NAME = "SERIE 1"
+TARGET_SERIE_NAME = "APURAMENTO CAMPEÃO"
 
 
 def _normalize(value: str) -> str:

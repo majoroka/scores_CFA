@@ -42,6 +42,7 @@ def main():
         '4 ao cubo ado': ['4 ao cubo ad olhao'],
         'lusitano fc': ['lusitano fc vrsa'],
         'ef monte gordo': ['aef monte gordo 2019'],
+        'ad tavira': ['adt ass desp tavira'],
     }
     for canon, alts in aliases.items():
         if canon in crest_map:
