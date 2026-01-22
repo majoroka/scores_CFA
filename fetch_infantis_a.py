@@ -7,11 +7,12 @@ import urllib.request
 import urllib.error
 import unicodedata
 
-COMPETITION_URL = "https://resultados.fpf.pt/Competition/Details?competitionId=28562&seasonId=105"
+COMPETITION_URL = "https://resultados.fpf.pt/Competition/Details?competitionId=22946&seasonId=102"
 OUTPUT_FILE = "data/infantis-a.json"
 CACHE_DIR = "cache"
 USE_CACHE = False
 TARGET_SERIE_NAME = "SÉRIE 2"
+TARGET_SERIE_ID = "90673"
 
 
 def _normalize(value: str) -> str:
@@ -26,23 +27,43 @@ def _clean_text(value: str) -> str:
     return html.unescape(value).strip()
 
 
-def extract_fixture_ids(html_content: str, target_serie: str):
-    normalized_target = _normalize(target_serie)
-    pattern = re.compile(r'<div class="game-results[^>]*id="htmlSerieId_(\d+)"[^>]*>')
-    for match in re.finditer(pattern, html_content):
-        start = match.start()
-        block_slice = html_content[start:]
-        next_match = re.search(r'<div class="game-results', block_slice[1:])
-        block = block_slice[: next_match.start() + 1] if next_match else block_slice
-        block_normalized = _normalize(html.unescape(block))
-        if normalized_target not in block_normalized:
-            continue
-        fixture_ids = []
-        for fixture_id in re.findall(r'fixtureId=(\d+)', block):
-            if fixture_id not in fixture_ids:
-                fixture_ids.append(fixture_id)
-        if fixture_ids:
+def extract_fixture_ids(html_content: str, target_serie: str = None, target_id: str = None):
+    # Prioridade: Busca direta pelo ID se fornecido
+    if target_id:
+        # Regex relaxado para encontrar a div pelo ID, ignorando ordem de atributos
+        pattern = re.compile(r'<div[^>]*id="htmlSerieId_' + str(target_id) + r'"[^>]*>')
+        match = pattern.search(html_content)
+        if match:
+            start = match.start()
+            block_slice = html_content[start:]
+            # Procura o início do próximo bloco de série para delimitar o fim deste
+            next_match = re.search(r'<div[^>]*id="htmlSerieId_\d+"', block_slice[1:])
+            block = block_slice[:next_match.start() + 1] if next_match else block_slice
+            
+            fixture_ids = []
+            for fixture_id in re.findall(r'fixtureId=(\d+)', block):
+                if fixture_id not in fixture_ids:
+                    fixture_ids.append(fixture_id)
             return fixture_ids
+
+    # Fallback: Busca por nome da série se o ID falhar
+    if target_serie:
+        normalized_target = _normalize(target_serie)
+        pattern = re.compile(r'<div class="game-results[^>]*id="htmlSerieId_(\d+)"[^>]*>')
+        for match in re.finditer(pattern, html_content):
+            start = match.start()
+            block_slice = html_content[start:]
+            next_match = re.search(r'<div class="game-results', block_slice[1:])
+            block = block_slice[: next_match.start() + 1] if next_match else block_slice
+            block_normalized = _normalize(html.unescape(block))
+            if normalized_target in block_normalized:
+                fixture_ids = []
+                for fixture_id in re.findall(r'fixtureId=(\d+)', block):
+                    if fixture_id not in fixture_ids:
+                        fixture_ids.append(fixture_id)
+                if fixture_ids:
+                    return fixture_ids
+
     return []
 
 
@@ -166,7 +187,7 @@ def main():
         print("Erro ao obter página principal da competição.")
         return
 
-    fixture_ids = extract_fixture_ids(main_page, TARGET_SERIE_NAME)
+    fixture_ids = extract_fixture_ids(main_page, TARGET_SERIE_NAME, TARGET_SERIE_ID)
     if not fixture_ids:
         print("Nenhum fixtureId encontrado para a série alvo.")
         return
