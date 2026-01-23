@@ -150,10 +150,11 @@ a {
 }
 
 .details-header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 48px 1fr 48px;
     align-items: center;
-    justify-content: space-between;
-    text-align: left;
+    justify-items: center;
+    text-align: center;
     padding: 2.1rem 0 1.4rem;
     border-bottom: 1px solid var(--border-color);
     position: sticky;
@@ -225,13 +226,8 @@ body::after {
     flex-direction: column;
     align-items: center;
     gap: 0.2rem;
-    /* Puxa o título para o centro do espaço restante */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding-top: 28px;
-    padding-bottom: 4px;
+    grid-column: 2;
+    width: 100%;
 }
 .competition-title h1 {
     margin: 0;
@@ -239,6 +235,14 @@ body::after {
     white-space: nowrap;
     margin-top: -10px;
     text-align: center;
+}
+.competition-title h1 small {
+    display: block;
+    font-weight: 400;
+    font-size: 0.75em;
+    white-space: normal;
+    margin-top: 0.25rem;
+    color: var(--secondary-color);
 }
 .competition-logo { height: 44px; }
 
