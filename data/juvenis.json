@@ -3,86 +3,1850 @@
         {
             "index": 1,
             "fixtureId": "626034",
-            "matches": [],
-            "classification": []
+            "matches": [
+                {
+                    "home": "Fc São Luís",
+                    "away": "Cr Infante Sagres",
+                    "date": "0 - 7                            \r\n                \r\n                    11 jan",
+                    "time": "",
+                    "stadium": "Campo Horta Da Areia",
+                    "homeScore": 0,
+                    "awayScore": 7
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Ud Messinense",
+                    "date": "3 - 1                            \r\n                \r\n                    11 jan",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 3,
+                    "awayScore": 1
+                },
+                {
+                    "home": "Padernense Clube",
+                    "away": "Lgc Moncarapachense",
+                    "date": "10 - 0                            \r\n                \r\n                    11 jan",
+                    "time": "",
+                    "stadium": "Campo Montes Elois",
+                    "homeScore": 10,
+                    "awayScore": 0
+                },
+                {
+                    "home": "Cf Esperança Lagos",
+                    "away": "Ac Salir",
+                    "date": "3 - 3                            \r\n                \r\n                    11 jan",
+                    "time": "",
+                    "stadium": "Estádio Municipal De Lagos N.º 2",
+                    "homeScore": 3,
+                    "awayScore": 3
+                }
+            ],
+            "classification": [
+                {
+                    "position": 1,
+                    "team": "Cf Os Armacenenses",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Cr Infante Sagres",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 3,
+                    "team": "Padernense Clube",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 4,
+                    "team": "Ac Salir",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 3,
+                    "points": 1
+                },
+                {
+                    "position": 5,
+                    "team": "Cf Esperança Lagos",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 3,
+                    "points": 1
+                },
+                {
+                    "position": 6,
+                    "team": "Ud Messinense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 1,
+                    "goalsAgainst": 3,
+                    "points": 0
+                },
+                {
+                    "position": 7,
+                    "team": "Fc São Luís",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 7,
+                    "points": 0
+                },
+                {
+                    "position": 8,
+                    "team": "Lgc Moncarapachense",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 0,
+                    "goalsAgainst": 10,
+                    "points": 0
+                }
+            ]
         },
         {
             "index": 2,
             "fixtureId": "626035",
-            "matches": [],
-            "classification": []
+            "matches": [
+                {
+                    "home": "Lgc Moncarapachense",
+                    "away": "Cf Esperança Lagos",
+                    "date": "2 - 7                            \r\n                \r\n                    18 jan",
+                    "time": "",
+                    "stadium": "Estádio Dr.António Joao Eusebio",
+                    "homeScore": 2,
+                    "awayScore": 7
+                },
+                {
+                    "home": "Ud Messinense",
+                    "away": "Fc São Luís",
+                    "date": "12 - 1                            \r\n                \r\n                    18 jan",
+                    "time": "",
+                    "stadium": "Estádio Municipal Messines",
+                    "homeScore": 12,
+                    "awayScore": 1
+                },
+                {
+                    "home": "Cr Infante Sagres",
+                    "away": "Padernense Clube",
+                    "date": "18 jan",
+                    "time": "11:00",
+                    "stadium": "Complexo Desportivo 1º Maio",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Ac Salir",
+                    "away": "Cf Os Armacenenses",
+                    "date": "18 jan",
+                    "time": "11:00",
+                    "stadium": "Parque Desp. Joaquim António Teixeira",
+                    "homeScore": null,
+                    "awayScore": null
+                }
+            ],
+            "classification": [
+                {
+                    "position": 1,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 5,
+                    "points": 4
+                },
+                {
+                    "position": 2,
+                    "team": "Cf Os Armacenenses",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Ud Messinense",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 3
+                },
+                {
+                    "position": 4,
+                    "team": "Cr Infante Sagres",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 5,
+                    "team": "Padernense Clube",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 6,
+                    "team": "Ac Salir",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 3,
+                    "points": 1
+                },
+                {
+                    "position": 7,
+                    "team": "Lgc Moncarapachense",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 2,
+                    "goalsAgainst": 17,
+                    "points": 0
+                },
+                {
+                    "position": 8,
+                    "team": "Fc São Luís",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 19,
+                    "points": 0
+                }
+            ]
         },
         {
             "index": 3,
             "fixtureId": "626036",
-            "matches": [],
-            "classification": []
+            "matches": [
+                {
+                    "home": "Fc São Luís",
+                    "away": "Padernense Clube",
+                    "date": "25 jan",
+                    "time": "09:00",
+                    "stadium": "Campo Horta Da Areia",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Lgc Moncarapachense",
+                    "date": "25 jan",
+                    "time": "09:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Ud Messinense",
+                    "away": "Ac Salir",
+                    "date": "25 jan",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Messines",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cf Esperança Lagos",
+                    "away": "Cr Infante Sagres",
+                    "date": "25 jan",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal De Lagos N.º 2",
+                    "homeScore": null,
+                    "awayScore": null
+                }
+            ],
+            "classification": [
+                {
+                    "position": 1,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 5,
+                    "points": 4
+                },
+                {
+                    "position": 2,
+                    "team": "Cf Os Armacenenses",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Ud Messinense",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 3
+                },
+                {
+                    "position": 4,
+                    "team": "Cr Infante Sagres",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 5,
+                    "team": "Padernense Clube",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 6,
+                    "team": "Ac Salir",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 3,
+                    "points": 1
+                },
+                {
+                    "position": 7,
+                    "team": "Lgc Moncarapachense",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 2,
+                    "goalsAgainst": 17,
+                    "points": 0
+                },
+                {
+                    "position": 8,
+                    "team": "Fc São Luís",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 19,
+                    "points": 0
+                }
+            ]
         },
         {
             "index": 4,
             "fixtureId": "626037",
-            "matches": [],
-            "classification": []
+            "matches": [
+                {
+                    "home": "Padernense Clube",
+                    "away": "Cf Esperança Lagos",
+                    "date": "1 fev",
+                    "time": "09:00",
+                    "stadium": "Campo Montes Elois",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Lgc Moncarapachense",
+                    "away": "Ud Messinense",
+                    "date": "1 fev",
+                    "time": "11:00",
+                    "stadium": "Estádio Dr.António Joao Eusebio",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cr Infante Sagres",
+                    "away": "Cf Os Armacenenses",
+                    "date": "1 fev",
+                    "time": "11:00",
+                    "stadium": "Complexo Desportivo 1º Maio",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Ac Salir",
+                    "away": "Fc São Luís",
+                    "date": "1 fev",
+                    "time": "11:00",
+                    "stadium": "Parque Desp. Joaquim António Teixeira",
+                    "homeScore": null,
+                    "awayScore": null
+                }
+            ],
+            "classification": [
+                {
+                    "position": 1,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 5,
+                    "points": 4
+                },
+                {
+                    "position": 2,
+                    "team": "Cf Os Armacenenses",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Ud Messinense",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 3
+                },
+                {
+                    "position": 4,
+                    "team": "Cr Infante Sagres",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 5,
+                    "team": "Padernense Clube",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 6,
+                    "team": "Ac Salir",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 3,
+                    "points": 1
+                },
+                {
+                    "position": 7,
+                    "team": "Lgc Moncarapachense",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 2,
+                    "goalsAgainst": 17,
+                    "points": 0
+                },
+                {
+                    "position": 8,
+                    "team": "Fc São Luís",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 19,
+                    "points": 0
+                }
+            ]
         },
         {
             "index": 5,
             "fixtureId": "626038",
-            "matches": [],
-            "classification": []
+            "matches": [
+                {
+                    "home": "Fc São Luís",
+                    "away": "Cf Esperança Lagos",
+                    "date": "8 fev",
+                    "time": "09:00",
+                    "stadium": "Campo Horta Da Areia",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Padernense Clube",
+                    "date": "8 fev",
+                    "time": "09:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Ac Salir",
+                    "away": "Lgc Moncarapachense",
+                    "date": "8 fev",
+                    "time": "11:00",
+                    "stadium": "Parque Desp. Joaquim António Teixeira",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Ud Messinense",
+                    "away": "Cr Infante Sagres",
+                    "date": "8 fev",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Messines",
+                    "homeScore": null,
+                    "awayScore": null
+                }
+            ],
+            "classification": [
+                {
+                    "position": 1,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 5,
+                    "points": 4
+                },
+                {
+                    "position": 2,
+                    "team": "Cf Os Armacenenses",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Ud Messinense",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 3
+                },
+                {
+                    "position": 4,
+                    "team": "Cr Infante Sagres",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 5,
+                    "team": "Padernense Clube",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 6,
+                    "team": "Ac Salir",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 3,
+                    "points": 1
+                },
+                {
+                    "position": 7,
+                    "team": "Lgc Moncarapachense",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 2,
+                    "goalsAgainst": 17,
+                    "points": 0
+                },
+                {
+                    "position": 8,
+                    "team": "Fc São Luís",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 19,
+                    "points": 0
+                }
+            ]
         },
         {
             "index": 6,
             "fixtureId": "626039",
-            "matches": [],
-            "classification": []
+            "matches": [
+                {
+                    "home": "Cf Esperança Lagos",
+                    "away": "Cf Os Armacenenses",
+                    "date": "22 fev",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal De Lagos N.º 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Fc São Luís",
+                    "away": "Lgc Moncarapachense",
+                    "date": "22 fev",
+                    "time": "11:00",
+                    "stadium": "Campo Horta Da Areia",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cr Infante Sagres",
+                    "away": "Ac Salir",
+                    "date": "22 fev",
+                    "time": "11:00",
+                    "stadium": "Complexo Desportivo 1º Maio",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Padernense Clube",
+                    "away": "Ud Messinense",
+                    "date": "22 fev",
+                    "time": "11:00",
+                    "stadium": "Campo Montes Elois",
+                    "homeScore": null,
+                    "awayScore": null
+                }
+            ],
+            "classification": [
+                {
+                    "position": 1,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 5,
+                    "points": 4
+                },
+                {
+                    "position": 2,
+                    "team": "Cf Os Armacenenses",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Ud Messinense",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 3
+                },
+                {
+                    "position": 4,
+                    "team": "Cr Infante Sagres",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 5,
+                    "team": "Padernense Clube",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 6,
+                    "team": "Ac Salir",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 3,
+                    "points": 1
+                },
+                {
+                    "position": 7,
+                    "team": "Lgc Moncarapachense",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 2,
+                    "goalsAgainst": 17,
+                    "points": 0
+                },
+                {
+                    "position": 8,
+                    "team": "Fc São Luís",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 19,
+                    "points": 0
+                }
+            ]
         },
         {
             "index": 7,
             "fixtureId": "626040",
-            "matches": [],
-            "classification": []
+            "matches": [
+                {
+                    "home": "Lgc Moncarapachense",
+                    "away": "Cr Infante Sagres",
+                    "date": "1 mar",
+                    "time": "11:00",
+                    "stadium": "Estádio Dr.António Joao Eusebio",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Fc São Luís",
+                    "date": "1 mar",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Ac Salir",
+                    "away": "Padernense Clube",
+                    "date": "1 mar",
+                    "time": "11:00",
+                    "stadium": "Parque Desp. Joaquim António Teixeira",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Ud Messinense",
+                    "away": "Cf Esperança Lagos",
+                    "date": "1 mar",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Messines",
+                    "homeScore": null,
+                    "awayScore": null
+                }
+            ],
+            "classification": [
+                {
+                    "position": 1,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 5,
+                    "points": 4
+                },
+                {
+                    "position": 2,
+                    "team": "Cf Os Armacenenses",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Ud Messinense",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 3
+                },
+                {
+                    "position": 4,
+                    "team": "Cr Infante Sagres",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 5,
+                    "team": "Padernense Clube",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 6,
+                    "team": "Ac Salir",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 3,
+                    "points": 1
+                },
+                {
+                    "position": 7,
+                    "team": "Lgc Moncarapachense",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 2,
+                    "goalsAgainst": 17,
+                    "points": 0
+                },
+                {
+                    "position": 8,
+                    "team": "Fc São Luís",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 19,
+                    "points": 0
+                }
+            ]
         },
         {
             "index": 8,
             "fixtureId": "626041",
-            "matches": [],
-            "classification": []
+            "matches": [
+                {
+                    "home": "Lgc Moncarapachense",
+                    "away": "Padernense Clube",
+                    "date": "8 mar",
+                    "time": "11:00",
+                    "stadium": "Estádio Dr.António Joao Eusebio",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cr Infante Sagres",
+                    "away": "Fc São Luís",
+                    "date": "8 mar",
+                    "time": "11:00",
+                    "stadium": "Complexo Desportivo 1º Maio",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Ac Salir",
+                    "away": "Cf Esperança Lagos",
+                    "date": "8 mar",
+                    "time": "11:00",
+                    "stadium": "Parque Desp. Joaquim António Teixeira",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Ud Messinense",
+                    "away": "Cf Os Armacenenses",
+                    "date": "8 mar",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Messines",
+                    "homeScore": null,
+                    "awayScore": null
+                }
+            ],
+            "classification": [
+                {
+                    "position": 1,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 5,
+                    "points": 4
+                },
+                {
+                    "position": 2,
+                    "team": "Cf Os Armacenenses",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Ud Messinense",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 3
+                },
+                {
+                    "position": 4,
+                    "team": "Cr Infante Sagres",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 5,
+                    "team": "Padernense Clube",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 6,
+                    "team": "Ac Salir",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 3,
+                    "points": 1
+                },
+                {
+                    "position": 7,
+                    "team": "Lgc Moncarapachense",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 2,
+                    "goalsAgainst": 17,
+                    "points": 0
+                },
+                {
+                    "position": 8,
+                    "team": "Fc São Luís",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 19,
+                    "points": 0
+                }
+            ]
         },
         {
             "index": 9,
             "fixtureId": "626042",
-            "matches": [],
-            "classification": []
+            "matches": [
+                {
+                    "home": "Cf Esperança Lagos",
+                    "away": "Lgc Moncarapachense",
+                    "date": "22 mar",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal De Lagos N.º 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Fc São Luís",
+                    "away": "Ud Messinense",
+                    "date": "22 mar",
+                    "time": "11:00",
+                    "stadium": "Campo Horta Da Areia",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Ac Salir",
+                    "date": "22 mar",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Padernense Clube",
+                    "away": "Cr Infante Sagres",
+                    "date": "22 mar",
+                    "time": "11:00",
+                    "stadium": "Campo Montes Elois",
+                    "homeScore": null,
+                    "awayScore": null
+                }
+            ],
+            "classification": [
+                {
+                    "position": 1,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 5,
+                    "points": 4
+                },
+                {
+                    "position": 2,
+                    "team": "Cf Os Armacenenses",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Ud Messinense",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 3
+                },
+                {
+                    "position": 4,
+                    "team": "Cr Infante Sagres",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 5,
+                    "team": "Padernense Clube",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 6,
+                    "team": "Ac Salir",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 3,
+                    "points": 1
+                },
+                {
+                    "position": 7,
+                    "team": "Lgc Moncarapachense",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 2,
+                    "goalsAgainst": 17,
+                    "points": 0
+                },
+                {
+                    "position": 8,
+                    "team": "Fc São Luís",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 19,
+                    "points": 0
+                }
+            ]
         },
         {
             "index": 10,
             "fixtureId": "626043",
-            "matches": [],
-            "classification": []
+            "matches": [
+                {
+                    "home": "Lgc Moncarapachense",
+                    "away": "Cf Os Armacenenses",
+                    "date": "29 mar",
+                    "time": "11:00",
+                    "stadium": "Estádio Dr.António Joao Eusebio",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cr Infante Sagres",
+                    "away": "Cf Esperança Lagos",
+                    "date": "29 mar",
+                    "time": "11:00",
+                    "stadium": "Complexo Desportivo 1º Maio",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Ac Salir",
+                    "away": "Ud Messinense",
+                    "date": "29 mar",
+                    "time": "11:00",
+                    "stadium": "Parque Desp. Joaquim António Teixeira",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Padernense Clube",
+                    "away": "Fc São Luís",
+                    "date": "29 mar",
+                    "time": "11:00",
+                    "stadium": "Campo Montes Elois",
+                    "homeScore": null,
+                    "awayScore": null
+                }
+            ],
+            "classification": [
+                {
+                    "position": 1,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 5,
+                    "points": 4
+                },
+                {
+                    "position": 2,
+                    "team": "Cf Os Armacenenses",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Ud Messinense",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 3
+                },
+                {
+                    "position": 4,
+                    "team": "Cr Infante Sagres",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 5,
+                    "team": "Padernense Clube",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 6,
+                    "team": "Ac Salir",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 3,
+                    "points": 1
+                },
+                {
+                    "position": 7,
+                    "team": "Lgc Moncarapachense",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 2,
+                    "goalsAgainst": 17,
+                    "points": 0
+                },
+                {
+                    "position": 8,
+                    "team": "Fc São Luís",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 19,
+                    "points": 0
+                }
+            ]
         },
         {
             "index": 11,
             "fixtureId": "626044",
-            "matches": [],
-            "classification": []
+            "matches": [
+                {
+                    "home": "Cf Esperança Lagos",
+                    "away": "Padernense Clube",
+                    "date": "12 abr",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal De Lagos N.º 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Fc São Luís",
+                    "away": "Ac Salir",
+                    "date": "12 abr",
+                    "time": "11:00",
+                    "stadium": "Campo Horta Da Areia",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Cr Infante Sagres",
+                    "date": "12 abr",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Ud Messinense",
+                    "away": "Lgc Moncarapachense",
+                    "date": "12 abr",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Messines",
+                    "homeScore": null,
+                    "awayScore": null
+                }
+            ],
+            "classification": [
+                {
+                    "position": 1,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 5,
+                    "points": 4
+                },
+                {
+                    "position": 2,
+                    "team": "Cf Os Armacenenses",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Ud Messinense",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 3
+                },
+                {
+                    "position": 4,
+                    "team": "Cr Infante Sagres",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 5,
+                    "team": "Padernense Clube",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 6,
+                    "team": "Ac Salir",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 3,
+                    "points": 1
+                },
+                {
+                    "position": 7,
+                    "team": "Lgc Moncarapachense",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 2,
+                    "goalsAgainst": 17,
+                    "points": 0
+                },
+                {
+                    "position": 8,
+                    "team": "Fc São Luís",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 19,
+                    "points": 0
+                }
+            ]
         },
         {
             "index": 12,
             "fixtureId": "626045",
-            "matches": [],
-            "classification": []
+            "matches": [
+                {
+                    "home": "Cf Esperança Lagos",
+                    "away": "Fc São Luís",
+                    "date": "19 abr",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal De Lagos N.º 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Lgc Moncarapachense",
+                    "away": "Ac Salir",
+                    "date": "19 abr",
+                    "time": "11:00",
+                    "stadium": "Estádio Dr.António Joao Eusebio",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cr Infante Sagres",
+                    "away": "Ud Messinense",
+                    "date": "19 abr",
+                    "time": "11:00",
+                    "stadium": "Complexo Desportivo 1º Maio",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Padernense Clube",
+                    "away": "Cf Os Armacenenses",
+                    "date": "19 abr",
+                    "time": "11:00",
+                    "stadium": "Campo Montes Elois",
+                    "homeScore": null,
+                    "awayScore": null
+                }
+            ],
+            "classification": [
+                {
+                    "position": 1,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 5,
+                    "points": 4
+                },
+                {
+                    "position": 2,
+                    "team": "Cf Os Armacenenses",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Ud Messinense",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 3
+                },
+                {
+                    "position": 4,
+                    "team": "Cr Infante Sagres",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 5,
+                    "team": "Padernense Clube",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 6,
+                    "team": "Ac Salir",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 3,
+                    "points": 1
+                },
+                {
+                    "position": 7,
+                    "team": "Lgc Moncarapachense",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 2,
+                    "goalsAgainst": 17,
+                    "points": 0
+                },
+                {
+                    "position": 8,
+                    "team": "Fc São Luís",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 19,
+                    "points": 0
+                }
+            ]
         },
         {
             "index": 13,
             "fixtureId": "626046",
-            "matches": [],
-            "classification": []
+            "matches": [
+                {
+                    "home": "Lgc Moncarapachense",
+                    "away": "Fc São Luís",
+                    "date": "3 mai",
+                    "time": "11:00",
+                    "stadium": "Estádio Dr.António Joao Eusebio",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Cf Esperança Lagos",
+                    "date": "3 mai",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Ac Salir",
+                    "away": "Cr Infante Sagres",
+                    "date": "3 mai",
+                    "time": "11:00",
+                    "stadium": "Parque Desp. Joaquim António Teixeira",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Ud Messinense",
+                    "away": "Padernense Clube",
+                    "date": "3 mai",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Messines",
+                    "homeScore": null,
+                    "awayScore": null
+                }
+            ],
+            "classification": [
+                {
+                    "position": 1,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 5,
+                    "points": 4
+                },
+                {
+                    "position": 2,
+                    "team": "Cf Os Armacenenses",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Ud Messinense",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 3
+                },
+                {
+                    "position": 4,
+                    "team": "Cr Infante Sagres",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 5,
+                    "team": "Padernense Clube",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 6,
+                    "team": "Ac Salir",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 3,
+                    "points": 1
+                },
+                {
+                    "position": 7,
+                    "team": "Lgc Moncarapachense",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 2,
+                    "goalsAgainst": 17,
+                    "points": 0
+                },
+                {
+                    "position": 8,
+                    "team": "Fc São Luís",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 19,
+                    "points": 0
+                }
+            ]
         },
         {
             "index": 14,
             "fixtureId": "626047",
-            "matches": [],
-            "classification": []
+            "matches": [
+                {
+                    "home": "Cf Esperança Lagos",
+                    "away": "Ud Messinense",
+                    "date": "10 mai",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal De Lagos N.º 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Fc São Luís",
+                    "away": "Cf Os Armacenenses",
+                    "date": "10 mai",
+                    "time": "11:00",
+                    "stadium": "Campo Horta Da Areia",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cr Infante Sagres",
+                    "away": "Lgc Moncarapachense",
+                    "date": "10 mai",
+                    "time": "11:00",
+                    "stadium": "Complexo Desportivo 1º Maio",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Padernense Clube",
+                    "away": "Ac Salir",
+                    "date": "10 mai",
+                    "time": "11:00",
+                    "stadium": "Campo Montes Elois",
+                    "homeScore": null,
+                    "awayScore": null
+                }
+            ],
+            "classification": [
+                {
+                    "position": 1,
+                    "team": "Cf Esperança Lagos",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 5,
+                    "points": 4
+                },
+                {
+                    "position": 2,
+                    "team": "Cf Os Armacenenses",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 1,
+                    "points": 3
+                },
+                {
+                    "position": 2,
+                    "team": "Ud Messinense",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 3
+                },
+                {
+                    "position": 4,
+                    "team": "Cr Infante Sagres",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 7,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 5,
+                    "team": "Padernense Clube",
+                    "played": 1,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 0,
+                    "points": 3
+                },
+                {
+                    "position": 6,
+                    "team": "Ac Salir",
+                    "played": 1,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 3,
+                    "goalsAgainst": 3,
+                    "points": 1
+                },
+                {
+                    "position": 7,
+                    "team": "Lgc Moncarapachense",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 2,
+                    "goalsAgainst": 17,
+                    "points": 0
+                },
+                {
+                    "position": 8,
+                    "team": "Fc São Luís",
+                    "played": 2,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 1,
+                    "goalsAgainst": 19,
+                    "points": 0
+                }
+            ]
         }
     ]
 }
