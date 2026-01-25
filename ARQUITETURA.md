@@ -4,6 +4,21 @@
 
 O microsite é constituído por páginas estáticas HTML, uma folha de estilos comum e um único bundle JavaScript (`main.js`). As páginas consomem ficheiros JSON gerados previamente por scrapers Python que extraem informação do portal de resultados da Federação Portuguesa de Futebol (FPF). O resultado é um site sem dependências de build, facilmente servível por qualquer CDN ou pelo GitHub Pages.
 
+```mermaid
+graph TD
+    subgraph "Backend (Data Generation)"
+        A[FPF Website] -->|HTTP Request| B(Python Scrapers);
+        B -->|Writes| C{data/*.json};
+    end
+    subgraph "CI/CD (Automation)"
+        D[GitHub Repo] -- on push/schedule --> E{GitHub Actions};
+        E -->|Runs Scrapers & Commits| D;
+        E -->|Deploys| F[GitHub Pages];
+    end
+    subgraph "Frontend (Browser)"
+        G[User Browser] -->|Loads Page & Data| F;
+    end
+```
 ## Frontend
 
 - Cada página de competição (`seniores.html`, `juniores.html`, etc.) declara em `data-competition` a chave que identifica o ficheiro JSON correspondente (`data/{chave}.json`).
@@ -11,7 +26,7 @@ O microsite é constituído por páginas estáticas HTML, uma folha de estilos c
 - Durante o carregamento (`DOMContentLoaded`), o script obtém `data/{competition}.json` e `data/crests.json`, inicializa o estado com a jornada mais relevante (com base nas datas) e ativa a navegação por hash (`#resultados-jX`, `#classificacao-jX`).
 - A renderização usa sempre os dados locais como primeira fonte para garantir que todas as linhas da classificação aparecem imediatamente (principalmente em mobile). As chamadas em tempo real servem apenas para hidratar resultados recentes assim que a rede o permitir.
 - As jornadas incluem identificadores `fixtureId` que permitem ao frontend tentar hidratar os dados com chamadas diretas ao endpoint `Competition/GetClassificationAndMatchesByFixture` da FPF. Existem três URLs de fallback (domínio direto e dois proxies) para contornar CORS. As respostas são parseadas no browser para atualizar resultados e classificação sem necessidade de recompilar o JSON local.
-- A renderização é responsiva: o layout alterna automaticamente entre versões mobile e desktop, aplicando destaque visual à equipa CF Os Armacenenses e recuperando os emblemas a partir de `crests.json`.
+- A renderização é responsiva: o layout alterna automaticamente entre versões mobile e desktop. O cabeçalho de detalhe utiliza **CSS Grid** para garantir o centramento matemático do título e acomodar subtítulos de várias linhas (fases/séries) sem sobreposição, substituindo o anterior posicionamento absoluto. O destaque visual à equipa CF Os Armacenenses é aplicado via CSS e os emblemas são recuperados de `crests.json`.
 
 ## Dados e Armazenamento
 

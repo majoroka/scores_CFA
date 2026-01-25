@@ -7,7 +7,7 @@ Microsite estático que agrega resultados, classificações e calendários das e
 - Agregação de várias competições numa página principal com navegação dedicada por equipa.
 - Visualização por jornada e tabelas de classificação com destaque automático para o CF Os Armacenenses.
 - Dados locais completos por jornada: mesmo sem hidratação em tempo real, todas as equipas da classificação aparecem imediatamente (essencial para smartphones/tablets).
-- Interface responsiva com alternância de tema claro/escuro e preferência persistida em `localStorage`.
+- Interface responsiva (CSS Grid) com suporte para títulos/subtítulos dinâmicos, alternância de tema claro/escuro e preferência persistida em `localStorage`.
 - Atualização periódica de dados através de scrapers Python que consomem o site oficial da FPF.
 - Manifesto de emblemas para carregamento imediato dos logótipos de cada clube.
 
