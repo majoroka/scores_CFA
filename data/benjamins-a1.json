@@ -143,15 +143,6 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Aef João Moutinho",
-                    "away": "Gd Lagoa",
-                    "date": "19 nov",
-                    "time": "",
-                    "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": 0,
-                    "awayScore": 0
-                },
-                {
                     "home": "Portimonense Sc",
                     "away": "Aa Belavista",
                     "date": "19 nov",
@@ -159,6 +150,15 @@
                     "stadium": "Campo Major David Neto 2",
                     "homeScore": 3,
                     "awayScore": 1
+                },
+                {
+                    "home": "Aef João Moutinho",
+                    "away": "Gd Lagoa",
+                    "date": "19 nov",
+                    "time": "",
+                    "stadium": "Parque Desportivo Municipal Estombar",
+                    "homeScore": 0,
+                    "awayScore": 0
                 },
                 {
                     "home": "Silves Fc",
@@ -410,13 +410,13 @@
                     "awayScore": 1
                 },
                 {
-                    "home": "Aef João Moutinho",
-                    "away": "Cf Os Armacenenses",
+                    "home": "Silves Fc",
+                    "away": "Gd Lagoa",
                     "date": "10 jan",
                     "time": "",
-                    "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": 0,
-                    "awayScore": 6
+                    "stadium": "Estádio Dr. Francisco Vieira",
+                    "homeScore": 4,
+                    "awayScore": 3
                 },
                 {
                     "home": "Mexilhoeira Grande Fc",
@@ -428,13 +428,13 @@
                     "awayScore": 1
                 },
                 {
-                    "home": "Silves Fc",
-                    "away": "Gd Lagoa",
+                    "home": "Aef João Moutinho",
+                    "away": "Cf Os Armacenenses",
                     "date": "10 jan",
                     "time": "",
-                    "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": 4,
-                    "awayScore": 3
+                    "stadium": "Parque Desportivo Municipal Estombar",
+                    "homeScore": 0,
+                    "awayScore": 6
                 }
             ],
             "classification": []
@@ -487,31 +487,31 @@
             "fixtureId": "616155",
             "matches": [
                 {
-                    "home": "Gd Lagoa",
-                    "away": "Cf Os Armacenenses",
-                    "date": "24 jan",
-                    "time": "10:30",
-                    "stadium": "Campo De Futebol Sete - Espamol",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Silves Fc",
                     "away": "Aa Belavista",
                     "date": "24 jan",
-                    "time": "10:30",
+                    "time": "",
                     "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 2,
+                    "awayScore": 4
+                },
+                {
+                    "home": "Gd Lagoa",
+                    "away": "Cf Os Armacenenses",
+                    "date": "24 jan",
+                    "time": "",
+                    "stadium": "Campo De Futebol Sete - Espamol",
+                    "homeScore": 3,
+                    "awayScore": 8
                 },
                 {
                     "home": "Aef João Moutinho",
                     "away": "Gdr Alvorense",
                     "date": "24 jan",
-                    "time": "10:30",
+                    "time": "",
                     "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 1,
+                    "awayScore": 1
                 },
                 {
                     "home": "Portimonense Sc",
@@ -530,15 +530,6 @@
             "fixtureId": "616156",
             "matches": [
                 {
-                    "home": "Mexilhoeira Grande Fc",
-                    "away": "Silves Fc",
-                    "date": "31 jan",
-                    "time": "09:00",
-                    "stadium": "Campo Municipal Mexilhoeira Grande",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Aa Belavista",
                     "away": "Aef João Moutinho",
                     "date": "31 jan",
@@ -548,11 +539,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Gdr Alvorense",
-                    "away": "Gd Lagoa",
+                    "home": "Mexilhoeira Grande Fc",
+                    "away": "Silves Fc",
                     "date": "31 jan",
-                    "time": "10:30",
-                    "stadium": "Estádio Restinga Nº 1",
+                    "time": "09:00",
+                    "stadium": "Campo Municipal Mexilhoeira Grande",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -562,6 +553,15 @@
                     "date": "31 jan",
                     "time": "10:30",
                     "stadium": "Campo Major David Neto 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Gdr Alvorense",
+                    "away": "Gd Lagoa",
+                    "date": "31 jan",
+                    "time": "10:30",
+                    "stadium": "Estádio Restinga Nº 1",
                     "homeScore": null,
                     "awayScore": null
                 }
