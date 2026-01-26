@@ -7,12 +7,12 @@ import urllib.request
 import urllib.error
 import unicodedata
 
-COMPETITION_URL = "https://resultados.fpf.pt/Competition/Details?competitionId=28962&seasonId=105"
+COMPETITION_URL = "https://resultados.fpf.pt/Competition/Details?competitionId=28562&seasonId=105"
 OUTPUT_FILE = "data/feminino-sub15.json"
 CACHE_DIR = "cache"
 USE_CACHE = False
 # Competição só tem uma série, por isso deixamos o alvo vazio
-TARGET_SERIE_NAME = ""
+TARGET_SERIE_NAME = "SÉRIE 4"
 
 
 def _normalize(value: str) -> str:
