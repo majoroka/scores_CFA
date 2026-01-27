@@ -157,25 +157,58 @@
                 {
                     "home": "Ac Salir",
                     "away": "Cf Os Armacenenses",
-                    "date": "18 jan",
-                    "time": "11:00",
+                    "date": "1 - 2                            \r\n                \r\n                    18 jan",
+                    "time": "",
                     "stadium": "Parque Desp. Joaquim António Teixeira",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 1,
+                    "awayScore": 2
                 },
                 {
                     "home": "Cr Infante Sagres",
                     "away": "Padernense Clube",
-                    "date": "18 jan",
-                    "time": "11:00",
+                    "date": "1 - 1                            \r\n                \r\n                    18 jan",
+                    "time": "",
                     "stadium": "Complexo Desportivo 1º Maio",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 1,
+                    "awayScore": 1
                 }
             ],
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cf Os Armacenenses",
+                    "played": 2,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 5,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
+                    "position": 2,
+                    "team": "Cr Infante Sagres",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 8,
+                    "goalsAgainst": 1,
+                    "points": 4
+                },
+                {
+                    "position": 3,
+                    "team": "Padernense Clube",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 1,
+                    "points": 4
+                },
+                {
+                    "position": 4,
                     "team": "Cf Esperança Lagos",
                     "played": 2,
                     "wins": 1,
@@ -186,18 +219,7 @@
                     "points": 4
                 },
                 {
-                    "position": 2,
-                    "team": "Cf Os Armacenenses",
-                    "played": 1,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 3,
-                    "goalsAgainst": 1,
-                    "points": 3
-                },
-                {
-                    "position": 2,
+                    "position": 5,
                     "team": "Ud Messinense",
                     "played": 2,
                     "wins": 1,
@@ -208,36 +230,14 @@
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Cr Infante Sagres",
-                    "played": 1,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 7,
-                    "goalsAgainst": 0,
-                    "points": 3
-                },
-                {
-                    "position": 5,
-                    "team": "Padernense Clube",
-                    "played": 1,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 0,
-                    "points": 3
-                },
-                {
                     "position": 6,
                     "team": "Ac Salir",
-                    "played": 1,
+                    "played": 2,
                     "wins": 0,
                     "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 3,
-                    "goalsAgainst": 3,
+                    "losses": 1,
+                    "goalsFor": 4,
+                    "goalsAgainst": 5,
                     "points": 1
                 },
                 {
@@ -309,16 +309,38 @@
                 {
                     "position": 1,
                     "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 2,
+                    "played": 3,
+                    "wins": 3,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 3,
-                    "points": 6
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 9
                 },
                 {
                     "position": 2,
+                    "team": "Cr Infante Sagres",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 3,
+                    "points": 7
+                },
+                {
+                    "position": 3,
+                    "team": "Padernense Clube",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 20,
+                    "goalsAgainst": 2,
+                    "points": 7
+                },
+                {
+                    "position": 4,
                     "team": "Ud Messinense",
                     "played": 3,
                     "wins": 2,
@@ -326,28 +348,6 @@
                     "losses": 1,
                     "goalsFor": 18,
                     "goalsAgainst": 6,
-                    "points": 6
-                },
-                {
-                    "position": 3,
-                    "team": "Cr Infante Sagres",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 4,
-                    "team": "Padernense Clube",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 19,
-                    "goalsAgainst": 1,
                     "points": 6
                 },
                 {
@@ -364,12 +364,12 @@
                 {
                     "position": 6,
                     "team": "Ac Salir",
-                    "played": 2,
+                    "played": 3,
                     "wins": 0,
                     "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 5,
-                    "goalsAgainst": 8,
+                    "losses": 2,
+                    "goalsFor": 6,
+                    "goalsAgainst": 10,
                     "points": 1
                 },
                 {
@@ -410,6 +410,15 @@
                     "awayScore": null
                 },
                 {
+                    "home": "Ac Salir",
+                    "away": "Fc São Luís",
+                    "date": "1 fev",
+                    "time": "11:00",
+                    "stadium": "Parque Desp. Joaquim António Teixeira",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Cr Infante Sagres",
                     "away": "Cf Os Armacenenses",
                     "date": "1 fev",
@@ -426,31 +435,44 @@
                     "stadium": "Estádio Dr.António Joao Eusebio",
                     "homeScore": null,
                     "awayScore": null
-                },
-                {
-                    "home": "Ac Salir",
-                    "away": "Fc São Luís",
-                    "date": "1 fev",
-                    "time": "11:00",
-                    "stadium": "Parque Desp. Joaquim António Teixeira",
-                    "homeScore": null,
-                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 2,
+                    "played": 3,
+                    "wins": 3,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 3,
-                    "points": 6
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 9
                 },
                 {
                     "position": 2,
+                    "team": "Cr Infante Sagres",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 3,
+                    "points": 7
+                },
+                {
+                    "position": 3,
+                    "team": "Padernense Clube",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 20,
+                    "goalsAgainst": 2,
+                    "points": 7
+                },
+                {
+                    "position": 4,
                     "team": "Ud Messinense",
                     "played": 3,
                     "wins": 2,
@@ -458,28 +480,6 @@
                     "losses": 1,
                     "goalsFor": 18,
                     "goalsAgainst": 6,
-                    "points": 6
-                },
-                {
-                    "position": 3,
-                    "team": "Cr Infante Sagres",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 4,
-                    "team": "Padernense Clube",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 19,
-                    "goalsAgainst": 1,
                     "points": 6
                 },
                 {
@@ -496,12 +496,12 @@
                 {
                     "position": 6,
                     "team": "Ac Salir",
-                    "played": 2,
+                    "played": 3,
                     "wins": 0,
                     "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 5,
-                    "goalsAgainst": 8,
+                    "losses": 2,
+                    "goalsFor": 6,
+                    "goalsAgainst": 10,
                     "points": 1
                 },
                 {
@@ -573,16 +573,38 @@
                 {
                     "position": 1,
                     "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 2,
+                    "played": 3,
+                    "wins": 3,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 3,
-                    "points": 6
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 9
                 },
                 {
                     "position": 2,
+                    "team": "Cr Infante Sagres",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 3,
+                    "points": 7
+                },
+                {
+                    "position": 3,
+                    "team": "Padernense Clube",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 20,
+                    "goalsAgainst": 2,
+                    "points": 7
+                },
+                {
+                    "position": 4,
                     "team": "Ud Messinense",
                     "played": 3,
                     "wins": 2,
@@ -590,28 +612,6 @@
                     "losses": 1,
                     "goalsFor": 18,
                     "goalsAgainst": 6,
-                    "points": 6
-                },
-                {
-                    "position": 3,
-                    "team": "Cr Infante Sagres",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 4,
-                    "team": "Padernense Clube",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 19,
-                    "goalsAgainst": 1,
                     "points": 6
                 },
                 {
@@ -628,12 +628,12 @@
                 {
                     "position": 6,
                     "team": "Ac Salir",
-                    "played": 2,
+                    "played": 3,
                     "wins": 0,
                     "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 5,
-                    "goalsAgainst": 8,
+                    "losses": 2,
+                    "goalsFor": 6,
+                    "goalsAgainst": 10,
                     "points": 1
                 },
                 {
@@ -705,16 +705,38 @@
                 {
                     "position": 1,
                     "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 2,
+                    "played": 3,
+                    "wins": 3,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 3,
-                    "points": 6
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 9
                 },
                 {
                     "position": 2,
+                    "team": "Cr Infante Sagres",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 3,
+                    "points": 7
+                },
+                {
+                    "position": 3,
+                    "team": "Padernense Clube",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 20,
+                    "goalsAgainst": 2,
+                    "points": 7
+                },
+                {
+                    "position": 4,
                     "team": "Ud Messinense",
                     "played": 3,
                     "wins": 2,
@@ -722,28 +744,6 @@
                     "losses": 1,
                     "goalsFor": 18,
                     "goalsAgainst": 6,
-                    "points": 6
-                },
-                {
-                    "position": 3,
-                    "team": "Cr Infante Sagres",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 4,
-                    "team": "Padernense Clube",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 19,
-                    "goalsAgainst": 1,
                     "points": 6
                 },
                 {
@@ -760,12 +760,12 @@
                 {
                     "position": 6,
                     "team": "Ac Salir",
-                    "played": 2,
+                    "played": 3,
                     "wins": 0,
                     "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 5,
-                    "goalsAgainst": 8,
+                    "losses": 2,
+                    "goalsFor": 6,
+                    "goalsAgainst": 10,
                     "points": 1
                 },
                 {
@@ -837,16 +837,38 @@
                 {
                     "position": 1,
                     "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 2,
+                    "played": 3,
+                    "wins": 3,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 3,
-                    "points": 6
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 9
                 },
                 {
                     "position": 2,
+                    "team": "Cr Infante Sagres",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 3,
+                    "points": 7
+                },
+                {
+                    "position": 3,
+                    "team": "Padernense Clube",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 20,
+                    "goalsAgainst": 2,
+                    "points": 7
+                },
+                {
+                    "position": 4,
                     "team": "Ud Messinense",
                     "played": 3,
                     "wins": 2,
@@ -854,28 +876,6 @@
                     "losses": 1,
                     "goalsFor": 18,
                     "goalsAgainst": 6,
-                    "points": 6
-                },
-                {
-                    "position": 3,
-                    "team": "Cr Infante Sagres",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 4,
-                    "team": "Padernense Clube",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 19,
-                    "goalsAgainst": 1,
                     "points": 6
                 },
                 {
@@ -892,12 +892,12 @@
                 {
                     "position": 6,
                     "team": "Ac Salir",
-                    "played": 2,
+                    "played": 3,
                     "wins": 0,
                     "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 5,
-                    "goalsAgainst": 8,
+                    "losses": 2,
+                    "goalsFor": 6,
+                    "goalsAgainst": 10,
                     "points": 1
                 },
                 {
@@ -969,16 +969,38 @@
                 {
                     "position": 1,
                     "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 2,
+                    "played": 3,
+                    "wins": 3,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 3,
-                    "points": 6
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 9
                 },
                 {
                     "position": 2,
+                    "team": "Cr Infante Sagres",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 3,
+                    "points": 7
+                },
+                {
+                    "position": 3,
+                    "team": "Padernense Clube",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 20,
+                    "goalsAgainst": 2,
+                    "points": 7
+                },
+                {
+                    "position": 4,
                     "team": "Ud Messinense",
                     "played": 3,
                     "wins": 2,
@@ -986,28 +1008,6 @@
                     "losses": 1,
                     "goalsFor": 18,
                     "goalsAgainst": 6,
-                    "points": 6
-                },
-                {
-                    "position": 3,
-                    "team": "Cr Infante Sagres",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 4,
-                    "team": "Padernense Clube",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 19,
-                    "goalsAgainst": 1,
                     "points": 6
                 },
                 {
@@ -1024,12 +1024,12 @@
                 {
                     "position": 6,
                     "team": "Ac Salir",
-                    "played": 2,
+                    "played": 3,
                     "wins": 0,
                     "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 5,
-                    "goalsAgainst": 8,
+                    "losses": 2,
+                    "goalsFor": 6,
+                    "goalsAgainst": 10,
                     "points": 1
                 },
                 {
@@ -1101,16 +1101,38 @@
                 {
                     "position": 1,
                     "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 2,
+                    "played": 3,
+                    "wins": 3,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 3,
-                    "points": 6
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 9
                 },
                 {
                     "position": 2,
+                    "team": "Cr Infante Sagres",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 3,
+                    "points": 7
+                },
+                {
+                    "position": 3,
+                    "team": "Padernense Clube",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 20,
+                    "goalsAgainst": 2,
+                    "points": 7
+                },
+                {
+                    "position": 4,
                     "team": "Ud Messinense",
                     "played": 3,
                     "wins": 2,
@@ -1118,28 +1140,6 @@
                     "losses": 1,
                     "goalsFor": 18,
                     "goalsAgainst": 6,
-                    "points": 6
-                },
-                {
-                    "position": 3,
-                    "team": "Cr Infante Sagres",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 4,
-                    "team": "Padernense Clube",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 19,
-                    "goalsAgainst": 1,
                     "points": 6
                 },
                 {
@@ -1156,12 +1156,12 @@
                 {
                     "position": 6,
                     "team": "Ac Salir",
-                    "played": 2,
+                    "played": 3,
                     "wins": 0,
                     "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 5,
-                    "goalsAgainst": 8,
+                    "losses": 2,
+                    "goalsFor": 6,
+                    "goalsAgainst": 10,
                     "points": 1
                 },
                 {
@@ -1233,16 +1233,38 @@
                 {
                     "position": 1,
                     "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 2,
+                    "played": 3,
+                    "wins": 3,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 3,
-                    "points": 6
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 9
                 },
                 {
                     "position": 2,
+                    "team": "Cr Infante Sagres",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 3,
+                    "points": 7
+                },
+                {
+                    "position": 3,
+                    "team": "Padernense Clube",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 20,
+                    "goalsAgainst": 2,
+                    "points": 7
+                },
+                {
+                    "position": 4,
                     "team": "Ud Messinense",
                     "played": 3,
                     "wins": 2,
@@ -1250,28 +1272,6 @@
                     "losses": 1,
                     "goalsFor": 18,
                     "goalsAgainst": 6,
-                    "points": 6
-                },
-                {
-                    "position": 3,
-                    "team": "Cr Infante Sagres",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 4,
-                    "team": "Padernense Clube",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 19,
-                    "goalsAgainst": 1,
                     "points": 6
                 },
                 {
@@ -1288,12 +1288,12 @@
                 {
                     "position": 6,
                     "team": "Ac Salir",
-                    "played": 2,
+                    "played": 3,
                     "wins": 0,
                     "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 5,
-                    "goalsAgainst": 8,
+                    "losses": 2,
+                    "goalsFor": 6,
+                    "goalsAgainst": 10,
                     "points": 1
                 },
                 {
@@ -1365,16 +1365,38 @@
                 {
                     "position": 1,
                     "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 2,
+                    "played": 3,
+                    "wins": 3,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 3,
-                    "points": 6
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 9
                 },
                 {
                     "position": 2,
+                    "team": "Cr Infante Sagres",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 3,
+                    "points": 7
+                },
+                {
+                    "position": 3,
+                    "team": "Padernense Clube",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 20,
+                    "goalsAgainst": 2,
+                    "points": 7
+                },
+                {
+                    "position": 4,
                     "team": "Ud Messinense",
                     "played": 3,
                     "wins": 2,
@@ -1382,28 +1404,6 @@
                     "losses": 1,
                     "goalsFor": 18,
                     "goalsAgainst": 6,
-                    "points": 6
-                },
-                {
-                    "position": 3,
-                    "team": "Cr Infante Sagres",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 4,
-                    "team": "Padernense Clube",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 19,
-                    "goalsAgainst": 1,
                     "points": 6
                 },
                 {
@@ -1420,12 +1420,12 @@
                 {
                     "position": 6,
                     "team": "Ac Salir",
-                    "played": 2,
+                    "played": 3,
                     "wins": 0,
                     "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 5,
-                    "goalsAgainst": 8,
+                    "losses": 2,
+                    "goalsFor": 6,
+                    "goalsAgainst": 10,
                     "points": 1
                 },
                 {
@@ -1497,16 +1497,38 @@
                 {
                     "position": 1,
                     "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 2,
+                    "played": 3,
+                    "wins": 3,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 3,
-                    "points": 6
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 9
                 },
                 {
                     "position": 2,
+                    "team": "Cr Infante Sagres",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 3,
+                    "points": 7
+                },
+                {
+                    "position": 3,
+                    "team": "Padernense Clube",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 20,
+                    "goalsAgainst": 2,
+                    "points": 7
+                },
+                {
+                    "position": 4,
                     "team": "Ud Messinense",
                     "played": 3,
                     "wins": 2,
@@ -1514,28 +1536,6 @@
                     "losses": 1,
                     "goalsFor": 18,
                     "goalsAgainst": 6,
-                    "points": 6
-                },
-                {
-                    "position": 3,
-                    "team": "Cr Infante Sagres",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 4,
-                    "team": "Padernense Clube",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 19,
-                    "goalsAgainst": 1,
                     "points": 6
                 },
                 {
@@ -1552,12 +1552,12 @@
                 {
                     "position": 6,
                     "team": "Ac Salir",
-                    "played": 2,
+                    "played": 3,
                     "wins": 0,
                     "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 5,
-                    "goalsAgainst": 8,
+                    "losses": 2,
+                    "goalsFor": 6,
+                    "goalsAgainst": 10,
                     "points": 1
                 },
                 {
@@ -1629,16 +1629,38 @@
                 {
                     "position": 1,
                     "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 2,
+                    "played": 3,
+                    "wins": 3,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 3,
-                    "points": 6
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 9
                 },
                 {
                     "position": 2,
+                    "team": "Cr Infante Sagres",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 3,
+                    "points": 7
+                },
+                {
+                    "position": 3,
+                    "team": "Padernense Clube",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 20,
+                    "goalsAgainst": 2,
+                    "points": 7
+                },
+                {
+                    "position": 4,
                     "team": "Ud Messinense",
                     "played": 3,
                     "wins": 2,
@@ -1646,28 +1668,6 @@
                     "losses": 1,
                     "goalsFor": 18,
                     "goalsAgainst": 6,
-                    "points": 6
-                },
-                {
-                    "position": 3,
-                    "team": "Cr Infante Sagres",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 4,
-                    "team": "Padernense Clube",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 19,
-                    "goalsAgainst": 1,
                     "points": 6
                 },
                 {
@@ -1684,12 +1684,12 @@
                 {
                     "position": 6,
                     "team": "Ac Salir",
-                    "played": 2,
+                    "played": 3,
                     "wins": 0,
                     "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 5,
-                    "goalsAgainst": 8,
+                    "losses": 2,
+                    "goalsFor": 6,
+                    "goalsAgainst": 10,
                     "points": 1
                 },
                 {
@@ -1761,16 +1761,38 @@
                 {
                     "position": 1,
                     "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 2,
+                    "played": 3,
+                    "wins": 3,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 3,
-                    "points": 6
+                    "goalsFor": 13,
+                    "goalsAgainst": 4,
+                    "points": 9
                 },
                 {
                     "position": 2,
+                    "team": "Cr Infante Sagres",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 11,
+                    "goalsAgainst": 3,
+                    "points": 7
+                },
+                {
+                    "position": 3,
+                    "team": "Padernense Clube",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 20,
+                    "goalsAgainst": 2,
+                    "points": 7
+                },
+                {
+                    "position": 4,
                     "team": "Ud Messinense",
                     "played": 3,
                     "wins": 2,
@@ -1778,28 +1800,6 @@
                     "losses": 1,
                     "goalsFor": 18,
                     "goalsAgainst": 6,
-                    "points": 6
-                },
-                {
-                    "position": 3,
-                    "team": "Cr Infante Sagres",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 10,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 4,
-                    "team": "Padernense Clube",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 19,
-                    "goalsAgainst": 1,
                     "points": 6
                 },
                 {
@@ -1816,12 +1816,12 @@
                 {
                     "position": 6,
                     "team": "Ac Salir",
-                    "played": 2,
+                    "played": 3,
                     "wins": 0,
                     "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 5,
-                    "goalsAgainst": 8,
+                    "losses": 2,
+                    "goalsFor": 6,
+                    "goalsAgainst": 10,
                     "points": 1
                 },
                 {
