@@ -5,6 +5,15 @@
             "fixtureId": "634962",
             "matches": [
                 {
+                    "home": "Sc Olhanense",
+                    "away": "Internacional Ca",
+                    "date": "2 - 1                            \r\n                \r\n                    25 jan",
+                    "time": "",
+                    "stadium": "Estádio José Arcanjo",
+                    "homeScore": 2,
+                    "awayScore": 1
+                },
+                {
                     "home": "Udr Sambrasense",
                     "away": "Cdr Quarteirense",
                     "date": "2 - 0                            \r\n                \r\n                    25 jan",
@@ -14,11 +23,11 @@
                     "awayScore": 0
                 },
                 {
-                    "home": "Sc Olhanense",
-                    "away": "Internacional Ca",
+                    "home": "Gd Lagoa",
+                    "away": "Fc Ferreiras",
                     "date": "2 - 1                            \r\n                \r\n                    25 jan",
                     "time": "",
-                    "stadium": "Estádio José Arcanjo",
+                    "stadium": "Parque Desportivo Municipal Estombar",
                     "homeScore": 2,
                     "awayScore": 1
                 },
@@ -39,15 +48,6 @@
                     "stadium": "Campo Eiras",
                     "homeScore": 0,
                     "awayScore": 2
-                },
-                {
-                    "home": "Gd Lagoa",
-                    "away": "Fc Ferreiras",
-                    "date": "2 - 1                            \r\n                \r\n                    25 jan",
-                    "time": "",
-                    "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": 2,
-                    "awayScore": 1
                 }
             ],
             "classification": [
@@ -177,15 +177,6 @@
                     "awayScore": 2
                 },
                 {
-                    "home": "Internacional Ca",
-                    "away": "Cd Odiáxere",
-                    "date": "2 - 3                            \r\n                \r\n                    1 fev",
-                    "time": "",
-                    "stadium": "Estadio Municipal De Almancil",
-                    "homeScore": 2,
-                    "awayScore": 3
-                },
-                {
                     "home": "Fc Ferreiras",
                     "away": "Cf Os Armacenenses",
                     "date": "2 - 2                            \r\n                \r\n                    1 fev",
@@ -193,6 +184,15 @@
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 2,
                     "awayScore": 2
+                },
+                {
+                    "home": "Internacional Ca",
+                    "away": "Cd Odiáxere",
+                    "date": "2 - 3                            \r\n                \r\n                    1 fev",
+                    "time": "",
+                    "stadium": "Estadio Municipal De Almancil",
+                    "homeScore": 2,
+                    "awayScore": 3
                 },
                 {
                     "home": "Adt - Ass. Desp. Tavira",
@@ -360,20 +360,20 @@
                 {
                     "home": "Cdr Quarteirense",
                     "away": "Adt - Ass. Desp. Tavira",
-                    "date": "8 fev",
-                    "time": "18:00",
+                    "date": "3 - 0                            \r\n                \r\n                    8 fev",
+                    "time": "",
                     "stadium": "Estadio Municipal Quarteira Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 3,
+                    "awayScore": 0
                 },
                 {
                     "home": "Cf Os Armacenenses",
                     "away": "Sc Farense",
-                    "date": "8 fev",
-                    "time": "18:30",
+                    "date": "0 - 0                            \r\n                \r\n                    8 fev",
+                    "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 0,
+                    "awayScore": 0
                 }
             ],
             "classification": [
@@ -390,17 +390,39 @@
                 },
                 {
                     "position": 2,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 2,
+                    "team": "Cdr Quarteirense",
+                    "played": 3,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 4,
                     "goalsAgainst": 2,
                     "points": 6
                 },
                 {
                     "position": 3,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 4,
+                    "goalsAgainst": 5,
+                    "points": 6
+                },
+                {
+                    "position": 4,
+                    "team": "Sc Farense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 2,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Sc Olhanense",
                     "played": 3,
                     "wins": 1,
@@ -411,7 +433,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 6,
                     "team": "Cd Odiáxere",
                     "played": 3,
                     "wins": 1,
@@ -422,18 +444,7 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 6,
+                    "position": 7,
                     "team": "Udr Sambrasense",
                     "played": 2,
                     "wins": 1,
@@ -444,18 +455,18 @@
                     "points": 3
                 },
                 {
-                    "position": 7,
-                    "team": "Cdr Quarteirense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
+                    "position": 8,
+                    "team": "Cf Os Armacenenses",
+                    "played": 3,
+                    "wins": 0,
+                    "draws": 2,
                     "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 2,
-                    "points": 3
+                    "goalsFor": 2,
+                    "goalsAgainst": 3,
+                    "points": 2
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 3,
                     "wins": 0,
@@ -466,7 +477,7 @@
                     "points": 1
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Fc Ferreiras",
                     "played": 2,
                     "wins": 0,
@@ -474,17 +485,6 @@
                     "losses": 1,
                     "goalsFor": 3,
                     "goalsAgainst": 4,
-                    "points": 1
-                },
-                {
-                    "position": 10,
-                    "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
                     "points": 1
                 }
             ]
@@ -553,17 +553,39 @@
                 },
                 {
                     "position": 2,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 2,
+                    "team": "Cdr Quarteirense",
+                    "played": 3,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 4,
                     "goalsAgainst": 2,
                     "points": 6
                 },
                 {
                     "position": 3,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 4,
+                    "goalsAgainst": 5,
+                    "points": 6
+                },
+                {
+                    "position": 4,
+                    "team": "Sc Farense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 2,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Sc Olhanense",
                     "played": 3,
                     "wins": 1,
@@ -574,7 +596,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 6,
                     "team": "Cd Odiáxere",
                     "played": 3,
                     "wins": 1,
@@ -585,18 +607,7 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 6,
+                    "position": 7,
                     "team": "Udr Sambrasense",
                     "played": 2,
                     "wins": 1,
@@ -607,18 +618,18 @@
                     "points": 3
                 },
                 {
-                    "position": 7,
-                    "team": "Cdr Quarteirense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
+                    "position": 8,
+                    "team": "Cf Os Armacenenses",
+                    "played": 3,
+                    "wins": 0,
+                    "draws": 2,
                     "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 2,
-                    "points": 3
+                    "goalsFor": 2,
+                    "goalsAgainst": 3,
+                    "points": 2
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 3,
                     "wins": 0,
@@ -629,7 +640,7 @@
                     "points": 1
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Fc Ferreiras",
                     "played": 2,
                     "wins": 0,
@@ -637,17 +648,6 @@
                     "losses": 1,
                     "goalsFor": 3,
                     "goalsAgainst": 4,
-                    "points": 1
-                },
-                {
-                    "position": 10,
-                    "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
                     "points": 1
                 }
             ]
@@ -657,20 +657,20 @@
             "fixtureId": "634966",
             "matches": [
                 {
-                    "home": "Udr Sambrasense",
-                    "away": "Internacional Ca",
-                    "date": "22 fev",
-                    "time": "15:00",
-                    "stadium": "Campo Sousa Uva",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Sc Olhanense",
                     "away": "Gd Lagoa",
                     "date": "22 fev",
                     "time": "15:00",
                     "stadium": "Estádio José Arcanjo",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Udr Sambrasense",
+                    "away": "Internacional Ca",
+                    "date": "22 fev",
+                    "time": "15:00",
+                    "stadium": "Campo Sousa Uva",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -684,20 +684,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Cd Odiáxere",
-                    "date": "22 fev",
-                    "time": "16:30",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Cdr Quarteirense",
                     "away": "Sc Farense",
                     "date": "22 fev",
                     "time": "16:30",
                     "stadium": "Estadio Municipal Quarteira Nº 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Cd Odiáxere",
+                    "date": "22 fev",
+                    "time": "16:30",
+                    "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -716,17 +716,39 @@
                 },
                 {
                     "position": 2,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 2,
+                    "team": "Cdr Quarteirense",
+                    "played": 3,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 4,
                     "goalsAgainst": 2,
                     "points": 6
                 },
                 {
                     "position": 3,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 4,
+                    "goalsAgainst": 5,
+                    "points": 6
+                },
+                {
+                    "position": 4,
+                    "team": "Sc Farense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 2,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Sc Olhanense",
                     "played": 3,
                     "wins": 1,
@@ -737,7 +759,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 6,
                     "team": "Cd Odiáxere",
                     "played": 3,
                     "wins": 1,
@@ -748,18 +770,7 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 6,
+                    "position": 7,
                     "team": "Udr Sambrasense",
                     "played": 2,
                     "wins": 1,
@@ -770,18 +781,18 @@
                     "points": 3
                 },
                 {
-                    "position": 7,
-                    "team": "Cdr Quarteirense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
+                    "position": 8,
+                    "team": "Cf Os Armacenenses",
+                    "played": 3,
+                    "wins": 0,
+                    "draws": 2,
                     "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 2,
-                    "points": 3
+                    "goalsFor": 2,
+                    "goalsAgainst": 3,
+                    "points": 2
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 3,
                     "wins": 0,
@@ -792,7 +803,7 @@
                     "points": 1
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Fc Ferreiras",
                     "played": 2,
                     "wins": 0,
@@ -800,17 +811,6 @@
                     "losses": 1,
                     "goalsFor": 3,
                     "goalsAgainst": 4,
-                    "points": 1
-                },
-                {
-                    "position": 10,
-                    "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
                     "points": 1
                 }
             ]
@@ -820,20 +820,11 @@
             "fixtureId": "634967",
             "matches": [
                 {
-                    "home": "Cd Odiáxere",
-                    "away": "Udr Sambrasense",
+                    "home": "Sc Farense",
+                    "away": "Adt - Ass. Desp. Tavira",
                     "date": "1 mar",
                     "time": "15:00",
-                    "stadium": "Campo Eiras",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Internacional Ca",
-                    "away": "Cdr Quarteirense",
-                    "date": "1 mar",
-                    "time": "15:00",
-                    "stadium": "Estadio Municipal De Almancil",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -843,15 +834,6 @@
                     "date": "1 mar",
                     "time": "15:00",
                     "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Sc Farense",
-                    "away": "Adt - Ass. Desp. Tavira",
-                    "date": "1 mar",
-                    "time": "15:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -863,6 +845,24 @@
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Cd Odiáxere",
+                    "away": "Udr Sambrasense",
+                    "date": "1 mar",
+                    "time": "15:00",
+                    "stadium": "Campo Eiras",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Internacional Ca",
+                    "away": "Cdr Quarteirense",
+                    "date": "1 mar",
+                    "time": "15:00",
+                    "stadium": "Estadio Municipal De Almancil",
+                    "homeScore": null,
+                    "awayScore": null
                 }
             ],
             "classification": [
@@ -879,17 +879,39 @@
                 },
                 {
                     "position": 2,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 2,
+                    "team": "Cdr Quarteirense",
+                    "played": 3,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 4,
                     "goalsAgainst": 2,
                     "points": 6
                 },
                 {
                     "position": 3,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 4,
+                    "goalsAgainst": 5,
+                    "points": 6
+                },
+                {
+                    "position": 4,
+                    "team": "Sc Farense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 2,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Sc Olhanense",
                     "played": 3,
                     "wins": 1,
@@ -900,7 +922,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 6,
                     "team": "Cd Odiáxere",
                     "played": 3,
                     "wins": 1,
@@ -911,18 +933,7 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 6,
+                    "position": 7,
                     "team": "Udr Sambrasense",
                     "played": 2,
                     "wins": 1,
@@ -933,18 +944,18 @@
                     "points": 3
                 },
                 {
-                    "position": 7,
-                    "team": "Cdr Quarteirense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
+                    "position": 8,
+                    "team": "Cf Os Armacenenses",
+                    "played": 3,
+                    "wins": 0,
+                    "draws": 2,
                     "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 2,
-                    "points": 3
+                    "goalsFor": 2,
+                    "goalsAgainst": 3,
+                    "points": 2
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 3,
                     "wins": 0,
@@ -955,7 +966,7 @@
                     "points": 1
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Fc Ferreiras",
                     "played": 2,
                     "wins": 0,
@@ -963,17 +974,6 @@
                     "losses": 1,
                     "goalsFor": 3,
                     "goalsAgainst": 4,
-                    "points": 1
-                },
-                {
-                    "position": 10,
-                    "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
                     "points": 1
                 }
             ]
@@ -983,11 +983,11 @@
             "fixtureId": "634968",
             "matches": [
                 {
-                    "home": "Adt - Ass. Desp. Tavira",
-                    "away": "Internacional Ca",
+                    "home": "Sc Olhanense",
+                    "away": "Cf Os Armacenenses",
                     "date": "8 mar",
                     "time": "15:00",
-                    "stadium": "Estádio Ginásio Clube Tavira",
+                    "stadium": "Estádio José Arcanjo",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1010,20 +1010,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Sc Olhanense",
-                    "away": "Cf Os Armacenenses",
-                    "date": "8 mar",
-                    "time": "15:00",
-                    "stadium": "Estádio José Arcanjo",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Fc Ferreiras",
                     "away": "Sc Farense",
                     "date": "8 mar",
                     "time": "15:00",
                     "stadium": "Estádio Nora Nº 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Adt - Ass. Desp. Tavira",
+                    "away": "Internacional Ca",
+                    "date": "8 mar",
+                    "time": "15:00",
+                    "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1042,17 +1042,39 @@
                 },
                 {
                     "position": 2,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 2,
+                    "team": "Cdr Quarteirense",
+                    "played": 3,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 4,
                     "goalsAgainst": 2,
                     "points": 6
                 },
                 {
                     "position": 3,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 4,
+                    "goalsAgainst": 5,
+                    "points": 6
+                },
+                {
+                    "position": 4,
+                    "team": "Sc Farense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 2,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Sc Olhanense",
                     "played": 3,
                     "wins": 1,
@@ -1063,7 +1085,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 6,
                     "team": "Cd Odiáxere",
                     "played": 3,
                     "wins": 1,
@@ -1074,18 +1096,7 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 6,
+                    "position": 7,
                     "team": "Udr Sambrasense",
                     "played": 2,
                     "wins": 1,
@@ -1096,18 +1107,18 @@
                     "points": 3
                 },
                 {
-                    "position": 7,
-                    "team": "Cdr Quarteirense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
+                    "position": 8,
+                    "team": "Cf Os Armacenenses",
+                    "played": 3,
+                    "wins": 0,
+                    "draws": 2,
                     "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 2,
-                    "points": 3
+                    "goalsFor": 2,
+                    "goalsAgainst": 3,
+                    "points": 2
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 3,
                     "wins": 0,
@@ -1118,7 +1129,7 @@
                     "points": 1
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Fc Ferreiras",
                     "played": 2,
                     "wins": 0,
@@ -1126,17 +1137,6 @@
                     "losses": 1,
                     "goalsFor": 3,
                     "goalsAgainst": 4,
-                    "points": 1
-                },
-                {
-                    "position": 10,
-                    "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
                     "points": 1
                 }
             ]
@@ -1146,11 +1146,11 @@
             "fixtureId": "634969",
             "matches": [
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Udr Sambrasense",
+                    "home": "Sc Olhanense",
+                    "away": "Sc Farense",
                     "date": "15 mar",
                     "time": "15:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "stadium": "Estádio José Arcanjo",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1164,20 +1164,20 @@
                     "awayScore": null
                 },
                 {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Udr Sambrasense",
+                    "date": "15 mar",
+                    "time": "15:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Cd Odiáxere",
                     "away": "Adt - Ass. Desp. Tavira",
                     "date": "15 mar",
                     "time": "15:00",
                     "stadium": "Campo Eiras",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Sc Olhanense",
-                    "away": "Sc Farense",
-                    "date": "15 mar",
-                    "time": "15:00",
-                    "stadium": "Estádio José Arcanjo",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1205,17 +1205,39 @@
                 },
                 {
                     "position": 2,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 2,
+                    "team": "Cdr Quarteirense",
+                    "played": 3,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 4,
                     "goalsAgainst": 2,
                     "points": 6
                 },
                 {
                     "position": 3,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 4,
+                    "goalsAgainst": 5,
+                    "points": 6
+                },
+                {
+                    "position": 4,
+                    "team": "Sc Farense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 2,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Sc Olhanense",
                     "played": 3,
                     "wins": 1,
@@ -1226,7 +1248,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 6,
                     "team": "Cd Odiáxere",
                     "played": 3,
                     "wins": 1,
@@ -1237,18 +1259,7 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 6,
+                    "position": 7,
                     "team": "Udr Sambrasense",
                     "played": 2,
                     "wins": 1,
@@ -1259,18 +1270,18 @@
                     "points": 3
                 },
                 {
-                    "position": 7,
-                    "team": "Cdr Quarteirense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
+                    "position": 8,
+                    "team": "Cf Os Armacenenses",
+                    "played": 3,
+                    "wins": 0,
+                    "draws": 2,
                     "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 2,
-                    "points": 3
+                    "goalsFor": 2,
+                    "goalsAgainst": 3,
+                    "points": 2
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 3,
                     "wins": 0,
@@ -1281,7 +1292,7 @@
                     "points": 1
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Fc Ferreiras",
                     "played": 2,
                     "wins": 0,
@@ -1289,17 +1300,6 @@
                     "losses": 1,
                     "goalsFor": 3,
                     "goalsAgainst": 4,
-                    "points": 1
-                },
-                {
-                    "position": 10,
-                    "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
                     "points": 1
                 }
             ]
@@ -1318,20 +1318,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Adt - Ass. Desp. Tavira",
-                    "away": "Gd Lagoa",
+                    "home": "Udr Sambrasense",
+                    "away": "Sc Olhanense",
                     "date": "22 mar",
                     "time": "15:00",
-                    "stadium": "Estádio Ginásio Clube Tavira",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Fc Ferreiras",
-                    "away": "Cd Odiáxere",
-                    "date": "22 mar",
-                    "time": "15:00",
-                    "stadium": "Estádio Nora Nº 2",
+                    "stadium": "Campo Sousa Uva",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1345,11 +1336,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Udr Sambrasense",
-                    "away": "Sc Olhanense",
+                    "home": "Fc Ferreiras",
+                    "away": "Cd Odiáxere",
                     "date": "22 mar",
                     "time": "15:00",
-                    "stadium": "Campo Sousa Uva",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Adt - Ass. Desp. Tavira",
+                    "away": "Gd Lagoa",
+                    "date": "22 mar",
+                    "time": "15:00",
+                    "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1368,17 +1368,39 @@
                 },
                 {
                     "position": 2,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 2,
+                    "team": "Cdr Quarteirense",
+                    "played": 3,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 4,
                     "goalsAgainst": 2,
                     "points": 6
                 },
                 {
                     "position": 3,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 4,
+                    "goalsAgainst": 5,
+                    "points": 6
+                },
+                {
+                    "position": 4,
+                    "team": "Sc Farense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 2,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Sc Olhanense",
                     "played": 3,
                     "wins": 1,
@@ -1389,7 +1411,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 6,
                     "team": "Cd Odiáxere",
                     "played": 3,
                     "wins": 1,
@@ -1400,18 +1422,7 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 6,
+                    "position": 7,
                     "team": "Udr Sambrasense",
                     "played": 2,
                     "wins": 1,
@@ -1422,18 +1433,18 @@
                     "points": 3
                 },
                 {
-                    "position": 7,
-                    "team": "Cdr Quarteirense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
+                    "position": 8,
+                    "team": "Cf Os Armacenenses",
+                    "played": 3,
+                    "wins": 0,
+                    "draws": 2,
                     "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 2,
-                    "points": 3
+                    "goalsFor": 2,
+                    "goalsAgainst": 3,
+                    "points": 2
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 3,
                     "wins": 0,
@@ -1444,7 +1455,7 @@
                     "points": 1
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Fc Ferreiras",
                     "played": 2,
                     "wins": 0,
@@ -1453,17 +1464,6 @@
                     "goalsFor": 3,
                     "goalsAgainst": 4,
                     "points": 1
-                },
-                {
-                    "position": 10,
-                    "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
-                    "points": 1
                 }
             ]
         },
@@ -1471,15 +1471,6 @@
             "index": 10,
             "fixtureId": "634971",
             "matches": [
-                {
-                    "home": "Fc Ferreiras",
-                    "away": "Gd Lagoa",
-                    "date": "29 mar",
-                    "time": "15:00",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
                 {
                     "home": "Sc Farense",
                     "away": "Cd Odiáxere",
@@ -1490,11 +1481,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Adt - Ass. Desp. Tavira",
-                    "away": "Cf Os Armacenenses",
+                    "home": "Cdr Quarteirense",
+                    "away": "Udr Sambrasense",
                     "date": "29 mar",
                     "time": "15:00",
-                    "stadium": "Estádio Ginásio Clube Tavira",
+                    "stadium": "Estadio Municipal Quarteira Nº 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Gd Lagoa",
+                    "date": "29 mar",
+                    "time": "15:00",
+                    "stadium": "Estádio Nora Nº 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1508,11 +1508,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cdr Quarteirense",
-                    "away": "Udr Sambrasense",
+                    "home": "Adt - Ass. Desp. Tavira",
+                    "away": "Cf Os Armacenenses",
                     "date": "29 mar",
                     "time": "15:00",
-                    "stadium": "Estadio Municipal Quarteira Nº 2",
+                    "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1531,17 +1531,39 @@
                 },
                 {
                     "position": 2,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 2,
+                    "team": "Cdr Quarteirense",
+                    "played": 3,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 4,
                     "goalsAgainst": 2,
                     "points": 6
                 },
                 {
                     "position": 3,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 4,
+                    "goalsAgainst": 5,
+                    "points": 6
+                },
+                {
+                    "position": 4,
+                    "team": "Sc Farense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 2,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Sc Olhanense",
                     "played": 3,
                     "wins": 1,
@@ -1552,7 +1574,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 6,
                     "team": "Cd Odiáxere",
                     "played": 3,
                     "wins": 1,
@@ -1563,18 +1585,7 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 6,
+                    "position": 7,
                     "team": "Udr Sambrasense",
                     "played": 2,
                     "wins": 1,
@@ -1585,18 +1596,18 @@
                     "points": 3
                 },
                 {
-                    "position": 7,
-                    "team": "Cdr Quarteirense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
+                    "position": 8,
+                    "team": "Cf Os Armacenenses",
+                    "played": 3,
+                    "wins": 0,
+                    "draws": 2,
                     "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 2,
-                    "points": 3
+                    "goalsFor": 2,
+                    "goalsAgainst": 3,
+                    "points": 2
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 3,
                     "wins": 0,
@@ -1607,7 +1618,7 @@
                     "points": 1
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Fc Ferreiras",
                     "played": 2,
                     "wins": 0,
@@ -1615,17 +1626,6 @@
                     "losses": 1,
                     "goalsFor": 3,
                     "goalsAgainst": 4,
-                    "points": 1
-                },
-                {
-                    "position": 10,
-                    "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
                     "points": 1
                 }
             ]
@@ -1644,15 +1644,6 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cd Odiáxere",
-                    "away": "Internacional Ca",
-                    "date": "12 abr",
-                    "time": "15:00",
-                    "stadium": "Campo Eiras",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Udr Sambrasense",
                     "away": "Adt - Ass. Desp. Tavira",
                     "date": "12 abr",
@@ -1678,165 +1669,11 @@
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": null,
                     "awayScore": null
-                }
-            ],
-            "classification": [
-                {
-                    "position": 1,
-                    "team": "Gd Lagoa",
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 4,
-                    "goalsAgainst": 2,
-                    "points": 7
-                },
-                {
-                    "position": 2,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 4,
-                    "goalsAgainst": 2,
-                    "points": 6
-                },
-                {
-                    "position": 3,
-                    "team": "Sc Olhanense",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 3,
-                    "points": 4
-                },
-                {
-                    "position": 4,
-                    "team": "Cd Odiáxere",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 4,
-                    "goalsAgainst": 5,
-                    "points": 4
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 6,
-                    "team": "Udr Sambrasense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 4,
-                    "goalsAgainst": 3,
-                    "points": 3
-                },
-                {
-                    "position": 7,
-                    "team": "Cdr Quarteirense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 8,
-                    "team": "Internacional Ca",
-                    "played": 3,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 3,
-                    "goalsAgainst": 5,
-                    "points": 1
-                },
-                {
-                    "position": 9,
-                    "team": "Fc Ferreiras",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 4,
-                    "points": 1
-                },
-                {
-                    "position": 10,
-                    "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
-                    "points": 1
-                }
-            ]
-        },
-        {
-            "index": 12,
-            "fixtureId": "634973",
-            "matches": [
-                {
-                    "home": "Fc Ferreiras",
-                    "away": "Udr Sambrasense",
-                    "date": "19 abr",
-                    "time": "15:00",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Adt - Ass. Desp. Tavira",
-                    "away": "Cdr Quarteirense",
-                    "date": "19 abr",
-                    "time": "15:00",
-                    "stadium": "Estádio Ginásio Clube Tavira",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Internacional Ca",
-                    "away": "Gd Lagoa",
-                    "date": "19 abr",
-                    "time": "15:00",
-                    "stadium": "Estadio Municipal De Almancil",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Sc Farense",
-                    "away": "Cf Os Armacenenses",
-                    "date": "19 abr",
-                    "time": "15:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
                 },
                 {
                     "home": "Cd Odiáxere",
-                    "away": "Sc Olhanense",
-                    "date": "19 abr",
+                    "away": "Internacional Ca",
+                    "date": "12 abr",
                     "time": "15:00",
                     "stadium": "Campo Eiras",
                     "homeScore": null,
@@ -1857,17 +1694,39 @@
                 },
                 {
                     "position": 2,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 2,
+                    "team": "Cdr Quarteirense",
+                    "played": 3,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 4,
                     "goalsAgainst": 2,
                     "points": 6
                 },
                 {
                     "position": 3,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 4,
+                    "goalsAgainst": 5,
+                    "points": 6
+                },
+                {
+                    "position": 4,
+                    "team": "Sc Farense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 2,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Sc Olhanense",
                     "played": 3,
                     "wins": 1,
@@ -1878,7 +1737,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 6,
                     "team": "Cd Odiáxere",
                     "played": 3,
                     "wins": 1,
@@ -1889,18 +1748,7 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 6,
+                    "position": 7,
                     "team": "Udr Sambrasense",
                     "played": 2,
                     "wins": 1,
@@ -1911,18 +1759,18 @@
                     "points": 3
                 },
                 {
-                    "position": 7,
-                    "team": "Cdr Quarteirense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
+                    "position": 8,
+                    "team": "Cf Os Armacenenses",
+                    "played": 3,
+                    "wins": 0,
+                    "draws": 2,
                     "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 2,
-                    "points": 3
+                    "goalsFor": 2,
+                    "goalsAgainst": 3,
+                    "points": 2
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 3,
                     "wins": 0,
@@ -1933,7 +1781,7 @@
                     "points": 1
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Fc Ferreiras",
                     "played": 2,
                     "wins": 0,
@@ -1942,16 +1790,168 @@
                     "goalsFor": 3,
                     "goalsAgainst": 4,
                     "points": 1
+                }
+            ]
+        },
+        {
+            "index": 12,
+            "fixtureId": "634973",
+            "matches": [
+                {
+                    "home": "Sc Farense",
+                    "away": "Cf Os Armacenenses",
+                    "date": "19 abr",
+                    "time": "15:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Udr Sambrasense",
+                    "date": "19 abr",
+                    "time": "15:00",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cd Odiáxere",
+                    "away": "Sc Olhanense",
+                    "date": "19 abr",
+                    "time": "15:00",
+                    "stadium": "Campo Eiras",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Internacional Ca",
+                    "away": "Gd Lagoa",
+                    "date": "19 abr",
+                    "time": "15:00",
+                    "stadium": "Estadio Municipal De Almancil",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Adt - Ass. Desp. Tavira",
+                    "away": "Cdr Quarteirense",
+                    "date": "19 abr",
+                    "time": "15:00",
+                    "stadium": "Estádio Ginásio Clube Tavira",
+                    "homeScore": null,
+                    "awayScore": null
+                }
+            ],
+            "classification": [
+                {
+                    "position": 1,
+                    "team": "Gd Lagoa",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 4,
+                    "goalsAgainst": 2,
+                    "points": 7
+                },
+                {
+                    "position": 2,
+                    "team": "Cdr Quarteirense",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 4,
+                    "goalsAgainst": 2,
+                    "points": 6
+                },
+                {
+                    "position": 3,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 4,
+                    "goalsAgainst": 5,
+                    "points": 6
+                },
+                {
+                    "position": 4,
+                    "team": "Sc Farense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 2,
+                    "points": 4
+                },
+                {
+                    "position": 5,
+                    "team": "Sc Olhanense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 3,
+                    "points": 4
+                },
+                {
+                    "position": 6,
+                    "team": "Cd Odiáxere",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 4,
+                    "goalsAgainst": 5,
+                    "points": 4
+                },
+                {
+                    "position": 7,
+                    "team": "Udr Sambrasense",
+                    "played": 2,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 4,
+                    "goalsAgainst": 3,
+                    "points": 3
+                },
+                {
+                    "position": 8,
+                    "team": "Cf Os Armacenenses",
+                    "played": 3,
+                    "wins": 0,
+                    "draws": 2,
+                    "losses": 1,
+                    "goalsFor": 2,
+                    "goalsAgainst": 3,
+                    "points": 2
+                },
+                {
+                    "position": 9,
+                    "team": "Internacional Ca",
+                    "played": 3,
+                    "wins": 0,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 3,
+                    "goalsAgainst": 5,
+                    "points": 1
                 },
                 {
                     "position": 10,
-                    "team": "Cf Os Armacenenses",
+                    "team": "Fc Ferreiras",
                     "played": 2,
                     "wins": 0,
                     "draws": 1,
                     "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
+                    "goalsFor": 3,
+                    "goalsAgainst": 4,
                     "points": 1
                 }
             ]
@@ -1960,24 +1960,6 @@
             "index": 13,
             "fixtureId": "634974",
             "matches": [
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Internacional Ca",
-                    "date": "26 abr",
-                    "time": "15:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Gd Lagoa",
-                    "away": "Cd Odiáxere",
-                    "date": "26 abr",
-                    "time": "15:00",
-                    "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": null,
-                    "awayScore": null
-                },
                 {
                     "home": "Sc Olhanense",
                     "away": "Adt - Ass. Desp. Tavira",
@@ -2004,6 +1986,24 @@
                     "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Gd Lagoa",
+                    "away": "Cd Odiáxere",
+                    "date": "26 abr",
+                    "time": "15:00",
+                    "stadium": "Parque Desportivo Municipal Estombar",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Internacional Ca",
+                    "date": "26 abr",
+                    "time": "15:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
                 }
             ],
             "classification": [
@@ -2020,17 +2020,39 @@
                 },
                 {
                     "position": 2,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 2,
+                    "team": "Cdr Quarteirense",
+                    "played": 3,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 4,
                     "goalsAgainst": 2,
                     "points": 6
                 },
                 {
                     "position": 3,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 4,
+                    "goalsAgainst": 5,
+                    "points": 6
+                },
+                {
+                    "position": 4,
+                    "team": "Sc Farense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 2,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Sc Olhanense",
                     "played": 3,
                     "wins": 1,
@@ -2041,7 +2063,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 6,
                     "team": "Cd Odiáxere",
                     "played": 3,
                     "wins": 1,
@@ -2052,18 +2074,7 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 6,
+                    "position": 7,
                     "team": "Udr Sambrasense",
                     "played": 2,
                     "wins": 1,
@@ -2074,18 +2085,18 @@
                     "points": 3
                 },
                 {
-                    "position": 7,
-                    "team": "Cdr Quarteirense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
+                    "position": 8,
+                    "team": "Cf Os Armacenenses",
+                    "played": 3,
+                    "wins": 0,
+                    "draws": 2,
                     "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 2,
-                    "points": 3
+                    "goalsFor": 2,
+                    "goalsAgainst": 3,
+                    "points": 2
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 3,
                     "wins": 0,
@@ -2096,7 +2107,7 @@
                     "points": 1
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Fc Ferreiras",
                     "played": 2,
                     "wins": 0,
@@ -2104,17 +2115,6 @@
                     "losses": 1,
                     "goalsFor": 3,
                     "goalsAgainst": 4,
-                    "points": 1
-                },
-                {
-                    "position": 10,
-                    "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
                     "points": 1
                 }
             ]
@@ -2133,11 +2133,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cd Odiáxere",
-                    "away": "Cf Os Armacenenses",
+                    "home": "Gd Lagoa",
+                    "away": "Sc Olhanense",
                     "date": "3 mai",
                     "time": "15:00",
-                    "stadium": "Campo Eiras",
+                    "stadium": "Parque Desportivo Municipal Estombar",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2151,11 +2151,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Gd Lagoa",
-                    "away": "Sc Olhanense",
+                    "home": "Cd Odiáxere",
+                    "away": "Cf Os Armacenenses",
                     "date": "3 mai",
                     "time": "15:00",
-                    "stadium": "Parque Desportivo Municipal Estombar",
+                    "stadium": "Campo Eiras",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2183,17 +2183,39 @@
                 },
                 {
                     "position": 2,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 2,
+                    "team": "Cdr Quarteirense",
+                    "played": 3,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 4,
                     "goalsAgainst": 2,
                     "points": 6
                 },
                 {
                     "position": 3,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 4,
+                    "goalsAgainst": 5,
+                    "points": 6
+                },
+                {
+                    "position": 4,
+                    "team": "Sc Farense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 2,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Sc Olhanense",
                     "played": 3,
                     "wins": 1,
@@ -2204,7 +2226,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 6,
                     "team": "Cd Odiáxere",
                     "played": 3,
                     "wins": 1,
@@ -2215,18 +2237,7 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 6,
+                    "position": 7,
                     "team": "Udr Sambrasense",
                     "played": 2,
                     "wins": 1,
@@ -2237,18 +2248,18 @@
                     "points": 3
                 },
                 {
-                    "position": 7,
-                    "team": "Cdr Quarteirense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
+                    "position": 8,
+                    "team": "Cf Os Armacenenses",
+                    "played": 3,
+                    "wins": 0,
+                    "draws": 2,
                     "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 2,
-                    "points": 3
+                    "goalsFor": 2,
+                    "goalsAgainst": 3,
+                    "points": 2
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 3,
                     "wins": 0,
@@ -2259,7 +2270,7 @@
                     "points": 1
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Fc Ferreiras",
                     "played": 2,
                     "wins": 0,
@@ -2267,17 +2278,6 @@
                     "losses": 1,
                     "goalsFor": 3,
                     "goalsAgainst": 4,
-                    "points": 1
-                },
-                {
-                    "position": 10,
-                    "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
                     "points": 1
                 }
             ]
@@ -2287,6 +2287,24 @@
             "fixtureId": "634976",
             "matches": [
                 {
+                    "home": "Sc Olhanense",
+                    "away": "Fc Ferreiras",
+                    "date": "10 mai",
+                    "time": "15:00",
+                    "stadium": "Estádio José Arcanjo",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Udr Sambrasense",
+                    "away": "Cd Odiáxere",
+                    "date": "10 mai",
+                    "time": "15:00",
+                    "stadium": "Campo Sousa Uva",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Cdr Quarteirense",
                     "away": "Internacional Ca",
                     "date": "10 mai",
@@ -2305,29 +2323,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Udr Sambrasense",
-                    "away": "Cd Odiáxere",
-                    "date": "10 mai",
-                    "time": "15:00",
-                    "stadium": "Campo Sousa Uva",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Adt - Ass. Desp. Tavira",
                     "away": "Sc Farense",
                     "date": "10 mai",
                     "time": "15:00",
                     "stadium": "Estádio Ginásio Clube Tavira",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Sc Olhanense",
-                    "away": "Fc Ferreiras",
-                    "date": "10 mai",
-                    "time": "15:00",
-                    "stadium": "Estádio José Arcanjo",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -2346,17 +2346,39 @@
                 },
                 {
                     "position": 2,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 2,
+                    "team": "Cdr Quarteirense",
+                    "played": 3,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 4,
                     "goalsAgainst": 2,
                     "points": 6
                 },
                 {
                     "position": 3,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 4,
+                    "goalsAgainst": 5,
+                    "points": 6
+                },
+                {
+                    "position": 4,
+                    "team": "Sc Farense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 2,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Sc Olhanense",
                     "played": 3,
                     "wins": 1,
@@ -2367,7 +2389,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 6,
                     "team": "Cd Odiáxere",
                     "played": 3,
                     "wins": 1,
@@ -2378,18 +2400,7 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 6,
+                    "position": 7,
                     "team": "Udr Sambrasense",
                     "played": 2,
                     "wins": 1,
@@ -2400,18 +2411,18 @@
                     "points": 3
                 },
                 {
-                    "position": 7,
-                    "team": "Cdr Quarteirense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
+                    "position": 8,
+                    "team": "Cf Os Armacenenses",
+                    "played": 3,
+                    "wins": 0,
+                    "draws": 2,
                     "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 2,
-                    "points": 3
+                    "goalsFor": 2,
+                    "goalsAgainst": 3,
+                    "points": 2
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 3,
                     "wins": 0,
@@ -2422,7 +2433,7 @@
                     "points": 1
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Fc Ferreiras",
                     "played": 2,
                     "wins": 0,
@@ -2431,17 +2442,6 @@
                     "goalsFor": 3,
                     "goalsAgainst": 4,
                     "points": 1
-                },
-                {
-                    "position": 10,
-                    "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
-                    "points": 1
                 }
             ]
         },
@@ -2449,6 +2449,33 @@
             "index": 16,
             "fixtureId": "634977",
             "matches": [
+                {
+                    "home": "Sc Farense",
+                    "away": "Fc Ferreiras",
+                    "date": "17 mai",
+                    "time": "15:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Gd Lagoa",
+                    "away": "Udr Sambrasense",
+                    "date": "17 mai",
+                    "time": "15:00",
+                    "stadium": "Parque Desportivo Municipal Estombar",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Sc Olhanense",
+                    "date": "17 mai",
+                    "time": "15:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
                 {
                     "home": "Cd Odiáxere",
                     "away": "Cdr Quarteirense",
@@ -2466,33 +2493,6 @@
                     "stadium": "Estadio Municipal De Almancil",
                     "homeScore": null,
                     "awayScore": null
-                },
-                {
-                    "home": "Sc Farense",
-                    "away": "Fc Ferreiras",
-                    "date": "17 mai",
-                    "time": "15:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Sc Olhanense",
-                    "date": "17 mai",
-                    "time": "15:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Gd Lagoa",
-                    "away": "Udr Sambrasense",
-                    "date": "17 mai",
-                    "time": "15:00",
-                    "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": null,
-                    "awayScore": null
                 }
             ],
             "classification": [
@@ -2509,17 +2509,39 @@
                 },
                 {
                     "position": 2,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 2,
+                    "team": "Cdr Quarteirense",
+                    "played": 3,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 4,
                     "goalsAgainst": 2,
                     "points": 6
                 },
                 {
                     "position": 3,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 4,
+                    "goalsAgainst": 5,
+                    "points": 6
+                },
+                {
+                    "position": 4,
+                    "team": "Sc Farense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 2,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Sc Olhanense",
                     "played": 3,
                     "wins": 1,
@@ -2530,7 +2552,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 6,
                     "team": "Cd Odiáxere",
                     "played": 3,
                     "wins": 1,
@@ -2541,18 +2563,7 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 6,
+                    "position": 7,
                     "team": "Udr Sambrasense",
                     "played": 2,
                     "wins": 1,
@@ -2563,18 +2574,18 @@
                     "points": 3
                 },
                 {
-                    "position": 7,
-                    "team": "Cdr Quarteirense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
+                    "position": 8,
+                    "team": "Cf Os Armacenenses",
+                    "played": 3,
+                    "wins": 0,
+                    "draws": 2,
                     "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 2,
-                    "points": 3
+                    "goalsFor": 2,
+                    "goalsAgainst": 3,
+                    "points": 2
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 3,
                     "wins": 0,
@@ -2585,7 +2596,7 @@
                     "points": 1
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Fc Ferreiras",
                     "played": 2,
                     "wins": 0,
@@ -2593,17 +2604,6 @@
                     "losses": 1,
                     "goalsFor": 3,
                     "goalsAgainst": 4,
-                    "points": 1
-                },
-                {
-                    "position": 10,
-                    "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
                     "points": 1
                 }
             ]
@@ -2613,29 +2613,11 @@
             "fixtureId": "634978",
             "matches": [
                 {
-                    "home": "Fc Ferreiras",
-                    "away": "Internacional Ca",
+                    "home": "Sc Farense",
+                    "away": "Sc Olhanense",
                     "date": "24 mai",
                     "time": "15:00",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Cdr Quarteirense",
-                    "away": "Gd Lagoa",
-                    "date": "24 mai",
-                    "time": "15:00",
-                    "stadium": "Estadio Municipal Quarteira Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Adt - Ass. Desp. Tavira",
-                    "away": "Cd Odiáxere",
-                    "date": "24 mai",
-                    "time": "15:00",
-                    "stadium": "Estádio Ginásio Clube Tavira",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2649,11 +2631,29 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Sc Farense",
-                    "away": "Sc Olhanense",
+                    "home": "Cdr Quarteirense",
+                    "away": "Gd Lagoa",
                     "date": "24 mai",
                     "time": "15:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
+                    "stadium": "Estadio Municipal Quarteira Nº 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Internacional Ca",
+                    "date": "24 mai",
+                    "time": "15:00",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Adt - Ass. Desp. Tavira",
+                    "away": "Cd Odiáxere",
+                    "date": "24 mai",
+                    "time": "15:00",
+                    "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -2672,17 +2672,39 @@
                 },
                 {
                     "position": 2,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 2,
+                    "team": "Cdr Quarteirense",
+                    "played": 3,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 4,
                     "goalsAgainst": 2,
                     "points": 6
                 },
                 {
                     "position": 3,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 4,
+                    "goalsAgainst": 5,
+                    "points": 6
+                },
+                {
+                    "position": 4,
+                    "team": "Sc Farense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 2,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Sc Olhanense",
                     "played": 3,
                     "wins": 1,
@@ -2693,7 +2715,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 6,
                     "team": "Cd Odiáxere",
                     "played": 3,
                     "wins": 1,
@@ -2704,18 +2726,7 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 6,
+                    "position": 7,
                     "team": "Udr Sambrasense",
                     "played": 2,
                     "wins": 1,
@@ -2726,18 +2737,18 @@
                     "points": 3
                 },
                 {
-                    "position": 7,
-                    "team": "Cdr Quarteirense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
+                    "position": 8,
+                    "team": "Cf Os Armacenenses",
+                    "played": 3,
+                    "wins": 0,
+                    "draws": 2,
                     "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 2,
-                    "points": 3
+                    "goalsFor": 2,
+                    "goalsAgainst": 3,
+                    "points": 2
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 3,
                     "wins": 0,
@@ -2748,7 +2759,7 @@
                     "points": 1
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Fc Ferreiras",
                     "played": 2,
                     "wins": 0,
@@ -2756,17 +2767,6 @@
                     "losses": 1,
                     "goalsFor": 3,
                     "goalsAgainst": 4,
-                    "points": 1
-                },
-                {
-                    "position": 10,
-                    "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
                     "points": 1
                 }
             ]
@@ -2776,11 +2776,11 @@
             "fixtureId": "634979",
             "matches": [
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Cdr Quarteirense",
+                    "home": "Sc Olhanense",
+                    "away": "Udr Sambrasense",
                     "date": "31 mai",
                     "time": "15:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "stadium": "Estádio José Arcanjo",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2794,11 +2794,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Internacional Ca",
-                    "away": "Sc Farense",
+                    "home": "Cf Os Armacenenses",
+                    "away": "Cdr Quarteirense",
                     "date": "31 mai",
                     "time": "15:00",
-                    "stadium": "Estadio Municipal De Almancil",
+                    "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2812,11 +2812,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Sc Olhanense",
-                    "away": "Udr Sambrasense",
+                    "home": "Internacional Ca",
+                    "away": "Sc Farense",
                     "date": "31 mai",
                     "time": "15:00",
-                    "stadium": "Estádio José Arcanjo",
+                    "stadium": "Estadio Municipal De Almancil",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -2835,17 +2835,39 @@
                 },
                 {
                     "position": 2,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 2,
+                    "team": "Cdr Quarteirense",
+                    "played": 3,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 4,
                     "goalsAgainst": 2,
                     "points": 6
                 },
                 {
                     "position": 3,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 4,
+                    "goalsAgainst": 5,
+                    "points": 6
+                },
+                {
+                    "position": 4,
+                    "team": "Sc Farense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 3,
+                    "goalsAgainst": 2,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Sc Olhanense",
                     "played": 3,
                     "wins": 1,
@@ -2856,7 +2878,7 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 6,
                     "team": "Cd Odiáxere",
                     "played": 3,
                     "wins": 1,
@@ -2867,18 +2889,7 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 2,
-                    "points": 3
-                },
-                {
-                    "position": 6,
+                    "position": 7,
                     "team": "Udr Sambrasense",
                     "played": 2,
                     "wins": 1,
@@ -2889,18 +2900,18 @@
                     "points": 3
                 },
                 {
-                    "position": 7,
-                    "team": "Cdr Quarteirense",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 0,
+                    "position": 8,
+                    "team": "Cf Os Armacenenses",
+                    "played": 3,
+                    "wins": 0,
+                    "draws": 2,
                     "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 2,
-                    "points": 3
+                    "goalsFor": 2,
+                    "goalsAgainst": 3,
+                    "points": 2
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 3,
                     "wins": 0,
@@ -2911,7 +2922,7 @@
                     "points": 1
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Fc Ferreiras",
                     "played": 2,
                     "wins": 0,
@@ -2919,17 +2930,6 @@
                     "losses": 1,
                     "goalsFor": 3,
                     "goalsAgainst": 4,
-                    "points": 1
-                },
-                {
-                    "position": 10,
-                    "team": "Cf Os Armacenenses",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
                     "points": 1
                 }
             ]
