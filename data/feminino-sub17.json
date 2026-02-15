@@ -2796,11 +2796,11 @@
                 {
                     "home": "Cf Os Armacenenses",
                     "away": "Louletano Dc",
-                    "date": "15 fev",
-                    "time": "11:00",
+                    "date": "0 - 12                            \r\n                \r\n                    15 fev",
+                    "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 0,
+                    "awayScore": 12
                 },
                 {
                     "home": "Ad Geração Génios",
@@ -2868,6 +2868,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Louletano Dc",
+                    "played": 18,
+                    "wins": 8,
+                    "draws": 1,
+                    "losses": 9,
+                    "goalsFor": 51,
+                    "goalsAgainst": 50,
+                    "points": 25
+                },
+                {
+                    "position": 6,
                     "team": "Ad Geração Génios",
                     "played": 17,
                     "wins": 8,
@@ -2876,17 +2887,6 @@
                     "goalsFor": 37,
                     "goalsAgainst": 38,
                     "points": 25
-                },
-                {
-                    "position": 6,
-                    "team": "Louletano Dc",
-                    "played": 17,
-                    "wins": 7,
-                    "draws": 1,
-                    "losses": 9,
-                    "goalsFor": 39,
-                    "goalsAgainst": 50,
-                    "points": 22
                 },
                 {
                     "position": 7,
@@ -2924,12 +2924,12 @@
                 {
                     "position": 10,
                     "team": "Cf Os Armacenenses",
-                    "played": 17,
+                    "played": 18,
                     "wins": 0,
                     "draws": 1,
-                    "losses": 16,
+                    "losses": 17,
                     "goalsFor": 9,
-                    "goalsAgainst": 126,
+                    "goalsAgainst": 138,
                     "points": 1
                 }
             ]
