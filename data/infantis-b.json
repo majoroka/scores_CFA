@@ -831,11 +831,11 @@
                 {
                     "home": "Fc Ferreiras",
                     "away": "4 Ao Cubo Ad Olhão",
-                    "date": "21 fev",
-                    "time": "10:30",
+                    "date": "0 - 17                            \r\n                \r\n                    21 fev",
+                    "time": "",
                     "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 0,
+                    "awayScore": 17
                 },
                 {
                     "home": "Mexilhoeira Grande Fc",
@@ -858,16 +858,27 @@
                 {
                     "home": "Aef Faro",
                     "away": "Cr Infante Sagres",
-                    "date": "21 fev",
-                    "time": "12:00",
+                    "date": "6 - 2                            \r\n                \r\n                    21 fev",
+                    "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 6,
+                    "awayScore": 2
                 }
             ],
             "classification": [
                 {
                     "position": 1,
+                    "team": "4 Ao Cubo Ad Olhão",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 58,
+                    "goalsAgainst": 9,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Csl Benfica Lagos",
                     "played": 6,
                     "wins": 5,
@@ -878,25 +889,14 @@
                     "points": 16
                 },
                 {
-                    "position": 2,
-                    "team": "Cr Infante Sagres",
-                    "played": 5,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 35,
-                    "goalsAgainst": 4,
-                    "points": 15
-                },
-                {
                     "position": 3,
-                    "team": "4 Ao Cubo Ad Olhão",
+                    "team": "Cr Infante Sagres",
                     "played": 6,
                     "wins": 5,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 41,
-                    "goalsAgainst": 9,
+                    "goalsFor": 37,
+                    "goalsAgainst": 10,
                     "points": 15
                 },
                 {
@@ -912,6 +912,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Aef Faro",
+                    "played": 6,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 29,
+                    "goalsAgainst": 10,
+                    "points": 12
+                },
+                {
+                    "position": 6,
                     "team": "Portimonense Sc",
                     "played": 7,
                     "wins": 4,
@@ -920,17 +931,6 @@
                     "goalsFor": 21,
                     "goalsAgainst": 22,
                     "points": 12
-                },
-                {
-                    "position": 6,
-                    "team": "Aef Faro",
-                    "played": 5,
-                    "wins": 3,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 23,
-                    "goalsAgainst": 8,
-                    "points": 9
                 },
                 {
                     "position": 7,
@@ -945,17 +945,6 @@
                 },
                 {
                     "position": 8,
-                    "team": "Fc Ferreiras",
-                    "played": 5,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 3,
-                    "goalsAgainst": 30,
-                    "points": 0
-                },
-                {
-                    "position": 9,
                     "team": "Cf Os Armacenenses",
                     "played": 6,
                     "wins": 0,
@@ -963,6 +952,17 @@
                     "losses": 6,
                     "goalsFor": 6,
                     "goalsAgainst": 36,
+                    "points": 0
+                },
+                {
+                    "position": 9,
+                    "team": "Fc Ferreiras",
+                    "played": 6,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 3,
+                    "goalsAgainst": 47,
                     "points": 0
                 },
                 {
@@ -1031,6 +1031,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "4 Ao Cubo Ad Olhão",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 58,
+                    "goalsAgainst": 9,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Csl Benfica Lagos",
                     "played": 6,
                     "wins": 5,
@@ -1041,25 +1052,14 @@
                     "points": 16
                 },
                 {
-                    "position": 2,
-                    "team": "Cr Infante Sagres",
-                    "played": 5,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 35,
-                    "goalsAgainst": 4,
-                    "points": 15
-                },
-                {
                     "position": 3,
-                    "team": "4 Ao Cubo Ad Olhão",
+                    "team": "Cr Infante Sagres",
                     "played": 6,
                     "wins": 5,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 41,
-                    "goalsAgainst": 9,
+                    "goalsFor": 37,
+                    "goalsAgainst": 10,
                     "points": 15
                 },
                 {
@@ -1075,6 +1075,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Aef Faro",
+                    "played": 6,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 29,
+                    "goalsAgainst": 10,
+                    "points": 12
+                },
+                {
+                    "position": 6,
                     "team": "Portimonense Sc",
                     "played": 7,
                     "wins": 4,
@@ -1083,17 +1094,6 @@
                     "goalsFor": 21,
                     "goalsAgainst": 22,
                     "points": 12
-                },
-                {
-                    "position": 6,
-                    "team": "Aef Faro",
-                    "played": 5,
-                    "wins": 3,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 23,
-                    "goalsAgainst": 8,
-                    "points": 9
                 },
                 {
                     "position": 7,
@@ -1108,17 +1108,6 @@
                 },
                 {
                     "position": 8,
-                    "team": "Fc Ferreiras",
-                    "played": 5,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 3,
-                    "goalsAgainst": 30,
-                    "points": 0
-                },
-                {
-                    "position": 9,
                     "team": "Cf Os Armacenenses",
                     "played": 6,
                     "wins": 0,
@@ -1126,6 +1115,17 @@
                     "losses": 6,
                     "goalsFor": 6,
                     "goalsAgainst": 36,
+                    "points": 0
+                },
+                {
+                    "position": 9,
+                    "team": "Fc Ferreiras",
+                    "played": 6,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 3,
+                    "goalsAgainst": 47,
                     "points": 0
                 },
                 {
@@ -1194,6 +1194,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "4 Ao Cubo Ad Olhão",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 58,
+                    "goalsAgainst": 9,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Csl Benfica Lagos",
                     "played": 6,
                     "wins": 5,
@@ -1204,25 +1215,14 @@
                     "points": 16
                 },
                 {
-                    "position": 2,
-                    "team": "Cr Infante Sagres",
-                    "played": 5,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 35,
-                    "goalsAgainst": 4,
-                    "points": 15
-                },
-                {
                     "position": 3,
-                    "team": "4 Ao Cubo Ad Olhão",
+                    "team": "Cr Infante Sagres",
                     "played": 6,
                     "wins": 5,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 41,
-                    "goalsAgainst": 9,
+                    "goalsFor": 37,
+                    "goalsAgainst": 10,
                     "points": 15
                 },
                 {
@@ -1238,6 +1238,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Aef Faro",
+                    "played": 6,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 29,
+                    "goalsAgainst": 10,
+                    "points": 12
+                },
+                {
+                    "position": 6,
                     "team": "Portimonense Sc",
                     "played": 7,
                     "wins": 4,
@@ -1246,17 +1257,6 @@
                     "goalsFor": 21,
                     "goalsAgainst": 22,
                     "points": 12
-                },
-                {
-                    "position": 6,
-                    "team": "Aef Faro",
-                    "played": 5,
-                    "wins": 3,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 23,
-                    "goalsAgainst": 8,
-                    "points": 9
                 },
                 {
                     "position": 7,
@@ -1271,17 +1271,6 @@
                 },
                 {
                     "position": 8,
-                    "team": "Fc Ferreiras",
-                    "played": 5,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 3,
-                    "goalsAgainst": 30,
-                    "points": 0
-                },
-                {
-                    "position": 9,
                     "team": "Cf Os Armacenenses",
                     "played": 6,
                     "wins": 0,
@@ -1289,6 +1278,17 @@
                     "losses": 6,
                     "goalsFor": 6,
                     "goalsAgainst": 36,
+                    "points": 0
+                },
+                {
+                    "position": 9,
+                    "team": "Fc Ferreiras",
+                    "played": 6,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 3,
+                    "goalsAgainst": 47,
                     "points": 0
                 },
                 {
@@ -1357,6 +1357,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "4 Ao Cubo Ad Olhão",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 58,
+                    "goalsAgainst": 9,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Csl Benfica Lagos",
                     "played": 6,
                     "wins": 5,
@@ -1367,25 +1378,14 @@
                     "points": 16
                 },
                 {
-                    "position": 2,
-                    "team": "Cr Infante Sagres",
-                    "played": 5,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 35,
-                    "goalsAgainst": 4,
-                    "points": 15
-                },
-                {
                     "position": 3,
-                    "team": "4 Ao Cubo Ad Olhão",
+                    "team": "Cr Infante Sagres",
                     "played": 6,
                     "wins": 5,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 41,
-                    "goalsAgainst": 9,
+                    "goalsFor": 37,
+                    "goalsAgainst": 10,
                     "points": 15
                 },
                 {
@@ -1401,6 +1401,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Aef Faro",
+                    "played": 6,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 29,
+                    "goalsAgainst": 10,
+                    "points": 12
+                },
+                {
+                    "position": 6,
                     "team": "Portimonense Sc",
                     "played": 7,
                     "wins": 4,
@@ -1409,17 +1420,6 @@
                     "goalsFor": 21,
                     "goalsAgainst": 22,
                     "points": 12
-                },
-                {
-                    "position": 6,
-                    "team": "Aef Faro",
-                    "played": 5,
-                    "wins": 3,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 23,
-                    "goalsAgainst": 8,
-                    "points": 9
                 },
                 {
                     "position": 7,
@@ -1434,17 +1434,6 @@
                 },
                 {
                     "position": 8,
-                    "team": "Fc Ferreiras",
-                    "played": 5,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 3,
-                    "goalsAgainst": 30,
-                    "points": 0
-                },
-                {
-                    "position": 9,
                     "team": "Cf Os Armacenenses",
                     "played": 6,
                     "wins": 0,
@@ -1452,6 +1441,17 @@
                     "losses": 6,
                     "goalsFor": 6,
                     "goalsAgainst": 36,
+                    "points": 0
+                },
+                {
+                    "position": 9,
+                    "team": "Fc Ferreiras",
+                    "played": 6,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 3,
+                    "goalsAgainst": 47,
                     "points": 0
                 },
                 {
@@ -1520,6 +1520,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "4 Ao Cubo Ad Olhão",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 58,
+                    "goalsAgainst": 9,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Csl Benfica Lagos",
                     "played": 6,
                     "wins": 5,
@@ -1530,25 +1541,14 @@
                     "points": 16
                 },
                 {
-                    "position": 2,
-                    "team": "Cr Infante Sagres",
-                    "played": 5,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 35,
-                    "goalsAgainst": 4,
-                    "points": 15
-                },
-                {
                     "position": 3,
-                    "team": "4 Ao Cubo Ad Olhão",
+                    "team": "Cr Infante Sagres",
                     "played": 6,
                     "wins": 5,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 41,
-                    "goalsAgainst": 9,
+                    "goalsFor": 37,
+                    "goalsAgainst": 10,
                     "points": 15
                 },
                 {
@@ -1564,6 +1564,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Aef Faro",
+                    "played": 6,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 29,
+                    "goalsAgainst": 10,
+                    "points": 12
+                },
+                {
+                    "position": 6,
                     "team": "Portimonense Sc",
                     "played": 7,
                     "wins": 4,
@@ -1572,17 +1583,6 @@
                     "goalsFor": 21,
                     "goalsAgainst": 22,
                     "points": 12
-                },
-                {
-                    "position": 6,
-                    "team": "Aef Faro",
-                    "played": 5,
-                    "wins": 3,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 23,
-                    "goalsAgainst": 8,
-                    "points": 9
                 },
                 {
                     "position": 7,
@@ -1597,17 +1597,6 @@
                 },
                 {
                     "position": 8,
-                    "team": "Fc Ferreiras",
-                    "played": 5,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 3,
-                    "goalsAgainst": 30,
-                    "points": 0
-                },
-                {
-                    "position": 9,
                     "team": "Cf Os Armacenenses",
                     "played": 6,
                     "wins": 0,
@@ -1615,6 +1604,17 @@
                     "losses": 6,
                     "goalsFor": 6,
                     "goalsAgainst": 36,
+                    "points": 0
+                },
+                {
+                    "position": 9,
+                    "team": "Fc Ferreiras",
+                    "played": 6,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 3,
+                    "goalsAgainst": 47,
                     "points": 0
                 },
                 {
@@ -1683,6 +1683,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "4 Ao Cubo Ad Olhão",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 58,
+                    "goalsAgainst": 9,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Csl Benfica Lagos",
                     "played": 6,
                     "wins": 5,
@@ -1693,25 +1704,14 @@
                     "points": 16
                 },
                 {
-                    "position": 2,
-                    "team": "Cr Infante Sagres",
-                    "played": 5,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 35,
-                    "goalsAgainst": 4,
-                    "points": 15
-                },
-                {
                     "position": 3,
-                    "team": "4 Ao Cubo Ad Olhão",
+                    "team": "Cr Infante Sagres",
                     "played": 6,
                     "wins": 5,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 41,
-                    "goalsAgainst": 9,
+                    "goalsFor": 37,
+                    "goalsAgainst": 10,
                     "points": 15
                 },
                 {
@@ -1727,6 +1727,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Aef Faro",
+                    "played": 6,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 29,
+                    "goalsAgainst": 10,
+                    "points": 12
+                },
+                {
+                    "position": 6,
                     "team": "Portimonense Sc",
                     "played": 7,
                     "wins": 4,
@@ -1735,17 +1746,6 @@
                     "goalsFor": 21,
                     "goalsAgainst": 22,
                     "points": 12
-                },
-                {
-                    "position": 6,
-                    "team": "Aef Faro",
-                    "played": 5,
-                    "wins": 3,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 23,
-                    "goalsAgainst": 8,
-                    "points": 9
                 },
                 {
                     "position": 7,
@@ -1760,17 +1760,6 @@
                 },
                 {
                     "position": 8,
-                    "team": "Fc Ferreiras",
-                    "played": 5,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 3,
-                    "goalsAgainst": 30,
-                    "points": 0
-                },
-                {
-                    "position": 9,
                     "team": "Cf Os Armacenenses",
                     "played": 6,
                     "wins": 0,
@@ -1778,6 +1767,17 @@
                     "losses": 6,
                     "goalsFor": 6,
                     "goalsAgainst": 36,
+                    "points": 0
+                },
+                {
+                    "position": 9,
+                    "team": "Fc Ferreiras",
+                    "played": 6,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 3,
+                    "goalsAgainst": 47,
                     "points": 0
                 },
                 {
@@ -1846,6 +1846,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "4 Ao Cubo Ad Olhão",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 58,
+                    "goalsAgainst": 9,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Csl Benfica Lagos",
                     "played": 6,
                     "wins": 5,
@@ -1856,25 +1867,14 @@
                     "points": 16
                 },
                 {
-                    "position": 2,
-                    "team": "Cr Infante Sagres",
-                    "played": 5,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 35,
-                    "goalsAgainst": 4,
-                    "points": 15
-                },
-                {
                     "position": 3,
-                    "team": "4 Ao Cubo Ad Olhão",
+                    "team": "Cr Infante Sagres",
                     "played": 6,
                     "wins": 5,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 41,
-                    "goalsAgainst": 9,
+                    "goalsFor": 37,
+                    "goalsAgainst": 10,
                     "points": 15
                 },
                 {
@@ -1890,6 +1890,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Aef Faro",
+                    "played": 6,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 29,
+                    "goalsAgainst": 10,
+                    "points": 12
+                },
+                {
+                    "position": 6,
                     "team": "Portimonense Sc",
                     "played": 7,
                     "wins": 4,
@@ -1898,17 +1909,6 @@
                     "goalsFor": 21,
                     "goalsAgainst": 22,
                     "points": 12
-                },
-                {
-                    "position": 6,
-                    "team": "Aef Faro",
-                    "played": 5,
-                    "wins": 3,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 23,
-                    "goalsAgainst": 8,
-                    "points": 9
                 },
                 {
                     "position": 7,
@@ -1923,17 +1923,6 @@
                 },
                 {
                     "position": 8,
-                    "team": "Fc Ferreiras",
-                    "played": 5,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 3,
-                    "goalsAgainst": 30,
-                    "points": 0
-                },
-                {
-                    "position": 9,
                     "team": "Cf Os Armacenenses",
                     "played": 6,
                     "wins": 0,
@@ -1941,6 +1930,17 @@
                     "losses": 6,
                     "goalsFor": 6,
                     "goalsAgainst": 36,
+                    "points": 0
+                },
+                {
+                    "position": 9,
+                    "team": "Fc Ferreiras",
+                    "played": 6,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 3,
+                    "goalsAgainst": 47,
                     "points": 0
                 },
                 {
@@ -2009,6 +2009,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "4 Ao Cubo Ad Olhão",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 58,
+                    "goalsAgainst": 9,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Csl Benfica Lagos",
                     "played": 6,
                     "wins": 5,
@@ -2019,25 +2030,14 @@
                     "points": 16
                 },
                 {
-                    "position": 2,
-                    "team": "Cr Infante Sagres",
-                    "played": 5,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 35,
-                    "goalsAgainst": 4,
-                    "points": 15
-                },
-                {
                     "position": 3,
-                    "team": "4 Ao Cubo Ad Olhão",
+                    "team": "Cr Infante Sagres",
                     "played": 6,
                     "wins": 5,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 41,
-                    "goalsAgainst": 9,
+                    "goalsFor": 37,
+                    "goalsAgainst": 10,
                     "points": 15
                 },
                 {
@@ -2053,6 +2053,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Aef Faro",
+                    "played": 6,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 29,
+                    "goalsAgainst": 10,
+                    "points": 12
+                },
+                {
+                    "position": 6,
                     "team": "Portimonense Sc",
                     "played": 7,
                     "wins": 4,
@@ -2061,17 +2072,6 @@
                     "goalsFor": 21,
                     "goalsAgainst": 22,
                     "points": 12
-                },
-                {
-                    "position": 6,
-                    "team": "Aef Faro",
-                    "played": 5,
-                    "wins": 3,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 23,
-                    "goalsAgainst": 8,
-                    "points": 9
                 },
                 {
                     "position": 7,
@@ -2086,17 +2086,6 @@
                 },
                 {
                     "position": 8,
-                    "team": "Fc Ferreiras",
-                    "played": 5,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 3,
-                    "goalsAgainst": 30,
-                    "points": 0
-                },
-                {
-                    "position": 9,
                     "team": "Cf Os Armacenenses",
                     "played": 6,
                     "wins": 0,
@@ -2104,6 +2093,17 @@
                     "losses": 6,
                     "goalsFor": 6,
                     "goalsAgainst": 36,
+                    "points": 0
+                },
+                {
+                    "position": 9,
+                    "team": "Fc Ferreiras",
+                    "played": 6,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 3,
+                    "goalsAgainst": 47,
                     "points": 0
                 },
                 {
@@ -2172,6 +2172,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "4 Ao Cubo Ad Olhão",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 58,
+                    "goalsAgainst": 9,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Csl Benfica Lagos",
                     "played": 6,
                     "wins": 5,
@@ -2182,25 +2193,14 @@
                     "points": 16
                 },
                 {
-                    "position": 2,
-                    "team": "Cr Infante Sagres",
-                    "played": 5,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 35,
-                    "goalsAgainst": 4,
-                    "points": 15
-                },
-                {
                     "position": 3,
-                    "team": "4 Ao Cubo Ad Olhão",
+                    "team": "Cr Infante Sagres",
                     "played": 6,
                     "wins": 5,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 41,
-                    "goalsAgainst": 9,
+                    "goalsFor": 37,
+                    "goalsAgainst": 10,
                     "points": 15
                 },
                 {
@@ -2216,6 +2216,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Aef Faro",
+                    "played": 6,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 29,
+                    "goalsAgainst": 10,
+                    "points": 12
+                },
+                {
+                    "position": 6,
                     "team": "Portimonense Sc",
                     "played": 7,
                     "wins": 4,
@@ -2224,17 +2235,6 @@
                     "goalsFor": 21,
                     "goalsAgainst": 22,
                     "points": 12
-                },
-                {
-                    "position": 6,
-                    "team": "Aef Faro",
-                    "played": 5,
-                    "wins": 3,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 23,
-                    "goalsAgainst": 8,
-                    "points": 9
                 },
                 {
                     "position": 7,
@@ -2249,17 +2249,6 @@
                 },
                 {
                     "position": 8,
-                    "team": "Fc Ferreiras",
-                    "played": 5,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 3,
-                    "goalsAgainst": 30,
-                    "points": 0
-                },
-                {
-                    "position": 9,
                     "team": "Cf Os Armacenenses",
                     "played": 6,
                     "wins": 0,
@@ -2267,6 +2256,17 @@
                     "losses": 6,
                     "goalsFor": 6,
                     "goalsAgainst": 36,
+                    "points": 0
+                },
+                {
+                    "position": 9,
+                    "team": "Fc Ferreiras",
+                    "played": 6,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 3,
+                    "goalsAgainst": 47,
                     "points": 0
                 },
                 {
@@ -2335,6 +2335,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "4 Ao Cubo Ad Olhão",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 58,
+                    "goalsAgainst": 9,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Csl Benfica Lagos",
                     "played": 6,
                     "wins": 5,
@@ -2345,25 +2356,14 @@
                     "points": 16
                 },
                 {
-                    "position": 2,
-                    "team": "Cr Infante Sagres",
-                    "played": 5,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 35,
-                    "goalsAgainst": 4,
-                    "points": 15
-                },
-                {
                     "position": 3,
-                    "team": "4 Ao Cubo Ad Olhão",
+                    "team": "Cr Infante Sagres",
                     "played": 6,
                     "wins": 5,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 41,
-                    "goalsAgainst": 9,
+                    "goalsFor": 37,
+                    "goalsAgainst": 10,
                     "points": 15
                 },
                 {
@@ -2379,6 +2379,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Aef Faro",
+                    "played": 6,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 29,
+                    "goalsAgainst": 10,
+                    "points": 12
+                },
+                {
+                    "position": 6,
                     "team": "Portimonense Sc",
                     "played": 7,
                     "wins": 4,
@@ -2387,17 +2398,6 @@
                     "goalsFor": 21,
                     "goalsAgainst": 22,
                     "points": 12
-                },
-                {
-                    "position": 6,
-                    "team": "Aef Faro",
-                    "played": 5,
-                    "wins": 3,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 23,
-                    "goalsAgainst": 8,
-                    "points": 9
                 },
                 {
                     "position": 7,
@@ -2412,17 +2412,6 @@
                 },
                 {
                     "position": 8,
-                    "team": "Fc Ferreiras",
-                    "played": 5,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 3,
-                    "goalsAgainst": 30,
-                    "points": 0
-                },
-                {
-                    "position": 9,
                     "team": "Cf Os Armacenenses",
                     "played": 6,
                     "wins": 0,
@@ -2430,6 +2419,17 @@
                     "losses": 6,
                     "goalsFor": 6,
                     "goalsAgainst": 36,
+                    "points": 0
+                },
+                {
+                    "position": 9,
+                    "team": "Fc Ferreiras",
+                    "played": 6,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 3,
+                    "goalsAgainst": 47,
                     "points": 0
                 },
                 {
@@ -2498,6 +2498,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "4 Ao Cubo Ad Olhão",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 58,
+                    "goalsAgainst": 9,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Csl Benfica Lagos",
                     "played": 6,
                     "wins": 5,
@@ -2508,25 +2519,14 @@
                     "points": 16
                 },
                 {
-                    "position": 2,
-                    "team": "Cr Infante Sagres",
-                    "played": 5,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 35,
-                    "goalsAgainst": 4,
-                    "points": 15
-                },
-                {
                     "position": 3,
-                    "team": "4 Ao Cubo Ad Olhão",
+                    "team": "Cr Infante Sagres",
                     "played": 6,
                     "wins": 5,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 41,
-                    "goalsAgainst": 9,
+                    "goalsFor": 37,
+                    "goalsAgainst": 10,
                     "points": 15
                 },
                 {
@@ -2542,6 +2542,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Aef Faro",
+                    "played": 6,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 29,
+                    "goalsAgainst": 10,
+                    "points": 12
+                },
+                {
+                    "position": 6,
                     "team": "Portimonense Sc",
                     "played": 7,
                     "wins": 4,
@@ -2550,17 +2561,6 @@
                     "goalsFor": 21,
                     "goalsAgainst": 22,
                     "points": 12
-                },
-                {
-                    "position": 6,
-                    "team": "Aef Faro",
-                    "played": 5,
-                    "wins": 3,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 23,
-                    "goalsAgainst": 8,
-                    "points": 9
                 },
                 {
                     "position": 7,
@@ -2575,17 +2575,6 @@
                 },
                 {
                     "position": 8,
-                    "team": "Fc Ferreiras",
-                    "played": 5,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 3,
-                    "goalsAgainst": 30,
-                    "points": 0
-                },
-                {
-                    "position": 9,
                     "team": "Cf Os Armacenenses",
                     "played": 6,
                     "wins": 0,
@@ -2593,6 +2582,17 @@
                     "losses": 6,
                     "goalsFor": 6,
                     "goalsAgainst": 36,
+                    "points": 0
+                },
+                {
+                    "position": 9,
+                    "team": "Fc Ferreiras",
+                    "played": 6,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 3,
+                    "goalsAgainst": 47,
                     "points": 0
                 },
                 {
@@ -2661,6 +2661,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "4 Ao Cubo Ad Olhão",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 58,
+                    "goalsAgainst": 9,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Csl Benfica Lagos",
                     "played": 6,
                     "wins": 5,
@@ -2671,25 +2682,14 @@
                     "points": 16
                 },
                 {
-                    "position": 2,
-                    "team": "Cr Infante Sagres",
-                    "played": 5,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 35,
-                    "goalsAgainst": 4,
-                    "points": 15
-                },
-                {
                     "position": 3,
-                    "team": "4 Ao Cubo Ad Olhão",
+                    "team": "Cr Infante Sagres",
                     "played": 6,
                     "wins": 5,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 41,
-                    "goalsAgainst": 9,
+                    "goalsFor": 37,
+                    "goalsAgainst": 10,
                     "points": 15
                 },
                 {
@@ -2705,6 +2705,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Aef Faro",
+                    "played": 6,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 29,
+                    "goalsAgainst": 10,
+                    "points": 12
+                },
+                {
+                    "position": 6,
                     "team": "Portimonense Sc",
                     "played": 7,
                     "wins": 4,
@@ -2713,17 +2724,6 @@
                     "goalsFor": 21,
                     "goalsAgainst": 22,
                     "points": 12
-                },
-                {
-                    "position": 6,
-                    "team": "Aef Faro",
-                    "played": 5,
-                    "wins": 3,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 23,
-                    "goalsAgainst": 8,
-                    "points": 9
                 },
                 {
                     "position": 7,
@@ -2738,17 +2738,6 @@
                 },
                 {
                     "position": 8,
-                    "team": "Fc Ferreiras",
-                    "played": 5,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 3,
-                    "goalsAgainst": 30,
-                    "points": 0
-                },
-                {
-                    "position": 9,
                     "team": "Cf Os Armacenenses",
                     "played": 6,
                     "wins": 0,
@@ -2756,6 +2745,17 @@
                     "losses": 6,
                     "goalsFor": 6,
                     "goalsAgainst": 36,
+                    "points": 0
+                },
+                {
+                    "position": 9,
+                    "team": "Fc Ferreiras",
+                    "played": 6,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 3,
+                    "goalsAgainst": 47,
                     "points": 0
                 },
                 {
@@ -2824,6 +2824,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "4 Ao Cubo Ad Olhão",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 58,
+                    "goalsAgainst": 9,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Csl Benfica Lagos",
                     "played": 6,
                     "wins": 5,
@@ -2834,25 +2845,14 @@
                     "points": 16
                 },
                 {
-                    "position": 2,
-                    "team": "Cr Infante Sagres",
-                    "played": 5,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 35,
-                    "goalsAgainst": 4,
-                    "points": 15
-                },
-                {
                     "position": 3,
-                    "team": "4 Ao Cubo Ad Olhão",
+                    "team": "Cr Infante Sagres",
                     "played": 6,
                     "wins": 5,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 41,
-                    "goalsAgainst": 9,
+                    "goalsFor": 37,
+                    "goalsAgainst": 10,
                     "points": 15
                 },
                 {
@@ -2868,6 +2868,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Aef Faro",
+                    "played": 6,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 29,
+                    "goalsAgainst": 10,
+                    "points": 12
+                },
+                {
+                    "position": 6,
                     "team": "Portimonense Sc",
                     "played": 7,
                     "wins": 4,
@@ -2876,17 +2887,6 @@
                     "goalsFor": 21,
                     "goalsAgainst": 22,
                     "points": 12
-                },
-                {
-                    "position": 6,
-                    "team": "Aef Faro",
-                    "played": 5,
-                    "wins": 3,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 23,
-                    "goalsAgainst": 8,
-                    "points": 9
                 },
                 {
                     "position": 7,
@@ -2901,17 +2901,6 @@
                 },
                 {
                     "position": 8,
-                    "team": "Fc Ferreiras",
-                    "played": 5,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 3,
-                    "goalsAgainst": 30,
-                    "points": 0
-                },
-                {
-                    "position": 9,
                     "team": "Cf Os Armacenenses",
                     "played": 6,
                     "wins": 0,
@@ -2919,6 +2908,17 @@
                     "losses": 6,
                     "goalsFor": 6,
                     "goalsAgainst": 36,
+                    "points": 0
+                },
+                {
+                    "position": 9,
+                    "team": "Fc Ferreiras",
+                    "played": 6,
+                    "wins": 0,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 3,
+                    "goalsAgainst": 47,
                     "points": 0
                 },
                 {
