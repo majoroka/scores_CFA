@@ -278,15 +278,6 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cd Montenegro",
-                    "away": "Sc Farense",
-                    "date": "2 - 2                            \r\n                \r\n                    21 fev",
-                    "time": "",
-                    "stadium": "Campo Futebol 7 Montenegro",
-                    "homeScore": 2,
-                    "awayScore": 2
-                },
-                {
                     "home": "Sc Olhanense",
                     "away": "Portimonense Sc",
                     "date": "0 - 8                            \r\n                \r\n                    21 fev",
@@ -296,18 +287,38 @@
                     "awayScore": 8
                 },
                 {
+                    "home": "Cd Montenegro",
+                    "away": "Sc Farense",
+                    "date": "2 - 2                            \r\n                \r\n                    21 fev",
+                    "time": "",
+                    "stadium": "Campo Futebol 7 Montenegro",
+                    "homeScore": 2,
+                    "awayScore": 2
+                },
+                {
                     "home": "Js Campinense",
                     "away": "Gd Lagoa",
-                    "date": "21 fev",
-                    "time": "12:00",
+                    "date": "2 - 5                            \r\n                \r\n                    21 fev",
+                    "time": "",
                     "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 2,
+                    "awayScore": 5
                 }
             ],
             "classification": [
                 {
                     "position": 1,
+                    "team": "Gd Lagoa",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 10,
+                    "goalsAgainst": 5,
+                    "points": 7
+                },
+                {
+                    "position": 2,
                     "team": "Cf Os Armacenenses",
                     "played": 2,
                     "wins": 2,
@@ -318,7 +329,7 @@
                     "points": 6
                 },
                 {
-                    "position": 2,
+                    "position": 3,
                     "team": "Aef Faro",
                     "played": 2,
                     "wins": 1,
@@ -329,7 +340,7 @@
                     "points": 4
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Sc Farense",
                     "played": 3,
                     "wins": 1,
@@ -340,24 +351,13 @@
                     "points": 4
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Cd Montenegro",
                     "played": 3,
                     "wins": 1,
                     "draws": 1,
                     "losses": 1,
                     "goalsFor": 8,
-                    "goalsAgainst": 3,
-                    "points": 4
-                },
-                {
-                    "position": 5,
-                    "team": "Gd Lagoa",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 5,
                     "goalsAgainst": 3,
                     "points": 4
                 },
@@ -375,12 +375,12 @@
                 {
                     "position": 7,
                     "team": "Js Campinense",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 6,
+                    "losses": 2,
+                    "goalsFor": 3,
+                    "goalsAgainst": 11,
                     "points": 3
                 },
                 {
@@ -441,23 +441,23 @@
                 {
                     "position": 1,
                     "team": "Gd Lagoa",
-                    "played": 3,
-                    "wins": 2,
+                    "played": 4,
+                    "wins": 3,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 6,
-                    "points": 7
+                    "goalsFor": 16,
+                    "goalsAgainst": 8,
+                    "points": 10
                 },
                 {
                     "position": 2,
                     "team": "Js Campinense",
-                    "played": 3,
+                    "played": 4,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 7,
+                    "losses": 2,
+                    "goalsFor": 5,
+                    "goalsAgainst": 12,
                     "points": 6
                 },
                 {
@@ -573,23 +573,23 @@
                 {
                     "position": 1,
                     "team": "Gd Lagoa",
-                    "played": 3,
-                    "wins": 2,
+                    "played": 4,
+                    "wins": 3,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 6,
-                    "points": 7
+                    "goalsFor": 16,
+                    "goalsAgainst": 8,
+                    "points": 10
                 },
                 {
                     "position": 2,
                     "team": "Js Campinense",
-                    "played": 3,
+                    "played": 4,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 7,
+                    "losses": 2,
+                    "goalsFor": 5,
+                    "goalsAgainst": 12,
                     "points": 6
                 },
                 {
@@ -705,23 +705,23 @@
                 {
                     "position": 1,
                     "team": "Gd Lagoa",
-                    "played": 3,
-                    "wins": 2,
+                    "played": 4,
+                    "wins": 3,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 6,
-                    "points": 7
+                    "goalsFor": 16,
+                    "goalsAgainst": 8,
+                    "points": 10
                 },
                 {
                     "position": 2,
                     "team": "Js Campinense",
-                    "played": 3,
+                    "played": 4,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 7,
+                    "losses": 2,
+                    "goalsFor": 5,
+                    "goalsAgainst": 12,
                     "points": 6
                 },
                 {
@@ -837,23 +837,23 @@
                 {
                     "position": 1,
                     "team": "Gd Lagoa",
-                    "played": 3,
-                    "wins": 2,
+                    "played": 4,
+                    "wins": 3,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 6,
-                    "points": 7
+                    "goalsFor": 16,
+                    "goalsAgainst": 8,
+                    "points": 10
                 },
                 {
                     "position": 2,
                     "team": "Js Campinense",
-                    "played": 3,
+                    "played": 4,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 7,
+                    "losses": 2,
+                    "goalsFor": 5,
+                    "goalsAgainst": 12,
                     "points": 6
                 },
                 {
@@ -969,23 +969,23 @@
                 {
                     "position": 1,
                     "team": "Gd Lagoa",
-                    "played": 3,
-                    "wins": 2,
+                    "played": 4,
+                    "wins": 3,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 6,
-                    "points": 7
+                    "goalsFor": 16,
+                    "goalsAgainst": 8,
+                    "points": 10
                 },
                 {
                     "position": 2,
                     "team": "Js Campinense",
-                    "played": 3,
+                    "played": 4,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 7,
+                    "losses": 2,
+                    "goalsFor": 5,
+                    "goalsAgainst": 12,
                     "points": 6
                 },
                 {
@@ -1101,23 +1101,23 @@
                 {
                     "position": 1,
                     "team": "Gd Lagoa",
-                    "played": 3,
-                    "wins": 2,
+                    "played": 4,
+                    "wins": 3,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 6,
-                    "points": 7
+                    "goalsFor": 16,
+                    "goalsAgainst": 8,
+                    "points": 10
                 },
                 {
                     "position": 2,
                     "team": "Js Campinense",
-                    "played": 3,
+                    "played": 4,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 7,
+                    "losses": 2,
+                    "goalsFor": 5,
+                    "goalsAgainst": 12,
                     "points": 6
                 },
                 {
@@ -1233,23 +1233,23 @@
                 {
                     "position": 1,
                     "team": "Gd Lagoa",
-                    "played": 3,
-                    "wins": 2,
+                    "played": 4,
+                    "wins": 3,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 6,
-                    "points": 7
+                    "goalsFor": 16,
+                    "goalsAgainst": 8,
+                    "points": 10
                 },
                 {
                     "position": 2,
                     "team": "Js Campinense",
-                    "played": 3,
+                    "played": 4,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 7,
+                    "losses": 2,
+                    "goalsFor": 5,
+                    "goalsAgainst": 12,
                     "points": 6
                 },
                 {
@@ -1365,23 +1365,23 @@
                 {
                     "position": 1,
                     "team": "Gd Lagoa",
-                    "played": 3,
-                    "wins": 2,
+                    "played": 4,
+                    "wins": 3,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 6,
-                    "points": 7
+                    "goalsFor": 16,
+                    "goalsAgainst": 8,
+                    "points": 10
                 },
                 {
                     "position": 2,
                     "team": "Js Campinense",
-                    "played": 3,
+                    "played": 4,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 7,
+                    "losses": 2,
+                    "goalsFor": 5,
+                    "goalsAgainst": 12,
                     "points": 6
                 },
                 {
@@ -1497,23 +1497,23 @@
                 {
                     "position": 1,
                     "team": "Gd Lagoa",
-                    "played": 3,
-                    "wins": 2,
+                    "played": 4,
+                    "wins": 3,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 6,
-                    "points": 7
+                    "goalsFor": 16,
+                    "goalsAgainst": 8,
+                    "points": 10
                 },
                 {
                     "position": 2,
                     "team": "Js Campinense",
-                    "played": 3,
+                    "played": 4,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 7,
+                    "losses": 2,
+                    "goalsFor": 5,
+                    "goalsAgainst": 12,
                     "points": 6
                 },
                 {
@@ -1629,23 +1629,23 @@
                 {
                     "position": 1,
                     "team": "Gd Lagoa",
-                    "played": 3,
-                    "wins": 2,
+                    "played": 4,
+                    "wins": 3,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 6,
-                    "points": 7
+                    "goalsFor": 16,
+                    "goalsAgainst": 8,
+                    "points": 10
                 },
                 {
                     "position": 2,
                     "team": "Js Campinense",
-                    "played": 3,
+                    "played": 4,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 7,
+                    "losses": 2,
+                    "goalsFor": 5,
+                    "goalsAgainst": 12,
                     "points": 6
                 },
                 {
@@ -1761,23 +1761,23 @@
                 {
                     "position": 1,
                     "team": "Gd Lagoa",
-                    "played": 3,
-                    "wins": 2,
+                    "played": 4,
+                    "wins": 3,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 11,
-                    "goalsAgainst": 6,
-                    "points": 7
+                    "goalsFor": 16,
+                    "goalsAgainst": 8,
+                    "points": 10
                 },
                 {
                     "position": 2,
                     "team": "Js Campinense",
-                    "played": 3,
+                    "played": 4,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 7,
+                    "losses": 2,
+                    "goalsFor": 5,
+                    "goalsAgainst": 12,
                     "points": 6
                 },
                 {
