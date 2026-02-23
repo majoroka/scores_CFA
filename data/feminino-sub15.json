@@ -23,21 +23,21 @@
                     "awayScore": 3
                 },
                 {
-                    "home": "Gd Lagoa",
-                    "away": "Casa Benfica Tavira",
-                    "date": "2 - 1                            \r\n                \r\n                    10 jan",
-                    "time": "",
-                    "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": 2,
-                    "awayScore": 1
-                },
-                {
                     "home": "Cdr Quarteirense",
                     "away": "Sc Farense",
                     "date": "0 - 1                            \r\n                \r\n                    10 jan",
                     "time": "",
                     "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": 0,
+                    "awayScore": 1
+                },
+                {
+                    "home": "Gd Lagoa",
+                    "away": "Casa Benfica Tavira",
+                    "date": "2 - 1                            \r\n                \r\n                    10 jan",
+                    "time": "",
+                    "stadium": "Parque Desportivo Municipal Estombar",
+                    "homeScore": 2,
                     "awayScore": 1
                 }
             ],
@@ -410,15 +410,6 @@
                     "awayScore": 2
                 },
                 {
-                    "home": "Gd Lagoa",
-                    "away": "Aef João Moutinho",
-                    "date": "4 - 1                            \r\n                \r\n                    14 fev",
-                    "time": "",
-                    "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": 4,
-                    "awayScore": 1
-                },
-                {
                     "home": "Casa Benfica Tavira",
                     "away": "Sc Farense",
                     "date": "3 - 0                            \r\n                \r\n                    14 fev",
@@ -426,6 +417,15 @@
                     "stadium": "Campo De Futebol Municipal De Tavira",
                     "homeScore": 3,
                     "awayScore": 0
+                },
+                {
+                    "home": "Gd Lagoa",
+                    "away": "Aef João Moutinho",
+                    "date": "4 - 1                            \r\n                \r\n                    14 fev",
+                    "time": "",
+                    "stadium": "Parque Desportivo Municipal Estombar",
+                    "homeScore": 4,
+                    "awayScore": 1
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -535,11 +535,11 @@
                 {
                     "home": "Cdr Quarteirense",
                     "away": "Gd Lagoa",
-                    "date": "21 fev",
-                    "time": "09:00",
+                    "date": "2 - 0                            \r\n                \r\n                    21 fev",
+                    "time": "",
                     "stadium": "Estadio Municipal Quarteira Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 2,
+                    "awayScore": 0
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -573,12 +573,12 @@
                 {
                     "position": 1,
                     "team": "Gd Lagoa",
-                    "played": 4,
+                    "played": 5,
                     "wins": 4,
                     "draws": 0,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 12,
-                    "goalsAgainst": 3,
+                    "goalsAgainst": 5,
                     "points": 12
                 },
                 {
@@ -606,13 +606,13 @@
                 {
                     "position": 4,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
-                    "wins": 1,
+                    "played": 5,
+                    "wins": 2,
                     "draws": 2,
                     "losses": 1,
-                    "goalsFor": 5,
+                    "goalsFor": 7,
                     "goalsAgainst": 2,
-                    "points": 5
+                    "points": 8
                 },
                 {
                     "position": 5,
@@ -665,6 +665,15 @@
             "fixtureId": "626071",
             "matches": [
                 {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Fc Ferreiras",
+                    "date": "28 fev",
+                    "time": "09:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Fc Ferreiras",
                     "away": "Casa Benfica Tavira",
                     "date": "28 fev",
@@ -683,15 +692,6 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Fc Ferreiras",
-                    "date": "28 fev",
-                    "time": "09:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Gd Lagoa",
                     "away": "Sc Farense",
                     "date": "28 fev",
@@ -705,12 +705,12 @@
                 {
                     "position": 1,
                     "team": "Gd Lagoa",
-                    "played": 4,
+                    "played": 5,
                     "wins": 4,
                     "draws": 0,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 12,
-                    "goalsAgainst": 3,
+                    "goalsAgainst": 5,
                     "points": 12
                 },
                 {
@@ -738,13 +738,13 @@
                 {
                     "position": 4,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
-                    "wins": 1,
+                    "played": 5,
+                    "wins": 2,
                     "draws": 2,
                     "losses": 1,
-                    "goalsFor": 5,
+                    "goalsFor": 7,
                     "goalsAgainst": 2,
-                    "points": 5
+                    "points": 8
                 },
                 {
                     "position": 5,
@@ -797,20 +797,11 @@
             "fixtureId": "626072",
             "matches": [
                 {
-                    "home": "Casa Benfica Tavira",
-                    "away": "Cf Os Armacenenses",
+                    "home": "Sc Farense",
+                    "away": "Aef João Moutinho",
                     "date": "14 mar",
                     "time": "11:00",
-                    "stadium": "Campo De Futebol Municipal De Tavira",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Fc Ferreiras",
-                    "away": "Gd Lagoa",
-                    "date": "14 mar",
-                    "time": "11:00",
-                    "stadium": "Estádio Nora Nº 2",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -824,11 +815,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Sc Farense",
-                    "away": "Aef João Moutinho",
+                    "home": "Fc Ferreiras",
+                    "away": "Gd Lagoa",
                     "date": "14 mar",
                     "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Casa Benfica Tavira",
+                    "away": "Cf Os Armacenenses",
+                    "date": "14 mar",
+                    "time": "11:00",
+                    "stadium": "Campo De Futebol Municipal De Tavira",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -837,12 +837,12 @@
                 {
                     "position": 1,
                     "team": "Gd Lagoa",
-                    "played": 4,
+                    "played": 5,
                     "wins": 4,
                     "draws": 0,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 12,
-                    "goalsAgainst": 3,
+                    "goalsAgainst": 5,
                     "points": 12
                 },
                 {
@@ -870,13 +870,13 @@
                 {
                     "position": 4,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
-                    "wins": 1,
+                    "played": 5,
+                    "wins": 2,
                     "draws": 2,
                     "losses": 1,
-                    "goalsFor": 5,
+                    "goalsFor": 7,
                     "goalsAgainst": 2,
-                    "points": 5
+                    "points": 8
                 },
                 {
                     "position": 5,
@@ -929,11 +929,11 @@
             "fixtureId": "626073",
             "matches": [
                 {
-                    "home": "Casa Benfica Tavira",
-                    "away": "Gd Lagoa",
+                    "home": "Sc Farense",
+                    "away": "Cdr Quarteirense",
                     "date": "21 mar",
                     "time": "11:00",
-                    "stadium": "Campo De Futebol Municipal De Tavira",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -947,20 +947,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Sc Farense",
-                    "away": "Cdr Quarteirense",
-                    "date": "21 mar",
-                    "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Fc Ferreiras",
                     "away": "Aef João Moutinho",
                     "date": "21 mar",
                     "time": "11:00",
                     "stadium": "Estádio Nora Nº 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Casa Benfica Tavira",
+                    "away": "Gd Lagoa",
+                    "date": "21 mar",
+                    "time": "11:00",
+                    "stadium": "Campo De Futebol Municipal De Tavira",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -969,12 +969,12 @@
                 {
                     "position": 1,
                     "team": "Gd Lagoa",
-                    "played": 4,
+                    "played": 5,
                     "wins": 4,
                     "draws": 0,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 12,
-                    "goalsAgainst": 3,
+                    "goalsAgainst": 5,
                     "points": 12
                 },
                 {
@@ -1002,13 +1002,13 @@
                 {
                     "position": 4,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
-                    "wins": 1,
+                    "played": 5,
+                    "wins": 2,
                     "draws": 2,
                     "losses": 1,
-                    "goalsFor": 5,
+                    "goalsFor": 7,
                     "goalsAgainst": 2,
-                    "points": 5
+                    "points": 8
                 },
                 {
                     "position": 5,
@@ -1061,11 +1061,11 @@
             "fixtureId": "626074",
             "matches": [
                 {
-                    "home": "Aef João Moutinho",
-                    "away": "Casa Benfica Tavira",
+                    "home": "Cdr Quarteirense",
+                    "away": "Fc Ferreiras",
                     "date": "28 mar",
                     "time": "11:00",
-                    "stadium": "Parque Desportivo Municipal Estombar",
+                    "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1079,20 +1079,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cdr Quarteirense",
-                    "away": "Fc Ferreiras",
-                    "date": "28 mar",
-                    "time": "11:00",
-                    "stadium": "Estadio Municipal Quarteira Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Fc Ferreiras",
                     "away": "Sc Farense",
                     "date": "28 mar",
                     "time": "11:00",
                     "stadium": "Estádio Nora Nº 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Aef João Moutinho",
+                    "away": "Casa Benfica Tavira",
+                    "date": "28 mar",
+                    "time": "11:00",
+                    "stadium": "Parque Desportivo Municipal Estombar",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1101,12 +1101,12 @@
                 {
                     "position": 1,
                     "team": "Gd Lagoa",
-                    "played": 4,
+                    "played": 5,
                     "wins": 4,
                     "draws": 0,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 12,
-                    "goalsAgainst": 3,
+                    "goalsAgainst": 5,
                     "points": 12
                 },
                 {
@@ -1134,13 +1134,13 @@
                 {
                     "position": 4,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
-                    "wins": 1,
+                    "played": 5,
+                    "wins": 2,
                     "draws": 2,
                     "losses": 1,
-                    "goalsFor": 5,
+                    "goalsFor": 7,
                     "goalsAgainst": 2,
-                    "points": 5
+                    "points": 8
                 },
                 {
                     "position": 5,
@@ -1202,15 +1202,6 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Casa Benfica Tavira",
-                    "away": "Cdr Quarteirense",
-                    "date": "11 abr",
-                    "time": "11:00",
-                    "stadium": "Campo De Futebol Municipal De Tavira",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Cf Os Armacenenses",
                     "away": "Aef João Moutinho",
                     "date": "11 abr",
@@ -1227,18 +1218,27 @@
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Casa Benfica Tavira",
+                    "away": "Cdr Quarteirense",
+                    "date": "11 abr",
+                    "time": "11:00",
+                    "stadium": "Campo De Futebol Municipal De Tavira",
+                    "homeScore": null,
+                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Gd Lagoa",
-                    "played": 4,
+                    "played": 5,
                     "wins": 4,
                     "draws": 0,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 12,
-                    "goalsAgainst": 3,
+                    "goalsAgainst": 5,
                     "points": 12
                 },
                 {
@@ -1266,13 +1266,13 @@
                 {
                     "position": 4,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
-                    "wins": 1,
+                    "played": 5,
+                    "wins": 2,
                     "draws": 2,
                     "losses": 1,
-                    "goalsFor": 5,
+                    "goalsFor": 7,
                     "goalsAgainst": 2,
-                    "points": 5
+                    "points": 8
                 },
                 {
                     "position": 5,
@@ -1334,20 +1334,20 @@
                     "awayScore": 0
                 },
                 {
-                    "home": "Aef João Moutinho",
-                    "away": "Gd Lagoa",
-                    "date": "18 abr",
-                    "time": "11:00",
-                    "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Fc Ferreiras",
                     "away": "Fc Ferreiras",
                     "date": "18 abr",
                     "time": "11:00",
                     "stadium": "Estádio Nora Nº 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Aef João Moutinho",
+                    "away": "Gd Lagoa",
+                    "date": "18 abr",
+                    "time": "11:00",
+                    "stadium": "Parque Desportivo Municipal Estombar",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1365,12 +1365,12 @@
                 {
                     "position": 1,
                     "team": "Gd Lagoa",
-                    "played": 4,
+                    "played": 5,
                     "wins": 4,
                     "draws": 0,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 12,
-                    "goalsAgainst": 3,
+                    "goalsAgainst": 5,
                     "points": 12
                 },
                 {
@@ -1398,13 +1398,13 @@
                 {
                     "position": 4,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
-                    "wins": 1,
+                    "played": 5,
+                    "wins": 2,
                     "draws": 2,
                     "losses": 1,
-                    "goalsFor": 5,
+                    "goalsFor": 7,
                     "goalsAgainst": 2,
-                    "points": 5
+                    "points": 8
                 },
                 {
                     "position": 5,
@@ -1457,8 +1457,8 @@
             "fixtureId": "626077",
             "matches": [
                 {
-                    "home": "Aef João Moutinho",
-                    "away": "Fc Ferreiras",
+                    "home": "Gd Lagoa",
+                    "away": "Cdr Quarteirense",
                     "date": "2 mai",
                     "time": "11:00",
                     "stadium": "Parque Desportivo Municipal Estombar",
@@ -1466,8 +1466,17 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Gd Lagoa",
-                    "away": "Cdr Quarteirense",
+                    "home": "Cf Os Armacenenses",
+                    "away": "Sc Farense",
+                    "date": "2 mai",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Aef João Moutinho",
+                    "away": "Fc Ferreiras",
                     "date": "2 mai",
                     "time": "11:00",
                     "stadium": "Parque Desportivo Municipal Estombar",
@@ -1482,27 +1491,18 @@
                     "stadium": "Campo De Futebol Municipal De Tavira",
                     "homeScore": null,
                     "awayScore": null
-                },
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Sc Farense",
-                    "date": "2 mai",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Gd Lagoa",
-                    "played": 4,
+                    "played": 5,
                     "wins": 4,
                     "draws": 0,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 12,
-                    "goalsAgainst": 3,
+                    "goalsAgainst": 5,
                     "points": 12
                 },
                 {
@@ -1530,13 +1530,13 @@
                 {
                     "position": 4,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
-                    "wins": 1,
+                    "played": 5,
+                    "wins": 2,
                     "draws": 2,
                     "losses": 1,
-                    "goalsFor": 5,
+                    "goalsFor": 7,
                     "goalsAgainst": 2,
-                    "points": 5
+                    "points": 8
                 },
                 {
                     "position": 5,
@@ -1589,29 +1589,11 @@
             "fixtureId": "626078",
             "matches": [
                 {
-                    "home": "Fc Ferreiras",
-                    "away": "Cf Os Armacenenses",
-                    "date": "9 mai",
-                    "time": "11:00",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Sc Farense",
                     "away": "Gd Lagoa",
                     "date": "9 mai",
                     "time": "11:00",
                     "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Casa Benfica Tavira",
-                    "away": "Fc Ferreiras",
-                    "date": "9 mai",
-                    "time": "11:00",
-                    "stadium": "Campo De Futebol Municipal De Tavira",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1623,18 +1605,36 @@
                     "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Cf Os Armacenenses",
+                    "date": "9 mai",
+                    "time": "11:00",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Casa Benfica Tavira",
+                    "away": "Fc Ferreiras",
+                    "date": "9 mai",
+                    "time": "11:00",
+                    "stadium": "Campo De Futebol Municipal De Tavira",
+                    "homeScore": null,
+                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Gd Lagoa",
-                    "played": 4,
+                    "played": 5,
                     "wins": 4,
                     "draws": 0,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 12,
-                    "goalsAgainst": 3,
+                    "goalsAgainst": 5,
                     "points": 12
                 },
                 {
@@ -1662,13 +1662,13 @@
                 {
                     "position": 4,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
-                    "wins": 1,
+                    "played": 5,
+                    "wins": 2,
                     "draws": 2,
                     "losses": 1,
-                    "goalsFor": 5,
+                    "goalsFor": 7,
                     "goalsAgainst": 2,
-                    "points": 5
+                    "points": 8
                 },
                 {
                     "position": 5,
@@ -1721,6 +1721,15 @@
             "fixtureId": "626079",
             "matches": [
                 {
+                    "home": "Gd Lagoa",
+                    "away": "Fc Ferreiras",
+                    "date": "16 mai",
+                    "time": "11:00",
+                    "stadium": "Parque Desportivo Municipal Estombar",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Cf Os Armacenenses",
                     "away": "Casa Benfica Tavira",
                     "date": "16 mai",
@@ -1739,15 +1748,6 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Gd Lagoa",
-                    "away": "Fc Ferreiras",
-                    "date": "16 mai",
-                    "time": "11:00",
-                    "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Aef João Moutinho",
                     "away": "Sc Farense",
                     "date": "16 mai",
@@ -1761,12 +1761,12 @@
                 {
                     "position": 1,
                     "team": "Gd Lagoa",
-                    "played": 4,
+                    "played": 5,
                     "wins": 4,
                     "draws": 0,
-                    "losses": 0,
+                    "losses": 1,
                     "goalsFor": 12,
-                    "goalsAgainst": 3,
+                    "goalsAgainst": 5,
                     "points": 12
                 },
                 {
@@ -1794,13 +1794,13 @@
                 {
                     "position": 4,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
-                    "wins": 1,
+                    "played": 5,
+                    "wins": 2,
                     "draws": 2,
                     "losses": 1,
-                    "goalsFor": 5,
+                    "goalsFor": 7,
                     "goalsAgainst": 2,
-                    "points": 5
+                    "points": 8
                 },
                 {
                     "position": 5,
