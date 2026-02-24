@@ -155,20 +155,20 @@
                     "awayScore": 3
                 },
                 {
-                    "home": "Cd Montenegro",
-                    "away": "Sc Olhanense",
-                    "date": "6 - 0                            \r\n                \r\n                    31 jan",
-                    "time": "",
-                    "stadium": "Campo Futebol 7 Montenegro",
-                    "homeScore": 6,
-                    "awayScore": 0
-                },
-                {
                     "home": "Sc Farense",
                     "away": "Js Campinense",
                     "date": "6 - 0                            \r\n                \r\n                    31 jan",
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": 6,
+                    "awayScore": 0
+                },
+                {
+                    "home": "Cd Montenegro",
+                    "away": "Sc Olhanense",
+                    "date": "6 - 0                            \r\n                \r\n                    31 jan",
+                    "time": "",
+                    "stadium": "Campo Futebol 7 Montenegro",
                     "homeScore": 6,
                     "awayScore": 0
                 }
@@ -271,20 +271,11 @@
                 {
                     "home": "Aef Faro",
                     "away": "Cf Os Armacenenses",
-                    "date": "21 fev",
-                    "time": "09:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Cd Montenegro",
-                    "away": "Sc Farense",
-                    "date": "2 - 2                            \r\n                \r\n                    21 fev",
+                    "date": "2 - 1                            \r\n                \r\n                    21 fev",
                     "time": "",
-                    "stadium": "Campo Futebol 7 Montenegro",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 2,
-                    "awayScore": 2
+                    "awayScore": 1
                 },
                 {
                     "home": "Sc Olhanense",
@@ -294,6 +285,15 @@
                     "stadium": "Estádio José Arcanjo",
                     "homeScore": 0,
                     "awayScore": 8
+                },
+                {
+                    "home": "Cd Montenegro",
+                    "away": "Sc Farense",
+                    "date": "2 - 2                            \r\n                \r\n                    21 fev",
+                    "time": "",
+                    "stadium": "Campo Futebol 7 Montenegro",
+                    "homeScore": 2,
+                    "awayScore": 2
                 },
                 {
                     "home": "Js Campinense",
@@ -319,25 +319,25 @@
                 },
                 {
                     "position": 2,
-                    "team": "Cf Os Armacenenses",
-                    "played": 2,
+                    "team": "Aef Faro",
+                    "played": 3,
                     "wins": 2,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 13,
-                    "goalsAgainst": 5,
-                    "points": 6
+                    "goalsFor": 8,
+                    "goalsAgainst": 4,
+                    "points": 7
                 },
                 {
                     "position": 3,
-                    "team": "Aef Faro",
-                    "played": 2,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 6,
-                    "goalsAgainst": 3,
-                    "points": 4
+                    "team": "Cf Os Armacenenses",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 14,
+                    "goalsAgainst": 7,
+                    "points": 6
                 },
                 {
                     "position": 4,
@@ -401,15 +401,6 @@
             "fixtureId": "635235",
             "matches": [
                 {
-                    "home": "Sc Farense",
-                    "away": "Sc Olhanense",
-                    "date": "2 - 2                            \r\n                \r\n                    14 fev",
-                    "time": "",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": 2,
-                    "awayScore": 2
-                },
-                {
                     "home": "Gd Lagoa",
                     "away": "Cd Montenegro",
                     "date": "6 - 3                            \r\n                \r\n                    14 fev",
@@ -417,6 +408,15 @@
                     "stadium": "Campo De Futebol Sete - Espamol",
                     "homeScore": 6,
                     "awayScore": 3
+                },
+                {
+                    "home": "Sc Farense",
+                    "away": "Sc Olhanense",
+                    "date": "2 - 2                            \r\n                \r\n                    14 fev",
+                    "time": "",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": 2,
+                    "awayScore": 2
                 },
                 {
                     "home": "Portimonense Sc",
@@ -451,6 +451,17 @@
                 },
                 {
                     "position": 2,
+                    "team": "Aef Faro",
+                    "played": 4,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 9,
+                    "goalsAgainst": 6,
+                    "points": 7
+                },
+                {
+                    "position": 3,
                     "team": "Js Campinense",
                     "played": 4,
                     "wins": 2,
@@ -461,18 +472,18 @@
                     "points": 6
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Cf Os Armacenenses",
-                    "played": 3,
+                    "played": 4,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 14,
-                    "goalsAgainst": 7,
+                    "losses": 2,
+                    "goalsFor": 15,
+                    "goalsAgainst": 9,
                     "points": 6
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Portimonense Sc",
                     "played": 4,
                     "wins": 2,
@@ -483,7 +494,7 @@
                     "points": 6
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Sc Farense",
                     "played": 4,
                     "wins": 1,
@@ -494,7 +505,7 @@
                     "points": 5
                 },
                 {
-                    "position": 6,
+                    "position": 7,
                     "team": "Cd Montenegro",
                     "played": 4,
                     "wins": 1,
@@ -502,17 +513,6 @@
                     "losses": 2,
                     "goalsFor": 11,
                     "goalsAgainst": 9,
-                    "points": 4
-                },
-                {
-                    "position": 7,
-                    "team": "Aef Faro",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 5,
                     "points": 4
                 },
                 {
@@ -533,11 +533,11 @@
             "fixtureId": "635236",
             "matches": [
                 {
-                    "home": "Sc Farense",
-                    "away": "Gd Lagoa",
+                    "home": "Js Campinense",
+                    "away": "Portimonense Sc",
                     "date": "28 fev",
                     "time": "12:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -551,11 +551,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Js Campinense",
-                    "away": "Portimonense Sc",
+                    "home": "Sc Farense",
+                    "away": "Gd Lagoa",
                     "date": "28 fev",
                     "time": "12:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -583,6 +583,17 @@
                 },
                 {
                     "position": 2,
+                    "team": "Aef Faro",
+                    "played": 4,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 9,
+                    "goalsAgainst": 6,
+                    "points": 7
+                },
+                {
+                    "position": 3,
                     "team": "Js Campinense",
                     "played": 4,
                     "wins": 2,
@@ -593,18 +604,18 @@
                     "points": 6
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Cf Os Armacenenses",
-                    "played": 3,
+                    "played": 4,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 14,
-                    "goalsAgainst": 7,
+                    "losses": 2,
+                    "goalsFor": 15,
+                    "goalsAgainst": 9,
                     "points": 6
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Portimonense Sc",
                     "played": 4,
                     "wins": 2,
@@ -615,7 +626,7 @@
                     "points": 6
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Sc Farense",
                     "played": 4,
                     "wins": 1,
@@ -626,7 +637,7 @@
                     "points": 5
                 },
                 {
-                    "position": 6,
+                    "position": 7,
                     "team": "Cd Montenegro",
                     "played": 4,
                     "wins": 1,
@@ -634,17 +645,6 @@
                     "losses": 2,
                     "goalsFor": 11,
                     "goalsAgainst": 9,
-                    "points": 4
-                },
-                {
-                    "position": 7,
-                    "team": "Aef Faro",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 5,
                     "points": 4
                 },
                 {
@@ -683,20 +683,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Sc Farense",
-                    "date": "7 mar",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Aef Faro",
                     "away": "Js Campinense",
                     "date": "7 mar",
                     "time": "11:00",
                     "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Sc Farense",
+                    "date": "7 mar",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -715,6 +715,17 @@
                 },
                 {
                     "position": 2,
+                    "team": "Aef Faro",
+                    "played": 4,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 9,
+                    "goalsAgainst": 6,
+                    "points": 7
+                },
+                {
+                    "position": 3,
                     "team": "Js Campinense",
                     "played": 4,
                     "wins": 2,
@@ -725,18 +736,18 @@
                     "points": 6
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Cf Os Armacenenses",
-                    "played": 3,
+                    "played": 4,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 14,
-                    "goalsAgainst": 7,
+                    "losses": 2,
+                    "goalsFor": 15,
+                    "goalsAgainst": 9,
                     "points": 6
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Portimonense Sc",
                     "played": 4,
                     "wins": 2,
@@ -747,7 +758,7 @@
                     "points": 6
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Sc Farense",
                     "played": 4,
                     "wins": 1,
@@ -758,7 +769,7 @@
                     "points": 5
                 },
                 {
-                    "position": 6,
+                    "position": 7,
                     "team": "Cd Montenegro",
                     "played": 4,
                     "wins": 1,
@@ -766,17 +777,6 @@
                     "losses": 2,
                     "goalsFor": 11,
                     "goalsAgainst": 9,
-                    "points": 4
-                },
-                {
-                    "position": 7,
-                    "team": "Aef Faro",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 5,
                     "points": 4
                 },
                 {
@@ -797,20 +797,20 @@
             "fixtureId": "635238",
             "matches": [
                 {
-                    "home": "Cd Montenegro",
-                    "away": "Aef Faro",
-                    "date": "14 mar",
-                    "time": "11:00",
-                    "stadium": "Campo Futebol 7 Montenegro",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Sc Farense",
                     "away": "Portimonense Sc",
                     "date": "14 mar",
                     "time": "11:00",
                     "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cd Montenegro",
+                    "away": "Aef Faro",
+                    "date": "14 mar",
+                    "time": "11:00",
+                    "stadium": "Campo Futebol 7 Montenegro",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -847,6 +847,17 @@
                 },
                 {
                     "position": 2,
+                    "team": "Aef Faro",
+                    "played": 4,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 9,
+                    "goalsAgainst": 6,
+                    "points": 7
+                },
+                {
+                    "position": 3,
                     "team": "Js Campinense",
                     "played": 4,
                     "wins": 2,
@@ -857,18 +868,18 @@
                     "points": 6
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Cf Os Armacenenses",
-                    "played": 3,
+                    "played": 4,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 14,
-                    "goalsAgainst": 7,
+                    "losses": 2,
+                    "goalsFor": 15,
+                    "goalsAgainst": 9,
                     "points": 6
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Portimonense Sc",
                     "played": 4,
                     "wins": 2,
@@ -879,7 +890,7 @@
                     "points": 6
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Sc Farense",
                     "played": 4,
                     "wins": 1,
@@ -890,7 +901,7 @@
                     "points": 5
                 },
                 {
-                    "position": 6,
+                    "position": 7,
                     "team": "Cd Montenegro",
                     "played": 4,
                     "wins": 1,
@@ -898,17 +909,6 @@
                     "losses": 2,
                     "goalsFor": 11,
                     "goalsAgainst": 9,
-                    "points": 4
-                },
-                {
-                    "position": 7,
-                    "team": "Aef Faro",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 5,
                     "points": 4
                 },
                 {
@@ -929,11 +929,11 @@
             "fixtureId": "635239",
             "matches": [
                 {
-                    "home": "Cd Montenegro",
-                    "away": "Js Campinense",
+                    "home": "Gd Lagoa",
+                    "away": "Portimonense Sc",
                     "date": "21 mar",
                     "time": "11:00",
-                    "stadium": "Campo Futebol 7 Montenegro",
+                    "stadium": "Campo De Futebol Sete - Espamol",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -947,11 +947,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Gd Lagoa",
-                    "away": "Portimonense Sc",
+                    "home": "Cd Montenegro",
+                    "away": "Js Campinense",
                     "date": "21 mar",
                     "time": "11:00",
-                    "stadium": "Campo De Futebol Sete - Espamol",
+                    "stadium": "Campo Futebol 7 Montenegro",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -979,6 +979,17 @@
                 },
                 {
                     "position": 2,
+                    "team": "Aef Faro",
+                    "played": 4,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 9,
+                    "goalsAgainst": 6,
+                    "points": 7
+                },
+                {
+                    "position": 3,
                     "team": "Js Campinense",
                     "played": 4,
                     "wins": 2,
@@ -989,18 +1000,18 @@
                     "points": 6
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Cf Os Armacenenses",
-                    "played": 3,
+                    "played": 4,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 14,
-                    "goalsAgainst": 7,
+                    "losses": 2,
+                    "goalsFor": 15,
+                    "goalsAgainst": 9,
                     "points": 6
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Portimonense Sc",
                     "played": 4,
                     "wins": 2,
@@ -1011,7 +1022,7 @@
                     "points": 6
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Sc Farense",
                     "played": 4,
                     "wins": 1,
@@ -1022,7 +1033,7 @@
                     "points": 5
                 },
                 {
-                    "position": 6,
+                    "position": 7,
                     "team": "Cd Montenegro",
                     "played": 4,
                     "wins": 1,
@@ -1030,17 +1041,6 @@
                     "losses": 2,
                     "goalsFor": 11,
                     "goalsAgainst": 9,
-                    "points": 4
-                },
-                {
-                    "position": 7,
-                    "team": "Aef Faro",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 5,
                     "points": 4
                 },
                 {
@@ -1061,15 +1061,6 @@
             "fixtureId": "635240",
             "matches": [
                 {
-                    "home": "Portimonense Sc",
-                    "away": "Cf Os Armacenenses",
-                    "date": "28 mar",
-                    "time": "11:00",
-                    "stadium": "Campo Major David Neto 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Sc Olhanense",
                     "away": "Cd Montenegro",
                     "date": "28 mar",
@@ -1079,20 +1070,29 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Js Campinense",
-                    "away": "Sc Farense",
-                    "date": "28 mar",
-                    "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Aef Faro",
                     "away": "Gd Lagoa",
                     "date": "28 mar",
                     "time": "11:00",
                     "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Portimonense Sc",
+                    "away": "Cf Os Armacenenses",
+                    "date": "28 mar",
+                    "time": "11:00",
+                    "stadium": "Campo Major David Neto 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Js Campinense",
+                    "away": "Sc Farense",
+                    "date": "28 mar",
+                    "time": "11:00",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1111,6 +1111,17 @@
                 },
                 {
                     "position": 2,
+                    "team": "Aef Faro",
+                    "played": 4,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 9,
+                    "goalsAgainst": 6,
+                    "points": 7
+                },
+                {
+                    "position": 3,
                     "team": "Js Campinense",
                     "played": 4,
                     "wins": 2,
@@ -1121,18 +1132,18 @@
                     "points": 6
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Cf Os Armacenenses",
-                    "played": 3,
+                    "played": 4,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 14,
-                    "goalsAgainst": 7,
+                    "losses": 2,
+                    "goalsFor": 15,
+                    "goalsAgainst": 9,
                     "points": 6
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Portimonense Sc",
                     "played": 4,
                     "wins": 2,
@@ -1143,7 +1154,7 @@
                     "points": 6
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Sc Farense",
                     "played": 4,
                     "wins": 1,
@@ -1154,7 +1165,7 @@
                     "points": 5
                 },
                 {
-                    "position": 6,
+                    "position": 7,
                     "team": "Cd Montenegro",
                     "played": 4,
                     "wins": 1,
@@ -1162,17 +1173,6 @@
                     "losses": 2,
                     "goalsFor": 11,
                     "goalsAgainst": 9,
-                    "points": 4
-                },
-                {
-                    "position": 7,
-                    "team": "Aef Faro",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 5,
                     "points": 4
                 },
                 {
@@ -1193,20 +1193,20 @@
             "fixtureId": "635241",
             "matches": [
                 {
-                    "home": "Portimonense Sc",
-                    "away": "Sc Olhanense",
-                    "date": "11 abr",
-                    "time": "11:00",
-                    "stadium": "Campo Major David Neto 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Sc Farense",
                     "away": "Cd Montenegro",
                     "date": "11 abr",
                     "time": "11:00",
                     "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Aef Faro",
+                    "date": "11 abr",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1220,11 +1220,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Aef Faro",
+                    "home": "Portimonense Sc",
+                    "away": "Sc Olhanense",
                     "date": "11 abr",
                     "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "stadium": "Campo Major David Neto 2",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1243,6 +1243,17 @@
                 },
                 {
                     "position": 2,
+                    "team": "Aef Faro",
+                    "played": 4,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 9,
+                    "goalsAgainst": 6,
+                    "points": 7
+                },
+                {
+                    "position": 3,
                     "team": "Js Campinense",
                     "played": 4,
                     "wins": 2,
@@ -1253,18 +1264,18 @@
                     "points": 6
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Cf Os Armacenenses",
-                    "played": 3,
+                    "played": 4,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 14,
-                    "goalsAgainst": 7,
+                    "losses": 2,
+                    "goalsFor": 15,
+                    "goalsAgainst": 9,
                     "points": 6
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Portimonense Sc",
                     "played": 4,
                     "wins": 2,
@@ -1275,7 +1286,7 @@
                     "points": 6
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Sc Farense",
                     "played": 4,
                     "wins": 1,
@@ -1286,7 +1297,7 @@
                     "points": 5
                 },
                 {
-                    "position": 6,
+                    "position": 7,
                     "team": "Cd Montenegro",
                     "played": 4,
                     "wins": 1,
@@ -1294,17 +1305,6 @@
                     "losses": 2,
                     "goalsFor": 11,
                     "goalsAgainst": 9,
-                    "points": 4
-                },
-                {
-                    "position": 7,
-                    "team": "Aef Faro",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 5,
                     "points": 4
                 },
                 {
@@ -1325,20 +1325,20 @@
             "fixtureId": "635242",
             "matches": [
                 {
+                    "home": "Aef Faro",
+                    "away": "Portimonense Sc",
+                    "date": "18 abr",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Cd Montenegro",
                     "away": "Gd Lagoa",
                     "date": "18 abr",
                     "time": "11:00",
                     "stadium": "Campo Futebol 7 Montenegro",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Sc Olhanense",
-                    "away": "Sc Farense",
-                    "date": "18 abr",
-                    "time": "11:00",
-                    "stadium": "Estádio José Arcanjo",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1352,11 +1352,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Aef Faro",
-                    "away": "Portimonense Sc",
+                    "home": "Sc Olhanense",
+                    "away": "Sc Farense",
                     "date": "18 abr",
                     "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
+                    "stadium": "Estádio José Arcanjo",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1375,6 +1375,17 @@
                 },
                 {
                     "position": 2,
+                    "team": "Aef Faro",
+                    "played": 4,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 9,
+                    "goalsAgainst": 6,
+                    "points": 7
+                },
+                {
+                    "position": 3,
                     "team": "Js Campinense",
                     "played": 4,
                     "wins": 2,
@@ -1385,18 +1396,18 @@
                     "points": 6
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Cf Os Armacenenses",
-                    "played": 3,
+                    "played": 4,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 14,
-                    "goalsAgainst": 7,
+                    "losses": 2,
+                    "goalsFor": 15,
+                    "goalsAgainst": 9,
                     "points": 6
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Portimonense Sc",
                     "played": 4,
                     "wins": 2,
@@ -1407,7 +1418,7 @@
                     "points": 6
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Sc Farense",
                     "played": 4,
                     "wins": 1,
@@ -1418,7 +1429,7 @@
                     "points": 5
                 },
                 {
-                    "position": 6,
+                    "position": 7,
                     "team": "Cd Montenegro",
                     "played": 4,
                     "wins": 1,
@@ -1426,17 +1437,6 @@
                     "losses": 2,
                     "goalsFor": 11,
                     "goalsAgainst": 9,
-                    "points": 4
-                },
-                {
-                    "position": 7,
-                    "team": "Aef Faro",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 5,
                     "points": 4
                 },
                 {
@@ -1457,6 +1457,15 @@
             "fixtureId": "635243",
             "matches": [
                 {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Cd Montenegro",
+                    "date": "2 mai",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Portimonense Sc",
                     "away": "Js Campinense",
                     "date": "2 mai",
@@ -1471,15 +1480,6 @@
                     "date": "2 mai",
                     "time": "11:00",
                     "stadium": "Campo De Futebol Sete - Espamol",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Cd Montenegro",
-                    "date": "2 mai",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1507,6 +1507,17 @@
                 },
                 {
                     "position": 2,
+                    "team": "Aef Faro",
+                    "played": 4,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 9,
+                    "goalsAgainst": 6,
+                    "points": 7
+                },
+                {
+                    "position": 3,
                     "team": "Js Campinense",
                     "played": 4,
                     "wins": 2,
@@ -1517,18 +1528,18 @@
                     "points": 6
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Cf Os Armacenenses",
-                    "played": 3,
+                    "played": 4,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 14,
-                    "goalsAgainst": 7,
+                    "losses": 2,
+                    "goalsFor": 15,
+                    "goalsAgainst": 9,
                     "points": 6
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Portimonense Sc",
                     "played": 4,
                     "wins": 2,
@@ -1539,7 +1550,7 @@
                     "points": 6
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Sc Farense",
                     "played": 4,
                     "wins": 1,
@@ -1550,7 +1561,7 @@
                     "points": 5
                 },
                 {
-                    "position": 6,
+                    "position": 7,
                     "team": "Cd Montenegro",
                     "played": 4,
                     "wins": 1,
@@ -1558,17 +1569,6 @@
                     "losses": 2,
                     "goalsFor": 11,
                     "goalsAgainst": 9,
-                    "points": 4
-                },
-                {
-                    "position": 7,
-                    "team": "Aef Faro",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 5,
                     "points": 4
                 },
                 {
@@ -1598,6 +1598,15 @@
                     "awayScore": null
                 },
                 {
+                    "home": "Js Campinense",
+                    "away": "Aef Faro",
+                    "date": "9 mai",
+                    "time": "11:00",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Sc Farense",
                     "away": "Cf Os Armacenenses",
                     "date": "9 mai",
@@ -1612,15 +1621,6 @@
                     "date": "9 mai",
                     "time": "11:00",
                     "stadium": "Campo De Futebol Sete - Espamol",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Js Campinense",
-                    "away": "Aef Faro",
-                    "date": "9 mai",
-                    "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1639,6 +1639,17 @@
                 },
                 {
                     "position": 2,
+                    "team": "Aef Faro",
+                    "played": 4,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 9,
+                    "goalsAgainst": 6,
+                    "points": 7
+                },
+                {
+                    "position": 3,
                     "team": "Js Campinense",
                     "played": 4,
                     "wins": 2,
@@ -1649,18 +1660,18 @@
                     "points": 6
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Cf Os Armacenenses",
-                    "played": 3,
+                    "played": 4,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 14,
-                    "goalsAgainst": 7,
+                    "losses": 2,
+                    "goalsFor": 15,
+                    "goalsAgainst": 9,
                     "points": 6
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Portimonense Sc",
                     "played": 4,
                     "wins": 2,
@@ -1671,7 +1682,7 @@
                     "points": 6
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Sc Farense",
                     "played": 4,
                     "wins": 1,
@@ -1682,7 +1693,7 @@
                     "points": 5
                 },
                 {
-                    "position": 6,
+                    "position": 7,
                     "team": "Cd Montenegro",
                     "played": 4,
                     "wins": 1,
@@ -1690,17 +1701,6 @@
                     "losses": 2,
                     "goalsFor": 11,
                     "goalsAgainst": 9,
-                    "points": 4
-                },
-                {
-                    "position": 7,
-                    "team": "Aef Faro",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 5,
                     "points": 4
                 },
                 {
@@ -1721,20 +1721,11 @@
             "fixtureId": "635245",
             "matches": [
                 {
-                    "home": "Portimonense Sc",
-                    "away": "Sc Farense",
+                    "home": "Aef Faro",
+                    "away": "Cd Montenegro",
                     "date": "16 mai",
                     "time": "11:00",
-                    "stadium": "Campo Major David Neto 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Sc Olhanense",
-                    "away": "Js Campinense",
-                    "date": "16 mai",
-                    "time": "11:00",
-                    "stadium": "Estádio José Arcanjo",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1748,11 +1739,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Aef Faro",
-                    "away": "Cd Montenegro",
+                    "home": "Sc Olhanense",
+                    "away": "Js Campinense",
                     "date": "16 mai",
                     "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
+                    "stadium": "Estádio José Arcanjo",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Portimonense Sc",
+                    "away": "Sc Farense",
+                    "date": "16 mai",
+                    "time": "11:00",
+                    "stadium": "Campo Major David Neto 2",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1771,6 +1771,17 @@
                 },
                 {
                     "position": 2,
+                    "team": "Aef Faro",
+                    "played": 4,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 9,
+                    "goalsAgainst": 6,
+                    "points": 7
+                },
+                {
+                    "position": 3,
                     "team": "Js Campinense",
                     "played": 4,
                     "wins": 2,
@@ -1781,18 +1792,18 @@
                     "points": 6
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Cf Os Armacenenses",
-                    "played": 3,
+                    "played": 4,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 14,
-                    "goalsAgainst": 7,
+                    "losses": 2,
+                    "goalsFor": 15,
+                    "goalsAgainst": 9,
                     "points": 6
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Portimonense Sc",
                     "played": 4,
                     "wins": 2,
@@ -1803,7 +1814,7 @@
                     "points": 6
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Sc Farense",
                     "played": 4,
                     "wins": 1,
@@ -1814,7 +1825,7 @@
                     "points": 5
                 },
                 {
-                    "position": 6,
+                    "position": 7,
                     "team": "Cd Montenegro",
                     "played": 4,
                     "wins": 1,
@@ -1822,17 +1833,6 @@
                     "losses": 2,
                     "goalsFor": 11,
                     "goalsAgainst": 9,
-                    "points": 4
-                },
-                {
-                    "position": 7,
-                    "team": "Aef Faro",
-                    "played": 3,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 7,
-                    "goalsAgainst": 5,
                     "points": 4
                 },
                 {
