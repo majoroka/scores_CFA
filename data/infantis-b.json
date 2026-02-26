@@ -168,15 +168,6 @@
             "fixtureId": "626189",
             "matches": [
                 {
-                    "home": "Fc Ferreiras",
-                    "away": "Aef Faro",
-                    "date": "0 - 7                            \r\n                \r\n                    17 jan",
-                    "time": "",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": 0,
-                    "awayScore": 7
-                },
-                {
                     "home": "Aef Monte Gordo 2019",
                     "away": "Mexilhoeira Grande Fc",
                     "date": "2 - 9                            \r\n                \r\n                    17 jan",
@@ -184,6 +175,15 @@
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": 2,
                     "awayScore": 9
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Aef Faro",
+                    "date": "0 - 7                            \r\n                \r\n                    17 jan",
+                    "time": "",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": 0,
+                    "awayScore": 7
                 },
                 {
                     "home": "Imortal Dc",
@@ -331,21 +331,21 @@
             "fixtureId": "626190",
             "matches": [
                 {
-                    "home": "Portimonense Sc",
-                    "away": "Aef Faro",
-                    "date": "0 - 1                            \r\n                \r\n                    24 jan",
-                    "time": "",
-                    "stadium": "Campo Major David Neto 2",
-                    "homeScore": 0,
-                    "awayScore": 1
-                },
-                {
                     "home": "4 Ao Cubo Ad Olhão",
                     "away": "Imortal Dc",
                     "date": "10 - 1                            \r\n                \r\n                    24 jan",
                     "time": "",
                     "stadium": "Estádio Municipal Olhão",
                     "homeScore": 10,
+                    "awayScore": 1
+                },
+                {
+                    "home": "Portimonense Sc",
+                    "away": "Aef Faro",
+                    "date": "0 - 1                            \r\n                \r\n                    24 jan",
+                    "time": "",
+                    "stadium": "Campo Major David Neto 2",
+                    "homeScore": 0,
                     "awayScore": 1
                 },
                 {
@@ -829,15 +829,6 @@
                     "awayScore": 3
                 },
                 {
-                    "home": "Fc Ferreiras",
-                    "away": "4 Ao Cubo Ad Olhão",
-                    "date": "0 - 17                            \r\n                \r\n                    21 fev",
-                    "time": "",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": 0,
-                    "awayScore": 17
-                },
-                {
                     "home": "Mexilhoeira Grande Fc",
                     "away": "Csl Benfica Lagos",
                     "date": "2 - 2                            \r\n                \r\n                    21 fev",
@@ -845,6 +836,15 @@
                     "stadium": "Campo Municipal Mexilhoeira Grande",
                     "homeScore": 2,
                     "awayScore": 2
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "4 Ao Cubo Ad Olhão",
+                    "date": "0 - 17                            \r\n                \r\n                    21 fev",
+                    "time": "",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": 0,
+                    "awayScore": 17
                 },
                 {
                     "home": "Aef Monte Gordo 2019",
@@ -1309,6 +1309,33 @@
             "fixtureId": "626196",
             "matches": [
                 {
+                    "home": "Cr Infante Sagres",
+                    "away": "Portimonense Sc",
+                    "date": "14 mar",
+                    "time": "11:00",
+                    "stadium": "Complexo Desportivo 1º Maio",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Aef Monte Gordo 2019",
+                    "away": "Fc Ferreiras",
+                    "date": "14 mar",
+                    "time": "11:00",
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "4 Ao Cubo Ad Olhão",
+                    "away": "Csl Benfica Lagos",
+                    "date": "14 mar",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Olhão",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Imortal Dc",
                     "away": "Mexilhoeira Grande Fc",
                     "date": "14 mar",
@@ -1323,33 +1350,6 @@
                     "date": "14 mar",
                     "time": "11:00",
                     "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Cr Infante Sagres",
-                    "away": "Portimonense Sc",
-                    "date": "14 mar",
-                    "time": "11:00",
-                    "stadium": "Complexo Desportivo 1º Maio",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "4 Ao Cubo Ad Olhão",
-                    "away": "Csl Benfica Lagos",
-                    "date": "14 mar",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Olhão",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Aef Monte Gordo 2019",
-                    "away": "Fc Ferreiras",
-                    "date": "14 mar",
-                    "time": "11:00",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1472,6 +1472,15 @@
             "fixtureId": "626197",
             "matches": [
                 {
+                    "home": "Fc Ferreiras",
+                    "away": "Portimonense Sc",
+                    "date": "21 mar",
+                    "time": "11:00",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Imortal Dc",
                     "away": "Csl Benfica Lagos",
                     "date": "21 mar",
@@ -1486,15 +1495,6 @@
                     "date": "21 mar",
                     "time": "11:00",
                     "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Fc Ferreiras",
-                    "away": "Portimonense Sc",
-                    "date": "21 mar",
-                    "time": "11:00",
-                    "stadium": "Estádio Nora Nº 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1644,15 +1644,6 @@
                     "awayScore": 9
                 },
                 {
-                    "home": "Cr Infante Sagres",
-                    "away": "Imortal Dc",
-                    "date": "28 mar",
-                    "time": "11:00",
-                    "stadium": "Complexo Desportivo 1º Maio",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Aef Faro",
                     "away": "Fc Ferreiras",
                     "date": "28 mar",
@@ -1676,6 +1667,15 @@
                     "date": "28 mar",
                     "time": "11:00",
                     "stadium": "Campo Zona Verde",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cr Infante Sagres",
+                    "away": "Imortal Dc",
+                    "date": "28 mar",
+                    "time": "11:00",
+                    "stadium": "Complexo Desportivo 1º Maio",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1798,11 +1798,11 @@
             "fixtureId": "626199",
             "matches": [
                 {
-                    "home": "Imortal Dc",
-                    "away": "4 Ao Cubo Ad Olhão",
+                    "home": "Aef Faro",
+                    "away": "Portimonense Sc",
                     "date": "11 abr",
                     "time": "11:00",
-                    "stadium": "Campo Da Palmeira Nº 2",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1816,6 +1816,15 @@
                     "awayScore": null
                 },
                 {
+                    "home": "Aef Monte Gordo 2019",
+                    "away": "Csl Benfica Lagos",
+                    "date": "11 abr",
+                    "time": "11:00",
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Fc Ferreiras",
                     "away": "Mexilhoeira Grande Fc",
                     "date": "11 abr",
@@ -1825,20 +1834,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Aef Faro",
-                    "away": "Portimonense Sc",
+                    "home": "Imortal Dc",
+                    "away": "4 Ao Cubo Ad Olhão",
                     "date": "11 abr",
                     "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Aef Monte Gordo 2019",
-                    "away": "Csl Benfica Lagos",
-                    "date": "11 abr",
-                    "time": "11:00",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
+                    "stadium": "Campo Da Palmeira Nº 2",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1961,11 +1961,11 @@
             "fixtureId": "626200",
             "matches": [
                 {
-                    "home": "Portimonense Sc",
-                    "away": "Imortal Dc",
+                    "home": "Csl Benfica Lagos",
+                    "away": "Fc Ferreiras",
                     "date": "18 abr",
                     "time": "11:00",
-                    "stadium": "Campo Major David Neto 2",
+                    "stadium": "Campo Zona Verde",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1988,20 +1988,20 @@
                     "awayScore": null
                 },
                 {
+                    "home": "Portimonense Sc",
+                    "away": "Imortal Dc",
+                    "date": "18 abr",
+                    "time": "11:00",
+                    "stadium": "Campo Major David Neto 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Mexilhoeira Grande Fc",
                     "away": "Aef Faro",
                     "date": "18 abr",
                     "time": "11:00",
                     "stadium": "Campo Municipal Mexilhoeira Grande",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Csl Benfica Lagos",
-                    "away": "Fc Ferreiras",
-                    "date": "18 abr",
-                    "time": "11:00",
-                    "stadium": "Campo Zona Verde",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -2133,20 +2133,11 @@
                     "awayScore": 5
                 },
                 {
-                    "home": "Aef Monte Gordo 2019",
-                    "away": "4 Ao Cubo Ad Olhão",
+                    "home": "Aef Faro",
+                    "away": "Csl Benfica Lagos",
                     "date": "25 abr",
                     "time": "11:00",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Imortal Dc",
-                    "date": "25 abr",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2160,11 +2151,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Aef Faro",
-                    "away": "Csl Benfica Lagos",
+                    "home": "Cf Os Armacenenses",
+                    "away": "Imortal Dc",
                     "date": "25 abr",
                     "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Aef Monte Gordo 2019",
+                    "away": "4 Ao Cubo Ad Olhão",
+                    "date": "25 abr",
+                    "time": "11:00",
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -2287,6 +2287,24 @@
             "fixtureId": "626202",
             "matches": [
                 {
+                    "home": "4 Ao Cubo Ad Olhão",
+                    "away": "Fc Ferreiras",
+                    "date": "2 mai",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Olhão",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Csl Benfica Lagos",
+                    "away": "Mexilhoeira Grande Fc",
+                    "date": "2 mai",
+                    "time": "11:00",
+                    "stadium": "Campo Zona Verde",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Imortal Dc",
                     "away": "Aef Monte Gordo 2019",
                     "date": "2 mai",
@@ -2310,24 +2328,6 @@
                     "date": "2 mai",
                     "time": "11:00",
                     "stadium": "Complexo Desportivo 1º Maio",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "4 Ao Cubo Ad Olhão",
-                    "away": "Fc Ferreiras",
-                    "date": "2 mai",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Olhão",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Csl Benfica Lagos",
-                    "away": "Mexilhoeira Grande Fc",
-                    "date": "2 mai",
-                    "time": "11:00",
-                    "stadium": "Campo Zona Verde",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -2450,6 +2450,33 @@
             "fixtureId": "626203",
             "matches": [
                 {
+                    "home": "Csl Benfica Lagos",
+                    "away": "Portimonense Sc",
+                    "date": "9 mai",
+                    "time": "11:00",
+                    "stadium": "Campo Zona Verde",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Mexilhoeira Grande Fc",
+                    "away": "Cr Infante Sagres",
+                    "date": "9 mai",
+                    "time": "11:00",
+                    "stadium": "Campo Municipal Mexilhoeira Grande",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Aef Monte Gordo 2019",
+                    "away": "Cf Os Armacenenses",
+                    "date": "9 mai",
+                    "time": "11:00",
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Fc Ferreiras",
                     "away": "Imortal Dc",
                     "date": "9 mai",
@@ -2464,33 +2491,6 @@
                     "date": "9 mai",
                     "time": "11:00",
                     "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Mexilhoeira Grande Fc",
-                    "away": "Cr Infante Sagres",
-                    "date": "9 mai",
-                    "time": "11:00",
-                    "stadium": "Campo Municipal Mexilhoeira Grande",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Csl Benfica Lagos",
-                    "away": "Portimonense Sc",
-                    "date": "9 mai",
-                    "time": "11:00",
-                    "stadium": "Campo Zona Verde",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Aef Monte Gordo 2019",
-                    "away": "Cf Os Armacenenses",
-                    "date": "9 mai",
-                    "time": "11:00",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -2613,11 +2613,11 @@
             "fixtureId": "626204",
             "matches": [
                 {
-                    "home": "Imortal Dc",
-                    "away": "Aef Faro",
+                    "home": "Aef Monte Gordo 2019",
+                    "away": "Portimonense Sc",
                     "date": "16 mai",
                     "time": "11:00",
-                    "stadium": "Campo Da Palmeira Nº 2",
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2649,11 +2649,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Aef Monte Gordo 2019",
-                    "away": "Portimonense Sc",
+                    "home": "Imortal Dc",
+                    "away": "Aef Faro",
                     "date": "16 mai",
                     "time": "11:00",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
+                    "stadium": "Campo Da Palmeira Nº 2",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -2776,15 +2776,6 @@
             "fixtureId": "626205",
             "matches": [
                 {
-                    "home": "Portimonense Sc",
-                    "away": "Cr Infante Sagres",
-                    "date": "23 mai",
-                    "time": "11:00",
-                    "stadium": "Campo Major David Neto 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Fc Ferreiras",
                     "away": "Aef Monte Gordo 2019",
                     "date": "23 mai",
@@ -2799,6 +2790,15 @@
                     "date": "23 mai",
                     "time": "11:00",
                     "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Portimonense Sc",
+                    "away": "Cr Infante Sagres",
+                    "date": "23 mai",
+                    "time": "11:00",
+                    "stadium": "Campo Major David Neto 2",
                     "homeScore": null,
                     "awayScore": null
                 },
