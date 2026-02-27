@@ -369,11 +369,11 @@
                 {
                     "home": "Udr Sambrasense",
                     "away": "Fc Ferreiras",
-                    "date": "26 fev",
-                    "time": "20:30",
+                    "date": "0 - 1                            \r\n                \r\n                    26 fev",
+                    "time": "",
                     "stadium": "Campo Polidesportivo",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 0,
+                    "awayScore": 1
                 }
             ],
             "classification": [
@@ -445,17 +445,28 @@
                 },
                 {
                     "position": 7,
-                    "team": "Udr Sambrasense",
-                    "played": 2,
+                    "team": "Fc Ferreiras",
+                    "played": 3,
                     "wins": 1,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 1,
                     "goalsFor": 4,
-                    "goalsAgainst": 3,
-                    "points": 3
+                    "goalsAgainst": 4,
+                    "points": 4
                 },
                 {
                     "position": 8,
+                    "team": "Udr Sambrasense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 4,
+                    "goalsAgainst": 4,
+                    "points": 3
+                },
+                {
+                    "position": 9,
                     "team": "Cf Os Armacenenses",
                     "played": 3,
                     "wins": 0,
@@ -466,7 +477,7 @@
                     "points": 2
                 },
                 {
-                    "position": 9,
+                    "position": 10,
                     "team": "Internacional Ca",
                     "played": 3,
                     "wins": 0,
@@ -474,17 +485,6 @@
                     "losses": 2,
                     "goalsFor": 3,
                     "goalsAgainst": 5,
-                    "points": 1
-                },
-                {
-                    "position": 10,
-                    "team": "Fc Ferreiras",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 3,
-                    "goalsAgainst": 4,
                     "points": 1
                 }
             ]
@@ -608,7 +608,7 @@
                 },
                 {
                     "position": 7,
-                    "team": "Sc Olhanense",
+                    "team": "Fc Ferreiras",
                     "played": 4,
                     "wins": 1,
                     "draws": 1,
@@ -619,17 +619,28 @@
                 },
                 {
                     "position": 8,
-                    "team": "Udr Sambrasense",
-                    "played": 3,
+                    "team": "Sc Olhanense",
+                    "played": 4,
                     "wins": 1,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 2,
                     "goalsFor": 4,
-                    "goalsAgainst": 4,
-                    "points": 3
+                    "goalsAgainst": 6,
+                    "points": 4
                 },
                 {
                     "position": 9,
+                    "team": "Udr Sambrasense",
+                    "played": 4,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 4,
+                    "goalsAgainst": 5,
+                    "points": 3
+                },
+                {
+                    "position": 10,
                     "team": "Internacional Ca",
                     "played": 4,
                     "wins": 0,
@@ -637,17 +648,6 @@
                     "losses": 3,
                     "goalsFor": 3,
                     "goalsAgainst": 7,
-                    "points": 1
-                },
-                {
-                    "position": 10,
-                    "team": "Fc Ferreiras",
-                    "played": 3,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 3,
-                    "goalsAgainst": 6,
                     "points": 1
                 }
             ]
@@ -738,28 +738,6 @@
                 },
                 {
                     "position": 4,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 7,
-                    "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 5,
-                    "goalsAgainst": 6,
-                    "points": 7
-                },
-                {
-                    "position": 6,
                     "team": "Gd Lagoa",
                     "played": 5,
                     "wins": 2,
@@ -770,7 +748,40 @@
                     "points": 7
                 },
                 {
+                    "position": 5,
+                    "team": "Sc Olhanense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 8,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 6,
+                    "team": "Sc Farense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 5,
+                    "goalsAgainst": 6,
+                    "points": 7
+                },
+                {
                     "position": 7,
+                    "team": "Fc Ferreiras",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 7,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 8,
                     "team": "Cf Os Armacenenses",
                     "played": 5,
                     "wins": 1,
@@ -781,7 +792,7 @@
                     "points": 6
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 5,
                     "wins": 1,
@@ -792,25 +803,14 @@
                     "points": 4
                 },
                 {
-                    "position": 9,
-                    "team": "Fc Ferreiras",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 6,
-                    "goalsAgainst": 7,
-                    "points": 4
-                },
-                {
                     "position": 10,
                     "team": "Udr Sambrasense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
+                    "losses": 4,
                     "goalsFor": 7,
-                    "goalsAgainst": 9,
+                    "goalsAgainst": 10,
                     "points": 3
                 }
             ]
@@ -901,28 +901,6 @@
                 },
                 {
                     "position": 4,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 7,
-                    "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 5,
-                    "goalsAgainst": 6,
-                    "points": 7
-                },
-                {
-                    "position": 6,
                     "team": "Gd Lagoa",
                     "played": 5,
                     "wins": 2,
@@ -933,7 +911,40 @@
                     "points": 7
                 },
                 {
+                    "position": 5,
+                    "team": "Sc Olhanense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 8,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 6,
+                    "team": "Sc Farense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 5,
+                    "goalsAgainst": 6,
+                    "points": 7
+                },
+                {
                     "position": 7,
+                    "team": "Fc Ferreiras",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 7,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 8,
                     "team": "Cf Os Armacenenses",
                     "played": 5,
                     "wins": 1,
@@ -944,7 +955,7 @@
                     "points": 6
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 5,
                     "wins": 1,
@@ -955,25 +966,14 @@
                     "points": 4
                 },
                 {
-                    "position": 9,
-                    "team": "Fc Ferreiras",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 6,
-                    "goalsAgainst": 7,
-                    "points": 4
-                },
-                {
                     "position": 10,
                     "team": "Udr Sambrasense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
+                    "losses": 4,
                     "goalsFor": 7,
-                    "goalsAgainst": 9,
+                    "goalsAgainst": 10,
                     "points": 3
                 }
             ]
@@ -1064,28 +1064,6 @@
                 },
                 {
                     "position": 4,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 7,
-                    "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 5,
-                    "goalsAgainst": 6,
-                    "points": 7
-                },
-                {
-                    "position": 6,
                     "team": "Gd Lagoa",
                     "played": 5,
                     "wins": 2,
@@ -1096,7 +1074,40 @@
                     "points": 7
                 },
                 {
+                    "position": 5,
+                    "team": "Sc Olhanense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 8,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 6,
+                    "team": "Sc Farense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 5,
+                    "goalsAgainst": 6,
+                    "points": 7
+                },
+                {
                     "position": 7,
+                    "team": "Fc Ferreiras",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 7,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 8,
                     "team": "Cf Os Armacenenses",
                     "played": 5,
                     "wins": 1,
@@ -1107,7 +1118,7 @@
                     "points": 6
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 5,
                     "wins": 1,
@@ -1118,25 +1129,14 @@
                     "points": 4
                 },
                 {
-                    "position": 9,
-                    "team": "Fc Ferreiras",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 6,
-                    "goalsAgainst": 7,
-                    "points": 4
-                },
-                {
                     "position": 10,
                     "team": "Udr Sambrasense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
+                    "losses": 4,
                     "goalsFor": 7,
-                    "goalsAgainst": 9,
+                    "goalsAgainst": 10,
                     "points": 3
                 }
             ]
@@ -1227,28 +1227,6 @@
                 },
                 {
                     "position": 4,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 7,
-                    "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 5,
-                    "goalsAgainst": 6,
-                    "points": 7
-                },
-                {
-                    "position": 6,
                     "team": "Gd Lagoa",
                     "played": 5,
                     "wins": 2,
@@ -1259,7 +1237,40 @@
                     "points": 7
                 },
                 {
+                    "position": 5,
+                    "team": "Sc Olhanense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 8,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 6,
+                    "team": "Sc Farense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 5,
+                    "goalsAgainst": 6,
+                    "points": 7
+                },
+                {
                     "position": 7,
+                    "team": "Fc Ferreiras",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 7,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 8,
                     "team": "Cf Os Armacenenses",
                     "played": 5,
                     "wins": 1,
@@ -1270,7 +1281,7 @@
                     "points": 6
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 5,
                     "wins": 1,
@@ -1281,25 +1292,14 @@
                     "points": 4
                 },
                 {
-                    "position": 9,
-                    "team": "Fc Ferreiras",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 6,
-                    "goalsAgainst": 7,
-                    "points": 4
-                },
-                {
                     "position": 10,
                     "team": "Udr Sambrasense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
+                    "losses": 4,
                     "goalsFor": 7,
-                    "goalsAgainst": 9,
+                    "goalsAgainst": 10,
                     "points": 3
                 }
             ]
@@ -1390,28 +1390,6 @@
                 },
                 {
                     "position": 4,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 7,
-                    "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 5,
-                    "goalsAgainst": 6,
-                    "points": 7
-                },
-                {
-                    "position": 6,
                     "team": "Gd Lagoa",
                     "played": 5,
                     "wins": 2,
@@ -1422,7 +1400,40 @@
                     "points": 7
                 },
                 {
+                    "position": 5,
+                    "team": "Sc Olhanense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 8,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 6,
+                    "team": "Sc Farense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 5,
+                    "goalsAgainst": 6,
+                    "points": 7
+                },
+                {
                     "position": 7,
+                    "team": "Fc Ferreiras",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 7,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 8,
                     "team": "Cf Os Armacenenses",
                     "played": 5,
                     "wins": 1,
@@ -1433,7 +1444,7 @@
                     "points": 6
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 5,
                     "wins": 1,
@@ -1444,25 +1455,14 @@
                     "points": 4
                 },
                 {
-                    "position": 9,
-                    "team": "Fc Ferreiras",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 6,
-                    "goalsAgainst": 7,
-                    "points": 4
-                },
-                {
                     "position": 10,
                     "team": "Udr Sambrasense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
+                    "losses": 4,
                     "goalsFor": 7,
-                    "goalsAgainst": 9,
+                    "goalsAgainst": 10,
                     "points": 3
                 }
             ]
@@ -1553,28 +1553,6 @@
                 },
                 {
                     "position": 4,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 7,
-                    "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 5,
-                    "goalsAgainst": 6,
-                    "points": 7
-                },
-                {
-                    "position": 6,
                     "team": "Gd Lagoa",
                     "played": 5,
                     "wins": 2,
@@ -1585,7 +1563,40 @@
                     "points": 7
                 },
                 {
+                    "position": 5,
+                    "team": "Sc Olhanense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 8,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 6,
+                    "team": "Sc Farense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 5,
+                    "goalsAgainst": 6,
+                    "points": 7
+                },
+                {
                     "position": 7,
+                    "team": "Fc Ferreiras",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 7,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 8,
                     "team": "Cf Os Armacenenses",
                     "played": 5,
                     "wins": 1,
@@ -1596,7 +1607,7 @@
                     "points": 6
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 5,
                     "wins": 1,
@@ -1607,25 +1618,14 @@
                     "points": 4
                 },
                 {
-                    "position": 9,
-                    "team": "Fc Ferreiras",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 6,
-                    "goalsAgainst": 7,
-                    "points": 4
-                },
-                {
                     "position": 10,
                     "team": "Udr Sambrasense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
+                    "losses": 4,
                     "goalsFor": 7,
-                    "goalsAgainst": 9,
+                    "goalsAgainst": 10,
                     "points": 3
                 }
             ]
@@ -1716,28 +1716,6 @@
                 },
                 {
                     "position": 4,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 7,
-                    "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 5,
-                    "goalsAgainst": 6,
-                    "points": 7
-                },
-                {
-                    "position": 6,
                     "team": "Gd Lagoa",
                     "played": 5,
                     "wins": 2,
@@ -1748,7 +1726,40 @@
                     "points": 7
                 },
                 {
+                    "position": 5,
+                    "team": "Sc Olhanense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 8,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 6,
+                    "team": "Sc Farense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 5,
+                    "goalsAgainst": 6,
+                    "points": 7
+                },
+                {
                     "position": 7,
+                    "team": "Fc Ferreiras",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 7,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 8,
                     "team": "Cf Os Armacenenses",
                     "played": 5,
                     "wins": 1,
@@ -1759,7 +1770,7 @@
                     "points": 6
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 5,
                     "wins": 1,
@@ -1770,25 +1781,14 @@
                     "points": 4
                 },
                 {
-                    "position": 9,
-                    "team": "Fc Ferreiras",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 6,
-                    "goalsAgainst": 7,
-                    "points": 4
-                },
-                {
                     "position": 10,
                     "team": "Udr Sambrasense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
+                    "losses": 4,
                     "goalsFor": 7,
-                    "goalsAgainst": 9,
+                    "goalsAgainst": 10,
                     "points": 3
                 }
             ]
@@ -1879,28 +1879,6 @@
                 },
                 {
                     "position": 4,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 7,
-                    "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 5,
-                    "goalsAgainst": 6,
-                    "points": 7
-                },
-                {
-                    "position": 6,
                     "team": "Gd Lagoa",
                     "played": 5,
                     "wins": 2,
@@ -1911,7 +1889,40 @@
                     "points": 7
                 },
                 {
+                    "position": 5,
+                    "team": "Sc Olhanense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 8,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 6,
+                    "team": "Sc Farense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 5,
+                    "goalsAgainst": 6,
+                    "points": 7
+                },
+                {
                     "position": 7,
+                    "team": "Fc Ferreiras",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 7,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 8,
                     "team": "Cf Os Armacenenses",
                     "played": 5,
                     "wins": 1,
@@ -1922,7 +1933,7 @@
                     "points": 6
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 5,
                     "wins": 1,
@@ -1933,25 +1944,14 @@
                     "points": 4
                 },
                 {
-                    "position": 9,
-                    "team": "Fc Ferreiras",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 6,
-                    "goalsAgainst": 7,
-                    "points": 4
-                },
-                {
                     "position": 10,
                     "team": "Udr Sambrasense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
+                    "losses": 4,
                     "goalsFor": 7,
-                    "goalsAgainst": 9,
+                    "goalsAgainst": 10,
                     "points": 3
                 }
             ]
@@ -2042,28 +2042,6 @@
                 },
                 {
                     "position": 4,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 7,
-                    "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 5,
-                    "goalsAgainst": 6,
-                    "points": 7
-                },
-                {
-                    "position": 6,
                     "team": "Gd Lagoa",
                     "played": 5,
                     "wins": 2,
@@ -2074,7 +2052,40 @@
                     "points": 7
                 },
                 {
+                    "position": 5,
+                    "team": "Sc Olhanense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 8,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 6,
+                    "team": "Sc Farense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 5,
+                    "goalsAgainst": 6,
+                    "points": 7
+                },
+                {
                     "position": 7,
+                    "team": "Fc Ferreiras",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 7,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 8,
                     "team": "Cf Os Armacenenses",
                     "played": 5,
                     "wins": 1,
@@ -2085,7 +2096,7 @@
                     "points": 6
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 5,
                     "wins": 1,
@@ -2096,25 +2107,14 @@
                     "points": 4
                 },
                 {
-                    "position": 9,
-                    "team": "Fc Ferreiras",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 6,
-                    "goalsAgainst": 7,
-                    "points": 4
-                },
-                {
                     "position": 10,
                     "team": "Udr Sambrasense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
+                    "losses": 4,
                     "goalsFor": 7,
-                    "goalsAgainst": 9,
+                    "goalsAgainst": 10,
                     "points": 3
                 }
             ]
@@ -2205,28 +2205,6 @@
                 },
                 {
                     "position": 4,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 7,
-                    "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 5,
-                    "goalsAgainst": 6,
-                    "points": 7
-                },
-                {
-                    "position": 6,
                     "team": "Gd Lagoa",
                     "played": 5,
                     "wins": 2,
@@ -2237,7 +2215,40 @@
                     "points": 7
                 },
                 {
+                    "position": 5,
+                    "team": "Sc Olhanense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 8,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 6,
+                    "team": "Sc Farense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 5,
+                    "goalsAgainst": 6,
+                    "points": 7
+                },
+                {
                     "position": 7,
+                    "team": "Fc Ferreiras",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 7,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 8,
                     "team": "Cf Os Armacenenses",
                     "played": 5,
                     "wins": 1,
@@ -2248,7 +2259,7 @@
                     "points": 6
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 5,
                     "wins": 1,
@@ -2259,25 +2270,14 @@
                     "points": 4
                 },
                 {
-                    "position": 9,
-                    "team": "Fc Ferreiras",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 6,
-                    "goalsAgainst": 7,
-                    "points": 4
-                },
-                {
                     "position": 10,
                     "team": "Udr Sambrasense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
+                    "losses": 4,
                     "goalsFor": 7,
-                    "goalsAgainst": 9,
+                    "goalsAgainst": 10,
                     "points": 3
                 }
             ]
@@ -2368,28 +2368,6 @@
                 },
                 {
                     "position": 4,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 7,
-                    "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 5,
-                    "goalsAgainst": 6,
-                    "points": 7
-                },
-                {
-                    "position": 6,
                     "team": "Gd Lagoa",
                     "played": 5,
                     "wins": 2,
@@ -2400,7 +2378,40 @@
                     "points": 7
                 },
                 {
+                    "position": 5,
+                    "team": "Sc Olhanense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 8,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 6,
+                    "team": "Sc Farense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 5,
+                    "goalsAgainst": 6,
+                    "points": 7
+                },
+                {
                     "position": 7,
+                    "team": "Fc Ferreiras",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 7,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 8,
                     "team": "Cf Os Armacenenses",
                     "played": 5,
                     "wins": 1,
@@ -2411,7 +2422,7 @@
                     "points": 6
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 5,
                     "wins": 1,
@@ -2422,25 +2433,14 @@
                     "points": 4
                 },
                 {
-                    "position": 9,
-                    "team": "Fc Ferreiras",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 6,
-                    "goalsAgainst": 7,
-                    "points": 4
-                },
-                {
                     "position": 10,
                     "team": "Udr Sambrasense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
+                    "losses": 4,
                     "goalsFor": 7,
-                    "goalsAgainst": 9,
+                    "goalsAgainst": 10,
                     "points": 3
                 }
             ]
@@ -2531,28 +2531,6 @@
                 },
                 {
                     "position": 4,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 7,
-                    "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 5,
-                    "goalsAgainst": 6,
-                    "points": 7
-                },
-                {
-                    "position": 6,
                     "team": "Gd Lagoa",
                     "played": 5,
                     "wins": 2,
@@ -2563,7 +2541,40 @@
                     "points": 7
                 },
                 {
+                    "position": 5,
+                    "team": "Sc Olhanense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 8,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 6,
+                    "team": "Sc Farense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 5,
+                    "goalsAgainst": 6,
+                    "points": 7
+                },
+                {
                     "position": 7,
+                    "team": "Fc Ferreiras",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 7,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 8,
                     "team": "Cf Os Armacenenses",
                     "played": 5,
                     "wins": 1,
@@ -2574,7 +2585,7 @@
                     "points": 6
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 5,
                     "wins": 1,
@@ -2585,25 +2596,14 @@
                     "points": 4
                 },
                 {
-                    "position": 9,
-                    "team": "Fc Ferreiras",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 6,
-                    "goalsAgainst": 7,
-                    "points": 4
-                },
-                {
                     "position": 10,
                     "team": "Udr Sambrasense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
+                    "losses": 4,
                     "goalsFor": 7,
-                    "goalsAgainst": 9,
+                    "goalsAgainst": 10,
                     "points": 3
                 }
             ]
@@ -2694,28 +2694,6 @@
                 },
                 {
                     "position": 4,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 7,
-                    "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 5,
-                    "goalsAgainst": 6,
-                    "points": 7
-                },
-                {
-                    "position": 6,
                     "team": "Gd Lagoa",
                     "played": 5,
                     "wins": 2,
@@ -2726,7 +2704,40 @@
                     "points": 7
                 },
                 {
+                    "position": 5,
+                    "team": "Sc Olhanense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 8,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 6,
+                    "team": "Sc Farense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 5,
+                    "goalsAgainst": 6,
+                    "points": 7
+                },
+                {
                     "position": 7,
+                    "team": "Fc Ferreiras",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 7,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 8,
                     "team": "Cf Os Armacenenses",
                     "played": 5,
                     "wins": 1,
@@ -2737,7 +2748,7 @@
                     "points": 6
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 5,
                     "wins": 1,
@@ -2748,25 +2759,14 @@
                     "points": 4
                 },
                 {
-                    "position": 9,
-                    "team": "Fc Ferreiras",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 6,
-                    "goalsAgainst": 7,
-                    "points": 4
-                },
-                {
                     "position": 10,
                     "team": "Udr Sambrasense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
+                    "losses": 4,
                     "goalsFor": 7,
-                    "goalsAgainst": 9,
+                    "goalsAgainst": 10,
                     "points": 3
                 }
             ]
@@ -2857,28 +2857,6 @@
                 },
                 {
                     "position": 4,
-                    "team": "Sc Olhanense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 8,
-                    "goalsAgainst": 7,
-                    "points": 7
-                },
-                {
-                    "position": 5,
-                    "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 5,
-                    "goalsAgainst": 6,
-                    "points": 7
-                },
-                {
-                    "position": 6,
                     "team": "Gd Lagoa",
                     "played": 5,
                     "wins": 2,
@@ -2889,7 +2867,40 @@
                     "points": 7
                 },
                 {
+                    "position": 5,
+                    "team": "Sc Olhanense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 8,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 6,
+                    "team": "Sc Farense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 5,
+                    "goalsAgainst": 6,
+                    "points": 7
+                },
+                {
                     "position": 7,
+                    "team": "Fc Ferreiras",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 7,
+                    "goalsAgainst": 7,
+                    "points": 7
+                },
+                {
+                    "position": 8,
                     "team": "Cf Os Armacenenses",
                     "played": 5,
                     "wins": 1,
@@ -2900,7 +2911,7 @@
                     "points": 6
                 },
                 {
-                    "position": 8,
+                    "position": 9,
                     "team": "Internacional Ca",
                     "played": 5,
                     "wins": 1,
@@ -2911,25 +2922,14 @@
                     "points": 4
                 },
                 {
-                    "position": 9,
-                    "team": "Fc Ferreiras",
-                    "played": 4,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 6,
-                    "goalsAgainst": 7,
-                    "points": 4
-                },
-                {
                     "position": 10,
                     "team": "Udr Sambrasense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
+                    "losses": 4,
                     "goalsFor": 7,
-                    "goalsAgainst": 9,
+                    "goalsAgainst": 10,
                     "points": 3
                 }
             ]
