@@ -674,15 +674,6 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Aef João Moutinho",
-                    "away": "Cdr Quarteirense",
-                    "date": "28 fev",
-                    "time": "09:00",
-                    "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Fc Ferreiras",
                     "away": "Casa Benfica Tavira",
                     "date": "28 fev",
@@ -690,6 +681,15 @@
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Aef João Moutinho",
+                    "away": "Cdr Quarteirense",
+                    "date": "1 - 0                            \r\n                \r\n                    28 fev",
+                    "time": "",
+                    "stadium": "Parque Desportivo Municipal Estombar",
+                    "homeScore": 1,
+                    "awayScore": 0
                 },
                 {
                     "home": "Gd Lagoa",
@@ -738,16 +738,27 @@
                 {
                     "position": 4,
                     "team": "Cdr Quarteirense",
-                    "played": 5,
+                    "played": 6,
                     "wins": 2,
                     "draws": 2,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 7,
-                    "goalsAgainst": 2,
+                    "goalsAgainst": 3,
                     "points": 8
                 },
                 {
                     "position": 5,
+                    "team": "Aef João Moutinho",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 3,
+                    "goalsFor": 8,
+                    "goalsAgainst": 13,
+                    "points": 7
+                },
+                {
+                    "position": 6,
                     "team": "Fc Ferreiras",
                     "played": 5,
                     "wins": 1,
@@ -758,7 +769,7 @@
                     "points": 5
                 },
                 {
-                    "position": 6,
+                    "position": 7,
                     "team": "Cf Os Armacenenses",
                     "played": 5,
                     "wins": 1,
@@ -766,17 +777,6 @@
                     "losses": 3,
                     "goalsFor": 5,
                     "goalsAgainst": 8,
-                    "points": 4
-                },
-                {
-                    "position": 7,
-                    "team": "Aef João Moutinho",
-                    "played": 5,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 3,
-                    "goalsFor": 7,
-                    "goalsAgainst": 13,
                     "points": 4
                 },
                 {
@@ -870,16 +870,27 @@
                 {
                     "position": 4,
                     "team": "Cdr Quarteirense",
-                    "played": 5,
+                    "played": 6,
                     "wins": 2,
                     "draws": 2,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 7,
-                    "goalsAgainst": 2,
+                    "goalsAgainst": 3,
                     "points": 8
                 },
                 {
                     "position": 5,
+                    "team": "Aef João Moutinho",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 3,
+                    "goalsFor": 8,
+                    "goalsAgainst": 13,
+                    "points": 7
+                },
+                {
+                    "position": 6,
                     "team": "Fc Ferreiras",
                     "played": 5,
                     "wins": 1,
@@ -890,7 +901,7 @@
                     "points": 5
                 },
                 {
-                    "position": 6,
+                    "position": 7,
                     "team": "Cf Os Armacenenses",
                     "played": 5,
                     "wins": 1,
@@ -898,17 +909,6 @@
                     "losses": 3,
                     "goalsFor": 5,
                     "goalsAgainst": 8,
-                    "points": 4
-                },
-                {
-                    "position": 7,
-                    "team": "Aef João Moutinho",
-                    "played": 5,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 3,
-                    "goalsFor": 7,
-                    "goalsAgainst": 13,
                     "points": 4
                 },
                 {
@@ -1002,16 +1002,27 @@
                 {
                     "position": 4,
                     "team": "Cdr Quarteirense",
-                    "played": 5,
+                    "played": 6,
                     "wins": 2,
                     "draws": 2,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 7,
-                    "goalsAgainst": 2,
+                    "goalsAgainst": 3,
                     "points": 8
                 },
                 {
                     "position": 5,
+                    "team": "Aef João Moutinho",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 3,
+                    "goalsFor": 8,
+                    "goalsAgainst": 13,
+                    "points": 7
+                },
+                {
+                    "position": 6,
                     "team": "Fc Ferreiras",
                     "played": 5,
                     "wins": 1,
@@ -1022,7 +1033,7 @@
                     "points": 5
                 },
                 {
-                    "position": 6,
+                    "position": 7,
                     "team": "Cf Os Armacenenses",
                     "played": 5,
                     "wins": 1,
@@ -1030,17 +1041,6 @@
                     "losses": 3,
                     "goalsFor": 5,
                     "goalsAgainst": 8,
-                    "points": 4
-                },
-                {
-                    "position": 7,
-                    "team": "Aef João Moutinho",
-                    "played": 5,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 3,
-                    "goalsFor": 7,
-                    "goalsAgainst": 13,
                     "points": 4
                 },
                 {
@@ -1134,16 +1134,27 @@
                 {
                     "position": 4,
                     "team": "Cdr Quarteirense",
-                    "played": 5,
+                    "played": 6,
                     "wins": 2,
                     "draws": 2,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 7,
-                    "goalsAgainst": 2,
+                    "goalsAgainst": 3,
                     "points": 8
                 },
                 {
                     "position": 5,
+                    "team": "Aef João Moutinho",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 3,
+                    "goalsFor": 8,
+                    "goalsAgainst": 13,
+                    "points": 7
+                },
+                {
+                    "position": 6,
                     "team": "Fc Ferreiras",
                     "played": 5,
                     "wins": 1,
@@ -1154,7 +1165,7 @@
                     "points": 5
                 },
                 {
-                    "position": 6,
+                    "position": 7,
                     "team": "Cf Os Armacenenses",
                     "played": 5,
                     "wins": 1,
@@ -1162,17 +1173,6 @@
                     "losses": 3,
                     "goalsFor": 5,
                     "goalsAgainst": 8,
-                    "points": 4
-                },
-                {
-                    "position": 7,
-                    "team": "Aef João Moutinho",
-                    "played": 5,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 3,
-                    "goalsFor": 7,
-                    "goalsAgainst": 13,
                     "points": 4
                 },
                 {
@@ -1266,16 +1266,27 @@
                 {
                     "position": 4,
                     "team": "Cdr Quarteirense",
-                    "played": 5,
+                    "played": 6,
                     "wins": 2,
                     "draws": 2,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 7,
-                    "goalsAgainst": 2,
+                    "goalsAgainst": 3,
                     "points": 8
                 },
                 {
                     "position": 5,
+                    "team": "Aef João Moutinho",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 3,
+                    "goalsFor": 8,
+                    "goalsAgainst": 13,
+                    "points": 7
+                },
+                {
+                    "position": 6,
                     "team": "Fc Ferreiras",
                     "played": 5,
                     "wins": 1,
@@ -1286,7 +1297,7 @@
                     "points": 5
                 },
                 {
-                    "position": 6,
+                    "position": 7,
                     "team": "Cf Os Armacenenses",
                     "played": 5,
                     "wins": 1,
@@ -1294,17 +1305,6 @@
                     "losses": 3,
                     "goalsFor": 5,
                     "goalsAgainst": 8,
-                    "points": 4
-                },
-                {
-                    "position": 7,
-                    "team": "Aef João Moutinho",
-                    "played": 5,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 3,
-                    "goalsFor": 7,
-                    "goalsAgainst": 13,
                     "points": 4
                 },
                 {
@@ -1398,16 +1398,27 @@
                 {
                     "position": 4,
                     "team": "Cdr Quarteirense",
-                    "played": 5,
+                    "played": 6,
                     "wins": 2,
                     "draws": 2,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 7,
-                    "goalsAgainst": 2,
+                    "goalsAgainst": 3,
                     "points": 8
                 },
                 {
                     "position": 5,
+                    "team": "Aef João Moutinho",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 3,
+                    "goalsFor": 8,
+                    "goalsAgainst": 13,
+                    "points": 7
+                },
+                {
+                    "position": 6,
                     "team": "Fc Ferreiras",
                     "played": 5,
                     "wins": 1,
@@ -1418,7 +1429,7 @@
                     "points": 5
                 },
                 {
-                    "position": 6,
+                    "position": 7,
                     "team": "Cf Os Armacenenses",
                     "played": 5,
                     "wins": 1,
@@ -1426,17 +1437,6 @@
                     "losses": 3,
                     "goalsFor": 5,
                     "goalsAgainst": 8,
-                    "points": 4
-                },
-                {
-                    "position": 7,
-                    "team": "Aef João Moutinho",
-                    "played": 5,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 3,
-                    "goalsFor": 7,
-                    "goalsAgainst": 13,
                     "points": 4
                 },
                 {
@@ -1530,16 +1530,27 @@
                 {
                     "position": 4,
                     "team": "Cdr Quarteirense",
-                    "played": 5,
+                    "played": 6,
                     "wins": 2,
                     "draws": 2,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 7,
-                    "goalsAgainst": 2,
+                    "goalsAgainst": 3,
                     "points": 8
                 },
                 {
                     "position": 5,
+                    "team": "Aef João Moutinho",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 3,
+                    "goalsFor": 8,
+                    "goalsAgainst": 13,
+                    "points": 7
+                },
+                {
+                    "position": 6,
                     "team": "Fc Ferreiras",
                     "played": 5,
                     "wins": 1,
@@ -1550,7 +1561,7 @@
                     "points": 5
                 },
                 {
-                    "position": 6,
+                    "position": 7,
                     "team": "Cf Os Armacenenses",
                     "played": 5,
                     "wins": 1,
@@ -1558,17 +1569,6 @@
                     "losses": 3,
                     "goalsFor": 5,
                     "goalsAgainst": 8,
-                    "points": 4
-                },
-                {
-                    "position": 7,
-                    "team": "Aef João Moutinho",
-                    "played": 5,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 3,
-                    "goalsFor": 7,
-                    "goalsAgainst": 13,
                     "points": 4
                 },
                 {
@@ -1662,16 +1662,27 @@
                 {
                     "position": 4,
                     "team": "Cdr Quarteirense",
-                    "played": 5,
+                    "played": 6,
                     "wins": 2,
                     "draws": 2,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 7,
-                    "goalsAgainst": 2,
+                    "goalsAgainst": 3,
                     "points": 8
                 },
                 {
                     "position": 5,
+                    "team": "Aef João Moutinho",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 3,
+                    "goalsFor": 8,
+                    "goalsAgainst": 13,
+                    "points": 7
+                },
+                {
+                    "position": 6,
                     "team": "Fc Ferreiras",
                     "played": 5,
                     "wins": 1,
@@ -1682,7 +1693,7 @@
                     "points": 5
                 },
                 {
-                    "position": 6,
+                    "position": 7,
                     "team": "Cf Os Armacenenses",
                     "played": 5,
                     "wins": 1,
@@ -1690,17 +1701,6 @@
                     "losses": 3,
                     "goalsFor": 5,
                     "goalsAgainst": 8,
-                    "points": 4
-                },
-                {
-                    "position": 7,
-                    "team": "Aef João Moutinho",
-                    "played": 5,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 3,
-                    "goalsFor": 7,
-                    "goalsAgainst": 13,
                     "points": 4
                 },
                 {
@@ -1794,16 +1794,27 @@
                 {
                     "position": 4,
                     "team": "Cdr Quarteirense",
-                    "played": 5,
+                    "played": 6,
                     "wins": 2,
                     "draws": 2,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 7,
-                    "goalsAgainst": 2,
+                    "goalsAgainst": 3,
                     "points": 8
                 },
                 {
                     "position": 5,
+                    "team": "Aef João Moutinho",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 1,
+                    "losses": 3,
+                    "goalsFor": 8,
+                    "goalsAgainst": 13,
+                    "points": 7
+                },
+                {
+                    "position": 6,
                     "team": "Fc Ferreiras",
                     "played": 5,
                     "wins": 1,
@@ -1814,7 +1825,7 @@
                     "points": 5
                 },
                 {
-                    "position": 6,
+                    "position": 7,
                     "team": "Cf Os Armacenenses",
                     "played": 5,
                     "wins": 1,
@@ -1822,17 +1833,6 @@
                     "losses": 3,
                     "goalsFor": 5,
                     "goalsAgainst": 8,
-                    "points": 4
-                },
-                {
-                    "position": 7,
-                    "team": "Aef João Moutinho",
-                    "played": 5,
-                    "wins": 1,
-                    "draws": 1,
-                    "losses": 3,
-                    "goalsFor": 7,
-                    "goalsAgainst": 13,
                     "points": 4
                 },
                 {
