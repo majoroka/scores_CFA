@@ -331,15 +331,6 @@
             "fixtureId": "626082",
             "matches": [
                 {
-                    "home": "Silves Fc",
-                    "away": "Sc Farense",
-                    "date": "3 - 3                            \r\n                \r\n                    24 jan",
-                    "time": "",
-                    "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": 3,
-                    "awayScore": 3
-                },
-                {
                     "home": "Cf Esperança Lagos",
                     "away": "Portimonense Sc",
                     "date": "4 - 0                            \r\n                \r\n                    24 jan",
@@ -347,6 +338,15 @@
                     "stadium": "Estádio Municipal De Lagos N.º 2",
                     "homeScore": 4,
                     "awayScore": 0
+                },
+                {
+                    "home": "Silves Fc",
+                    "away": "Sc Farense",
+                    "date": "3 - 3                            \r\n                \r\n                    24 jan",
+                    "time": "",
+                    "stadium": "Estádio Dr. Francisco Vieira",
+                    "homeScore": 3,
+                    "awayScore": 3
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -657,15 +657,6 @@
             "fixtureId": "626084",
             "matches": [
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Js Campinense",
-                    "date": "3 - 1                            \r\n                \r\n                    14 fev",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 3,
-                    "awayScore": 1
-                },
-                {
                     "home": "Silves Fc",
                     "away": "Cd Montenegro",
                     "date": "0 - 2                            \r\n                \r\n                    14 fev",
@@ -673,6 +664,15 @@
                     "stadium": "Estádio Dr. Francisco Vieira",
                     "homeScore": 0,
                     "awayScore": 2
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Js Campinense",
+                    "date": "3 - 1                            \r\n                \r\n                    14 fev",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 3,
+                    "awayScore": 1
                 },
                 {
                     "home": "Nucleo Sporting C.P. Olhão",
@@ -1001,22 +1001,22 @@
                     "awayScore": 2
                 },
                 {
-                    "home": "Fc Ferreiras",
-                    "away": "Portimonense Sc",
-                    "date": "28 fev",
-                    "time": "10:30",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Cf Os Armacenenses",
                     "away": "Cd Montenegro",
-                    "date": "28 fev",
-                    "time": "10:30",
+                    "date": "4 - 3                            \r\n                \r\n                    28 fev",
+                    "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 4,
+                    "awayScore": 3
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Portimonense Sc",
+                    "date": "3 - 2                            \r\n                \r\n                    28 fev",
+                    "time": "",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": 3,
+                    "awayScore": 2
                 },
                 {
                     "home": "Adt - Ass. Desp. Tavira",
@@ -1031,6 +1031,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cf Os Armacenenses",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 30,
+                    "goalsAgainst": 12,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Cf Esperança Lagos",
                     "played": 6,
                     "wins": 5,
@@ -1041,25 +1052,14 @@
                     "points": 15
                 },
                 {
-                    "position": 2,
-                    "team": "Cf Os Armacenenses",
-                    "played": 6,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 26,
-                    "goalsAgainst": 9,
-                    "points": 15
-                },
-                {
                     "position": 3,
                     "team": "Cd Montenegro",
-                    "played": 6,
+                    "played": 7,
                     "wins": 4,
                     "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 16,
-                    "goalsAgainst": 8,
+                    "losses": 2,
+                    "goalsFor": 19,
+                    "goalsAgainst": 12,
                     "points": 13
                 },
                 {
@@ -1087,12 +1087,12 @@
                 {
                     "position": 6,
                     "team": "Portimonense Sc",
-                    "played": 6,
+                    "played": 7,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 9,
-                    "goalsAgainst": 13,
+                    "losses": 4,
+                    "goalsFor": 11,
+                    "goalsAgainst": 16,
                     "points": 9
                 },
                 {
@@ -1119,6 +1119,17 @@
                 },
                 {
                     "position": 9,
+                    "team": "Fc Ferreiras",
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 10,
+                    "goalsAgainst": 32,
+                    "points": 3
+                },
+                {
+                    "position": 10,
                     "team": "Sc Farense",
                     "played": 7,
                     "wins": 0,
@@ -1127,17 +1138,6 @@
                     "goalsFor": 10,
                     "goalsAgainst": 19,
                     "points": 2
-                },
-                {
-                    "position": 10,
-                    "team": "Fc Ferreiras",
-                    "played": 6,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 7,
-                    "goalsAgainst": 30,
-                    "points": 0
                 }
             ]
         },
@@ -1194,6 +1194,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cf Os Armacenenses",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 30,
+                    "goalsAgainst": 12,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Cf Esperança Lagos",
                     "played": 6,
                     "wins": 5,
@@ -1204,25 +1215,14 @@
                     "points": 15
                 },
                 {
-                    "position": 2,
-                    "team": "Cf Os Armacenenses",
-                    "played": 6,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 26,
-                    "goalsAgainst": 9,
-                    "points": 15
-                },
-                {
                     "position": 3,
                     "team": "Cd Montenegro",
-                    "played": 6,
+                    "played": 7,
                     "wins": 4,
                     "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 16,
-                    "goalsAgainst": 8,
+                    "losses": 2,
+                    "goalsFor": 19,
+                    "goalsAgainst": 12,
                     "points": 13
                 },
                 {
@@ -1250,12 +1250,12 @@
                 {
                     "position": 6,
                     "team": "Portimonense Sc",
-                    "played": 6,
+                    "played": 7,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 9,
-                    "goalsAgainst": 13,
+                    "losses": 4,
+                    "goalsFor": 11,
+                    "goalsAgainst": 16,
                     "points": 9
                 },
                 {
@@ -1282,6 +1282,17 @@
                 },
                 {
                     "position": 9,
+                    "team": "Fc Ferreiras",
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 10,
+                    "goalsAgainst": 32,
+                    "points": 3
+                },
+                {
+                    "position": 10,
                     "team": "Sc Farense",
                     "played": 7,
                     "wins": 0,
@@ -1290,17 +1301,6 @@
                     "goalsFor": 10,
                     "goalsAgainst": 19,
                     "points": 2
-                },
-                {
-                    "position": 10,
-                    "team": "Fc Ferreiras",
-                    "played": 6,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 7,
-                    "goalsAgainst": 30,
-                    "points": 0
                 }
             ]
         },
@@ -1318,20 +1318,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Nucleo Sporting C.P. Olhão",
-                    "away": "Cf Esperança Lagos",
-                    "date": "14 mar",
-                    "time": "09:00",
-                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Cf Os Armacenenses",
                     "away": "Silves Fc",
                     "date": "14 mar",
                     "time": "09:00",
                     "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Nucleo Sporting C.P. Olhão",
+                    "away": "Cf Esperança Lagos",
+                    "date": "14 mar",
+                    "time": "09:00",
+                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1357,6 +1357,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cf Os Armacenenses",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 30,
+                    "goalsAgainst": 12,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Cf Esperança Lagos",
                     "played": 6,
                     "wins": 5,
@@ -1367,25 +1378,14 @@
                     "points": 15
                 },
                 {
-                    "position": 2,
-                    "team": "Cf Os Armacenenses",
-                    "played": 6,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 26,
-                    "goalsAgainst": 9,
-                    "points": 15
-                },
-                {
                     "position": 3,
                     "team": "Cd Montenegro",
-                    "played": 6,
+                    "played": 7,
                     "wins": 4,
                     "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 16,
-                    "goalsAgainst": 8,
+                    "losses": 2,
+                    "goalsFor": 19,
+                    "goalsAgainst": 12,
                     "points": 13
                 },
                 {
@@ -1413,12 +1413,12 @@
                 {
                     "position": 6,
                     "team": "Portimonense Sc",
-                    "played": 6,
+                    "played": 7,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 9,
-                    "goalsAgainst": 13,
+                    "losses": 4,
+                    "goalsFor": 11,
+                    "goalsAgainst": 16,
                     "points": 9
                 },
                 {
@@ -1445,6 +1445,17 @@
                 },
                 {
                     "position": 9,
+                    "team": "Fc Ferreiras",
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 10,
+                    "goalsAgainst": 32,
+                    "points": 3
+                },
+                {
+                    "position": 10,
                     "team": "Sc Farense",
                     "played": 7,
                     "wins": 0,
@@ -1453,17 +1464,6 @@
                     "goalsFor": 10,
                     "goalsAgainst": 19,
                     "points": 2
-                },
-                {
-                    "position": 10,
-                    "team": "Fc Ferreiras",
-                    "played": 6,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 7,
-                    "goalsAgainst": 30,
-                    "points": 0
                 }
             ]
         },
@@ -1472,11 +1472,20 @@
             "fixtureId": "626089",
             "matches": [
                 {
-                    "home": "Nucleo Sporting C.P. Olhão",
-                    "away": "Cf Os Armacenenses",
+                    "home": "Portimonense Sc",
+                    "away": "Sc Farense",
                     "date": "21 mar",
                     "time": "11:00",
-                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
+                    "stadium": "Campo Major David Neto 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Js Campinense",
+                    "away": "Silves Fc",
+                    "date": "21 mar",
+                    "time": "11:00",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1490,11 +1499,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Portimonense Sc",
-                    "away": "Sc Farense",
+                    "home": "Nucleo Sporting C.P. Olhão",
+                    "away": "Cf Os Armacenenses",
                     "date": "21 mar",
                     "time": "11:00",
-                    "stadium": "Campo Major David Neto 2",
+                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1506,20 +1515,22 @@
                     "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": null,
                     "awayScore": null
-                },
-                {
-                    "home": "Js Campinense",
-                    "away": "Silves Fc",
-                    "date": "21 mar",
-                    "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": null,
-                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
+                    "team": "Cf Os Armacenenses",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 30,
+                    "goalsAgainst": 12,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Cf Esperança Lagos",
                     "played": 6,
                     "wins": 5,
@@ -1530,25 +1541,14 @@
                     "points": 15
                 },
                 {
-                    "position": 2,
-                    "team": "Cf Os Armacenenses",
-                    "played": 6,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 26,
-                    "goalsAgainst": 9,
-                    "points": 15
-                },
-                {
                     "position": 3,
                     "team": "Cd Montenegro",
-                    "played": 6,
+                    "played": 7,
                     "wins": 4,
                     "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 16,
-                    "goalsAgainst": 8,
+                    "losses": 2,
+                    "goalsFor": 19,
+                    "goalsAgainst": 12,
                     "points": 13
                 },
                 {
@@ -1576,12 +1576,12 @@
                 {
                     "position": 6,
                     "team": "Portimonense Sc",
-                    "played": 6,
+                    "played": 7,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 9,
-                    "goalsAgainst": 13,
+                    "losses": 4,
+                    "goalsFor": 11,
+                    "goalsAgainst": 16,
                     "points": 9
                 },
                 {
@@ -1608,6 +1608,17 @@
                 },
                 {
                     "position": 9,
+                    "team": "Fc Ferreiras",
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 10,
+                    "goalsAgainst": 32,
+                    "points": 3
+                },
+                {
+                    "position": 10,
                     "team": "Sc Farense",
                     "played": 7,
                     "wins": 0,
@@ -1616,17 +1627,6 @@
                     "goalsFor": 10,
                     "goalsAgainst": 19,
                     "points": 2
-                },
-                {
-                    "position": 10,
-                    "team": "Fc Ferreiras",
-                    "played": 6,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 7,
-                    "goalsAgainst": 30,
-                    "points": 0
                 }
             ]
         },
@@ -1634,24 +1634,6 @@
             "index": 11,
             "fixtureId": "626090",
             "matches": [
-                {
-                    "home": "Sc Farense",
-                    "away": "Js Campinense",
-                    "date": "28 mar",
-                    "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Silves Fc",
-                    "away": "Nucleo Sporting C.P. Olhão",
-                    "date": "28 mar",
-                    "time": "11:00",
-                    "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": null,
-                    "awayScore": null
-                },
                 {
                     "home": "Cd Montenegro",
                     "away": "Portimonense Sc",
@@ -1671,6 +1653,24 @@
                     "awayScore": null
                 },
                 {
+                    "home": "Silves Fc",
+                    "away": "Nucleo Sporting C.P. Olhão",
+                    "date": "28 mar",
+                    "time": "11:00",
+                    "stadium": "Estádio Dr. Francisco Vieira",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Sc Farense",
+                    "away": "Js Campinense",
+                    "date": "28 mar",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Cf Os Armacenenses",
                     "away": "Adt - Ass. Desp. Tavira",
                     "date": "28 mar",
@@ -1683,17 +1683,28 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cd Montenegro",
+                    "team": "Cf Os Armacenenses",
                     "played": 7,
-                    "wins": 5,
-                    "draws": 1,
+                    "wins": 6,
+                    "draws": 0,
                     "losses": 1,
-                    "goalsFor": 21,
-                    "goalsAgainst": 9,
-                    "points": 16
+                    "goalsFor": 30,
+                    "goalsAgainst": 12,
+                    "points": 18
                 },
                 {
                     "position": 2,
+                    "team": "Cd Montenegro",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 24,
+                    "goalsAgainst": 13,
+                    "points": 16
+                },
+                {
+                    "position": 3,
                     "team": "Cf Esperança Lagos",
                     "played": 6,
                     "wins": 5,
@@ -1701,17 +1712,6 @@
                     "losses": 1,
                     "goalsFor": 25,
                     "goalsAgainst": 7,
-                    "points": 15
-                },
-                {
-                    "position": 3,
-                    "team": "Cf Os Armacenenses",
-                    "played": 6,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 26,
-                    "goalsAgainst": 9,
                     "points": 15
                 },
                 {
@@ -1739,12 +1739,12 @@
                 {
                     "position": 6,
                     "team": "Portimonense Sc",
-                    "played": 7,
+                    "played": 8,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 10,
-                    "goalsAgainst": 18,
+                    "losses": 5,
+                    "goalsFor": 12,
+                    "goalsAgainst": 21,
                     "points": 9
                 },
                 {
@@ -1771,6 +1771,17 @@
                 },
                 {
                     "position": 9,
+                    "team": "Fc Ferreiras",
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 10,
+                    "goalsAgainst": 32,
+                    "points": 3
+                },
+                {
+                    "position": 10,
                     "team": "Sc Farense",
                     "played": 7,
                     "wins": 0,
@@ -1779,17 +1790,6 @@
                     "goalsFor": 10,
                     "goalsAgainst": 19,
                     "points": 2
-                },
-                {
-                    "position": 10,
-                    "team": "Fc Ferreiras",
-                    "played": 6,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 7,
-                    "goalsAgainst": 30,
-                    "points": 0
                 }
             ]
         },
@@ -1798,11 +1798,20 @@
             "fixtureId": "626091",
             "matches": [
                 {
-                    "home": "Fc Ferreiras",
-                    "away": "Cf Os Armacenenses",
+                    "home": "Portimonense Sc",
+                    "away": "Cf Esperança Lagos",
                     "date": "11 abr",
                     "time": "11:00",
-                    "stadium": "Estádio Nora Nº 2",
+                    "stadium": "Campo Major David Neto 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Sc Farense",
+                    "away": "Silves Fc",
+                    "date": "11 abr",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1816,11 +1825,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Portimonense Sc",
-                    "away": "Cf Esperança Lagos",
+                    "home": "Fc Ferreiras",
+                    "away": "Cf Os Armacenenses",
                     "date": "11 abr",
                     "time": "11:00",
-                    "stadium": "Campo Major David Neto 2",
+                    "stadium": "Estádio Nora Nº 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1832,31 +1841,33 @@
                     "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": null,
                     "awayScore": null
-                },
-                {
-                    "home": "Sc Farense",
-                    "away": "Silves Fc",
-                    "date": "11 abr",
-                    "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cd Montenegro",
+                    "team": "Cf Os Armacenenses",
                     "played": 7,
-                    "wins": 5,
-                    "draws": 1,
+                    "wins": 6,
+                    "draws": 0,
                     "losses": 1,
-                    "goalsFor": 21,
-                    "goalsAgainst": 9,
-                    "points": 16
+                    "goalsFor": 30,
+                    "goalsAgainst": 12,
+                    "points": 18
                 },
                 {
                     "position": 2,
+                    "team": "Cd Montenegro",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 24,
+                    "goalsAgainst": 13,
+                    "points": 16
+                },
+                {
+                    "position": 3,
                     "team": "Cf Esperança Lagos",
                     "played": 6,
                     "wins": 5,
@@ -1864,17 +1875,6 @@
                     "losses": 1,
                     "goalsFor": 25,
                     "goalsAgainst": 7,
-                    "points": 15
-                },
-                {
-                    "position": 3,
-                    "team": "Cf Os Armacenenses",
-                    "played": 6,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 26,
-                    "goalsAgainst": 9,
                     "points": 15
                 },
                 {
@@ -1902,12 +1902,12 @@
                 {
                     "position": 6,
                     "team": "Portimonense Sc",
-                    "played": 7,
+                    "played": 8,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 10,
-                    "goalsAgainst": 18,
+                    "losses": 5,
+                    "goalsFor": 12,
+                    "goalsAgainst": 21,
                     "points": 9
                 },
                 {
@@ -1934,6 +1934,17 @@
                 },
                 {
                     "position": 9,
+                    "team": "Fc Ferreiras",
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 10,
+                    "goalsAgainst": 32,
+                    "points": 3
+                },
+                {
+                    "position": 10,
                     "team": "Sc Farense",
                     "played": 7,
                     "wins": 0,
@@ -1942,17 +1953,6 @@
                     "goalsFor": 10,
                     "goalsAgainst": 19,
                     "points": 2
-                },
-                {
-                    "position": 10,
-                    "team": "Fc Ferreiras",
-                    "played": 6,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 7,
-                    "goalsAgainst": 30,
-                    "points": 0
                 }
             ]
         },
@@ -1961,6 +1961,15 @@
             "fixtureId": "626092",
             "matches": [
                 {
+                    "home": "Cd Montenegro",
+                    "away": "Sc Farense",
+                    "date": "18 abr",
+                    "time": "11:00",
+                    "stadium": "Campo Horta Da Areia",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Cf Esperança Lagos",
                     "away": "Js Campinense",
                     "date": "18 abr",
@@ -1970,11 +1979,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cd Montenegro",
-                    "away": "Sc Farense",
+                    "home": "Silves Fc",
+                    "away": "Adt - Ass. Desp. Tavira",
                     "date": "18 abr",
                     "time": "11:00",
-                    "stadium": "Campo Horta Da Areia",
+                    "stadium": "Estádio Dr. Francisco Vieira",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1995,31 +2004,33 @@
                     "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
                     "homeScore": null,
                     "awayScore": null
-                },
-                {
-                    "home": "Silves Fc",
-                    "away": "Adt - Ass. Desp. Tavira",
-                    "date": "18 abr",
-                    "time": "11:00",
-                    "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": null,
-                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cd Montenegro",
+                    "team": "Cf Os Armacenenses",
                     "played": 7,
-                    "wins": 5,
-                    "draws": 1,
+                    "wins": 6,
+                    "draws": 0,
                     "losses": 1,
-                    "goalsFor": 21,
-                    "goalsAgainst": 9,
-                    "points": 16
+                    "goalsFor": 30,
+                    "goalsAgainst": 12,
+                    "points": 18
                 },
                 {
                     "position": 2,
+                    "team": "Cd Montenegro",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 24,
+                    "goalsAgainst": 13,
+                    "points": 16
+                },
+                {
+                    "position": 3,
                     "team": "Cf Esperança Lagos",
                     "played": 6,
                     "wins": 5,
@@ -2027,17 +2038,6 @@
                     "losses": 1,
                     "goalsFor": 25,
                     "goalsAgainst": 7,
-                    "points": 15
-                },
-                {
-                    "position": 3,
-                    "team": "Cf Os Armacenenses",
-                    "played": 6,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 26,
-                    "goalsAgainst": 9,
                     "points": 15
                 },
                 {
@@ -2065,12 +2065,12 @@
                 {
                     "position": 6,
                     "team": "Portimonense Sc",
-                    "played": 7,
+                    "played": 8,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 10,
-                    "goalsAgainst": 18,
+                    "losses": 5,
+                    "goalsFor": 12,
+                    "goalsAgainst": 21,
                     "points": 9
                 },
                 {
@@ -2097,6 +2097,17 @@
                 },
                 {
                     "position": 9,
+                    "team": "Fc Ferreiras",
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 10,
+                    "goalsAgainst": 32,
+                    "points": 3
+                },
+                {
+                    "position": 10,
                     "team": "Sc Farense",
                     "played": 7,
                     "wins": 0,
@@ -2105,17 +2116,6 @@
                     "goalsFor": 10,
                     "goalsAgainst": 19,
                     "points": 2
-                },
-                {
-                    "position": 10,
-                    "team": "Fc Ferreiras",
-                    "played": 6,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 7,
-                    "goalsAgainst": 30,
-                    "points": 0
                 }
             ]
         },
@@ -2124,20 +2124,11 @@
             "fixtureId": "626093",
             "matches": [
                 {
-                    "home": "Js Campinense",
-                    "away": "Cf Os Armacenenses",
+                    "home": "Cd Montenegro",
+                    "away": "Silves Fc",
                     "date": "25 abr",
                     "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Sc Farense",
-                    "away": "Cf Esperança Lagos",
-                    "date": "25 abr",
-                    "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
+                    "stadium": "Campo Horta Da Areia",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2151,11 +2142,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cd Montenegro",
-                    "away": "Silves Fc",
+                    "home": "Sc Farense",
+                    "away": "Cf Esperança Lagos",
                     "date": "25 abr",
                     "time": "11:00",
-                    "stadium": "Campo Horta Da Areia",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Js Campinense",
+                    "away": "Cf Os Armacenenses",
+                    "date": "25 abr",
+                    "time": "11:00",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2172,17 +2172,28 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cd Montenegro",
+                    "team": "Cf Os Armacenenses",
                     "played": 7,
-                    "wins": 5,
-                    "draws": 1,
+                    "wins": 6,
+                    "draws": 0,
                     "losses": 1,
-                    "goalsFor": 21,
-                    "goalsAgainst": 9,
-                    "points": 16
+                    "goalsFor": 30,
+                    "goalsAgainst": 12,
+                    "points": 18
                 },
                 {
                     "position": 2,
+                    "team": "Cd Montenegro",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 24,
+                    "goalsAgainst": 13,
+                    "points": 16
+                },
+                {
+                    "position": 3,
                     "team": "Cf Esperança Lagos",
                     "played": 6,
                     "wins": 5,
@@ -2190,17 +2201,6 @@
                     "losses": 1,
                     "goalsFor": 25,
                     "goalsAgainst": 7,
-                    "points": 15
-                },
-                {
-                    "position": 3,
-                    "team": "Cf Os Armacenenses",
-                    "played": 6,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 26,
-                    "goalsAgainst": 9,
                     "points": 15
                 },
                 {
@@ -2228,12 +2228,12 @@
                 {
                     "position": 6,
                     "team": "Portimonense Sc",
-                    "played": 7,
+                    "played": 8,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 10,
-                    "goalsAgainst": 18,
+                    "losses": 5,
+                    "goalsFor": 12,
+                    "goalsAgainst": 21,
                     "points": 9
                 },
                 {
@@ -2260,6 +2260,17 @@
                 },
                 {
                     "position": 9,
+                    "team": "Fc Ferreiras",
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 10,
+                    "goalsAgainst": 32,
+                    "points": 3
+                },
+                {
+                    "position": 10,
                     "team": "Sc Farense",
                     "played": 7,
                     "wins": 0,
@@ -2268,17 +2279,6 @@
                     "goalsFor": 10,
                     "goalsAgainst": 19,
                     "points": 2
-                },
-                {
-                    "position": 10,
-                    "team": "Fc Ferreiras",
-                    "played": 6,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 7,
-                    "goalsAgainst": 30,
-                    "points": 0
                 }
             ]
         },
@@ -2287,20 +2287,20 @@
             "fixtureId": "626094",
             "matches": [
                 {
-                    "home": "Nucleo Sporting C.P. Olhão",
-                    "away": "Js Campinense",
-                    "date": "2 mai",
-                    "time": "11:00",
-                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Cf Esperança Lagos",
                     "away": "Cd Montenegro",
                     "date": "2 mai",
                     "time": "11:00",
                     "stadium": "Estádio Municipal De Lagos N.º 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Silves Fc",
+                    "away": "Fc Ferreiras",
+                    "date": "2 mai",
+                    "time": "11:00",
+                    "stadium": "Estádio Dr. Francisco Vieira",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2314,6 +2314,15 @@
                     "awayScore": null
                 },
                 {
+                    "home": "Nucleo Sporting C.P. Olhão",
+                    "away": "Js Campinense",
+                    "date": "2 mai",
+                    "time": "11:00",
+                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Adt - Ass. Desp. Tavira",
                     "away": "Portimonense Sc",
                     "date": "2 mai",
@@ -2321,31 +2330,33 @@
                     "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": null,
                     "awayScore": null
-                },
-                {
-                    "home": "Silves Fc",
-                    "away": "Fc Ferreiras",
-                    "date": "2 mai",
-                    "time": "11:00",
-                    "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": null,
-                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cd Montenegro",
+                    "team": "Cf Os Armacenenses",
                     "played": 7,
-                    "wins": 5,
-                    "draws": 1,
+                    "wins": 6,
+                    "draws": 0,
                     "losses": 1,
-                    "goalsFor": 21,
-                    "goalsAgainst": 9,
-                    "points": 16
+                    "goalsFor": 30,
+                    "goalsAgainst": 12,
+                    "points": 18
                 },
                 {
                     "position": 2,
+                    "team": "Cd Montenegro",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 24,
+                    "goalsAgainst": 13,
+                    "points": 16
+                },
+                {
+                    "position": 3,
                     "team": "Cf Esperança Lagos",
                     "played": 6,
                     "wins": 5,
@@ -2353,17 +2364,6 @@
                     "losses": 1,
                     "goalsFor": 25,
                     "goalsAgainst": 7,
-                    "points": 15
-                },
-                {
-                    "position": 3,
-                    "team": "Cf Os Armacenenses",
-                    "played": 6,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 26,
-                    "goalsAgainst": 9,
                     "points": 15
                 },
                 {
@@ -2391,12 +2391,12 @@
                 {
                     "position": 6,
                     "team": "Portimonense Sc",
-                    "played": 7,
+                    "played": 8,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 10,
-                    "goalsAgainst": 18,
+                    "losses": 5,
+                    "goalsFor": 12,
+                    "goalsAgainst": 21,
                     "points": 9
                 },
                 {
@@ -2423,6 +2423,17 @@
                 },
                 {
                     "position": 9,
+                    "team": "Fc Ferreiras",
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 10,
+                    "goalsAgainst": 32,
+                    "points": 3
+                },
+                {
+                    "position": 10,
                     "team": "Sc Farense",
                     "played": 7,
                     "wins": 0,
@@ -2431,17 +2442,6 @@
                     "goalsFor": 10,
                     "goalsAgainst": 19,
                     "points": 2
-                },
-                {
-                    "position": 10,
-                    "team": "Fc Ferreiras",
-                    "played": 6,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 7,
-                    "goalsAgainst": 30,
-                    "points": 0
                 }
             ]
         },
@@ -2459,15 +2459,6 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Sc Farense",
-                    "away": "Nucleo Sporting C.P. Olhão",
-                    "date": "9 mai",
-                    "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Cf Esperança Lagos",
                     "away": "Silves Fc",
                     "date": "9 mai",
@@ -2486,6 +2477,15 @@
                     "awayScore": null
                 },
                 {
+                    "home": "Sc Farense",
+                    "away": "Nucleo Sporting C.P. Olhão",
+                    "date": "9 mai",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Js Campinense",
                     "away": "Adt - Ass. Desp. Tavira",
                     "date": "9 mai",
@@ -2498,17 +2498,28 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cd Montenegro",
+                    "team": "Cf Os Armacenenses",
                     "played": 7,
-                    "wins": 5,
-                    "draws": 1,
+                    "wins": 6,
+                    "draws": 0,
                     "losses": 1,
-                    "goalsFor": 21,
-                    "goalsAgainst": 9,
-                    "points": 16
+                    "goalsFor": 30,
+                    "goalsAgainst": 12,
+                    "points": 18
                 },
                 {
                     "position": 2,
+                    "team": "Cd Montenegro",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 24,
+                    "goalsAgainst": 13,
+                    "points": 16
+                },
+                {
+                    "position": 3,
                     "team": "Cf Esperança Lagos",
                     "played": 6,
                     "wins": 5,
@@ -2516,17 +2527,6 @@
                     "losses": 1,
                     "goalsFor": 25,
                     "goalsAgainst": 7,
-                    "points": 15
-                },
-                {
-                    "position": 3,
-                    "team": "Cf Os Armacenenses",
-                    "played": 6,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 26,
-                    "goalsAgainst": 9,
                     "points": 15
                 },
                 {
@@ -2554,12 +2554,12 @@
                 {
                     "position": 6,
                     "team": "Portimonense Sc",
-                    "played": 7,
+                    "played": 8,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 10,
-                    "goalsAgainst": 18,
+                    "losses": 5,
+                    "goalsFor": 12,
+                    "goalsAgainst": 21,
                     "points": 9
                 },
                 {
@@ -2586,6 +2586,17 @@
                 },
                 {
                     "position": 9,
+                    "team": "Fc Ferreiras",
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 10,
+                    "goalsAgainst": 32,
+                    "points": 3
+                },
+                {
+                    "position": 10,
                     "team": "Sc Farense",
                     "played": 7,
                     "wins": 0,
@@ -2594,17 +2605,6 @@
                     "goalsFor": 10,
                     "goalsAgainst": 19,
                     "points": 2
-                },
-                {
-                    "position": 10,
-                    "team": "Fc Ferreiras",
-                    "played": 6,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 7,
-                    "goalsAgainst": 30,
-                    "points": 0
                 }
             ]
         },
@@ -2612,6 +2612,24 @@
             "index": 17,
             "fixtureId": "626096",
             "matches": [
+                {
+                    "home": "Portimonense Sc",
+                    "away": "Silves Fc",
+                    "date": "16 mai",
+                    "time": "11:00",
+                    "stadium": "Campo Major David Neto 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Cf Esperança Lagos",
+                    "date": "16 mai",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
                 {
                     "home": "Fc Ferreiras",
                     "away": "Js Campinense",
@@ -2638,40 +2656,33 @@
                     "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": null,
                     "awayScore": null
-                },
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Cf Esperança Lagos",
-                    "date": "16 mai",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Portimonense Sc",
-                    "away": "Silves Fc",
-                    "date": "16 mai",
-                    "time": "11:00",
-                    "stadium": "Campo Major David Neto 2",
-                    "homeScore": null,
-                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cd Montenegro",
+                    "team": "Cf Os Armacenenses",
                     "played": 7,
-                    "wins": 5,
-                    "draws": 1,
+                    "wins": 6,
+                    "draws": 0,
                     "losses": 1,
-                    "goalsFor": 21,
-                    "goalsAgainst": 9,
-                    "points": 16
+                    "goalsFor": 30,
+                    "goalsAgainst": 12,
+                    "points": 18
                 },
                 {
                     "position": 2,
+                    "team": "Cd Montenegro",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 24,
+                    "goalsAgainst": 13,
+                    "points": 16
+                },
+                {
+                    "position": 3,
                     "team": "Cf Esperança Lagos",
                     "played": 6,
                     "wins": 5,
@@ -2679,17 +2690,6 @@
                     "losses": 1,
                     "goalsFor": 25,
                     "goalsAgainst": 7,
-                    "points": 15
-                },
-                {
-                    "position": 3,
-                    "team": "Cf Os Armacenenses",
-                    "played": 6,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 26,
-                    "goalsAgainst": 9,
                     "points": 15
                 },
                 {
@@ -2717,12 +2717,12 @@
                 {
                     "position": 6,
                     "team": "Portimonense Sc",
-                    "played": 7,
+                    "played": 8,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 10,
-                    "goalsAgainst": 18,
+                    "losses": 5,
+                    "goalsFor": 12,
+                    "goalsAgainst": 21,
                     "points": 9
                 },
                 {
@@ -2749,6 +2749,17 @@
                 },
                 {
                     "position": 9,
+                    "team": "Fc Ferreiras",
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 10,
+                    "goalsAgainst": 32,
+                    "points": 3
+                },
+                {
+                    "position": 10,
                     "team": "Sc Farense",
                     "played": 7,
                     "wins": 0,
@@ -2757,17 +2768,6 @@
                     "goalsFor": 10,
                     "goalsAgainst": 19,
                     "points": 2
-                },
-                {
-                    "position": 10,
-                    "team": "Fc Ferreiras",
-                    "played": 6,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 7,
-                    "goalsAgainst": 30,
-                    "points": 0
                 }
             ]
         },
@@ -2776,11 +2776,11 @@
             "fixtureId": "626097",
             "matches": [
                 {
-                    "home": "Silves Fc",
-                    "away": "Cf Os Armacenenses",
+                    "home": "Cd Montenegro",
+                    "away": "Adt - Ass. Desp. Tavira",
                     "date": "23 mai",
                     "time": "11:00",
-                    "stadium": "Estádio Dr. Francisco Vieira",
+                    "stadium": "Campo Horta Da Areia",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2794,11 +2794,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Js Campinense",
-                    "away": "Portimonense Sc",
+                    "home": "Silves Fc",
+                    "away": "Cf Os Armacenenses",
                     "date": "23 mai",
                     "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "stadium": "Estádio Dr. Francisco Vieira",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2812,11 +2812,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cd Montenegro",
-                    "away": "Adt - Ass. Desp. Tavira",
+                    "home": "Js Campinense",
+                    "away": "Portimonense Sc",
                     "date": "23 mai",
                     "time": "11:00",
-                    "stadium": "Campo Horta Da Areia",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -2824,17 +2824,28 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cd Montenegro",
+                    "team": "Cf Os Armacenenses",
                     "played": 7,
-                    "wins": 5,
-                    "draws": 1,
+                    "wins": 6,
+                    "draws": 0,
                     "losses": 1,
-                    "goalsFor": 21,
-                    "goalsAgainst": 9,
-                    "points": 16
+                    "goalsFor": 30,
+                    "goalsAgainst": 12,
+                    "points": 18
                 },
                 {
                     "position": 2,
+                    "team": "Cd Montenegro",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 24,
+                    "goalsAgainst": 13,
+                    "points": 16
+                },
+                {
+                    "position": 3,
                     "team": "Cf Esperança Lagos",
                     "played": 6,
                     "wins": 5,
@@ -2842,17 +2853,6 @@
                     "losses": 1,
                     "goalsFor": 25,
                     "goalsAgainst": 7,
-                    "points": 15
-                },
-                {
-                    "position": 3,
-                    "team": "Cf Os Armacenenses",
-                    "played": 6,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 26,
-                    "goalsAgainst": 9,
                     "points": 15
                 },
                 {
@@ -2880,12 +2880,12 @@
                 {
                     "position": 6,
                     "team": "Portimonense Sc",
-                    "played": 7,
+                    "played": 8,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 10,
-                    "goalsAgainst": 18,
+                    "losses": 5,
+                    "goalsFor": 12,
+                    "goalsAgainst": 21,
                     "points": 9
                 },
                 {
@@ -2912,6 +2912,17 @@
                 },
                 {
                     "position": 9,
+                    "team": "Fc Ferreiras",
+                    "played": 7,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 10,
+                    "goalsAgainst": 32,
+                    "points": 3
+                },
+                {
+                    "position": 10,
                     "team": "Sc Farense",
                     "played": 7,
                     "wins": 0,
@@ -2920,17 +2931,6 @@
                     "goalsFor": 10,
                     "goalsAgainst": 19,
                     "points": 2
-                },
-                {
-                    "position": 10,
-                    "team": "Fc Ferreiras",
-                    "played": 6,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 7,
-                    "goalsAgainst": 30,
-                    "points": 0
                 }
             ]
         }
