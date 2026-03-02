@@ -5,21 +5,21 @@
             "fixtureId": "626332",
             "matches": [
                 {
-                    "home": "Lusitano Gc",
-                    "away": "Cf Os Armacenenses",
-                    "date": "0 - 5                            \r\n                \r\n                    10 jan",
-                    "time": "",
-                    "stadium": "Academia Lusitano Ginasio Clube - Campo Nº2",
-                    "homeScore": 0,
-                    "awayScore": 5
-                },
-                {
                     "home": "Portimonense Sc",
                     "away": "Cd Beja",
                     "date": "2 - 5                            \r\n                \r\n                    10 jan",
                     "time": "",
                     "stadium": "Campo Major David Neto N.º1",
                     "homeScore": 2,
+                    "awayScore": 5
+                },
+                {
+                    "home": "Lusitano Gc",
+                    "away": "Cf Os Armacenenses",
+                    "date": "0 - 5                            \r\n                \r\n                    10 jan",
+                    "time": "",
+                    "stadium": "Academia Lusitano Ginasio Clube - Campo Nº2",
+                    "homeScore": 0,
                     "awayScore": 5
                 }
             ],
@@ -167,49 +167,60 @@
             "fixtureId": "626334",
             "matches": [
                 {
-                    "home": "Lusitano Gc",
-                    "away": "Damaiense Sad",
-                    "date": "7 fev",
-                    "time": "15:00",
-                    "stadium": "Academia Lusitano Ginasio Clube - Campo Nº2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Cf Os Armacenenses",
                     "away": "Cd Beja",
-                    "date": "7 fev",
-                    "time": "15:00",
+                    "date": "1 - 1                            \r\n                \r\n                    7 fev",
+                    "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 1,
+                    "awayScore": 1
+                },
+                {
+                    "home": "Lusitano Gc",
+                    "away": "Damaiense Sad",
+                    "date": "10 - 0                            \r\n                \r\n                    8 fev",
+                    "time": "",
+                    "stadium": "Academia Lusitano Ginasio Clube - Campo Nº2",
+                    "homeScore": 10,
+                    "awayScore": 0
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Cd Beja",
-                    "played": 2,
+                    "played": 3,
                     "wins": 2,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 7,
-                    "goalsAgainst": 2,
-                    "points": 6
+                    "goalsFor": 8,
+                    "goalsAgainst": 3,
+                    "points": 7
                 },
                 {
                     "position": 2,
                     "team": "Cf Os Armacenenses",
-                    "played": 1,
+                    "played": 2,
                     "wins": 1,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 5,
-                    "goalsAgainst": 0,
-                    "points": 3
+                    "goalsFor": 6,
+                    "goalsAgainst": 1,
+                    "points": 4
                 },
                 {
                     "position": 3,
+                    "team": "Lusitano Gc",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 10,
+                    "goalsAgainst": 7,
+                    "points": 3
+                },
+                {
+                    "position": 4,
                     "team": "Portimonense Sc",
                     "played": 2,
                     "wins": 1,
@@ -220,25 +231,14 @@
                     "points": 3
                 },
                 {
-                    "position": 4,
-                    "team": "Damaiense Sad",
-                    "played": 1,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 4,
-                    "points": 0
-                },
-                {
                     "position": 5,
-                    "team": "Lusitano Gc",
+                    "team": "Damaiense Sad",
                     "played": 2,
                     "wins": 0,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 0,
-                    "goalsAgainst": 7,
+                    "goalsFor": 1,
+                    "goalsAgainst": 14,
                     "points": 0
                 }
             ]
@@ -250,76 +250,76 @@
                 {
                     "home": "Portimonense Sc",
                     "away": "Lusitano Gc",
-                    "date": "14 fev",
-                    "time": "15:00",
+                    "date": "2 - 1                            \r\n                \r\n                    14 fev",
+                    "time": "",
                     "stadium": "Campo Major David Neto 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 2,
+                    "awayScore": 1
                 },
                 {
                     "home": "Damaiense Sad",
                     "away": "Cf Os Armacenenses",
-                    "date": "14 fev",
-                    "time": "15:00",
-                    "stadium": "Estadio Algarve",
-                    "homeScore": null,
-                    "awayScore": null
+                    "date": "0 - 8                            \r\n                \r\n                    14 fev",
+                    "time": "",
+                    "stadium": "Campo Sousa Uva",
+                    "homeScore": 0,
+                    "awayScore": 8
                 }
             ],
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cd Beja",
-                    "played": 2,
+                    "team": "Cf Os Armacenenses",
+                    "played": 3,
                     "wins": 2,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 7,
-                    "goalsAgainst": 2,
-                    "points": 6
+                    "goalsFor": 14,
+                    "goalsAgainst": 1,
+                    "points": 7
                 },
                 {
                     "position": 2,
-                    "team": "Cf Os Armacenenses",
-                    "played": 1,
-                    "wins": 1,
-                    "draws": 0,
+                    "team": "Cd Beja",
+                    "played": 3,
+                    "wins": 2,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 5,
-                    "goalsAgainst": 0,
-                    "points": 3
+                    "goalsFor": 8,
+                    "goalsAgainst": 3,
+                    "points": 7
                 },
                 {
                     "position": 3,
                     "team": "Portimonense Sc",
-                    "played": 2,
-                    "wins": 1,
+                    "played": 3,
+                    "wins": 2,
                     "draws": 0,
                     "losses": 1,
-                    "goalsFor": 6,
-                    "goalsAgainst": 6,
-                    "points": 3
+                    "goalsFor": 8,
+                    "goalsAgainst": 7,
+                    "points": 6
                 },
                 {
                     "position": 4,
-                    "team": "Damaiense Sad",
-                    "played": 1,
-                    "wins": 0,
+                    "team": "Lusitano Gc",
+                    "played": 4,
+                    "wins": 1,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 4,
-                    "points": 0
+                    "losses": 3,
+                    "goalsFor": 11,
+                    "goalsAgainst": 9,
+                    "points": 3
                 },
                 {
                     "position": 5,
-                    "team": "Lusitano Gc",
-                    "played": 2,
+                    "team": "Damaiense Sad",
+                    "played": 3,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 0,
-                    "goalsAgainst": 7,
+                    "losses": 3,
+                    "goalsFor": 1,
+                    "goalsAgainst": 22,
                     "points": 0
                 }
             ]
@@ -331,76 +331,76 @@
                 {
                     "home": "Cd Beja",
                     "away": "Damaiense Sad",
-                    "date": "21 fev",
-                    "time": "15:00",
+                    "date": "7 - 1                            \r\n                \r\n                    21 fev",
+                    "time": "",
                     "stadium": "Compl. Desp. Fernando Mamede Campo 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 7,
+                    "awayScore": 1
                 },
                 {
                     "home": "Cf Os Armacenenses",
                     "away": "Portimonense Sc",
-                    "date": "21 fev",
-                    "time": "15:00",
+                    "date": "4 - 0                            \r\n                \r\n                    21 fev",
+                    "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 4,
+                    "awayScore": 0
                 }
             ],
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cd Beja",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
+                    "team": "Cf Os Armacenenses",
+                    "played": 4,
+                    "wins": 3,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 7,
-                    "goalsAgainst": 2,
-                    "points": 6
+                    "goalsFor": 18,
+                    "goalsAgainst": 1,
+                    "points": 10
                 },
                 {
                     "position": 2,
-                    "team": "Cf Os Armacenenses",
-                    "played": 1,
-                    "wins": 1,
-                    "draws": 0,
+                    "team": "Cd Beja",
+                    "played": 4,
+                    "wins": 3,
+                    "draws": 1,
                     "losses": 0,
-                    "goalsFor": 5,
-                    "goalsAgainst": 0,
-                    "points": 3
+                    "goalsFor": 15,
+                    "goalsAgainst": 4,
+                    "points": 10
                 },
                 {
                     "position": 3,
                     "team": "Portimonense Sc",
-                    "played": 2,
-                    "wins": 1,
+                    "played": 4,
+                    "wins": 2,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 6,
-                    "goalsAgainst": 6,
-                    "points": 3
+                    "losses": 2,
+                    "goalsFor": 8,
+                    "goalsAgainst": 11,
+                    "points": 6
                 },
                 {
                     "position": 4,
-                    "team": "Damaiense Sad",
-                    "played": 1,
-                    "wins": 0,
+                    "team": "Lusitano Gc",
+                    "played": 4,
+                    "wins": 1,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 1,
-                    "goalsAgainst": 4,
-                    "points": 0
+                    "losses": 3,
+                    "goalsFor": 11,
+                    "goalsAgainst": 9,
+                    "points": 3
                 },
                 {
                     "position": 5,
-                    "team": "Lusitano Gc",
-                    "played": 2,
+                    "team": "Damaiense Sad",
+                    "played": 4,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 0,
-                    "goalsAgainst": 7,
+                    "losses": 4,
+                    "goalsFor": 2,
+                    "goalsAgainst": 29,
                     "points": 0
                 }
             ]
