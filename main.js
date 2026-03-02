@@ -585,9 +585,12 @@ const initializeRoundBasedOnDate = () => {
         return normalized;
     };
 
+    const isFemininoSub17Competition = competitionKey === 'feminino-sub17';
+    const isIniciadosBCompetition = competitionKey === 'iniciados-b';
+
     const displayTeamName = (teamName) => {
         const normalized = normalizeName(teamName);
-        if (competitionKey === 'feminino-sub17' && normalized === 'cf os armacenenses b') {
+        if ((isFemininoSub17Competition || isIniciadosBCompetition) && normalized === 'cf os armacenenses b') {
             return 'CF Os Armacenenses (Fem-Sub17)';
         }
         return teamName;
@@ -595,8 +598,11 @@ const initializeRoundBasedOnDate = () => {
 
     const isArmacenensesTeam = (teamName) => {
         const normalized = normalizeName(teamName);
-        if (competitionKey === 'feminino-sub17') {
-            return normalized === 'cf os armacenenses' || normalized === 'cf os armacenenses b';
+        if (isFemininoSub17Competition) {
+            return normalized === 'cf os armacenenses b';
+        }
+        if (isIniciadosBCompetition) {
+            return normalized === 'cf os armacenenses a';
         }
         return normalized === 'cf os armacenenses' || normalized === 'cf os armacenenses a';
     };
