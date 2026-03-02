@@ -12,6 +12,7 @@ OUTPUT_FILE = "data/benjamins-bb.json"
 CACHE_DIR = "cache"
 USE_CACHE = False
 TARGET_SERIE_NAME = "SÉRIE 6"
+IGNORED_TEAM_NAMES = {"a indicar"}
 
 
 def _normalize(value: str) -> str:
@@ -125,6 +126,109 @@ def parse_classification(html_fragment: str):
     return classification
 
 
+def build_classification_from_results(rounds):
+    team_labels = {}
+    for round_data in rounds:
+        for match in round_data.get("matches", []):
+            for side in ("home", "away"):
+                team = (match.get(side) or "").strip()
+                normalized = _normalize(team)
+                if not team or normalized in IGNORED_TEAM_NAMES:
+                    continue
+                team_labels.setdefault(normalized, team)
+
+    def empty_stats():
+        return {
+            "played": 0,
+            "wins": 0,
+            "draws": 0,
+            "losses": 0,
+            "goalsFor": 0,
+            "goalsAgainst": 0,
+            "points": 0,
+        }
+
+    stats = {normalized: empty_stats() for normalized in team_labels}
+
+    for round_data in rounds:
+        for match in round_data.get("matches", []):
+            home_team = (match.get("home") or "").strip()
+            away_team = (match.get("away") or "").strip()
+            home_normalized = _normalize(home_team)
+            away_normalized = _normalize(away_team)
+
+            if (
+                not home_team
+                or not away_team
+                or home_normalized in IGNORED_TEAM_NAMES
+                or away_normalized in IGNORED_TEAM_NAMES
+            ):
+                continue
+
+            home_score = match.get("homeScore")
+            away_score = match.get("awayScore")
+            if not isinstance(home_score, int) or not isinstance(away_score, int):
+                continue
+
+            if home_normalized not in stats:
+                stats[home_normalized] = empty_stats()
+                team_labels.setdefault(home_normalized, home_team)
+            if away_normalized not in stats:
+                stats[away_normalized] = empty_stats()
+                team_labels.setdefault(away_normalized, away_team)
+
+            home_stats = stats[home_normalized]
+            away_stats = stats[away_normalized]
+
+            home_stats["played"] += 1
+            away_stats["played"] += 1
+            home_stats["goalsFor"] += home_score
+            home_stats["goalsAgainst"] += away_score
+            away_stats["goalsFor"] += away_score
+            away_stats["goalsAgainst"] += home_score
+
+            if home_score > away_score:
+                home_stats["wins"] += 1
+                home_stats["points"] += 3
+                away_stats["losses"] += 1
+            elif home_score < away_score:
+                away_stats["wins"] += 1
+                away_stats["points"] += 3
+                home_stats["losses"] += 1
+            else:
+                home_stats["draws"] += 1
+                away_stats["draws"] += 1
+                home_stats["points"] += 1
+                away_stats["points"] += 1
+
+        classification = []
+        for normalized, team_stats in stats.items():
+            classification.append({
+                "position": 0,
+                "team": team_labels[normalized],
+                "played": team_stats["played"],
+                "wins": team_stats["wins"],
+                "draws": team_stats["draws"],
+                "losses": team_stats["losses"],
+                "goalsFor": team_stats["goalsFor"],
+                "goalsAgainst": team_stats["goalsAgainst"],
+                "points": team_stats["points"],
+            })
+
+        classification.sort(
+            key=lambda entry: (
+                -entry["points"],
+                -(entry["goalsFor"] - entry["goalsAgainst"]),
+                -entry["goalsFor"],
+                _normalize(entry["team"]),
+            )
+        )
+        for position, entry in enumerate(classification, start=1):
+            entry["position"] = position
+
+        round_data["classification"] = classification
+
+
 def get_page_content(url: str, cache_key: str):
     cache_path = os.path.join(CACHE_DIR, f"{cache_key}.html")
 
@@ -193,6 +297,8 @@ def main():
             "classification": classification,
         })
         time.sleep(1)
+
+    build_classification_from_results(rounds)
 
     data = {"rounds": rounds}
     os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
