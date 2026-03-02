@@ -11,7 +11,8 @@ COMPETITION_URL = "https://resultados.fpf.pt/Competition/Details?competitionId=2
 OUTPUT_FILE = "data/iniciados-b.json"
 CACHE_DIR = "cache"
 USE_CACHE = False
-TARGET_SERIE_NAME = "SÉRIE C"
+TARGET_PHASE_NAME = "2ª FASE"
+TARGET_SERIE_NAME = "SÉRIE 7"
 
 
 def _normalize(value: str) -> str:
@@ -26,7 +27,8 @@ def _clean_text(value: str) -> str:
     return html.unescape(value).strip()
 
 
-def extract_fixture_ids(html_content: str, target_serie: str):
+def extract_fixture_ids(html_content: str, target_phase: str, target_serie: str):
+    normalized_phase = _normalize(target_phase)
     normalized_target = _normalize(target_serie)
     pattern = re.compile(r'<div class="game-results[^>]*id="htmlSerieId_(\d+)"[^>]*>')
     for match in re.finditer(pattern, html_content):
@@ -37,6 +39,12 @@ def extract_fixture_ids(html_content: str, target_serie: str):
         block_normalized = _normalize(html.unescape(block))
         if normalized_target not in block_normalized:
             continue
+
+        phase_title_index = html_content.rfind('<div class="accordion-title', 0, start)
+        phase_context = html_content[phase_title_index:start] if phase_title_index != -1 else ''
+        if normalized_phase and normalized_phase not in _normalize(html.unescape(phase_context)):
+            continue
+
         fixture_ids = []
         for fixture_id in re.findall(r'fixtureId=(\d+)', block):
             if fixture_id not in fixture_ids:
@@ -166,7 +174,7 @@ def main():
         print("Erro ao obter página principal da competição.")
         return
 
-    fixture_ids = extract_fixture_ids(main_page, TARGET_SERIE_NAME)
+    fixture_ids = extract_fixture_ids(main_page, TARGET_PHASE_NAME, TARGET_SERIE_NAME)
     if not fixture_ids:
         print("Nenhum fixtureId encontrado para a série alvo.")
         return

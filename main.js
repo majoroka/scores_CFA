@@ -577,10 +577,34 @@ const initializeRoundBasedOnDate = () => {
             .trim();
     };
 
+    const canonicalTeamName = (teamName) => {
+        const normalized = normalizeName(teamName);
+        if (normalized === 'cf os armacenenses a' || normalized === 'cf os armacenenses b') {
+            return 'cf os armacenenses';
+        }
+        return normalized;
+    };
+
+    const displayTeamName = (teamName) => {
+        const normalized = normalizeName(teamName);
+        if (competitionKey === 'feminino-sub17' && normalized === 'cf os armacenenses b') {
+            return 'CF Os Armacenenses (Fem-Sub17)';
+        }
+        return teamName;
+    };
+
+    const isArmacenensesTeam = (teamName) => {
+        const normalized = normalizeName(teamName);
+        if (competitionKey === 'feminino-sub17') {
+            return normalized === 'cf os armacenenses' || normalized === 'cf os armacenenses b';
+        }
+        return normalized === 'cf os armacenenses' || normalized === 'cf os armacenenses a';
+    };
+
     const getCrestUrl = (teamName) => {
         const fallback = 'img/crests/jornada.png';
         if (!crestsData) return fallback;
-        const normalizedName = normalizeName(teamName);
+        const normalizedName = canonicalTeamName(teamName);
         return crestsData[normalizedName] || fallback;
     };
 
@@ -591,8 +615,9 @@ const initializeRoundBasedOnDate = () => {
         const isMobile = window.innerWidth <= 480;
 
         const parts = [];
-        const HIGHLIGHT = normalizeName('CF Os Armacenenses');
         round.matches.forEach(match => {
+            const homeDisplayName = displayTeamName(match.home);
+            const awayDisplayName = displayTeamName(match.away);
             const homeCrest = getCrestUrl(match.home);
             const awayCrest = getCrestUrl(match.away);
             const hasScore = (match.homeScore !== null && match.awayScore !== null);
@@ -605,8 +630,8 @@ const initializeRoundBasedOnDate = () => {
                     <div class="score-line"><span class="score-number">${match.awayScore}</span></div>
                 `
                 : (match.time || '-');
-            const homeHighlighted = normalizeName(match.home) === HIGHLIGHT;
-            const awayHighlighted = normalizeName(match.away) === HIGHLIGHT;
+            const homeHighlighted = isArmacenensesTeam(match.home);
+            const awayHighlighted = isArmacenensesTeam(match.away);
 
             let matchHTML;
             if (isMobile) {
@@ -618,12 +643,12 @@ const initializeRoundBasedOnDate = () => {
                         </div>
                         <div class="match-teams-mobile">
                             <div class="team-line">
-                                <img src="${homeCrest}" alt="${match.home}" class="team-crest">
-                                <span class="team-name ${homeHighlighted ? 'highlight' : ''}">${match.home}</span>
+                                <img src="${homeCrest}" alt="${homeDisplayName}" class="team-crest">
+                                <span class="team-name ${homeHighlighted ? 'highlight' : ''}">${homeDisplayName}</span>
                             </div>
                             <div class="team-line">
-                                <img src="${awayCrest}" alt="${match.away}" class="team-crest">
-                                <span class="team-name ${awayHighlighted ? 'highlight' : ''}">${match.away}</span>
+                                <img src="${awayCrest}" alt="${awayDisplayName}" class="team-crest">
+                                <span class="team-name ${awayHighlighted ? 'highlight' : ''}">${awayDisplayName}</span>
                             </div>
                         </div>
                         <div class="match-score ${hasScore ? 'match-score-mobile' : ''}">${scoreMobileContent}</div>
@@ -635,15 +660,15 @@ const initializeRoundBasedOnDate = () => {
                     <div class="match-item">
                         <div class="team-home">
                             <span class="team-block">
-                                <span class="team-name ${homeHighlighted ? 'highlight' : ''}">${match.home}</span>
-                                <img src="${homeCrest}" alt="${match.home}" class="team-crest">
+                                <span class="team-name ${homeHighlighted ? 'highlight' : ''}">${homeDisplayName}</span>
+                                <img src="${homeCrest}" alt="${homeDisplayName}" class="team-crest">
                             </span>
                         </div>
                         <div class="match-score">${scoreDesktop}</div>
                         <div class="team-away">
                             <span class="team-block">
-                                <img src="${awayCrest}" alt="${match.away}" class="team-crest">
-                                <span class="team-name ${awayHighlighted ? 'highlight' : ''}">${match.away}</span>
+                                <img src="${awayCrest}" alt="${awayDisplayName}" class="team-crest">
+                                <span class="team-name ${awayHighlighted ? 'highlight' : ''}">${awayDisplayName}</span>
                             </span>
                         </div>
                         <div class="match-meta">
@@ -678,17 +703,17 @@ const initializeRoundBasedOnDate = () => {
                 </thead>
                 <tbody>
         `;
-        const HIGHLIGHT = normalizeName('CF Os Armacenenses');
         round.classification.forEach(entry => {
+            const teamDisplayName = displayTeamName(entry.team);
             const crestUrl = getCrestUrl(entry.team);
-            const isHighlighted = normalizeName(entry.team) === HIGHLIGHT;
+            const isHighlighted = isArmacenensesTeam(entry.team);
             const highlightClass = isHighlighted ? ' highlight' : '';
             tableHTML += `
                 <tr>
                     <td class="pos">${entry.position}</td>
                     <td class="team-name-col">
-                        <img src="${crestUrl}" alt="${entry.team}" class="team-crest-mini">
-                        <span class="team-name${highlightClass}">${entry.team}</span>
+                        <img src="${crestUrl}" alt="${teamDisplayName}" class="team-crest-mini">
+                        <span class="team-name${highlightClass}">${teamDisplayName}</span>
                     </td>
                     <td>${entry.played}</td>
                     <td>${entry.wins}</td>

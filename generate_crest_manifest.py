@@ -39,6 +39,7 @@ def main():
         'casa slb albufeira': ['casa benfica albufeira'],
         'nucleo scp olhao': ['nucleo sporting cp olhao'],
         'fc ferreiras': ['fc ferreiras a', 'fc ferreiras b'],
+        'cf os armacenenses': ['cf os armacenenses a', 'cf os armacenenses b'],
         '4 ao cubo ado': ['4 ao cubo ad olhao'],
         'lusitano fc': ['lusitano fc vrsa'],
         'ef monte gordo': ['aef monte gordo 2019'],
