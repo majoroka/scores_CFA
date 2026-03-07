@@ -986,10 +986,10 @@
                     "home": "Associacao Fut. F.O.",
                     "away": "Imortal Dc",
                     "date": "7 mar",
-                    "time": "10:30",
+                    "time": "",
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 7,
+                    "awayScore": 7
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -1013,10 +1013,10 @@
                     "home": "Internacional Ca",
                     "away": "Cf Esperança Lagos",
                     "date": "7 mar",
-                    "time": "11:00",
+                    "time": "",
                     "stadium": "Estadio Municipal De Almancil",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 13,
+                    "awayScore": 1
                 },
                 {
                     "home": "Lusitano Fc Vrsa",
@@ -1031,6 +1031,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Internacional Ca",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 48,
+                    "goalsAgainst": 13,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Lusitano Fc Vrsa",
                     "played": 6,
                     "wins": 6,
@@ -1041,26 +1052,15 @@
                     "points": 18
                 },
                 {
-                    "position": 2,
-                    "team": "Internacional Ca",
-                    "played": 6,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 35,
-                    "goalsAgainst": 12,
-                    "points": 15
-                },
-                {
                     "position": 3,
                     "team": "Imortal Dc",
-                    "played": 6,
+                    "played": 7,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 2,
-                    "goalsFor": 27,
-                    "goalsAgainst": 18,
-                    "points": 12
+                    "goalsFor": 34,
+                    "goalsAgainst": 25,
+                    "points": 13
                 },
                 {
                     "position": 4,
@@ -1098,13 +1098,13 @@
                 {
                     "position": 7,
                     "team": "Associacao Fut. F.O.",
-                    "played": 6,
+                    "played": 7,
                     "wins": 2,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 3,
-                    "goalsFor": 29,
-                    "goalsAgainst": 29,
-                    "points": 7
+                    "goalsFor": 36,
+                    "goalsAgainst": 36,
+                    "points": 8
                 },
                 {
                     "position": 8,
@@ -1120,12 +1120,12 @@
                 {
                     "position": 9,
                     "team": "Cf Esperança Lagos",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 17,
-                    "goalsAgainst": 35,
+                    "losses": 6,
+                    "goalsFor": 18,
+                    "goalsAgainst": 48,
                     "points": 3
                 },
                 {
@@ -1194,6 +1194,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Internacional Ca",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 48,
+                    "goalsAgainst": 13,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Lusitano Fc Vrsa",
                     "played": 6,
                     "wins": 6,
@@ -1204,26 +1215,15 @@
                     "points": 18
                 },
                 {
-                    "position": 2,
-                    "team": "Internacional Ca",
-                    "played": 6,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 35,
-                    "goalsAgainst": 12,
-                    "points": 15
-                },
-                {
                     "position": 3,
                     "team": "Imortal Dc",
-                    "played": 6,
+                    "played": 7,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 2,
-                    "goalsFor": 27,
-                    "goalsAgainst": 18,
-                    "points": 12
+                    "goalsFor": 34,
+                    "goalsAgainst": 25,
+                    "points": 13
                 },
                 {
                     "position": 4,
@@ -1261,13 +1261,13 @@
                 {
                     "position": 7,
                     "team": "Associacao Fut. F.O.",
-                    "played": 6,
+                    "played": 7,
                     "wins": 2,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 3,
-                    "goalsFor": 29,
-                    "goalsAgainst": 29,
-                    "points": 7
+                    "goalsFor": 36,
+                    "goalsAgainst": 36,
+                    "points": 8
                 },
                 {
                     "position": 8,
@@ -1283,12 +1283,12 @@
                 {
                     "position": 9,
                     "team": "Cf Esperança Lagos",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 17,
-                    "goalsAgainst": 35,
+                    "losses": 6,
+                    "goalsFor": 18,
+                    "goalsAgainst": 48,
                     "points": 3
                 },
                 {
@@ -1357,6 +1357,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Internacional Ca",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 48,
+                    "goalsAgainst": 13,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Lusitano Fc Vrsa",
                     "played": 6,
                     "wins": 6,
@@ -1367,26 +1378,15 @@
                     "points": 18
                 },
                 {
-                    "position": 2,
-                    "team": "Internacional Ca",
-                    "played": 6,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 35,
-                    "goalsAgainst": 12,
-                    "points": 15
-                },
-                {
                     "position": 3,
                     "team": "Imortal Dc",
-                    "played": 6,
+                    "played": 7,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 2,
-                    "goalsFor": 27,
-                    "goalsAgainst": 18,
-                    "points": 12
+                    "goalsFor": 34,
+                    "goalsAgainst": 25,
+                    "points": 13
                 },
                 {
                     "position": 4,
@@ -1424,13 +1424,13 @@
                 {
                     "position": 7,
                     "team": "Associacao Fut. F.O.",
-                    "played": 6,
+                    "played": 7,
                     "wins": 2,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 3,
-                    "goalsFor": 29,
-                    "goalsAgainst": 29,
-                    "points": 7
+                    "goalsFor": 36,
+                    "goalsAgainst": 36,
+                    "points": 8
                 },
                 {
                     "position": 8,
@@ -1446,12 +1446,12 @@
                 {
                     "position": 9,
                     "team": "Cf Esperança Lagos",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 17,
-                    "goalsAgainst": 35,
+                    "losses": 6,
+                    "goalsFor": 18,
+                    "goalsAgainst": 48,
                     "points": 3
                 },
                 {
@@ -1520,6 +1520,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Internacional Ca",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 48,
+                    "goalsAgainst": 13,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Lusitano Fc Vrsa",
                     "played": 6,
                     "wins": 6,
@@ -1530,26 +1541,15 @@
                     "points": 18
                 },
                 {
-                    "position": 2,
-                    "team": "Internacional Ca",
-                    "played": 6,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 35,
-                    "goalsAgainst": 12,
-                    "points": 15
-                },
-                {
                     "position": 3,
                     "team": "Imortal Dc",
-                    "played": 6,
+                    "played": 7,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 2,
-                    "goalsFor": 27,
-                    "goalsAgainst": 18,
-                    "points": 12
+                    "goalsFor": 34,
+                    "goalsAgainst": 25,
+                    "points": 13
                 },
                 {
                     "position": 4,
@@ -1587,13 +1587,13 @@
                 {
                     "position": 7,
                     "team": "Associacao Fut. F.O.",
-                    "played": 6,
+                    "played": 7,
                     "wins": 2,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 3,
-                    "goalsFor": 29,
-                    "goalsAgainst": 29,
-                    "points": 7
+                    "goalsFor": 36,
+                    "goalsAgainst": 36,
+                    "points": 8
                 },
                 {
                     "position": 8,
@@ -1609,12 +1609,12 @@
                 {
                     "position": 9,
                     "team": "Cf Esperança Lagos",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 17,
-                    "goalsAgainst": 35,
+                    "losses": 6,
+                    "goalsFor": 18,
+                    "goalsAgainst": 48,
                     "points": 3
                 },
                 {
@@ -1683,6 +1683,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Internacional Ca",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 48,
+                    "goalsAgainst": 13,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Lusitano Fc Vrsa",
                     "played": 6,
                     "wins": 6,
@@ -1693,26 +1704,15 @@
                     "points": 18
                 },
                 {
-                    "position": 2,
-                    "team": "Internacional Ca",
-                    "played": 6,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 35,
-                    "goalsAgainst": 12,
-                    "points": 15
-                },
-                {
                     "position": 3,
                     "team": "Imortal Dc",
-                    "played": 6,
+                    "played": 7,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 2,
-                    "goalsFor": 27,
-                    "goalsAgainst": 18,
-                    "points": 12
+                    "goalsFor": 34,
+                    "goalsAgainst": 25,
+                    "points": 13
                 },
                 {
                     "position": 4,
@@ -1750,13 +1750,13 @@
                 {
                     "position": 7,
                     "team": "Associacao Fut. F.O.",
-                    "played": 6,
+                    "played": 7,
                     "wins": 2,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 3,
-                    "goalsFor": 29,
-                    "goalsAgainst": 29,
-                    "points": 7
+                    "goalsFor": 36,
+                    "goalsAgainst": 36,
+                    "points": 8
                 },
                 {
                     "position": 8,
@@ -1772,12 +1772,12 @@
                 {
                     "position": 9,
                     "team": "Cf Esperança Lagos",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 17,
-                    "goalsAgainst": 35,
+                    "losses": 6,
+                    "goalsFor": 18,
+                    "goalsAgainst": 48,
                     "points": 3
                 },
                 {
@@ -1846,6 +1846,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Internacional Ca",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 48,
+                    "goalsAgainst": 13,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Lusitano Fc Vrsa",
                     "played": 6,
                     "wins": 6,
@@ -1856,26 +1867,15 @@
                     "points": 18
                 },
                 {
-                    "position": 2,
-                    "team": "Internacional Ca",
-                    "played": 6,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 35,
-                    "goalsAgainst": 12,
-                    "points": 15
-                },
-                {
                     "position": 3,
                     "team": "Imortal Dc",
-                    "played": 6,
+                    "played": 7,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 2,
-                    "goalsFor": 27,
-                    "goalsAgainst": 18,
-                    "points": 12
+                    "goalsFor": 34,
+                    "goalsAgainst": 25,
+                    "points": 13
                 },
                 {
                     "position": 4,
@@ -1913,13 +1913,13 @@
                 {
                     "position": 7,
                     "team": "Associacao Fut. F.O.",
-                    "played": 6,
+                    "played": 7,
                     "wins": 2,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 3,
-                    "goalsFor": 29,
-                    "goalsAgainst": 29,
-                    "points": 7
+                    "goalsFor": 36,
+                    "goalsAgainst": 36,
+                    "points": 8
                 },
                 {
                     "position": 8,
@@ -1935,12 +1935,12 @@
                 {
                     "position": 9,
                     "team": "Cf Esperança Lagos",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 17,
-                    "goalsAgainst": 35,
+                    "losses": 6,
+                    "goalsFor": 18,
+                    "goalsAgainst": 48,
                     "points": 3
                 },
                 {
@@ -2009,6 +2009,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Internacional Ca",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 48,
+                    "goalsAgainst": 13,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Lusitano Fc Vrsa",
                     "played": 6,
                     "wins": 6,
@@ -2019,26 +2030,15 @@
                     "points": 18
                 },
                 {
-                    "position": 2,
-                    "team": "Internacional Ca",
-                    "played": 6,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 35,
-                    "goalsAgainst": 12,
-                    "points": 15
-                },
-                {
                     "position": 3,
                     "team": "Imortal Dc",
-                    "played": 6,
+                    "played": 7,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 2,
-                    "goalsFor": 27,
-                    "goalsAgainst": 18,
-                    "points": 12
+                    "goalsFor": 34,
+                    "goalsAgainst": 25,
+                    "points": 13
                 },
                 {
                     "position": 4,
@@ -2076,13 +2076,13 @@
                 {
                     "position": 7,
                     "team": "Associacao Fut. F.O.",
-                    "played": 6,
+                    "played": 7,
                     "wins": 2,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 3,
-                    "goalsFor": 29,
-                    "goalsAgainst": 29,
-                    "points": 7
+                    "goalsFor": 36,
+                    "goalsAgainst": 36,
+                    "points": 8
                 },
                 {
                     "position": 8,
@@ -2098,12 +2098,12 @@
                 {
                     "position": 9,
                     "team": "Cf Esperança Lagos",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 17,
-                    "goalsAgainst": 35,
+                    "losses": 6,
+                    "goalsFor": 18,
+                    "goalsAgainst": 48,
                     "points": 3
                 },
                 {
@@ -2172,6 +2172,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Internacional Ca",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 48,
+                    "goalsAgainst": 13,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Lusitano Fc Vrsa",
                     "played": 6,
                     "wins": 6,
@@ -2182,26 +2193,15 @@
                     "points": 18
                 },
                 {
-                    "position": 2,
-                    "team": "Internacional Ca",
-                    "played": 6,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 35,
-                    "goalsAgainst": 12,
-                    "points": 15
-                },
-                {
                     "position": 3,
                     "team": "Imortal Dc",
-                    "played": 6,
+                    "played": 7,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 2,
-                    "goalsFor": 27,
-                    "goalsAgainst": 18,
-                    "points": 12
+                    "goalsFor": 34,
+                    "goalsAgainst": 25,
+                    "points": 13
                 },
                 {
                     "position": 4,
@@ -2239,13 +2239,13 @@
                 {
                     "position": 7,
                     "team": "Associacao Fut. F.O.",
-                    "played": 6,
+                    "played": 7,
                     "wins": 2,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 3,
-                    "goalsFor": 29,
-                    "goalsAgainst": 29,
-                    "points": 7
+                    "goalsFor": 36,
+                    "goalsAgainst": 36,
+                    "points": 8
                 },
                 {
                     "position": 8,
@@ -2261,12 +2261,12 @@
                 {
                     "position": 9,
                     "team": "Cf Esperança Lagos",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 17,
-                    "goalsAgainst": 35,
+                    "losses": 6,
+                    "goalsFor": 18,
+                    "goalsAgainst": 48,
                     "points": 3
                 },
                 {
@@ -2335,6 +2335,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Internacional Ca",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 48,
+                    "goalsAgainst": 13,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Lusitano Fc Vrsa",
                     "played": 6,
                     "wins": 6,
@@ -2345,26 +2356,15 @@
                     "points": 18
                 },
                 {
-                    "position": 2,
-                    "team": "Internacional Ca",
-                    "played": 6,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 35,
-                    "goalsAgainst": 12,
-                    "points": 15
-                },
-                {
                     "position": 3,
                     "team": "Imortal Dc",
-                    "played": 6,
+                    "played": 7,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 2,
-                    "goalsFor": 27,
-                    "goalsAgainst": 18,
-                    "points": 12
+                    "goalsFor": 34,
+                    "goalsAgainst": 25,
+                    "points": 13
                 },
                 {
                     "position": 4,
@@ -2402,13 +2402,13 @@
                 {
                     "position": 7,
                     "team": "Associacao Fut. F.O.",
-                    "played": 6,
+                    "played": 7,
                     "wins": 2,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 3,
-                    "goalsFor": 29,
-                    "goalsAgainst": 29,
-                    "points": 7
+                    "goalsFor": 36,
+                    "goalsAgainst": 36,
+                    "points": 8
                 },
                 {
                     "position": 8,
@@ -2424,12 +2424,12 @@
                 {
                     "position": 9,
                     "team": "Cf Esperança Lagos",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 17,
-                    "goalsAgainst": 35,
+                    "losses": 6,
+                    "goalsFor": 18,
+                    "goalsAgainst": 48,
                     "points": 3
                 },
                 {
@@ -2498,6 +2498,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Internacional Ca",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 48,
+                    "goalsAgainst": 13,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Lusitano Fc Vrsa",
                     "played": 6,
                     "wins": 6,
@@ -2508,26 +2519,15 @@
                     "points": 18
                 },
                 {
-                    "position": 2,
-                    "team": "Internacional Ca",
-                    "played": 6,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 35,
-                    "goalsAgainst": 12,
-                    "points": 15
-                },
-                {
                     "position": 3,
                     "team": "Imortal Dc",
-                    "played": 6,
+                    "played": 7,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 2,
-                    "goalsFor": 27,
-                    "goalsAgainst": 18,
-                    "points": 12
+                    "goalsFor": 34,
+                    "goalsAgainst": 25,
+                    "points": 13
                 },
                 {
                     "position": 4,
@@ -2565,13 +2565,13 @@
                 {
                     "position": 7,
                     "team": "Associacao Fut. F.O.",
-                    "played": 6,
+                    "played": 7,
                     "wins": 2,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 3,
-                    "goalsFor": 29,
-                    "goalsAgainst": 29,
-                    "points": 7
+                    "goalsFor": 36,
+                    "goalsAgainst": 36,
+                    "points": 8
                 },
                 {
                     "position": 8,
@@ -2587,12 +2587,12 @@
                 {
                     "position": 9,
                     "team": "Cf Esperança Lagos",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 17,
-                    "goalsAgainst": 35,
+                    "losses": 6,
+                    "goalsFor": 18,
+                    "goalsAgainst": 48,
                     "points": 3
                 },
                 {
@@ -2661,6 +2661,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Internacional Ca",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 48,
+                    "goalsAgainst": 13,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Lusitano Fc Vrsa",
                     "played": 6,
                     "wins": 6,
@@ -2671,26 +2682,15 @@
                     "points": 18
                 },
                 {
-                    "position": 2,
-                    "team": "Internacional Ca",
-                    "played": 6,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 35,
-                    "goalsAgainst": 12,
-                    "points": 15
-                },
-                {
                     "position": 3,
                     "team": "Imortal Dc",
-                    "played": 6,
+                    "played": 7,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 2,
-                    "goalsFor": 27,
-                    "goalsAgainst": 18,
-                    "points": 12
+                    "goalsFor": 34,
+                    "goalsAgainst": 25,
+                    "points": 13
                 },
                 {
                     "position": 4,
@@ -2728,13 +2728,13 @@
                 {
                     "position": 7,
                     "team": "Associacao Fut. F.O.",
-                    "played": 6,
+                    "played": 7,
                     "wins": 2,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 3,
-                    "goalsFor": 29,
-                    "goalsAgainst": 29,
-                    "points": 7
+                    "goalsFor": 36,
+                    "goalsAgainst": 36,
+                    "points": 8
                 },
                 {
                     "position": 8,
@@ -2750,12 +2750,12 @@
                 {
                     "position": 9,
                     "team": "Cf Esperança Lagos",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 17,
-                    "goalsAgainst": 35,
+                    "losses": 6,
+                    "goalsFor": 18,
+                    "goalsAgainst": 48,
                     "points": 3
                 },
                 {
@@ -2824,6 +2824,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Internacional Ca",
+                    "played": 7,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 48,
+                    "goalsAgainst": 13,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Lusitano Fc Vrsa",
                     "played": 6,
                     "wins": 6,
@@ -2834,26 +2845,15 @@
                     "points": 18
                 },
                 {
-                    "position": 2,
-                    "team": "Internacional Ca",
-                    "played": 6,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 35,
-                    "goalsAgainst": 12,
-                    "points": 15
-                },
-                {
                     "position": 3,
                     "team": "Imortal Dc",
-                    "played": 6,
+                    "played": 7,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 2,
-                    "goalsFor": 27,
-                    "goalsAgainst": 18,
-                    "points": 12
+                    "goalsFor": 34,
+                    "goalsAgainst": 25,
+                    "points": 13
                 },
                 {
                     "position": 4,
@@ -2891,13 +2891,13 @@
                 {
                     "position": 7,
                     "team": "Associacao Fut. F.O.",
-                    "played": 6,
+                    "played": 7,
                     "wins": 2,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 3,
-                    "goalsFor": 29,
-                    "goalsAgainst": 29,
-                    "points": 7
+                    "goalsFor": 36,
+                    "goalsAgainst": 36,
+                    "points": 8
                 },
                 {
                     "position": 8,
@@ -2913,12 +2913,12 @@
                 {
                     "position": 9,
                     "team": "Cf Esperança Lagos",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 17,
-                    "goalsAgainst": 35,
+                    "losses": 6,
+                    "goalsFor": 18,
+                    "goalsAgainst": 48,
                     "points": 3
                 },
                 {
