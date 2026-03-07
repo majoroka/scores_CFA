@@ -705,23 +705,23 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cr Infante Sagres",
-                    "played": 5,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 35,
-                    "goalsAgainst": 4,
-                    "points": 15
-                },
-                {
-                    "position": 2,
                     "team": "Csl Benfica Lagos",
                     "played": 5,
                     "wins": 5,
                     "draws": 0,
                     "losses": 0,
                     "goalsFor": 31,
+                    "goalsAgainst": 4,
+                    "points": 15
+                },
+                {
+                    "position": 2,
+                    "team": "Cr Infante Sagres",
+                    "played": 5,
+                    "wins": 5,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 35,
                     "goalsAgainst": 4,
                     "points": 15
                 },
@@ -1148,11 +1148,11 @@
                 {
                     "home": "Csl Benfica Lagos",
                     "away": "Cr Infante Sagres",
-                    "date": "7 mar",
-                    "time": "09:00",
+                    "date": "6 - 0                            \r\n                \r\n                    7 mar",
+                    "time": "",
                     "stadium": "Campo Zona Verde",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 6,
+                    "awayScore": 0
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -1184,11 +1184,11 @@
                 {
                     "home": "Aef Faro",
                     "away": "Imortal Dc",
-                    "date": "7 mar",
-                    "time": "17:30",
+                    "date": "7 - 0                            \r\n                \r\n                    7 mar",
+                    "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 7,
+                    "awayScore": 0
                 }
             ],
             "classification": [
@@ -1205,28 +1205,39 @@
                 },
                 {
                     "position": 2,
-                    "team": "Cr Infante Sagres",
-                    "played": 7,
+                    "team": "Csl Benfica Lagos",
+                    "played": 8,
                     "wins": 6,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 43,
-                    "goalsAgainst": 12,
-                    "points": 18
+                    "draws": 2,
+                    "losses": 0,
+                    "goalsFor": 42,
+                    "goalsAgainst": 9,
+                    "points": 20
                 },
                 {
                     "position": 3,
-                    "team": "Csl Benfica Lagos",
-                    "played": 7,
-                    "wins": 5,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 36,
-                    "goalsAgainst": 9,
-                    "points": 17
+                    "team": "Cr Infante Sagres",
+                    "played": 8,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 43,
+                    "goalsAgainst": 18,
+                    "points": 18
                 },
                 {
                     "position": 4,
+                    "team": "Aef Faro",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 39,
+                    "goalsAgainst": 13,
+                    "points": 16
+                },
+                {
+                    "position": 5,
                     "team": "Portimonense Sc",
                     "played": 9,
                     "wins": 5,
@@ -1237,7 +1248,7 @@
                     "points": 16
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Mexilhoeira Grande Fc",
                     "played": 8,
                     "wins": 4,
@@ -1248,25 +1259,14 @@
                     "points": 13
                 },
                 {
-                    "position": 6,
-                    "team": "Aef Faro",
-                    "played": 7,
-                    "wins": 4,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 32,
-                    "goalsAgainst": 13,
-                    "points": 13
-                },
-                {
                     "position": 7,
                     "team": "Imortal Dc",
-                    "played": 7,
+                    "played": 8,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 28,
-                    "goalsAgainst": 31,
+                    "goalsAgainst": 38,
                     "points": 9
                 },
                 {
@@ -1368,28 +1368,39 @@
                 },
                 {
                     "position": 2,
-                    "team": "Cr Infante Sagres",
-                    "played": 7,
+                    "team": "Csl Benfica Lagos",
+                    "played": 8,
                     "wins": 6,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 43,
-                    "goalsAgainst": 12,
-                    "points": 18
+                    "draws": 2,
+                    "losses": 0,
+                    "goalsFor": 42,
+                    "goalsAgainst": 9,
+                    "points": 20
                 },
                 {
                     "position": 3,
-                    "team": "Csl Benfica Lagos",
-                    "played": 7,
-                    "wins": 5,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 36,
-                    "goalsAgainst": 9,
-                    "points": 17
+                    "team": "Cr Infante Sagres",
+                    "played": 8,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 43,
+                    "goalsAgainst": 18,
+                    "points": 18
                 },
                 {
                     "position": 4,
+                    "team": "Aef Faro",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 39,
+                    "goalsAgainst": 13,
+                    "points": 16
+                },
+                {
+                    "position": 5,
                     "team": "Portimonense Sc",
                     "played": 9,
                     "wins": 5,
@@ -1400,7 +1411,7 @@
                     "points": 16
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Mexilhoeira Grande Fc",
                     "played": 8,
                     "wins": 4,
@@ -1411,25 +1422,14 @@
                     "points": 13
                 },
                 {
-                    "position": 6,
-                    "team": "Aef Faro",
-                    "played": 7,
-                    "wins": 4,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 32,
-                    "goalsAgainst": 13,
-                    "points": 13
-                },
-                {
                     "position": 7,
                     "team": "Imortal Dc",
-                    "played": 7,
+                    "played": 8,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 28,
-                    "goalsAgainst": 31,
+                    "goalsAgainst": 38,
                     "points": 9
                 },
                 {
@@ -1531,28 +1531,39 @@
                 },
                 {
                     "position": 2,
-                    "team": "Cr Infante Sagres",
-                    "played": 7,
+                    "team": "Csl Benfica Lagos",
+                    "played": 8,
                     "wins": 6,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 43,
-                    "goalsAgainst": 12,
-                    "points": 18
+                    "draws": 2,
+                    "losses": 0,
+                    "goalsFor": 42,
+                    "goalsAgainst": 9,
+                    "points": 20
                 },
                 {
                     "position": 3,
-                    "team": "Csl Benfica Lagos",
-                    "played": 7,
-                    "wins": 5,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 36,
-                    "goalsAgainst": 9,
-                    "points": 17
+                    "team": "Cr Infante Sagres",
+                    "played": 8,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 43,
+                    "goalsAgainst": 18,
+                    "points": 18
                 },
                 {
                     "position": 4,
+                    "team": "Aef Faro",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 39,
+                    "goalsAgainst": 13,
+                    "points": 16
+                },
+                {
+                    "position": 5,
                     "team": "Portimonense Sc",
                     "played": 9,
                     "wins": 5,
@@ -1563,7 +1574,7 @@
                     "points": 16
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Mexilhoeira Grande Fc",
                     "played": 8,
                     "wins": 4,
@@ -1574,25 +1585,14 @@
                     "points": 13
                 },
                 {
-                    "position": 6,
-                    "team": "Aef Faro",
-                    "played": 7,
-                    "wins": 4,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 32,
-                    "goalsAgainst": 13,
-                    "points": 13
-                },
-                {
                     "position": 7,
                     "team": "Imortal Dc",
-                    "played": 7,
+                    "played": 8,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 28,
-                    "goalsAgainst": 31,
+                    "goalsAgainst": 38,
                     "points": 9
                 },
                 {
@@ -1694,28 +1694,39 @@
                 },
                 {
                     "position": 2,
-                    "team": "Cr Infante Sagres",
-                    "played": 7,
+                    "team": "Csl Benfica Lagos",
+                    "played": 8,
                     "wins": 6,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 43,
-                    "goalsAgainst": 12,
-                    "points": 18
+                    "draws": 2,
+                    "losses": 0,
+                    "goalsFor": 42,
+                    "goalsAgainst": 9,
+                    "points": 20
                 },
                 {
                     "position": 3,
-                    "team": "Csl Benfica Lagos",
-                    "played": 7,
-                    "wins": 5,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 36,
-                    "goalsAgainst": 9,
-                    "points": 17
+                    "team": "Cr Infante Sagres",
+                    "played": 8,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 43,
+                    "goalsAgainst": 18,
+                    "points": 18
                 },
                 {
                     "position": 4,
+                    "team": "Aef Faro",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 39,
+                    "goalsAgainst": 13,
+                    "points": 16
+                },
+                {
+                    "position": 5,
                     "team": "Portimonense Sc",
                     "played": 9,
                     "wins": 5,
@@ -1726,7 +1737,7 @@
                     "points": 16
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Mexilhoeira Grande Fc",
                     "played": 8,
                     "wins": 4,
@@ -1737,25 +1748,14 @@
                     "points": 13
                 },
                 {
-                    "position": 6,
-                    "team": "Aef Faro",
-                    "played": 7,
-                    "wins": 4,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 32,
-                    "goalsAgainst": 13,
-                    "points": 13
-                },
-                {
                     "position": 7,
                     "team": "Imortal Dc",
-                    "played": 7,
+                    "played": 8,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 28,
-                    "goalsAgainst": 31,
+                    "goalsAgainst": 38,
                     "points": 9
                 },
                 {
@@ -1857,28 +1857,39 @@
                 },
                 {
                     "position": 2,
-                    "team": "Cr Infante Sagres",
-                    "played": 7,
+                    "team": "Csl Benfica Lagos",
+                    "played": 8,
                     "wins": 6,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 43,
-                    "goalsAgainst": 12,
-                    "points": 18
+                    "draws": 2,
+                    "losses": 0,
+                    "goalsFor": 42,
+                    "goalsAgainst": 9,
+                    "points": 20
                 },
                 {
                     "position": 3,
-                    "team": "Csl Benfica Lagos",
-                    "played": 7,
-                    "wins": 5,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 36,
-                    "goalsAgainst": 9,
-                    "points": 17
+                    "team": "Cr Infante Sagres",
+                    "played": 8,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 43,
+                    "goalsAgainst": 18,
+                    "points": 18
                 },
                 {
                     "position": 4,
+                    "team": "Aef Faro",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 39,
+                    "goalsAgainst": 13,
+                    "points": 16
+                },
+                {
+                    "position": 5,
                     "team": "Portimonense Sc",
                     "played": 9,
                     "wins": 5,
@@ -1889,7 +1900,7 @@
                     "points": 16
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Mexilhoeira Grande Fc",
                     "played": 8,
                     "wins": 4,
@@ -1900,25 +1911,14 @@
                     "points": 13
                 },
                 {
-                    "position": 6,
-                    "team": "Aef Faro",
-                    "played": 7,
-                    "wins": 4,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 32,
-                    "goalsAgainst": 13,
-                    "points": 13
-                },
-                {
                     "position": 7,
                     "team": "Imortal Dc",
-                    "played": 7,
+                    "played": 8,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 28,
-                    "goalsAgainst": 31,
+                    "goalsAgainst": 38,
                     "points": 9
                 },
                 {
@@ -2020,28 +2020,39 @@
                 },
                 {
                     "position": 2,
-                    "team": "Cr Infante Sagres",
-                    "played": 7,
+                    "team": "Csl Benfica Lagos",
+                    "played": 8,
                     "wins": 6,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 43,
-                    "goalsAgainst": 12,
-                    "points": 18
+                    "draws": 2,
+                    "losses": 0,
+                    "goalsFor": 42,
+                    "goalsAgainst": 9,
+                    "points": 20
                 },
                 {
                     "position": 3,
-                    "team": "Csl Benfica Lagos",
-                    "played": 7,
-                    "wins": 5,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 36,
-                    "goalsAgainst": 9,
-                    "points": 17
+                    "team": "Cr Infante Sagres",
+                    "played": 8,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 43,
+                    "goalsAgainst": 18,
+                    "points": 18
                 },
                 {
                     "position": 4,
+                    "team": "Aef Faro",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 39,
+                    "goalsAgainst": 13,
+                    "points": 16
+                },
+                {
+                    "position": 5,
                     "team": "Portimonense Sc",
                     "played": 9,
                     "wins": 5,
@@ -2052,7 +2063,7 @@
                     "points": 16
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Mexilhoeira Grande Fc",
                     "played": 8,
                     "wins": 4,
@@ -2063,25 +2074,14 @@
                     "points": 13
                 },
                 {
-                    "position": 6,
-                    "team": "Aef Faro",
-                    "played": 7,
-                    "wins": 4,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 32,
-                    "goalsAgainst": 13,
-                    "points": 13
-                },
-                {
                     "position": 7,
                     "team": "Imortal Dc",
-                    "played": 7,
+                    "played": 8,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 28,
-                    "goalsAgainst": 31,
+                    "goalsAgainst": 38,
                     "points": 9
                 },
                 {
@@ -2183,28 +2183,39 @@
                 },
                 {
                     "position": 2,
-                    "team": "Cr Infante Sagres",
-                    "played": 7,
+                    "team": "Csl Benfica Lagos",
+                    "played": 8,
                     "wins": 6,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 43,
-                    "goalsAgainst": 12,
-                    "points": 18
+                    "draws": 2,
+                    "losses": 0,
+                    "goalsFor": 42,
+                    "goalsAgainst": 9,
+                    "points": 20
                 },
                 {
                     "position": 3,
-                    "team": "Csl Benfica Lagos",
-                    "played": 7,
-                    "wins": 5,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 36,
-                    "goalsAgainst": 9,
-                    "points": 17
+                    "team": "Cr Infante Sagres",
+                    "played": 8,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 43,
+                    "goalsAgainst": 18,
+                    "points": 18
                 },
                 {
                     "position": 4,
+                    "team": "Aef Faro",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 39,
+                    "goalsAgainst": 13,
+                    "points": 16
+                },
+                {
+                    "position": 5,
                     "team": "Portimonense Sc",
                     "played": 9,
                     "wins": 5,
@@ -2215,7 +2226,7 @@
                     "points": 16
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Mexilhoeira Grande Fc",
                     "played": 8,
                     "wins": 4,
@@ -2226,25 +2237,14 @@
                     "points": 13
                 },
                 {
-                    "position": 6,
-                    "team": "Aef Faro",
-                    "played": 7,
-                    "wins": 4,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 32,
-                    "goalsAgainst": 13,
-                    "points": 13
-                },
-                {
                     "position": 7,
                     "team": "Imortal Dc",
-                    "played": 7,
+                    "played": 8,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 28,
-                    "goalsAgainst": 31,
+                    "goalsAgainst": 38,
                     "points": 9
                 },
                 {
@@ -2346,28 +2346,39 @@
                 },
                 {
                     "position": 2,
-                    "team": "Cr Infante Sagres",
-                    "played": 7,
+                    "team": "Csl Benfica Lagos",
+                    "played": 8,
                     "wins": 6,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 43,
-                    "goalsAgainst": 12,
-                    "points": 18
+                    "draws": 2,
+                    "losses": 0,
+                    "goalsFor": 42,
+                    "goalsAgainst": 9,
+                    "points": 20
                 },
                 {
                     "position": 3,
-                    "team": "Csl Benfica Lagos",
-                    "played": 7,
-                    "wins": 5,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 36,
-                    "goalsAgainst": 9,
-                    "points": 17
+                    "team": "Cr Infante Sagres",
+                    "played": 8,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 43,
+                    "goalsAgainst": 18,
+                    "points": 18
                 },
                 {
                     "position": 4,
+                    "team": "Aef Faro",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 39,
+                    "goalsAgainst": 13,
+                    "points": 16
+                },
+                {
+                    "position": 5,
                     "team": "Portimonense Sc",
                     "played": 9,
                     "wins": 5,
@@ -2378,7 +2389,7 @@
                     "points": 16
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Mexilhoeira Grande Fc",
                     "played": 8,
                     "wins": 4,
@@ -2389,25 +2400,14 @@
                     "points": 13
                 },
                 {
-                    "position": 6,
-                    "team": "Aef Faro",
-                    "played": 7,
-                    "wins": 4,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 32,
-                    "goalsAgainst": 13,
-                    "points": 13
-                },
-                {
                     "position": 7,
                     "team": "Imortal Dc",
-                    "played": 7,
+                    "played": 8,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 28,
-                    "goalsAgainst": 31,
+                    "goalsAgainst": 38,
                     "points": 9
                 },
                 {
@@ -2509,28 +2509,39 @@
                 },
                 {
                     "position": 2,
-                    "team": "Cr Infante Sagres",
-                    "played": 7,
+                    "team": "Csl Benfica Lagos",
+                    "played": 8,
                     "wins": 6,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 43,
-                    "goalsAgainst": 12,
-                    "points": 18
+                    "draws": 2,
+                    "losses": 0,
+                    "goalsFor": 42,
+                    "goalsAgainst": 9,
+                    "points": 20
                 },
                 {
                     "position": 3,
-                    "team": "Csl Benfica Lagos",
-                    "played": 7,
-                    "wins": 5,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 36,
-                    "goalsAgainst": 9,
-                    "points": 17
+                    "team": "Cr Infante Sagres",
+                    "played": 8,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 43,
+                    "goalsAgainst": 18,
+                    "points": 18
                 },
                 {
                     "position": 4,
+                    "team": "Aef Faro",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 39,
+                    "goalsAgainst": 13,
+                    "points": 16
+                },
+                {
+                    "position": 5,
                     "team": "Portimonense Sc",
                     "played": 9,
                     "wins": 5,
@@ -2541,7 +2552,7 @@
                     "points": 16
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Mexilhoeira Grande Fc",
                     "played": 8,
                     "wins": 4,
@@ -2552,25 +2563,14 @@
                     "points": 13
                 },
                 {
-                    "position": 6,
-                    "team": "Aef Faro",
-                    "played": 7,
-                    "wins": 4,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 32,
-                    "goalsAgainst": 13,
-                    "points": 13
-                },
-                {
                     "position": 7,
                     "team": "Imortal Dc",
-                    "played": 7,
+                    "played": 8,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 28,
-                    "goalsAgainst": 31,
+                    "goalsAgainst": 38,
                     "points": 9
                 },
                 {
@@ -2672,28 +2672,39 @@
                 },
                 {
                     "position": 2,
-                    "team": "Cr Infante Sagres",
-                    "played": 7,
+                    "team": "Csl Benfica Lagos",
+                    "played": 8,
                     "wins": 6,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 43,
-                    "goalsAgainst": 12,
-                    "points": 18
+                    "draws": 2,
+                    "losses": 0,
+                    "goalsFor": 42,
+                    "goalsAgainst": 9,
+                    "points": 20
                 },
                 {
                     "position": 3,
-                    "team": "Csl Benfica Lagos",
-                    "played": 7,
-                    "wins": 5,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 36,
-                    "goalsAgainst": 9,
-                    "points": 17
+                    "team": "Cr Infante Sagres",
+                    "played": 8,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 43,
+                    "goalsAgainst": 18,
+                    "points": 18
                 },
                 {
                     "position": 4,
+                    "team": "Aef Faro",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 39,
+                    "goalsAgainst": 13,
+                    "points": 16
+                },
+                {
+                    "position": 5,
                     "team": "Portimonense Sc",
                     "played": 9,
                     "wins": 5,
@@ -2704,7 +2715,7 @@
                     "points": 16
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Mexilhoeira Grande Fc",
                     "played": 8,
                     "wins": 4,
@@ -2715,25 +2726,14 @@
                     "points": 13
                 },
                 {
-                    "position": 6,
-                    "team": "Aef Faro",
-                    "played": 7,
-                    "wins": 4,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 32,
-                    "goalsAgainst": 13,
-                    "points": 13
-                },
-                {
                     "position": 7,
                     "team": "Imortal Dc",
-                    "played": 7,
+                    "played": 8,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 28,
-                    "goalsAgainst": 31,
+                    "goalsAgainst": 38,
                     "points": 9
                 },
                 {
@@ -2835,28 +2835,39 @@
                 },
                 {
                     "position": 2,
-                    "team": "Cr Infante Sagres",
-                    "played": 7,
+                    "team": "Csl Benfica Lagos",
+                    "played": 8,
                     "wins": 6,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 43,
-                    "goalsAgainst": 12,
-                    "points": 18
+                    "draws": 2,
+                    "losses": 0,
+                    "goalsFor": 42,
+                    "goalsAgainst": 9,
+                    "points": 20
                 },
                 {
                     "position": 3,
-                    "team": "Csl Benfica Lagos",
-                    "played": 7,
-                    "wins": 5,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 36,
-                    "goalsAgainst": 9,
-                    "points": 17
+                    "team": "Cr Infante Sagres",
+                    "played": 8,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 43,
+                    "goalsAgainst": 18,
+                    "points": 18
                 },
                 {
                     "position": 4,
+                    "team": "Aef Faro",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 39,
+                    "goalsAgainst": 13,
+                    "points": 16
+                },
+                {
+                    "position": 5,
                     "team": "Portimonense Sc",
                     "played": 9,
                     "wins": 5,
@@ -2867,7 +2878,7 @@
                     "points": 16
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Mexilhoeira Grande Fc",
                     "played": 8,
                     "wins": 4,
@@ -2878,25 +2889,14 @@
                     "points": 13
                 },
                 {
-                    "position": 6,
-                    "team": "Aef Faro",
-                    "played": 7,
-                    "wins": 4,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 32,
-                    "goalsAgainst": 13,
-                    "points": 13
-                },
-                {
                     "position": 7,
                     "team": "Imortal Dc",
-                    "played": 7,
+                    "played": 8,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 28,
-                    "goalsAgainst": 31,
+                    "goalsAgainst": 38,
                     "points": 9
                 },
                 {
