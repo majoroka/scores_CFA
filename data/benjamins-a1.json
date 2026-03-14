@@ -210,8 +210,17 @@
                     "home": "Jc Aljezurense",
                     "away": "Cf Os Armacenenses",
                     "date": "14 mar",
-                    "time": "09:00",
+                    "time": "",
                     "stadium": "Campo Municipal Aljezur",
+                    "homeScore": 4,
+                    "awayScore": 2
+                },
+                {
+                    "home": "Sc Farense",
+                    "away": "Associacao Fut. F.O.",
+                    "date": "14 mar",
+                    "time": "12:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -221,15 +230,6 @@
                     "date": "14 mar",
                     "time": "12:00",
                     "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Sc Farense",
-                    "away": "Associacao Fut. F.O.",
-                    "date": "14 mar",
-                    "time": "12:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -271,16 +271,27 @@
                 {
                     "position": 4,
                     "team": "Cf Os Armacenenses",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 8,
-                    "goalsAgainst": 8,
+                    "losses": 2,
+                    "goalsFor": 10,
+                    "goalsAgainst": 12,
                     "points": 3
                 },
                 {
                     "position": 5,
+                    "team": "Jc Aljezurense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 8,
+                    "goalsAgainst": 13,
+                    "points": 3
+                },
+                {
+                    "position": 6,
                     "team": "Associacao Fut. F.O.",
                     "played": 2,
                     "wins": 0,
@@ -288,17 +299,6 @@
                     "losses": 2,
                     "goalsFor": 4,
                     "goalsAgainst": 10,
-                    "points": 0
-                },
-                {
-                    "position": 6,
-                    "team": "Jc Aljezurense",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 4,
-                    "goalsAgainst": 11,
                     "points": 0
                 }
             ]
@@ -372,16 +372,27 @@
                 {
                     "position": 4,
                     "team": "Cf Os Armacenenses",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 8,
-                    "goalsAgainst": 8,
+                    "losses": 2,
+                    "goalsFor": 10,
+                    "goalsAgainst": 12,
                     "points": 3
                 },
                 {
                     "position": 5,
+                    "team": "Jc Aljezurense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 8,
+                    "goalsAgainst": 13,
+                    "points": 3
+                },
+                {
+                    "position": 6,
                     "team": "Associacao Fut. F.O.",
                     "played": 2,
                     "wins": 0,
@@ -389,17 +400,6 @@
                     "losses": 2,
                     "goalsFor": 4,
                     "goalsAgainst": 10,
-                    "points": 0
-                },
-                {
-                    "position": 6,
-                    "team": "Jc Aljezurense",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 4,
-                    "goalsAgainst": 11,
                     "points": 0
                 }
             ]
@@ -473,16 +473,27 @@
                 {
                     "position": 4,
                     "team": "Cf Os Armacenenses",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 8,
-                    "goalsAgainst": 8,
+                    "losses": 2,
+                    "goalsFor": 10,
+                    "goalsAgainst": 12,
                     "points": 3
                 },
                 {
                     "position": 5,
+                    "team": "Jc Aljezurense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 8,
+                    "goalsAgainst": 13,
+                    "points": 3
+                },
+                {
+                    "position": 6,
                     "team": "Associacao Fut. F.O.",
                     "played": 2,
                     "wins": 0,
@@ -490,17 +501,6 @@
                     "losses": 2,
                     "goalsFor": 4,
                     "goalsAgainst": 10,
-                    "points": 0
-                },
-                {
-                    "position": 6,
-                    "team": "Jc Aljezurense",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 4,
-                    "goalsAgainst": 11,
                     "points": 0
                 }
             ]
@@ -574,16 +574,27 @@
                 {
                     "position": 4,
                     "team": "Cf Os Armacenenses",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 8,
-                    "goalsAgainst": 8,
+                    "losses": 2,
+                    "goalsFor": 10,
+                    "goalsAgainst": 12,
                     "points": 3
                 },
                 {
                     "position": 5,
+                    "team": "Jc Aljezurense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 8,
+                    "goalsAgainst": 13,
+                    "points": 3
+                },
+                {
+                    "position": 6,
                     "team": "Associacao Fut. F.O.",
                     "played": 2,
                     "wins": 0,
@@ -591,17 +602,6 @@
                     "losses": 2,
                     "goalsFor": 4,
                     "goalsAgainst": 10,
-                    "points": 0
-                },
-                {
-                    "position": 6,
-                    "team": "Jc Aljezurense",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 4,
-                    "goalsAgainst": 11,
                     "points": 0
                 }
             ]
@@ -675,16 +675,27 @@
                 {
                     "position": 4,
                     "team": "Cf Os Armacenenses",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 8,
-                    "goalsAgainst": 8,
+                    "losses": 2,
+                    "goalsFor": 10,
+                    "goalsAgainst": 12,
                     "points": 3
                 },
                 {
                     "position": 5,
+                    "team": "Jc Aljezurense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 8,
+                    "goalsAgainst": 13,
+                    "points": 3
+                },
+                {
+                    "position": 6,
                     "team": "Associacao Fut. F.O.",
                     "played": 2,
                     "wins": 0,
@@ -692,17 +703,6 @@
                     "losses": 2,
                     "goalsFor": 4,
                     "goalsAgainst": 10,
-                    "points": 0
-                },
-                {
-                    "position": 6,
-                    "team": "Jc Aljezurense",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 4,
-                    "goalsAgainst": 11,
                     "points": 0
                 }
             ]
@@ -776,16 +776,27 @@
                 {
                     "position": 4,
                     "team": "Cf Os Armacenenses",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 8,
-                    "goalsAgainst": 8,
+                    "losses": 2,
+                    "goalsFor": 10,
+                    "goalsAgainst": 12,
                     "points": 3
                 },
                 {
                     "position": 5,
+                    "team": "Jc Aljezurense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 8,
+                    "goalsAgainst": 13,
+                    "points": 3
+                },
+                {
+                    "position": 6,
                     "team": "Associacao Fut. F.O.",
                     "played": 2,
                     "wins": 0,
@@ -793,17 +804,6 @@
                     "losses": 2,
                     "goalsFor": 4,
                     "goalsAgainst": 10,
-                    "points": 0
-                },
-                {
-                    "position": 6,
-                    "team": "Jc Aljezurense",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 4,
-                    "goalsAgainst": 11,
                     "points": 0
                 }
             ]
@@ -877,16 +877,27 @@
                 {
                     "position": 4,
                     "team": "Cf Os Armacenenses",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 8,
-                    "goalsAgainst": 8,
+                    "losses": 2,
+                    "goalsFor": 10,
+                    "goalsAgainst": 12,
                     "points": 3
                 },
                 {
                     "position": 5,
+                    "team": "Jc Aljezurense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 8,
+                    "goalsAgainst": 13,
+                    "points": 3
+                },
+                {
+                    "position": 6,
                     "team": "Associacao Fut. F.O.",
                     "played": 2,
                     "wins": 0,
@@ -894,17 +905,6 @@
                     "losses": 2,
                     "goalsFor": 4,
                     "goalsAgainst": 10,
-                    "points": 0
-                },
-                {
-                    "position": 6,
-                    "team": "Jc Aljezurense",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 4,
-                    "goalsAgainst": 11,
                     "points": 0
                 }
             ]
@@ -978,16 +978,27 @@
                 {
                     "position": 4,
                     "team": "Cf Os Armacenenses",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 8,
-                    "goalsAgainst": 8,
+                    "losses": 2,
+                    "goalsFor": 10,
+                    "goalsAgainst": 12,
                     "points": 3
                 },
                 {
                     "position": 5,
+                    "team": "Jc Aljezurense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 8,
+                    "goalsAgainst": 13,
+                    "points": 3
+                },
+                {
+                    "position": 6,
                     "team": "Associacao Fut. F.O.",
                     "played": 2,
                     "wins": 0,
@@ -995,17 +1006,6 @@
                     "losses": 2,
                     "goalsFor": 4,
                     "goalsAgainst": 10,
-                    "points": 0
-                },
-                {
-                    "position": 6,
-                    "team": "Jc Aljezurense",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 4,
-                    "goalsAgainst": 11,
                     "points": 0
                 }
             ]
