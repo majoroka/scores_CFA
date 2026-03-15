@@ -271,20 +271,20 @@
                 {
                     "home": "Cf Os Armacenenses - B",
                     "away": "Ud Messinense",
-                    "date": "15 mar",
-                    "time": "09:00",
+                    "date": "0 - 7                            \r\n                \r\n                    15 mar",
+                    "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 0,
+                    "awayScore": 7
                 },
                 {
                     "home": "Jd Monchiquense",
                     "away": "Jc Aljezurense",
-                    "date": "15 mar",
-                    "time": "11:00",
+                    "date": "2 - 0                            \r\n                \r\n                    15 mar",
+                    "time": "",
                     "stadium": "Parque Desportivo Jd Monchiquense",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 2,
+                    "awayScore": 0
                 },
                 {
                     "home": "Cf Os Armacenenses - A",
@@ -308,6 +308,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Jd Monchiquense",
+                    "played": 3,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 20,
+                    "goalsAgainst": 2,
+                    "points": 9
+                },
+                {
+                    "position": 2,
                     "team": "Cd Montenegro",
                     "played": 2,
                     "wins": 2,
@@ -315,17 +326,6 @@
                     "losses": 0,
                     "goalsFor": 4,
                     "goalsAgainst": 0,
-                    "points": 6
-                },
-                {
-                    "position": 2,
-                    "team": "Jd Monchiquense",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 18,
-                    "goalsAgainst": 2,
                     "points": 6
                 },
                 {
@@ -341,6 +341,17 @@
                 },
                 {
                     "position": 4,
+                    "team": "Ud Messinense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 9,
+                    "goalsAgainst": 3,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Cf Os Armacenenses - A",
                     "played": 2,
                     "wins": 1,
@@ -351,26 +362,15 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Jc Aljezurense",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 3,
-                    "goalsAgainst": 3,
+                    "goalsAgainst": 5,
                     "points": 3
-                },
-                {
-                    "position": 6,
-                    "team": "Ud Messinense",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
-                    "points": 1
                 },
                 {
                     "position": 7,
@@ -386,12 +386,12 @@
                 {
                     "position": 8,
                     "team": "Cf Os Armacenenses - B",
-                    "played": 2,
+                    "played": 3,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 2,
+                    "losses": 3,
                     "goalsFor": 1,
-                    "goalsAgainst": 17,
+                    "goalsAgainst": 24,
                     "points": 0
                 }
             ]
@@ -440,6 +440,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Jd Monchiquense",
+                    "played": 3,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 20,
+                    "goalsAgainst": 2,
+                    "points": 9
+                },
+                {
+                    "position": 2,
                     "team": "Cd Montenegro",
                     "played": 2,
                     "wins": 2,
@@ -447,17 +458,6 @@
                     "losses": 0,
                     "goalsFor": 4,
                     "goalsAgainst": 0,
-                    "points": 6
-                },
-                {
-                    "position": 2,
-                    "team": "Jd Monchiquense",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 18,
-                    "goalsAgainst": 2,
                     "points": 6
                 },
                 {
@@ -473,6 +473,17 @@
                 },
                 {
                     "position": 4,
+                    "team": "Ud Messinense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 9,
+                    "goalsAgainst": 3,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Cf Os Armacenenses - A",
                     "played": 2,
                     "wins": 1,
@@ -483,26 +494,15 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Jc Aljezurense",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 3,
-                    "goalsAgainst": 3,
+                    "goalsAgainst": 5,
                     "points": 3
-                },
-                {
-                    "position": 6,
-                    "team": "Ud Messinense",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
-                    "points": 1
                 },
                 {
                     "position": 7,
@@ -518,12 +518,12 @@
                 {
                     "position": 8,
                     "team": "Cf Os Armacenenses - B",
-                    "played": 2,
+                    "played": 3,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 2,
+                    "losses": 3,
                     "goalsFor": 1,
-                    "goalsAgainst": 17,
+                    "goalsAgainst": 24,
                     "points": 0
                 }
             ]
@@ -572,6 +572,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Jd Monchiquense",
+                    "played": 3,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 20,
+                    "goalsAgainst": 2,
+                    "points": 9
+                },
+                {
+                    "position": 2,
                     "team": "Cd Montenegro",
                     "played": 2,
                     "wins": 2,
@@ -579,17 +590,6 @@
                     "losses": 0,
                     "goalsFor": 4,
                     "goalsAgainst": 0,
-                    "points": 6
-                },
-                {
-                    "position": 2,
-                    "team": "Jd Monchiquense",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 18,
-                    "goalsAgainst": 2,
                     "points": 6
                 },
                 {
@@ -605,6 +605,17 @@
                 },
                 {
                     "position": 4,
+                    "team": "Ud Messinense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 9,
+                    "goalsAgainst": 3,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Cf Os Armacenenses - A",
                     "played": 2,
                     "wins": 1,
@@ -615,26 +626,15 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Jc Aljezurense",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 3,
-                    "goalsAgainst": 3,
+                    "goalsAgainst": 5,
                     "points": 3
-                },
-                {
-                    "position": 6,
-                    "team": "Ud Messinense",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
-                    "points": 1
                 },
                 {
                     "position": 7,
@@ -650,12 +650,12 @@
                 {
                     "position": 8,
                     "team": "Cf Os Armacenenses - B",
-                    "played": 2,
+                    "played": 3,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 2,
+                    "losses": 3,
                     "goalsFor": 1,
-                    "goalsAgainst": 17,
+                    "goalsAgainst": 24,
                     "points": 0
                 }
             ]
@@ -704,6 +704,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Jd Monchiquense",
+                    "played": 3,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 20,
+                    "goalsAgainst": 2,
+                    "points": 9
+                },
+                {
+                    "position": 2,
                     "team": "Cd Montenegro",
                     "played": 2,
                     "wins": 2,
@@ -711,17 +722,6 @@
                     "losses": 0,
                     "goalsFor": 4,
                     "goalsAgainst": 0,
-                    "points": 6
-                },
-                {
-                    "position": 2,
-                    "team": "Jd Monchiquense",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 18,
-                    "goalsAgainst": 2,
                     "points": 6
                 },
                 {
@@ -737,6 +737,17 @@
                 },
                 {
                     "position": 4,
+                    "team": "Ud Messinense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 9,
+                    "goalsAgainst": 3,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Cf Os Armacenenses - A",
                     "played": 2,
                     "wins": 1,
@@ -747,26 +758,15 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Jc Aljezurense",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 3,
-                    "goalsAgainst": 3,
+                    "goalsAgainst": 5,
                     "points": 3
-                },
-                {
-                    "position": 6,
-                    "team": "Ud Messinense",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
-                    "points": 1
                 },
                 {
                     "position": 7,
@@ -782,12 +782,12 @@
                 {
                     "position": 8,
                     "team": "Cf Os Armacenenses - B",
-                    "played": 2,
+                    "played": 3,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 2,
+                    "losses": 3,
                     "goalsFor": 1,
-                    "goalsAgainst": 17,
+                    "goalsAgainst": 24,
                     "points": 0
                 }
             ]
@@ -836,6 +836,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Jd Monchiquense",
+                    "played": 3,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 20,
+                    "goalsAgainst": 2,
+                    "points": 9
+                },
+                {
+                    "position": 2,
                     "team": "Cd Montenegro",
                     "played": 2,
                     "wins": 2,
@@ -843,17 +854,6 @@
                     "losses": 0,
                     "goalsFor": 4,
                     "goalsAgainst": 0,
-                    "points": 6
-                },
-                {
-                    "position": 2,
-                    "team": "Jd Monchiquense",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 18,
-                    "goalsAgainst": 2,
                     "points": 6
                 },
                 {
@@ -869,6 +869,17 @@
                 },
                 {
                     "position": 4,
+                    "team": "Ud Messinense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 9,
+                    "goalsAgainst": 3,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Cf Os Armacenenses - A",
                     "played": 2,
                     "wins": 1,
@@ -879,26 +890,15 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Jc Aljezurense",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 3,
-                    "goalsAgainst": 3,
+                    "goalsAgainst": 5,
                     "points": 3
-                },
-                {
-                    "position": 6,
-                    "team": "Ud Messinense",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
-                    "points": 1
                 },
                 {
                     "position": 7,
@@ -914,12 +914,12 @@
                 {
                     "position": 8,
                     "team": "Cf Os Armacenenses - B",
-                    "played": 2,
+                    "played": 3,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 2,
+                    "losses": 3,
                     "goalsFor": 1,
-                    "goalsAgainst": 17,
+                    "goalsAgainst": 24,
                     "points": 0
                 }
             ]
@@ -968,6 +968,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Jd Monchiquense",
+                    "played": 3,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 20,
+                    "goalsAgainst": 2,
+                    "points": 9
+                },
+                {
+                    "position": 2,
                     "team": "Cd Montenegro",
                     "played": 2,
                     "wins": 2,
@@ -975,17 +986,6 @@
                     "losses": 0,
                     "goalsFor": 4,
                     "goalsAgainst": 0,
-                    "points": 6
-                },
-                {
-                    "position": 2,
-                    "team": "Jd Monchiquense",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 18,
-                    "goalsAgainst": 2,
                     "points": 6
                 },
                 {
@@ -1001,6 +1001,17 @@
                 },
                 {
                     "position": 4,
+                    "team": "Ud Messinense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 9,
+                    "goalsAgainst": 3,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Cf Os Armacenenses - A",
                     "played": 2,
                     "wins": 1,
@@ -1011,26 +1022,15 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Jc Aljezurense",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 3,
-                    "goalsAgainst": 3,
+                    "goalsAgainst": 5,
                     "points": 3
-                },
-                {
-                    "position": 6,
-                    "team": "Ud Messinense",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
-                    "points": 1
                 },
                 {
                     "position": 7,
@@ -1046,12 +1046,12 @@
                 {
                     "position": 8,
                     "team": "Cf Os Armacenenses - B",
-                    "played": 2,
+                    "played": 3,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 2,
+                    "losses": 3,
                     "goalsFor": 1,
-                    "goalsAgainst": 17,
+                    "goalsAgainst": 24,
                     "points": 0
                 }
             ]
@@ -1100,6 +1100,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Jd Monchiquense",
+                    "played": 3,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 20,
+                    "goalsAgainst": 2,
+                    "points": 9
+                },
+                {
+                    "position": 2,
                     "team": "Cd Montenegro",
                     "played": 2,
                     "wins": 2,
@@ -1107,17 +1118,6 @@
                     "losses": 0,
                     "goalsFor": 4,
                     "goalsAgainst": 0,
-                    "points": 6
-                },
-                {
-                    "position": 2,
-                    "team": "Jd Monchiquense",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 18,
-                    "goalsAgainst": 2,
                     "points": 6
                 },
                 {
@@ -1133,6 +1133,17 @@
                 },
                 {
                     "position": 4,
+                    "team": "Ud Messinense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 9,
+                    "goalsAgainst": 3,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Cf Os Armacenenses - A",
                     "played": 2,
                     "wins": 1,
@@ -1143,26 +1154,15 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Jc Aljezurense",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 3,
-                    "goalsAgainst": 3,
+                    "goalsAgainst": 5,
                     "points": 3
-                },
-                {
-                    "position": 6,
-                    "team": "Ud Messinense",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
-                    "points": 1
                 },
                 {
                     "position": 7,
@@ -1178,12 +1178,12 @@
                 {
                     "position": 8,
                     "team": "Cf Os Armacenenses - B",
-                    "played": 2,
+                    "played": 3,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 2,
+                    "losses": 3,
                     "goalsFor": 1,
-                    "goalsAgainst": 17,
+                    "goalsAgainst": 24,
                     "points": 0
                 }
             ]
@@ -1232,6 +1232,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Jd Monchiquense",
+                    "played": 3,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 20,
+                    "goalsAgainst": 2,
+                    "points": 9
+                },
+                {
+                    "position": 2,
                     "team": "Cd Montenegro",
                     "played": 2,
                     "wins": 2,
@@ -1239,17 +1250,6 @@
                     "losses": 0,
                     "goalsFor": 4,
                     "goalsAgainst": 0,
-                    "points": 6
-                },
-                {
-                    "position": 2,
-                    "team": "Jd Monchiquense",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 18,
-                    "goalsAgainst": 2,
                     "points": 6
                 },
                 {
@@ -1265,6 +1265,17 @@
                 },
                 {
                     "position": 4,
+                    "team": "Ud Messinense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 9,
+                    "goalsAgainst": 3,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Cf Os Armacenenses - A",
                     "played": 2,
                     "wins": 1,
@@ -1275,26 +1286,15 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Jc Aljezurense",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 3,
-                    "goalsAgainst": 3,
+                    "goalsAgainst": 5,
                     "points": 3
-                },
-                {
-                    "position": 6,
-                    "team": "Ud Messinense",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
-                    "points": 1
                 },
                 {
                     "position": 7,
@@ -1310,12 +1310,12 @@
                 {
                     "position": 8,
                     "team": "Cf Os Armacenenses - B",
-                    "played": 2,
+                    "played": 3,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 2,
+                    "losses": 3,
                     "goalsFor": 1,
-                    "goalsAgainst": 17,
+                    "goalsAgainst": 24,
                     "points": 0
                 }
             ]
@@ -1364,6 +1364,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Jd Monchiquense",
+                    "played": 3,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 20,
+                    "goalsAgainst": 2,
+                    "points": 9
+                },
+                {
+                    "position": 2,
                     "team": "Cd Montenegro",
                     "played": 2,
                     "wins": 2,
@@ -1371,17 +1382,6 @@
                     "losses": 0,
                     "goalsFor": 4,
                     "goalsAgainst": 0,
-                    "points": 6
-                },
-                {
-                    "position": 2,
-                    "team": "Jd Monchiquense",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 18,
-                    "goalsAgainst": 2,
                     "points": 6
                 },
                 {
@@ -1397,6 +1397,17 @@
                 },
                 {
                     "position": 4,
+                    "team": "Ud Messinense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 9,
+                    "goalsAgainst": 3,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Cf Os Armacenenses - A",
                     "played": 2,
                     "wins": 1,
@@ -1407,26 +1418,15 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Jc Aljezurense",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 3,
-                    "goalsAgainst": 3,
+                    "goalsAgainst": 5,
                     "points": 3
-                },
-                {
-                    "position": 6,
-                    "team": "Ud Messinense",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
-                    "points": 1
                 },
                 {
                     "position": 7,
@@ -1442,12 +1442,12 @@
                 {
                     "position": 8,
                     "team": "Cf Os Armacenenses - B",
-                    "played": 2,
+                    "played": 3,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 2,
+                    "losses": 3,
                     "goalsFor": 1,
-                    "goalsAgainst": 17,
+                    "goalsAgainst": 24,
                     "points": 0
                 }
             ]
@@ -1496,6 +1496,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Jd Monchiquense",
+                    "played": 3,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 20,
+                    "goalsAgainst": 2,
+                    "points": 9
+                },
+                {
+                    "position": 2,
                     "team": "Cd Montenegro",
                     "played": 2,
                     "wins": 2,
@@ -1503,17 +1514,6 @@
                     "losses": 0,
                     "goalsFor": 4,
                     "goalsAgainst": 0,
-                    "points": 6
-                },
-                {
-                    "position": 2,
-                    "team": "Jd Monchiquense",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 18,
-                    "goalsAgainst": 2,
                     "points": 6
                 },
                 {
@@ -1529,6 +1529,17 @@
                 },
                 {
                     "position": 4,
+                    "team": "Ud Messinense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 9,
+                    "goalsAgainst": 3,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Cf Os Armacenenses - A",
                     "played": 2,
                     "wins": 1,
@@ -1539,26 +1550,15 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Jc Aljezurense",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 3,
-                    "goalsAgainst": 3,
+                    "goalsAgainst": 5,
                     "points": 3
-                },
-                {
-                    "position": 6,
-                    "team": "Ud Messinense",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
-                    "points": 1
                 },
                 {
                     "position": 7,
@@ -1574,12 +1574,12 @@
                 {
                     "position": 8,
                     "team": "Cf Os Armacenenses - B",
-                    "played": 2,
+                    "played": 3,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 2,
+                    "losses": 3,
                     "goalsFor": 1,
-                    "goalsAgainst": 17,
+                    "goalsAgainst": 24,
                     "points": 0
                 }
             ]
@@ -1628,6 +1628,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Jd Monchiquense",
+                    "played": 3,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 20,
+                    "goalsAgainst": 2,
+                    "points": 9
+                },
+                {
+                    "position": 2,
                     "team": "Cd Montenegro",
                     "played": 2,
                     "wins": 2,
@@ -1635,17 +1646,6 @@
                     "losses": 0,
                     "goalsFor": 4,
                     "goalsAgainst": 0,
-                    "points": 6
-                },
-                {
-                    "position": 2,
-                    "team": "Jd Monchiquense",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 18,
-                    "goalsAgainst": 2,
                     "points": 6
                 },
                 {
@@ -1661,6 +1661,17 @@
                 },
                 {
                     "position": 4,
+                    "team": "Ud Messinense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 9,
+                    "goalsAgainst": 3,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Cf Os Armacenenses - A",
                     "played": 2,
                     "wins": 1,
@@ -1671,26 +1682,15 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Jc Aljezurense",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 3,
-                    "goalsAgainst": 3,
+                    "goalsAgainst": 5,
                     "points": 3
-                },
-                {
-                    "position": 6,
-                    "team": "Ud Messinense",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
-                    "points": 1
                 },
                 {
                     "position": 7,
@@ -1706,12 +1706,12 @@
                 {
                     "position": 8,
                     "team": "Cf Os Armacenenses - B",
-                    "played": 2,
+                    "played": 3,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 2,
+                    "losses": 3,
                     "goalsFor": 1,
-                    "goalsAgainst": 17,
+                    "goalsAgainst": 24,
                     "points": 0
                 }
             ]
@@ -1760,6 +1760,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Jd Monchiquense",
+                    "played": 3,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 20,
+                    "goalsAgainst": 2,
+                    "points": 9
+                },
+                {
+                    "position": 2,
                     "team": "Cd Montenegro",
                     "played": 2,
                     "wins": 2,
@@ -1767,17 +1778,6 @@
                     "losses": 0,
                     "goalsFor": 4,
                     "goalsAgainst": 0,
-                    "points": 6
-                },
-                {
-                    "position": 2,
-                    "team": "Jd Monchiquense",
-                    "played": 2,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 18,
-                    "goalsAgainst": 2,
                     "points": 6
                 },
                 {
@@ -1793,6 +1793,17 @@
                 },
                 {
                     "position": 4,
+                    "team": "Ud Messinense",
+                    "played": 3,
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 9,
+                    "goalsAgainst": 3,
+                    "points": 4
+                },
+                {
+                    "position": 5,
                     "team": "Cf Os Armacenenses - A",
                     "played": 2,
                     "wins": 1,
@@ -1803,26 +1814,15 @@
                     "points": 4
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Jc Aljezurense",
-                    "played": 2,
+                    "played": 3,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 1,
+                    "losses": 2,
                     "goalsFor": 3,
-                    "goalsAgainst": 3,
+                    "goalsAgainst": 5,
                     "points": 3
-                },
-                {
-                    "position": 6,
-                    "team": "Ud Messinense",
-                    "played": 2,
-                    "wins": 0,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 2,
-                    "goalsAgainst": 3,
-                    "points": 1
                 },
                 {
                     "position": 7,
@@ -1838,12 +1838,12 @@
                 {
                     "position": 8,
                     "team": "Cf Os Armacenenses - B",
-                    "played": 2,
+                    "played": 3,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 2,
+                    "losses": 3,
                     "goalsFor": 1,
-                    "goalsAgainst": 17,
+                    "goalsAgainst": 24,
                     "points": 0
                 }
             ]
