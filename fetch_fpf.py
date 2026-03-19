@@ -5,22 +5,47 @@ import time
 import html
 import urllib.request
 import urllib.error
+import unicodedata
 
 # --- CONFIGURAÇÃO ---
 COMPETITION_URL = "https://resultados.fpf.pt/Competition/Details?competitionId=28206&seasonId=105"
 OUTPUT_FILE = "data/seniores.json"
 CACHE_DIR = "cache"
 USE_CACHE = False  # Mude para True para usar o cache após a primeira execução
+TARGET_SERIE_NAME = "MANUTENÇÃO/DESCIDA"
 
 # Nota: O parsing com regex é frágil. Se a FPF alterar o HTML do site,
 # este script pode quebrar.
 
-def find_fixture_ids(html_content):
-    """Encontra todos os fixtureId's a partir dos links de jornadas."""
-    # Novo padrão no site: links para /Competition/GetClassificationAndMatchesByFixture?fixtureId=600930
-    fixture_ids = re.findall(r"GetClassificationAndMatchesByFixture\?fixtureId=(\d+)", html_content)
-    valid_ids = [fid for fid in dict.fromkeys(fixture_ids) if fid]
-    return sorted(valid_ids, key=int)
+def _normalize(value: str) -> str:
+    normalized = unicodedata.normalize("NFD", value)
+    normalized = normalized.encode("ascii", "ignore").decode("ascii")
+    return normalized.lower().strip()
+
+def find_fixture_ids(html_content, target_serie):
+    """Encontra apenas os fixtureId's da série alvo."""
+    normalized_target = _normalize(target_serie)
+    pattern = re.compile(r'<div class="game-results[^>]*id="htmlSerieId_(\d+)"[^>]*>')
+
+    for match in re.finditer(pattern, html_content):
+        start = match.start()
+        block_slice = html_content[start:]
+        next_match = re.search(r'<div class="game-results', block_slice[1:])
+        if next_match:
+            block = block_slice[: next_match.start() + 1]
+        else:
+            block = block_slice
+
+        block_normalized = _normalize(html.unescape(block))
+        if normalized_target not in block_normalized:
+            continue
+
+        fixture_ids = re.findall(r"GetClassificationAndMatchesByFixture\?fixtureId=(\d+)", block)
+        valid_ids = [fid for fid in dict.fromkeys(fixture_ids) if fid]
+        if valid_ids:
+            return valid_ids
+
+    return []
 
 def _clean_text(s: str) -> str:
     s = re.sub('<br\s*/?>', ' ', s, flags=re.IGNORECASE)
@@ -186,12 +211,12 @@ def main():
         print("Não foi possível obter a página principal da competição.")
         return
 
-    fixture_ids = find_fixture_ids(main_page_content)
+    fixture_ids = find_fixture_ids(main_page_content, TARGET_SERIE_NAME)
     if not fixture_ids:
-        print("Nenhum fixtureId encontrado. Verifique o seletor em 'find_fixture_ids'.")
+        print("Nenhum fixtureId encontrado para a série alvo.")
         return
     
-    print(f"Encontrados {len(fixture_ids)} fixtureId's (jornadas).")
+    print(f"Encontrados {len(fixture_ids)} fixtureId's para '{TARGET_SERIE_NAME}'.")
 
     all_rounds_data = []
     
@@ -222,6 +247,18 @@ def main():
             "classification": classification
         })
         time.sleep(1) # Pausa para não sobrecarregar o servidor
+
+    valid_rounds = [
+        round_data
+        for round_data in all_rounds_data
+        if round_data["matches"] or round_data["classification"]
+    ]
+    if not valid_rounds:
+        print(
+            "Nenhum dado valido foi extraido para Seniores. "
+            "O ficheiro existente nao sera alterado."
+        )
+        return
 
     # 3. Salvar o resultado final
     final_data = {"rounds": all_rounds_data}
