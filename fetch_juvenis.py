@@ -193,6 +193,18 @@ def main():
         })
         time.sleep(1)
 
+    valid_rounds = [
+        round_data
+        for round_data in rounds
+        if round_data["matches"] or round_data["classification"]
+    ]
+    if not valid_rounds:
+        print(
+            "Nenhum dado valido foi extraido para Juvenis. "
+            "O ficheiro existente nao sera alterado."
+        )
+        return
+
     data = {"rounds": rounds}
     os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
     with open(OUTPUT_FILE, "w", encoding="utf-8") as handle:
