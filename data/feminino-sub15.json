@@ -1061,22 +1061,22 @@
             "fixtureId": "626074",
             "matches": [
                 {
-                    "home": "Cdr Quarteirense",
-                    "away": "Fc Ferreiras",
-                    "date": "28 mar",
-                    "time": "09:00",
-                    "stadium": "Estadio Municipal Quarteira Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Fc Ferreiras",
                     "away": "Sc Farense",
-                    "date": "28 mar",
-                    "time": "09:00",
+                    "date": "0 - 6                            \r\n                \r\n                    28 mar",
+                    "time": "",
                     "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 0,
+                    "awayScore": 6
+                },
+                {
+                    "home": "Cdr Quarteirense",
+                    "away": "Fc Ferreiras",
+                    "date": "5 - 0                            \r\n                \r\n                    28 mar",
+                    "time": "",
+                    "stadium": "Estadio Municipal Quarteira Nº 2",
+                    "homeScore": 5,
+                    "awayScore": 0
                 },
                 {
                     "home": "Aef João Moutinho",
@@ -1100,6 +1100,28 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Sc Farense",
+                    "played": 9,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 30,
+                    "goalsAgainst": 10,
+                    "points": 18
+                },
+                {
+                    "position": 2,
+                    "team": "Cdr Quarteirense",
+                    "played": 9,
+                    "wins": 5,
+                    "draws": 2,
+                    "losses": 2,
+                    "goalsFor": 24,
+                    "goalsAgainst": 6,
+                    "points": 17
+                },
+                {
+                    "position": 3,
                     "team": "Casa Benfica Tavira",
                     "played": 8,
                     "wins": 5,
@@ -1110,7 +1132,7 @@
                     "points": 17
                 },
                 {
-                    "position": 2,
+                    "position": 4,
                     "team": "Gd Lagoa",
                     "played": 8,
                     "wins": 5,
@@ -1121,36 +1143,14 @@
                     "points": 16
                 },
                 {
-                    "position": 3,
-                    "team": "Sc Farense",
-                    "played": 8,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 24,
-                    "goalsAgainst": 10,
-                    "points": 15
-                },
-                {
-                    "position": 4,
-                    "team": "Cdr Quarteirense",
-                    "played": 8,
-                    "wins": 4,
-                    "draws": 2,
-                    "losses": 2,
-                    "goalsFor": 19,
-                    "goalsAgainst": 6,
-                    "points": 14
-                },
-                {
                     "position": 5,
                     "team": "Fc Ferreiras",
-                    "played": 8,
+                    "played": 9,
                     "wins": 3,
                     "draws": 3,
-                    "losses": 2,
+                    "losses": 3,
                     "goalsFor": 11,
-                    "goalsAgainst": 9,
+                    "goalsAgainst": 14,
                     "points": 12
                 },
                 {
@@ -1178,12 +1178,12 @@
                 {
                     "position": 8,
                     "team": "Fc Ferreiras",
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 7,
+                    "losses": 8,
                     "goalsFor": 5,
-                    "goalsAgainst": 35,
+                    "goalsAgainst": 41,
                     "points": 3
                 }
             ]
@@ -1232,6 +1232,28 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Sc Farense",
+                    "played": 9,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 30,
+                    "goalsAgainst": 10,
+                    "points": 18
+                },
+                {
+                    "position": 2,
+                    "team": "Cdr Quarteirense",
+                    "played": 9,
+                    "wins": 5,
+                    "draws": 2,
+                    "losses": 2,
+                    "goalsFor": 24,
+                    "goalsAgainst": 6,
+                    "points": 17
+                },
+                {
+                    "position": 3,
                     "team": "Casa Benfica Tavira",
                     "played": 8,
                     "wins": 5,
@@ -1242,7 +1264,7 @@
                     "points": 17
                 },
                 {
-                    "position": 2,
+                    "position": 4,
                     "team": "Gd Lagoa",
                     "played": 8,
                     "wins": 5,
@@ -1253,36 +1275,14 @@
                     "points": 16
                 },
                 {
-                    "position": 3,
-                    "team": "Sc Farense",
-                    "played": 8,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 24,
-                    "goalsAgainst": 10,
-                    "points": 15
-                },
-                {
-                    "position": 4,
-                    "team": "Cdr Quarteirense",
-                    "played": 8,
-                    "wins": 4,
-                    "draws": 2,
-                    "losses": 2,
-                    "goalsFor": 19,
-                    "goalsAgainst": 6,
-                    "points": 14
-                },
-                {
                     "position": 5,
                     "team": "Fc Ferreiras",
-                    "played": 8,
+                    "played": 9,
                     "wins": 3,
                     "draws": 3,
-                    "losses": 2,
+                    "losses": 3,
                     "goalsFor": 11,
-                    "goalsAgainst": 9,
+                    "goalsAgainst": 14,
                     "points": 12
                 },
                 {
@@ -1310,12 +1310,12 @@
                 {
                     "position": 8,
                     "team": "Fc Ferreiras",
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 7,
+                    "losses": 8,
                     "goalsFor": 5,
-                    "goalsAgainst": 35,
+                    "goalsAgainst": 41,
                     "points": 3
                 }
             ]
@@ -1364,6 +1364,28 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Sc Farense",
+                    "played": 9,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 30,
+                    "goalsAgainst": 10,
+                    "points": 18
+                },
+                {
+                    "position": 2,
+                    "team": "Cdr Quarteirense",
+                    "played": 9,
+                    "wins": 5,
+                    "draws": 2,
+                    "losses": 2,
+                    "goalsFor": 24,
+                    "goalsAgainst": 6,
+                    "points": 17
+                },
+                {
+                    "position": 3,
                     "team": "Casa Benfica Tavira",
                     "played": 8,
                     "wins": 5,
@@ -1374,7 +1396,7 @@
                     "points": 17
                 },
                 {
-                    "position": 2,
+                    "position": 4,
                     "team": "Gd Lagoa",
                     "played": 8,
                     "wins": 5,
@@ -1385,36 +1407,14 @@
                     "points": 16
                 },
                 {
-                    "position": 3,
-                    "team": "Sc Farense",
-                    "played": 8,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 24,
-                    "goalsAgainst": 10,
-                    "points": 15
-                },
-                {
-                    "position": 4,
-                    "team": "Cdr Quarteirense",
-                    "played": 8,
-                    "wins": 4,
-                    "draws": 2,
-                    "losses": 2,
-                    "goalsFor": 19,
-                    "goalsAgainst": 6,
-                    "points": 14
-                },
-                {
                     "position": 5,
                     "team": "Fc Ferreiras",
-                    "played": 8,
+                    "played": 9,
                     "wins": 3,
                     "draws": 3,
-                    "losses": 2,
+                    "losses": 3,
                     "goalsFor": 11,
-                    "goalsAgainst": 9,
+                    "goalsAgainst": 14,
                     "points": 12
                 },
                 {
@@ -1442,12 +1442,12 @@
                 {
                     "position": 8,
                     "team": "Fc Ferreiras",
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 7,
+                    "losses": 8,
                     "goalsFor": 5,
-                    "goalsAgainst": 35,
+                    "goalsAgainst": 41,
                     "points": 3
                 }
             ]
@@ -1496,6 +1496,28 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Sc Farense",
+                    "played": 9,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 30,
+                    "goalsAgainst": 10,
+                    "points": 18
+                },
+                {
+                    "position": 2,
+                    "team": "Cdr Quarteirense",
+                    "played": 9,
+                    "wins": 5,
+                    "draws": 2,
+                    "losses": 2,
+                    "goalsFor": 24,
+                    "goalsAgainst": 6,
+                    "points": 17
+                },
+                {
+                    "position": 3,
                     "team": "Casa Benfica Tavira",
                     "played": 8,
                     "wins": 5,
@@ -1506,7 +1528,7 @@
                     "points": 17
                 },
                 {
-                    "position": 2,
+                    "position": 4,
                     "team": "Gd Lagoa",
                     "played": 8,
                     "wins": 5,
@@ -1517,36 +1539,14 @@
                     "points": 16
                 },
                 {
-                    "position": 3,
-                    "team": "Sc Farense",
-                    "played": 8,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 24,
-                    "goalsAgainst": 10,
-                    "points": 15
-                },
-                {
-                    "position": 4,
-                    "team": "Cdr Quarteirense",
-                    "played": 8,
-                    "wins": 4,
-                    "draws": 2,
-                    "losses": 2,
-                    "goalsFor": 19,
-                    "goalsAgainst": 6,
-                    "points": 14
-                },
-                {
                     "position": 5,
                     "team": "Fc Ferreiras",
-                    "played": 8,
+                    "played": 9,
                     "wins": 3,
                     "draws": 3,
-                    "losses": 2,
+                    "losses": 3,
                     "goalsFor": 11,
-                    "goalsAgainst": 9,
+                    "goalsAgainst": 14,
                     "points": 12
                 },
                 {
@@ -1574,12 +1574,12 @@
                 {
                     "position": 8,
                     "team": "Fc Ferreiras",
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 7,
+                    "losses": 8,
                     "goalsFor": 5,
-                    "goalsAgainst": 35,
+                    "goalsAgainst": 41,
                     "points": 3
                 }
             ]
@@ -1628,6 +1628,28 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Sc Farense",
+                    "played": 9,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 30,
+                    "goalsAgainst": 10,
+                    "points": 18
+                },
+                {
+                    "position": 2,
+                    "team": "Cdr Quarteirense",
+                    "played": 9,
+                    "wins": 5,
+                    "draws": 2,
+                    "losses": 2,
+                    "goalsFor": 24,
+                    "goalsAgainst": 6,
+                    "points": 17
+                },
+                {
+                    "position": 3,
                     "team": "Casa Benfica Tavira",
                     "played": 8,
                     "wins": 5,
@@ -1638,7 +1660,7 @@
                     "points": 17
                 },
                 {
-                    "position": 2,
+                    "position": 4,
                     "team": "Gd Lagoa",
                     "played": 8,
                     "wins": 5,
@@ -1649,36 +1671,14 @@
                     "points": 16
                 },
                 {
-                    "position": 3,
-                    "team": "Sc Farense",
-                    "played": 8,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 24,
-                    "goalsAgainst": 10,
-                    "points": 15
-                },
-                {
-                    "position": 4,
-                    "team": "Cdr Quarteirense",
-                    "played": 8,
-                    "wins": 4,
-                    "draws": 2,
-                    "losses": 2,
-                    "goalsFor": 19,
-                    "goalsAgainst": 6,
-                    "points": 14
-                },
-                {
                     "position": 5,
                     "team": "Fc Ferreiras",
-                    "played": 8,
+                    "played": 9,
                     "wins": 3,
                     "draws": 3,
-                    "losses": 2,
+                    "losses": 3,
                     "goalsFor": 11,
-                    "goalsAgainst": 9,
+                    "goalsAgainst": 14,
                     "points": 12
                 },
                 {
@@ -1706,12 +1706,12 @@
                 {
                     "position": 8,
                     "team": "Fc Ferreiras",
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 7,
+                    "losses": 8,
                     "goalsFor": 5,
-                    "goalsAgainst": 35,
+                    "goalsAgainst": 41,
                     "points": 3
                 }
             ]
@@ -1760,6 +1760,28 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Sc Farense",
+                    "played": 9,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 3,
+                    "goalsFor": 30,
+                    "goalsAgainst": 10,
+                    "points": 18
+                },
+                {
+                    "position": 2,
+                    "team": "Cdr Quarteirense",
+                    "played": 9,
+                    "wins": 5,
+                    "draws": 2,
+                    "losses": 2,
+                    "goalsFor": 24,
+                    "goalsAgainst": 6,
+                    "points": 17
+                },
+                {
+                    "position": 3,
                     "team": "Casa Benfica Tavira",
                     "played": 8,
                     "wins": 5,
@@ -1770,7 +1792,7 @@
                     "points": 17
                 },
                 {
-                    "position": 2,
+                    "position": 4,
                     "team": "Gd Lagoa",
                     "played": 8,
                     "wins": 5,
@@ -1781,36 +1803,14 @@
                     "points": 16
                 },
                 {
-                    "position": 3,
-                    "team": "Sc Farense",
-                    "played": 8,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 24,
-                    "goalsAgainst": 10,
-                    "points": 15
-                },
-                {
-                    "position": 4,
-                    "team": "Cdr Quarteirense",
-                    "played": 8,
-                    "wins": 4,
-                    "draws": 2,
-                    "losses": 2,
-                    "goalsFor": 19,
-                    "goalsAgainst": 6,
-                    "points": 14
-                },
-                {
                     "position": 5,
                     "team": "Fc Ferreiras",
-                    "played": 8,
+                    "played": 9,
                     "wins": 3,
                     "draws": 3,
-                    "losses": 2,
+                    "losses": 3,
                     "goalsFor": 11,
-                    "goalsAgainst": 9,
+                    "goalsAgainst": 14,
                     "points": 12
                 },
                 {
@@ -1838,12 +1838,12 @@
                 {
                     "position": 8,
                     "team": "Fc Ferreiras",
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 7,
+                    "losses": 8,
                     "goalsFor": 5,
-                    "goalsAgainst": 35,
+                    "goalsAgainst": 41,
                     "points": 3
                 }
             ]
