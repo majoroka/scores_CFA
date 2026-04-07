@@ -160,6 +160,19 @@ def get_page_content(url: str, cache_key: str):
     return None
 
 
+def load_existing_round_count(output_file: str) -> int:
+    if not os.path.exists(output_file):
+        return 0
+
+    try:
+        with open(output_file, "r", encoding="utf-8") as handle:
+            current_data = json.load(handle)
+        rounds = current_data.get("rounds", [])
+        return len(rounds) if isinstance(rounds, list) else 0
+    except Exception:
+        return 0
+
+
 def main():
     main_page = get_page_content(COMPETITION_URL, "juvenis_competition_main")
     if not main_page:
@@ -201,6 +214,15 @@ def main():
     if not valid_rounds:
         print(
             "Nenhum dado valido foi extraido para Juvenis. "
+            "O ficheiro existente nao sera alterado."
+        )
+        return
+
+    existing_round_count = load_existing_round_count(OUTPUT_FILE)
+    if existing_round_count and len(rounds) < existing_round_count:
+        print(
+            f"Foram extraidas apenas {len(rounds)} jornadas, "
+            f"mas o ficheiro atual tem {existing_round_count}. "
             "O ficheiro existente nao sera alterado."
         )
         return
