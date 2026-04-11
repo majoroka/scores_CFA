@@ -1193,22 +1193,22 @@
             "fixtureId": "635241",
             "matches": [
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Aef Faro",
-                    "date": "11 abr",
-                    "time": "12:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Portimonense Sc",
                     "away": "Sc Olhanense",
-                    "date": "11 abr",
-                    "time": "12:00",
+                    "date": "3 - 7                            \r\n                \r\n                    11 abr",
+                    "time": "",
                     "stadium": "Campo Major David Neto 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 3,
+                    "awayScore": 7
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Aef Faro",
+                    "date": "0 - 9                            \r\n                \r\n                    11 abr",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 0,
+                    "awayScore": 9
                 },
                 {
                     "home": "Gd Lagoa",
@@ -1232,6 +1232,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Aef Faro",
+                    "played": 10,
+                    "wins": 7,
+                    "draws": 2,
+                    "losses": 1,
+                    "goalsFor": 43,
+                    "goalsAgainst": 15,
+                    "points": 23
+                },
+                {
+                    "position": 2,
                     "team": "Gd Lagoa",
                     "played": 9,
                     "wins": 7,
@@ -1242,25 +1253,14 @@
                     "points": 22
                 },
                 {
-                    "position": 2,
-                    "team": "Aef Faro",
-                    "played": 9,
-                    "wins": 6,
-                    "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 34,
-                    "goalsAgainst": 15,
-                    "points": 20
-                },
-                {
                     "position": 3,
                     "team": "Cf Os Armacenenses",
-                    "played": 9,
+                    "played": 10,
                     "wins": 6,
                     "draws": 0,
-                    "losses": 3,
+                    "losses": 4,
                     "goalsFor": 29,
-                    "goalsAgainst": 17,
+                    "goalsAgainst": 26,
                     "points": 18
                 },
                 {
@@ -1276,6 +1276,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Portimonense Sc",
+                    "played": 10,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 26,
+                    "goalsAgainst": 29,
+                    "points": 12
+                },
+                {
+                    "position": 6,
                     "team": "Sc Farense",
                     "played": 9,
                     "wins": 2,
@@ -1283,17 +1294,6 @@
                     "losses": 4,
                     "goalsFor": 18,
                     "goalsAgainst": 24,
-                    "points": 9
-                },
-                {
-                    "position": 6,
-                    "team": "Portimonense Sc",
-                    "played": 9,
-                    "wins": 3,
-                    "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 22,
-                    "goalsAgainst": 28,
                     "points": 9
                 },
                 {
@@ -1310,12 +1310,12 @@
                 {
                     "position": 8,
                     "team": "Sc Olhanense",
-                    "played": 9,
+                    "played": 10,
                     "wins": 0,
                     "draws": 2,
-                    "losses": 7,
-                    "goalsFor": 10,
-                    "goalsAgainst": 60,
+                    "losses": 8,
+                    "goalsFor": 11,
+                    "goalsAgainst": 64,
                     "points": 2
                 }
             ]
@@ -1364,6 +1364,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Aef Faro",
+                    "played": 10,
+                    "wins": 7,
+                    "draws": 2,
+                    "losses": 1,
+                    "goalsFor": 43,
+                    "goalsAgainst": 15,
+                    "points": 23
+                },
+                {
+                    "position": 2,
                     "team": "Gd Lagoa",
                     "played": 9,
                     "wins": 7,
@@ -1374,25 +1385,14 @@
                     "points": 22
                 },
                 {
-                    "position": 2,
-                    "team": "Aef Faro",
-                    "played": 9,
-                    "wins": 6,
-                    "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 34,
-                    "goalsAgainst": 15,
-                    "points": 20
-                },
-                {
                     "position": 3,
                     "team": "Cf Os Armacenenses",
-                    "played": 9,
+                    "played": 10,
                     "wins": 6,
                     "draws": 0,
-                    "losses": 3,
+                    "losses": 4,
                     "goalsFor": 29,
-                    "goalsAgainst": 17,
+                    "goalsAgainst": 26,
                     "points": 18
                 },
                 {
@@ -1408,6 +1408,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Portimonense Sc",
+                    "played": 10,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 26,
+                    "goalsAgainst": 29,
+                    "points": 12
+                },
+                {
+                    "position": 6,
                     "team": "Sc Farense",
                     "played": 9,
                     "wins": 2,
@@ -1415,17 +1426,6 @@
                     "losses": 4,
                     "goalsFor": 18,
                     "goalsAgainst": 24,
-                    "points": 9
-                },
-                {
-                    "position": 6,
-                    "team": "Portimonense Sc",
-                    "played": 9,
-                    "wins": 3,
-                    "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 22,
-                    "goalsAgainst": 28,
                     "points": 9
                 },
                 {
@@ -1442,12 +1442,12 @@
                 {
                     "position": 8,
                     "team": "Sc Olhanense",
-                    "played": 9,
+                    "played": 10,
                     "wins": 0,
                     "draws": 2,
-                    "losses": 7,
-                    "goalsFor": 10,
-                    "goalsAgainst": 60,
+                    "losses": 8,
+                    "goalsFor": 11,
+                    "goalsAgainst": 64,
                     "points": 2
                 }
             ]
@@ -1496,6 +1496,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Aef Faro",
+                    "played": 10,
+                    "wins": 7,
+                    "draws": 2,
+                    "losses": 1,
+                    "goalsFor": 43,
+                    "goalsAgainst": 15,
+                    "points": 23
+                },
+                {
+                    "position": 2,
                     "team": "Gd Lagoa",
                     "played": 9,
                     "wins": 7,
@@ -1506,25 +1517,14 @@
                     "points": 22
                 },
                 {
-                    "position": 2,
-                    "team": "Aef Faro",
-                    "played": 9,
-                    "wins": 6,
-                    "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 34,
-                    "goalsAgainst": 15,
-                    "points": 20
-                },
-                {
                     "position": 3,
                     "team": "Cf Os Armacenenses",
-                    "played": 9,
+                    "played": 10,
                     "wins": 6,
                     "draws": 0,
-                    "losses": 3,
+                    "losses": 4,
                     "goalsFor": 29,
-                    "goalsAgainst": 17,
+                    "goalsAgainst": 26,
                     "points": 18
                 },
                 {
@@ -1540,6 +1540,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Portimonense Sc",
+                    "played": 10,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 26,
+                    "goalsAgainst": 29,
+                    "points": 12
+                },
+                {
+                    "position": 6,
                     "team": "Sc Farense",
                     "played": 9,
                     "wins": 2,
@@ -1547,17 +1558,6 @@
                     "losses": 4,
                     "goalsFor": 18,
                     "goalsAgainst": 24,
-                    "points": 9
-                },
-                {
-                    "position": 6,
-                    "team": "Portimonense Sc",
-                    "played": 9,
-                    "wins": 3,
-                    "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 22,
-                    "goalsAgainst": 28,
                     "points": 9
                 },
                 {
@@ -1574,12 +1574,12 @@
                 {
                     "position": 8,
                     "team": "Sc Olhanense",
-                    "played": 9,
+                    "played": 10,
                     "wins": 0,
                     "draws": 2,
-                    "losses": 7,
-                    "goalsFor": 10,
-                    "goalsAgainst": 60,
+                    "losses": 8,
+                    "goalsFor": 11,
+                    "goalsAgainst": 64,
                     "points": 2
                 }
             ]
@@ -1628,6 +1628,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Aef Faro",
+                    "played": 10,
+                    "wins": 7,
+                    "draws": 2,
+                    "losses": 1,
+                    "goalsFor": 43,
+                    "goalsAgainst": 15,
+                    "points": 23
+                },
+                {
+                    "position": 2,
                     "team": "Gd Lagoa",
                     "played": 9,
                     "wins": 7,
@@ -1638,25 +1649,14 @@
                     "points": 22
                 },
                 {
-                    "position": 2,
-                    "team": "Aef Faro",
-                    "played": 9,
-                    "wins": 6,
-                    "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 34,
-                    "goalsAgainst": 15,
-                    "points": 20
-                },
-                {
                     "position": 3,
                     "team": "Cf Os Armacenenses",
-                    "played": 9,
+                    "played": 10,
                     "wins": 6,
                     "draws": 0,
-                    "losses": 3,
+                    "losses": 4,
                     "goalsFor": 29,
-                    "goalsAgainst": 17,
+                    "goalsAgainst": 26,
                     "points": 18
                 },
                 {
@@ -1672,6 +1672,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Portimonense Sc",
+                    "played": 10,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 26,
+                    "goalsAgainst": 29,
+                    "points": 12
+                },
+                {
+                    "position": 6,
                     "team": "Sc Farense",
                     "played": 9,
                     "wins": 2,
@@ -1679,17 +1690,6 @@
                     "losses": 4,
                     "goalsFor": 18,
                     "goalsAgainst": 24,
-                    "points": 9
-                },
-                {
-                    "position": 6,
-                    "team": "Portimonense Sc",
-                    "played": 9,
-                    "wins": 3,
-                    "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 22,
-                    "goalsAgainst": 28,
                     "points": 9
                 },
                 {
@@ -1706,12 +1706,12 @@
                 {
                     "position": 8,
                     "team": "Sc Olhanense",
-                    "played": 9,
+                    "played": 10,
                     "wins": 0,
                     "draws": 2,
-                    "losses": 7,
-                    "goalsFor": 10,
-                    "goalsAgainst": 60,
+                    "losses": 8,
+                    "goalsFor": 11,
+                    "goalsAgainst": 64,
                     "points": 2
                 }
             ]
@@ -1760,6 +1760,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Aef Faro",
+                    "played": 10,
+                    "wins": 7,
+                    "draws": 2,
+                    "losses": 1,
+                    "goalsFor": 43,
+                    "goalsAgainst": 15,
+                    "points": 23
+                },
+                {
+                    "position": 2,
                     "team": "Gd Lagoa",
                     "played": 9,
                     "wins": 7,
@@ -1770,25 +1781,14 @@
                     "points": 22
                 },
                 {
-                    "position": 2,
-                    "team": "Aef Faro",
-                    "played": 9,
-                    "wins": 6,
-                    "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 34,
-                    "goalsAgainst": 15,
-                    "points": 20
-                },
-                {
                     "position": 3,
                     "team": "Cf Os Armacenenses",
-                    "played": 9,
+                    "played": 10,
                     "wins": 6,
                     "draws": 0,
-                    "losses": 3,
+                    "losses": 4,
                     "goalsFor": 29,
-                    "goalsAgainst": 17,
+                    "goalsAgainst": 26,
                     "points": 18
                 },
                 {
@@ -1804,6 +1804,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Portimonense Sc",
+                    "played": 10,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 26,
+                    "goalsAgainst": 29,
+                    "points": 12
+                },
+                {
+                    "position": 6,
                     "team": "Sc Farense",
                     "played": 9,
                     "wins": 2,
@@ -1811,17 +1822,6 @@
                     "losses": 4,
                     "goalsFor": 18,
                     "goalsAgainst": 24,
-                    "points": 9
-                },
-                {
-                    "position": 6,
-                    "team": "Portimonense Sc",
-                    "played": 9,
-                    "wins": 3,
-                    "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 22,
-                    "goalsAgainst": 28,
                     "points": 9
                 },
                 {
@@ -1838,12 +1838,12 @@
                 {
                     "position": 8,
                     "team": "Sc Olhanense",
-                    "played": 9,
+                    "played": 10,
                     "wins": 0,
                     "draws": 2,
-                    "losses": 7,
-                    "goalsFor": 10,
-                    "goalsAgainst": 60,
+                    "losses": 8,
+                    "goalsFor": 11,
+                    "goalsAgainst": 64,
                     "points": 2
                 }
             ]
