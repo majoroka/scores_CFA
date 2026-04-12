@@ -401,15 +401,6 @@
             "fixtureId": "635235",
             "matches": [
                 {
-                    "home": "Gd Lagoa",
-                    "away": "Cd Montenegro",
-                    "date": "6 - 3                            \r\n                \r\n                    14 fev",
-                    "time": "",
-                    "stadium": "Campo De Futebol Sete - Espamol",
-                    "homeScore": 6,
-                    "awayScore": 3
-                },
-                {
                     "home": "Sc Farense",
                     "away": "Sc Olhanense",
                     "date": "2 - 2                            \r\n                \r\n                    14 fev",
@@ -417,6 +408,15 @@
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 2,
                     "awayScore": 2
+                },
+                {
+                    "home": "Gd Lagoa",
+                    "away": "Cd Montenegro",
+                    "date": "6 - 3                            \r\n                \r\n                    14 fev",
+                    "time": "",
+                    "stadium": "Campo De Futebol Sete - Espamol",
+                    "homeScore": 6,
+                    "awayScore": 3
                 },
                 {
                     "home": "Portimonense Sc",
@@ -1325,20 +1325,20 @@
             "fixtureId": "635242",
             "matches": [
                 {
-                    "home": "Js Campinense",
-                    "away": "Cf Os Armacenenses",
-                    "date": "18 abr",
-                    "time": "12:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Sc Olhanense",
                     "away": "Sc Farense",
                     "date": "18 abr",
                     "time": "12:00",
                     "stadium": "Estádio José Arcanjo",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Js Campinense",
+                    "away": "Cf Os Armacenenses",
+                    "date": "18 abr",
+                    "time": "12:00",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1721,11 +1721,11 @@
             "fixtureId": "635245",
             "matches": [
                 {
-                    "home": "Aef Faro",
-                    "away": "Cd Montenegro",
+                    "home": "Portimonense Sc",
+                    "away": "Sc Farense",
                     "date": "16 mai",
                     "time": "11:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
+                    "stadium": "Campo Major David Neto 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1739,20 +1739,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Portimonense Sc",
-                    "away": "Sc Farense",
-                    "date": "16 mai",
-                    "time": "11:00",
-                    "stadium": "Campo Major David Neto 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Cf Os Armacenenses",
                     "away": "Gd Lagoa",
                     "date": "16 mai",
                     "time": "11:00",
                     "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Aef Faro",
+                    "away": "Cd Montenegro",
+                    "date": "16 mai",
+                    "time": "11:00",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 }

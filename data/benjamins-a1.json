@@ -216,15 +216,6 @@
                     "awayScore": 2
                 },
                 {
-                    "home": "Sc Farense",
-                    "away": "Associacao Fut. F.O.",
-                    "date": "14 mar",
-                    "time": "",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": 2,
-                    "awayScore": 3
-                },
-                {
                     "home": "Fc Ferreiras",
                     "away": "Portimonense Sc",
                     "date": "14 mar",
@@ -232,6 +223,15 @@
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 6,
                     "awayScore": 4
+                },
+                {
+                    "home": "Sc Farense",
+                    "away": "Associacao Fut. F.O.",
+                    "date": "14 mar",
+                    "time": "",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": 2,
+                    "awayScore": 3
                 }
             ],
             "classification": [
@@ -409,15 +409,6 @@
             "fixtureId": "641128",
             "matches": [
                 {
-                    "home": "Associacao Fut. F.O.",
-                    "away": "Portimonense Sc",
-                    "date": "11 abr",
-                    "time": "",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": 3,
-                    "awayScore": 12
-                },
-                {
                     "home": "Fc Ferreiras",
                     "away": "Jc Aljezurense",
                     "date": "11 abr",
@@ -425,6 +416,15 @@
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 2,
                     "awayScore": 1
+                },
+                {
+                    "home": "Associacao Fut. F.O.",
+                    "away": "Portimonense Sc",
+                    "date": "11 abr",
+                    "time": "",
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
+                    "homeScore": 3,
+                    "awayScore": 12
                 },
                 {
                     "home": "Sc Farense",
@@ -914,11 +914,11 @@
             "fixtureId": "641133",
             "matches": [
                 {
-                    "home": "Jc Aljezurense",
-                    "away": "Fc Ferreiras",
+                    "home": "Portimonense Sc",
+                    "away": "Associacao Fut. F.O.",
                     "date": "23 mai",
                     "time": "11:00",
-                    "stadium": "Campo Municipal Aljezur",
+                    "stadium": "Campo Major David Neto 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -932,11 +932,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Portimonense Sc",
-                    "away": "Associacao Fut. F.O.",
+                    "home": "Jc Aljezurense",
+                    "away": "Fc Ferreiras",
                     "date": "23 mai",
                     "time": "11:00",
-                    "stadium": "Campo Major David Neto 2",
+                    "stadium": "Campo Municipal Aljezur",
                     "homeScore": null,
                     "awayScore": null
                 }
