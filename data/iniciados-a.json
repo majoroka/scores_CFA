@@ -799,11 +799,20 @@
                 {
                     "home": "Internacional Ca",
                     "away": "Gd Lagoa",
-                    "date": "19 abr",
-                    "time": "09:00",
+                    "date": "2 - 2                            \r\n                \r\n                    19 abr",
+                    "time": "",
                     "stadium": "Estadio Municipal De Almancil",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 2,
+                    "awayScore": 2
+                },
+                {
+                    "home": "Aa Belavista",
+                    "away": "Cf Os Armacenenses",
+                    "date": "8 - 1                            \r\n                \r\n                    19 abr",
+                    "time": "",
+                    "stadium": "Estádio Municipal Da Bela Vista",
+                    "homeScore": 8,
+                    "awayScore": 1
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -811,15 +820,6 @@
                     "date": "19 abr",
                     "time": "11:00",
                     "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Aa Belavista",
-                    "away": "Cf Os Armacenenses",
-                    "date": "19 abr",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Da Bela Vista",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -837,16 +837,27 @@
                 {
                     "position": 1,
                     "team": "Aa Belavista",
-                    "played": 6,
-                    "wins": 6,
+                    "played": 7,
+                    "wins": 7,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 30,
-                    "goalsAgainst": 7,
-                    "points": 18
+                    "goalsFor": 38,
+                    "goalsAgainst": 8,
+                    "points": 21
                 },
                 {
                     "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 7,
+                    "wins": 4,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 16,
+                    "goalsAgainst": 13,
+                    "points": 13
+                },
+                {
+                    "position": 3,
                     "team": "Fc Ferreiras",
                     "played": 6,
                     "wins": 4,
@@ -857,24 +868,13 @@
                     "points": 12
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Js Campinense",
                     "played": 6,
                     "wins": 4,
                     "draws": 0,
                     "losses": 2,
                     "goalsFor": 19,
-                    "goalsAgainst": 11,
-                    "points": 12
-                },
-                {
-                    "position": 4,
-                    "team": "Gd Lagoa",
-                    "played": 6,
-                    "wins": 4,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 14,
                     "goalsAgainst": 11,
                     "points": 12
                 },
@@ -892,24 +892,24 @@
                 {
                     "position": 6,
                     "team": "Cf Os Armacenenses",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 3,
-                    "goalsFor": 13,
-                    "goalsAgainst": 19,
+                    "losses": 4,
+                    "goalsFor": 14,
+                    "goalsAgainst": 27,
                     "points": 5
                 },
                 {
                     "position": 7,
                     "team": "Internacional Ca",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 4,
-                    "goalsFor": 12,
-                    "goalsAgainst": 27,
-                    "points": 4
+                    "goalsFor": 14,
+                    "goalsAgainst": 29,
+                    "points": 5
                 },
                 {
                     "position": 8,
@@ -969,16 +969,27 @@
                 {
                     "position": 1,
                     "team": "Aa Belavista",
-                    "played": 6,
-                    "wins": 6,
+                    "played": 7,
+                    "wins": 7,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 30,
-                    "goalsAgainst": 7,
-                    "points": 18
+                    "goalsFor": 38,
+                    "goalsAgainst": 8,
+                    "points": 21
                 },
                 {
                     "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 7,
+                    "wins": 4,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 16,
+                    "goalsAgainst": 13,
+                    "points": 13
+                },
+                {
+                    "position": 3,
                     "team": "Fc Ferreiras",
                     "played": 6,
                     "wins": 4,
@@ -989,24 +1000,13 @@
                     "points": 12
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Js Campinense",
                     "played": 6,
                     "wins": 4,
                     "draws": 0,
                     "losses": 2,
                     "goalsFor": 19,
-                    "goalsAgainst": 11,
-                    "points": 12
-                },
-                {
-                    "position": 4,
-                    "team": "Gd Lagoa",
-                    "played": 6,
-                    "wins": 4,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 14,
                     "goalsAgainst": 11,
                     "points": 12
                 },
@@ -1024,24 +1024,24 @@
                 {
                     "position": 6,
                     "team": "Cf Os Armacenenses",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 3,
-                    "goalsFor": 13,
-                    "goalsAgainst": 19,
+                    "losses": 4,
+                    "goalsFor": 14,
+                    "goalsAgainst": 27,
                     "points": 5
                 },
                 {
                     "position": 7,
                     "team": "Internacional Ca",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 4,
-                    "goalsFor": 12,
-                    "goalsAgainst": 27,
-                    "points": 4
+                    "goalsFor": 14,
+                    "goalsAgainst": 29,
+                    "points": 5
                 },
                 {
                     "position": 8,
@@ -1101,16 +1101,27 @@
                 {
                     "position": 1,
                     "team": "Aa Belavista",
-                    "played": 6,
-                    "wins": 6,
+                    "played": 7,
+                    "wins": 7,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 30,
-                    "goalsAgainst": 7,
-                    "points": 18
+                    "goalsFor": 38,
+                    "goalsAgainst": 8,
+                    "points": 21
                 },
                 {
                     "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 7,
+                    "wins": 4,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 16,
+                    "goalsAgainst": 13,
+                    "points": 13
+                },
+                {
+                    "position": 3,
                     "team": "Fc Ferreiras",
                     "played": 6,
                     "wins": 4,
@@ -1121,24 +1132,13 @@
                     "points": 12
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Js Campinense",
                     "played": 6,
                     "wins": 4,
                     "draws": 0,
                     "losses": 2,
                     "goalsFor": 19,
-                    "goalsAgainst": 11,
-                    "points": 12
-                },
-                {
-                    "position": 4,
-                    "team": "Gd Lagoa",
-                    "played": 6,
-                    "wins": 4,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 14,
                     "goalsAgainst": 11,
                     "points": 12
                 },
@@ -1156,24 +1156,24 @@
                 {
                     "position": 6,
                     "team": "Cf Os Armacenenses",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 3,
-                    "goalsFor": 13,
-                    "goalsAgainst": 19,
+                    "losses": 4,
+                    "goalsFor": 14,
+                    "goalsAgainst": 27,
                     "points": 5
                 },
                 {
                     "position": 7,
                     "team": "Internacional Ca",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 4,
-                    "goalsFor": 12,
-                    "goalsAgainst": 27,
-                    "points": 4
+                    "goalsFor": 14,
+                    "goalsAgainst": 29,
+                    "points": 5
                 },
                 {
                     "position": 8,
@@ -1233,16 +1233,27 @@
                 {
                     "position": 1,
                     "team": "Aa Belavista",
-                    "played": 6,
-                    "wins": 6,
+                    "played": 7,
+                    "wins": 7,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 30,
-                    "goalsAgainst": 7,
-                    "points": 18
+                    "goalsFor": 38,
+                    "goalsAgainst": 8,
+                    "points": 21
                 },
                 {
                     "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 7,
+                    "wins": 4,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 16,
+                    "goalsAgainst": 13,
+                    "points": 13
+                },
+                {
+                    "position": 3,
                     "team": "Fc Ferreiras",
                     "played": 6,
                     "wins": 4,
@@ -1253,24 +1264,13 @@
                     "points": 12
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Js Campinense",
                     "played": 6,
                     "wins": 4,
                     "draws": 0,
                     "losses": 2,
                     "goalsFor": 19,
-                    "goalsAgainst": 11,
-                    "points": 12
-                },
-                {
-                    "position": 4,
-                    "team": "Gd Lagoa",
-                    "played": 6,
-                    "wins": 4,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 14,
                     "goalsAgainst": 11,
                     "points": 12
                 },
@@ -1288,24 +1288,24 @@
                 {
                     "position": 6,
                     "team": "Cf Os Armacenenses",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 3,
-                    "goalsFor": 13,
-                    "goalsAgainst": 19,
+                    "losses": 4,
+                    "goalsFor": 14,
+                    "goalsAgainst": 27,
                     "points": 5
                 },
                 {
                     "position": 7,
                     "team": "Internacional Ca",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 4,
-                    "goalsFor": 12,
-                    "goalsAgainst": 27,
-                    "points": 4
+                    "goalsFor": 14,
+                    "goalsAgainst": 29,
+                    "points": 5
                 },
                 {
                     "position": 8,
@@ -1365,16 +1365,27 @@
                 {
                     "position": 1,
                     "team": "Aa Belavista",
-                    "played": 6,
-                    "wins": 6,
+                    "played": 7,
+                    "wins": 7,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 30,
-                    "goalsAgainst": 7,
-                    "points": 18
+                    "goalsFor": 38,
+                    "goalsAgainst": 8,
+                    "points": 21
                 },
                 {
                     "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 7,
+                    "wins": 4,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 16,
+                    "goalsAgainst": 13,
+                    "points": 13
+                },
+                {
+                    "position": 3,
                     "team": "Fc Ferreiras",
                     "played": 6,
                     "wins": 4,
@@ -1385,24 +1396,13 @@
                     "points": 12
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Js Campinense",
                     "played": 6,
                     "wins": 4,
                     "draws": 0,
                     "losses": 2,
                     "goalsFor": 19,
-                    "goalsAgainst": 11,
-                    "points": 12
-                },
-                {
-                    "position": 4,
-                    "team": "Gd Lagoa",
-                    "played": 6,
-                    "wins": 4,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 14,
                     "goalsAgainst": 11,
                     "points": 12
                 },
@@ -1420,24 +1420,24 @@
                 {
                     "position": 6,
                     "team": "Cf Os Armacenenses",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 3,
-                    "goalsFor": 13,
-                    "goalsAgainst": 19,
+                    "losses": 4,
+                    "goalsFor": 14,
+                    "goalsAgainst": 27,
                     "points": 5
                 },
                 {
                     "position": 7,
                     "team": "Internacional Ca",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 4,
-                    "goalsFor": 12,
-                    "goalsAgainst": 27,
-                    "points": 4
+                    "goalsFor": 14,
+                    "goalsAgainst": 29,
+                    "points": 5
                 },
                 {
                     "position": 8,
@@ -1497,16 +1497,27 @@
                 {
                     "position": 1,
                     "team": "Aa Belavista",
-                    "played": 6,
-                    "wins": 6,
+                    "played": 7,
+                    "wins": 7,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 30,
-                    "goalsAgainst": 7,
-                    "points": 18
+                    "goalsFor": 38,
+                    "goalsAgainst": 8,
+                    "points": 21
                 },
                 {
                     "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 7,
+                    "wins": 4,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 16,
+                    "goalsAgainst": 13,
+                    "points": 13
+                },
+                {
+                    "position": 3,
                     "team": "Fc Ferreiras",
                     "played": 6,
                     "wins": 4,
@@ -1517,24 +1528,13 @@
                     "points": 12
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Js Campinense",
                     "played": 6,
                     "wins": 4,
                     "draws": 0,
                     "losses": 2,
                     "goalsFor": 19,
-                    "goalsAgainst": 11,
-                    "points": 12
-                },
-                {
-                    "position": 4,
-                    "team": "Gd Lagoa",
-                    "played": 6,
-                    "wins": 4,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 14,
                     "goalsAgainst": 11,
                     "points": 12
                 },
@@ -1552,24 +1552,24 @@
                 {
                     "position": 6,
                     "team": "Cf Os Armacenenses",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 3,
-                    "goalsFor": 13,
-                    "goalsAgainst": 19,
+                    "losses": 4,
+                    "goalsFor": 14,
+                    "goalsAgainst": 27,
                     "points": 5
                 },
                 {
                     "position": 7,
                     "team": "Internacional Ca",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 4,
-                    "goalsFor": 12,
-                    "goalsAgainst": 27,
-                    "points": 4
+                    "goalsFor": 14,
+                    "goalsAgainst": 29,
+                    "points": 5
                 },
                 {
                     "position": 8,
@@ -1629,16 +1629,27 @@
                 {
                     "position": 1,
                     "team": "Aa Belavista",
-                    "played": 6,
-                    "wins": 6,
+                    "played": 7,
+                    "wins": 7,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 30,
-                    "goalsAgainst": 7,
-                    "points": 18
+                    "goalsFor": 38,
+                    "goalsAgainst": 8,
+                    "points": 21
                 },
                 {
                     "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 7,
+                    "wins": 4,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 16,
+                    "goalsAgainst": 13,
+                    "points": 13
+                },
+                {
+                    "position": 3,
                     "team": "Fc Ferreiras",
                     "played": 6,
                     "wins": 4,
@@ -1649,24 +1660,13 @@
                     "points": 12
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Js Campinense",
                     "played": 6,
                     "wins": 4,
                     "draws": 0,
                     "losses": 2,
                     "goalsFor": 19,
-                    "goalsAgainst": 11,
-                    "points": 12
-                },
-                {
-                    "position": 4,
-                    "team": "Gd Lagoa",
-                    "played": 6,
-                    "wins": 4,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 14,
                     "goalsAgainst": 11,
                     "points": 12
                 },
@@ -1684,24 +1684,24 @@
                 {
                     "position": 6,
                     "team": "Cf Os Armacenenses",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 3,
-                    "goalsFor": 13,
-                    "goalsAgainst": 19,
+                    "losses": 4,
+                    "goalsFor": 14,
+                    "goalsAgainst": 27,
                     "points": 5
                 },
                 {
                     "position": 7,
                     "team": "Internacional Ca",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 4,
-                    "goalsFor": 12,
-                    "goalsAgainst": 27,
-                    "points": 4
+                    "goalsFor": 14,
+                    "goalsAgainst": 29,
+                    "points": 5
                 },
                 {
                     "position": 8,
@@ -1761,16 +1761,27 @@
                 {
                     "position": 1,
                     "team": "Aa Belavista",
-                    "played": 6,
-                    "wins": 6,
+                    "played": 7,
+                    "wins": 7,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 30,
-                    "goalsAgainst": 7,
-                    "points": 18
+                    "goalsFor": 38,
+                    "goalsAgainst": 8,
+                    "points": 21
                 },
                 {
                     "position": 2,
+                    "team": "Gd Lagoa",
+                    "played": 7,
+                    "wins": 4,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 16,
+                    "goalsAgainst": 13,
+                    "points": 13
+                },
+                {
+                    "position": 3,
                     "team": "Fc Ferreiras",
                     "played": 6,
                     "wins": 4,
@@ -1781,24 +1792,13 @@
                     "points": 12
                 },
                 {
-                    "position": 3,
+                    "position": 4,
                     "team": "Js Campinense",
                     "played": 6,
                     "wins": 4,
                     "draws": 0,
                     "losses": 2,
                     "goalsFor": 19,
-                    "goalsAgainst": 11,
-                    "points": 12
-                },
-                {
-                    "position": 4,
-                    "team": "Gd Lagoa",
-                    "played": 6,
-                    "wins": 4,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 14,
                     "goalsAgainst": 11,
                     "points": 12
                 },
@@ -1816,24 +1816,24 @@
                 {
                     "position": 6,
                     "team": "Cf Os Armacenenses",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 3,
-                    "goalsFor": 13,
-                    "goalsAgainst": 19,
+                    "losses": 4,
+                    "goalsFor": 14,
+                    "goalsAgainst": 27,
                     "points": 5
                 },
                 {
                     "position": 7,
                     "team": "Internacional Ca",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 4,
-                    "goalsFor": 12,
-                    "goalsAgainst": 27,
-                    "points": 4
+                    "goalsFor": 14,
+                    "goalsAgainst": 29,
+                    "points": 5
                 },
                 {
                     "position": 8,
