@@ -137,15 +137,6 @@
             "fixtureId": "626067",
             "matches": [
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Gd Lagoa",
-                    "date": "1 - 2                            \r\n                \r\n                    17 jan",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 1,
-                    "awayScore": 2
-                },
-                {
                     "home": "Casa Benfica Tavira",
                     "away": "Aef João Moutinho",
                     "date": "5 - 0                            \r\n                \r\n                    17 jan",
@@ -153,6 +144,15 @@
                     "stadium": "Campo De Futebol Municipal De Tavira",
                     "homeScore": 5,
                     "awayScore": 0
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Gd Lagoa",
+                    "date": "1 - 2                            \r\n                \r\n                    17 jan",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 1,
+                    "awayScore": 2
                 },
                 {
                     "home": "Sc Farense",
@@ -665,15 +665,6 @@
             "fixtureId": "626071",
             "matches": [
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Fc Ferreiras",
-                    "date": "0 - 3                            \r\n                \r\n                    28 fev",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 0,
-                    "awayScore": 3
-                },
-                {
                     "home": "Fc Ferreiras",
                     "away": "Casa Benfica Tavira",
                     "date": "1 - 5                            \r\n                \r\n                    28 fev",
@@ -690,6 +681,15 @@
                     "stadium": "Parque Desportivo Municipal Estombar",
                     "homeScore": 1,
                     "awayScore": 0
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Fc Ferreiras",
+                    "date": "0 - 3                            \r\n                \r\n                    28 fev",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 0,
+                    "awayScore": 3
                 },
                 {
                     "home": "Gd Lagoa",
@@ -1070,15 +1070,6 @@
                     "awayScore": 0
                 },
                 {
-                    "home": "Fc Ferreiras",
-                    "away": "Sc Farense",
-                    "date": "0 - 6                            \r\n                \r\n                    28 mar",
-                    "time": "",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": 0,
-                    "awayScore": 6
-                },
-                {
                     "home": "Aef João Moutinho",
                     "away": "Casa Benfica Tavira",
                     "date": "2 - 7                            \r\n                \r\n                    28 mar",
@@ -1086,6 +1077,15 @@
                     "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": 2,
                     "awayScore": 7
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Sc Farense",
+                    "date": "0 - 6                            \r\n                \r\n                    28 mar",
+                    "time": "",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": 0,
+                    "awayScore": 6
                 },
                 {
                     "home": "Gd Lagoa",
@@ -1354,11 +1354,11 @@
                 {
                     "home": "Fc Ferreiras",
                     "away": "Fc Ferreiras",
-                    "date": "0 - 3                            \r\n                \r\n                    22 abr",
+                    "date": "3 - 0                            \r\n                \r\n                    22 abr",
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
-                    "homeScore": 0,
-                    "awayScore": 3
+                    "homeScore": 3,
+                    "awayScore": 0
                 }
             ],
             "classification": [
@@ -1410,12 +1410,12 @@
                     "position": 5,
                     "team": "Fc Ferreiras",
                     "played": 11,
-                    "wins": 4,
+                    "wins": 3,
                     "draws": 3,
-                    "losses": 4,
-                    "goalsFor": 15,
-                    "goalsAgainst": 16,
-                    "points": 15
+                    "losses": 5,
+                    "goalsFor": 12,
+                    "goalsAgainst": 19,
+                    "points": 12
                 },
                 {
                     "position": 6,
@@ -1443,12 +1443,12 @@
                     "position": 8,
                     "team": "Fc Ferreiras",
                     "played": 11,
-                    "wins": 1,
+                    "wins": 2,
                     "draws": 0,
-                    "losses": 10,
-                    "goalsFor": 5,
-                    "goalsAgainst": 51,
-                    "points": 3
+                    "losses": 9,
+                    "goalsFor": 8,
+                    "goalsAgainst": 48,
+                    "points": 6
                 }
             ]
         },
@@ -1542,12 +1542,12 @@
                     "position": 5,
                     "team": "Fc Ferreiras",
                     "played": 11,
-                    "wins": 4,
+                    "wins": 3,
                     "draws": 3,
-                    "losses": 4,
-                    "goalsFor": 15,
-                    "goalsAgainst": 16,
-                    "points": 15
+                    "losses": 5,
+                    "goalsFor": 12,
+                    "goalsAgainst": 19,
+                    "points": 12
                 },
                 {
                     "position": 6,
@@ -1575,12 +1575,12 @@
                     "position": 8,
                     "team": "Fc Ferreiras",
                     "played": 11,
-                    "wins": 1,
+                    "wins": 2,
                     "draws": 0,
-                    "losses": 10,
-                    "goalsFor": 5,
-                    "goalsAgainst": 51,
-                    "points": 3
+                    "losses": 9,
+                    "goalsFor": 8,
+                    "goalsAgainst": 48,
+                    "points": 6
                 }
             ]
         },
@@ -1674,12 +1674,12 @@
                     "position": 5,
                     "team": "Fc Ferreiras",
                     "played": 11,
-                    "wins": 4,
+                    "wins": 3,
                     "draws": 3,
-                    "losses": 4,
-                    "goalsFor": 15,
-                    "goalsAgainst": 16,
-                    "points": 15
+                    "losses": 5,
+                    "goalsFor": 12,
+                    "goalsAgainst": 19,
+                    "points": 12
                 },
                 {
                     "position": 6,
@@ -1707,12 +1707,12 @@
                     "position": 8,
                     "team": "Fc Ferreiras",
                     "played": 11,
-                    "wins": 1,
+                    "wins": 2,
                     "draws": 0,
-                    "losses": 10,
-                    "goalsFor": 5,
-                    "goalsAgainst": 51,
-                    "points": 3
+                    "losses": 9,
+                    "goalsFor": 8,
+                    "goalsAgainst": 48,
+                    "points": 6
                 }
             ]
         },
@@ -1806,12 +1806,12 @@
                     "position": 5,
                     "team": "Fc Ferreiras",
                     "played": 11,
-                    "wins": 4,
+                    "wins": 3,
                     "draws": 3,
-                    "losses": 4,
-                    "goalsFor": 15,
-                    "goalsAgainst": 16,
-                    "points": 15
+                    "losses": 5,
+                    "goalsFor": 12,
+                    "goalsAgainst": 19,
+                    "points": 12
                 },
                 {
                     "position": 6,
@@ -1839,12 +1839,12 @@
                     "position": 8,
                     "team": "Fc Ferreiras",
                     "played": 11,
-                    "wins": 1,
+                    "wins": 2,
                     "draws": 0,
-                    "losses": 10,
-                    "goalsFor": 5,
-                    "goalsAgainst": 51,
-                    "points": 3
+                    "losses": 9,
+                    "goalsFor": 8,
+                    "goalsAgainst": 48,
+                    "points": 6
                 }
             ]
         }
