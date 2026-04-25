@@ -409,15 +409,6 @@
             "fixtureId": "641128",
             "matches": [
                 {
-                    "home": "Fc Ferreiras",
-                    "away": "Jc Aljezurense",
-                    "date": "11 abr",
-                    "time": "",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": 2,
-                    "awayScore": 1
-                },
-                {
                     "home": "Associacao Fut. F.O.",
                     "away": "Portimonense Sc",
                     "date": "11 abr",
@@ -425,6 +416,15 @@
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": 3,
                     "awayScore": 12
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Jc Aljezurense",
+                    "date": "11 abr",
+                    "time": "",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": 2,
+                    "awayScore": 1
                 },
                 {
                     "home": "Sc Farense",
@@ -519,15 +519,6 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Associacao Fut. F.O.",
-                    "away": "Cf Os Armacenenses",
-                    "date": "18 abr",
-                    "time": "",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": 2,
-                    "awayScore": 6
-                },
-                {
                     "home": "Portimonense Sc",
                     "away": "Jc Aljezurense",
                     "date": "18 abr",
@@ -535,6 +526,15 @@
                     "stadium": "Campo Major David Neto 2",
                     "homeScore": 10,
                     "awayScore": 0
+                },
+                {
+                    "home": "Associacao Fut. F.O.",
+                    "away": "Cf Os Armacenenses",
+                    "date": "18 abr",
+                    "time": "",
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
+                    "homeScore": 2,
+                    "awayScore": 6
                 }
             ],
             "classification": [
@@ -620,20 +620,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Jc Aljezurense",
-                    "away": "Sc Farense",
-                    "date": "2 mai",
-                    "time": "12:00",
-                    "stadium": "Campo Municipal Aljezur",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Fc Ferreiras",
                     "away": "Associacao Fut. F.O.",
                     "date": "2 mai",
                     "time": "12:00",
                     "stadium": "Estádio Nora Nº 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Jc Aljezurense",
+                    "away": "Sc Farense",
+                    "date": "2 mai",
+                    "time": "12:00",
+                    "stadium": "Campo Municipal Aljezur",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -923,20 +923,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Sc Farense",
-                    "date": "23 mai",
-                    "time": "10:30",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Jc Aljezurense",
                     "away": "Fc Ferreiras",
                     "date": "23 mai",
                     "time": "10:30",
                     "stadium": "Campo Municipal Aljezur",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Sc Farense",
+                    "date": "23 mai",
+                    "time": "10:30",
+                    "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": null,
                     "awayScore": null
                 }
