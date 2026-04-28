@@ -3,9 +3,9 @@ import os
 import re
 import time
 import html
-import urllib.request
-import urllib.error
 import unicodedata
+
+from fpf_http import get_page_content as fetch_page_content
 
 # --- CONFIGURAÇÃO ---
 COMPETITION_URL = "https://resultados.fpf.pt/Competition/Details?competitionId=28206&seasonId=105"
@@ -167,37 +167,14 @@ def parse_classification_from_fragment_v2(html_fragment: str):
 # --- FUNÇÕES AUXILIARES ---
 
 def get_page_content(url, cache_key):
-    """Busca conteúdo de uma URL, com suporte a cache e backoff."""
-    cache_path = os.path.join(CACHE_DIR, f"{cache_key}.html")
-    
-    if USE_CACHE and os.path.exists(cache_path):
-        print(f"Lendo do cache: {cache_key}")
-        with open(cache_path, 'r', encoding='utf-8') as f:
-            return f.read()
-
-    print(f"Buscando da web: {url}")
-    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
-    req = urllib.request.Request(url, headers=headers)
-    
-    try:
-        with urllib.request.urlopen(req) as response:
-            content = response.read().decode('utf-8')
-            if USE_CACHE:
-                os.makedirs(CACHE_DIR, exist_ok=True)
-                with open(cache_path, 'w', encoding='utf-8') as f:
-                    f.write(content)
-            return content
-    except urllib.error.HTTPError as e:
-        if e.code == 429: # Too Many Requests
-            print("Erro 429: Muitas requisições. Aguardando 60 segundos...")
-            time.sleep(60)
-            return get_page_content(url, cache_key) # Tenta novamente
-        else:
-            print(f"Erro HTTP ao buscar {url}: {e.code} {e.reason}")
-            return None
-    except Exception as e:
-        print(f"Erro ao buscar {url}: {e}")
-        return None
+    """Busca conteúdo de uma URL, com suporte a cache e retries."""
+    return fetch_page_content(
+        url,
+        cache_dir=CACHE_DIR,
+        use_cache=USE_CACHE,
+        cache_key=cache_key,
+        verbose=True,
+    )
 
 def main():
     """Função principal para orquestrar o scraping."""

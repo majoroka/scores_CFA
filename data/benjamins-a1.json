@@ -216,15 +216,6 @@
                     "awayScore": 2
                 },
                 {
-                    "home": "Sc Farense",
-                    "away": "Associacao Fut. F.O.",
-                    "date": "14 mar",
-                    "time": "",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": 2,
-                    "awayScore": 3
-                },
-                {
                     "home": "Fc Ferreiras",
                     "away": "Portimonense Sc",
                     "date": "14 mar",
@@ -232,6 +223,15 @@
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 6,
                     "awayScore": 4
+                },
+                {
+                    "home": "Sc Farense",
+                    "away": "Associacao Fut. F.O.",
+                    "date": "14 mar",
+                    "time": "",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": 2,
+                    "awayScore": 3
                 }
             ],
             "classification": [
@@ -409,15 +409,6 @@
             "fixtureId": "641128",
             "matches": [
                 {
-                    "home": "Associacao Fut. F.O.",
-                    "away": "Portimonense Sc",
-                    "date": "11 abr",
-                    "time": "",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": 3,
-                    "awayScore": 12
-                },
-                {
                     "home": "Fc Ferreiras",
                     "away": "Jc Aljezurense",
                     "date": "11 abr",
@@ -425,6 +416,15 @@
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 2,
                     "awayScore": 1
+                },
+                {
+                    "home": "Associacao Fut. F.O.",
+                    "away": "Portimonense Sc",
+                    "date": "11 abr",
+                    "time": "",
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
+                    "homeScore": 3,
+                    "awayScore": 12
                 },
                 {
                     "home": "Sc Farense",
@@ -513,10 +513,10 @@
                     "home": "Sc Farense",
                     "away": "Fc Ferreiras",
                     "date": "18 abr",
-                    "time": "09:00",
+                    "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 3,
+                    "awayScore": 9
                 },
                 {
                     "home": "Associacao Fut. F.O.",
@@ -552,27 +552,16 @@
                 {
                     "position": 2,
                     "team": "Fc Ferreiras",
-                    "played": 4,
-                    "wins": 4,
+                    "played": 5,
+                    "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 23,
-                    "goalsAgainst": 13,
-                    "points": 12
+                    "goalsFor": 32,
+                    "goalsAgainst": 16,
+                    "points": 15
                 },
                 {
                     "position": 3,
-                    "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 22,
-                    "goalsAgainst": 23,
-                    "points": 6
-                },
-                {
-                    "position": 4,
                     "team": "Cf Os Armacenenses",
                     "played": 5,
                     "wins": 2,
@@ -580,6 +569,17 @@
                     "losses": 3,
                     "goalsFor": 18,
                     "goalsAgainst": 20,
+                    "points": 6
+                },
+                {
+                    "position": 4,
+                    "team": "Sc Farense",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 25,
+                    "goalsAgainst": 32,
                     "points": 6
                 },
                 {
@@ -653,27 +653,16 @@
                 {
                     "position": 2,
                     "team": "Fc Ferreiras",
-                    "played": 4,
-                    "wins": 4,
+                    "played": 5,
+                    "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 23,
-                    "goalsAgainst": 13,
-                    "points": 12
+                    "goalsFor": 32,
+                    "goalsAgainst": 16,
+                    "points": 15
                 },
                 {
                     "position": 3,
-                    "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 22,
-                    "goalsAgainst": 23,
-                    "points": 6
-                },
-                {
-                    "position": 4,
                     "team": "Cf Os Armacenenses",
                     "played": 5,
                     "wins": 2,
@@ -681,6 +670,17 @@
                     "losses": 3,
                     "goalsFor": 18,
                     "goalsAgainst": 20,
+                    "points": 6
+                },
+                {
+                    "position": 4,
+                    "team": "Sc Farense",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 25,
+                    "goalsAgainst": 32,
                     "points": 6
                 },
                 {
@@ -754,27 +754,16 @@
                 {
                     "position": 2,
                     "team": "Fc Ferreiras",
-                    "played": 4,
-                    "wins": 4,
+                    "played": 5,
+                    "wins": 5,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 23,
-                    "goalsAgainst": 13,
-                    "points": 12
+                    "goalsFor": 32,
+                    "goalsAgainst": 16,
+                    "points": 15
                 },
                 {
                     "position": 3,
-                    "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 22,
-                    "goalsAgainst": 23,
-                    "points": 6
-                },
-                {
-                    "position": 4,
                     "team": "Cf Os Armacenenses",
                     "played": 5,
                     "wins": 2,
@@ -782,6 +771,17 @@
                     "losses": 3,
                     "goalsFor": 18,
                     "goalsAgainst": 20,
+                    "points": 6
+                },
+                {
+                    "position": 4,
+                    "team": "Sc Farense",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 25,
+                    "goalsAgainst": 32,
                     "points": 6
                 },
                 {
@@ -843,6 +843,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Fc Ferreiras",
+                    "played": 6,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 38,
+                    "goalsAgainst": 19,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Portimonense Sc",
                     "played": 6,
                     "wins": 5,
@@ -853,29 +864,7 @@
                     "points": 15
                 },
                 {
-                    "position": 2,
-                    "team": "Fc Ferreiras",
-                    "played": 5,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 29,
-                    "goalsAgainst": 16,
-                    "points": 15
-                },
-                {
                     "position": 3,
-                    "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 22,
-                    "goalsAgainst": 23,
-                    "points": 6
-                },
-                {
-                    "position": 4,
                     "team": "Cf Os Armacenenses",
                     "played": 6,
                     "wins": 2,
@@ -883,6 +872,17 @@
                     "losses": 4,
                     "goalsFor": 21,
                     "goalsAgainst": 26,
+                    "points": 6
+                },
+                {
+                    "position": 4,
+                    "team": "Sc Farense",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 25,
+                    "goalsAgainst": 32,
                     "points": 6
                 },
                 {
@@ -914,20 +914,20 @@
             "fixtureId": "641133",
             "matches": [
                 {
-                    "home": "Jc Aljezurense",
-                    "away": "Fc Ferreiras",
-                    "date": "23 mai",
-                    "time": "10:30",
-                    "stadium": "Campo Municipal Aljezur",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Portimonense Sc",
                     "away": "Associacao Fut. F.O.",
                     "date": "23 mai",
                     "time": "10:30",
                     "stadium": "Campo Major David Neto 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Jc Aljezurense",
+                    "away": "Fc Ferreiras",
+                    "date": "23 mai",
+                    "time": "10:30",
+                    "stadium": "Campo Municipal Aljezur",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -944,6 +944,17 @@
             "classification": [
                 {
                     "position": 1,
+                    "team": "Fc Ferreiras",
+                    "played": 6,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 38,
+                    "goalsAgainst": 19,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Portimonense Sc",
                     "played": 6,
                     "wins": 5,
@@ -954,29 +965,7 @@
                     "points": 15
                 },
                 {
-                    "position": 2,
-                    "team": "Fc Ferreiras",
-                    "played": 5,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 29,
-                    "goalsAgainst": 16,
-                    "points": 15
-                },
-                {
                     "position": 3,
-                    "team": "Sc Farense",
-                    "played": 5,
-                    "wins": 2,
-                    "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 22,
-                    "goalsAgainst": 23,
-                    "points": 6
-                },
-                {
-                    "position": 4,
                     "team": "Cf Os Armacenenses",
                     "played": 6,
                     "wins": 2,
@@ -984,6 +973,17 @@
                     "losses": 4,
                     "goalsFor": 21,
                     "goalsAgainst": 26,
+                    "points": 6
+                },
+                {
+                    "position": 4,
+                    "team": "Sc Farense",
+                    "played": 6,
+                    "wins": 2,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 25,
+                    "goalsAgainst": 32,
                     "points": 6
                 },
                 {

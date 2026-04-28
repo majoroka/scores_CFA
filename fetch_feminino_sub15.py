@@ -3,8 +3,7 @@ import os
 import re
 import time
 import html
-import urllib.request
-import urllib.error
+from fpf_http import get_page_content as fetch_page_content
 import unicodedata
 
 COMPETITION_URL = "https://resultados.fpf.pt/Competition/Details?competitionId=28562&seasonId=105"
@@ -139,39 +138,12 @@ def parse_classification(html_fragment: str):
 
 
 def get_page_content(url: str, cache_key: str):
-    cache_path = os.path.join(CACHE_DIR, f"{cache_key}.html")
-
-    if USE_CACHE and os.path.exists(cache_path):
-        with open(cache_path, "r", encoding="utf-8") as handle:
-            return handle.read()
-
-    os.makedirs(CACHE_DIR, exist_ok=True)
-    request = urllib.request.Request(
+    return fetch_page_content(
         url,
-        headers={
-            "User-Agent": (
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                "AppleWebKit/537.36 (KHTML, like Gecko) "
-                "Chrome/120.0 Safari/537.36"
-            )
-        },
+        cache_dir=CACHE_DIR,
+        use_cache=USE_CACHE,
+        cache_key=cache_key,
     )
-
-    try:
-        with urllib.request.urlopen(request) as response:
-            content = response.read().decode("utf-8")
-            if USE_CACHE:
-                with open(cache_path, "w", encoding="utf-8") as handle:
-                    handle.write(content)
-            return content
-    except urllib.error.HTTPError as exc:
-        if exc.code == 429:
-            time.sleep(60)
-            return get_page_content(url, cache_key)
-        print(f"HTTP error {exc.code} while requesting {url}")
-    except Exception as exc:
-        print(f"Error requesting {url}: {exc}")
-    return None
 
 
 def main():

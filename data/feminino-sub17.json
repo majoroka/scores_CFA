@@ -146,15 +146,6 @@
                     "awayScore": 12
                 },
                 {
-                    "home": "Ud Messinense",
-                    "away": "Cf Os Armacenenses - A",
-                    "date": "1 - 1                            \r\n                \r\n                    8 mar",
-                    "time": "",
-                    "stadium": "Estádio Municipal Messines",
-                    "homeScore": 1,
-                    "awayScore": 1
-                },
-                {
                     "home": "Padernense Clube",
                     "away": "Jc Aljezurense",
                     "date": "2 - 3                            \r\n                \r\n                    8 mar",
@@ -162,6 +153,15 @@
                     "stadium": "Campo Montes Elois",
                     "homeScore": 2,
                     "awayScore": 3
+                },
+                {
+                    "home": "Ud Messinense",
+                    "away": "Cf Os Armacenenses - A",
+                    "date": "1 - 1                            \r\n                \r\n                    8 mar",
+                    "time": "",
+                    "stadium": "Estádio Municipal Messines",
+                    "homeScore": 1,
+                    "awayScore": 1
                 },
                 {
                     "home": "Cd Montenegro",
@@ -674,15 +674,6 @@
                     "awayScore": 0
                 },
                 {
-                    "home": "Padernense Clube",
-                    "away": "Ud Messinense",
-                    "date": "2 - 4                            \r\n                \r\n                    12 abr",
-                    "time": "",
-                    "stadium": "Campo Montes Elois",
-                    "homeScore": 2,
-                    "awayScore": 4
-                },
-                {
                     "home": "Jd Monchiquense",
                     "away": "Cd Montenegro",
                     "date": "0 - 1                            \r\n                \r\n                    12 abr",
@@ -690,6 +681,15 @@
                     "stadium": "Parque Desportivo Jd Monchiquense",
                     "homeScore": 0,
                     "awayScore": 1
+                },
+                {
+                    "home": "Padernense Clube",
+                    "away": "Ud Messinense",
+                    "date": "2 - 4                            \r\n                \r\n                    12 abr",
+                    "time": "",
+                    "stadium": "Campo Montes Elois",
+                    "homeScore": 2,
+                    "awayScore": 4
                 },
                 {
                     "home": "Jc Aljezurense",
@@ -797,6 +797,15 @@
             "fixtureId": "641036",
             "matches": [
                 {
+                    "home": "Cf Os Armacenenses - B",
+                    "away": "Aef João Moutinho",
+                    "date": "0 - 11                            \r\n                \r\n                    19 abr",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 0,
+                    "awayScore": 11
+                },
+                {
                     "home": "Cd Montenegro",
                     "away": "Padernense Clube",
                     "date": "2 - 5                            \r\n                \r\n                    19 abr",
@@ -804,15 +813,6 @@
                     "stadium": "Campo Horta Da Areia",
                     "homeScore": 2,
                     "awayScore": 5
-                },
-                {
-                    "home": "Cf Os Armacenenses - B",
-                    "away": "Aef João Moutinho",
-                    "date": "19 abr",
-                    "time": "09:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
                 },
                 {
                     "home": "Ud Messinense",
@@ -826,11 +826,11 @@
                 {
                     "home": "Cf Os Armacenenses - A",
                     "away": "Jd Monchiquense",
-                    "date": "19 abr",
-                    "time": "18:45",
+                    "date": "3 - 4                            \r\n                \r\n                    19 abr",
+                    "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 3,
+                    "awayScore": 4
                 }
             ],
             "classification": [
@@ -848,24 +848,24 @@
                 {
                     "position": 2,
                     "team": "Jd Monchiquense",
-                    "played": 6,
-                    "wins": 4,
+                    "played": 7,
+                    "wins": 5,
                     "draws": 1,
                     "losses": 1,
-                    "goalsFor": 23,
-                    "goalsAgainst": 4,
-                    "points": 13
+                    "goalsFor": 27,
+                    "goalsAgainst": 7,
+                    "points": 16
                 },
                 {
                     "position": 3,
                     "team": "Aef João Moutinho",
-                    "played": 6,
-                    "wins": 4,
+                    "played": 7,
+                    "wins": 5,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 19,
+                    "goalsFor": 30,
                     "goalsAgainst": 9,
-                    "points": 12
+                    "points": 15
                 },
                 {
                     "position": 4,
@@ -903,23 +903,23 @@
                 {
                     "position": 7,
                     "team": "Cf Os Armacenenses - A",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
                     "draws": 1,
-                    "losses": 4,
-                    "goalsFor": 8,
-                    "goalsAgainst": 24,
+                    "losses": 5,
+                    "goalsFor": 11,
+                    "goalsAgainst": 28,
                     "points": 4
                 },
                 {
                     "position": 8,
                     "team": "Cf Os Armacenenses - B",
-                    "played": 6,
+                    "played": 7,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 6,
+                    "losses": 7,
                     "goalsFor": 3,
-                    "goalsAgainst": 45,
+                    "goalsAgainst": 56,
                     "points": 0
                 }
             ]
@@ -929,129 +929,129 @@
             "fixtureId": "641037",
             "matches": [
                 {
-                    "home": "Cf Os Armacenenses - B",
-                    "away": "Cf Os Armacenenses - A",
-                    "date": "26 abr",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Padernense Clube",
                     "away": "Jd Monchiquense",
-                    "date": "26 abr",
-                    "time": "11:00",
+                    "date": "4 - 0                            \r\n                \r\n                    26 abr",
+                    "time": "",
                     "stadium": "Campo Montes Elois",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 4,
+                    "awayScore": 0
                 },
                 {
                     "home": "Ud Messinense",
                     "away": "Aef João Moutinho",
-                    "date": "26 abr",
-                    "time": "11:00",
+                    "date": "2 - 5                            \r\n                \r\n                    26 abr",
+                    "time": "",
                     "stadium": "Estádio Municipal Messines",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 2,
+                    "awayScore": 5
                 },
                 {
                     "home": "Cd Montenegro",
                     "away": "Jc Aljezurense",
-                    "date": "26 abr",
-                    "time": "11:00",
+                    "date": "1 - 1                            \r\n                \r\n                    26 abr",
+                    "time": "",
                     "stadium": "Campo Horta Da Areia",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 1,
+                    "awayScore": 1
+                },
+                {
+                    "home": "Cf Os Armacenenses - B",
+                    "away": "Cf Os Armacenenses - A",
+                    "date": "1 - 4                            \r\n                \r\n                    26 abr",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 1,
+                    "awayScore": 4
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Cd Montenegro",
-                    "played": 7,
+                    "played": 8,
                     "wins": 6,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 1,
-                    "goalsFor": 20,
-                    "goalsAgainst": 7,
-                    "points": 18
+                    "goalsFor": 21,
+                    "goalsAgainst": 8,
+                    "points": 19
                 },
                 {
                     "position": 2,
-                    "team": "Jd Monchiquense",
-                    "played": 6,
-                    "wins": 4,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 23,
-                    "goalsAgainst": 4,
-                    "points": 13
+                    "team": "Aef João Moutinho",
+                    "played": 8,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 35,
+                    "goalsAgainst": 11,
+                    "points": 18
                 },
                 {
                     "position": 3,
-                    "team": "Aef João Moutinho",
-                    "played": 6,
-                    "wins": 4,
-                    "draws": 0,
+                    "team": "Jd Monchiquense",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
                     "losses": 2,
-                    "goalsFor": 19,
-                    "goalsAgainst": 9,
-                    "points": 12
+                    "goalsFor": 27,
+                    "goalsAgainst": 11,
+                    "points": 16
                 },
                 {
                     "position": 4,
                     "team": "Jc Aljezurense",
-                    "played": 7,
+                    "played": 8,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 3,
-                    "goalsFor": 19,
-                    "goalsAgainst": 10,
-                    "points": 12
+                    "goalsFor": 20,
+                    "goalsAgainst": 11,
+                    "points": 13
                 },
                 {
                     "position": 5,
                     "team": "Padernense Clube",
-                    "played": 7,
-                    "wins": 3,
+                    "played": 8,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 4,
-                    "goalsFor": 26,
+                    "goalsFor": 30,
                     "goalsAgainst": 19,
-                    "points": 9
+                    "points": 12
                 },
                 {
                     "position": 6,
                     "team": "Ud Messinense",
-                    "played": 7,
+                    "played": 8,
                     "wins": 2,
                     "draws": 2,
-                    "losses": 3,
-                    "goalsFor": 14,
-                    "goalsAgainst": 14,
+                    "losses": 4,
+                    "goalsFor": 16,
+                    "goalsAgainst": 19,
                     "points": 8
                 },
                 {
                     "position": 7,
                     "team": "Cf Os Armacenenses - A",
-                    "played": 6,
-                    "wins": 1,
+                    "played": 8,
+                    "wins": 2,
                     "draws": 1,
-                    "losses": 4,
-                    "goalsFor": 8,
-                    "goalsAgainst": 24,
-                    "points": 4
+                    "losses": 5,
+                    "goalsFor": 15,
+                    "goalsAgainst": 29,
+                    "points": 7
                 },
                 {
                     "position": 8,
                     "team": "Cf Os Armacenenses - B",
-                    "played": 6,
+                    "played": 8,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 3,
-                    "goalsAgainst": 45,
+                    "losses": 8,
+                    "goalsFor": 4,
+                    "goalsAgainst": 60,
                     "points": 0
                 }
             ]
@@ -1101,89 +1101,89 @@
                 {
                     "position": 1,
                     "team": "Cd Montenegro",
-                    "played": 7,
+                    "played": 8,
                     "wins": 6,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 1,
-                    "goalsFor": 20,
-                    "goalsAgainst": 7,
-                    "points": 18
+                    "goalsFor": 21,
+                    "goalsAgainst": 8,
+                    "points": 19
                 },
                 {
                     "position": 2,
-                    "team": "Jd Monchiquense",
-                    "played": 6,
-                    "wins": 4,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 23,
-                    "goalsAgainst": 4,
-                    "points": 13
+                    "team": "Aef João Moutinho",
+                    "played": 8,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 35,
+                    "goalsAgainst": 11,
+                    "points": 18
                 },
                 {
                     "position": 3,
-                    "team": "Aef João Moutinho",
-                    "played": 6,
-                    "wins": 4,
-                    "draws": 0,
+                    "team": "Jd Monchiquense",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
                     "losses": 2,
-                    "goalsFor": 19,
-                    "goalsAgainst": 9,
-                    "points": 12
+                    "goalsFor": 27,
+                    "goalsAgainst": 11,
+                    "points": 16
                 },
                 {
                     "position": 4,
                     "team": "Jc Aljezurense",
-                    "played": 7,
+                    "played": 8,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 3,
-                    "goalsFor": 19,
-                    "goalsAgainst": 10,
-                    "points": 12
+                    "goalsFor": 20,
+                    "goalsAgainst": 11,
+                    "points": 13
                 },
                 {
                     "position": 5,
                     "team": "Padernense Clube",
-                    "played": 7,
-                    "wins": 3,
+                    "played": 8,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 4,
-                    "goalsFor": 26,
+                    "goalsFor": 30,
                     "goalsAgainst": 19,
-                    "points": 9
+                    "points": 12
                 },
                 {
                     "position": 6,
                     "team": "Ud Messinense",
-                    "played": 7,
+                    "played": 8,
                     "wins": 2,
                     "draws": 2,
-                    "losses": 3,
-                    "goalsFor": 14,
-                    "goalsAgainst": 14,
+                    "losses": 4,
+                    "goalsFor": 16,
+                    "goalsAgainst": 19,
                     "points": 8
                 },
                 {
                     "position": 7,
                     "team": "Cf Os Armacenenses - A",
-                    "played": 6,
-                    "wins": 1,
+                    "played": 8,
+                    "wins": 2,
                     "draws": 1,
-                    "losses": 4,
-                    "goalsFor": 8,
-                    "goalsAgainst": 24,
-                    "points": 4
+                    "losses": 5,
+                    "goalsFor": 15,
+                    "goalsAgainst": 29,
+                    "points": 7
                 },
                 {
                     "position": 8,
                     "team": "Cf Os Armacenenses - B",
-                    "played": 6,
+                    "played": 8,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 3,
-                    "goalsAgainst": 45,
+                    "losses": 8,
+                    "goalsFor": 4,
+                    "goalsAgainst": 60,
                     "points": 0
                 }
             ]
@@ -1233,89 +1233,89 @@
                 {
                     "position": 1,
                     "team": "Cd Montenegro",
-                    "played": 7,
+                    "played": 8,
                     "wins": 6,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 1,
-                    "goalsFor": 20,
-                    "goalsAgainst": 7,
-                    "points": 18
+                    "goalsFor": 21,
+                    "goalsAgainst": 8,
+                    "points": 19
                 },
                 {
                     "position": 2,
-                    "team": "Jd Monchiquense",
-                    "played": 6,
-                    "wins": 4,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 23,
-                    "goalsAgainst": 4,
-                    "points": 13
+                    "team": "Aef João Moutinho",
+                    "played": 8,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 35,
+                    "goalsAgainst": 11,
+                    "points": 18
                 },
                 {
                     "position": 3,
-                    "team": "Aef João Moutinho",
-                    "played": 6,
-                    "wins": 4,
-                    "draws": 0,
+                    "team": "Jd Monchiquense",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
                     "losses": 2,
-                    "goalsFor": 19,
-                    "goalsAgainst": 9,
-                    "points": 12
+                    "goalsFor": 27,
+                    "goalsAgainst": 11,
+                    "points": 16
                 },
                 {
                     "position": 4,
                     "team": "Jc Aljezurense",
-                    "played": 7,
+                    "played": 8,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 3,
-                    "goalsFor": 19,
-                    "goalsAgainst": 10,
-                    "points": 12
+                    "goalsFor": 20,
+                    "goalsAgainst": 11,
+                    "points": 13
                 },
                 {
                     "position": 5,
                     "team": "Padernense Clube",
-                    "played": 7,
-                    "wins": 3,
+                    "played": 8,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 4,
-                    "goalsFor": 26,
+                    "goalsFor": 30,
                     "goalsAgainst": 19,
-                    "points": 9
+                    "points": 12
                 },
                 {
                     "position": 6,
                     "team": "Ud Messinense",
-                    "played": 7,
+                    "played": 8,
                     "wins": 2,
                     "draws": 2,
-                    "losses": 3,
-                    "goalsFor": 14,
-                    "goalsAgainst": 14,
+                    "losses": 4,
+                    "goalsFor": 16,
+                    "goalsAgainst": 19,
                     "points": 8
                 },
                 {
                     "position": 7,
                     "team": "Cf Os Armacenenses - A",
-                    "played": 6,
-                    "wins": 1,
+                    "played": 8,
+                    "wins": 2,
                     "draws": 1,
-                    "losses": 4,
-                    "goalsFor": 8,
-                    "goalsAgainst": 24,
-                    "points": 4
+                    "losses": 5,
+                    "goalsFor": 15,
+                    "goalsAgainst": 29,
+                    "points": 7
                 },
                 {
                     "position": 8,
                     "team": "Cf Os Armacenenses - B",
-                    "played": 6,
+                    "played": 8,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 3,
-                    "goalsAgainst": 45,
+                    "losses": 8,
+                    "goalsFor": 4,
+                    "goalsAgainst": 60,
                     "points": 0
                 }
             ]
@@ -1365,89 +1365,89 @@
                 {
                     "position": 1,
                     "team": "Cd Montenegro",
-                    "played": 7,
+                    "played": 8,
                     "wins": 6,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 1,
-                    "goalsFor": 20,
-                    "goalsAgainst": 7,
-                    "points": 18
+                    "goalsFor": 21,
+                    "goalsAgainst": 8,
+                    "points": 19
                 },
                 {
                     "position": 2,
-                    "team": "Jd Monchiquense",
-                    "played": 6,
-                    "wins": 4,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 23,
-                    "goalsAgainst": 4,
-                    "points": 13
+                    "team": "Aef João Moutinho",
+                    "played": 8,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 35,
+                    "goalsAgainst": 11,
+                    "points": 18
                 },
                 {
                     "position": 3,
-                    "team": "Aef João Moutinho",
-                    "played": 6,
-                    "wins": 4,
-                    "draws": 0,
+                    "team": "Jd Monchiquense",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
                     "losses": 2,
-                    "goalsFor": 19,
-                    "goalsAgainst": 9,
-                    "points": 12
+                    "goalsFor": 27,
+                    "goalsAgainst": 11,
+                    "points": 16
                 },
                 {
                     "position": 4,
                     "team": "Jc Aljezurense",
-                    "played": 7,
+                    "played": 8,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 3,
-                    "goalsFor": 19,
-                    "goalsAgainst": 10,
-                    "points": 12
+                    "goalsFor": 20,
+                    "goalsAgainst": 11,
+                    "points": 13
                 },
                 {
                     "position": 5,
                     "team": "Padernense Clube",
-                    "played": 7,
-                    "wins": 3,
+                    "played": 8,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 4,
-                    "goalsFor": 26,
+                    "goalsFor": 30,
                     "goalsAgainst": 19,
-                    "points": 9
+                    "points": 12
                 },
                 {
                     "position": 6,
                     "team": "Ud Messinense",
-                    "played": 7,
+                    "played": 8,
                     "wins": 2,
                     "draws": 2,
-                    "losses": 3,
-                    "goalsFor": 14,
-                    "goalsAgainst": 14,
+                    "losses": 4,
+                    "goalsFor": 16,
+                    "goalsAgainst": 19,
                     "points": 8
                 },
                 {
                     "position": 7,
                     "team": "Cf Os Armacenenses - A",
-                    "played": 6,
-                    "wins": 1,
+                    "played": 8,
+                    "wins": 2,
                     "draws": 1,
-                    "losses": 4,
-                    "goalsFor": 8,
-                    "goalsAgainst": 24,
-                    "points": 4
+                    "losses": 5,
+                    "goalsFor": 15,
+                    "goalsAgainst": 29,
+                    "points": 7
                 },
                 {
                     "position": 8,
                     "team": "Cf Os Armacenenses - B",
-                    "played": 6,
+                    "played": 8,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 3,
-                    "goalsAgainst": 45,
+                    "losses": 8,
+                    "goalsFor": 4,
+                    "goalsAgainst": 60,
                     "points": 0
                 }
             ]
@@ -1497,89 +1497,89 @@
                 {
                     "position": 1,
                     "team": "Cd Montenegro",
-                    "played": 7,
+                    "played": 8,
                     "wins": 6,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 1,
-                    "goalsFor": 20,
-                    "goalsAgainst": 7,
-                    "points": 18
+                    "goalsFor": 21,
+                    "goalsAgainst": 8,
+                    "points": 19
                 },
                 {
                     "position": 2,
-                    "team": "Jd Monchiquense",
-                    "played": 6,
-                    "wins": 4,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 23,
-                    "goalsAgainst": 4,
-                    "points": 13
+                    "team": "Aef João Moutinho",
+                    "played": 8,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 35,
+                    "goalsAgainst": 11,
+                    "points": 18
                 },
                 {
                     "position": 3,
-                    "team": "Aef João Moutinho",
-                    "played": 6,
-                    "wins": 4,
-                    "draws": 0,
+                    "team": "Jd Monchiquense",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
                     "losses": 2,
-                    "goalsFor": 19,
-                    "goalsAgainst": 9,
-                    "points": 12
+                    "goalsFor": 27,
+                    "goalsAgainst": 11,
+                    "points": 16
                 },
                 {
                     "position": 4,
                     "team": "Jc Aljezurense",
-                    "played": 7,
+                    "played": 8,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 3,
-                    "goalsFor": 19,
-                    "goalsAgainst": 10,
-                    "points": 12
+                    "goalsFor": 20,
+                    "goalsAgainst": 11,
+                    "points": 13
                 },
                 {
                     "position": 5,
                     "team": "Padernense Clube",
-                    "played": 7,
-                    "wins": 3,
+                    "played": 8,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 4,
-                    "goalsFor": 26,
+                    "goalsFor": 30,
                     "goalsAgainst": 19,
-                    "points": 9
+                    "points": 12
                 },
                 {
                     "position": 6,
                     "team": "Ud Messinense",
-                    "played": 7,
+                    "played": 8,
                     "wins": 2,
                     "draws": 2,
-                    "losses": 3,
-                    "goalsFor": 14,
-                    "goalsAgainst": 14,
+                    "losses": 4,
+                    "goalsFor": 16,
+                    "goalsAgainst": 19,
                     "points": 8
                 },
                 {
                     "position": 7,
                     "team": "Cf Os Armacenenses - A",
-                    "played": 6,
-                    "wins": 1,
+                    "played": 8,
+                    "wins": 2,
                     "draws": 1,
-                    "losses": 4,
-                    "goalsFor": 8,
-                    "goalsAgainst": 24,
-                    "points": 4
+                    "losses": 5,
+                    "goalsFor": 15,
+                    "goalsAgainst": 29,
+                    "points": 7
                 },
                 {
                     "position": 8,
                     "team": "Cf Os Armacenenses - B",
-                    "played": 6,
+                    "played": 8,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 3,
-                    "goalsAgainst": 45,
+                    "losses": 8,
+                    "goalsFor": 4,
+                    "goalsAgainst": 60,
                     "points": 0
                 }
             ]
@@ -1589,11 +1589,20 @@
             "fixtureId": "641042",
             "matches": [
                 {
-                    "home": "Ud Messinense",
-                    "away": "Padernense Clube",
+                    "home": "Cf Os Armacenenses - B",
+                    "away": "Jc Aljezurense",
                     "date": "31 mai",
                     "time": "11:00",
-                    "stadium": "Estádio Municipal Messines",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses - A",
+                    "away": "Aef João Moutinho",
+                    "date": "31 mai",
+                    "time": "11:00",
+                    "stadium": "A Indicar",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1607,20 +1616,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cf Os Armacenenses - A",
-                    "away": "Aef João Moutinho",
+                    "home": "Ud Messinense",
+                    "away": "Padernense Clube",
                     "date": "31 mai",
                     "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Cf Os Armacenenses - B",
-                    "away": "Jc Aljezurense",
-                    "date": "31 mai",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "stadium": "Estádio Municipal Messines",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1629,89 +1629,89 @@
                 {
                     "position": 1,
                     "team": "Cd Montenegro",
-                    "played": 7,
+                    "played": 8,
                     "wins": 6,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 1,
-                    "goalsFor": 20,
-                    "goalsAgainst": 7,
-                    "points": 18
+                    "goalsFor": 21,
+                    "goalsAgainst": 8,
+                    "points": 19
                 },
                 {
                     "position": 2,
-                    "team": "Jd Monchiquense",
-                    "played": 6,
-                    "wins": 4,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 23,
-                    "goalsAgainst": 4,
-                    "points": 13
+                    "team": "Aef João Moutinho",
+                    "played": 8,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 35,
+                    "goalsAgainst": 11,
+                    "points": 18
                 },
                 {
                     "position": 3,
-                    "team": "Aef João Moutinho",
-                    "played": 6,
-                    "wins": 4,
-                    "draws": 0,
+                    "team": "Jd Monchiquense",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
                     "losses": 2,
-                    "goalsFor": 19,
-                    "goalsAgainst": 9,
-                    "points": 12
+                    "goalsFor": 27,
+                    "goalsAgainst": 11,
+                    "points": 16
                 },
                 {
                     "position": 4,
                     "team": "Jc Aljezurense",
-                    "played": 7,
+                    "played": 8,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 3,
-                    "goalsFor": 19,
-                    "goalsAgainst": 10,
-                    "points": 12
+                    "goalsFor": 20,
+                    "goalsAgainst": 11,
+                    "points": 13
                 },
                 {
                     "position": 5,
                     "team": "Padernense Clube",
-                    "played": 7,
-                    "wins": 3,
+                    "played": 8,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 4,
-                    "goalsFor": 26,
+                    "goalsFor": 30,
                     "goalsAgainst": 19,
-                    "points": 9
+                    "points": 12
                 },
                 {
                     "position": 6,
                     "team": "Ud Messinense",
-                    "played": 7,
+                    "played": 8,
                     "wins": 2,
                     "draws": 2,
-                    "losses": 3,
-                    "goalsFor": 14,
-                    "goalsAgainst": 14,
+                    "losses": 4,
+                    "goalsFor": 16,
+                    "goalsAgainst": 19,
                     "points": 8
                 },
                 {
                     "position": 7,
                     "team": "Cf Os Armacenenses - A",
-                    "played": 6,
-                    "wins": 1,
+                    "played": 8,
+                    "wins": 2,
                     "draws": 1,
-                    "losses": 4,
-                    "goalsFor": 8,
-                    "goalsAgainst": 24,
-                    "points": 4
+                    "losses": 5,
+                    "goalsFor": 15,
+                    "goalsAgainst": 29,
+                    "points": 7
                 },
                 {
                     "position": 8,
                     "team": "Cf Os Armacenenses - B",
-                    "played": 6,
+                    "played": 8,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 3,
-                    "goalsAgainst": 45,
+                    "losses": 8,
+                    "goalsFor": 4,
+                    "goalsAgainst": 60,
                     "points": 0
                 }
             ]
@@ -1721,11 +1721,11 @@
             "fixtureId": "641043",
             "matches": [
                 {
-                    "home": "Jd Monchiquense",
-                    "away": "Cf Os Armacenenses - A",
+                    "home": "Padernense Clube",
+                    "away": "Cd Montenegro",
                     "date": "6 jun",
                     "time": "11:00",
-                    "stadium": "Parque Desportivo Jd Monchiquense",
+                    "stadium": "Campo Montes Elois",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1739,20 +1739,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Padernense Clube",
-                    "away": "Cd Montenegro",
-                    "date": "6 jun",
-                    "time": "11:00",
-                    "stadium": "Campo Montes Elois",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Aef João Moutinho",
                     "away": "Cf Os Armacenenses - B",
                     "date": "6 jun",
                     "time": "11:00",
                     "stadium": "Parque Desportivo Municipal Estombar",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Jd Monchiquense",
+                    "away": "Cf Os Armacenenses - A",
+                    "date": "6 jun",
+                    "time": "11:00",
+                    "stadium": "Parque Desportivo Jd Monchiquense",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1761,89 +1761,89 @@
                 {
                     "position": 1,
                     "team": "Cd Montenegro",
-                    "played": 7,
+                    "played": 8,
                     "wins": 6,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 1,
-                    "goalsFor": 20,
-                    "goalsAgainst": 7,
-                    "points": 18
+                    "goalsFor": 21,
+                    "goalsAgainst": 8,
+                    "points": 19
                 },
                 {
                     "position": 2,
-                    "team": "Jd Monchiquense",
-                    "played": 6,
-                    "wins": 4,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 23,
-                    "goalsAgainst": 4,
-                    "points": 13
+                    "team": "Aef João Moutinho",
+                    "played": 8,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 35,
+                    "goalsAgainst": 11,
+                    "points": 18
                 },
                 {
                     "position": 3,
-                    "team": "Aef João Moutinho",
-                    "played": 6,
-                    "wins": 4,
-                    "draws": 0,
+                    "team": "Jd Monchiquense",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
                     "losses": 2,
-                    "goalsFor": 19,
-                    "goalsAgainst": 9,
-                    "points": 12
+                    "goalsFor": 27,
+                    "goalsAgainst": 11,
+                    "points": 16
                 },
                 {
                     "position": 4,
                     "team": "Jc Aljezurense",
-                    "played": 7,
+                    "played": 8,
                     "wins": 4,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 3,
-                    "goalsFor": 19,
-                    "goalsAgainst": 10,
-                    "points": 12
+                    "goalsFor": 20,
+                    "goalsAgainst": 11,
+                    "points": 13
                 },
                 {
                     "position": 5,
                     "team": "Padernense Clube",
-                    "played": 7,
-                    "wins": 3,
+                    "played": 8,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 4,
-                    "goalsFor": 26,
+                    "goalsFor": 30,
                     "goalsAgainst": 19,
-                    "points": 9
+                    "points": 12
                 },
                 {
                     "position": 6,
                     "team": "Ud Messinense",
-                    "played": 7,
+                    "played": 8,
                     "wins": 2,
                     "draws": 2,
-                    "losses": 3,
-                    "goalsFor": 14,
-                    "goalsAgainst": 14,
+                    "losses": 4,
+                    "goalsFor": 16,
+                    "goalsAgainst": 19,
                     "points": 8
                 },
                 {
                     "position": 7,
                     "team": "Cf Os Armacenenses - A",
-                    "played": 6,
-                    "wins": 1,
+                    "played": 8,
+                    "wins": 2,
                     "draws": 1,
-                    "losses": 4,
-                    "goalsFor": 8,
-                    "goalsAgainst": 24,
-                    "points": 4
+                    "losses": 5,
+                    "goalsFor": 15,
+                    "goalsAgainst": 29,
+                    "points": 7
                 },
                 {
                     "position": 8,
                     "team": "Cf Os Armacenenses - B",
-                    "played": 6,
+                    "played": 8,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 3,
-                    "goalsAgainst": 45,
+                    "losses": 8,
+                    "goalsFor": 4,
+                    "goalsAgainst": 60,
                     "points": 0
                 }
             ]
