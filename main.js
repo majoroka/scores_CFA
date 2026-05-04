@@ -371,34 +371,19 @@ const findBestRoundIndex = () => {
 const initializeRoundBasedOnDate = () => {
     if (!competitionData || !Array.isArray(competitionData.rounds) || !competitionData.rounds.length) return;
     const hash = (window.location.hash || '').toLowerCase();
-    let targetTab = 'resultados';
-    let shouldOverride = false;
-    if (!hash || hash === '#') {
-        shouldOverride = true;
-    } else if (/^#resultados(?:-j1)?$/.test(hash)) {
-        shouldOverride = true;
-        targetTab = 'resultados';
-    } else if (/^#classificacao(?:-j1)?$/.test(hash)) {
-        shouldOverride = true;
-        targetTab = 'classificacao';
-    }
-    if (!shouldOverride) return;
+    const targetTab = /^#classificacao/.test(hash) ? 'classificacao' : 'resultados';
     const suggestedIndex = findBestRoundIndex();
     const safeIndex = Math.max(0, Math.min(competitionData.rounds.length - 1, suggestedIndex));
 
-    // Atualiza hash apenas se estivermos em resultado/classificação padrão sem seleção manual
-    if (safeIndex === currentRoundIndex && (!hash || hash === '#' || /^#(?:resultados|classificacao)(?:-j1)?$/.test(hash))) {
+    if (safeIndex === currentRoundIndex && activeTab === targetTab) {
         userHasManualRoundSelection = false;
         const currentRoundNumber = competitionData.rounds[currentRoundIndex]?.index || (currentRoundIndex + 1);
-        if (/^#classificacao/.test(hash)) {
-            history.replaceState(null, '', `#classificacao-j${currentRoundNumber}`);
-        } else {
-            history.replaceState(null, '', `#resultados-j${currentRoundNumber}`);
-        }
+        history.replaceState(null, '', `#${targetTab}-j${currentRoundNumber}`);
         return;
     }
 
     currentRoundIndex = safeIndex;
+    activeTab = targetTab;
     userHasManualRoundSelection = false;
     const roundNumber = competitionData.rounds[currentRoundIndex]?.index || (currentRoundIndex + 1);
     const nextHash = `#${targetTab}-j${roundNumber}`;
