@@ -1,6 +1,15 @@
 name: Update all data and deploy
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - "fetch_*.py"
+      - "fpf_http.py"
+      - "run_fetchers.py"
+      - "requirements.txt"
+      - ".github/workflows/update-data.yml"
   workflow_dispatch: {}         # Permite correr manualmente no GitHub
   schedule:
     - cron: "0 */4 * * *"       # A cada 4 horas
@@ -16,6 +25,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -32,13 +42,48 @@ jobs:
             pip install -r requirements.txt
           fi
 
-      - name: Correr todos os fetchers
-        timeout-minutes: 20
+      - name: Correr todos os fetchers com retries e validacao
+        timeout-minutes: 45
+        run: python run_fetchers.py
+
+      - name: Publicar resumo dos fetchers
         run: |
-          for f in fetch_*.py; do
-            echo "🔹 A correr $f..."
-            timeout 120s python "$f" || echo "⚠️ $f demorou demais e foi interrompido"
-          done
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          report_path = Path("cache/fetch_report.json")
+          if not report_path.exists():
+              raise SystemExit("Relatorio de fetchers nao encontrado.")
+
+          report = json.loads(report_path.read_text(encoding="utf-8"))
+          lines = [
+              "# Resumo dos fetchers",
+              "",
+              f"- Sucesso: {report['success_count']}",
+              f"- Falhas: {report['failure_count']}",
+              f"- Alterados: {report['changed_count']}",
+              "",
+              "| Fetcher | Estado | Tentativas | Jornadas | Alterou JSON |",
+              "| --- | --- | ---: | ---: | --- |",
+          ]
+
+          for item in report["fetchers"]:
+              lines.append(
+                  "| {fetcher} | {status} | {attempts} | {rounds} | {changed} |".format(
+                      fetcher=item["fetcher"],
+                      status="OK" if item["success"] else "FAIL",
+                      attempts=len(item["attempts"]),
+                      rounds=item["final_snapshot"]["round_count"],
+                      changed="sim" if item["changed"] else "nao",
+                  )
+              )
+
+          summary_path = os.environ["GITHUB_STEP_SUMMARY"]
+          with open(summary_path, "a", encoding="utf-8") as handle:
+              handle.write("\n".join(lines) + "\n")
+          PY
 
       - name: Atualizar manifesto de emblemas (opcional)
         run: |
