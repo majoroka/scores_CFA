@@ -3,7 +3,7 @@ import os
 import re
 import time
 import html
-from fpf_http import get_page_content as fetch_page_content
+from fpf_http import get_page_content as fetch_page_content, load_existing_rounds
 import unicodedata
 
 COMPETITION_URL = "https://resultados.fpf.pt/Competition/Details?competitionId=28459&seasonId=105"
@@ -132,19 +132,6 @@ def get_page_content(url: str, cache_key: str):
     )
 
 
-def load_existing_round_count(output_file: str) -> int:
-    if not os.path.exists(output_file):
-        return 0
-
-    try:
-        with open(output_file, "r", encoding="utf-8") as handle:
-            current_data = json.load(handle)
-        rounds = current_data.get("rounds", [])
-        return len(rounds) if isinstance(rounds, list) else 0
-    except Exception:
-        return 0
-
-
 def main():
     main_page = get_page_content(COMPETITION_URL, "juvenis_competition_main")
     if not main_page:
@@ -156,6 +143,7 @@ def main():
         print("Nenhum fixtureId encontrado para a série alvo.")
         return
 
+    existing_rounds = load_existing_rounds(OUTPUT_FILE)
     rounds = []
     for index, fixture_id in enumerate(fixture_ids, start=1):
         print(f"Processando jornada {index} (fixtureId={fixture_id})")
@@ -164,12 +152,22 @@ def main():
             f"GetClassificationAndMatchesByFixture?fixtureId={fixture_id}"
         )
         fragment = get_page_content(url, f"juvenis_fixture_{fixture_id}")
+        existing_round = existing_rounds.get(str(fixture_id))
         if not fragment:
-            print(f"Falha ao obter dados da jornada {index}")
+            if existing_round:
+                print(f"Falha ao obter dados da jornada {index}; a reutilizar dados existentes.")
+                rounds.append(existing_round)
+            else:
+                print(f"Falha ao obter dados da jornada {index}")
             continue
 
         matches = parse_matches(fragment)
         classification = parse_classification(fragment)
+        if not matches and not classification and existing_round:
+            print(f"Jornada {index} sem dados novos; a reutilizar dados existentes.")
+            rounds.append(existing_round)
+            continue
+
         rounds.append({
             "index": index,
             "fixtureId": fixture_id,
@@ -190,11 +188,10 @@ def main():
         )
         return
 
-    existing_round_count = load_existing_round_count(OUTPUT_FILE)
-    if existing_round_count and len(rounds) < existing_round_count:
+    if existing_rounds and len(rounds) < len(existing_rounds):
         print(
             f"Foram extraidas apenas {len(rounds)} jornadas, "
-            f"mas o ficheiro atual tem {existing_round_count}. "
+            f"mas o ficheiro atual tem {len(existing_rounds)}. "
             "O ficheiro existente nao sera alterado."
         )
         return

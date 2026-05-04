@@ -1,3 +1,4 @@
+import json
 import os
 import time
 
@@ -10,6 +11,19 @@ DEFAULT_HEADERS = {
     "Cache-Control": "no-cache",
     "Pragma": "no-cache",
 }
+
+BLOCKED_MARKERS = (
+    "Automated message",
+    "Your IP address has been banned by automated security systems.",
+    "Performing security verification",
+    "Just a moment...",
+)
+
+
+def is_blocked_content(content: str) -> bool:
+    if not content:
+        return True
+    return any(marker in content for marker in BLOCKED_MARKERS)
 
 
 def get_page_content(
@@ -52,6 +66,12 @@ def get_page_content(
                 return None
 
             content = response.text
+            if is_blocked_content(content):
+                print(f"Blocked content while requesting {url}")
+                if attempt < max_retries:
+                    time.sleep(5 * (attempt + 1))
+                    continue
+                return None
             if use_cache:
                 with open(cache_path, "w", encoding="utf-8") as handle:
                     handle.write(content)
@@ -65,3 +85,25 @@ def get_page_content(
     if last_error is not None:
         print(f"Error requesting {url}: {last_error}")
     return None
+
+
+def load_existing_rounds(output_file: str):
+    if not os.path.exists(output_file):
+        return {}
+
+    try:
+        with open(output_file, "r", encoding="utf-8") as handle:
+            payload = json.load(handle)
+    except Exception:
+        return {}
+
+    rounds = payload.get("rounds", [])
+    if not isinstance(rounds, list):
+        return {}
+
+    existing = {}
+    for round_data in rounds:
+        fixture_id = round_data.get("fixtureId")
+        if fixture_id:
+            existing[str(fixture_id)] = round_data
+    return existing

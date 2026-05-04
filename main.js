@@ -197,7 +197,37 @@ const normalizeMonthToken = (value = '') => {
 const parseMatchDate = (value = '') => {
     const trimmed = (value || '').trim();
     if (!trimmed) return null;
-    const tokens = trimmed.split(/\s+/).filter(Boolean);
+    // Remove resultados embebidos no texto para evitar confundir o dia com o score.
+    const sanitized = trimmed
+        .replace(/\b\d{1,2}\s*[-–]\s*\d{1,2}\b/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+    if (!sanitized) return null;
+
+    const directMatches = Array.from(
+        sanitized.matchAll(/(\d{1,2})\s+([A-Za-zÀ-ÿ]{3,})/g)
+    );
+    if (directMatches.length) {
+        const latestMatch = directMatches[directMatches.length - 1];
+        const day = Number.parseInt(latestMatch[1], 10);
+        const monthKey = normalizeMonthToken(latestMatch[2]);
+        if (monthKey && Number.isInteger(day)) {
+            const month = MONTH_MAP[monthKey];
+            const today = new Date();
+            const currentMonth = today.getMonth();
+            let year = today.getFullYear();
+            const diff = month - currentMonth;
+            if (diff <= -6) {
+                year += 1;
+            } else if (diff >= 6) {
+                year -= 1;
+            }
+            const result = new Date(year, month, day, 12, 0, 0, 0);
+            return Number.isNaN(result.getTime()) ? null : result;
+        }
+    }
+
+    const tokens = sanitized.split(/\s+/).filter(Boolean);
     if (!tokens.length) return null;
 
     let monthKey = null;
@@ -261,25 +291,31 @@ const getRoundReferenceDate = (round) => {
 };
 
 const findBestRoundIndexByDate = () => {
-    if (!competitionData || !Array.isArray(competitionData.rounds)) return 0;
+    if (!competitionData || !Array.isArray(competitionData.rounds)) return null;
     const rounds = competitionData.rounds;
-    if (!rounds.length) return 0;
+    if (!rounds.length) return null;
     const today = new Date();
     today.setHours(12, 0, 0, 0);
     let previousOrCurrent = null;
+    let previousOrCurrentDate = null;
     let firstFuture = null;
+    let firstFutureDate = null;
     rounds.forEach((round, idx) => {
         const reference = getRoundReferenceDate(round);
         if (!reference) return;
         if (reference <= today) {
-            previousOrCurrent = idx;
-        } else if (firstFuture === null) {
+            if (!previousOrCurrentDate || reference > previousOrCurrentDate) {
+                previousOrCurrent = idx;
+                previousOrCurrentDate = reference;
+            }
+        } else if (!firstFutureDate || reference < firstFutureDate) {
             firstFuture = idx;
+            firstFutureDate = reference;
         }
     });
     if (previousOrCurrent !== null) return previousOrCurrent;
     if (firstFuture !== null) return firstFuture;
-    return 0;
+    return null;
 };
 
 const findLatestCompletedRoundIndex = () => {
@@ -321,11 +357,15 @@ const findLatestCompletedRoundIndex = () => {
 };
 
 const findBestRoundIndex = () => {
+    const closestByDate = findBestRoundIndexByDate();
+    if (closestByDate !== null) {
+        return closestByDate;
+    }
     const latestCompleted = findLatestCompletedRoundIndex();
     if (latestCompleted !== null) {
         return latestCompleted;
     }
-    return findBestRoundIndexByDate();
+    return 0;
 };
 
 const initializeRoundBasedOnDate = () => {
@@ -480,21 +520,29 @@ const initializeRoundBasedOnDate = () => {
     const mergeMatches = (existing = [], incoming = []) => {
         if (!existing.length) return incoming;
         if (!incoming.length) return existing;
-        const incomingMap = new Map(
-            incoming.map((match) => [
+        const existingMap = new Map(
+            existing.map((match) => [
                 `${normalizeName(match.home)}|${normalizeName(match.away)}`,
                 match,
             ])
         );
-        return existing.map((match) => {
+        const seenKeys = new Set();
+        const merged = incoming.map((match) => {
             const key = `${normalizeName(match.home)}|${normalizeName(match.away)}`;
-            const updated = incomingMap.get(key);
-            if (!updated) return match;
+            seenKeys.add(key);
+            const previous = existingMap.get(key) || {};
             return {
+                ...previous,
                 ...match,
-                ...updated,
             };
         });
+        existing.forEach((match) => {
+            const key = `${normalizeName(match.home)}|${normalizeName(match.away)}`;
+            if (!seenKeys.has(key)) {
+                merged.push(match);
+            }
+        });
+        return merged;
     };
 
     const fetchRoundFromRemote = async (fixtureId) => {
@@ -839,7 +887,10 @@ const initializeRoundBasedOnDate = () => {
 
             // Atualização com dados em tempo real (quando disponíveis)
             await hydrateRoundsWithLiveData();
-            updateUI();
+            if (!userHasManualRoundSelection) {
+                initializeRoundBasedOnDate();
+            }
+            handleHashChange();
 
         } catch (error) {
             console.error('Erro ao carregar os dados da competição:', error);

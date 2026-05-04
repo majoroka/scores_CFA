@@ -6,6 +6,7 @@ import html
 import unicodedata
 
 from fpf_http import get_page_content as fetch_page_content
+from fpf_http import load_existing_rounds
 
 # --- CONFIGURAÇÃO ---
 COMPETITION_URL = "https://resultados.fpf.pt/Competition/Details?competitionId=28206&seasonId=105"
@@ -195,6 +196,7 @@ def main():
     
     print(f"Encontrados {len(fixture_ids)} fixtureId's para '{TARGET_SERIE_NAME}'.")
 
+    existing_rounds = load_existing_rounds(OUTPUT_FILE)
     all_rounds_data = []
     
     # 2. Iterar por cada jornada para buscar jogos e classificação
@@ -204,8 +206,13 @@ def main():
 
         combined_url = f"https://resultados.fpf.pt/Competition/GetClassificationAndMatchesByFixture?fixtureId={fixture_id}"
         combined_html = get_page_content(combined_url, f"combined_{fixture_id}")
+        existing_round = existing_rounds.get(str(fixture_id))
         if not combined_html:
-            print(f"Falha ao buscar dados para a jornada {round_number}. Pulando.")
+            if existing_round:
+                print(f"Falha ao buscar dados para a jornada {round_number}; a reutilizar dados existentes.")
+                all_rounds_data.append(existing_round)
+            else:
+                print(f"Falha ao buscar dados para a jornada {round_number}. Pulando.")
             continue
 
         # Separa as secções por id
@@ -216,6 +223,10 @@ def main():
 
         matches = parse_matches_from_fragment(matches_html)
         classification = parse_classification_from_fragment_v2(classification_html)
+        if not matches and not classification and existing_round:
+            print(f"Jornada {round_number} sem dados novos; a reutilizar dados existentes.")
+            all_rounds_data.append(existing_round)
+            continue
 
         all_rounds_data.append({
             "index": round_number,
