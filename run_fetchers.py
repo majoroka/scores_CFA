@@ -33,7 +33,7 @@ def discover_fetchers(selected_names=None):
 
 def extract_output_file(fetcher_path: Path):
     content = fetcher_path.read_text(encoding="utf-8")
-    match = re.search(r'OUTPUT_FILE\s*=\s*"([^"]+)"', content)
+    match = re.search(r'OUTPUT_FILE\s*=\s*[\'"]([^\'"]+)[\'"]', content)
     if not match:
         raise ValueError(f"OUTPUT_FILE not found in {fetcher_path.name}")
     return ROOT / match.group(1)
