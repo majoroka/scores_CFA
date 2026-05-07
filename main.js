@@ -290,6 +290,20 @@ const getRoundReferenceDate = (round) => {
     return latestCompleted || latestAny;
 };
 
+const getPublishedDefaultRoundIndex = () => {
+    if (!competitionData || !Array.isArray(competitionData.rounds) || !competitionData.rounds.length) {
+        return null;
+    }
+    const value = competitionData.defaultRoundIndex;
+    if (!Number.isInteger(value)) {
+        return null;
+    }
+    if (value < 0 || value >= competitionData.rounds.length) {
+        return null;
+    }
+    return value;
+};
+
 const findBestRoundIndexByDate = () => {
     if (!competitionData || !Array.isArray(competitionData.rounds)) return null;
     const rounds = competitionData.rounds;
@@ -357,6 +371,10 @@ const findLatestCompletedRoundIndex = () => {
 };
 
 const findBestRoundIndex = () => {
+    const publishedDefault = getPublishedDefaultRoundIndex();
+    if (publishedDefault !== null) {
+        return publishedDefault;
+    }
     const closestByDate = findBestRoundIndexByDate();
     if (closestByDate !== null) {
         return closestByDate;

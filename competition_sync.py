@@ -4,12 +4,28 @@ import os
 import re
 import time
 import unicodedata
+from datetime import datetime, timezone
+from typing import Optional
 
 from competition_configs import CompetitionConfig
 from fpf_http import get_page_content as fetch_page_content, load_existing_rounds
 
 CACHE_DIR = 'cache'
 USE_CACHE = False
+MONTH_MAP = {
+    'jan': 1,
+    'fev': 2,
+    'mar': 3,
+    'abr': 4,
+    'mai': 5,
+    'jun': 6,
+    'jul': 7,
+    'ago': 8,
+    'set': 9,
+    'out': 10,
+    'nov': 11,
+    'dez': 12,
+}
 
 
 def _normalize(value: str) -> str:
@@ -22,6 +38,153 @@ def _clean_text(value: str) -> str:
     value = re.sub(r'<br\s*/?>', ' ', value, flags=re.IGNORECASE)
     value = re.sub(r'<.*?>', '', value)
     return html.unescape(value).strip()
+
+
+def _normalize_month_token(value: str):
+    if not value:
+        return None
+    normalized = (
+        unicodedata.normalize('NFD', value)
+        .encode('ascii', 'ignore')
+        .decode('ascii')
+        .lower()
+    )
+    normalized = re.sub(r'[^a-z]', '', normalized)
+    if not normalized:
+        return None
+    return normalized[:3]
+
+
+def parse_match_date(value: str, today: Optional[datetime] = None):
+    trimmed = (value or '').strip()
+    if not trimmed:
+        return None
+
+    sanitized = re.sub(r'\b\d{1,2}\s*[-–]\s*\d{1,2}\b', ' ', trimmed)
+    sanitized = re.sub(r'\s+', ' ', sanitized).strip()
+    if not sanitized:
+        return None
+
+    day = None
+    month_token = None
+    direct_matches = list(re.finditer(r'(\d{1,2})\s+([A-Za-zÀ-ÿ]{3,})', sanitized))
+    if direct_matches:
+        latest_match = direct_matches[-1]
+        day = int(latest_match.group(1))
+        month_token = latest_match.group(2)
+    else:
+        tokens = sanitized.split()
+        for index, token in enumerate(tokens):
+            month_key = _normalize_month_token(token)
+            if not month_key or month_key not in MONTH_MAP:
+                continue
+
+            extracted_day = None
+            for previous_index in range(index - 1, -1, -1):
+                match = re.search(r'(\d{1,2})', tokens[previous_index])
+                if match:
+                    extracted_day = int(match.group(1))
+                    break
+            if extracted_day is None and index + 1 < len(tokens):
+                match = re.search(r'(\d{1,2})', tokens[index + 1])
+                if match:
+                    extracted_day = int(match.group(1))
+            if extracted_day is not None:
+                day = extracted_day
+                month_token = token
+                break
+
+    if day is None or not month_token:
+        return None
+
+    month_key = _normalize_month_token(month_token)
+    if month_key not in MONTH_MAP:
+        return None
+
+    reference_today = today or datetime.now()
+    month = MONTH_MAP[month_key]
+    year = reference_today.year
+    diff = month - reference_today.month
+    if diff <= -6:
+        year += 1
+    elif diff >= 6:
+        year -= 1
+
+    try:
+        return datetime(year, month, day, 12, 0, 0)
+    except ValueError:
+        return None
+
+
+def get_round_reference_date(round_data: dict, today: Optional[datetime] = None):
+    matches = round_data.get('matches', [])
+    if not isinstance(matches, list):
+        return None
+
+    latest_completed = None
+    latest_any = None
+    for match in matches:
+        parsed = parse_match_date(match.get('date', ''), today=today)
+        if not parsed:
+            continue
+        has_score = isinstance(match.get('homeScore'), int) and isinstance(match.get('awayScore'), int)
+        if has_score and (latest_completed is None or parsed > latest_completed):
+            latest_completed = parsed
+        if latest_any is None or parsed > latest_any:
+            latest_any = parsed
+    return latest_completed or latest_any
+
+
+def compute_default_round_index(rounds, today: Optional[datetime] = None):
+    if not rounds:
+        return 0
+
+    reference_today = today or datetime.now()
+    reference_today = reference_today.replace(hour=12, minute=0, second=0, microsecond=0)
+
+    previous_or_current = None
+    previous_or_current_date = None
+    first_future = None
+    first_future_date = None
+
+    for index, round_data in enumerate(rounds):
+        reference = get_round_reference_date(round_data, today=reference_today)
+        if not reference:
+            continue
+        if reference <= reference_today:
+            if previous_or_current_date is None or reference > previous_or_current_date:
+                previous_or_current = index
+                previous_or_current_date = reference
+        elif first_future_date is None or reference < first_future_date:
+            first_future = index
+            first_future_date = reference
+
+    if previous_or_current is not None:
+        return previous_or_current
+    if first_future is not None:
+        return first_future
+    return 0
+
+
+def build_payload(rounds, fallback_reuse_count: int = 0, last_updated_at: Optional[str] = None):
+    default_round_index = compute_default_round_index(rounds)
+    default_round_number = None
+    if 0 <= default_round_index < len(rounds):
+        default_round_number = rounds[default_round_index].get('index')
+
+    timestamp = last_updated_at or datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace('+00:00', 'Z')
+    health_status = 'degraded' if fallback_reuse_count > 0 else 'ok'
+
+    return {
+        'defaultRoundIndex': default_round_index,
+        'defaultRoundNumber': default_round_number,
+        'lastUpdatedAt': timestamp,
+        'sourceHealth': {
+            'status': health_status,
+            'fallbackReuseCount': fallback_reuse_count,
+        },
+        'rounds': rounds,
+    }
 
 
 def _iter_series_blocks(html_content: str):
@@ -294,6 +457,7 @@ def run_sync(config: CompetitionConfig):
 
     existing_rounds = load_existing_rounds(config.output_file)
     rounds = []
+    fallback_reuse_count = 0
     for index, fixture_id in enumerate(fixture_ids, start=1):
         print(f'Processando jornada {index} (fixtureId={fixture_id})')
         url = (
@@ -306,6 +470,7 @@ def run_sync(config: CompetitionConfig):
             if existing_round:
                 print(f'Falha ao obter dados da jornada {index}; a reutilizar dados existentes.')
                 rounds.append(existing_round)
+                fallback_reuse_count += 1
             else:
                 print(f'Falha ao obter dados da jornada {index}')
             continue
@@ -315,6 +480,7 @@ def run_sync(config: CompetitionConfig):
         if not matches and not classification and existing_round:
             print(f'Jornada {index} sem dados novos; a reutilizar dados existentes.')
             rounds.append(existing_round)
+            fallback_reuse_count += 1
             continue
         rounds.append({
             'index': index,
@@ -344,7 +510,7 @@ def run_sync(config: CompetitionConfig):
         )
         return
 
-    data = {'rounds': rounds}
+    data = build_payload(rounds, fallback_reuse_count=fallback_reuse_count)
     os.makedirs(os.path.dirname(config.output_file), exist_ok=True)
     with open(config.output_file, 'w', encoding='utf-8') as handle:
         json.dump(data, handle, ensure_ascii=False, indent=4)
