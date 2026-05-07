@@ -1,6 +1,7 @@
 import json
 import os
 import time
+from urllib.parse import urlparse
 
 from curl_cffi import requests
 
@@ -19,6 +20,42 @@ BLOCKED_MARKERS = (
     "Just a moment...",
 )
 
+SESSION_IMPERSONATION = "chrome124"
+
+_SESSION = None
+_LAST_SUCCESSFUL_URL = None
+
+
+def _build_session():
+    return requests.Session(
+        impersonate=SESSION_IMPERSONATION,
+        headers=DEFAULT_HEADERS,
+    )
+
+
+def _get_session():
+    global _SESSION
+    if _SESSION is None:
+        _SESSION = _build_session()
+    return _SESSION
+
+
+def _reset_session():
+    global _SESSION
+    _SESSION = _build_session()
+    return _SESSION
+
+
+def _same_origin(left: str, right: str) -> bool:
+    if not left or not right:
+        return False
+    left_parts = urlparse(left)
+    right_parts = urlparse(right)
+    return (
+        left_parts.scheme == right_parts.scheme
+        and left_parts.netloc == right_parts.netloc
+    )
+
 
 def is_blocked_content(content: str) -> bool:
     if not content:
@@ -34,6 +71,7 @@ def get_page_content(
     verbose: bool = False,
     max_retries: int = 2,
 ):
+    global _LAST_SUCCESSFUL_URL
     cache_path = os.path.join(cache_dir, f"{cache_key}.html")
 
     if use_cache and os.path.exists(cache_path):
@@ -49,10 +87,14 @@ def get_page_content(
         if verbose:
             print(f"Buscando da web: {url}")
         try:
-            response = requests.get(
+            session = _get_session()
+            request_headers = dict(DEFAULT_HEADERS)
+            if _LAST_SUCCESSFUL_URL and _same_origin(_LAST_SUCCESSFUL_URL, url):
+                request_headers["Referer"] = _LAST_SUCCESSFUL_URL
+
+            response = session.get(
                 url,
-                headers=DEFAULT_HEADERS,
-                impersonate="chrome124",
+                headers=request_headers,
                 timeout=60,
             )
             if response.status_code == 429 and attempt < max_retries:
@@ -60,6 +102,9 @@ def get_page_content(
                 continue
             if response.status_code >= 400:
                 print(f"HTTP error {response.status_code} while requesting {url}")
+                if response.status_code == 403 and attempt < max_retries:
+                    # Recriamos a sessão no último retry para renovar cookies/contexto.
+                    _reset_session()
                 if attempt < max_retries:
                     time.sleep(5 * (attempt + 1))
                     continue
@@ -69,9 +114,12 @@ def get_page_content(
             if is_blocked_content(content):
                 print(f"Blocked content while requesting {url}")
                 if attempt < max_retries:
+                    _reset_session()
+                if attempt < max_retries:
                     time.sleep(5 * (attempt + 1))
                     continue
                 return None
+            _LAST_SUCCESSFUL_URL = url
             if use_cache:
                 with open(cache_path, "w", encoding="utf-8") as handle:
                     handle.write(content)

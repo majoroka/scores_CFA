@@ -15,6 +15,9 @@ REPORT_PATH = CACHE_DIR / "fetch_report.json"
 FETCH_TIMEOUT_SECONDS = 300
 MAX_ATTEMPTS = 3
 RETRY_DELAYS_SECONDS = (10, 30)
+FALLBACK_MARKERS = (
+    "a reutilizar dados existentes",
+)
 
 
 def discover_fetchers(selected_names=None):
@@ -104,6 +107,11 @@ def is_valid_update(previous_snapshot, current_snapshot):
     return True, None
 
 
+def detect_fallback_usage(stdout_text: str) -> bool:
+    lowered = (stdout_text or "").lower()
+    return any(marker in lowered for marker in FALLBACK_MARKERS)
+
+
 def restore_backup(backup_path: Path, output_path: Path):
     if backup_path.exists():
         shutil.copy2(backup_path, output_path)
@@ -122,6 +130,7 @@ def run_fetcher(fetcher_path: Path, output_path: Path):
 
     attempts = []
     success = False
+    degraded = False
     final_snapshot = previous_snapshot
     changed = False
 
@@ -146,6 +155,7 @@ def run_fetcher(fetcher_path: Path, output_path: Path):
             "stdout_tail": result.stdout[-4000:],
             "stderr_tail": result.stderr[-4000:],
             "validation_error": None,
+            "degraded": False,
         }
 
         if result.returncode == 0:
@@ -156,6 +166,8 @@ def run_fetcher(fetcher_path: Path, output_path: Path):
                     final_snapshot = current_snapshot
                     changed = previous_snapshot != current_snapshot
                     success = True
+                    degraded = detect_fallback_usage(result.stdout)
+                    attempt_report["degraded"] = degraded
                     attempts.append(attempt_report)
                     break
                 attempt_report["validation_error"] = reason
@@ -172,6 +184,7 @@ def run_fetcher(fetcher_path: Path, output_path: Path):
         "fetcher": fetcher_path.name,
         "output_file": str(output_path.relative_to(ROOT)),
         "success": success,
+        "degraded": degraded,
         "changed": changed,
         "previous_snapshot": previous_snapshot,
         "final_snapshot": final_snapshot,
@@ -197,7 +210,12 @@ def main():
         fetcher_report = run_fetcher(fetcher_path, output_path)
         report["fetchers"].append(fetcher_report)
 
-        status = "OK" if fetcher_report["success"] else "FAIL"
+        if not fetcher_report["success"]:
+            status = "FAIL"
+        elif fetcher_report["degraded"]:
+            status = "DEGRADED"
+        else:
+            status = "OK"
         attempts_used = len(fetcher_report["attempts"])
         final_rounds = fetcher_report["final_snapshot"]["round_count"]
         changed_flag = "changed" if fetcher_report["changed"] else "unchanged"
@@ -210,6 +228,7 @@ def main():
 
     report["success_count"] = sum(1 for item in report["fetchers"] if item["success"])
     report["failure_count"] = sum(1 for item in report["fetchers"] if not item["success"])
+    report["degraded_count"] = sum(1 for item in report["fetchers"] if item["degraded"])
     report["changed_count"] = sum(1 for item in report["fetchers"] if item["changed"])
 
     with open(REPORT_PATH, "w", encoding="utf-8") as handle:
@@ -219,6 +238,7 @@ def main():
         "SUMMARY "
         f"success={report['success_count']} "
         f"failure={report['failure_count']} "
+        f"degraded={report['degraded_count']} "
         f"changed={report['changed_count']}"
         ,
         flush=True,

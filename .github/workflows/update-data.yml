@@ -63,6 +63,7 @@ jobs:
               "",
               f"- Sucesso: {report['success_count']}",
               f"- Falhas: {report['failure_count']}",
+              f"- Degradados: {report.get('degraded_count', 0)}",
               f"- Alterados: {report['changed_count']}",
               "",
               "| Fetcher | Estado | Tentativas | Jornadas | Alterou JSON |",
@@ -73,7 +74,7 @@ jobs:
               lines.append(
                   "| {fetcher} | {status} | {attempts} | {rounds} | {changed} |".format(
                       fetcher=item["fetcher"],
-                      status="OK" if item["success"] else "FAIL",
+                      status="FAIL" if not item["success"] else ("DEGRADED" if item.get("degraded") else "OK"),
                       attempts=len(item["attempts"]),
                       rounds=item["final_snapshot"]["round_count"],
                       changed="sim" if item["changed"] else "nao",
