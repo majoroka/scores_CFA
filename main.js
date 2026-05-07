@@ -151,6 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const classificationRoundTitle = document.getElementById('classification-round-title');
     const matchesContainer = document.getElementById('matches-container');
     const classificationContainer = document.getElementById('classification-container');
+    let dataStatusContainer = null;
 
     // Utilitário simples para decodificar HTML vindo da FPF
     const htmlDecoder = document.createElement('textarea');
@@ -169,6 +170,63 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const textFromNode = (node) => (node ? cleanHTMLText(node.textContent || '') : '');
+
+    const ensureDataStatusContainer = () => {
+        if (dataStatusContainer) return dataStatusContainer;
+        const parent = document.querySelector('.container');
+        const tabs = document.querySelector('.tabs');
+        if (!parent || !tabs) return null;
+        const container = document.createElement('div');
+        container.className = 'data-status';
+        container.setAttribute('aria-live', 'polite');
+        tabs.insertAdjacentElement('afterend', container);
+        dataStatusContainer = container;
+        return dataStatusContainer;
+    };
+
+    const formatTimestamp = (value) => {
+        if (!value) return null;
+        const parsed = new Date(value);
+        if (Number.isNaN(parsed.getTime())) return null;
+        return new Intl.DateTimeFormat('pt-PT', {
+            dateStyle: 'short',
+            timeStyle: 'short',
+        }).format(parsed);
+    };
+
+    const renderDataStatus = () => {
+        const container = ensureDataStatusContainer();
+        if (!container || !competitionData) return;
+
+        const parts = [];
+        const formattedTimestamp = formatTimestamp(competitionData.lastUpdatedAt);
+        if (formattedTimestamp) {
+            parts.push(`<span class="data-status__item">Atualizado: ${formattedTimestamp}</span>`);
+        }
+
+        const sourceHealth = competitionData.sourceHealth || {};
+        const status = sourceHealth.status;
+        const fallbackReuseCount = Number.isInteger(sourceHealth.fallbackReuseCount)
+            ? sourceHealth.fallbackReuseCount
+            : 0;
+
+        if (status === 'degraded') {
+            parts.push(
+                `<span class="data-status__item data-status__item--warning">Origem: degradada (${fallbackReuseCount} reutilizações)</span>`
+            );
+        } else if (status === 'ok') {
+            parts.push('<span class="data-status__item">Origem: estável</span>');
+        }
+
+        if (!parts.length) {
+            container.innerHTML = '';
+            container.classList.add('hidden');
+            return;
+        }
+
+        container.innerHTML = parts.join('');
+        container.classList.remove('hidden');
+    };
 
     const LIVE_DATA_ENDPOINT = 'https://resultados.fpf.pt/Competition/GetClassificationAndMatchesByFixture?fixtureId=';
     const LIVE_DATA_SOURCES = [
@@ -884,6 +942,7 @@ const initializeRoundBasedOnDate = () => {
             crestsData = await crestsResponse.json();
 
             initializeRoundBasedOnDate();
+            renderDataStatus();
 
             // Renderização inicial com dados locais
             handleHashChange();
@@ -893,6 +952,7 @@ const initializeRoundBasedOnDate = () => {
             if (!userHasManualRoundSelection) {
                 initializeRoundBasedOnDate();
             }
+            renderDataStatus();
             handleHashChange();
 
         } catch (error) {

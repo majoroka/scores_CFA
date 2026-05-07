@@ -23,6 +23,10 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+env:
+  MAX_FETCH_FAILURES: "0"
+  MAX_FETCH_DEGRADED: "2"
+
 jobs:
   build:
     if: github.actor != 'github-actions[bot]'
@@ -87,6 +91,34 @@ jobs:
           summary_path = os.environ["GITHUB_STEP_SUMMARY"]
           with open(summary_path, "a", encoding="utf-8") as handle:
               handle.write("\n".join(lines) + "\n")
+          PY
+
+      - name: Validar política de robustez dos fetchers
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          report = json.loads(Path("cache/fetch_report.json").read_text(encoding="utf-8"))
+          max_failures = int(os.environ.get("MAX_FETCH_FAILURES", "0"))
+          max_degraded = int(os.environ.get("MAX_FETCH_DEGRADED", "0"))
+
+          failure_count = report.get("failure_count", 0)
+          degraded_count = report.get("degraded_count", 0)
+
+          print(f"Policy: MAX_FETCH_FAILURES={max_failures} MAX_FETCH_DEGRADED={max_degraded}")
+          print(f"Observed: failure_count={failure_count} degraded_count={degraded_count}")
+
+          if failure_count > max_failures:
+              raise SystemExit(
+                  f"Fetch policy failed: {failure_count} failures exceed allowed {max_failures}."
+              )
+
+          if degraded_count > max_degraded:
+              raise SystemExit(
+                  f"Fetch policy failed: {degraded_count} degraded fetchers exceed allowed {max_degraded}."
+              )
           PY
 
       - name: Atualizar manifesto de emblemas (opcional)

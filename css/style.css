@@ -54,6 +54,37 @@ a {
     display: none !important;
 }
 
+.data-status {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    justify-content: center;
+    align-items: center;
+    margin: -0.25rem 0 1rem;
+}
+
+.data-status__item {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.65rem;
+    border-radius: 999px;
+    border: 1px solid var(--border-color);
+    background: var(--surface-muted);
+    color: var(--secondary-color);
+    font-size: 0.82rem;
+    line-height: 1;
+}
+
+.data-status__item--warning {
+    color: #f0b429;
+    border-color: rgba(240, 180, 41, 0.5);
+}
+
+:root[data-theme="light"] .data-status__item--warning {
+    color: #8a5a00;
+    border-color: rgba(138, 90, 0, 0.35);
+}
+
 /* --- CABEÇALHO (INDEX E DETALHE) --- */
 
 .theme-toggle-wrapper {
