@@ -1,7 +1,8 @@
 import unittest
 from datetime import datetime
+from pathlib import Path
 
-from competition_configs import CompetitionConfig
+from competition_configs import CompetitionConfig, FEMININO_SUB15, INICIADOS_A
 from competition_sync import (
     build_payload,
     compute_default_round_index,
@@ -13,6 +14,12 @@ from competition_sync import (
 
 
 class CompetitionSyncTests(unittest.TestCase):
+    fixtures_dir = Path(__file__).resolve().parent / 'fixtures' / 'fpf'
+
+    @classmethod
+    def read_fixture(cls, name):
+        return (cls.fixtures_dir / name).read_text(encoding='utf-8')
+
     def test_extract_fixture_ids_with_phase_and_series(self):
         html = '''
         <div class="accordion-title">1ª FASE</div>
@@ -133,6 +140,54 @@ class CompetitionSyncTests(unittest.TestCase):
         self.assertEqual(payload['sourceHealth']['status'], 'degraded')
         self.assertEqual(payload['sourceHealth']['fallbackReuseCount'], 2)
         self.assertEqual(payload['rounds'], rounds)
+
+    def test_real_main_page_extracts_iniciados_a_fixture_ids(self):
+        html = self.read_fixture('competition_iniciados_a_main.html')
+        fixture_ids = extract_fixture_ids(html, INICIADOS_A)
+        self.assertEqual(len(fixture_ids), 14)
+        self.assertEqual(fixture_ids[:3], ['640944', '640945', '640946'])
+        self.assertEqual(fixture_ids[-1], '640957')
+
+    def test_real_main_page_uses_first_block_fallback_for_feminino_sub15(self):
+        html = self.read_fixture('competition_feminino_sub15_main.html')
+        fixture_ids = extract_fixture_ids(html, FEMININO_SUB15)
+        self.assertEqual(len(fixture_ids), 14)
+        self.assertEqual(fixture_ids[:3], ['626066', '626067', '626068'])
+        self.assertEqual(fixture_ids[-1], '626079')
+
+    def test_real_fixture_parses_infantis_a_matches_and_classification(self):
+        fragment = self.read_fixture('fixture_infantis_a_626094.html')
+        matches = parse_matches(fragment)
+        classification = parse_classification(fragment)
+
+        self.assertEqual(len(matches), 5)
+        self.assertEqual(len(classification), 10)
+
+        first_match = matches[0]
+        self.assertEqual(first_match['home'], 'Nucleo Sporting C.P. Olhão')
+        self.assertEqual(first_match['away'], 'Js Campinense')
+        self.assertEqual(first_match['homeScore'], 4)
+        self.assertEqual(first_match['awayScore'], 2)
+
+        first_entry = classification[0]
+        self.assertEqual(first_entry['team'], 'Cf Os Armacenenses')
+        self.assertEqual(first_entry['position'], 1)
+        self.assertEqual(first_entry['points'], 34)
+
+    def test_real_fixture_parses_benjamins_a1_matches_without_classification(self):
+        fragment = self.read_fixture('fixture_benjamins_a1_641124.html')
+        matches = parse_matches(fragment, strip_score_from_date=True)
+        classification = parse_classification(fragment)
+
+        self.assertEqual(len(matches), 3)
+        self.assertEqual(len(classification), 0)
+
+        first_match = matches[0]
+        self.assertEqual(first_match['home'], 'Jc Aljezurense')
+        self.assertEqual(first_match['away'], 'Portimonense Sc')
+        self.assertEqual(first_match['date'], '28 fev')
+        self.assertEqual(first_match['homeScore'], 3)
+        self.assertEqual(first_match['awayScore'], 6)
 
 
 if __name__ == '__main__':
