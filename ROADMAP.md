@@ -5,18 +5,20 @@
 - ✅ Corrigir o parser de classificação dos scrapers para garantir que todas as equipas aparecem nos JSON locais (resolvido em nov/2023).
 - ✅ Refatorizar cabeçalho das páginas de detalhe (CSS Grid) para suportar subtítulos de fases extensos (resolvido em jan/2025).
 - ✅ Atualizar scrapers para as novas fases das competições (Infantis, Femininos) (resolvido em jan/2025).
+- ✅ Consolidar um motor único de sincronização e configuração central por competição (`competition_sync.py` + `competition_configs.py`).
+- ✅ Adicionar validações automáticas, retries e relatório por fetcher através de `run_fetchers.py`.
+- ✅ Publicar metadata de sincronização nos JSON (`defaultRoundIndex`, `defaultRoundNumber`, `lastUpdatedAt`, `sourceHealth`).
+- ✅ Introduzir testes unitários e testes de regressão com snapshots reais da FPF.
 - Monitorizar e adaptar scrapers para futuras fases e competições (ex: Taças Nacionais, Fases de Manutenção).
-- Consolidar um comando único (ex.: `python tools/run_fetchers.py`) que execute todos os `fetch_*.py` e produza um relatório de sucesso/falha por competição.
-- Formalizar um ficheiro de configuração partilhado para IDs de competição/época, evitando duplicação de constantes em cada scraper.
-- Adicionar validações automáticas aos JSON gerados (estrutura `rounds`, campos obrigatórios, tipos), falhando o workflow caso haja dados incompletos.
 - Rever o manifesto de emblemas, garantindo que todos os clubes presentes nos JSON têm correspondência em `data/crests.json`.
 
 ## Próximos passos (1-3 meses)
 
-- Introduzir testes unitários simples para as funções de parsing dos scrapers, facilitando a deteção de mudanças no HTML da FPF.
+- Mostrar `lastUpdatedAt` e `sourceHealth` na UI para dar visibilidade ao estado real dos dados.
+- Definir uma política operacional para `DEGRADED` no workflow: apenas informar, falhar acima de limiar ou acionar alerta.
+- Alargar a biblioteca de snapshots reais da FPF a mais famílias de competição e mais casos-limite.
 - Criar uma camada de serviço em `main.js` que armazene em `localStorage` a última versão dos dados carregados, permitindo fallback em modo offline.
 - Melhorar a acessibilidade: acrescentar textos alternativos descritivos, focos visuais para navegação por teclado e labels claras nas tabs.
-- Disponibilizar indicadores visuais na UI quando os dados forem atualizados por hidratação em tempo real (badge “Última atualização” por jornada).
 
 ## Visão futura (3+ meses)
 

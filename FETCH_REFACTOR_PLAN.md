@@ -12,6 +12,28 @@ O objetivo final é:
 - reduzir a duplicação entre `fetch_*.py`;
 - diminuir a dependência de lógica corretiva no browser.
 
+## Estado Atual
+
+As três primeiras fases deste plano já foram implementadas.
+
+### Concluído
+
+- configuração central por competição em `competition_configs.py`;
+- motor comum de sincronização em `competition_sync.py`;
+- wrappers mínimos `fetch_*.py` por compatibilidade;
+- cliente HTTP partilhado com sessão persistente em `fpf_http.py`;
+- retries e relatório central em `run_fetchers.py`;
+- publicação de `defaultRoundIndex`, `defaultRoundNumber`, `lastUpdatedAt` e `sourceHealth` nos JSON;
+- frontend a preferir metadata publicada em vez de recalcular sempre a jornada inicial;
+- testes unitários e regressões com snapshots reais da FPF.
+
+### Ainda em aberto
+
+- política operacional para estado `DEGRADED`;
+- maior cobertura de snapshots reais;
+- exposição visual de `lastUpdatedAt`/`sourceHealth` na UI;
+- alertas automáticos para degradação ou falha persistente.
+
 ## Problemas atuais
 
 ### 1. Dependência excessiva de scraping HTML
@@ -266,6 +288,8 @@ O workflow deve correr o motor central e produzir um relatório legível.
 
 ### Fase 1
 
+Estado: implementada
+
 - introduzir ficheiro central de configuração;
 - criar motor único de sincronização;
 - reaproveitar código existente de parsing;
@@ -273,17 +297,23 @@ O workflow deve correr o motor central e produzir um relatório legível.
 
 ### Fase 2
 
+Estado: implementada
+
 - mover cálculo de `defaultRoundIndex` para o pipeline;
 - publicar `lastUpdatedAt` e `sourceHealth`;
 - reduzir dependência da hidratação remota no browser.
 
 ### Fase 3
 
+Estado: implementada
+
 - substituir progressivamente os `fetch_*.py` por wrappers mínimos ou removê-los;
 - adicionar testes unitários aos parsers e validadores;
 - criar snapshots de regressão.
 
 ### Fase 4
+
+Estado: pendente
 
 - adicionar alertas automáticos para falhas persistentes;
 - opcionalmente expor uma API estática mais limpa para consumo futuro.
@@ -298,13 +328,13 @@ Uma implementação futura deve ser considerada concluída quando:
 - a automação publica apenas snapshots validados;
 - o relatório final permite perceber rapidamente o estado de cada competição.
 
-## Recomendação prática
+## Próximas prioridades
 
-Se esta refatoração for executada, a prioridade correta é:
+Com a base principal já implementada, a prioridade recomendada passa a ser:
 
-1. centralizar configuração;
-2. centralizar sincronização e validação;
-3. publicar `defaultRoundIndex` no JSON;
-4. simplificar o frontend.
+1. definir política para `DEGRADED` no workflow;
+2. mostrar metadata de sincronização na UI;
+3. aumentar cobertura de snapshots reais;
+4. adicionar alertas automáticos.
 
-Essa ordem reduz risco e permite melhorias progressivas sem reescrever tudo de uma vez.
+Essa ordem reforça a operação diária sem exigir nova reestruturação de fundo.
