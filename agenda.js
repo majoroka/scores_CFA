@@ -16,6 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const dateRangeApply = document.getElementById('date-range-apply');
     const dateRangeCancel = document.getElementById('date-range-cancel');
     const dateRangeClose = document.getElementById('date-range-picker-close');
+    const dateRangeStartInput = document.getElementById('date-range-start-input');
+    const dateRangeEndInput = document.getElementById('date-range-end-input');
     const competitionSelect = document.getElementById('filter-competition');
     const dataStatus = document.getElementById('agenda-data-status');
     const presetButtons = Array.from(document.querySelectorAll('.agenda-preset-btn'));
@@ -203,6 +205,8 @@ document.addEventListener('DOMContentLoaded', () => {
         draftRange = cloneRange(selectedRange);
         const today = createDateAtMidday(new Date());
         pickerMonth = new Date((draftRange.start || today).getFullYear(), (draftRange.start || today).getMonth(), 1, 12, 0, 0, 0);
+        dateRangeStartInput.value = draftRange.start ? formatInputDate(draftRange.start) : '';
+        dateRangeEndInput.value = draftRange.end ? formatInputDate(draftRange.end) : '';
         renderDateRangePicker();
         dateRangePicker.classList.remove('hidden');
         dateRangeTrigger.setAttribute('aria-expanded', 'true');
@@ -222,6 +226,8 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             draftRange = { start: draftRange.start, end: clicked };
         }
+        dateRangeStartInput.value = draftRange.start ? formatInputDate(draftRange.start) : '';
+        dateRangeEndInput.value = draftRange.end ? formatInputDate(draftRange.end) : '';
         renderDateRangePicker();
     };
 
@@ -276,6 +282,24 @@ document.addEventListener('DOMContentLoaded', () => {
             renderSingleCalendarMonth(pickerMonth),
             renderSingleCalendarMonth(addMonths(pickerMonth, 1)),
         ].join('');
+    };
+
+    const updateDraftRangeFromInputs = () => {
+        const start = dateRangeStartInput.value
+            ? createDateAtMidday(new Date(`${dateRangeStartInput.value}T12:00:00`))
+            : null;
+        const end = dateRangeEndInput.value
+            ? createDateAtMidday(new Date(`${dateRangeEndInput.value}T12:00:00`))
+            : null;
+
+        if (start && end && compareDates(end, start) < 0) {
+            draftRange = { start: end, end: start };
+            dateRangeStartInput.value = formatInputDate(end);
+            dateRangeEndInput.value = formatInputDate(start);
+        } else {
+            draftRange = { start, end };
+        }
+        renderDateRangePicker();
     };
 
     const applyPreset = (preset) => {
@@ -628,7 +652,12 @@ document.addEventListener('DOMContentLoaded', () => {
         handleDraftDateSelection(new Date(year, month - 1, day, 12, 0, 0, 0));
     });
 
+    [dateRangeStartInput, dateRangeEndInput].forEach((input) => {
+        input.addEventListener('change', updateDraftRangeFromInputs);
+    });
+
     dateRangeApply.addEventListener('click', () => {
+        updateDraftRangeFromInputs();
         if (!draftRange.start) {
             closeDateRangePicker();
             return;
