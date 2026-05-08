@@ -9,10 +9,16 @@ on:
       - "fpf_http.py"
       - "run_fetchers.py"
       - "requirements.txt"
+      - "competition_configs.py"
+      - "competition_sync.py"
       - ".github/workflows/update-data.yml"
+      - "main.js"
+      - "css/**"
+      - "*.html"
+      - "data/*.json"
   workflow_dispatch: {}         # Permite correr manualmente no GitHub
   schedule:
-    - cron: "0 */4 * * *"       # A cada 4 horas
+    - cron: "17,47 * * * *"     # A cada 30 minutos, fora dos minutos mais concorridos
 
 permissions:
   contents: write
@@ -20,8 +26,8 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: "update-data-and-pages"
+  cancel-in-progress: true
 
 env:
   MAX_FETCH_FAILURES: "0"
