@@ -26,14 +26,30 @@
 
         <section class="agenda-toolbar" aria-label="Filtros">
             <div class="agenda-toolbar__group">
-                <label class="agenda-filter">
-                    <span>De</span>
-                    <input type="date" id="filter-start-date">
-                </label>
-                <label class="agenda-filter">
-                    <span>Até</span>
-                    <input type="date" id="filter-end-date">
-                </label>
+                <div class="agenda-filter agenda-filter--range">
+                    <span>Período</span>
+                    <button type="button" id="filter-date-range-trigger" class="agenda-range-trigger" aria-haspopup="dialog" aria-expanded="false">
+                        Selecionar período
+                    </button>
+                    <div id="date-range-picker" class="agenda-range-picker hidden" role="dialog" aria-modal="false" aria-label="Selecionar período">
+                        <div class="agenda-range-picker__header">
+                            <div>
+                                <strong>Selecionar período</strong>
+                                <p id="date-range-picker-summary">Escolhe a data inicial e final.</p>
+                            </div>
+                            <button type="button" id="date-range-picker-close" class="agenda-range-picker__close" aria-label="Fechar calendário">×</button>
+                        </div>
+                        <div class="agenda-range-picker__nav">
+                            <button type="button" id="date-range-prev" class="agenda-range-nav" aria-label="Mês anterior">‹</button>
+                            <button type="button" id="date-range-next" class="agenda-range-nav" aria-label="Mês seguinte">›</button>
+                        </div>
+                        <div id="date-range-calendars" class="agenda-range-picker__calendars"></div>
+                        <div class="agenda-range-picker__actions">
+                            <button type="button" id="date-range-cancel" class="agenda-range-action agenda-range-action--secondary">Cancelar</button>
+                            <button type="button" id="date-range-apply" class="agenda-range-action">Aplicar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="agenda-toolbar__group">
                 <label class="agenda-filter agenda-filter--wide">

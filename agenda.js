@@ -7,19 +7,30 @@ document.addEventListener('DOMContentLoaded', () => {
     const summaryResultados = document.getElementById('agenda-summary-resultados');
     const listProximos = document.getElementById('agenda-list-proximos');
     const listResultados = document.getElementById('agenda-list-resultados');
-    const startDateInput = document.getElementById('filter-start-date');
-    const endDateInput = document.getElementById('filter-end-date');
+    const dateRangeTrigger = document.getElementById('filter-date-range-trigger');
+    const dateRangePicker = document.getElementById('date-range-picker');
+    const dateRangePickerSummary = document.getElementById('date-range-picker-summary');
+    const dateRangeCalendars = document.getElementById('date-range-calendars');
+    const dateRangePrev = document.getElementById('date-range-prev');
+    const dateRangeNext = document.getElementById('date-range-next');
+    const dateRangeApply = document.getElementById('date-range-apply');
+    const dateRangeCancel = document.getElementById('date-range-cancel');
+    const dateRangeClose = document.getElementById('date-range-picker-close');
     const competitionSelect = document.getElementById('filter-competition');
     const dataStatus = document.getElementById('agenda-data-status');
     const presetButtons = Array.from(document.querySelectorAll('.agenda-preset-btn'));
 
     const CALENDAR_CACHE_KEY = 'cfa-calendar-cache-v1';
     const CRESTS_CACHE_KEY = 'cfa-crests-cache-v1';
-    const MONTH_LABELS = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
+    const MONTH_LABELS = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
+    const WEEKDAY_LABELS = ['S', 'T', 'Q', 'Q', 'S', 'S', 'D'];
 
     let activeTab = 'proximos';
     let calendarData = null;
     let crestsData = null;
+    let selectedRange = { start: null, end: null };
+    let draftRange = { start: null, end: null };
+    let pickerMonth = null;
 
     const normalizeName = (name) => {
         if (!name) return '';
@@ -114,6 +125,159 @@ document.addEventListener('DOMContentLoaded', () => {
         return `${year}-${month}-${day}`;
     };
 
+    const createDateAtMidday = (date) => {
+        const next = new Date(date);
+        next.setHours(12, 0, 0, 0);
+        return next;
+    };
+
+    const startOfDay = (date) => {
+        if (!date) return null;
+        const next = new Date(date);
+        next.setHours(0, 0, 0, 0);
+        return next;
+    };
+
+    const endOfDay = (date) => {
+        if (!date) return null;
+        const next = new Date(date);
+        next.setHours(23, 59, 59, 999);
+        return next;
+    };
+
+    const cloneRange = (range) => ({
+        start: range?.start ? new Date(range.start) : null,
+        end: range?.end ? new Date(range.end) : null,
+    });
+
+    const sameCalendarDay = (left, right) => {
+        if (!left || !right) return false;
+        return (
+            left.getFullYear() === right.getFullYear() &&
+            left.getMonth() === right.getMonth() &&
+            left.getDate() === right.getDate()
+        );
+    };
+
+    const compareDates = (left, right) => {
+        return startOfDay(left).getTime() - startOfDay(right).getTime();
+    };
+
+    const addMonths = (date, amount) => {
+        const next = new Date(date);
+        next.setDate(1);
+        next.setMonth(next.getMonth() + amount);
+        return next;
+    };
+
+    const formatRangeLabel = (range) => {
+        if (!range?.start || !range?.end) {
+            return 'Selecionar período';
+        }
+        const start = range.start;
+        const end = range.end;
+        const startLabel = `${start.getDate()} ${MONTH_LABELS[start.getMonth()].slice(0, 3)}`;
+        const endLabel = `${end.getDate()} ${MONTH_LABELS[end.getMonth()].slice(0, 3)}`;
+        return `${startLabel} - ${endLabel}`;
+    };
+
+    const setSelectedRange = (start, end = start) => {
+        selectedRange = {
+            start: start ? createDateAtMidday(start) : null,
+            end: end ? createDateAtMidday(end) : null,
+        };
+        updateRangeTrigger();
+    };
+
+    const updateRangeTrigger = () => {
+        dateRangeTrigger.textContent = formatRangeLabel(selectedRange);
+    };
+
+    const formatPickerSummary = (range) => {
+        if (!range.start) return 'Escolhe a data inicial e final.';
+        if (!range.end) return `Início: ${formatInputDate(range.start)}. Escolhe a data final.`;
+        return `${formatInputDate(range.start)} até ${formatInputDate(range.end)}`;
+    };
+
+    const openDateRangePicker = () => {
+        draftRange = cloneRange(selectedRange);
+        const today = createDateAtMidday(new Date());
+        pickerMonth = new Date((draftRange.start || today).getFullYear(), (draftRange.start || today).getMonth(), 1, 12, 0, 0, 0);
+        renderDateRangePicker();
+        dateRangePicker.classList.remove('hidden');
+        dateRangeTrigger.setAttribute('aria-expanded', 'true');
+    };
+
+    const closeDateRangePicker = () => {
+        dateRangePicker.classList.add('hidden');
+        dateRangeTrigger.setAttribute('aria-expanded', 'false');
+    };
+
+    const handleDraftDateSelection = (date) => {
+        const clicked = createDateAtMidday(date);
+        if (!draftRange.start || (draftRange.start && draftRange.end)) {
+            draftRange = { start: clicked, end: null };
+        } else if (compareDates(clicked, draftRange.start) < 0) {
+            draftRange = { start: clicked, end: draftRange.start };
+        } else {
+            draftRange = { start: draftRange.start, end: clicked };
+        }
+        renderDateRangePicker();
+    };
+
+    const renderSingleCalendarMonth = (monthDate) => {
+        const year = monthDate.getFullYear();
+        const month = monthDate.getMonth();
+        const firstDay = new Date(year, month, 1, 12, 0, 0, 0);
+        const startingWeekday = (firstDay.getDay() + 6) % 7;
+        const daysInMonth = new Date(year, month + 1, 0).getDate();
+        const today = createDateAtMidday(new Date());
+        const cells = [];
+
+        for (let index = 0; index < startingWeekday; index += 1) {
+            cells.push('<span class="agenda-calendar__cell agenda-calendar__cell--empty" aria-hidden="true"></span>');
+        }
+
+        for (let day = 1; day <= daysInMonth; day += 1) {
+            const cellDate = new Date(year, month, day, 12, 0, 0, 0);
+            const isStart = draftRange.start && sameCalendarDay(cellDate, draftRange.start);
+            const effectiveEnd = draftRange.end || draftRange.start;
+            const isEnd = draftRange.end && sameCalendarDay(cellDate, draftRange.end);
+            const isInRange = draftRange.start && effectiveEnd
+                ? compareDates(cellDate, draftRange.start) >= 0 && compareDates(cellDate, effectiveEnd) <= 0
+                : false;
+            const isToday = sameCalendarDay(cellDate, today);
+            const classes = ['agenda-calendar__cell'];
+            if (isInRange) classes.push('agenda-calendar__cell--in-range');
+            if (isStart) classes.push('agenda-calendar__cell--start');
+            if (isEnd) classes.push('agenda-calendar__cell--end');
+            if (isToday) classes.push('agenda-calendar__cell--today');
+            cells.push(
+                `<button type="button" class="${classes.join(' ')}" data-date="${formatInputDate(cellDate)}">${day}</button>`
+            );
+        }
+
+        return `
+            <section class="agenda-calendar">
+                <header class="agenda-calendar__header">${MONTH_LABELS[month]} ${year}</header>
+                <div class="agenda-calendar__weekdays">
+                    ${WEEKDAY_LABELS.map((label) => `<span>${label}</span>`).join('')}
+                </div>
+                <div class="agenda-calendar__grid">
+                    ${cells.join('')}
+                </div>
+            </section>
+        `;
+    };
+
+    const renderDateRangePicker = () => {
+        dateRangePickerSummary.textContent = formatPickerSummary(draftRange);
+        dateRangeCalendars.innerHTML = [
+            renderSingleCalendarMonth(pickerMonth),
+            renderSingleCalendarMonth(addMonths(pickerMonth, 1)),
+        ].join('');
+    };
+
     const applyPreset = (preset) => {
         const today = new Date();
         today.setHours(0, 0, 0, 0);
@@ -140,9 +304,7 @@ document.addEventListener('DOMContentLoaded', () => {
             default:
                 return;
         }
-
-        startDateInput.value = formatInputDate(start);
-        endDateInput.value = formatInputDate(end);
+        setSelectedRange(start, end);
 
         if (preset === 'last7') {
             setActiveTab('resultados');
@@ -155,17 +317,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const ensureDefaultFilters = () => {
         const today = new Date();
         today.setHours(0, 0, 0, 0);
-        if (!startDateInput.value || !endDateInput.value) {
+        if (!selectedRange.start || !selectedRange.end) {
             if (activeTab === 'resultados') {
                 const start = new Date(today);
                 start.setDate(today.getDate() - 6);
-                startDateInput.value = formatInputDate(start);
-                endDateInput.value = formatInputDate(today);
+                setSelectedRange(start, today);
             } else {
                 const end = new Date(today);
                 end.setDate(today.getDate() + 6);
-                startDateInput.value = formatInputDate(today);
-                endDateInput.value = formatInputDate(end);
+                setSelectedRange(today, end);
             }
         }
     };
@@ -230,8 +390,8 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const getDateRange = () => {
-        const start = startDateInput.value ? new Date(`${startDateInput.value}T00:00:00`) : null;
-        const end = endDateInput.value ? new Date(`${endDateInput.value}T23:59:59`) : null;
+        const start = startOfDay(selectedRange.start);
+        const end = endOfDay(selectedRange.end);
         return { start, end };
     };
 
@@ -434,12 +594,65 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    [startDateInput, endDateInput, competitionSelect].forEach((element) => {
-        element.addEventListener('change', render);
-    });
+    competitionSelect.addEventListener('change', render);
 
     presetButtons.forEach((button) => {
         button.addEventListener('click', () => applyPreset(button.dataset.preset));
+    });
+
+    dateRangeTrigger.addEventListener('click', () => {
+        if (dateRangePicker.classList.contains('hidden')) {
+            openDateRangePicker();
+        } else {
+            closeDateRangePicker();
+        }
+    });
+
+    dateRangePrev.addEventListener('click', () => {
+        pickerMonth = addMonths(pickerMonth, -1);
+        renderDateRangePicker();
+    });
+
+    dateRangeNext.addEventListener('click', () => {
+        pickerMonth = addMonths(pickerMonth, 1);
+        renderDateRangePicker();
+    });
+
+    dateRangeCalendars.addEventListener('click', (event) => {
+        const button = event.target.closest('[data-date]');
+        if (!button) return;
+        const [year, month, day] = button.dataset.date.split('-').map((value) => Number.parseInt(value, 10));
+        handleDraftDateSelection(new Date(year, month - 1, day, 12, 0, 0, 0));
+    });
+
+    dateRangeApply.addEventListener('click', () => {
+        if (!draftRange.start) {
+            closeDateRangePicker();
+            return;
+        }
+        setSelectedRange(draftRange.start, draftRange.end || draftRange.start);
+        closeDateRangePicker();
+        render();
+    });
+
+    const dismissRangePicker = () => {
+        draftRange = cloneRange(selectedRange);
+        closeDateRangePicker();
+    };
+
+    dateRangeCancel.addEventListener('click', dismissRangePicker);
+    dateRangeClose.addEventListener('click', dismissRangePicker);
+
+    document.addEventListener('click', (event) => {
+        if (dateRangePicker.classList.contains('hidden')) return;
+        if (dateRangePicker.contains(event.target) || dateRangeTrigger.contains(event.target)) return;
+        dismissRangePicker();
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && !dateRangePicker.classList.contains('hidden')) {
+            dismissRangePicker();
+        }
     });
 
     bootstrap();
