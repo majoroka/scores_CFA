@@ -36,6 +36,7 @@ def main():
     # Aliases para variações de nomes que aparecem na FPF
     aliases = {
         'fc 11 esperancas': ['fc os 11 esperancas'],
+        'cu culatrense': ['clube u culatrense'],
         'casa slb albufeira': ['casa benfica albufeira'],
         'nucleo scp olhao': ['nucleo sporting cp olhao'],
         'fc ferreiras': ['fc ferreiras a', 'fc ferreiras b'],
