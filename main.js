@@ -768,6 +768,9 @@ const initializeRoundBasedOnDate = () => {
 
     const canonicalTeamName = (teamName) => {
         const normalized = normalizeName(teamName);
+        if (normalized === 'clube u culatrense') {
+            return 'cu culatrense';
+        }
         if (normalized === 'cf os armacenenses a' || normalized === 'cf os armacenenses b') {
             return 'cf os armacenenses';
         }
