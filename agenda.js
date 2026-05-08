@@ -26,6 +26,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const CRESTS_CACHE_KEY = 'cfa-crests-cache-v1';
     const MONTH_LABELS = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
     const WEEKDAY_LABELS = ['S', 'T', 'Q', 'Q', 'S', 'S', 'D'];
+    const LIVE_DATA_ENDPOINT = 'https://resultados.fpf.pt/Competition/GetClassificationAndMatchesByFixture?fixtureId=';
+    const LIVE_DATA_SOURCES = [
+        (fixtureId) => `${LIVE_DATA_ENDPOINT}${fixtureId}`,
+        (fixtureId) => `https://corsproxy.io/?${LIVE_DATA_ENDPOINT}${fixtureId}`,
+        (fixtureId) => `https://r.jina.ai/http://resultados.fpf.pt/Competition/GetClassificationAndMatchesByFixture?fixtureId=${fixtureId}`,
+    ];
 
     let activeTab = 'proximos';
     let calendarData = null;
@@ -33,6 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let selectedRange = { start: null, end: null };
     let draftRange = { start: null, end: null };
     let pickerMonth = null;
+    let renderToken = 0;
+    const remoteRoundCache = new Map();
+    const htmlDecoder = document.createElement('textarea');
 
     const normalizeName = (name) => {
         if (!name) return '';
@@ -78,6 +87,22 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!crestsData) return fallback;
         return crestsData[canonicalTeamName(teamName)] || fallback;
     };
+
+    const decodeHTML = (value = '') => {
+        htmlDecoder.innerHTML = value;
+        return htmlDecoder.value;
+    };
+
+    const cleanHTMLText = (value = '') => {
+        if (!value) return '';
+        return decodeHTML(
+            value
+                .replace(/<br\s*\/?>/gi, ' ')
+                .replace(/<[^>]*>/g, ' ')
+        ).replace(/\s+/g, ' ').trim();
+    };
+
+    const textFromNode = (node) => (node ? cleanHTMLText(node.textContent || '') : '');
 
     const readJSONFromStorage = (key) => {
         try {
@@ -199,6 +224,135 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!range.start) return 'Escolhe a data inicial e final.';
         if (!range.end) return `Início: ${formatInputDate(range.start)}. Escolhe a data final.`;
         return `${formatInputDate(range.start)} até ${formatInputDate(range.end)}`;
+    };
+
+    const parseMatchesFragment = (htmlFragment = '') => {
+        if (!htmlFragment) return [];
+        const wrapper = document.createElement('div');
+        wrapper.innerHTML = htmlFragment;
+        const matchesSection = wrapper.querySelector('#matches');
+        if (!matchesSection) return [];
+
+        const matches = [];
+        matchesSection.querySelectorAll('.game').forEach((game) => {
+            const home = textFromNode(game.querySelector('.home-team'));
+            const away = textFromNode(game.querySelector('.away-team'));
+
+            const scoreBlock = game.querySelector('.score, .text-center');
+            let scheduleText = '';
+            let centralText = '';
+
+            if (scoreBlock) {
+                scheduleText = textFromNode(scoreBlock.querySelector('.game-schedule'));
+                centralText = cleanHTMLText(scoreBlock.innerHTML || scoreBlock.textContent || '');
+                if (scheduleText) {
+                    centralText = centralText.replace(scheduleText, '').trim();
+                }
+            }
+
+            let time = '';
+            let date = '';
+            if (scheduleText) {
+                const timeMatch = scheduleText.match(/\b\d{1,2}:\d{2}\b/);
+                if (timeMatch) {
+                    time = timeMatch[0];
+                    scheduleText = scheduleText.replace(timeMatch[0], '').trim();
+                }
+                date = scheduleText.trim();
+            }
+
+            if (!time && centralText) {
+                const timeMatch = centralText.match(/\b\d{1,2}:\d{2}\b/);
+                if (timeMatch) {
+                    time = timeMatch[0];
+                    centralText = centralText.replace(timeMatch[0], '').trim();
+                }
+            }
+
+            let homeScore = null;
+            let awayScore = null;
+            if (centralText) {
+                const scoreMatch = centralText.match(/(\d{1,2})\s*[-–]\s*(\d{1,2})/);
+                if (scoreMatch) {
+                    homeScore = Number.parseInt(scoreMatch[1], 10);
+                    awayScore = Number.parseInt(scoreMatch[2], 10);
+                    centralText = centralText.replace(scoreMatch[0], '').trim();
+                }
+            }
+
+            if (!date) {
+                date = centralText.trim();
+            }
+
+            const stadiumNode = game.nextElementSibling && game.nextElementSibling.classList.contains('game-list-stadium')
+                ? game.nextElementSibling
+                : null;
+            const stadium = stadiumNode ? textFromNode(stadiumNode.querySelector('small')) : '';
+
+            matches.push({
+                home,
+                away,
+                date,
+                time,
+                stadium,
+                homeScore,
+                awayScore,
+            });
+        });
+
+        return matches;
+    };
+
+    const inferEntryStatus = (entry) => {
+        if (Number.isInteger(entry.homeScore) && Number.isInteger(entry.awayScore)) {
+            return 'finished';
+        }
+        const parsed = parseISODate(entry.matchDateISO);
+        if (!parsed) return 'unknown';
+        return parsed >= new Date() ? 'scheduled' : 'unknown';
+    };
+
+    const fetchRoundFromRemote = async (fixtureId) => {
+        if (!fixtureId) return null;
+        if (remoteRoundCache.has(fixtureId)) {
+            return remoteRoundCache.get(fixtureId);
+        }
+
+        let lastError = null;
+
+        for (const buildUrl of LIVE_DATA_SOURCES) {
+            const targetUrl = buildUrl(fixtureId);
+            try {
+                const response = await fetch(targetUrl, {
+                    headers: {
+                        Accept: 'text/html,application/xhtml+xml',
+                    },
+                    cache: 'no-store',
+                    mode: 'cors',
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+
+                const html = await response.text();
+                const matches = parseMatchesFragment(html);
+                if (!matches.length) {
+                    throw new Error('Resposta sem jogos utilizáveis');
+                }
+
+                remoteRoundCache.set(fixtureId, matches);
+                return matches;
+            } catch (error) {
+                lastError = error;
+            }
+        }
+
+        if (lastError) {
+            console.warn(`Falha ao carregar fixture remoto ${fixtureId}:`, lastError);
+        }
+        remoteRoundCache.set(fixtureId, null);
+        return null;
     };
 
     const openDateRangePicker = () => {
@@ -426,17 +580,80 @@ document.addEventListener('DOMContentLoaded', () => {
         return true;
     };
 
-    const getFilteredMatches = () => {
+    const getCandidateMatches = () => {
         if (!calendarData || !Array.isArray(calendarData.matches)) return [];
         const { start, end } = getDateRange();
         const competitionKey = competitionSelect.value;
 
         return calendarData.matches.filter((entry) => {
-            if (activeTab === 'proximos' && entry.status !== 'scheduled') return false;
-            if (activeTab === 'resultados' && entry.status !== 'finished') return false;
             if (competitionKey && entry.competitionKey !== competitionKey) return false;
             return matchesDateRange(entry, start, end);
         });
+    };
+
+    const getFilteredMatches = () => {
+        const candidates = getCandidateMatches();
+        return candidates.filter((entry) => {
+            if (activeTab === 'proximos') return entry.status === 'scheduled';
+            if (activeTab === 'resultados') return entry.status === 'finished';
+            return true;
+        });
+    };
+
+    const hydrateVisibleMatches = async (token) => {
+        const candidates = getCandidateMatches();
+        if (!candidates.length) return;
+
+        const fixtureMap = new Map();
+        candidates.forEach((entry) => {
+            if (!entry.fixtureId) return;
+            const fixtureEntries = fixtureMap.get(entry.fixtureId) || [];
+            fixtureEntries.push(entry);
+            fixtureMap.set(entry.fixtureId, fixtureEntries);
+        });
+
+        let changed = false;
+
+        for (const [fixtureId, entries] of fixtureMap.entries()) {
+            const liveMatches = await fetchRoundFromRemote(fixtureId);
+            if (!liveMatches) continue;
+
+            entries.forEach((entry) => {
+                const liveMatch = liveMatches.find((candidate) => (
+                    normalizeName(candidate.home) === normalizeName(entry.home) &&
+                    normalizeName(candidate.away) === normalizeName(entry.away)
+                ));
+                if (!liveMatch) return;
+
+                const nextHomeScore = liveMatch.homeScore;
+                const nextAwayScore = liveMatch.awayScore;
+                const nextDate = liveMatch.date || entry.displayDate;
+                const nextTime = liveMatch.time || entry.displayTime;
+                const nextStadium = liveMatch.stadium || entry.stadium;
+
+                if (
+                    entry.homeScore !== nextHomeScore ||
+                    entry.awayScore !== nextAwayScore ||
+                    entry.displayDate !== nextDate ||
+                    entry.displayTime !== nextTime ||
+                    entry.stadium !== nextStadium
+                ) {
+                    entry.homeScore = nextHomeScore;
+                    entry.awayScore = nextAwayScore;
+                    entry.displayDate = nextDate;
+                    entry.displayTime = nextTime;
+                    entry.stadium = nextStadium;
+                    entry.status = inferEntryStatus(entry);
+                    changed = true;
+                }
+            });
+        }
+
+        if (!changed) return;
+        writeJSONToStorage(CALENDAR_CACHE_KEY, calendarData);
+        if (token === renderToken) {
+            render();
+        }
     };
 
     const groupMatchesByDay = (matches) => {
@@ -529,6 +746,8 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const render = () => {
+        renderToken += 1;
+        const currentToken = renderToken;
         ensureDefaultFilters();
         const matches = getFilteredMatches();
         if (activeTab === 'proximos') {
@@ -536,6 +755,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             renderList(listResultados, summaryResultados, matches);
         }
+        void hydrateVisibleMatches(currentToken);
     };
 
     const loadFreshData = async () => {
