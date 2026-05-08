@@ -911,14 +911,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const orderedMatches = [...matches].sort((left, right) => {
             const leftTs = left.sortTimestamp || 0;
             const rightTs = right.sortTimestamp || 0;
-            return activeTab === 'resultados' ? rightTs - leftTs : leftTs - rightTs;
+            return leftTs - rightTs;
         });
 
         const groups = groupMatchesByDay(orderedMatches);
         const groupEntries = Array.from(groups.entries()).sort((left, right) => {
-            return activeTab === 'resultados'
-                ? right[0].localeCompare(left[0])
-                : left[0].localeCompare(right[0]);
+            return left[0].localeCompare(right[0]);
         });
 
         summary.textContent = `${matches.length} jogo(s) encontrado(s).`;
