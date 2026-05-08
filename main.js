@@ -152,6 +152,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const matchesContainer = document.getElementById('matches-container');
     const classificationContainer = document.getElementById('classification-container');
     let dataStatusContainer = null;
+    const COMPETITION_CACHE_PREFIX = 'cfa-competition-cache-v1:';
+    const CRESTS_CACHE_KEY = 'cfa-crests-cache-v1';
 
     // Utilitário simples para decodificar HTML vindo da FPF
     const htmlDecoder = document.createElement('textarea');
@@ -226,6 +228,44 @@ document.addEventListener('DOMContentLoaded', () => {
 
         container.innerHTML = parts.join('');
         container.classList.remove('hidden');
+    };
+
+    const readJSONFromStorage = (key) => {
+        try {
+            const raw = window.localStorage.getItem(key);
+            if (!raw) return null;
+            return JSON.parse(raw);
+        } catch (error) {
+            return null;
+        }
+    };
+
+    const writeJSONToStorage = (key, value) => {
+        try {
+            window.localStorage.setItem(key, JSON.stringify(value));
+        } catch (error) {
+            // localStorage may be unavailable or full
+        }
+    };
+
+    const getCompetitionCacheKey = () => `${COMPETITION_CACHE_PREFIX}${competitionKey}`;
+
+    const isValidCompetitionPayload = (payload) => {
+        return Boolean(
+            payload &&
+            Array.isArray(payload.rounds) &&
+            payload.rounds.length &&
+            payload.rounds.every((round) => round && Array.isArray(round.matches) && Array.isArray(round.classification))
+        );
+    };
+
+    const hasCompetitionPayloadChanged = (nextPayload) => {
+        if (!competitionData) return true;
+        return (
+            competitionData.lastUpdatedAt !== nextPayload.lastUpdatedAt ||
+            competitionData.defaultRoundIndex !== nextPayload.defaultRoundIndex ||
+            JSON.stringify(competitionData.rounds) !== JSON.stringify(nextPayload.rounds)
+        );
     };
 
     const LIVE_DATA_ENDPOINT = 'https://resultados.fpf.pt/Competition/GetClassificationAndMatchesByFixture?fixtureId=';
@@ -466,6 +506,28 @@ const initializeRoundBasedOnDate = () => {
     history.replaceState(null, '', nextHash);
 };
 
+    const renderCompetition = ({ preferredRoundNumber = null } = {}) => {
+        if (!competitionData || !Array.isArray(competitionData.rounds) || !competitionData.rounds.length) {
+            return;
+        }
+
+        if (preferredRoundNumber !== null) {
+            const nextRoundIndex = competitionData.rounds.findIndex((round) => round.index === preferredRoundNumber);
+            if (nextRoundIndex !== -1) {
+                currentRoundIndex = nextRoundIndex;
+                const nextHash = `#${activeTab}-j${competitionData.rounds[currentRoundIndex].index}`;
+                history.replaceState(null, '', nextHash);
+                renderDataStatus();
+                updateUI();
+                return;
+            }
+        }
+
+        initializeRoundBasedOnDate();
+        renderDataStatus();
+        handleHashChange();
+    };
+
     const parseMatchesFragment = (htmlFragment = '') => {
         if (!htmlFragment) return [];
         const wrapper = document.createElement('div');
@@ -654,22 +716,40 @@ const initializeRoundBasedOnDate = () => {
         return null;
     };
 
-    const hydrateRoundsWithLiveData = async () => {
+    const hydrateRoundWithLiveData = async (roundIndex) => {
         if (!competitionData || !Array.isArray(competitionData.rounds)) return;
+        if (roundIndex < 0 || roundIndex >= competitionData.rounds.length) return;
 
-        for (const round of competitionData.rounds) {
-            if (!round || !round.fixtureId) continue;
+        const round = competitionData.rounds[roundIndex];
+        if (!round || !round.fixtureId) return;
 
-            const liveData = await fetchRoundFromRemote(round.fixtureId);
-            if (!liveData) continue;
+        const liveData = await fetchRoundFromRemote(round.fixtureId);
+        if (!liveData) return;
 
-            if (Array.isArray(liveData.matches) && liveData.matches.length) {
-                round.matches = mergeMatches(round.matches, liveData.matches);
-            }
-            if (Array.isArray(liveData.classification) && liveData.classification.length) {
-                round.classification = liveData.classification;
+        let changed = false;
+
+        if (Array.isArray(liveData.matches) && liveData.matches.length) {
+            const mergedMatches = mergeMatches(round.matches, liveData.matches);
+            if (JSON.stringify(mergedMatches) !== JSON.stringify(round.matches)) {
+                round.matches = mergedMatches;
+                changed = true;
             }
         }
+        if (Array.isArray(liveData.classification) && liveData.classification.length) {
+            const nextClassification = liveData.classification;
+            if (JSON.stringify(nextClassification) !== JSON.stringify(round.classification)) {
+                round.classification = nextClassification;
+                changed = true;
+            }
+        }
+
+        if (!changed) return;
+
+        if (Number.isInteger(currentRoundIndex) && currentRoundIndex === roundIndex) {
+            updateUI();
+        }
+
+        writeJSONToStorage(getCompetitionCacheKey(), competitionData);
     };
 
     // --- FUNÇÕES DE RENDERIZAÇÃO ---
@@ -903,6 +983,7 @@ const initializeRoundBasedOnDate = () => {
         history.replaceState(null, '', newHash);
 
         updateUI();
+        void hydrateRoundWithLiveData(currentRoundIndex);
     };
 
     const handleHashChange = () => {
@@ -923,41 +1004,68 @@ const initializeRoundBasedOnDate = () => {
     // --- BUSCA DE DADOS ---
     const fetchData = async () => {
         try {
-            // Cache buster para garantir dados frescos
-            const cacheBuster = `?v=${new Date().getTime()}`;
-            
-            const [competitionResponse, crestsResponse] = await Promise.all([
-                fetch(`data/${competitionKey}.json${cacheBuster}`),
-                fetch(`data/crests.json${cacheBuster}`)
-            ]);
+            const cachedCompetitionData = readJSONFromStorage(getCompetitionCacheKey());
+            if (isValidCompetitionPayload(cachedCompetitionData)) {
+                competitionData = cachedCompetitionData;
+                renderCompetition();
+            }
 
+            const cachedCrestsData = readJSONFromStorage(CRESTS_CACHE_KEY);
+            if (cachedCrestsData && typeof cachedCrestsData === 'object') {
+                crestsData = cachedCrestsData;
+                if (competitionData) {
+                    updateUI();
+                }
+            }
+
+            const competitionPromise = fetch(`data/${competitionKey}.json`, {
+                cache: 'no-cache',
+            });
+            const crestsPromise = fetch('data/crests.json', {
+                cache: 'force-cache',
+            });
+
+            const competitionResponse = await competitionPromise;
             if (!competitionResponse.ok) {
                 throw new Error(`Falha ao obter dados da competição (${competitionResponse.status})`);
             }
-            if (!crestsResponse.ok) {
-                throw new Error(`Falha ao obter dados de emblemas (${crestsResponse.status})`);
+
+            const freshCompetitionData = await competitionResponse.json();
+            if (!isValidCompetitionPayload(freshCompetitionData)) {
+                throw new Error('Payload da competição inválido');
             }
 
-            competitionData = await competitionResponse.json();
-            crestsData = await crestsResponse.json();
-
-            initializeRoundBasedOnDate();
-            renderDataStatus();
-
-            // Renderização inicial com dados locais
-            handleHashChange();
-
-            // Atualização com dados em tempo real (quando disponíveis)
-            await hydrateRoundsWithLiveData();
-            if (!userHasManualRoundSelection) {
-                initializeRoundBasedOnDate();
+            const previousRoundNumber = competitionData?.rounds?.[currentRoundIndex]?.index ?? null;
+            const preferredRoundNumber = userHasManualRoundSelection ? previousRoundNumber : null;
+            if (!competitionData || hasCompetitionPayloadChanged(freshCompetitionData)) {
+                competitionData = freshCompetitionData;
+                writeJSONToStorage(getCompetitionCacheKey(), freshCompetitionData);
+                renderCompetition({ preferredRoundNumber });
+            } else if (!competitionData) {
+                competitionData = freshCompetitionData;
+                renderCompetition();
             }
-            renderDataStatus();
-            handleHashChange();
+
+            try {
+                const crestsResponse = await crestsPromise;
+                if (crestsResponse.ok) {
+                    crestsData = await crestsResponse.json();
+                    writeJSONToStorage(CRESTS_CACHE_KEY, crestsData);
+                    if (competitionData) {
+                        updateUI();
+                    }
+                }
+            } catch (crestError) {
+                console.warn('Falha ao carregar dados de emblemas:', crestError);
+            }
+
+            void hydrateRoundWithLiveData(currentRoundIndex);
 
         } catch (error) {
             console.error('Erro ao carregar os dados da competição:', error);
-            matchesContainer.innerHTML = '<p>Não foi possível carregar os dados. Tente novamente mais tarde.</p>';
+            if (!competitionData) {
+                matchesContainer.innerHTML = '<p>Não foi possível carregar os dados. Tente novamente mais tarde.</p>';
+            }
         }
     };
 
