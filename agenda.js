@@ -379,7 +379,6 @@ document.addEventListener('DOMContentLoaded', () => {
         tabResultados.setAttribute('tabindex', isProximos ? '-1' : '0');
         contentProximos.classList.toggle('hidden', !isProximos);
         contentResultados.classList.toggle('hidden', isProximos);
-        competitionSelect.disabled = isProximos;
     };
 
     const setActiveTab = (nextTab) => {
