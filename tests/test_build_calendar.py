@@ -89,6 +89,57 @@ class BuildCalendarTests(unittest.TestCase):
         self.assertEqual(finished['competitionKey'], 'example-key')
         self.assertEqual(finished['competitionUrl'], 'example.html#resultados-j9')
 
+    def test_build_calendar_entries_accepts_multiple_club_team_names(self):
+        config = CompetitionConfig(
+            competition_url='https://example.test',
+            output_file='data/example.json',
+            main_cache_key='example_main',
+            fixture_cache_prefix='example_fixture',
+            club_team_names=frozenset({'Casa FC - A', 'Casa FC - B'}),
+            key='example-key',
+            title='Competição Exemplo',
+            subtitle='Fase Exemplo',
+            page_path='example.html',
+        )
+        payload = {
+            'lastUpdatedAt': '2026-05-08T18:18:11Z',
+            'sourceHealth': {'status': 'ok', 'fallbackReuseCount': 0},
+            'rounds': [
+                {
+                    'index': 9,
+                    'fixtureId': '12345',
+                    'matches': [
+                        {
+                            'home': 'Casa FC - A',
+                            'away': 'Fora FC',
+                            'date': '6 - 0 3 mai',
+                            'time': '',
+                            'stadium': 'Campo A',
+                            'homeScore': 6,
+                            'awayScore': 0,
+                        },
+                        {
+                            'home': 'Outra Casa',
+                            'away': 'Casa FC - B',
+                            'date': '4 - 1 3 mai',
+                            'time': '',
+                            'stadium': 'Campo B',
+                            'homeScore': 4,
+                            'awayScore': 1,
+                        },
+                    ],
+                }
+            ],
+        }
+
+        entries = build_calendar_entries(
+            config,
+            payload,
+            now=datetime(2026, 5, 8, 12, 0, 0).astimezone(),
+        )
+
+        self.assertEqual(len(entries), 2)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -113,7 +113,7 @@ FEMININO_SUB17 = CompetitionConfig(
     fixture_cache_prefix='feminino_sub17_fixture',
     target_phase_name='2ª FASE',
     target_serie_name='SÉRIE 7',
-    club_team_names=frozenset({'Cf Os Armacenenses - B'}),
+    club_team_names=frozenset({'Cf Os Armacenenses - A', 'Cf Os Armacenenses - B'}),
 )
 
 FEMININO_SUB19 = CompetitionConfig(
