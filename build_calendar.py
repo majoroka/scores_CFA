@@ -17,6 +17,10 @@ SCORE_PATTERN = re.compile(r'\b\d{1,2}\s*[-–]\s*\d{1,2}\b')
 TIME_PATTERN = re.compile(r'(\d{1,2}):(\d{2})')
 
 
+def normalize_team_name(value: str) -> str:
+    return re.sub(r'\s+', ' ', (value or '').strip().lower())
+
+
 def clean_display_date(value: str) -> str:
     if not value:
         return ''
@@ -72,6 +76,7 @@ def build_calendar_entries(config: CompetitionConfig, payload: dict, now: dateti
     if not isinstance(rounds, list):
         return []
 
+    club_team_names = {normalize_team_name(name) for name in config.club_team_names}
     entries = []
     for round_data in rounds:
         round_number = round_data.get('index')
@@ -81,6 +86,11 @@ def build_calendar_entries(config: CompetitionConfig, payload: dict, now: dateti
             continue
 
         for match in matches:
+            home_normalized = normalize_team_name(match.get('home', ''))
+            away_normalized = normalize_team_name(match.get('away', ''))
+            if club_team_names and home_normalized not in club_team_names and away_normalized not in club_team_names:
+                continue
+
             match_datetime = build_match_datetime(match)
             status = infer_status(match, match_datetime, now=now)
             display_date = clean_display_date(match.get('date', ''))

@@ -15,6 +15,7 @@ class CompetitionConfig:
     derive_classification: bool = False
     ignored_team_names: FrozenSet[str] = field(default_factory=frozenset)
     strip_score_from_date: bool = False
+    club_team_names: FrozenSet[str] = field(default_factory=frozenset)
     key: str = ''
     title: str = ''
     subtitle: str = ''
@@ -35,6 +36,7 @@ BENJAMINS_A1 = CompetitionConfig(
     derive_classification=True,
     ignored_team_names=frozenset({'a indicar'}),
     strip_score_from_date=True,
+    club_team_names=frozenset({'Cf Os Armacenenses'}),
 )
 
 BENJAMINS_A2 = CompetitionConfig(
@@ -51,6 +53,7 @@ BENJAMINS_A2 = CompetitionConfig(
     derive_classification=True,
     ignored_team_names=frozenset({'a indicar'}),
     strip_score_from_date=True,
+    club_team_names=frozenset({'Cf Os Armacenenses'}),
 )
 
 BENJAMINS_B = CompetitionConfig(
@@ -66,6 +69,7 @@ BENJAMINS_B = CompetitionConfig(
     derive_classification=True,
     ignored_team_names=frozenset({'a indicar'}),
     strip_score_from_date=True,
+    club_team_names=frozenset({'Cf Os Armacenenses'}),
 )
 
 BENJAMINS_BB = CompetitionConfig(
@@ -81,6 +85,7 @@ BENJAMINS_BB = CompetitionConfig(
     derive_classification=True,
     ignored_team_names=frozenset({'a indicar'}),
     strip_score_from_date=True,
+    club_team_names=frozenset({'Cf Os Armacenenses'}),
 )
 
 FEMININO_SUB15 = CompetitionConfig(
@@ -94,6 +99,7 @@ FEMININO_SUB15 = CompetitionConfig(
     fixture_cache_prefix='feminino_sub15_fixture',
     target_serie_name='SÉRIE 4',
     allow_first_block_fallback=True,
+    club_team_names=frozenset({'Cf Os Armacenenses'}),
 )
 
 FEMININO_SUB17 = CompetitionConfig(
@@ -107,6 +113,7 @@ FEMININO_SUB17 = CompetitionConfig(
     fixture_cache_prefix='feminino_sub17_fixture',
     target_phase_name='2ª FASE',
     target_serie_name='SÉRIE 7',
+    club_team_names=frozenset({'Cf Os Armacenenses - B'}),
 )
 
 FEMININO_SUB19 = CompetitionConfig(
@@ -119,6 +126,7 @@ FEMININO_SUB19 = CompetitionConfig(
     main_cache_key='feminino_sub19_competition_main_105',
     fixture_cache_prefix='feminino_sub19_fixture',
     target_serie_name='1ª FASE-SÉRIE H',
+    club_team_names=frozenset({'Cf Os Armacenenses'}),
 )
 
 SENIORES = CompetitionConfig(
@@ -131,6 +139,7 @@ SENIORES = CompetitionConfig(
     main_cache_key='seniores_competition_main',
     fixture_cache_prefix='seniores_fixture',
     target_serie_name='MANUTENÇÃO/DESCIDA',
+    club_team_names=frozenset({'Cf Os Armacenenses'}),
 )
 
 INFANTIS_A = CompetitionConfig(
@@ -143,6 +152,7 @@ INFANTIS_A = CompetitionConfig(
     main_cache_key='infantis_a_competition_main',
     fixture_cache_prefix='infantis_a_fixture',
     target_serie_name='SÉRIE 2',
+    club_team_names=frozenset({'Cf Os Armacenenses'}),
 )
 
 INFANTIS_B = CompetitionConfig(
@@ -155,6 +165,7 @@ INFANTIS_B = CompetitionConfig(
     main_cache_key='infantis_b_competition_main',
     fixture_cache_prefix='infantis_b_fixture',
     target_serie_name='SÉRIE 2',
+    club_team_names=frozenset({'Cf Os Armacenenses'}),
 )
 
 INFANTIS_C = CompetitionConfig(
@@ -167,6 +178,7 @@ INFANTIS_C = CompetitionConfig(
     main_cache_key='infantis_c_competition_main',
     fixture_cache_prefix='infantis_c_fixture',
     target_serie_name='APURAMENTO CAMPEÃO',
+    club_team_names=frozenset({'Cf Os Armacenenses'}),
 )
 
 INICIADOS_A = CompetitionConfig(
@@ -180,6 +192,7 @@ INICIADOS_A = CompetitionConfig(
     fixture_cache_prefix='iniciados_a_fixture',
     target_phase_name='2ª FASE',
     target_serie_name='SÉRIE 1 - APURAMENTO CAMPEAO',
+    club_team_names=frozenset({'Cf Os Armacenenses'}),
 )
 
 INICIADOS_B = CompetitionConfig(
@@ -193,6 +206,7 @@ INICIADOS_B = CompetitionConfig(
     fixture_cache_prefix='iniciados_b_fixture',
     target_phase_name='2ª FASE',
     target_serie_name='SÉRIE 7',
+    club_team_names=frozenset({'Cf Os Armacenenses - A'}),
 )
 
 JUNIORES = CompetitionConfig(
@@ -205,6 +219,7 @@ JUNIORES = CompetitionConfig(
     main_cache_key='juniores_competition_main',
     fixture_cache_prefix='juniores_fixture',
     target_serie_name='APURAMENTO CAMPEÃO',
+    club_team_names=frozenset({'Cf Os Armacenenses'}),
 )
 
 JUVENIS = CompetitionConfig(
@@ -217,6 +232,7 @@ JUVENIS = CompetitionConfig(
     main_cache_key='juvenis_competition_main',
     fixture_cache_prefix='juvenis_fixture',
     target_serie_name='SÉRIE 3',
+    club_team_names=frozenset({'Cf Os Armacenenses'}),
 )
 
 

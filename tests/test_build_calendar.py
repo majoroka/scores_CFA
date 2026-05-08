@@ -12,6 +12,7 @@ class BuildCalendarTests(unittest.TestCase):
             output_file='data/example.json',
             main_cache_key='example_main',
             fixture_cache_prefix='example_fixture',
+            club_team_names=frozenset({'Casa FC'}),
             key='example-key',
             title='Competição Exemplo',
             subtitle='Fase Exemplo',
@@ -59,6 +60,15 @@ class BuildCalendarTests(unittest.TestCase):
                             'homeScore': None,
                             'awayScore': None,
                         },
+                        {
+                            'home': 'Outra Casa',
+                            'away': 'Outra Fora',
+                            'date': '11 mai',
+                            'time': '09:00',
+                            'stadium': 'Campo C',
+                            'homeScore': None,
+                            'awayScore': None,
+                        },
                     ],
                     'classification': [],
                 }
@@ -71,17 +81,13 @@ class BuildCalendarTests(unittest.TestCase):
             now=datetime(2026, 5, 8, 12, 0, 0).astimezone(),
         )
 
-        self.assertEqual(len(entries), 2)
+        self.assertEqual(len(entries), 1)
 
-        finished, scheduled = entries
+        finished = entries[0]
         self.assertEqual(finished['status'], 'finished')
         self.assertEqual(finished['displayDate'], '3 mai')
         self.assertEqual(finished['competitionKey'], 'example-key')
         self.assertEqual(finished['competitionUrl'], 'example.html#resultados-j9')
-
-        self.assertEqual(scheduled['status'], 'scheduled')
-        self.assertEqual(scheduled['displayTime'], '11:00')
-        self.assertTrue(scheduled['matchDateISO'].startswith('2026-05-10T11:00:00'))
 
 
 if __name__ == '__main__':
