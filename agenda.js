@@ -1,0 +1,446 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const tabProximos = document.getElementById('tab-proximos');
+    const tabResultados = document.getElementById('tab-agenda-resultados');
+    const contentProximos = document.getElementById('content-proximos');
+    const contentResultados = document.getElementById('content-resultados-globais');
+    const summaryProximos = document.getElementById('agenda-summary-proximos');
+    const summaryResultados = document.getElementById('agenda-summary-resultados');
+    const listProximos = document.getElementById('agenda-list-proximos');
+    const listResultados = document.getElementById('agenda-list-resultados');
+    const startDateInput = document.getElementById('filter-start-date');
+    const endDateInput = document.getElementById('filter-end-date');
+    const competitionSelect = document.getElementById('filter-competition');
+    const dataStatus = document.getElementById('agenda-data-status');
+    const presetButtons = Array.from(document.querySelectorAll('.agenda-preset-btn'));
+
+    const CALENDAR_CACHE_KEY = 'cfa-calendar-cache-v1';
+    const CRESTS_CACHE_KEY = 'cfa-crests-cache-v1';
+    const MONTH_LABELS = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
+
+    let activeTab = 'proximos';
+    let calendarData = null;
+    let crestsData = null;
+
+    const normalizeName = (name) => {
+        if (!name) return '';
+        return name
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]+/g, '')
+            .toLowerCase()
+            .replace(/[\-_]+/g, ' ')
+            .replace(/[^a-z0-9 ]+/g, '')
+            .replace(/\s+/g, ' ')
+            .trim();
+    };
+
+    const canonicalTeamName = (teamName) => {
+        const normalized = normalizeName(teamName);
+        if (normalized === 'cf os armacenenses a' || normalized === 'cf os armacenenses b') {
+            return 'cf os armacenenses';
+        }
+        return normalized;
+    };
+
+    const displayTeamName = (teamName, competitionKey) => {
+        const normalized = normalizeName(teamName);
+        if ((competitionKey === 'feminino-sub17' || competitionKey === 'iniciados-b') && normalized === 'cf os armacenenses b') {
+            return 'CF Os Armacenenses (Fem-Sub17)';
+        }
+        return teamName;
+    };
+
+    const isArmacenensesTeam = (teamName, competitionKey) => {
+        const normalized = normalizeName(teamName);
+        if (competitionKey === 'feminino-sub17') {
+            return normalized === 'cf os armacenenses b';
+        }
+        if (competitionKey === 'iniciados-b') {
+            return normalized === 'cf os armacenenses a';
+        }
+        return normalized === 'cf os armacenenses' || normalized === 'cf os armacenenses a';
+    };
+
+    const getCrestUrl = (teamName) => {
+        const fallback = 'img/crests/jornada.png';
+        if (!crestsData) return fallback;
+        return crestsData[canonicalTeamName(teamName)] || fallback;
+    };
+
+    const readJSONFromStorage = (key) => {
+        try {
+            const raw = window.localStorage.getItem(key);
+            return raw ? JSON.parse(raw) : null;
+        } catch (error) {
+            return null;
+        }
+    };
+
+    const writeJSONToStorage = (key, value) => {
+        try {
+            window.localStorage.setItem(key, JSON.stringify(value));
+        } catch (error) {
+            // storage may be unavailable
+        }
+    };
+
+    const formatTimestamp = (value) => {
+        if (!value) return null;
+        const parsed = new Date(value);
+        if (Number.isNaN(parsed.getTime())) return null;
+        return new Intl.DateTimeFormat('pt-PT', {
+            dateStyle: 'short',
+            timeStyle: 'short',
+        }).format(parsed);
+    };
+
+    const parseISODate = (value) => {
+        if (!value) return null;
+        const parsed = new Date(value);
+        return Number.isNaN(parsed.getTime()) ? null : parsed;
+    };
+
+    const formatGroupDate = (date) => {
+        return new Intl.DateTimeFormat('pt-PT', {
+            weekday: 'long',
+            day: 'numeric',
+            month: 'long',
+        }).format(date);
+    };
+
+    const formatInputDate = (date) => {
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const day = String(date.getDate()).padStart(2, '0');
+        return `${year}-${month}-${day}`;
+    };
+
+    const applyPreset = (preset) => {
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        const start = new Date(today);
+        const end = new Date(today);
+
+        switch (preset) {
+            case 'today':
+                break;
+            case 'weekend': {
+                const day = today.getDay();
+                const daysUntilSaturday = day === 6 ? 0 : (6 - day + 7) % 7;
+                start.setDate(today.getDate() + daysUntilSaturday);
+                end.setTime(start.getTime());
+                end.setDate(start.getDate() + 1);
+                break;
+            }
+            case 'next7':
+                end.setDate(today.getDate() + 6);
+                break;
+            case 'last7':
+                start.setDate(today.getDate() - 6);
+                break;
+            default:
+                return;
+        }
+
+        startDateInput.value = formatInputDate(start);
+        endDateInput.value = formatInputDate(end);
+
+        if (preset === 'last7') {
+            setActiveTab('resultados');
+        } else {
+            setActiveTab('proximos');
+        }
+        render();
+    };
+
+    const ensureDefaultFilters = () => {
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        if (!startDateInput.value || !endDateInput.value) {
+            if (activeTab === 'resultados') {
+                const start = new Date(today);
+                start.setDate(today.getDate() - 6);
+                startDateInput.value = formatInputDate(start);
+                endDateInput.value = formatInputDate(today);
+            } else {
+                const end = new Date(today);
+                end.setDate(today.getDate() + 6);
+                startDateInput.value = formatInputDate(today);
+                endDateInput.value = formatInputDate(end);
+            }
+        }
+    };
+
+    const populateCompetitionFilter = () => {
+        if (!calendarData || !Array.isArray(calendarData.competitions)) return;
+        const currentValue = competitionSelect.value;
+        const options = ['<option value="">Todas</option>']
+            .concat(
+                calendarData.competitions.map((competition) => (
+                    `<option value="${competition.key}">${competition.title}</option>`
+                ))
+            );
+        competitionSelect.innerHTML = options.join('');
+        competitionSelect.value = currentValue || '';
+    };
+
+    const renderDataStatus = () => {
+        if (!calendarData) {
+            dataStatus.classList.add('hidden');
+            dataStatus.innerHTML = '';
+            return;
+        }
+        const updatedLabel = formatTimestamp(calendarData.generatedAt);
+        const degradedCompetitions = (calendarData.competitions || []).filter(
+            (competition) => competition.sourceHealth && competition.sourceHealth.status === 'degraded'
+        );
+
+        const parts = [];
+        if (updatedLabel) {
+            parts.push(`<span class="data-status__item">Atualizado: ${updatedLabel}</span>`);
+        }
+        if (degradedCompetitions.length) {
+            parts.push(
+                `<span class="data-status__item data-status__item--warning">Origem: degradada em ${degradedCompetitions.length} competição(ões)</span>`
+            );
+        } else {
+            parts.push('<span class="data-status__item">Origem: estável</span>');
+        }
+        dataStatus.innerHTML = parts.join('');
+        dataStatus.classList.remove('hidden');
+    };
+
+    const updateTabsUI = () => {
+        const isProximos = activeTab === 'proximos';
+        tabProximos.classList.toggle('active', isProximos);
+        tabResultados.classList.toggle('active', !isProximos);
+        tabProximos.setAttribute('aria-selected', String(isProximos));
+        tabResultados.setAttribute('aria-selected', String(!isProximos));
+        tabProximos.setAttribute('tabindex', isProximos ? '0' : '-1');
+        tabResultados.setAttribute('tabindex', isProximos ? '-1' : '0');
+        contentProximos.classList.toggle('hidden', !isProximos);
+        contentResultados.classList.toggle('hidden', isProximos);
+        competitionSelect.disabled = isProximos;
+    };
+
+    const setActiveTab = (nextTab) => {
+        activeTab = nextTab === 'resultados' ? 'resultados' : 'proximos';
+        updateTabsUI();
+        ensureDefaultFilters();
+        history.replaceState(null, '', `#${activeTab}`);
+    };
+
+    const getDateRange = () => {
+        const start = startDateInput.value ? new Date(`${startDateInput.value}T00:00:00`) : null;
+        const end = endDateInput.value ? new Date(`${endDateInput.value}T23:59:59`) : null;
+        return { start, end };
+    };
+
+    const matchesDateRange = (entry, start, end) => {
+        const parsed = parseISODate(entry.matchDateISO);
+        if (!parsed) return false;
+        if (start && parsed < start) return false;
+        if (end && parsed > end) return false;
+        return true;
+    };
+
+    const getFilteredMatches = () => {
+        if (!calendarData || !Array.isArray(calendarData.matches)) return [];
+        const { start, end } = getDateRange();
+        const competitionKey = competitionSelect.value;
+
+        return calendarData.matches.filter((entry) => {
+            if (activeTab === 'proximos' && entry.status !== 'scheduled') return false;
+            if (activeTab === 'resultados' && entry.status !== 'finished') return false;
+            if (competitionKey && entry.competitionKey !== competitionKey) return false;
+            return matchesDateRange(entry, start, end);
+        });
+    };
+
+    const groupMatchesByDay = (matches) => {
+        const groups = new Map();
+        matches.forEach((entry) => {
+            const parsed = parseISODate(entry.matchDateISO);
+            const key = parsed ? formatInputDate(parsed) : 'sem-data';
+            if (!groups.has(key)) {
+                groups.set(key, []);
+            }
+            groups.get(key).push(entry);
+        });
+        return groups;
+    };
+
+    const buildMatchCard = (entry) => {
+        const homeDisplayName = displayTeamName(entry.home, entry.competitionKey);
+        const awayDisplayName = displayTeamName(entry.away, entry.competitionKey);
+        const homeCrest = getCrestUrl(entry.home);
+        const awayCrest = getCrestUrl(entry.away);
+        const score = Number.isInteger(entry.homeScore) && Number.isInteger(entry.awayScore)
+            ? `${entry.homeScore} - ${entry.awayScore}`
+            : (entry.displayTime || 'Agendado');
+
+        return `
+            <article class="agenda-match-card">
+                <a href="${entry.competitionUrl || '#'}" class="agenda-match-card__link" aria-label="Abrir ${entry.competitionTitle}">
+                    <div class="agenda-match-card__meta">
+                        <span class="agenda-chip">${entry.competitionTitle}</span>
+                        <span class="agenda-match-card__round">Jornada ${entry.roundNumber}</span>
+                    </div>
+                    <div class="agenda-match-card__teams">
+                        <div class="agenda-team ${isArmacenensesTeam(entry.home, entry.competitionKey) ? 'agenda-team--highlight' : ''}">
+                            <img src="${homeCrest}" alt="${homeDisplayName}" class="team-crest">
+                            <span>${homeDisplayName}</span>
+                        </div>
+                        <div class="agenda-match-card__score">${score}</div>
+                        <div class="agenda-team ${isArmacenensesTeam(entry.away, entry.competitionKey) ? 'agenda-team--highlight' : ''}">
+                            <span>${awayDisplayName}</span>
+                            <img src="${awayCrest}" alt="${awayDisplayName}" class="team-crest">
+                        </div>
+                    </div>
+                    <div class="agenda-match-card__footer">
+                        <span>${entry.displayDate}${entry.displayTime ? ` · ${entry.displayTime}` : ''}</span>
+                        <span>${entry.stadium || ''}</span>
+                        <span>${entry.competitionSubtitle}</span>
+                    </div>
+                </a>
+            </article>
+        `;
+    };
+
+    const renderList = (container, summary, matches) => {
+        if (!matches.length) {
+            summary.textContent = 'Sem jogos para os filtros selecionados.';
+            container.innerHTML = '<p class="agenda-empty-state">Nenhum jogo encontrado.</p>';
+            return;
+        }
+
+        const orderedMatches = [...matches].sort((left, right) => {
+            const leftTs = left.sortTimestamp || 0;
+            const rightTs = right.sortTimestamp || 0;
+            return activeTab === 'resultados' ? rightTs - leftTs : leftTs - rightTs;
+        });
+
+        const groups = groupMatchesByDay(orderedMatches);
+        const groupEntries = Array.from(groups.entries()).sort((left, right) => {
+            return activeTab === 'resultados'
+                ? right[0].localeCompare(left[0])
+                : left[0].localeCompare(right[0]);
+        });
+
+        summary.textContent = `${matches.length} jogo(s) encontrado(s).`;
+
+        const html = groupEntries.map(([groupKey, groupMatches]) => {
+            const groupDate = groupKey === 'sem-data'
+                ? 'Data por confirmar'
+                : formatGroupDate(new Date(`${groupKey}T12:00:00`));
+            return `
+                <section class="agenda-day-group">
+                    <h2 class="agenda-day-group__title">${groupDate}</h2>
+                    <div class="agenda-day-group__list">
+                        ${groupMatches.map(buildMatchCard).join('')}
+                    </div>
+                </section>
+            `;
+        }).join('');
+
+        container.innerHTML = html;
+    };
+
+    const render = () => {
+        ensureDefaultFilters();
+        const matches = getFilteredMatches();
+        if (activeTab === 'proximos') {
+            renderList(listProximos, summaryProximos, matches);
+        } else {
+            renderList(listResultados, summaryResultados, matches);
+        }
+    };
+
+    const loadFreshData = async () => {
+        const [calendarResponse, crestsResponse] = await Promise.all([
+            fetch('data/calendar.json', { cache: 'no-cache' }),
+            fetch('data/crests.json', { cache: 'force-cache' }),
+        ]);
+
+        if (!calendarResponse.ok) {
+            throw new Error(`Falha ao obter calendário (${calendarResponse.status})`);
+        }
+
+        calendarData = await calendarResponse.json();
+        writeJSONToStorage(CALENDAR_CACHE_KEY, calendarData);
+
+        if (crestsResponse.ok) {
+            crestsData = await crestsResponse.json();
+            writeJSONToStorage(CRESTS_CACHE_KEY, crestsData);
+        }
+    };
+
+    const bootstrap = async () => {
+        const cachedCalendar = readJSONFromStorage(CALENDAR_CACHE_KEY);
+        if (cachedCalendar && Array.isArray(cachedCalendar.matches)) {
+            calendarData = cachedCalendar;
+        }
+
+        const cachedCrests = readJSONFromStorage(CRESTS_CACHE_KEY);
+        if (cachedCrests && typeof cachedCrests === 'object') {
+            crestsData = cachedCrests;
+        }
+
+        const initialHash = (window.location.hash || '').replace('#', '').toLowerCase();
+        setActiveTab(initialHash === 'resultados' ? 'resultados' : 'proximos');
+
+        if (calendarData) {
+            populateCompetitionFilter();
+            renderDataStatus();
+            render();
+        }
+
+        try {
+            await loadFreshData();
+            populateCompetitionFilter();
+            renderDataStatus();
+            render();
+        } catch (error) {
+            console.error('Erro ao carregar Agenda:', error);
+            if (!calendarData) {
+                listProximos.innerHTML = '<p class="agenda-empty-state">Não foi possível carregar a agenda.</p>';
+                listResultados.innerHTML = '<p class="agenda-empty-state">Não foi possível carregar os resultados.</p>';
+            }
+        }
+    };
+
+    tabProximos.addEventListener('click', (event) => {
+        event.preventDefault();
+        setActiveTab('proximos');
+        render();
+    });
+
+    tabResultados.addEventListener('click', (event) => {
+        event.preventDefault();
+        setActiveTab('resultados');
+        render();
+    });
+
+    [tabProximos, tabResultados].forEach((tab) => {
+        tab.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                if (tab === tabResultados) {
+                    setActiveTab('resultados');
+                } else {
+                    setActiveTab('proximos');
+                }
+                render();
+            }
+        });
+    });
+
+    [startDateInput, endDateInput, competitionSelect].forEach((element) => {
+        element.addEventListener('change', render);
+    });
+
+    presetButtons.forEach((button) => {
+        button.addEventListener('click', () => applyPreset(button.dataset.preset));
+    });
+
+    bootstrap();
+});

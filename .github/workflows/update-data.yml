@@ -8,11 +8,13 @@ on:
       - "fetch_*.py"
       - "fpf_http.py"
       - "run_fetchers.py"
+      - "build_calendar.py"
       - "requirements.txt"
       - "competition_configs.py"
       - "competition_sync.py"
       - ".github/workflows/update-data.yml"
       - "main.js"
+      - "agenda.js"
       - "css/**"
       - "*.html"
       - "data/*.json"
@@ -58,6 +60,9 @@ jobs:
       - name: Correr todos os fetchers com retries e validacao
         timeout-minutes: 45
         run: python run_fetchers.py
+
+      - name: Gerar calendario agregado
+        run: python build_calendar.py
 
       - name: Publicar resumo dos fetchers
         run: |
