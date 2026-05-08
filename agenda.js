@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const CALENDAR_CACHE_KEY = 'cfa-calendar-cache-v1';
     const CRESTS_CACHE_KEY = 'cfa-crests-cache-v1';
+    const COMPETITION_CACHE_PREFIX = 'cfa-competition-cache-v1:';
     const MONTH_LABELS = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
     const WEEKDAY_LABELS = ['S', 'T', 'Q', 'Q', 'S', 'S', 'D'];
     const LIVE_DATA_ENDPOINT = 'https://resultados.fpf.pt/Competition/GetClassificationAndMatchesByFixture?fixtureId=';
@@ -41,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let pickerMonth = null;
     let renderToken = 0;
     const remoteRoundCache = new Map();
+    const competitionPayloadCache = new Map();
     const htmlDecoder = document.createElement('textarea');
 
     const normalizeName = (name) => {
@@ -102,6 +104,14 @@ document.addEventListener('DOMContentLoaded', () => {
         ).replace(/\s+/g, ' ').trim();
     };
 
+    const cleanDisplayDate = (value = '') => {
+        if (!value) return '';
+        return cleanHTMLText(value)
+            .replace(/\b\d{1,2}\s*[-–]\s*\d{1,2}\b/g, ' ')
+            .replace(/\s+/g, ' ')
+            .trim();
+    };
+
     const textFromNode = (node) => (node ? cleanHTMLText(node.textContent || '') : '');
 
     const readJSONFromStorage = (key) => {
@@ -119,6 +129,116 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (error) {
             // storage may be unavailable
         }
+    };
+
+    const getCompetitionCacheKey = (competitionKey) => `${COMPETITION_CACHE_PREFIX}${competitionKey}`;
+
+    const isValidCompetitionPayload = (payload) => {
+        return Boolean(
+            payload &&
+            Array.isArray(payload.rounds) &&
+            payload.rounds.every((round) => round && Array.isArray(round.matches))
+        );
+    };
+
+    const countFinishedMatches = (payload) => {
+        if (!isValidCompetitionPayload(payload)) return -1;
+        let count = 0;
+        payload.rounds.forEach((round) => {
+            round.matches.forEach((match) => {
+                if (Number.isInteger(match?.homeScore) && Number.isInteger(match?.awayScore)) {
+                    count += 1;
+                }
+            });
+        });
+        return count;
+    };
+
+    const selectPreferredCompetitionPayload = (cachedPayload, fetchedPayload) => {
+        const cachedValid = isValidCompetitionPayload(cachedPayload);
+        const fetchedValid = isValidCompetitionPayload(fetchedPayload);
+        if (cachedValid && !fetchedValid) return cachedPayload;
+        if (!cachedValid && fetchedValid) return fetchedPayload;
+        if (!cachedValid && !fetchedValid) return null;
+
+        const cachedUpdatedAt = Date.parse(cachedPayload.lastUpdatedAt || '') || 0;
+        const fetchedUpdatedAt = Date.parse(fetchedPayload.lastUpdatedAt || '') || 0;
+        if (cachedUpdatedAt !== fetchedUpdatedAt) {
+            return cachedUpdatedAt > fetchedUpdatedAt ? cachedPayload : fetchedPayload;
+        }
+
+        const cachedFinished = countFinishedMatches(cachedPayload);
+        const fetchedFinished = countFinishedMatches(fetchedPayload);
+        if (cachedFinished !== fetchedFinished) {
+            return cachedFinished > fetchedFinished ? cachedPayload : fetchedPayload;
+        }
+
+        return fetchedPayload;
+    };
+
+    const fetchCompetitionPayload = async (competitionMeta) => {
+        if (!competitionMeta?.key) return null;
+        if (competitionPayloadCache.has(competitionMeta.key)) {
+            return competitionPayloadCache.get(competitionMeta.key);
+        }
+
+        const cachedPayload = readJSONFromStorage(getCompetitionCacheKey(competitionMeta.key));
+        let fetchedPayload = null;
+
+        if (competitionMeta.outputFile) {
+            try {
+                const response = await fetch(competitionMeta.outputFile, { cache: 'no-cache' });
+                if (response.ok) {
+                    fetchedPayload = await response.json();
+                }
+            } catch (error) {
+                console.warn(`Falha ao carregar payload da competição ${competitionMeta.key}:`, error);
+            }
+        }
+
+        const preferredPayload = selectPreferredCompetitionPayload(cachedPayload, fetchedPayload);
+        competitionPayloadCache.set(competitionMeta.key, preferredPayload);
+        return preferredPayload;
+    };
+
+    const parseDateFromCalendarEntry = (entry) => {
+        const parsed = parseISODate(entry.matchDateISO);
+        if (parsed) return parsed;
+        if (!entry.displayDate) return null;
+        const match = entry.displayDate.match(/(\d{1,2})\s+([A-Za-zÀ-ÿ]{3,})/);
+        if (!match) return null;
+        const months = {
+            jan: 0, fev: 1, mar: 2, abr: 3, mai: 4, jun: 5,
+            jul: 6, ago: 7, set: 8, out: 9, nov: 10, dez: 11,
+        };
+        const monthKey = match[2]
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]+/g, '')
+            .replace(/[^a-z]/g, '')
+            .slice(0, 3);
+        if (!Object.prototype.hasOwnProperty.call(months, monthKey)) return null;
+        const day = Number.parseInt(match[1], 10);
+        const year = new Date().getFullYear();
+        return new Date(year, months[monthKey], day, 12, 0, 0, 0);
+    };
+
+    const buildCompetitionMatchLookup = (payload) => {
+        const lookup = new Map();
+        if (!isValidCompetitionPayload(payload)) return lookup;
+
+        payload.rounds.forEach((round) => {
+            const roundLookup = new Map();
+            round.matches.forEach((match) => {
+                roundLookup.set(
+                    `${normalizeName(match.home)}|${normalizeName(match.away)}`,
+                    match
+                );
+            });
+            lookup.set(String(round.fixtureId || round.index || ''), roundLookup);
+        });
+
+        return lookup;
     };
 
     const formatTimestamp = (value) => {
@@ -656,6 +776,81 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    const hydrateMatchesFromCompetitionPayloads = async (token) => {
+        const candidates = getCandidateMatches();
+        if (!candidates.length || !calendarData?.competitions) return;
+
+        const competitionsByKey = new Map(
+            calendarData.competitions.map((competition) => [competition.key, competition])
+        );
+        const groupedEntries = new Map();
+        candidates.forEach((entry) => {
+            const entries = groupedEntries.get(entry.competitionKey) || [];
+            entries.push(entry);
+            groupedEntries.set(entry.competitionKey, entries);
+        });
+
+        let changed = false;
+
+        for (const [competitionKey, entries] of groupedEntries.entries()) {
+            const competitionMeta = competitionsByKey.get(competitionKey);
+            const payload = await fetchCompetitionPayload(competitionMeta);
+            if (!isValidCompetitionPayload(payload)) continue;
+
+            const roundLookup = buildCompetitionMatchLookup(payload);
+
+            entries.forEach((entry) => {
+                const fixtureLookup = roundLookup.get(String(entry.fixtureId || ''));
+                if (!fixtureLookup) return;
+
+                const payloadMatch = fixtureLookup.get(
+                    `${normalizeName(entry.home)}|${normalizeName(entry.away)}`
+                );
+                if (!payloadMatch) return;
+
+                const nextHomeScore = payloadMatch.homeScore;
+                const nextAwayScore = payloadMatch.awayScore;
+                const nextDisplayDate = cleanDisplayDate(payloadMatch.date || entry.displayDate);
+                const nextDisplayTime = (payloadMatch.time || entry.displayTime || '').trim();
+                const nextStadium = payloadMatch.stadium || entry.stadium;
+                const nextDate = parseDateFromCalendarEntry({
+                    ...entry,
+                    displayDate: nextDisplayDate,
+                    displayTime: nextDisplayTime,
+                });
+                const nextMatchDateISO = nextDate ? nextDate.toISOString() : entry.matchDateISO;
+                const nextSortTimestamp = nextDate ? Math.floor(nextDate.getTime() / 1000) : entry.sortTimestamp;
+
+                if (
+                    entry.homeScore !== nextHomeScore ||
+                    entry.awayScore !== nextAwayScore ||
+                    entry.displayDate !== nextDisplayDate ||
+                    entry.displayTime !== nextDisplayTime ||
+                    entry.stadium !== nextStadium ||
+                    entry.lastUpdatedAt !== payload.lastUpdatedAt
+                ) {
+                    entry.homeScore = nextHomeScore;
+                    entry.awayScore = nextAwayScore;
+                    entry.displayDate = nextDisplayDate;
+                    entry.displayTime = nextDisplayTime;
+                    entry.stadium = nextStadium;
+                    entry.lastUpdatedAt = payload.lastUpdatedAt;
+                    entry.sourceHealth = payload.sourceHealth || entry.sourceHealth || {};
+                    entry.matchDateISO = nextMatchDateISO;
+                    entry.sortTimestamp = nextSortTimestamp;
+                    entry.status = inferEntryStatus(entry);
+                    changed = true;
+                }
+            });
+        }
+
+        if (!changed) return;
+        writeJSONToStorage(CALENDAR_CACHE_KEY, calendarData);
+        if (token === renderToken) {
+            render();
+        }
+    };
+
     const groupMatchesByDay = (matches) => {
         const groups = new Map();
         matches.forEach((entry) => {
@@ -755,6 +950,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             renderList(listResultados, summaryResultados, matches);
         }
+        void hydrateMatchesFromCompetitionPayloads(currentToken);
         void hydrateVisibleMatches(currentToken);
     };
 
