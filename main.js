@@ -788,7 +788,7 @@ const initializeRoundBasedOnDate = () => {
     const isArmacenensesTeam = (teamName) => {
         const normalized = normalizeName(teamName);
         if (isFemininoSub17Competition) {
-            return normalized === 'cf os armacenenses b';
+            return normalized === 'cf os armacenenses a' || normalized === 'cf os armacenenses b';
         }
         if (isIniciadosBCompetition) {
             return normalized === 'cf os armacenenses a';

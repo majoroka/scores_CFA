@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const isArmacenensesTeam = (teamName, competitionKey) => {
         const normalized = normalizeName(teamName);
         if (competitionKey === 'feminino-sub17') {
-            return normalized === 'cf os armacenenses b';
+            return normalized === 'cf os armacenenses a' || normalized === 'cf os armacenenses b';
         }
         if (competitionKey === 'iniciados-b') {
             return normalized === 'cf os armacenenses a';
