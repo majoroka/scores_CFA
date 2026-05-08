@@ -599,6 +599,10 @@ document.addEventListener('DOMContentLoaded', () => {
         button.addEventListener('click', () => applyPreset(button.dataset.preset));
     });
 
+    dateRangePicker.addEventListener('click', (event) => {
+        event.stopPropagation();
+    });
+
     dateRangeTrigger.addEventListener('click', () => {
         if (dateRangePicker.classList.contains('hidden')) {
             openDateRangePicker();
