@@ -259,6 +259,66 @@ document.addEventListener('DOMContentLoaded', () => {
         );
     };
 
+    const countFinishedMatches = (payload) => {
+        if (!isValidCompetitionPayload(payload)) return -1;
+        let count = 0;
+        payload.rounds.forEach((round) => {
+            round.matches.forEach((match) => {
+                if (Number.isInteger(match?.homeScore) && Number.isInteger(match?.awayScore)) {
+                    count += 1;
+                }
+            });
+        });
+        return count;
+    };
+
+    const countPastMissingScores = (payload) => {
+        if (!isValidCompetitionPayload(payload)) return Number.POSITIVE_INFINITY;
+        const today = new Date();
+        today.setHours(12, 0, 0, 0);
+        let count = 0;
+        payload.rounds.forEach((round) => {
+            round.matches.forEach((match) => {
+                const parsedDate = parseMatchDate(match?.date);
+                if (!parsedDate || parsedDate >= today) return;
+                const hasScore = Number.isInteger(match?.homeScore) && Number.isInteger(match?.awayScore);
+                if (!hasScore) {
+                    count += 1;
+                }
+            });
+        });
+        return count;
+    };
+
+    const selectPreferredCompetitionPayload = (cachedPayload, fetchedPayload) => {
+        const cachedValid = isValidCompetitionPayload(cachedPayload);
+        const fetchedValid = isValidCompetitionPayload(fetchedPayload);
+
+        if (cachedValid && !fetchedValid) return cachedPayload;
+        if (!cachedValid && fetchedValid) return fetchedPayload;
+        if (!cachedValid && !fetchedValid) return null;
+
+        const cachedFinished = countFinishedMatches(cachedPayload);
+        const fetchedFinished = countFinishedMatches(fetchedPayload);
+        if (cachedFinished !== fetchedFinished) {
+            return cachedFinished > fetchedFinished ? cachedPayload : fetchedPayload;
+        }
+
+        const cachedMissing = countPastMissingScores(cachedPayload);
+        const fetchedMissing = countPastMissingScores(fetchedPayload);
+        if (cachedMissing !== fetchedMissing) {
+            return cachedMissing < fetchedMissing ? cachedPayload : fetchedPayload;
+        }
+
+        const cachedUpdatedAt = Date.parse(cachedPayload.lastUpdatedAt || '') || 0;
+        const fetchedUpdatedAt = Date.parse(fetchedPayload.lastUpdatedAt || '') || 0;
+        if (cachedUpdatedAt !== fetchedUpdatedAt) {
+            return cachedUpdatedAt > fetchedUpdatedAt ? cachedPayload : fetchedPayload;
+        }
+
+        return fetchedPayload;
+    };
+
     const hasCompetitionPayloadChanged = (nextPayload) => {
         if (!competitionData) return true;
         return (
@@ -1038,14 +1098,19 @@ const initializeRoundBasedOnDate = () => {
                 throw new Error('Payload da competição inválido');
             }
 
+            const preferredCompetitionData = selectPreferredCompetitionPayload(
+                cachedCompetitionData,
+                freshCompetitionData
+            );
+
             const previousRoundNumber = competitionData?.rounds?.[currentRoundIndex]?.index ?? null;
             const preferredRoundNumber = userHasManualRoundSelection ? previousRoundNumber : null;
-            if (!competitionData || hasCompetitionPayloadChanged(freshCompetitionData)) {
-                competitionData = freshCompetitionData;
-                writeJSONToStorage(getCompetitionCacheKey(), freshCompetitionData);
+            if (!competitionData || hasCompetitionPayloadChanged(preferredCompetitionData)) {
+                competitionData = preferredCompetitionData;
+                writeJSONToStorage(getCompetitionCacheKey(), preferredCompetitionData);
                 renderCompetition({ preferredRoundNumber });
             } else if (!competitionData) {
-                competitionData = freshCompetitionData;
+                competitionData = preferredCompetitionData;
                 renderCompetition();
             }
 
