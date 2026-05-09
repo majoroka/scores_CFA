@@ -20,7 +20,7 @@ on:
       - "data/*.json"
   workflow_dispatch: {}         # Permite correr manualmente no GitHub
   schedule:
-    - cron: "17,47 * * * *"     # A cada 30 minutos, fora dos minutos mais concorridos
+    - cron: "17 * * * *"        # A cada 60 minutos, com scheduler adaptativo
 
 permissions:
   contents: write
@@ -34,6 +34,8 @@ concurrency:
 env:
   MAX_FETCH_FAILURES: "0"
   MAX_FETCH_DEGRADED: "2"
+  PREMATCH_WINDOW_HOURS: "3"
+  HISTORICAL_LOOKBACK_DAYS: "14"
 
 jobs:
   build:
@@ -57,12 +59,74 @@ jobs:
       - name: Correr testes unitários
         run: python -m unittest discover -s tests
 
-      - name: Correr todos os fetchers com retries e validacao
+      - name: Planear fetchers a executar
+        run: python plan_fetchers.py
+
+      - name: Correr fetchers selecionados com retries e validacao
         timeout-minutes: 45
-        run: python run_fetchers.py
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import subprocess
+          import sys
+          from pathlib import Path
+
+          plan = json.loads(Path("cache/fetch_plan.json").read_text(encoding="utf-8"))
+          selected = plan.get("selected_fetchers", [])
+
+          if not selected:
+              report = {
+                  "generated_at_epoch": 0,
+                  "fetchers": [],
+                  "success_count": 0,
+                  "failure_count": 0,
+                  "degraded_count": 0,
+                  "changed_count": 0,
+                  "skipped_by_plan": True,
+                  "plan_mode": plan.get("mode", "idle"),
+              }
+              Path("cache/fetch_report.json").write_text(
+                  json.dumps(report, ensure_ascii=False, indent=2),
+                  encoding="utf-8",
+              )
+              print("No fetchers selected by adaptive plan.")
+          else:
+              subprocess.run([sys.executable, "run_fetchers.py", *selected], check=True)
+          PY
 
       - name: Gerar calendario agregado
         run: python build_calendar.py
+
+      - name: Publicar resumo do plano de fetch
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          plan = json.loads(Path("cache/fetch_plan.json").read_text(encoding="utf-8"))
+          lines = [
+              "# Plano adaptativo de fetch",
+              "",
+              f"- Modo: {plan['mode']}",
+              f"- Fetchers selecionados: {plan['selected_count']}",
+              f"- Janela pré-jogo (h): {plan['prematch_window_hours']}",
+              f"- Janela de recuperação histórica (dias): {plan['historical_lookback_days']}",
+              "",
+              "| Competição | Fetcher | Estado | Hoje pendente | Hoje fora da janela | Histórico pendente |",
+              "| --- | --- | --- | ---: | ---: | ---: |",
+          ]
+
+          for item in plan["competitions"]:
+              lines.append(
+                  "| {competition_key} | {fetcher} | {state} | {today_pending_count} | {upcoming_today_count} | {historical_pending_count} |".format(**item)
+              )
+
+          summary_path = os.environ["GITHUB_STEP_SUMMARY"]
+          with open(summary_path, "a", encoding="utf-8") as handle:
+              handle.write("\n".join(lines) + "\n")
+          PY
 
       - name: Publicar resumo dos fetchers
         run: |
