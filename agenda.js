@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const CALENDAR_CACHE_KEY = 'cfa-calendar-cache-v1';
     const CRESTS_CACHE_KEY = 'cfa-crests-cache-v1';
     const COMPETITION_CACHE_PREFIX = 'cfa-competition-cache-v1:';
+    const CALENDAR_CACHE_MAX_AGE_MS = 30 * 60 * 1000;
+    const COMPETITION_CACHE_MAX_AGE_MS = 2 * 60 * 60 * 1000;
     const MONTH_LABELS = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
     const WEEKDAY_LABELS = ['S', 'T', 'Q', 'Q', 'S', 'S', 'D'];
     const LIVE_DATA_ENDPOINT = 'https://resultados.fpf.pt/Competition/GetClassificationAndMatchesByFixture?fixtureId=';
@@ -117,18 +119,48 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const textFromNode = (node) => (node ? cleanHTMLText(node.textContent || '') : '');
 
-    const readJSONFromStorage = (key) => {
+    const readStorageEntry = (key) => {
         try {
             const raw = window.localStorage.getItem(key);
-            return raw ? JSON.parse(raw) : null;
+            if (!raw) return null;
+            const parsed = JSON.parse(raw);
+            if (
+                parsed &&
+                typeof parsed === 'object' &&
+                parsed.__cacheMeta &&
+                Object.prototype.hasOwnProperty.call(parsed, 'payload')
+            ) {
+                return {
+                    payload: parsed.payload,
+                    savedAt: Number(parsed.__cacheMeta.savedAt) || 0,
+                };
+            }
+            return {
+                payload: parsed,
+                savedAt: 0,
+            };
         } catch (error) {
             return null;
         }
     };
 
+    const readJSONFromStorage = (key, { maxAgeMs = null } = {}) => {
+        const entry = readStorageEntry(key);
+        if (!entry) return null;
+        if (maxAgeMs !== null && entry.savedAt && (Date.now() - entry.savedAt) > maxAgeMs) {
+            return null;
+        }
+        return entry.payload;
+    };
+
     const writeJSONToStorage = (key, value) => {
         try {
-            window.localStorage.setItem(key, JSON.stringify(value));
+            window.localStorage.setItem(key, JSON.stringify({
+                __cacheMeta: {
+                    savedAt: Date.now(),
+                },
+                payload: value,
+            }));
         } catch (error) {
             // storage may be unavailable
         }
@@ -157,12 +189,16 @@ document.addEventListener('DOMContentLoaded', () => {
         return count;
     };
 
-    const selectPreferredCompetitionPayload = (cachedPayload, fetchedPayload) => {
+    const selectPreferredCompetitionPayload = (cachedPayload, fetchedPayload, cacheSavedAt = 0) => {
         const cachedValid = isValidCompetitionPayload(cachedPayload);
         const fetchedValid = isValidCompetitionPayload(fetchedPayload);
         if (cachedValid && !fetchedValid) return cachedPayload;
         if (!cachedValid && fetchedValid) return fetchedPayload;
         if (!cachedValid && !fetchedValid) return null;
+
+        if (cacheSavedAt && (Date.now() - cacheSavedAt) > COMPETITION_CACHE_MAX_AGE_MS) {
+            return fetchedPayload;
+        }
 
         const cachedUpdatedAt = Date.parse(cachedPayload.lastUpdatedAt || '') || 0;
         const fetchedUpdatedAt = Date.parse(fetchedPayload.lastUpdatedAt || '') || 0;
@@ -185,7 +221,11 @@ document.addEventListener('DOMContentLoaded', () => {
             return competitionPayloadCache.get(competitionMeta.key);
         }
 
-        const cachedPayload = readJSONFromStorage(getCompetitionCacheKey(competitionMeta.key));
+        const cachedEntry = readStorageEntry(getCompetitionCacheKey(competitionMeta.key));
+        const cachedPayload = (
+            cachedEntry &&
+            (!cachedEntry.savedAt || (Date.now() - cachedEntry.savedAt) <= COMPETITION_CACHE_MAX_AGE_MS)
+        ) ? cachedEntry.payload : null;
         let fetchedPayload = null;
 
         if (competitionMeta.outputFile) {
@@ -199,7 +239,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        const preferredPayload = selectPreferredCompetitionPayload(cachedPayload, fetchedPayload);
+        const preferredPayload = selectPreferredCompetitionPayload(
+            cachedEntry?.payload || null,
+            fetchedPayload,
+            cachedEntry?.savedAt || 0
+        );
         competitionPayloadCache.set(competitionMeta.key, preferredPayload);
         return preferredPayload;
     };
@@ -975,7 +1019,9 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const bootstrap = async () => {
-        const cachedCalendar = readJSONFromStorage(CALENDAR_CACHE_KEY);
+        const cachedCalendar = readJSONFromStorage(CALENDAR_CACHE_KEY, {
+            maxAgeMs: CALENDAR_CACHE_MAX_AGE_MS,
+        });
         if (cachedCalendar && Array.isArray(cachedCalendar.matches)) {
             calendarData = cachedCalendar;
         }

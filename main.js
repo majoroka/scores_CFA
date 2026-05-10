@@ -154,6 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let dataStatusContainer = null;
     const COMPETITION_CACHE_PREFIX = 'cfa-competition-cache-v1:';
     const CRESTS_CACHE_KEY = 'cfa-crests-cache-v1';
+    const COMPETITION_CACHE_MAX_AGE_MS = 2 * 60 * 60 * 1000;
 
     // Utilitário simples para decodificar HTML vindo da FPF
     const htmlDecoder = document.createElement('textarea');
@@ -230,19 +231,48 @@ document.addEventListener('DOMContentLoaded', () => {
         container.classList.remove('hidden');
     };
 
-    const readJSONFromStorage = (key) => {
+    const readStorageEntry = (key) => {
         try {
             const raw = window.localStorage.getItem(key);
             if (!raw) return null;
-            return JSON.parse(raw);
+            const parsed = JSON.parse(raw);
+            if (
+                parsed &&
+                typeof parsed === 'object' &&
+                parsed.__cacheMeta &&
+                Object.prototype.hasOwnProperty.call(parsed, 'payload')
+            ) {
+                return {
+                    payload: parsed.payload,
+                    savedAt: Number(parsed.__cacheMeta.savedAt) || 0,
+                };
+            }
+            return {
+                payload: parsed,
+                savedAt: 0,
+            };
         } catch (error) {
             return null;
         }
     };
 
+    const readJSONFromStorage = (key, { maxAgeMs = null } = {}) => {
+        const entry = readStorageEntry(key);
+        if (!entry) return null;
+        if (maxAgeMs !== null && entry.savedAt && (Date.now() - entry.savedAt) > maxAgeMs) {
+            return null;
+        }
+        return entry.payload;
+    };
+
     const writeJSONToStorage = (key, value) => {
         try {
-            window.localStorage.setItem(key, JSON.stringify(value));
+            window.localStorage.setItem(key, JSON.stringify({
+                __cacheMeta: {
+                    savedAt: Date.now(),
+                },
+                payload: value,
+            }));
         } catch (error) {
             // localStorage may be unavailable or full
         }
@@ -290,13 +320,17 @@ document.addEventListener('DOMContentLoaded', () => {
         return count;
     };
 
-    const selectPreferredCompetitionPayload = (cachedPayload, fetchedPayload) => {
+    const selectPreferredCompetitionPayload = (cachedPayload, fetchedPayload, cacheSavedAt = 0) => {
         const cachedValid = isValidCompetitionPayload(cachedPayload);
         const fetchedValid = isValidCompetitionPayload(fetchedPayload);
 
         if (cachedValid && !fetchedValid) return cachedPayload;
         if (!cachedValid && fetchedValid) return fetchedPayload;
         if (!cachedValid && !fetchedValid) return null;
+
+        if (cacheSavedAt && (Date.now() - cacheSavedAt) > COMPETITION_CACHE_MAX_AGE_MS) {
+            return fetchedPayload;
+        }
 
         const cachedFinished = countFinishedMatches(cachedPayload);
         const fetchedFinished = countFinishedMatches(fetchedPayload);
@@ -1067,7 +1101,11 @@ const initializeRoundBasedOnDate = () => {
     // --- BUSCA DE DADOS ---
     const fetchData = async () => {
         try {
-            const cachedCompetitionData = readJSONFromStorage(getCompetitionCacheKey());
+            const cachedCompetitionEntry = readStorageEntry(getCompetitionCacheKey());
+            const cachedCompetitionData = (
+                cachedCompetitionEntry &&
+                (!cachedCompetitionEntry.savedAt || (Date.now() - cachedCompetitionEntry.savedAt) <= COMPETITION_CACHE_MAX_AGE_MS)
+            ) ? cachedCompetitionEntry.payload : null;
             if (isValidCompetitionPayload(cachedCompetitionData)) {
                 competitionData = cachedCompetitionData;
                 renderCompetition();
@@ -1099,8 +1137,9 @@ const initializeRoundBasedOnDate = () => {
             }
 
             const preferredCompetitionData = selectPreferredCompetitionPayload(
-                cachedCompetitionData,
-                freshCompetitionData
+                cachedCompetitionEntry?.payload || null,
+                freshCompetitionData,
+                cachedCompetitionEntry?.savedAt || 0
             );
 
             const previousRoundNumber = competitionData?.rounds?.[currentRoundIndex]?.index ?? null;
