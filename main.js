@@ -289,68 +289,17 @@ document.addEventListener('DOMContentLoaded', () => {
         );
     };
 
-    const countFinishedMatches = (payload) => {
-        if (!isValidCompetitionPayload(payload)) return -1;
-        let count = 0;
-        payload.rounds.forEach((round) => {
-            round.matches.forEach((match) => {
-                if (Number.isInteger(match?.homeScore) && Number.isInteger(match?.awayScore)) {
-                    count += 1;
-                }
-            });
-        });
-        return count;
-    };
-
-    const countPastMissingScores = (payload) => {
-        if (!isValidCompetitionPayload(payload)) return Number.POSITIVE_INFINITY;
-        const today = new Date();
-        today.setHours(12, 0, 0, 0);
-        let count = 0;
-        payload.rounds.forEach((round) => {
-            round.matches.forEach((match) => {
-                const parsedDate = parseMatchDate(match?.date);
-                if (!parsedDate || parsedDate >= today) return;
-                const hasScore = Number.isInteger(match?.homeScore) && Number.isInteger(match?.awayScore);
-                if (!hasScore) {
-                    count += 1;
-                }
-            });
-        });
-        return count;
-    };
-
-    const selectPreferredCompetitionPayload = (cachedPayload, fetchedPayload, cacheSavedAt = 0) => {
+    const selectPreferredCompetitionPayload = (cachedPayload, fetchedPayload) => {
         const cachedValid = isValidCompetitionPayload(cachedPayload);
         const fetchedValid = isValidCompetitionPayload(fetchedPayload);
 
-        if (cachedValid && !fetchedValid) return cachedPayload;
-        if (!cachedValid && fetchedValid) return fetchedPayload;
-        if (!cachedValid && !fetchedValid) return null;
-
-        if (cacheSavedAt && (Date.now() - cacheSavedAt) > COMPETITION_CACHE_MAX_AGE_MS) {
+        if (fetchedValid) {
             return fetchedPayload;
         }
-
-        const cachedFinished = countFinishedMatches(cachedPayload);
-        const fetchedFinished = countFinishedMatches(fetchedPayload);
-        if (cachedFinished !== fetchedFinished) {
-            return cachedFinished > fetchedFinished ? cachedPayload : fetchedPayload;
+        if (cachedValid) {
+            return cachedPayload;
         }
-
-        const cachedMissing = countPastMissingScores(cachedPayload);
-        const fetchedMissing = countPastMissingScores(fetchedPayload);
-        if (cachedMissing !== fetchedMissing) {
-            return cachedMissing < fetchedMissing ? cachedPayload : fetchedPayload;
-        }
-
-        const cachedUpdatedAt = Date.parse(cachedPayload.lastUpdatedAt || '') || 0;
-        const fetchedUpdatedAt = Date.parse(fetchedPayload.lastUpdatedAt || '') || 0;
-        if (cachedUpdatedAt !== fetchedUpdatedAt) {
-            return cachedUpdatedAt > fetchedUpdatedAt ? cachedPayload : fetchedPayload;
-        }
-
-        return fetchedPayload;
+        return null;
     };
 
     const hasCompetitionPayloadChanged = (nextPayload) => {
@@ -1141,8 +1090,7 @@ const initializeRoundBasedOnDate = () => {
 
             const preferredCompetitionData = selectPreferredCompetitionPayload(
                 cachedCompetitionEntry?.payload || null,
-                freshCompetitionData,
-                cachedCompetitionEntry?.savedAt || 0
+                freshCompetitionData
             );
 
             const previousRoundNumber = competitionData?.rounds?.[currentRoundIndex]?.index ?? null;
