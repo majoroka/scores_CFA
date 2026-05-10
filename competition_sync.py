@@ -28,6 +28,10 @@ MONTH_MAP = {
 }
 
 
+class SyncCriticalError(RuntimeError):
+    pass
+
+
 def _normalize(value: str) -> str:
     normalized = unicodedata.normalize('NFD', value)
     normalized = normalized.encode('ascii', 'ignore').decode('ascii')
@@ -166,14 +170,104 @@ def compute_default_round_index(rounds, today: Optional[datetime] = None):
     return 0
 
 
-def build_payload(rounds, fallback_reuse_count: int = 0, last_updated_at: Optional[str] = None):
+def collect_quality_metrics(rounds, today: Optional[datetime] = None):
+    reference_today = (today or datetime.now()).replace(hour=12, minute=0, second=0, microsecond=0)
+    unique_teams = set()
+    round_count = len(rounds)
+    match_count = 0
+    classification_count = 0
+    completed_match_count = 0
+    future_match_count = 0
+    past_match_count = 0
+    past_matches_without_score = 0
+    rounds_with_matches = 0
+    rounds_with_classification = 0
+    rounds_with_completed_matches = 0
+    rounds_without_data = 0
+
+    for round_data in rounds:
+        matches = round_data.get('matches', [])
+        classification = round_data.get('classification', [])
+        if matches:
+            rounds_with_matches += 1
+        if classification:
+            rounds_with_classification += 1
+        if not matches and not classification:
+            rounds_without_data += 1
+
+        round_has_completed_matches = False
+        for match in matches:
+            match_count += 1
+            home_team = (match.get('home') or '').strip()
+            away_team = (match.get('away') or '').strip()
+            if home_team:
+                unique_teams.add(home_team)
+            if away_team:
+                unique_teams.add(away_team)
+
+            has_score = isinstance(match.get('homeScore'), int) and isinstance(match.get('awayScore'), int)
+            if has_score:
+                completed_match_count += 1
+                round_has_completed_matches = True
+
+            parsed_date = parse_match_date(match.get('date', ''), today=reference_today)
+            if parsed_date:
+                if parsed_date <= reference_today:
+                    past_match_count += 1
+                    if not has_score:
+                        past_matches_without_score += 1
+                else:
+                    future_match_count += 1
+
+        if round_has_completed_matches:
+            rounds_with_completed_matches += 1
+
+        for entry in classification:
+            team_name = (entry.get('team') or '').strip()
+            if team_name:
+                unique_teams.add(team_name)
+            classification_count += 1
+
+    return {
+        'roundCount': round_count,
+        'matchCount': match_count,
+        'classificationCount': classification_count,
+        'teamCount': len(unique_teams),
+        'completedMatchCount': completed_match_count,
+        'matchesWithoutScore': max(match_count - completed_match_count, 0),
+        'pastMatchCount': past_match_count,
+        'pastMatchesWithoutScore': past_matches_without_score,
+        'futureMatchCount': future_match_count,
+        'roundsWithMatches': rounds_with_matches,
+        'roundsWithClassification': rounds_with_classification,
+        'roundsWithCompletedMatches': rounds_with_completed_matches,
+        'roundsWithoutData': rounds_without_data,
+    }
+
+
+def infer_payload_status(fallback_reuse_count: int, quality_metrics: dict):
+    if fallback_reuse_count > 0:
+        return 'degraded'
+    if quality_metrics.get('pastMatchesWithoutScore', 0) > 0:
+        return 'partial'
+    return 'ok'
+
+
+def build_payload(
+    rounds,
+    fallback_reuse_count: int = 0,
+    last_updated_at: Optional[str] = None,
+    sync_issues: Optional[list[str]] = None,
+    quality_metrics: Optional[dict] = None,
+):
     default_round_index = compute_default_round_index(rounds)
     default_round_number = None
     if 0 <= default_round_index < len(rounds):
         default_round_number = rounds[default_round_index].get('index')
 
     timestamp = last_updated_at or datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace('+00:00', 'Z')
-    health_status = 'degraded' if fallback_reuse_count > 0 else 'ok'
+    metrics = quality_metrics or collect_quality_metrics(rounds)
+    health_status = infer_payload_status(fallback_reuse_count, metrics)
 
     return {
         'defaultRoundIndex': default_round_index,
@@ -182,7 +276,9 @@ def build_payload(rounds, fallback_reuse_count: int = 0, last_updated_at: Option
         'sourceHealth': {
             'status': health_status,
             'fallbackReuseCount': fallback_reuse_count,
+            'issues': list(sync_issues or []),
         },
+        'dataQuality': metrics,
         'rounds': rounds,
     }
 
@@ -444,20 +540,43 @@ def get_page_content(url: str, cache_key: str):
     )
 
 
+def validate_sync_result(config: CompetitionConfig, rounds, fixture_ids, existing_rounds):
+    if not fixture_ids:
+        raise SyncCriticalError(f'{config.key}: no fixture ids found')
+    if not rounds:
+        raise SyncCriticalError(f'{config.key}: no rounds extracted')
+    if existing_rounds and len(rounds) < len(existing_rounds):
+        raise SyncCriticalError(
+            f'{config.key}: extracted only {len(rounds)} rounds, existing file has {len(existing_rounds)}'
+        )
+    if len(rounds) < len(fixture_ids):
+        raise SyncCriticalError(
+            f'{config.key}: extracted only {len(rounds)} rounds for {len(fixture_ids)} fixture ids'
+        )
+
+    quality_metrics = collect_quality_metrics(rounds)
+    if quality_metrics['roundCount'] <= 0:
+        raise SyncCriticalError(f'{config.key}: no rounds after validation')
+    if quality_metrics['matchCount'] <= 0:
+        raise SyncCriticalError(f'{config.key}: no matches extracted')
+    if quality_metrics['teamCount'] <= 0:
+        raise SyncCriticalError(f'{config.key}: no teams extracted')
+    return quality_metrics
+
+
 def run_sync(config: CompetitionConfig):
     main_page = get_page_content(config.competition_url, config.main_cache_key)
     if not main_page:
-        print('Erro ao obter página principal da competição.')
-        return
+        raise SyncCriticalError(f'{config.key}: failed to fetch competition page')
 
     fixture_ids = extract_fixture_ids(main_page, config)
     if not fixture_ids:
-        print('Nenhum fixtureId encontrado para a série alvo.')
-        return
+        raise SyncCriticalError(f'{config.key}: no fixture ids found for target series')
 
     existing_rounds = load_existing_rounds(config.output_file)
     rounds = []
     fallback_reuse_count = 0
+    sync_issues = []
     for index, fixture_id in enumerate(fixture_ids, start=1):
         print(f'Processando jornada {index} (fixtureId={fixture_id})')
         url = (
@@ -471,8 +590,10 @@ def run_sync(config: CompetitionConfig):
                 print(f'Falha ao obter dados da jornada {index}; a reutilizar dados existentes.')
                 rounds.append(existing_round)
                 fallback_reuse_count += 1
+                sync_issues.append(f'fixture {fixture_id}: fallback to existing round')
             else:
                 print(f'Falha ao obter dados da jornada {index}')
+                sync_issues.append(f'fixture {fixture_id}: missing fragment and no fallback')
             continue
 
         matches = parse_matches(fragment, strip_score_from_date=config.strip_score_from_date)
@@ -481,6 +602,11 @@ def run_sync(config: CompetitionConfig):
             print(f'Jornada {index} sem dados novos; a reutilizar dados existentes.')
             rounds.append(existing_round)
             fallback_reuse_count += 1
+            sync_issues.append(f'fixture {fixture_id}: reused existing round because fragment had no data')
+            continue
+        if not matches and not classification:
+            print(f'Jornada {index} sem dados utilizáveis.')
+            sync_issues.append(f'fixture {fixture_id}: fragment returned no usable data')
             continue
         rounds.append({
             'index': index,
@@ -493,26 +619,17 @@ def run_sync(config: CompetitionConfig):
     if config.derive_classification:
         build_classification_from_results(rounds, config.ignored_team_names)
 
-    valid_rounds = [
-        round_data
-        for round_data in rounds
-        if round_data['matches'] or round_data['classification']
-    ]
-    if not valid_rounds:
-        print('Nenhum dado válido foi extraído. O ficheiro existente não será alterado.')
-        return
-
-    if existing_rounds and len(rounds) < len(existing_rounds):
-        print(
-            f'Foram extraídas apenas {len(rounds)} jornadas, '
-            f'mas o ficheiro atual tem {len(existing_rounds)}. '
-            'O ficheiro existente não será alterado.'
-        )
-        return
-
-    data = build_payload(rounds, fallback_reuse_count=fallback_reuse_count)
+    quality_metrics = validate_sync_result(config, rounds, fixture_ids, existing_rounds)
+    data = build_payload(
+        rounds,
+        fallback_reuse_count=fallback_reuse_count,
+        sync_issues=sync_issues,
+        quality_metrics=quality_metrics,
+    )
     os.makedirs(os.path.dirname(config.output_file), exist_ok=True)
     with open(config.output_file, 'w', encoding='utf-8') as handle:
         json.dump(data, handle, ensure_ascii=False, indent=4)
+        handle.write('\n')
 
     print(f'Dados guardados em {config.output_file}')
+    return data

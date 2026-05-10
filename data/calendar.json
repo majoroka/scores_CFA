@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-10T21:19:59Z",
+  "generatedAt": "2026-05-10T21:49:13Z",
   "competitionCount": 15,
   "matchCount": 220,
   "competitions": [
@@ -12,7 +12,8 @@
       "lastUpdatedAt": "2026-05-10T10:44:10Z",
       "sourceHealth": {
         "status": "ok",
-        "fallbackReuseCount": 0
+        "fallbackReuseCount": 0,
+        "issues": []
       },
       "roundCount": 10
     },
@@ -25,7 +26,8 @@
       "lastUpdatedAt": "2026-05-08T22:11:59Z",
       "sourceHealth": {
         "status": "degraded",
-        "fallbackReuseCount": 4
+        "fallbackReuseCount": 4,
+        "issues": []
       },
       "roundCount": 18
     },
@@ -37,8 +39,9 @@
       "outputFile": "data/juvenis.json",
       "lastUpdatedAt": "2026-05-10T10:55:47Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       },
       "roundCount": 14
     },
@@ -51,7 +54,8 @@
       "lastUpdatedAt": "2026-05-10T10:54:48Z",
       "sourceHealth": {
         "status": "degraded",
-        "fallbackReuseCount": 14
+        "fallbackReuseCount": 14,
+        "issues": []
       },
       "roundCount": 14
     },
@@ -63,8 +67,9 @@
       "outputFile": "data/iniciados-b.json",
       "lastUpdatedAt": "2026-05-10T10:55:28Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       },
       "roundCount": 14
     },
@@ -76,8 +81,9 @@
       "outputFile": "data/infantis-a.json",
       "lastUpdatedAt": "2026-05-10T10:44:43Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       },
       "roundCount": 18
     },
@@ -90,7 +96,8 @@
       "lastUpdatedAt": "2026-05-10T10:47:41Z",
       "sourceHealth": {
         "status": "degraded",
-        "fallbackReuseCount": 11
+        "fallbackReuseCount": 11,
+        "issues": []
       },
       "roundCount": 18
     },
@@ -103,7 +110,8 @@
       "lastUpdatedAt": "2026-05-10T10:51:14Z",
       "sourceHealth": {
         "status": "degraded",
-        "fallbackReuseCount": 14
+        "fallbackReuseCount": 14,
+        "issues": []
       },
       "roundCount": 14
     },
@@ -115,8 +123,9 @@
       "outputFile": "data/benjamins-a1.json",
       "lastUpdatedAt": "2026-05-10T10:32:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       },
       "roundCount": 10
     },
@@ -128,8 +137,9 @@
       "outputFile": "data/benjamins-a2.json",
       "lastUpdatedAt": "2026-05-10T10:33:07Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       },
       "roundCount": 10
     },
@@ -141,8 +151,9 @@
       "outputFile": "data/benjamins-b.json",
       "lastUpdatedAt": "2026-05-10T10:33:37Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       },
       "roundCount": 18
     },
@@ -155,7 +166,8 @@
       "lastUpdatedAt": "2026-05-10T10:36:55Z",
       "sourceHealth": {
         "status": "degraded",
-        "fallbackReuseCount": 12
+        "fallbackReuseCount": 12,
+        "issues": []
       },
       "roundCount": 18
     },
@@ -168,7 +180,8 @@
       "lastUpdatedAt": "2026-05-07T14:33:14Z",
       "sourceHealth": {
         "status": "ok",
-        "fallbackReuseCount": 0
+        "fallbackReuseCount": 0,
+        "issues": []
       },
       "roundCount": 5
     },
@@ -181,7 +194,8 @@
       "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
         "status": "degraded",
-        "fallbackReuseCount": 13
+        "fallbackReuseCount": 13,
+        "issues": []
       },
       "roundCount": 14
     },
@@ -194,7 +208,8 @@
       "lastUpdatedAt": "2026-05-10T10:40:29Z",
       "sourceHealth": {
         "status": "degraded",
-        "fallbackReuseCount": 14
+        "fallbackReuseCount": 14,
+        "issues": []
       },
       "roundCount": 14
     }

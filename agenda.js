@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let activeTab = 'proximos';
     let calendarData = null;
+    let calendarDataSource = 'published';
     let crestsData = null;
     let selectedRange = { start: null, end: null };
     let draftRange = { start: null, end: null };
@@ -719,17 +720,33 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
         const updatedLabel = formatTimestamp(calendarData.generatedAt);
+        const competitionStatus = (competition) => {
+            const sourceHealth = competition?.sourceHealth || {};
+            if (Number.isInteger(sourceHealth.fallbackReuseCount) && sourceHealth.fallbackReuseCount > 0) {
+                return 'degraded';
+            }
+            return sourceHealth.status || 'ok';
+        };
         const degradedCompetitions = (calendarData.competitions || []).filter(
-            (competition) => competition.sourceHealth && competition.sourceHealth.status === 'degraded'
+            (competition) => competitionStatus(competition) === 'degraded'
+        );
+        const partialCompetitions = (calendarData.competitions || []).filter(
+            (competition) => competitionStatus(competition) === 'partial'
         );
 
         const parts = [];
         if (updatedLabel) {
             parts.push(`<span class="data-status__item">Atualizado: ${updatedLabel}</span>`);
         }
-        if (degradedCompetitions.length) {
+        if (calendarDataSource === 'local-cache') {
+            parts.push('<span class="data-status__item data-status__item--warning">Não foi possível obter a versão mais recente. Estás a ver dados guardados neste dispositivo.</span>');
+        } else if (degradedCompetitions.length) {
             parts.push(
-                `<span class="data-status__item data-status__item--warning">Origem: degradada em ${degradedCompetitions.length} competição(ões)</span>`
+                `<span class="data-status__item data-status__item--warning">Atenção: há dados reaproveitados em ${degradedCompetitions.length} competição(ões).</span>`
+            );
+        } else if (partialCompetitions.length) {
+            parts.push(
+                `<span class="data-status__item data-status__item--warning">Algumas competições ainda têm resultados por publicar (${partialCompetitions.length}).</span>`
             );
         } else {
             parts.push('<span class="data-status__item">Origem: estável</span>');
@@ -1039,6 +1056,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         calendarData = await calendarResponse.json();
+        calendarDataSource = 'published';
         writeJSONToStorage(CALENDAR_CACHE_KEY, calendarData);
 
         if (crestsResponse.ok) {
@@ -1051,9 +1069,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const cachedCalendar = readJSONFromStorage(CALENDAR_CACHE_KEY, {
             maxAgeMs: CALENDAR_CACHE_MAX_AGE_MS,
         });
-        if (cachedCalendar && Array.isArray(cachedCalendar.matches)) {
-            calendarData = cachedCalendar;
-        }
 
         const cachedCrests = readJSONFromStorage(CRESTS_CACHE_KEY);
         if (cachedCrests && typeof cachedCrests === 'object') {
@@ -1063,12 +1078,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const initialHash = (window.location.hash || '').replace('#', '').toLowerCase();
         setActiveTab(initialHash === 'resultados' ? 'resultados' : 'proximos');
 
-        if (calendarData) {
-            populateCompetitionFilter();
-            renderDataStatus();
-            render();
-        }
-
         try {
             await loadFreshData();
             populateCompetitionFilter();
@@ -1076,6 +1085,14 @@ document.addEventListener('DOMContentLoaded', () => {
             render();
         } catch (error) {
             console.error('Erro ao carregar Agenda:', error);
+            if (cachedCalendar && Array.isArray(cachedCalendar.matches)) {
+                calendarData = cachedCalendar;
+                calendarDataSource = 'local-cache';
+                populateCompetitionFilter();
+                renderDataStatus();
+                render();
+                return;
+            }
             if (!calendarData) {
                 listProximos.innerHTML = '<p class="agenda-empty-state">Não foi possível carregar a agenda.</p>';
                 listResultados.innerHTML = '<p class="agenda-empty-state">Não foi possível carregar os resultados.</p>';

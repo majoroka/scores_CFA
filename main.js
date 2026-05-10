@@ -134,6 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const competitionKey = document.body.dataset.competition || 'seniores';
     let competitionData = null;
     let crestsData = null;
+    let competitionDataSource = 'published';
     let currentRoundIndex = 0;
     let activeTab = 'resultados'; // 'resultados' ou 'classificacao'
     let userHasManualRoundSelection = false;
@@ -208,14 +209,35 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const sourceHealth = competitionData.sourceHealth || {};
-        const status = sourceHealth.status;
+        const dataQuality = competitionData.dataQuality || {};
+        const deriveSourceStatus = () => {
+            if (Number.isInteger(sourceHealth.fallbackReuseCount) && sourceHealth.fallbackReuseCount > 0) {
+                return 'degraded';
+            }
+            if (Number.isInteger(dataQuality.pastMatchesWithoutScore) && dataQuality.pastMatchesWithoutScore > 0) {
+                return 'partial';
+            }
+            return sourceHealth.status || 'ok';
+        };
+        const status = deriveSourceStatus();
         const fallbackReuseCount = Number.isInteger(sourceHealth.fallbackReuseCount)
             ? sourceHealth.fallbackReuseCount
             : 0;
+        const pastMatchesWithoutScore = Number.isInteger(dataQuality.pastMatchesWithoutScore)
+            ? dataQuality.pastMatchesWithoutScore
+            : 0;
 
-        if (status === 'degraded') {
+        if (competitionDataSource === 'local-cache') {
             parts.push(
-                `<span class="data-status__item data-status__item--warning">Origem: degradada (${fallbackReuseCount} reutilizações)</span>`
+                '<span class="data-status__item data-status__item--warning">Não foi possível obter a versão mais recente. Estás a ver dados guardados neste dispositivo.</span>'
+            );
+        } else if (status === 'degraded') {
+            parts.push(
+                `<span class="data-status__item data-status__item--warning">Atenção: alguns dados foram reaproveitados da última sincronização (${fallbackReuseCount} reutilizações).</span>`
+            );
+        } else if (status === 'partial') {
+            parts.push(
+                `<span class="data-status__item data-status__item--warning">Alguns resultados ainda não estão publicados (${pastMatchesWithoutScore} jogo(s) passado(s) sem score).</span>`
             );
         } else if (status === 'ok') {
             parts.push('<span class="data-status__item">Origem: estável</span>');
@@ -287,19 +309,6 @@ document.addEventListener('DOMContentLoaded', () => {
             payload.rounds.length &&
             payload.rounds.every((round) => round && Array.isArray(round.matches) && Array.isArray(round.classification))
         );
-    };
-
-    const selectPreferredCompetitionPayload = (cachedPayload, fetchedPayload) => {
-        const cachedValid = isValidCompetitionPayload(cachedPayload);
-        const fetchedValid = isValidCompetitionPayload(fetchedPayload);
-
-        if (fetchedValid) {
-            return fetchedPayload;
-        }
-        if (cachedValid) {
-            return cachedPayload;
-        }
-        return null;
     };
 
     const hasCompetitionPayloadChanged = (nextPayload) => {
@@ -1054,23 +1063,16 @@ const initializeRoundBasedOnDate = () => {
 
     // --- BUSCA DE DADOS ---
     const fetchData = async () => {
-        try {
-            const cachedCompetitionEntry = readStorageEntry(getCompetitionCacheKey());
-            const cachedCompetitionData = (
-                cachedCompetitionEntry &&
-                (!cachedCompetitionEntry.savedAt || (Date.now() - cachedCompetitionEntry.savedAt) <= COMPETITION_CACHE_MAX_AGE_MS)
-            ) ? cachedCompetitionEntry.payload : null;
-            if (isValidCompetitionPayload(cachedCompetitionData)) {
-                competitionData = cachedCompetitionData;
-                renderCompetition();
-            }
+        const cachedCompetitionEntry = readStorageEntry(getCompetitionCacheKey());
+        const cachedCompetitionData = (
+            cachedCompetitionEntry &&
+            (!cachedCompetitionEntry.savedAt || (Date.now() - cachedCompetitionEntry.savedAt) <= COMPETITION_CACHE_MAX_AGE_MS)
+        ) ? cachedCompetitionEntry.payload : null;
 
+        try {
             const cachedCrestsData = readJSONFromStorage(CRESTS_CACHE_KEY);
             if (cachedCrestsData && typeof cachedCrestsData === 'object') {
                 crestsData = cachedCrestsData;
-                if (competitionData) {
-                    updateUI();
-                }
             }
 
             const competitionPromise = fetch(`data/${competitionKey}.json`, {
@@ -1090,19 +1092,15 @@ const initializeRoundBasedOnDate = () => {
                 throw new Error('Payload da competição inválido');
             }
 
-            const preferredCompetitionData = selectPreferredCompetitionPayload(
-                cachedCompetitionEntry?.payload || null,
-                freshCompetitionData
-            );
-
             const previousRoundNumber = competitionData?.rounds?.[currentRoundIndex]?.index ?? null;
             const preferredRoundNumber = userHasManualRoundSelection ? previousRoundNumber : null;
-            if (!competitionData || hasCompetitionPayloadChanged(preferredCompetitionData)) {
-                competitionData = preferredCompetitionData;
-                writeJSONToStorage(getCompetitionCacheKey(), preferredCompetitionData);
+            competitionDataSource = 'published';
+            if (!competitionData || hasCompetitionPayloadChanged(freshCompetitionData)) {
+                competitionData = freshCompetitionData;
+                writeJSONToStorage(getCompetitionCacheKey(), freshCompetitionData);
                 renderCompetition({ preferredRoundNumber });
             } else if (!competitionData) {
-                competitionData = preferredCompetitionData;
+                competitionData = freshCompetitionData;
                 renderCompetition();
             }
 
@@ -1121,6 +1119,12 @@ const initializeRoundBasedOnDate = () => {
 
         } catch (error) {
             console.error('Erro ao carregar os dados da competição:', error);
+            if (isValidCompetitionPayload(cachedCompetitionData)) {
+                competitionDataSource = 'local-cache';
+                competitionData = cachedCompetitionData;
+                renderCompetition();
+                return;
+            }
             if (!competitionData) {
                 matchesContainer.innerHTML = '<p>Não foi possível carregar os dados. Tente novamente mais tarde.</p>';
             }

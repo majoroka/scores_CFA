@@ -5,8 +5,10 @@ from pathlib import Path
 from competition_configs import CompetitionConfig, FEMININO_SUB15, INICIADOS_A
 from competition_sync import (
     build_payload,
+    collect_quality_metrics,
     compute_default_round_index,
     extract_fixture_ids,
+    infer_payload_status,
     parse_classification,
     parse_match_date,
     parse_matches,
@@ -139,7 +141,50 @@ class CompetitionSyncTests(unittest.TestCase):
         self.assertEqual(payload['lastUpdatedAt'], '2026-05-07T15:00:00Z')
         self.assertEqual(payload['sourceHealth']['status'], 'degraded')
         self.assertEqual(payload['sourceHealth']['fallbackReuseCount'], 2)
+        self.assertIn('dataQuality', payload)
+        self.assertEqual(payload['dataQuality']['completedMatchCount'], 2)
         self.assertEqual(payload['rounds'], rounds)
+
+    def test_collect_quality_metrics_counts_past_matches_without_score(self):
+        rounds = [
+            {
+                'index': 1,
+                'matches': [
+                    {'home': 'Casa', 'away': 'Fora', 'date': '2 mai', 'homeScore': 1, 'awayScore': 0},
+                    {'home': 'Casa B', 'away': 'Fora B', 'date': '3 mai', 'homeScore': None, 'awayScore': None},
+                ],
+                'classification': [{'team': 'Casa'}],
+            },
+            {
+                'index': 2,
+                'matches': [
+                    {'home': 'Casa C', 'away': 'Fora C', 'date': '23 mai', 'homeScore': None, 'awayScore': None},
+                ],
+                'classification': [],
+            },
+        ]
+        metrics = collect_quality_metrics(rounds, today=datetime(2026, 5, 7, 12, 0, 0))
+        self.assertEqual(metrics['roundCount'], 2)
+        self.assertEqual(metrics['matchCount'], 3)
+        self.assertEqual(metrics['completedMatchCount'], 1)
+        self.assertEqual(metrics['matchesWithoutScore'], 2)
+        self.assertEqual(metrics['pastMatchesWithoutScore'], 1)
+        self.assertEqual(metrics['futureMatchCount'], 1)
+        self.assertEqual(metrics['teamCount'], 6)
+
+    def test_infer_payload_status_distinguishes_partial_from_degraded(self):
+        self.assertEqual(
+            infer_payload_status(1, {'pastMatchesWithoutScore': 0}),
+            'degraded',
+        )
+        self.assertEqual(
+            infer_payload_status(0, {'pastMatchesWithoutScore': 2}),
+            'partial',
+        )
+        self.assertEqual(
+            infer_payload_status(0, {'pastMatchesWithoutScore': 0}),
+            'ok',
+        )
 
     def test_real_main_page_extracts_iniciados_a_fixture_ids(self):
         html = self.read_fixture('competition_iniciados_a_main.html')

@@ -6,7 +6,7 @@ from typing import Optional
 from zoneinfo import ZoneInfo
 
 from competition_configs import ALL_COMPETITIONS, CompetitionConfig
-from competition_sync import parse_match_date
+from competition_sync import collect_quality_metrics, infer_payload_status, parse_match_date
 
 
 ROOT = Path(__file__).resolve().parent
@@ -132,6 +132,9 @@ def build_calendar_payload(now: Optional[datetime] = None) -> dict:
         payload = load_competition_payload(config)
         if not payload:
             continue
+        quality = payload.get('dataQuality') if isinstance(payload.get('dataQuality'), dict) else collect_quality_metrics(payload.get('rounds', []))
+        raw_source_health = payload.get('sourceHealth', {}) if isinstance(payload.get('sourceHealth'), dict) else {}
+        fallback_reuse_count = raw_source_health.get('fallbackReuseCount', 0) if isinstance(raw_source_health.get('fallbackReuseCount', 0), int) else 0
         competitions.append({
             'key': config.key,
             'title': config.title,
@@ -139,7 +142,11 @@ def build_calendar_payload(now: Optional[datetime] = None) -> dict:
             'pagePath': config.page_path,
             'outputFile': config.output_file,
             'lastUpdatedAt': payload.get('lastUpdatedAt'),
-            'sourceHealth': payload.get('sourceHealth', {}),
+            'sourceHealth': {
+                'status': infer_payload_status(fallback_reuse_count, quality),
+                'fallbackReuseCount': fallback_reuse_count,
+                'issues': list(raw_source_health.get('issues', [])) if isinstance(raw_source_health.get('issues', []), list) else [],
+            },
             'roundCount': len(payload.get('rounds', [])) if isinstance(payload.get('rounds'), list) else 0,
         })
         entries.extend(build_calendar_entries(config, payload, now=reference_now))

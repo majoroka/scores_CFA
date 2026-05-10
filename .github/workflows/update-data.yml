@@ -9,6 +9,7 @@ on:
       - "fpf_http.py"
       - "run_fetchers.py"
       - "build_calendar.py"
+      - "build_status.py"
       - "requirements.txt"
       - "competition_configs.py"
       - "competition_sync.py"
@@ -98,6 +99,41 @@ jobs:
 
       - name: Gerar calendário agregado
         run: python build_calendar.py
+
+      - name: Gerar estado global das competições
+        run: python build_status.py
+
+      - name: Publicar resumo global de estado
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          status = json.loads(Path("data/status.json").read_text(encoding="utf-8"))
+          counts = status.get("statusCounts", {})
+          lines = [
+              "# Estado global das competições",
+              "",
+              f"- Gerado em: {status.get('generatedAt')}",
+              f"- OK: {counts.get('ok', 0)}",
+              f"- Partial: {counts.get('partial', 0)}",
+              f"- Degraded: {counts.get('degraded', 0)}",
+              f"- Missing: {counts.get('missing', 0)}",
+              "",
+              "| Competição | Estado | Atualizado | Fallbacks | Jogos passados sem score |",
+              "| --- | --- | --- | ---: | ---: |",
+          ]
+
+          for key, entry in status.get("competitions", {}).items():
+              lines.append(
+                  f"| {key} | {entry.get('status')} | {entry.get('lastUpdatedAt') or '-'} | "
+                  f"{entry.get('fallbackReuseCount', 0)} | {entry.get('pastMatchesWithoutScore', 0)} |"
+              )
+
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as handle:
+              handle.write("\\n".join(lines) + "\\n")
+          PY
 
       - name: Publicar resumo do plano de fetch
         run: |
