@@ -18,9 +18,9 @@ on:
       - "css/**"
       - "*.html"
       - "data/*.json"
-  workflow_dispatch: {}         # Permite correr manualmente no GitHub
+  workflow_dispatch: {}
   schedule:
-    - cron: "17 * * * *"        # A cada 60 minutos, com scheduler adaptativo
+    - cron: "17 * * * *"
 
 permissions:
   contents: write
@@ -40,9 +40,12 @@ env:
   ACTIVE_RETRY_DELAYS_MINUTES: "5,10,20,40"
 
 jobs:
-  build:
+  build_initial:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
+    outputs:
+      plan_mode: ${{ steps.plan_meta.outputs.plan_mode }}
+      active_selected_count: ${{ steps.plan_meta.outputs.active_selected_count }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -64,31 +67,36 @@ jobs:
       - name: Planear fetchers a executar
         run: python plan_fetchers.py
 
-      - name: Correr fetchers selecionados com retries e validacao
-        timeout-minutes: 180
+      - name: Exportar metadados do plano
+        id: plan_meta
         run: |
           python - <<'PY'
           import json
           import os
-          import time
           from pathlib import Path
-          import plan_fetchers
+
+          plan = json.loads(Path("cache/fetch_plan.json").read_text(encoding="utf-8"))
+          active_selected = [
+              item["fetcher"]
+              for item in plan.get("competitions", [])
+              if item.get("state") in {"active_pending", "missing_payload"}
+          ]
+
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as handle:
+              handle.write(f"plan_mode={plan.get('mode', 'idle')}\n")
+              handle.write(f"active_selected_count={len(active_selected)}\n")
+          PY
+
+      - name: Correr fetchers selecionados (primeira vaga)
+        timeout-minutes: 45
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
           import run_fetchers
 
           plan = json.loads(Path("cache/fetch_plan.json").read_text(encoding="utf-8"))
           selected = plan.get("selected_fetchers", [])
-          retry_delays = [
-              int(item.strip())
-              for item in os.environ.get("ACTIVE_RETRY_DELAYS_MINUTES", "").split(",")
-              if item.strip()
-          ]
-
-          def active_pending_fetchers(current_plan):
-              return sorted({
-                  item["fetcher"]
-                  for item in current_plan.get("competitions", [])
-                  if item.get("state") in {"active_pending", "missing_payload"}
-              })
 
           if not selected:
               report = {
@@ -104,38 +112,14 @@ jobs:
               run_fetchers.write_report(report)
               print("No fetchers selected by adaptive plan.")
           else:
-              combined_report = run_fetchers.run_fetchers_report(selected)
-              combined_report["plan_mode"] = plan.get("mode", "idle")
-              combined_report["retry_waves"] = []
-
-              if plan.get("mode") == "active_pending":
-                  remaining = active_pending_fetchers(plan)
-                  for delay in retry_delays:
-                      if not remaining:
-                          break
-                      print(f"Waiting {delay} minutes before retrying: {', '.join(remaining)}")
-                      time.sleep(delay * 60)
-                      retry_report = run_fetchers.run_fetchers_report(remaining)
-                      retry_report["delay_minutes"] = delay
-                      combined_report["retry_waves"].append(retry_report)
-
-                      latest_by_fetcher = {
-                          item["fetcher"]: item for item in combined_report["fetchers"]
-                      }
-                      for item in retry_report["fetchers"]:
-                          latest_by_fetcher[item["fetcher"]] = item
-                      combined_report["fetchers"] = list(latest_by_fetcher.values())
-                      run_fetchers.summarize_report(combined_report)
-
-                      refreshed_plan = plan_fetchers.build_plan()
-                      plan_fetchers.write_plan(refreshed_plan)
-                      remaining = active_pending_fetchers(refreshed_plan)
-
-              run_fetchers.summarize_report(combined_report)
-              run_fetchers.write_report(combined_report)
+              report = run_fetchers.run_fetchers_report(selected)
+              report["plan_mode"] = plan.get("mode", "idle")
+              report["retry_waves"] = []
+              run_fetchers.summarize_report(report)
+              run_fetchers.write_report(report)
           PY
 
-      - name: Gerar calendario agregado
+      - name: Gerar calendário agregado
         run: python build_calendar.py
 
       - name: Publicar resumo do plano de fetch
@@ -176,13 +160,9 @@ jobs:
           import os
           from pathlib import Path
 
-          report_path = Path("cache/fetch_report.json")
-          if not report_path.exists():
-              raise SystemExit("Relatorio de fetchers nao encontrado.")
-
-          report = json.loads(report_path.read_text(encoding="utf-8"))
+          report = json.loads(Path("cache/fetch_report.json").read_text(encoding="utf-8"))
           lines = [
-              "# Resumo dos fetchers",
+              "# Resumo dos fetchers (vaga inicial)",
               "",
               f"- Sucesso: {report['success_count']}",
               f"- Falhas: {report['failure_count']}",
@@ -259,26 +239,204 @@ jobs:
       - name: Configurar Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload artefacto do site
+      - name: Upload artefacto inicial do site
         uses: actions/upload-pages-artifact@v3
         with:
+          name: github-pages-initial
           path: "."
 
-  deploy:
-    needs: build
+  deploy_initial:
+    needs: build_initial
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy a GitHub Pages
+      - name: Deploy inicial a GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages-initial
 
       - name: Mostrar mensagem final
         run: |
           echo ""
           echo "=============================================="
-          echo "✅ Site atualizado com sucesso!"
+          echo "✅ Site atualizado com sucesso (vaga inicial)!"
           echo "🌍 URL: https://majoroka.github.io/scores_CFA/"
           echo "=============================================="
+
+  retry_followup:
+    if: github.actor != 'github-actions[bot]' && needs.build_initial.outputs.plan_mode == 'active_pending' && needs.build_initial.outputs.active_selected_count != '0'
+    needs: build_initial
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.retry_commit.outputs.changed }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Sincronizar com o último main publicado
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Instalar dependências (se existir requirements.txt)
+        run: |
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
+
+      - name: Planear fetchers a executar
+        run: python plan_fetchers.py
+
+      - name: Repetir fetchers ativos em vagas curtas
+        timeout-minutes: 180
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import time
+          from pathlib import Path
+          import plan_fetchers
+          import run_fetchers
+
+          retry_delays = [
+              int(item.strip())
+              for item in os.environ.get("ACTIVE_RETRY_DELAYS_MINUTES", "").split(",")
+              if item.strip()
+          ]
+
+          def active_pending_fetchers(current_plan):
+              return sorted({
+                  item["fetcher"]
+                  for item in current_plan.get("competitions", [])
+                  if item.get("state") in {"active_pending", "missing_payload"}
+              })
+
+          report = {
+              "generated_at_epoch": 0,
+              "fetchers": [],
+              "success_count": 0,
+              "failure_count": 0,
+              "degraded_count": 0,
+              "changed_count": 0,
+              "retry_waves": [],
+              "plan_mode": "active_pending",
+              "followup_only": True,
+          }
+
+          current_plan = json.loads(Path("cache/fetch_plan.json").read_text(encoding="utf-8"))
+          remaining = active_pending_fetchers(current_plan)
+
+          for delay in retry_delays:
+              current_plan = plan_fetchers.build_plan()
+              plan_fetchers.write_plan(current_plan)
+              remaining = active_pending_fetchers(current_plan)
+              if not remaining:
+                  break
+
+              print(f"Waiting {delay} minutes before retrying: {', '.join(remaining)}")
+              time.sleep(delay * 60)
+
+              current_plan = plan_fetchers.build_plan()
+              plan_fetchers.write_plan(current_plan)
+              remaining = active_pending_fetchers(current_plan)
+              if not remaining:
+                  break
+
+              retry_report = run_fetchers.run_fetchers_report(remaining)
+              retry_report["delay_minutes"] = delay
+              report["retry_waves"].append(retry_report)
+
+              latest_by_fetcher = {item["fetcher"]: item for item in report["fetchers"]}
+              for item in retry_report["fetchers"]:
+                  latest_by_fetcher[item["fetcher"]] = item
+              report["fetchers"] = list(latest_by_fetcher.values())
+              run_fetchers.summarize_report(report)
+
+          current_plan = plan_fetchers.build_plan()
+          plan_fetchers.write_plan(current_plan)
+          report["plan_mode"] = current_plan.get("mode", "idle")
+          run_fetchers.summarize_report(report)
+          run_fetchers.write_report(report)
+          PY
+
+      - name: Gerar calendário agregado
+        run: python build_calendar.py
+
+      - name: Publicar resumo dos fetchers (follow-up)
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          report = json.loads(Path("cache/fetch_report.json").read_text(encoding="utf-8"))
+          lines = [
+              "# Resumo dos fetchers (follow-up)",
+              "",
+              f"- Sucesso: {report['success_count']}",
+              f"- Falhas: {report['failure_count']}",
+              f"- Degradados: {report.get('degraded_count', 0)}",
+              f"- Alterados: {report['changed_count']}",
+              f"- Vagas executadas: {len(report.get('retry_waves', []))}",
+          ]
+          summary_path = os.environ["GITHUB_STEP_SUMMARY"]
+          with open(summary_path, "a", encoding="utf-8") as handle:
+              handle.write("\n".join(lines) + "\n")
+          PY
+
+      - name: Atualizar manifesto de emblemas (opcional)
+        run: |
+          if [ -f generate_crest_manifest.py ]; then
+            python generate_crest_manifest.py
+          fi
+
+      - name: Commit de dados atualizados após retries
+        id: retry_commit
+        run: |
+          if [ -n "$(git status --porcelain data/)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add data/
+            git commit -m "chore(data): refresh JSON after retries [skip ci]"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Sem alterações nos JSON após retries."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Configurar Pages
+        if: steps.retry_commit.outputs.changed == 'true'
+        uses: actions/configure-pages@v5
+
+      - name: Upload artefacto follow-up do site
+        if: steps.retry_commit.outputs.changed == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          name: github-pages-followup
+          path: "."
+
+  deploy_followup:
+    needs: retry_followup
+    if: needs.retry_followup.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy follow-up a GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages-followup
