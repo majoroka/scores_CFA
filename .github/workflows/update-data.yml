@@ -35,8 +35,9 @@ env:
   MAX_FETCH_FAILURES: "0"
   MAX_FETCH_DEGRADED: "2"
   PREMATCH_WINDOW_HOURS: "3"
+  ACTIVE_RESULT_WINDOW_DAYS: "2"
   HISTORICAL_LOOKBACK_DAYS: "14"
-  TODAY_RETRY_DELAYS_MINUTES: "5,10"
+  ACTIVE_RETRY_DELAYS_MINUTES: "5,10"
 
 jobs:
   build:
@@ -71,15 +72,23 @@ jobs:
           import os
           import time
           from pathlib import Path
+          import plan_fetchers
           import run_fetchers
 
           plan = json.loads(Path("cache/fetch_plan.json").read_text(encoding="utf-8"))
           selected = plan.get("selected_fetchers", [])
           retry_delays = [
               int(item.strip())
-              for item in os.environ.get("TODAY_RETRY_DELAYS_MINUTES", "").split(",")
+              for item in os.environ.get("ACTIVE_RETRY_DELAYS_MINUTES", "").split(",")
               if item.strip()
           ]
+
+          def active_pending_fetchers(current_plan):
+              return sorted({
+                  item["fetcher"]
+                  for item in current_plan.get("competitions", [])
+                  if item.get("state") in {"active_pending", "missing_payload"}
+              })
 
           if not selected:
               report = {
@@ -99,12 +108,8 @@ jobs:
               combined_report["plan_mode"] = plan.get("mode", "idle")
               combined_report["retry_waves"] = []
 
-              if plan.get("mode") == "today_pending":
-                  remaining = [
-                      item["fetcher"]
-                      for item in combined_report["fetchers"]
-                      if (not item["success"]) or item["degraded"]
-                  ]
+              if plan.get("mode") == "active_pending":
+                  remaining = active_pending_fetchers(plan)
                   for delay in retry_delays:
                       if not remaining:
                           break
@@ -122,11 +127,9 @@ jobs:
                       combined_report["fetchers"] = list(latest_by_fetcher.values())
                       run_fetchers.summarize_report(combined_report)
 
-                      remaining = [
-                          item["fetcher"]
-                          for item in combined_report["fetchers"]
-                          if (not item["success"]) or item["degraded"]
-                      ]
+                      refreshed_plan = plan_fetchers.build_plan()
+                      plan_fetchers.write_plan(refreshed_plan)
+                      remaining = active_pending_fetchers(refreshed_plan)
 
               run_fetchers.summarize_report(combined_report)
               run_fetchers.write_report(combined_report)
@@ -149,15 +152,16 @@ jobs:
               f"- Modo: {plan['mode']}",
               f"- Fetchers selecionados: {plan['selected_count']}",
               f"- Janela pré-jogo (h): {plan['prematch_window_hours']}",
+              f"- Janela ativa de resultados (dias): {plan['active_result_window_days']}",
               f"- Janela de recuperação histórica (dias): {plan['historical_lookback_days']}",
               "",
-              "| Competição | Fetcher | Estado | Hoje pendente | Hoje fora da janela | Histórico pendente |",
+              "| Competição | Fetcher | Estado | Ativo pendente | Hoje fora da janela | Histórico pendente |",
               "| --- | --- | --- | ---: | ---: | ---: |",
           ]
 
           for item in plan["competitions"]:
               lines.append(
-                  "| {competition_key} | {fetcher} | {state} | {today_pending_count} | {upcoming_today_count} | {historical_pending_count} |".format(**item)
+                  "| {competition_key} | {fetcher} | {state} | {active_pending_count} | {upcoming_today_count} | {historical_pending_count} |".format(**item)
               )
 
           summary_path = os.environ["GITHUB_STEP_SUMMARY"]

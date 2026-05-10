@@ -15,6 +15,7 @@ PLAN_PATH = CACHE_DIR / "fetch_plan.json"
 LOCAL_TZ = ZoneInfo("Europe/Lisbon")
 PREMATCH_WINDOW_HOURS = int(os.environ.get("PREMATCH_WINDOW_HOURS", "3"))
 HISTORICAL_LOOKBACK_DAYS = int(os.environ.get("HISTORICAL_LOOKBACK_DAYS", "14"))
+ACTIVE_RESULT_WINDOW_DAYS = int(os.environ.get("ACTIVE_RESULT_WINDOW_DAYS", "2"))
 
 FETCHER_BY_KEY = {
     "seniores": "fetch_fpf.py",
@@ -68,7 +69,7 @@ def analyze_competition(config: CompetitionConfig, now: datetime) -> dict:
             "fetcher": fetcher,
             "should_fetch": True,
             "state": "missing_payload",
-            "today_pending_count": 0,
+            "active_pending_count": 0,
             "upcoming_today_count": 0,
             "historical_pending_count": 0,
             "reasons": ["payload ausente ou inválido"],
@@ -77,9 +78,10 @@ def analyze_competition(config: CompetitionConfig, now: datetime) -> dict:
     today_start = now.replace(hour=0, minute=0, second=0, microsecond=0)
     tomorrow_start = today_start + timedelta(days=1)
     prematch_cutoff = now + timedelta(hours=PREMATCH_WINDOW_HOURS)
+    active_window_start = today_start - timedelta(days=max(ACTIVE_RESULT_WINDOW_DAYS - 1, 0))
     historical_cutoff = today_start - timedelta(days=HISTORICAL_LOOKBACK_DAYS)
 
-    today_pending_count = 0
+    active_pending_count = 0
     upcoming_today_count = 0
     historical_pending_count = 0
 
@@ -94,9 +96,11 @@ def analyze_competition(config: CompetitionConfig, now: datetime) -> dict:
 
             if today_start <= match_dt < tomorrow_start:
                 if match_dt <= prematch_cutoff:
-                    today_pending_count += 1
+                    active_pending_count += 1
                 else:
                     upcoming_today_count += 1
+            elif active_window_start <= match_dt < today_start:
+                active_pending_count += 1
             elif historical_cutoff <= match_dt < today_start:
                 historical_pending_count += 1
 
@@ -104,10 +108,15 @@ def analyze_competition(config: CompetitionConfig, now: datetime) -> dict:
     state = "idle"
     should_fetch = False
 
-    if today_pending_count > 0:
+    if active_pending_count > 0:
         should_fetch = True
-        state = "today_pending"
-        reasons.append(f"{today_pending_count} jogo(s) de hoje ainda sem resultado")
+        state = "active_pending"
+        if ACTIVE_RESULT_WINDOW_DAYS > 1:
+            reasons.append(
+                f"{active_pending_count} jogo(s) dos últimos {ACTIVE_RESULT_WINDOW_DAYS} dia(s) ainda sem resultado"
+            )
+        else:
+            reasons.append(f"{active_pending_count} jogo(s) de hoje ainda sem resultado")
     elif historical_pending_count > 0:
         should_fetch = True
         state = "historical_backfill"
@@ -123,7 +132,7 @@ def analyze_competition(config: CompetitionConfig, now: datetime) -> dict:
         "fetcher": fetcher,
         "should_fetch": should_fetch,
         "state": state,
-        "today_pending_count": today_pending_count,
+        "active_pending_count": active_pending_count,
         "upcoming_today_count": upcoming_today_count,
         "historical_pending_count": historical_pending_count,
         "reasons": reasons,
@@ -136,8 +145,8 @@ def build_plan(now: Optional[datetime] = None) -> dict:
     selected = [item["fetcher"] for item in analyses if item["should_fetch"]]
 
     states = {item["state"] for item in analyses if item["should_fetch"]}
-    if "today_pending" in states:
-        mode = "today_pending"
+    if "active_pending" in states:
+        mode = "active_pending"
     elif "historical_backfill" in states:
         mode = "historical_backfill"
     else:
@@ -150,6 +159,7 @@ def build_plan(now: Optional[datetime] = None) -> dict:
         "selected_count": len(selected),
         "competitions": analyses,
         "prematch_window_hours": PREMATCH_WINDOW_HOURS,
+        "active_result_window_days": ACTIVE_RESULT_WINDOW_DAYS,
         "historical_lookback_days": HISTORICAL_LOOKBACK_DAYS,
     }
 
@@ -167,6 +177,7 @@ def main():
     print(
         f"Fetch plan mode={plan['mode']} selected={plan['selected_count']} "
         f"prematch_window_hours={plan['prematch_window_hours']} "
+        f"active_result_window_days={plan['active_result_window_days']} "
         f"historical_lookback_days={plan['historical_lookback_days']}"
     )
     for item in plan["competitions"]:
