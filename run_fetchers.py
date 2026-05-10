@@ -192,18 +192,27 @@ def run_fetcher(fetcher_path: Path, output_path: Path):
     }
 
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("fetchers", nargs="*")
-    args = parser.parse_args()
+def summarize_report(report: dict):
+    report["success_count"] = sum(1 for item in report["fetchers"] if item["success"])
+    report["failure_count"] = sum(1 for item in report["fetchers"] if not item["success"])
+    report["degraded_count"] = sum(1 for item in report["fetchers"] if item["degraded"])
+    report["changed_count"] = sum(1 for item in report["fetchers"] if item["changed"])
+    return report
 
+
+def write_report(report: dict, path: Path = REPORT_PATH):
+    with open(path, "w", encoding="utf-8") as handle:
+        json.dump(report, handle, ensure_ascii=False, indent=2)
+
+
+def run_fetchers_report(selected_fetchers=None):
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
     report = {
         "generated_at_epoch": int(time.time()),
         "fetchers": [],
     }
 
-    fetchers = discover_fetchers(args.fetchers)
+    fetchers = discover_fetchers(selected_fetchers)
     for fetcher_path in fetchers:
         output_path = extract_output_file(fetcher_path)
         print(f"RUN {fetcher_path.name} -> {output_path.relative_to(ROOT)}", flush=True)
@@ -221,18 +230,20 @@ def main():
         changed_flag = "changed" if fetcher_report["changed"] else "unchanged"
         print(
             f"{status} {fetcher_path.name} "
-            f"(attempts={attempts_used}, rounds={final_rounds}, {changed_flag})"
-            ,
+            f"(attempts={attempts_used}, rounds={final_rounds}, {changed_flag})",
             flush=True,
         )
 
-    report["success_count"] = sum(1 for item in report["fetchers"] if item["success"])
-    report["failure_count"] = sum(1 for item in report["fetchers"] if not item["success"])
-    report["degraded_count"] = sum(1 for item in report["fetchers"] if item["degraded"])
-    report["changed_count"] = sum(1 for item in report["fetchers"] if item["changed"])
+    return summarize_report(report)
 
-    with open(REPORT_PATH, "w", encoding="utf-8") as handle:
-        json.dump(report, handle, ensure_ascii=False, indent=2)
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("fetchers", nargs="*")
+    args = parser.parse_args()
+
+    report = run_fetchers_report(args.fetchers)
+    write_report(report)
 
     print(
         "SUMMARY "

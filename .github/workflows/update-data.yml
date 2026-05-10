@@ -36,6 +36,7 @@ env:
   MAX_FETCH_DEGRADED: "2"
   PREMATCH_WINDOW_HOURS: "3"
   HISTORICAL_LOOKBACK_DAYS: "14"
+  TODAY_RETRY_DELAYS_MINUTES: "5,10"
 
 jobs:
   build:
@@ -63,17 +64,22 @@ jobs:
         run: python plan_fetchers.py
 
       - name: Correr fetchers selecionados com retries e validacao
-        timeout-minutes: 45
+        timeout-minutes: 70
         run: |
           python - <<'PY'
           import json
           import os
-          import subprocess
-          import sys
+          import time
           from pathlib import Path
+          import run_fetchers
 
           plan = json.loads(Path("cache/fetch_plan.json").read_text(encoding="utf-8"))
           selected = plan.get("selected_fetchers", [])
+          retry_delays = [
+              int(item.strip())
+              for item in os.environ.get("TODAY_RETRY_DELAYS_MINUTES", "").split(",")
+              if item.strip()
+          ]
 
           if not selected:
               report = {
@@ -86,13 +92,44 @@ jobs:
                   "skipped_by_plan": True,
                   "plan_mode": plan.get("mode", "idle"),
               }
-              Path("cache/fetch_report.json").write_text(
-                  json.dumps(report, ensure_ascii=False, indent=2),
-                  encoding="utf-8",
-              )
+              run_fetchers.write_report(report)
               print("No fetchers selected by adaptive plan.")
           else:
-              subprocess.run([sys.executable, "run_fetchers.py", *selected], check=True)
+              combined_report = run_fetchers.run_fetchers_report(selected)
+              combined_report["plan_mode"] = plan.get("mode", "idle")
+              combined_report["retry_waves"] = []
+
+              if plan.get("mode") == "today_pending":
+                  remaining = [
+                      item["fetcher"]
+                      for item in combined_report["fetchers"]
+                      if (not item["success"]) or item["degraded"]
+                  ]
+                  for delay in retry_delays:
+                      if not remaining:
+                          break
+                      print(f"Waiting {delay} minutes before retrying: {', '.join(remaining)}")
+                      time.sleep(delay * 60)
+                      retry_report = run_fetchers.run_fetchers_report(remaining)
+                      retry_report["delay_minutes"] = delay
+                      combined_report["retry_waves"].append(retry_report)
+
+                      latest_by_fetcher = {
+                          item["fetcher"]: item for item in combined_report["fetchers"]
+                      }
+                      for item in retry_report["fetchers"]:
+                          latest_by_fetcher[item["fetcher"]] = item
+                      combined_report["fetchers"] = list(latest_by_fetcher.values())
+                      run_fetchers.summarize_report(combined_report)
+
+                      remaining = [
+                          item["fetcher"]
+                          for item in combined_report["fetchers"]
+                          if (not item["success"]) or item["degraded"]
+                      ]
+
+              run_fetchers.summarize_report(combined_report)
+              run_fetchers.write_report(combined_report)
           PY
 
       - name: Gerar calendario agregado
