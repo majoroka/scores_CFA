@@ -61,6 +61,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const canonicalTeamName = (teamName) => {
         const normalized = normalizeName(teamName);
+        if (normalized === 'casa benfica tavira') {
+            return 'casa slb tavira';
+        }
         if (normalized === 'clube u culatrense') {
             return 'cu culatrense';
         }

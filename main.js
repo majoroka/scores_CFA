@@ -563,10 +563,6 @@ const findLatestCompletedRoundIndex = () => {
 };
 
 const findBestRoundIndex = () => {
-    const publishedDefault = getPublishedDefaultRoundIndex();
-    if (publishedDefault !== null) {
-        return publishedDefault;
-    }
     const closestByDate = findBestRoundIndexByDate();
     if (closestByDate !== null) {
         return closestByDate;
@@ -574,6 +570,10 @@ const findBestRoundIndex = () => {
     const latestCompleted = findLatestCompletedRoundIndex();
     if (latestCompleted !== null) {
         return latestCompleted;
+    }
+    const publishedDefault = getPublishedDefaultRoundIndex();
+    if (publishedDefault !== null) {
+        return publishedDefault;
     }
     return 0;
 };
@@ -862,6 +862,9 @@ const initializeRoundBasedOnDate = () => {
 
     const canonicalTeamName = (teamName) => {
         const normalized = normalizeName(teamName);
+        if (normalized === 'casa benfica tavira') {
+            return 'casa slb tavira';
+        }
         if (normalized === 'clube u culatrense') {
             return 'cu culatrense';
         }
