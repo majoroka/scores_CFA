@@ -1032,7 +1032,6 @@ const initializeRoundBasedOnDate = () => {
         history.replaceState(null, '', newHash);
 
         updateUI();
-        void hydrateRoundWithLiveData(currentRoundIndex);
     };
 
     const handleHashChange = () => {
@@ -1116,8 +1115,6 @@ const initializeRoundBasedOnDate = () => {
             } catch (crestError) {
                 console.warn('Falha ao carregar dados de emblemas:', crestError);
             }
-
-            void hydrateRoundWithLiveData(currentRoundIndex);
 
         } catch (error) {
             console.error('Erro ao carregar os dados da competição:', error);

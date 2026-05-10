@@ -1,7 +1,7 @@
 {
-    "defaultRoundIndex": 6,
-    "defaultRoundNumber": 7,
-    "lastUpdatedAt": "2026-05-07T14:33:14Z",
+    "defaultRoundIndex": 7,
+    "defaultRoundNumber": 8,
+    "lastUpdatedAt": "2026-05-10T10:33:07Z",
     "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -12,15 +12,6 @@
             "fixtureId": "641094",
             "matches": [
                 {
-                    "home": "A Indicar",
-                    "away": "Gdr Alvorense",
-                    "date": "28 fev",
-                    "time": "11:00",
-                    "stadium": "A Indicar",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Jd Monchiquense",
                     "away": "Fc Ferreiras - A",
                     "date": "28 fev",
@@ -28,6 +19,15 @@
                     "stadium": "Parque Desportivo Jd Monchiquense",
                     "homeScore": 2,
                     "awayScore": 6
+                },
+                {
+                    "home": "A Indicar",
+                    "away": "Gdr Alvorense",
+                    "date": "28 fev",
+                    "time": "11:00",
+                    "stadium": "A Indicar",
+                    "homeScore": null,
+                    "awayScore": null
                 },
                 {
                     "home": "Fc Ferreiras - B",
@@ -555,19 +555,19 @@
                     "home": "Fc Ferreiras - B",
                     "away": "Gdr Alvorense",
                     "date": "2 mai",
-                    "time": "09:00",
+                    "time": "",
                     "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 2,
+                    "awayScore": 8
                 },
                 {
                     "home": "Jd Monchiquense",
                     "away": "Cf Os Armacenenses",
                     "date": "2 mai",
-                    "time": "09:30",
+                    "time": "",
                     "stadium": "Parque Desportivo Jd Monchiquense",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 1,
+                    "awayScore": 13
                 },
                 {
                     "home": "A Indicar",
@@ -583,16 +583,27 @@
                 {
                     "position": 1,
                     "team": "Cf Os Armacenenses",
-                    "played": 5,
-                    "wins": 4,
+                    "played": 6,
+                    "wins": 5,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 45,
-                    "goalsAgainst": 5,
-                    "points": 13
+                    "goalsFor": 58,
+                    "goalsAgainst": 6,
+                    "points": 16
                 },
                 {
                     "position": 2,
+                    "team": "Gdr Alvorense",
+                    "played": 4,
+                    "wins": 3,
+                    "draws": 1,
+                    "losses": 0,
+                    "goalsFor": 33,
+                    "goalsAgainst": 7,
+                    "points": 10
+                },
+                {
+                    "position": 3,
                     "team": "Fc Ferreiras - A",
                     "played": 5,
                     "wins": 3,
@@ -603,36 +614,25 @@
                     "points": 9
                 },
                 {
-                    "position": 3,
-                    "team": "Gdr Alvorense",
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 25,
-                    "goalsAgainst": 5,
-                    "points": 7
-                },
-                {
                     "position": 4,
                     "team": "Jd Monchiquense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 11,
-                    "goalsAgainst": 38,
+                    "losses": 4,
+                    "goalsFor": 12,
+                    "goalsAgainst": 51,
                     "points": 3
                 },
                 {
                     "position": 5,
                     "team": "Fc Ferreiras - B",
-                    "played": 5,
+                    "played": 6,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 9,
-                    "goalsAgainst": 53,
+                    "losses": 6,
+                    "goalsFor": 11,
+                    "goalsAgainst": 61,
                     "points": 0
                 }
             ]
@@ -644,20 +644,20 @@
                 {
                     "home": "Fc Ferreiras - A",
                     "away": "Fc Ferreiras - B",
-                    "date": "9 mai",
-                    "time": "09:00",
+                    "date": "7 mai",
+                    "time": "",
                     "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 3,
+                    "awayScore": 2
                 },
                 {
                     "home": "Gdr Alvorense",
                     "away": "Cf Os Armacenenses",
                     "date": "9 mai",
-                    "time": "10:30",
+                    "time": "",
                     "stadium": "Estádio Restinga Nº 1",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 3,
+                    "awayScore": 2
                 },
                 {
                     "home": "A Indicar",
@@ -673,56 +673,56 @@
                 {
                     "position": 1,
                     "team": "Cf Os Armacenenses",
+                    "played": 7,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 1,
+                    "goalsFor": 60,
+                    "goalsAgainst": 9,
+                    "points": 16
+                },
+                {
+                    "position": 2,
+                    "team": "Gdr Alvorense",
                     "played": 5,
                     "wins": 4,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 45,
-                    "goalsAgainst": 5,
+                    "goalsFor": 36,
+                    "goalsAgainst": 9,
                     "points": 13
                 },
                 {
-                    "position": 2,
+                    "position": 3,
                     "team": "Fc Ferreiras - A",
-                    "played": 5,
-                    "wins": 3,
+                    "played": 6,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 28,
-                    "goalsAgainst": 17,
-                    "points": 9
-                },
-                {
-                    "position": 3,
-                    "team": "Gdr Alvorense",
-                    "played": 3,
-                    "wins": 2,
-                    "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 25,
-                    "goalsAgainst": 5,
-                    "points": 7
+                    "goalsFor": 31,
+                    "goalsAgainst": 19,
+                    "points": 12
                 },
                 {
                     "position": 4,
                     "team": "Jd Monchiquense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 11,
-                    "goalsAgainst": 38,
+                    "losses": 4,
+                    "goalsFor": 12,
+                    "goalsAgainst": 51,
                     "points": 3
                 },
                 {
                     "position": 5,
                     "team": "Fc Ferreiras - B",
-                    "played": 5,
+                    "played": 7,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 9,
-                    "goalsAgainst": 53,
+                    "losses": 7,
+                    "goalsFor": 13,
+                    "goalsAgainst": 64,
                     "points": 0
                 }
             ]
@@ -763,56 +763,56 @@
                 {
                     "position": 1,
                     "team": "Cf Os Armacenenses",
-                    "played": 5,
-                    "wins": 4,
+                    "played": 7,
+                    "wins": 5,
                     "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 45,
-                    "goalsAgainst": 5,
-                    "points": 13
+                    "losses": 1,
+                    "goalsFor": 60,
+                    "goalsAgainst": 9,
+                    "points": 16
                 },
                 {
                     "position": 2,
                     "team": "Gdr Alvorense",
-                    "played": 4,
-                    "wins": 3,
+                    "played": 6,
+                    "wins": 5,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 37,
-                    "goalsAgainst": 7,
-                    "points": 10
+                    "goalsFor": 48,
+                    "goalsAgainst": 11,
+                    "points": 16
                 },
                 {
                     "position": 3,
                     "team": "Fc Ferreiras - A",
-                    "played": 5,
-                    "wins": 3,
+                    "played": 6,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 28,
-                    "goalsAgainst": 17,
-                    "points": 9
+                    "goalsFor": 31,
+                    "goalsAgainst": 19,
+                    "points": 12
                 },
                 {
                     "position": 4,
                     "team": "Jd Monchiquense",
-                    "played": 5,
+                    "played": 6,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 13,
-                    "goalsAgainst": 50,
+                    "losses": 5,
+                    "goalsFor": 14,
+                    "goalsAgainst": 63,
                     "points": 3
                 },
                 {
                     "position": 5,
                     "team": "Fc Ferreiras - B",
-                    "played": 5,
+                    "played": 7,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 9,
-                    "goalsAgainst": 53,
+                    "losses": 7,
+                    "goalsFor": 13,
+                    "goalsAgainst": 64,
                     "points": 0
                 }
             ]
@@ -853,56 +853,56 @@
                 {
                     "position": 1,
                     "team": "Cf Os Armacenenses",
-                    "played": 5,
-                    "wins": 4,
+                    "played": 7,
+                    "wins": 5,
                     "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 45,
-                    "goalsAgainst": 5,
-                    "points": 13
+                    "losses": 1,
+                    "goalsFor": 60,
+                    "goalsAgainst": 9,
+                    "points": 16
                 },
                 {
                     "position": 2,
                     "team": "Gdr Alvorense",
-                    "played": 4,
-                    "wins": 3,
+                    "played": 6,
+                    "wins": 5,
                     "draws": 1,
                     "losses": 0,
-                    "goalsFor": 37,
-                    "goalsAgainst": 7,
-                    "points": 10
+                    "goalsFor": 48,
+                    "goalsAgainst": 11,
+                    "points": 16
                 },
                 {
                     "position": 3,
                     "team": "Fc Ferreiras - A",
-                    "played": 5,
-                    "wins": 3,
+                    "played": 6,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 28,
-                    "goalsAgainst": 17,
-                    "points": 9
+                    "goalsFor": 31,
+                    "goalsAgainst": 19,
+                    "points": 12
                 },
                 {
                     "position": 4,
                     "team": "Jd Monchiquense",
-                    "played": 5,
+                    "played": 6,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 13,
-                    "goalsAgainst": 50,
+                    "losses": 5,
+                    "goalsFor": 14,
+                    "goalsAgainst": 63,
                     "points": 3
                 },
                 {
                     "position": 5,
                     "team": "Fc Ferreiras - B",
-                    "played": 5,
+                    "played": 7,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 9,
-                    "goalsAgainst": 53,
+                    "losses": 7,
+                    "goalsFor": 13,
+                    "goalsAgainst": 64,
                     "points": 0
                 }
             ]

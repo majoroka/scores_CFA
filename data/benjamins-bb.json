@@ -1,10 +1,10 @@
 {
-    "defaultRoundIndex": 13,
-    "defaultRoundNumber": 14,
-    "lastUpdatedAt": "2026-05-07T14:33:14Z",
+    "defaultRoundIndex": 14,
+    "defaultRoundNumber": 15,
+    "lastUpdatedAt": "2026-05-10T10:36:55Z",
     "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 12
     },
     "rounds": [
         {
@@ -30,15 +30,6 @@
                     "awayScore": 2
                 },
                 {
-                    "home": "Cf Esperança Lagos",
-                    "away": "Cd Odiáxere",
-                    "date": "24 jan",
-                    "time": "",
-                    "stadium": "Estádio Municipal De Lagos N.º 2",
-                    "homeScore": 3,
-                    "awayScore": 6
-                },
-                {
                     "home": "Cf Os Armacenenses",
                     "away": "Associacao Fut. F.O.",
                     "date": "24 jan",
@@ -46,6 +37,15 @@
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 5,
                     "awayScore": 2
+                },
+                {
+                    "home": "Cf Esperança Lagos",
+                    "away": "Cd Odiáxere",
+                    "date": "24 jan",
+                    "time": "",
+                    "stadium": "Estádio Municipal De Lagos N.º 2",
+                    "homeScore": 3,
+                    "awayScore": 6
                 },
                 {
                     "home": "Imortal Dc",
@@ -202,15 +202,6 @@
                     "awayScore": 1
                 },
                 {
-                    "home": "Associacao Fut. F.O.",
-                    "away": "Internacional Ca",
-                    "date": "31 jan",
-                    "time": "",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": 2,
-                    "awayScore": 5
-                },
-                {
                     "home": "Fc Ferreiras",
                     "away": "Imortal Dc",
                     "date": "31 jan",
@@ -218,6 +209,15 @@
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 0,
                     "awayScore": 6
+                },
+                {
+                    "home": "Associacao Fut. F.O.",
+                    "away": "Internacional Ca",
+                    "date": "31 jan",
+                    "time": "",
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
+                    "homeScore": 2,
+                    "awayScore": 5
                 }
             ],
             "classification": [
@@ -501,15 +501,6 @@
             "fixtureId": "635364",
             "matches": [
                 {
-                    "home": "Cd Odiáxere",
-                    "away": "Internacional Ca",
-                    "date": "14 fev",
-                    "time": "",
-                    "stadium": "Campo Eiras",
-                    "homeScore": 0,
-                    "awayScore": 7
-                },
-                {
                     "home": "Imortal Dc",
                     "away": "Ad Geração Génios",
                     "date": "14 fev",
@@ -526,6 +517,15 @@
                     "stadium": "Campo Francisco Gomes Socorro",
                     "homeScore": 6,
                     "awayScore": 1
+                },
+                {
+                    "home": "Cd Odiáxere",
+                    "away": "Internacional Ca",
+                    "date": "14 fev",
+                    "time": "",
+                    "stadium": "Campo Eiras",
+                    "homeScore": 0,
+                    "awayScore": 7
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -854,15 +854,6 @@
                     "awayScore": 2
                 },
                 {
-                    "home": "Ad Geração Génios",
-                    "away": "Cf Esperança Lagos",
-                    "date": "28 fev",
-                    "time": "",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": 8,
-                    "awayScore": 2
-                },
-                {
                     "home": "Fc Ferreiras",
                     "away": "Associacao Fut. F.O.",
                     "date": "28 fev",
@@ -870,6 +861,15 @@
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 6,
                     "awayScore": 7
+                },
+                {
+                    "home": "Ad Geração Génios",
+                    "away": "Cf Esperança Lagos",
+                    "date": "28 fev",
+                    "time": "",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": 8,
+                    "awayScore": 2
                 }
             ],
             "classification": [

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-10T17:20:09Z",
+  "generatedAt": "2026-05-10T10:55:47Z",
   "competitionCount": 15,
   "matchCount": 220,
   "competitions": [
@@ -9,7 +9,7 @@
       "subtitle": "Liga 1 Algarve Futebol (2ª Fase - Manutenção/Descida)",
       "pagePath": "seniores.html",
       "outputFile": "data/seniores.json",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:44:10Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -35,7 +35,7 @@
       "subtitle": "Liga 2 Algarve Futebol (2ª Fase - Série 3)",
       "pagePath": "juvenis.html",
       "outputFile": "data/juvenis.json",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:47Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -48,10 +48,10 @@
       "subtitle": "Liga 2 Algarve Futebol (Fase de Campeão)",
       "pagePath": "iniciados-a.html",
       "outputFile": "data/iniciados-a.json",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:54:48Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       },
       "roundCount": 14
     },
@@ -61,7 +61,7 @@
       "subtitle": "Liga 2 Algarve Futebol (2ª Fase - Série 7)",
       "pagePath": "iniciados-b.html",
       "outputFile": "data/iniciados-b.json",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:28Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -74,7 +74,7 @@
       "subtitle": "Liga 2 Algarve Futebol (2ª Fase - Série 2)",
       "pagePath": "infantis-a.html",
       "outputFile": "data/infantis-a.json",
-      "lastUpdatedAt": "2026-05-07T14:35:47Z",
+      "lastUpdatedAt": "2026-05-10T10:44:43Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -87,10 +87,10 @@
       "subtitle": "Liga 2 Algarve Futebol (2ª Fase – Série 2)",
       "pagePath": "infantis-b.html",
       "outputFile": "data/infantis-b.json",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:47:41Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 11
       },
       "roundCount": 18
     },
@@ -100,10 +100,10 @@
       "subtitle": "Liga Algarve Futebol 7 (Fase de Campeão)",
       "pagePath": "infantis-c.html",
       "outputFile": "data/infantis-c.json",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:51:14Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       },
       "roundCount": 14
     },
@@ -113,7 +113,7 @@
       "subtitle": "Liga Algarve Futebol 7 (2ª Fase - Série 3)",
       "pagePath": "benjamins-a1.html",
       "outputFile": "data/benjamins-a1.json",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:32:52Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -126,7 +126,7 @@
       "subtitle": "Liga Algarve Futebol 7 (2ª Fase - Série 10)",
       "pagePath": "benjamins-a2.html",
       "outputFile": "data/benjamins-a2.json",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:33:07Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -139,7 +139,7 @@
       "subtitle": "Liga Algarve Futebol 7 (2ª Fase – Série 2)",
       "pagePath": "benjamins-b.html",
       "outputFile": "data/benjamins-b.json",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:33:37Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -152,10 +152,10 @@
       "subtitle": "Liga Algarve Futebol 7 (2ª Fase – Série 6)",
       "pagePath": "benjamins-bb.html",
       "outputFile": "data/benjamins-bb.json",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:36:55Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 12
       },
       "roundCount": 18
     },
@@ -178,10 +178,10 @@
       "subtitle": "Liga 2 Algarve Futebol (2ª Fase - Série 7)",
       "pagePath": "feminino-sub17.html",
       "outputFile": "data/feminino-sub17.json",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 13
       },
       "roundCount": 14
     },
@@ -191,10 +191,10 @@
       "subtitle": "Liga Algarve Futebol 9 (2ª Fase – Série 4)",
       "pagePath": "feminino-sub15.html",
       "outputFile": "data/feminino-sub15.json",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:40:29Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       },
       "roundCount": 14
     }
@@ -242,10 +242,10 @@
       "displayDate": "10 jan",
       "displayTime": "",
       "stadium": "Estádio Nora Nº 2",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:40:29Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -266,7 +266,7 @@
       "displayDate": "10 jan",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:35:47Z",
+      "lastUpdatedAt": "2026-05-10T10:44:43Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -290,10 +290,10 @@
       "displayDate": "10 jan",
       "displayTime": "",
       "stadium": "Campo Municipal Mexilhoeira Grande",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:47:41Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 11
       }
     },
     {
@@ -314,7 +314,7 @@
       "displayDate": "11 jan",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:47Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -338,10 +338,10 @@
       "displayDate": "17 jan",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:40:29Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -362,7 +362,7 @@
       "displayDate": "17 jan",
       "displayTime": "",
       "stadium": "Estádio Ginásio Clube Tavira",
-      "lastUpdatedAt": "2026-05-07T14:35:47Z",
+      "lastUpdatedAt": "2026-05-10T10:44:43Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -386,10 +386,10 @@
       "displayDate": "17 jan",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:47:41Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 11
       }
     },
     {
@@ -410,7 +410,7 @@
       "displayDate": "18 jan",
       "displayTime": "",
       "stadium": "Parque Desp. Joaquim António Teixeira",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:47Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -434,7 +434,7 @@
       "displayDate": "24 jan",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:33:37Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -458,10 +458,10 @@
       "displayDate": "24 jan",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:36:55Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 12
       }
     },
     {
@@ -482,10 +482,10 @@
       "displayDate": "24 jan",
       "displayTime": "",
       "stadium": "Parque Desportivo Municipal Estombar",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:40:29Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -506,7 +506,7 @@
       "displayDate": "24 jan",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:35:47Z",
+      "lastUpdatedAt": "2026-05-10T10:44:43Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -530,10 +530,10 @@
       "displayDate": "24 jan",
       "displayTime": "",
       "stadium": "Complexo Desportivo 1º Maio",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:47:41Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 11
       }
     },
     {
@@ -554,10 +554,10 @@
       "displayDate": "24 jan",
       "displayTime": "",
       "stadium": "Estádio José Arcanjo",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:51:14Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -602,7 +602,7 @@
       "displayDate": "25 jan",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:47Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -626,7 +626,7 @@
       "displayDate": "31 jan",
       "displayTime": "",
       "stadium": "Estadio Municipal Quarteira Nº 2",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:33:37Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -650,10 +650,10 @@
       "displayDate": "31 jan",
       "displayTime": "",
       "stadium": "Campo Eiras",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:36:55Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 12
       }
     },
     {
@@ -674,7 +674,7 @@
       "displayDate": "31 jan",
       "displayTime": "",
       "stadium": "Campo Major David Neto 2",
-      "lastUpdatedAt": "2026-05-07T14:35:47Z",
+      "lastUpdatedAt": "2026-05-10T10:44:43Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -698,10 +698,10 @@
       "displayDate": "31 jan",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:47:41Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 11
       }
     },
     {
@@ -722,10 +722,10 @@
       "displayDate": "31 jan",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:51:14Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -770,7 +770,7 @@
       "displayDate": "1 fev",
       "displayTime": "",
       "stadium": "Complexo Desportivo 1º Maio",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:47Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -842,7 +842,7 @@
       "displayDate": "8 fev",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:47Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -866,7 +866,7 @@
       "displayDate": "14 fev",
       "displayTime": "",
       "stadium": "Estádio José Arcanjo",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:33:37Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -890,10 +890,10 @@
       "displayDate": "14 fev",
       "displayTime": "",
       "stadium": "Estádio Dr. Francisco Vieira",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:36:55Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 12
       }
     },
     {
@@ -938,10 +938,10 @@
       "displayDate": "14 fev",
       "displayTime": "",
       "stadium": "Estadio Municipal Quarteira Nº 2",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:40:29Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -962,7 +962,7 @@
       "displayDate": "14 fev",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:35:47Z",
+      "lastUpdatedAt": "2026-05-10T10:44:43Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -986,10 +986,10 @@
       "displayDate": "14 fev",
       "displayTime": "",
       "stadium": "Campo Da Palmeira Nº 2",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:47:41Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 11
       }
     },
     {
@@ -1010,10 +1010,10 @@
       "displayDate": "14 fev",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:51:14Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -1058,10 +1058,10 @@
       "displayDate": "17 fev",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:36:55Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 12
       }
     },
     {
@@ -1082,7 +1082,7 @@
       "displayDate": "21 fev",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:33:37Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -1106,10 +1106,10 @@
       "displayDate": "21 fev",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:36:55Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 12
       }
     },
     {
@@ -1154,10 +1154,10 @@
       "displayDate": "21 fev",
       "displayTime": "",
       "stadium": "Campo Complexo Desportivo Penha",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:40:29Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -1178,7 +1178,7 @@
       "displayDate": "21 fev",
       "displayTime": "",
       "stadium": "Campo Complexo Desportivo Penha",
-      "lastUpdatedAt": "2026-05-07T14:35:47Z",
+      "lastUpdatedAt": "2026-05-10T10:44:43Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -1202,10 +1202,10 @@
       "displayDate": "21 fev",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:47:41Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 11
       }
     },
     {
@@ -1226,10 +1226,10 @@
       "displayDate": "21 fev",
       "displayTime": "",
       "stadium": "Campo Complexo Desportivo Penha",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:51:14Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -1274,7 +1274,7 @@
       "displayDate": "22 fev",
       "displayTime": "",
       "stadium": "Estádio Municipal De Lagos N.º 2",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:47Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -1298,7 +1298,7 @@
       "displayDate": "28 fev",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:32:52Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -1322,7 +1322,7 @@
       "displayDate": "28 fev",
       "displayTime": "",
       "stadium": "Estádio Nora Nº 2",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:33:07Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -1346,7 +1346,7 @@
       "displayDate": "28 fev",
       "displayTime": "",
       "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:33:37Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -1370,10 +1370,10 @@
       "displayDate": "28 fev",
       "displayTime": "",
       "stadium": "Campo Da Palmeira Nº 2",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:36:55Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 12
       }
     },
     {
@@ -1394,10 +1394,10 @@
       "displayDate": "28 fev",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:40:29Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -1418,7 +1418,7 @@
       "displayDate": "28 fev",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:35:47Z",
+      "lastUpdatedAt": "2026-05-10T10:44:43Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -1442,10 +1442,10 @@
       "displayDate": "28 fev",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:47:41Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 11
       }
     },
     {
@@ -1466,10 +1466,10 @@
       "displayDate": "28 fev",
       "displayTime": "",
       "stadium": "Campo Futebol 7 Montenegro",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:51:14Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -1490,10 +1490,10 @@
       "displayDate": "1 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 13
       }
     },
     {
@@ -1514,10 +1514,10 @@
       "displayDate": "1 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:54:48Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -1538,7 +1538,7 @@
       "displayDate": "1 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:28Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -1586,7 +1586,7 @@
       "displayDate": "1 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:47Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -1610,7 +1610,7 @@
       "displayDate": "2 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:33:37Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -1634,7 +1634,7 @@
       "displayDate": "7 mar",
       "displayTime": "",
       "stadium": "Campo Major David Neto 2",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:32:52Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -1658,7 +1658,7 @@
       "displayDate": "7 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:33:07Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -1682,7 +1682,7 @@
       "displayDate": "7 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:33:37Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -1706,10 +1706,10 @@
       "displayDate": "7 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:36:55Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 12
       }
     },
     {
@@ -1730,7 +1730,7 @@
       "displayDate": "7 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal De Lagos N.º 2",
-      "lastUpdatedAt": "2026-05-07T14:35:47Z",
+      "lastUpdatedAt": "2026-05-10T10:44:43Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -1754,10 +1754,10 @@
       "displayDate": "7 mar",
       "displayTime": "",
       "stadium": "Estádio Nora Nº 2",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:47:41Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 11
       }
     },
     {
@@ -1778,10 +1778,10 @@
       "displayDate": "7 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:51:14Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -1802,10 +1802,10 @@
       "displayDate": "8 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 13
       }
     },
     {
@@ -1826,10 +1826,10 @@
       "displayDate": "8 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Messines",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 13
       }
     },
     {
@@ -1850,10 +1850,10 @@
       "displayDate": "8 mar",
       "displayTime": "",
       "stadium": "Estadio Municipal De Almancil",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:54:48Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -1874,7 +1874,7 @@
       "displayDate": "8 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Messines",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:28Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -1922,7 +1922,7 @@
       "displayDate": "8 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Messines",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:47Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -1946,7 +1946,7 @@
       "displayDate": "14 mar",
       "displayTime": "",
       "stadium": "Campo Municipal Aljezur",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:32:52Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -1970,7 +1970,7 @@
       "displayDate": "14 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:33:07Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -1994,7 +1994,7 @@
       "displayDate": "14 mar",
       "displayTime": "",
       "stadium": "Campo Complexo Desportivo Penha",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:33:37Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -2018,10 +2018,10 @@
       "displayDate": "14 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal De Lagos N.º 2",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:36:55Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 12
       }
     },
     {
@@ -2042,10 +2042,10 @@
       "displayDate": "14 mar",
       "displayTime": "",
       "stadium": "Campo De Futebol Municipal De Tavira",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:40:29Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -2066,10 +2066,10 @@
       "displayDate": "14 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:47:41Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 11
       }
     },
     {
@@ -2090,10 +2090,10 @@
       "displayDate": "14 mar",
       "displayTime": "",
       "stadium": "Campo De Futebol Sete - Espamol",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:51:14Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -2114,10 +2114,10 @@
       "displayDate": "15 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 13
       }
     },
     {
@@ -2138,10 +2138,10 @@
       "displayDate": "15 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 13
       }
     },
     {
@@ -2162,10 +2162,10 @@
       "displayDate": "15 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:54:48Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -2186,7 +2186,7 @@
       "displayDate": "15 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:28Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -2234,7 +2234,7 @@
       "displayDate": "21 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:33:37Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -2258,10 +2258,10 @@
       "displayDate": "21 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:36:55Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 12
       }
     },
     {
@@ -2282,10 +2282,10 @@
       "displayDate": "21 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:40:29Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -2306,7 +2306,7 @@
       "displayDate": "21 mar",
       "displayTime": "",
       "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
-      "lastUpdatedAt": "2026-05-07T14:35:47Z",
+      "lastUpdatedAt": "2026-05-10T10:44:43Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -2330,10 +2330,10 @@
       "displayDate": "21 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:51:14Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -2354,7 +2354,7 @@
       "displayDate": "21 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:44:10Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -2378,10 +2378,10 @@
       "displayDate": "22 mar",
       "displayTime": "",
       "stadium": "Campo Horta Da Areia",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 13
       }
     },
     {
@@ -2402,10 +2402,10 @@
       "displayDate": "22 mar",
       "displayTime": "",
       "stadium": "Campo Montes Elois",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 13
       }
     },
     {
@@ -2426,10 +2426,10 @@
       "displayDate": "22 mar",
       "displayTime": "",
       "stadium": "Estádio Nora Nº 2",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:54:48Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -2450,7 +2450,7 @@
       "displayDate": "22 mar",
       "displayTime": "",
       "stadium": "Campo Montes Elois",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:28Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -2498,7 +2498,7 @@
       "displayDate": "22 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:47Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -2522,10 +2522,10 @@
       "displayDate": "23 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:47:41Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 11
       }
     },
     {
@@ -2546,7 +2546,7 @@
       "displayDate": "28 mar",
       "displayTime": "",
       "stadium": "Estádio Nora Nº 2",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:32:52Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -2570,7 +2570,7 @@
       "displayDate": "28 mar",
       "displayTime": "",
       "stadium": "Estádio Nora Nº 2",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:33:07Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -2594,10 +2594,10 @@
       "displayDate": "28 mar",
       "displayTime": "",
       "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:36:55Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 12
       }
     },
     {
@@ -2618,10 +2618,10 @@
       "displayDate": "28 mar",
       "displayTime": "",
       "stadium": "Campo Zona Verde",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:47:41Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 11
       }
     },
     {
@@ -2642,10 +2642,10 @@
       "displayDate": "28 mar",
       "displayTime": "",
       "stadium": "Campo Major David Neto N.º1",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:51:14Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -2666,7 +2666,7 @@
       "displayDate": "28 mar",
       "displayTime": "",
       "stadium": "Campo Eiras",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:44:10Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -2690,10 +2690,10 @@
       "displayDate": "29 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 13
       }
     },
     {
@@ -2714,10 +2714,10 @@
       "displayDate": "29 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 13
       }
     },
     {
@@ -2738,10 +2738,10 @@
       "displayDate": "29 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:54:48Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -2762,7 +2762,7 @@
       "displayDate": "29 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:28Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -2810,7 +2810,7 @@
       "displayDate": "29 mar",
       "displayTime": "",
       "stadium": "Estádio Dr.António Joao Eusebio",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:47Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -2834,7 +2834,7 @@
       "displayDate": "2 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:35:47Z",
+      "lastUpdatedAt": "2026-05-10T10:44:43Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -2858,7 +2858,7 @@
       "displayDate": "8 abr",
       "displayTime": "",
       "stadium": "Campo Da Palmeira Nº 2",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:33:37Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -2882,10 +2882,10 @@
       "displayDate": "8 abr",
       "displayTime": "",
       "stadium": "Parque Desportivo Municipal Estombar",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:40:29Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -2906,7 +2906,7 @@
       "displayDate": "11 abr",
       "displayTime": "11:00",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:33:07Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -2930,7 +2930,7 @@
       "displayDate": "11 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:33:37Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -2954,10 +2954,10 @@
       "displayDate": "11 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:36:55Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 12
       }
     },
     {
@@ -2978,10 +2978,10 @@
       "displayDate": "11 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:40:29Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -3002,7 +3002,7 @@
       "displayDate": "11 abr",
       "displayTime": "",
       "stadium": "Estádio Nora Nº 2",
-      "lastUpdatedAt": "2026-05-07T14:35:47Z",
+      "lastUpdatedAt": "2026-05-10T10:44:43Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -3026,10 +3026,10 @@
       "displayDate": "11 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:47:41Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 11
       }
     },
     {
@@ -3050,10 +3050,10 @@
       "displayDate": "11 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:51:14Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -3074,7 +3074,7 @@
       "displayDate": "11 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:44:10Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -3098,10 +3098,10 @@
       "displayDate": "12 abr",
       "displayTime": "",
       "stadium": "Parque Desportivo Municipal Estombar",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 13
       }
     },
     {
@@ -3122,10 +3122,10 @@
       "displayDate": "12 abr",
       "displayTime": "",
       "stadium": "Campo Municipal Aljezur",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 13
       }
     },
     {
@@ -3146,10 +3146,10 @@
       "displayDate": "12 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:54:48Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -3170,7 +3170,7 @@
       "displayDate": "12 abr",
       "displayTime": "",
       "stadium": "Parque Desportivo Municipal Estombar",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:28Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -3194,7 +3194,7 @@
       "displayDate": "12 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:47Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -3218,7 +3218,7 @@
       "displayDate": "13 abr",
       "displayTime": "",
       "stadium": "Campo Complexo Desportivo Penha",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:32:52Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -3242,7 +3242,7 @@
       "displayDate": "18 abr",
       "displayTime": "",
       "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:32:52Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -3266,7 +3266,7 @@
       "displayDate": "18 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:33:07Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -3290,7 +3290,7 @@
       "displayDate": "18 abr",
       "displayTime": "",
       "stadium": "Campo Municipal Mexilhoeira Grande",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:33:37Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -3314,10 +3314,10 @@
       "displayDate": "18 abr",
       "displayTime": "",
       "stadium": "Campo Francisco Gomes Socorro",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:36:55Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 12
       }
     },
     {
@@ -3338,10 +3338,10 @@
       "displayDate": "18 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:40:29Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -3362,7 +3362,7 @@
       "displayDate": "18 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:35:47Z",
+      "lastUpdatedAt": "2026-05-10T10:44:43Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -3386,10 +3386,10 @@
       "displayDate": "18 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Olhão",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:47:41Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 11
       }
     },
     {
@@ -3410,10 +3410,10 @@
       "displayDate": "18 abr",
       "displayTime": "",
       "stadium": "Campo Municipal Nº 2 De Loule",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:51:14Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -3434,7 +3434,7 @@
       "displayDate": "18 abr",
       "displayTime": "",
       "stadium": "Campo Municipal Nº 2 De Loule",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:44:10Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -3458,10 +3458,10 @@
       "displayDate": "19 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 13
       }
     },
     {
@@ -3482,10 +3482,10 @@
       "displayDate": "19 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 13
       }
     },
     {
@@ -3506,10 +3506,10 @@
       "displayDate": "19 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Da Bela Vista",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:54:48Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -3530,7 +3530,7 @@
       "displayDate": "19 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:28Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -3578,7 +3578,7 @@
       "displayDate": "19 abr",
       "displayTime": "",
       "stadium": "Campo Montes Elois",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:47Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -3602,7 +3602,7 @@
       "displayDate": "20 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:35:47Z",
+      "lastUpdatedAt": "2026-05-10T10:44:43Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -3650,7 +3650,7 @@
       "displayDate": "25 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:33:37Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -3674,10 +3674,10 @@
       "displayDate": "25 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:36:55Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 12
       }
     },
     {
@@ -3698,7 +3698,7 @@
       "displayDate": "25 abr",
       "displayTime": "",
       "stadium": "Campo Municipal Nº 2 De Loule",
-      "lastUpdatedAt": "2026-05-07T14:35:47Z",
+      "lastUpdatedAt": "2026-05-10T10:44:43Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -3722,10 +3722,10 @@
       "displayDate": "25 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:47:41Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 11
       }
     },
     {
@@ -3746,7 +3746,7 @@
       "displayDate": "25 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:44:10Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -3770,10 +3770,10 @@
       "displayDate": "26 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 13
       }
     },
     {
@@ -3794,10 +3794,10 @@
       "displayDate": "26 abr",
       "displayTime": "",
       "stadium": "Campo Municipal Nº 2 De Loule",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:54:48Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -3818,7 +3818,7 @@
       "displayDate": "26 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:28Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -3849,30 +3849,6 @@
       }
     },
     {
-      "competitionKey": "benjamins-a2",
-      "competitionTitle": "Benjamins A2 – Sub11",
-      "competitionSubtitle": "Liga Algarve Futebol 7 (2ª Fase - Série 10)",
-      "competitionPage": "benjamins-a2.html",
-      "competitionUrl": "benjamins-a2.html#resultados-j7",
-      "roundNumber": 7,
-      "fixtureId": "641100",
-      "matchDateISO": "2026-05-02T09:30:00+01:00",
-      "sortTimestamp": 1777710600,
-      "status": "unknown",
-      "home": "Jd Monchiquense",
-      "away": "Cf Os Armacenenses",
-      "homeScore": null,
-      "awayScore": null,
-      "displayDate": "2 mai",
-      "displayTime": "09:30",
-      "stadium": "Parque Desportivo Jd Monchiquense",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
-      "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
-      }
-    },
-    {
       "competitionKey": "infantis-b",
       "competitionTitle": "Infantis B – Sub12",
       "competitionSubtitle": "Liga 2 Algarve Futebol (2ª Fase – Série 2)",
@@ -3890,58 +3866,10 @@
       "displayDate": "2 mai",
       "displayTime": "09:30",
       "stadium": "Campo Major David Neto 2",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:47:41Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
-      }
-    },
-    {
-      "competitionKey": "benjamins-a1",
-      "competitionTitle": "Benjamins A1 – Sub11",
-      "competitionSubtitle": "Liga Algarve Futebol 7 (2ª Fase - Série 3)",
-      "competitionPage": "benjamins-a1.html",
-      "competitionUrl": "benjamins-a1.html#resultados-j7",
-      "roundNumber": 7,
-      "fixtureId": "641130",
-      "matchDateISO": "2026-05-02T10:30:00+01:00",
-      "sortTimestamp": 1777714200,
-      "status": "unknown",
-      "home": "Cf Os Armacenenses",
-      "away": "Portimonense Sc",
-      "homeScore": null,
-      "awayScore": null,
-      "displayDate": "2 mai",
-      "displayTime": "10:30",
-      "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
-      "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
-      }
-    },
-    {
-      "competitionKey": "benjamins-b",
-      "competitionTitle": "Benjamins B – Sub10",
-      "competitionSubtitle": "Liga Algarve Futebol 7 (2ª Fase – Série 2)",
-      "competitionPage": "benjamins-b.html",
-      "competitionUrl": "benjamins-b.html#resultados-j14",
-      "roundNumber": 14,
-      "fixtureId": "635345",
-      "matchDateISO": "2026-05-02T10:30:00+01:00",
-      "sortTimestamp": 1777714200,
-      "status": "unknown",
-      "home": "Gd Lagoa",
-      "away": "Cf Os Armacenenses",
-      "homeScore": null,
-      "awayScore": null,
-      "displayDate": "2 mai",
-      "displayTime": "10:30",
-      "stadium": "Campo De Futebol Sete - Espamol",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
-      "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 11
       }
     },
     {
@@ -3962,10 +3890,10 @@
       "displayDate": "2 mai",
       "displayTime": "10:30",
       "stadium": "Estádio Nora Nº 2",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:36:55Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 12
       }
     },
     {
@@ -3986,7 +3914,79 @@
       "displayDate": "2 mai",
       "displayTime": "10:30",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:51:14Z",
+      "sourceHealth": {
+        "status": "degraded",
+        "fallbackReuseCount": 14
+      }
+    },
+    {
+      "competitionKey": "benjamins-a1",
+      "competitionTitle": "Benjamins A1 – Sub11",
+      "competitionSubtitle": "Liga Algarve Futebol 7 (2ª Fase - Série 3)",
+      "competitionPage": "benjamins-a1.html",
+      "competitionUrl": "benjamins-a1.html#resultados-j7",
+      "roundNumber": 7,
+      "fixtureId": "641130",
+      "matchDateISO": "2026-05-02T12:00:00+01:00",
+      "sortTimestamp": 1777719600,
+      "status": "finished",
+      "home": "Cf Os Armacenenses",
+      "away": "Portimonense Sc",
+      "homeScore": 5,
+      "awayScore": 8,
+      "displayDate": "2 mai",
+      "displayTime": "",
+      "stadium": "Estádio Municipal Armação De Pêra",
+      "lastUpdatedAt": "2026-05-10T10:32:52Z",
+      "sourceHealth": {
+        "status": "ok",
+        "fallbackReuseCount": 0
+      }
+    },
+    {
+      "competitionKey": "benjamins-a2",
+      "competitionTitle": "Benjamins A2 – Sub11",
+      "competitionSubtitle": "Liga Algarve Futebol 7 (2ª Fase - Série 10)",
+      "competitionPage": "benjamins-a2.html",
+      "competitionUrl": "benjamins-a2.html#resultados-j7",
+      "roundNumber": 7,
+      "fixtureId": "641100",
+      "matchDateISO": "2026-05-02T12:00:00+01:00",
+      "sortTimestamp": 1777719600,
+      "status": "finished",
+      "home": "Jd Monchiquense",
+      "away": "Cf Os Armacenenses",
+      "homeScore": 1,
+      "awayScore": 13,
+      "displayDate": "2 mai",
+      "displayTime": "",
+      "stadium": "Parque Desportivo Jd Monchiquense",
+      "lastUpdatedAt": "2026-05-10T10:33:07Z",
+      "sourceHealth": {
+        "status": "ok",
+        "fallbackReuseCount": 0
+      }
+    },
+    {
+      "competitionKey": "benjamins-b",
+      "competitionTitle": "Benjamins B – Sub10",
+      "competitionSubtitle": "Liga Algarve Futebol 7 (2ª Fase – Série 2)",
+      "competitionPage": "benjamins-b.html",
+      "competitionUrl": "benjamins-b.html#resultados-j14",
+      "roundNumber": 14,
+      "fixtureId": "635345",
+      "matchDateISO": "2026-05-02T12:00:00+01:00",
+      "sortTimestamp": 1777719600,
+      "status": "finished",
+      "home": "Gd Lagoa",
+      "away": "Cf Os Armacenenses",
+      "homeScore": 1,
+      "awayScore": 14,
+      "displayDate": "2 mai",
+      "displayTime": "",
+      "stadium": "Campo De Futebol Sete - Espamol",
+      "lastUpdatedAt": "2026-05-10T10:33:37Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -4010,10 +4010,10 @@
       "displayDate": "2 mai",
       "displayTime": "12:00",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:40:29Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -4034,7 +4034,7 @@
       "displayDate": "2 mai",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:35:47Z",
+      "lastUpdatedAt": "2026-05-10T10:44:43Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -4048,41 +4048,17 @@
       "competitionUrl": "seniores.html#resultados-j6",
       "roundNumber": 6,
       "fixtureId": "645297",
-      "matchDateISO": "2026-05-02T16:00:00+01:00",
-      "sortTimestamp": 1777734000,
-      "status": "unknown",
+      "matchDateISO": "2026-05-02T12:00:00+01:00",
+      "sortTimestamp": 1777719600,
+      "status": "finished",
       "home": "Fc Os 11 Esperanças",
       "away": "Cf Os Armacenenses",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 1,
+      "awayScore": 0,
       "displayDate": "2 mai",
-      "displayTime": "16:00",
+      "displayTime": "",
       "stadium": "Campo Complexo Desportivo Penha",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
-      "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
-      }
-    },
-    {
-      "competitionKey": "juvenis",
-      "competitionTitle": "Juvenis - Sub17",
-      "competitionSubtitle": "Liga 2 Algarve Futebol (2ª Fase - Série 3)",
-      "competitionPage": "juvenis.html",
-      "competitionUrl": "juvenis.html#resultados-j13",
-      "roundNumber": 13,
-      "fixtureId": "626046",
-      "matchDateISO": "2026-05-03T09:00:00+01:00",
-      "sortTimestamp": 1777795200,
-      "status": "unknown",
-      "home": "Cf Os Armacenenses",
-      "away": "Cf Esperança Lagos",
-      "homeScore": null,
-      "awayScore": null,
-      "displayDate": "3 mai",
-      "displayTime": "09:00",
-      "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:44:10Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -4106,10 +4082,10 @@
       "displayDate": "3 mai",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 13
       }
     },
     {
@@ -4130,7 +4106,31 @@
       "displayDate": "3 mai",
       "displayTime": "",
       "stadium": "Parque Desportivo Jd Monchiquense",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
+      "sourceHealth": {
+        "status": "degraded",
+        "fallbackReuseCount": 13
+      }
+    },
+    {
+      "competitionKey": "iniciados-b",
+      "competitionTitle": "Iniciados B – Sub15",
+      "competitionSubtitle": "Liga 2 Algarve Futebol (2ª Fase - Série 7)",
+      "competitionPage": "iniciados-b.html",
+      "competitionUrl": "iniciados-b.html#resultados-j9",
+      "roundNumber": 9,
+      "fixtureId": "641038",
+      "matchDateISO": "2026-05-03T12:00:00+01:00",
+      "sortTimestamp": 1777806000,
+      "status": "finished",
+      "home": "Cf Os Armacenenses - A",
+      "away": "Ud Messinense",
+      "homeScore": 6,
+      "awayScore": 0,
+      "displayDate": "3 mai",
+      "displayTime": "",
+      "stadium": "Estádio Municipal Armação De Pêra",
+      "lastUpdatedAt": "2026-05-10T10:55:28Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -4161,24 +4161,24 @@
       }
     },
     {
-      "competitionKey": "iniciados-b",
-      "competitionTitle": "Iniciados B – Sub15",
-      "competitionSubtitle": "Liga 2 Algarve Futebol (2ª Fase - Série 7)",
-      "competitionPage": "iniciados-b.html",
-      "competitionUrl": "iniciados-b.html#resultados-j9",
-      "roundNumber": 9,
-      "fixtureId": "641038",
-      "matchDateISO": "2026-05-03T18:00:00+01:00",
-      "sortTimestamp": 1777827600,
-      "status": "unknown",
-      "home": "Cf Os Armacenenses - A",
-      "away": "Ud Messinense",
-      "homeScore": null,
-      "awayScore": null,
+      "competitionKey": "juvenis",
+      "competitionTitle": "Juvenis - Sub17",
+      "competitionSubtitle": "Liga 2 Algarve Futebol (2ª Fase - Série 3)",
+      "competitionPage": "juvenis.html",
+      "competitionUrl": "juvenis.html#resultados-j13",
+      "roundNumber": 13,
+      "fixtureId": "626046",
+      "matchDateISO": "2026-05-03T12:00:00+01:00",
+      "sortTimestamp": 1777806000,
+      "status": "finished",
+      "home": "Cf Os Armacenenses",
+      "away": "Cf Esperança Lagos",
+      "homeScore": 10,
+      "awayScore": 1,
       "displayDate": "3 mai",
-      "displayTime": "18:00",
+      "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:47Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -4202,10 +4202,10 @@
       "displayDate": "9 mai",
       "displayTime": "09:00",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:36:55Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 12
       }
     },
     {
@@ -4226,58 +4226,10 @@
       "displayDate": "9 mai",
       "displayTime": "09:00",
       "stadium": "Campo Complexo Desportivo Penha",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:51:14Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
-      }
-    },
-    {
-      "competitionKey": "benjamins-a2",
-      "competitionTitle": "Benjamins A2 – Sub11",
-      "competitionSubtitle": "Liga Algarve Futebol 7 (2ª Fase - Série 10)",
-      "competitionPage": "benjamins-a2.html",
-      "competitionUrl": "benjamins-a2.html#resultados-j8",
-      "roundNumber": 8,
-      "fixtureId": "641101",
-      "matchDateISO": "2026-05-09T10:30:00+01:00",
-      "sortTimestamp": 1778319000,
-      "status": "unknown",
-      "home": "Gdr Alvorense",
-      "away": "Cf Os Armacenenses",
-      "homeScore": null,
-      "awayScore": null,
-      "displayDate": "9 mai",
-      "displayTime": "10:30",
-      "stadium": "Estádio Restinga Nº 1",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
-      "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
-      }
-    },
-    {
-      "competitionKey": "benjamins-b",
-      "competitionTitle": "Benjamins B – Sub10",
-      "competitionSubtitle": "Liga Algarve Futebol 7 (2ª Fase – Série 2)",
-      "competitionPage": "benjamins-b.html",
-      "competitionUrl": "benjamins-b.html#resultados-j15",
-      "roundNumber": 15,
-      "fixtureId": "635346",
-      "matchDateISO": "2026-05-09T10:30:00+01:00",
-      "sortTimestamp": 1778319000,
-      "status": "unknown",
-      "home": "Cf Os Armacenenses",
-      "away": "Aef Monte Gordo 2019",
-      "homeScore": null,
-      "awayScore": null,
-      "displayDate": "9 mai",
-      "displayTime": "10:30",
-      "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
-      "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -4298,34 +4250,10 @@
       "displayDate": "9 mai",
       "displayTime": "10:30",
       "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:47:41Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
-      }
-    },
-    {
-      "competitionKey": "infantis-a",
-      "competitionTitle": "Infantis A – Sub13",
-      "competitionSubtitle": "Liga 2 Algarve Futebol (2ª Fase - Série 2)",
-      "competitionPage": "infantis-a.html",
-      "competitionUrl": "infantis-a.html#resultados-j16",
-      "roundNumber": 16,
-      "fixtureId": "626095",
-      "matchDateISO": "2026-05-09T11:00:00+01:00",
-      "sortTimestamp": 1778320800,
-      "status": "unknown",
-      "home": "Cd Montenegro",
-      "away": "Cf Os Armacenenses",
-      "homeScore": null,
-      "awayScore": null,
-      "displayDate": "9 mai",
-      "displayTime": "11:00",
-      "stadium": "Campo Horta Da Areia",
-      "lastUpdatedAt": "2026-05-07T14:35:47Z",
-      "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 11
       }
     },
     {
@@ -4338,15 +4266,63 @@
       "fixtureId": "641131",
       "matchDateISO": "2026-05-09T12:00:00+01:00",
       "sortTimestamp": 1778324400,
-      "status": "unknown",
+      "status": "finished",
       "home": "Cf Os Armacenenses",
       "away": "Jc Aljezurense",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 7,
+      "awayScore": 1,
       "displayDate": "9 mai",
-      "displayTime": "12:00",
+      "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:32:52Z",
+      "sourceHealth": {
+        "status": "ok",
+        "fallbackReuseCount": 0
+      }
+    },
+    {
+      "competitionKey": "benjamins-a2",
+      "competitionTitle": "Benjamins A2 – Sub11",
+      "competitionSubtitle": "Liga Algarve Futebol 7 (2ª Fase - Série 10)",
+      "competitionPage": "benjamins-a2.html",
+      "competitionUrl": "benjamins-a2.html#resultados-j8",
+      "roundNumber": 8,
+      "fixtureId": "641101",
+      "matchDateISO": "2026-05-09T12:00:00+01:00",
+      "sortTimestamp": 1778324400,
+      "status": "finished",
+      "home": "Gdr Alvorense",
+      "away": "Cf Os Armacenenses",
+      "homeScore": 3,
+      "awayScore": 2,
+      "displayDate": "9 mai",
+      "displayTime": "",
+      "stadium": "Estádio Restinga Nº 1",
+      "lastUpdatedAt": "2026-05-10T10:33:07Z",
+      "sourceHealth": {
+        "status": "ok",
+        "fallbackReuseCount": 0
+      }
+    },
+    {
+      "competitionKey": "benjamins-b",
+      "competitionTitle": "Benjamins B – Sub10",
+      "competitionSubtitle": "Liga Algarve Futebol 7 (2ª Fase – Série 2)",
+      "competitionPage": "benjamins-b.html",
+      "competitionUrl": "benjamins-b.html#resultados-j15",
+      "roundNumber": 15,
+      "fixtureId": "635346",
+      "matchDateISO": "2026-05-09T12:00:00+01:00",
+      "sortTimestamp": 1778324400,
+      "status": "finished",
+      "home": "Cf Os Armacenenses",
+      "away": "Aef Monte Gordo 2019",
+      "homeScore": 6,
+      "awayScore": 0,
+      "displayDate": "9 mai",
+      "displayTime": "",
+      "stadium": "Estádio Municipal Armação De Pêra",
+      "lastUpdatedAt": "2026-05-10T10:33:37Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -4370,7 +4346,31 @@
       "displayDate": "9 mai",
       "displayTime": "12:00",
       "stadium": "Estádio Nora Nº 2",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:40:29Z",
+      "sourceHealth": {
+        "status": "degraded",
+        "fallbackReuseCount": 14
+      }
+    },
+    {
+      "competitionKey": "infantis-a",
+      "competitionTitle": "Infantis A – Sub13",
+      "competitionSubtitle": "Liga 2 Algarve Futebol (2ª Fase - Série 2)",
+      "competitionPage": "infantis-a.html",
+      "competitionUrl": "infantis-a.html#resultados-j16",
+      "roundNumber": 16,
+      "fixtureId": "626095",
+      "matchDateISO": "2026-05-09T12:00:00+01:00",
+      "sortTimestamp": 1778324400,
+      "status": "finished",
+      "home": "Cd Montenegro",
+      "away": "Cf Os Armacenenses",
+      "homeScore": 1,
+      "awayScore": 3,
+      "displayDate": "9 mai",
+      "displayTime": "",
+      "stadium": "Campo Horta Da Areia",
+      "lastUpdatedAt": "2026-05-10T10:44:43Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -4384,17 +4384,17 @@
       "competitionUrl": "seniores.html#resultados-j7",
       "roundNumber": 7,
       "fixtureId": "645298",
-      "matchDateISO": "2026-05-09T17:00:00+01:00",
-      "sortTimestamp": 1778342400,
-      "status": "unknown",
+      "matchDateISO": "2026-05-09T12:00:00+01:00",
+      "sortTimestamp": 1778324400,
+      "status": "finished",
       "home": "Cf Os Armacenenses",
       "away": "Cd Odiáxere",
-      "homeScore": null,
-      "awayScore": null,
+      "homeScore": 0,
+      "awayScore": 4,
       "displayDate": "9 mai",
-      "displayTime": "17:00",
+      "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:44:10Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -4418,10 +4418,10 @@
       "displayDate": "10 mai",
       "displayTime": "11:00",
       "stadium": "Campo Horta Da Areia",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 13
       }
     },
     {
@@ -4442,10 +4442,10 @@
       "displayDate": "10 mai",
       "displayTime": "11:00",
       "stadium": "Estádio Municipal Messines",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 13
       }
     },
     {
@@ -4466,10 +4466,10 @@
       "displayDate": "10 mai",
       "displayTime": "11:00",
       "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:54:48Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -4490,7 +4490,31 @@
       "displayDate": "10 mai",
       "displayTime": "11:00",
       "stadium": "Campo Horta Da Areia",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:28Z",
+      "sourceHealth": {
+        "status": "ok",
+        "fallbackReuseCount": 0
+      }
+    },
+    {
+      "competitionKey": "juvenis",
+      "competitionTitle": "Juvenis - Sub17",
+      "competitionSubtitle": "Liga 2 Algarve Futebol (2ª Fase - Série 3)",
+      "competitionPage": "juvenis.html",
+      "competitionUrl": "juvenis.html#resultados-j14",
+      "roundNumber": 14,
+      "fixtureId": "626047",
+      "matchDateISO": "2026-05-10T13:00:00+01:00",
+      "sortTimestamp": 1778414400,
+      "status": "scheduled",
+      "home": "Fc São Luís",
+      "away": "Cf Os Armacenenses",
+      "homeScore": null,
+      "awayScore": null,
+      "displayDate": "10 mai",
+      "displayTime": "13:00",
+      "stadium": "Campo Horta Da Areia",
+      "lastUpdatedAt": "2026-05-10T10:55:47Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -4506,7 +4530,7 @@
       "fixtureId": "634976",
       "matchDateISO": "2026-05-10T16:00:00+01:00",
       "sortTimestamp": 1778425200,
-      "status": "unknown",
+      "status": "scheduled",
       "home": "Cf Os Armacenenses",
       "away": "Gd Lagoa",
       "homeScore": null,
@@ -4518,30 +4542,6 @@
       "sourceHealth": {
         "status": "degraded",
         "fallbackReuseCount": 4
-      }
-    },
-    {
-      "competitionKey": "juvenis",
-      "competitionTitle": "Juvenis - Sub17",
-      "competitionSubtitle": "Liga 2 Algarve Futebol (2ª Fase - Série 3)",
-      "competitionPage": "juvenis.html",
-      "competitionUrl": "juvenis.html#resultados-j14",
-      "roundNumber": 14,
-      "fixtureId": "626047",
-      "matchDateISO": "2026-05-10T20:00:00+01:00",
-      "sortTimestamp": 1778439600,
-      "status": "scheduled",
-      "home": "Fc São Luís",
-      "away": "Cf Os Armacenenses",
-      "homeScore": null,
-      "awayScore": null,
-      "displayDate": "10 mai",
-      "displayTime": "20:00",
-      "stadium": "Campo Horta Da Areia",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
-      "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
       }
     },
     {
@@ -4562,10 +4562,10 @@
       "displayDate": "15 mai",
       "displayTime": "20:00",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:54:48Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -4586,7 +4586,7 @@
       "displayDate": "16 mai",
       "displayTime": "09:00",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:32:52Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -4610,10 +4610,10 @@
       "displayDate": "16 mai",
       "displayTime": "09:00",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:47:41Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 11
       }
     },
     {
@@ -4634,7 +4634,7 @@
       "displayDate": "16 mai",
       "displayTime": "10:30",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:33:07Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -4658,10 +4658,10 @@
       "displayDate": "16 mai",
       "displayTime": "10:30",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:51:14Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -4682,7 +4682,7 @@
       "displayDate": "16 mai",
       "displayTime": "12:00",
       "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:33:37Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -4706,10 +4706,10 @@
       "displayDate": "16 mai",
       "displayTime": "12:00",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:40:29Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -4730,7 +4730,7 @@
       "displayDate": "16 mai",
       "displayTime": "17:00",
       "stadium": "Estádio Municipal Messines",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:44:10Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -4754,7 +4754,7 @@
       "displayDate": "16 mai",
       "displayTime": "18:30",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:35:47Z",
+      "lastUpdatedAt": "2026-05-10T10:44:43Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -4778,10 +4778,10 @@
       "displayDate": "17 mai",
       "displayTime": "09:00",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 13
       }
     },
     {
@@ -4802,7 +4802,7 @@
       "displayDate": "17 mai",
       "displayTime": "09:00",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:28Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -4826,10 +4826,10 @@
       "displayDate": "17 mai",
       "displayTime": "11:00",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:54:48Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -4874,10 +4874,10 @@
       "displayDate": "17 mai",
       "displayTime": "17:00",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 13
       }
     },
     {
@@ -4898,10 +4898,10 @@
       "displayDate": "18 mai",
       "displayTime": "18:30",
       "stadium": "Campo Complexo Desportivo Penha",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:36:55Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 12
       }
     },
     {
@@ -4922,7 +4922,7 @@
       "displayDate": "23 mai",
       "displayTime": "09:00",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:33:37Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -4946,10 +4946,10 @@
       "displayDate": "23 mai",
       "displayTime": "09:00",
       "stadium": "Campo Complexo Desportivo Penha",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:47:41Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 11
       }
     },
     {
@@ -4970,7 +4970,7 @@
       "displayDate": "23 mai",
       "displayTime": "10:30",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:32:52Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -4994,7 +4994,7 @@
       "displayDate": "23 mai",
       "displayTime": "10:30",
       "stadium": "Estádio Dr. Francisco Vieira",
-      "lastUpdatedAt": "2026-05-07T14:35:47Z",
+      "lastUpdatedAt": "2026-05-10T10:44:43Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -5018,7 +5018,7 @@
       "displayDate": "23 mai",
       "displayTime": "11:00",
       "stadium": "A Indicar",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:33:07Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -5042,10 +5042,10 @@
       "displayDate": "23 mai",
       "displayTime": "12:00",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:36:55Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 12
       }
     },
     {
@@ -5066,7 +5066,7 @@
       "displayDate": "23 mai",
       "displayTime": "17:00",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:44:10Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -5090,10 +5090,10 @@
       "displayDate": "24 mai",
       "displayTime": "11:00",
       "stadium": "Campo Municipal Aljezur",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 13
       }
     },
     {
@@ -5114,10 +5114,10 @@
       "displayDate": "24 mai",
       "displayTime": "11:00",
       "stadium": "Campo Montes Elois",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 13
       }
     },
     {
@@ -5138,10 +5138,10 @@
       "displayDate": "24 mai",
       "displayTime": "11:00",
       "stadium": "Parque Desportivo Municipal Estombar",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:54:48Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -5162,7 +5162,7 @@
       "displayDate": "24 mai",
       "displayTime": "11:00",
       "stadium": "Campo Municipal Aljezur",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:28Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -5210,7 +5210,7 @@
       "displayDate": "30 mai",
       "displayTime": "10:30",
       "stadium": "Campo Montes Elois",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:33:37Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -5234,10 +5234,10 @@
       "displayDate": "30 mai",
       "displayTime": "10:30",
       "stadium": "Estadio Municipal De Almancil",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:36:55Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 12
       }
     },
     {
@@ -5258,7 +5258,7 @@
       "displayDate": "30 mai",
       "displayTime": "17:00",
       "stadium": "Campo Horta Da Areia",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:44:10Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -5282,10 +5282,10 @@
       "displayDate": "31 mai",
       "displayTime": "11:00",
       "stadium": "A Indicar",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 13
       }
     },
     {
@@ -5306,10 +5306,10 @@
       "displayDate": "31 mai",
       "displayTime": "11:00",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 13
       }
     },
     {
@@ -5330,7 +5330,7 @@
       "displayDate": "31 mai",
       "displayTime": "11:00",
       "stadium": "A Indicar",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:28Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -5354,10 +5354,10 @@
       "displayDate": "31 mai",
       "displayTime": "16:00",
       "stadium": "Campo Complexo Desportivo Penha",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:54:48Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -5402,10 +5402,10 @@
       "displayDate": "6 jun",
       "displayTime": "11:00",
       "stadium": "Parque Desportivo Municipal Estombar",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 13
       }
     },
     {
@@ -5426,10 +5426,10 @@
       "displayDate": "6 jun",
       "displayTime": "11:00",
       "stadium": "Parque Desportivo Jd Monchiquense",
-      "lastUpdatedAt": "2026-05-08T18:18:11Z",
+      "lastUpdatedAt": "2026-05-10T10:43:52Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 13
       }
     },
     {
@@ -5450,10 +5450,10 @@
       "displayDate": "6 jun",
       "displayTime": "11:00",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:54:48Z",
       "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 14
       }
     },
     {
@@ -5474,7 +5474,7 @@
       "displayDate": "6 jun",
       "displayTime": "11:00",
       "stadium": "Parque Desportivo Jd Monchiquense",
-      "lastUpdatedAt": "2026-05-07T14:33:14Z",
+      "lastUpdatedAt": "2026-05-10T10:55:28Z",
       "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0

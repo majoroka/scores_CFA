@@ -1,7 +1,7 @@
 {
-    "defaultRoundIndex": 12,
-    "defaultRoundNumber": 13,
-    "lastUpdatedAt": "2026-05-07T14:33:14Z",
+    "defaultRoundIndex": 14,
+    "defaultRoundNumber": 15,
+    "lastUpdatedAt": "2026-05-10T10:33:37Z",
     "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0
@@ -30,15 +30,6 @@
                     "awayScore": 8
                 },
                 {
-                    "home": "Aef Monte Gordo 2019",
-                    "away": "Sc Olhanense",
-                    "date": "24 jan",
-                    "time": "",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": 14,
-                    "awayScore": 1
-                },
-                {
                     "home": "Nucleo Sporting C.P. Olhao",
                     "away": "Mexilhoeira Grande Fc",
                     "date": "24 jan",
@@ -46,6 +37,15 @@
                     "stadium": "Estádio Municipal Olhão",
                     "homeScore": 15,
                     "awayScore": 0
+                },
+                {
+                    "home": "Aef Monte Gordo 2019",
+                    "away": "Sc Olhanense",
+                    "date": "24 jan",
+                    "time": "",
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
+                    "homeScore": 14,
+                    "awayScore": 1
                 },
                 {
                     "home": "Aef Faro",
@@ -175,15 +175,6 @@
             "fixtureId": "635333",
             "matches": [
                 {
-                    "home": "Mexilhoeira Grande Fc",
-                    "away": "Aef Faro",
-                    "date": "31 jan",
-                    "time": "",
-                    "stadium": "Campo Municipal Mexilhoeira Grande",
-                    "homeScore": 0,
-                    "awayScore": 13
-                },
-                {
                     "home": "Cdr Quarteirense",
                     "away": "Cf Os Armacenenses",
                     "date": "31 jan",
@@ -191,6 +182,15 @@
                     "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": 0,
                     "awayScore": 5
+                },
+                {
+                    "home": "Mexilhoeira Grande Fc",
+                    "away": "Aef Faro",
+                    "date": "31 jan",
+                    "time": "",
+                    "stadium": "Campo Municipal Mexilhoeira Grande",
+                    "homeScore": 0,
+                    "awayScore": 13
                 },
                 {
                     "home": "Sc Olhanense",
@@ -338,15 +338,6 @@
             "fixtureId": "635334",
             "matches": [
                 {
-                    "home": "Vilamoura Saa",
-                    "away": "Aef Monte Gordo 2019",
-                    "date": "17 fev",
-                    "time": "",
-                    "stadium": "Campo Montes Elois",
-                    "homeScore": 4,
-                    "awayScore": 3
-                },
-                {
                     "home": "Aef Faro",
                     "away": "Sc Olhanense",
                     "date": "17 fev",
@@ -354,6 +345,15 @@
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 6,
                     "awayScore": 1
+                },
+                {
+                    "home": "Vilamoura Saa",
+                    "away": "Aef Monte Gordo 2019",
+                    "date": "17 fev",
+                    "time": "",
+                    "stadium": "Campo Montes Elois",
+                    "homeScore": 4,
+                    "awayScore": 3
                 },
                 {
                     "home": "Imortal Dc",
@@ -519,15 +519,6 @@
                     "awayScore": 12
                 },
                 {
-                    "home": "Cdr Quarteirense",
-                    "away": "Vilamoura Saa",
-                    "date": "14 fev",
-                    "time": "",
-                    "stadium": "Estadio Municipal Quarteira Nº 2",
-                    "homeScore": 5,
-                    "awayScore": 1
-                },
-                {
                     "home": "Aef Monte Gordo 2019",
                     "away": "Nucleo Sporting C.P. Olhao",
                     "date": "14 fev",
@@ -535,6 +526,15 @@
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": 1,
                     "awayScore": 6
+                },
+                {
+                    "home": "Cdr Quarteirense",
+                    "away": "Vilamoura Saa",
+                    "date": "14 fev",
+                    "time": "",
+                    "stadium": "Estadio Municipal Quarteira Nº 2",
+                    "homeScore": 5,
+                    "awayScore": 1
                 },
                 {
                     "home": "Gd Lagoa",
@@ -664,21 +664,21 @@
             "fixtureId": "635336",
             "matches": [
                 {
-                    "home": "Aef Faro",
-                    "away": "Aef Monte Gordo 2019",
-                    "date": "21 fev",
-                    "time": "",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": 10,
-                    "awayScore": 1
-                },
-                {
                     "home": "Imortal Dc",
                     "away": "Sc Olhanense",
                     "date": "21 fev",
                     "time": "",
                     "stadium": "Campo Da Palmeira Nº 2",
                     "homeScore": 5,
+                    "awayScore": 1
+                },
+                {
+                    "home": "Aef Faro",
+                    "away": "Aef Monte Gordo 2019",
+                    "date": "21 fev",
+                    "time": "",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": 10,
                     "awayScore": 1
                 },
                 {
@@ -703,10 +703,10 @@
                     "home": "Cdr Quarteirense",
                     "away": "Mexilhoeira Grande Fc",
                     "date": "2 mai",
-                    "time": "12:00",
+                    "time": "",
                     "stadium": "Estadio Municipal Quarteira Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 4,
+                    "awayScore": 5
                 }
             ],
             "classification": [
@@ -801,24 +801,24 @@
                 {
                     "position": 9,
                     "team": "Cdr Quarteirense",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 6,
-                    "goalsAgainst": 36,
+                    "losses": 4,
+                    "goalsFor": 10,
+                    "goalsAgainst": 41,
                     "points": 3
                 },
                 {
                     "position": 10,
                     "team": "Mexilhoeira Grande Fc",
-                    "played": 4,
-                    "wins": 0,
+                    "played": 5,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 4,
-                    "goalsFor": 6,
-                    "goalsAgainst": 49,
-                    "points": 0
+                    "goalsFor": 11,
+                    "goalsAgainst": 53,
+                    "points": 3
                 }
             ]
         },
@@ -854,15 +854,6 @@
                     "awayScore": 2
                 },
                 {
-                    "home": "Mexilhoeira Grande Fc",
-                    "away": "Vilamoura Saa",
-                    "date": "28 fev",
-                    "time": "",
-                    "stadium": "Campo Municipal Mexilhoeira Grande",
-                    "homeScore": 4,
-                    "awayScore": 6
-                },
-                {
                     "home": "Gd Lagoa",
                     "away": "Imortal Dc",
                     "date": "28 fev",
@@ -870,6 +861,15 @@
                     "stadium": "Campo De Futebol Sete - Espamol",
                     "homeScore": 1,
                     "awayScore": 0
+                },
+                {
+                    "home": "Mexilhoeira Grande Fc",
+                    "away": "Vilamoura Saa",
+                    "date": "28 fev",
+                    "time": "",
+                    "stadium": "Campo Municipal Mexilhoeira Grande",
+                    "homeScore": 4,
+                    "awayScore": 6
                 }
             ],
             "classification": [
@@ -964,24 +964,24 @@
                 {
                     "position": 9,
                     "team": "Cdr Quarteirense",
-                    "played": 5,
+                    "played": 6,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 6,
-                    "goalsAgainst": 46,
+                    "losses": 5,
+                    "goalsFor": 10,
+                    "goalsAgainst": 51,
                     "points": 3
                 },
                 {
                     "position": 10,
                     "team": "Mexilhoeira Grande Fc",
-                    "played": 5,
-                    "wins": 0,
+                    "played": 6,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 5,
-                    "goalsFor": 10,
-                    "goalsAgainst": 55,
-                    "points": 0
+                    "goalsFor": 15,
+                    "goalsAgainst": 59,
+                    "points": 3
                 }
             ]
         },
@@ -1017,15 +1017,6 @@
                     "awayScore": 11
                 },
                 {
-                    "home": "Mexilhoeira Grande Fc",
-                    "away": "Sc Olhanense",
-                    "date": "7 mar",
-                    "time": "",
-                    "stadium": "Campo Municipal Mexilhoeira Grande",
-                    "homeScore": 2,
-                    "awayScore": 11
-                },
-                {
                     "home": "Imortal Dc",
                     "away": "Aef Monte Gordo 2019",
                     "date": "7 mar",
@@ -1033,6 +1024,15 @@
                     "stadium": "Campo Da Palmeira Nº 2",
                     "homeScore": 11,
                     "awayScore": 2
+                },
+                {
+                    "home": "Mexilhoeira Grande Fc",
+                    "away": "Sc Olhanense",
+                    "date": "7 mar",
+                    "time": "",
+                    "stadium": "Campo Municipal Mexilhoeira Grande",
+                    "homeScore": 2,
+                    "awayScore": 11
                 }
             ],
             "classification": [
@@ -1127,24 +1127,24 @@
                 {
                     "position": 9,
                     "team": "Cdr Quarteirense",
-                    "played": 6,
+                    "played": 7,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 10,
-                    "goalsAgainst": 53,
+                    "losses": 6,
+                    "goalsFor": 14,
+                    "goalsAgainst": 58,
                     "points": 3
                 },
                 {
                     "position": 10,
                     "team": "Mexilhoeira Grande Fc",
-                    "played": 6,
-                    "wins": 0,
+                    "played": 7,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 6,
-                    "goalsFor": 12,
-                    "goalsAgainst": 66,
-                    "points": 0
+                    "goalsFor": 17,
+                    "goalsAgainst": 70,
+                    "points": 3
                 }
             ]
         },
@@ -1152,15 +1152,6 @@
             "index": 8,
             "fixtureId": "635339",
             "matches": [
-                {
-                    "home": "Aef Monte Gordo 2019",
-                    "away": "Cdr Quarteirense",
-                    "date": "14 mar",
-                    "time": "",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": 7,
-                    "awayScore": 2
-                },
                 {
                     "home": "Gd Lagoa",
                     "away": "Mexilhoeira Grande Fc",
@@ -1178,6 +1169,15 @@
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 9,
                     "awayScore": 0
+                },
+                {
+                    "home": "Aef Monte Gordo 2019",
+                    "away": "Cdr Quarteirense",
+                    "date": "14 mar",
+                    "time": "",
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
+                    "homeScore": 7,
+                    "awayScore": 2
                 },
                 {
                     "home": "Vilamoura Saa",
@@ -1290,24 +1290,24 @@
                 {
                     "position": 9,
                     "team": "Cdr Quarteirense",
-                    "played": 7,
+                    "played": 8,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 12,
-                    "goalsAgainst": 60,
+                    "losses": 7,
+                    "goalsFor": 16,
+                    "goalsAgainst": 65,
                     "points": 3
                 },
                 {
                     "position": 10,
                     "team": "Mexilhoeira Grande Fc",
-                    "played": 7,
-                    "wins": 0,
+                    "played": 8,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 7,
-                    "goalsFor": 18,
-                    "goalsAgainst": 75,
-                    "points": 0
+                    "goalsFor": 23,
+                    "goalsAgainst": 79,
+                    "points": 3
                 }
             ]
         },
@@ -1325,15 +1325,6 @@
                     "awayScore": 0
                 },
                 {
-                    "home": "Sc Olhanense",
-                    "away": "Gd Lagoa",
-                    "date": "21 mar",
-                    "time": "",
-                    "stadium": "Estádio José Arcanjo",
-                    "homeScore": 2,
-                    "awayScore": 2
-                },
-                {
                     "home": "Mexilhoeira Grande Fc",
                     "away": "Aef Monte Gordo 2019",
                     "date": "21 mar",
@@ -1341,6 +1332,15 @@
                     "stadium": "Campo Municipal Mexilhoeira Grande",
                     "homeScore": 4,
                     "awayScore": 6
+                },
+                {
+                    "home": "Sc Olhanense",
+                    "away": "Gd Lagoa",
+                    "date": "21 mar",
+                    "time": "",
+                    "stadium": "Estádio José Arcanjo",
+                    "homeScore": 2,
+                    "awayScore": 2
                 },
                 {
                     "home": "Cdr Quarteirense",
@@ -1452,25 +1452,25 @@
                 },
                 {
                     "position": 9,
-                    "team": "Cdr Quarteirense",
-                    "played": 8,
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 9,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 7,
-                    "goalsFor": 12,
-                    "goalsAgainst": 71,
+                    "losses": 8,
+                    "goalsFor": 27,
+                    "goalsAgainst": 85,
                     "points": 3
                 },
                 {
                     "position": 10,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 8,
-                    "wins": 0,
+                    "team": "Cdr Quarteirense",
+                    "played": 9,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 8,
-                    "goalsFor": 22,
-                    "goalsAgainst": 81,
-                    "points": 0
+                    "goalsFor": 16,
+                    "goalsAgainst": 76,
+                    "points": 3
                 }
             ]
         },
@@ -1615,25 +1615,25 @@
                 },
                 {
                     "position": 9,
-                    "team": "Cdr Quarteirense",
-                    "played": 9,
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 10,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 8,
-                    "goalsFor": 13,
-                    "goalsAgainst": 84,
+                    "losses": 9,
+                    "goalsFor": 29,
+                    "goalsAgainst": 94,
                     "points": 3
                 },
                 {
                     "position": 10,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 9,
-                    "wins": 0,
+                    "team": "Cdr Quarteirense",
+                    "played": 10,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 9,
-                    "goalsFor": 24,
-                    "goalsAgainst": 90,
-                    "points": 0
+                    "goalsFor": 17,
+                    "goalsAgainst": 89,
+                    "points": 3
                 }
             ]
         },
@@ -1778,25 +1778,25 @@
                 },
                 {
                     "position": 9,
-                    "team": "Cdr Quarteirense",
-                    "played": 10,
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 11,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 9,
-                    "goalsFor": 16,
-                    "goalsAgainst": 90,
+                    "losses": 10,
+                    "goalsFor": 31,
+                    "goalsAgainst": 103,
                     "points": 3
                 },
                 {
                     "position": 10,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 10,
-                    "wins": 0,
+                    "team": "Cdr Quarteirense",
+                    "played": 11,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 10,
-                    "goalsFor": 26,
-                    "goalsAgainst": 99,
-                    "points": 0
+                    "goalsFor": 20,
+                    "goalsAgainst": 95,
+                    "points": 3
                 }
             ]
         },
@@ -1804,15 +1804,6 @@
             "index": 12,
             "fixtureId": "635343",
             "matches": [
-                {
-                    "home": "Gd Lagoa",
-                    "away": "Nucleo Sporting C.P. Olhao",
-                    "date": "18 abr",
-                    "time": "",
-                    "stadium": "Campo De Futebol Sete - Espamol",
-                    "homeScore": 3,
-                    "awayScore": 5
-                },
                 {
                     "home": "Sc Olhanense",
                     "away": "Aef Faro",
@@ -1823,15 +1814,6 @@
                     "awayScore": 4
                 },
                 {
-                    "home": "Aef Monte Gordo 2019",
-                    "away": "Vilamoura Saa",
-                    "date": "18 abr",
-                    "time": "",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": 6,
-                    "awayScore": 1
-                },
-                {
                     "home": "Cdr Quarteirense",
                     "away": "Imortal Dc",
                     "date": "18 abr",
@@ -1839,6 +1821,24 @@
                     "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": 2,
                     "awayScore": 11
+                },
+                {
+                    "home": "Gd Lagoa",
+                    "away": "Nucleo Sporting C.P. Olhao",
+                    "date": "18 abr",
+                    "time": "",
+                    "stadium": "Campo De Futebol Sete - Espamol",
+                    "homeScore": 3,
+                    "awayScore": 5
+                },
+                {
+                    "home": "Aef Monte Gordo 2019",
+                    "away": "Vilamoura Saa",
+                    "date": "18 abr",
+                    "time": "",
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
+                    "homeScore": 6,
+                    "awayScore": 1
                 },
                 {
                     "home": "Mexilhoeira Grande Fc",
@@ -1941,25 +1941,25 @@
                 },
                 {
                     "position": 9,
-                    "team": "Cdr Quarteirense",
-                    "played": 11,
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 12,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 10,
-                    "goalsFor": 18,
-                    "goalsAgainst": 101,
+                    "losses": 11,
+                    "goalsFor": 36,
+                    "goalsAgainst": 110,
                     "points": 3
                 },
                 {
                     "position": 10,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 11,
-                    "wins": 0,
+                    "team": "Cdr Quarteirense",
+                    "played": 12,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 11,
-                    "goalsFor": 31,
+                    "goalsFor": 22,
                     "goalsAgainst": 106,
-                    "points": 0
+                    "points": 3
                 }
             ]
         },
@@ -1986,15 +1986,6 @@
                     "awayScore": 3
                 },
                 {
-                    "home": "Vilamoura Saa",
-                    "away": "Cdr Quarteirense",
-                    "date": "25 abr",
-                    "time": "",
-                    "stadium": "Campo Montes Elois",
-                    "homeScore": 4,
-                    "awayScore": 4
-                },
-                {
                     "home": "Imortal Dc",
                     "away": "Mexilhoeira Grande Fc",
                     "date": "25 abr",
@@ -2004,13 +1995,22 @@
                     "awayScore": 0
                 },
                 {
+                    "home": "Vilamoura Saa",
+                    "away": "Cdr Quarteirense",
+                    "date": "25 abr",
+                    "time": "",
+                    "stadium": "Campo Montes Elois",
+                    "homeScore": 4,
+                    "awayScore": 4
+                },
+                {
                     "home": "Nucleo Sporting C.P. Olhao",
                     "away": "Aef Monte Gordo 2019",
                     "date": "25 abr",
-                    "time": "15:00",
+                    "time": "",
                     "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 4,
+                    "awayScore": 1
                 }
             ],
             "classification": [
@@ -2038,6 +2038,17 @@
                 },
                 {
                     "position": 3,
+                    "team": "Nucleo Sporting C.P. Olhao",
+                    "played": 13,
+                    "wins": 8,
+                    "draws": 0,
+                    "losses": 5,
+                    "goalsFor": 87,
+                    "goalsAgainst": 36,
+                    "points": 24
+                },
+                {
+                    "position": 4,
                     "team": "Cf Os Armacenenses",
                     "played": 13,
                     "wins": 8,
@@ -2048,7 +2059,7 @@
                     "points": 24
                 },
                 {
-                    "position": 4,
+                    "position": 5,
                     "team": "Sc Olhanense",
                     "played": 13,
                     "wins": 7,
@@ -2059,25 +2070,14 @@
                     "points": 22
                 },
                 {
-                    "position": 5,
-                    "team": "Nucleo Sporting C.P. Olhao",
-                    "played": 12,
-                    "wins": 7,
-                    "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 83,
-                    "goalsAgainst": 35,
-                    "points": 21
-                },
-                {
                     "position": 6,
                     "team": "Aef Monte Gordo 2019",
-                    "played": 12,
+                    "played": 13,
                     "wins": 6,
                     "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 57,
-                    "goalsAgainst": 51,
+                    "losses": 7,
+                    "goalsFor": 58,
+                    "goalsAgainst": 55,
                     "points": 18
                 },
                 {
@@ -2105,24 +2105,24 @@
                 {
                     "position": 9,
                     "team": "Cdr Quarteirense",
-                    "played": 12,
+                    "played": 13,
                     "wins": 1,
                     "draws": 1,
-                    "losses": 10,
-                    "goalsFor": 22,
-                    "goalsAgainst": 105,
+                    "losses": 11,
+                    "goalsFor": 26,
+                    "goalsAgainst": 110,
                     "points": 4
                 },
                 {
                     "position": 10,
                     "team": "Mexilhoeira Grande Fc",
-                    "played": 12,
-                    "wins": 0,
+                    "played": 13,
+                    "wins": 1,
                     "draws": 0,
                     "losses": 12,
-                    "goalsFor": 31,
-                    "goalsAgainst": 124,
-                    "points": 0
+                    "goalsFor": 36,
+                    "goalsAgainst": 128,
+                    "points": 3
                 }
             ]
         },
@@ -2140,152 +2140,152 @@
                     "awayScore": 1
                 },
                 {
-                    "home": "Gd Lagoa",
-                    "away": "Cf Os Armacenenses",
-                    "date": "2 mai",
-                    "time": "10:30",
-                    "stadium": "Campo De Futebol Sete - Espamol",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Sc Olhanense",
                     "away": "Imortal Dc",
                     "date": "2 mai",
-                    "time": "10:30",
+                    "time": "",
                     "stadium": "Estádio José Arcanjo",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 5,
+                    "awayScore": 1
+                },
+                {
+                    "home": "Gd Lagoa",
+                    "away": "Cf Os Armacenenses",
+                    "date": "2 mai",
+                    "time": "",
+                    "stadium": "Campo De Futebol Sete - Espamol",
+                    "homeScore": 1,
+                    "awayScore": 14
                 },
                 {
                     "home": "Aef Monte Gordo 2019",
                     "away": "Aef Faro",
                     "date": "2 mai",
-                    "time": "11:00",
+                    "time": "",
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 1,
+                    "awayScore": 17
                 },
                 {
                     "home": "Nucleo Sporting C.P. Olhao",
                     "away": "Vilamoura Saa",
                     "date": "2 mai",
-                    "time": "12:00",
+                    "time": "",
                     "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 9,
+                    "awayScore": 0
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Aef Faro",
-                    "played": 13,
-                    "wins": 13,
+                    "played": 14,
+                    "wins": 14,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 126,
-                    "goalsAgainst": 15,
-                    "points": 39
+                    "goalsFor": 143,
+                    "goalsAgainst": 16,
+                    "points": 42
                 },
                 {
                     "position": 2,
                     "team": "Imortal Dc",
-                    "played": 13,
+                    "played": 14,
                     "wins": 11,
                     "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 106,
-                    "goalsAgainst": 25,
+                    "losses": 3,
+                    "goalsFor": 107,
+                    "goalsAgainst": 30,
                     "points": 33
                 },
                 {
                     "position": 3,
-                    "team": "Cf Os Armacenenses",
-                    "played": 13,
-                    "wins": 8,
+                    "team": "Nucleo Sporting C.P. Olhao",
+                    "played": 14,
+                    "wins": 9,
                     "draws": 0,
                     "losses": 5,
-                    "goalsFor": 62,
-                    "goalsAgainst": 49,
-                    "points": 24
+                    "goalsFor": 96,
+                    "goalsAgainst": 36,
+                    "points": 27
                 },
                 {
                     "position": 4,
-                    "team": "Sc Olhanense",
-                    "played": 13,
-                    "wins": 7,
-                    "draws": 1,
+                    "team": "Cf Os Armacenenses",
+                    "played": 14,
+                    "wins": 9,
+                    "draws": 0,
                     "losses": 5,
-                    "goalsFor": 59,
-                    "goalsAgainst": 51,
-                    "points": 22
+                    "goalsFor": 76,
+                    "goalsAgainst": 50,
+                    "points": 27
                 },
                 {
                     "position": 5,
-                    "team": "Nucleo Sporting C.P. Olhao",
-                    "played": 12,
-                    "wins": 7,
-                    "draws": 0,
+                    "team": "Sc Olhanense",
+                    "played": 14,
+                    "wins": 8,
+                    "draws": 1,
                     "losses": 5,
-                    "goalsFor": 83,
-                    "goalsAgainst": 35,
-                    "points": 21
+                    "goalsFor": 64,
+                    "goalsAgainst": 52,
+                    "points": 25
                 },
                 {
                     "position": 6,
                     "team": "Aef Monte Gordo 2019",
-                    "played": 12,
+                    "played": 14,
                     "wins": 6,
                     "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 57,
-                    "goalsAgainst": 51,
+                    "losses": 8,
+                    "goalsFor": 59,
+                    "goalsAgainst": 72,
                     "points": 18
                 },
                 {
                     "position": 7,
                     "team": "Gd Lagoa",
-                    "played": 13,
+                    "played": 14,
                     "wins": 4,
                     "draws": 1,
-                    "losses": 8,
-                    "goalsFor": 43,
-                    "goalsAgainst": 78,
+                    "losses": 9,
+                    "goalsFor": 44,
+                    "goalsAgainst": 92,
                     "points": 13
                 },
                 {
                     "position": 8,
                     "team": "Vilamoura Saa",
-                    "played": 13,
+                    "played": 14,
                     "wins": 4,
                     "draws": 1,
-                    "losses": 8,
+                    "losses": 9,
                     "goalsFor": 25,
-                    "goalsAgainst": 81,
+                    "goalsAgainst": 90,
                     "points": 13
                 },
                 {
                     "position": 9,
                     "team": "Cdr Quarteirense",
-                    "played": 13,
+                    "played": 14,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 10,
-                    "goalsFor": 23,
-                    "goalsAgainst": 106,
+                    "losses": 11,
+                    "goalsFor": 27,
+                    "goalsAgainst": 111,
                     "points": 5
                 },
                 {
                     "position": 10,
                     "team": "Mexilhoeira Grande Fc",
-                    "played": 13,
-                    "wins": 0,
+                    "played": 14,
+                    "wins": 1,
                     "draws": 1,
                     "losses": 12,
-                    "goalsFor": 32,
-                    "goalsAgainst": 125,
-                    "points": 1
+                    "goalsFor": 37,
+                    "goalsAgainst": 129,
+                    "points": 4
                 }
             ]
         },
@@ -2297,19 +2297,10 @@
                     "home": "Imortal Dc",
                     "away": "Gd Lagoa",
                     "date": "9 mai",
-                    "time": "10:30",
+                    "time": "",
                     "stadium": "Campo Da Palmeira Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Aef Monte Gordo 2019",
-                    "date": "9 mai",
-                    "time": "10:30",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 11,
+                    "awayScore": 2
                 },
                 {
                     "home": "Cdr Quarteirense",
@@ -2319,6 +2310,15 @@
                     "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Aef Monte Gordo 2019",
+                    "date": "9 mai",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 6,
+                    "awayScore": 0
                 },
                 {
                     "home": "Vilamoura Saa",
@@ -2343,112 +2343,112 @@
                 {
                     "position": 1,
                     "team": "Aef Faro",
-                    "played": 13,
-                    "wins": 13,
+                    "played": 14,
+                    "wins": 14,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 126,
-                    "goalsAgainst": 15,
-                    "points": 39
+                    "goalsFor": 143,
+                    "goalsAgainst": 16,
+                    "points": 42
                 },
                 {
                     "position": 2,
                     "team": "Imortal Dc",
-                    "played": 13,
-                    "wins": 11,
+                    "played": 15,
+                    "wins": 12,
                     "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 106,
-                    "goalsAgainst": 25,
-                    "points": 33
+                    "losses": 3,
+                    "goalsFor": 118,
+                    "goalsAgainst": 32,
+                    "points": 36
                 },
                 {
                     "position": 3,
                     "team": "Cf Os Armacenenses",
-                    "played": 13,
-                    "wins": 8,
+                    "played": 15,
+                    "wins": 10,
                     "draws": 0,
                     "losses": 5,
-                    "goalsFor": 62,
-                    "goalsAgainst": 49,
-                    "points": 24
+                    "goalsFor": 82,
+                    "goalsAgainst": 50,
+                    "points": 30
                 },
                 {
                     "position": 4,
-                    "team": "Sc Olhanense",
-                    "played": 13,
-                    "wins": 7,
-                    "draws": 1,
+                    "team": "Nucleo Sporting C.P. Olhao",
+                    "played": 14,
+                    "wins": 9,
+                    "draws": 0,
                     "losses": 5,
-                    "goalsFor": 59,
-                    "goalsAgainst": 51,
-                    "points": 22
+                    "goalsFor": 96,
+                    "goalsAgainst": 36,
+                    "points": 27
                 },
                 {
                     "position": 5,
-                    "team": "Nucleo Sporting C.P. Olhao",
-                    "played": 12,
-                    "wins": 7,
-                    "draws": 0,
+                    "team": "Sc Olhanense",
+                    "played": 14,
+                    "wins": 8,
+                    "draws": 1,
                     "losses": 5,
-                    "goalsFor": 83,
-                    "goalsAgainst": 35,
-                    "points": 21
+                    "goalsFor": 64,
+                    "goalsAgainst": 52,
+                    "points": 25
                 },
                 {
                     "position": 6,
                     "team": "Aef Monte Gordo 2019",
-                    "played": 12,
+                    "played": 15,
                     "wins": 6,
                     "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 57,
-                    "goalsAgainst": 51,
+                    "losses": 9,
+                    "goalsFor": 59,
+                    "goalsAgainst": 78,
                     "points": 18
                 },
                 {
                     "position": 7,
                     "team": "Gd Lagoa",
-                    "played": 13,
+                    "played": 15,
                     "wins": 4,
                     "draws": 1,
-                    "losses": 8,
-                    "goalsFor": 43,
-                    "goalsAgainst": 78,
+                    "losses": 10,
+                    "goalsFor": 46,
+                    "goalsAgainst": 103,
                     "points": 13
                 },
                 {
                     "position": 8,
                     "team": "Vilamoura Saa",
-                    "played": 13,
+                    "played": 14,
                     "wins": 4,
                     "draws": 1,
-                    "losses": 8,
+                    "losses": 9,
                     "goalsFor": 25,
-                    "goalsAgainst": 81,
+                    "goalsAgainst": 90,
                     "points": 13
                 },
                 {
                     "position": 9,
                     "team": "Cdr Quarteirense",
-                    "played": 13,
+                    "played": 14,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 10,
-                    "goalsFor": 23,
-                    "goalsAgainst": 106,
+                    "losses": 11,
+                    "goalsFor": 27,
+                    "goalsAgainst": 111,
                     "points": 5
                 },
                 {
                     "position": 10,
                     "team": "Mexilhoeira Grande Fc",
-                    "played": 13,
-                    "wins": 0,
+                    "played": 14,
+                    "wins": 1,
                     "draws": 1,
                     "losses": 12,
-                    "goalsFor": 32,
-                    "goalsAgainst": 125,
-                    "points": 1
+                    "goalsFor": 37,
+                    "goalsAgainst": 129,
+                    "points": 4
                 }
             ]
         },
@@ -2459,11 +2459,11 @@
                 {
                     "home": "Aef Faro",
                     "away": "Vilamoura Saa",
-                    "date": "16 mai",
-                    "time": "10:30",
+                    "date": "30 abr",
+                    "time": "",
                     "stadium": "Campo Montes Elois",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 13,
+                    "awayScore": 2
                 },
                 {
                     "home": "Aef Monte Gordo 2019",
@@ -2506,112 +2506,112 @@
                 {
                     "position": 1,
                     "team": "Aef Faro",
-                    "played": 13,
-                    "wins": 13,
+                    "played": 15,
+                    "wins": 15,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 126,
-                    "goalsAgainst": 15,
-                    "points": 39
+                    "goalsFor": 156,
+                    "goalsAgainst": 18,
+                    "points": 45
                 },
                 {
                     "position": 2,
                     "team": "Imortal Dc",
-                    "played": 13,
-                    "wins": 11,
+                    "played": 15,
+                    "wins": 12,
                     "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 106,
-                    "goalsAgainst": 25,
-                    "points": 33
+                    "losses": 3,
+                    "goalsFor": 118,
+                    "goalsAgainst": 32,
+                    "points": 36
                 },
                 {
                     "position": 3,
                     "team": "Cf Os Armacenenses",
-                    "played": 13,
-                    "wins": 8,
+                    "played": 15,
+                    "wins": 10,
                     "draws": 0,
                     "losses": 5,
-                    "goalsFor": 62,
-                    "goalsAgainst": 49,
-                    "points": 24
+                    "goalsFor": 82,
+                    "goalsAgainst": 50,
+                    "points": 30
                 },
                 {
                     "position": 4,
-                    "team": "Sc Olhanense",
-                    "played": 13,
-                    "wins": 7,
-                    "draws": 1,
+                    "team": "Nucleo Sporting C.P. Olhao",
+                    "played": 14,
+                    "wins": 9,
+                    "draws": 0,
                     "losses": 5,
-                    "goalsFor": 59,
-                    "goalsAgainst": 51,
-                    "points": 22
+                    "goalsFor": 96,
+                    "goalsAgainst": 36,
+                    "points": 27
                 },
                 {
                     "position": 5,
-                    "team": "Nucleo Sporting C.P. Olhao",
-                    "played": 12,
-                    "wins": 7,
-                    "draws": 0,
+                    "team": "Sc Olhanense",
+                    "played": 14,
+                    "wins": 8,
+                    "draws": 1,
                     "losses": 5,
-                    "goalsFor": 83,
-                    "goalsAgainst": 35,
-                    "points": 21
+                    "goalsFor": 64,
+                    "goalsAgainst": 52,
+                    "points": 25
                 },
                 {
                     "position": 6,
                     "team": "Aef Monte Gordo 2019",
-                    "played": 12,
+                    "played": 15,
                     "wins": 6,
                     "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 57,
-                    "goalsAgainst": 51,
+                    "losses": 9,
+                    "goalsFor": 59,
+                    "goalsAgainst": 78,
                     "points": 18
                 },
                 {
                     "position": 7,
                     "team": "Gd Lagoa",
-                    "played": 13,
+                    "played": 15,
                     "wins": 4,
                     "draws": 1,
-                    "losses": 8,
-                    "goalsFor": 43,
-                    "goalsAgainst": 78,
+                    "losses": 10,
+                    "goalsFor": 46,
+                    "goalsAgainst": 103,
                     "points": 13
                 },
                 {
                     "position": 8,
                     "team": "Vilamoura Saa",
-                    "played": 13,
+                    "played": 15,
                     "wins": 4,
                     "draws": 1,
-                    "losses": 8,
-                    "goalsFor": 25,
-                    "goalsAgainst": 81,
+                    "losses": 10,
+                    "goalsFor": 27,
+                    "goalsAgainst": 103,
                     "points": 13
                 },
                 {
                     "position": 9,
                     "team": "Cdr Quarteirense",
-                    "played": 13,
+                    "played": 14,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 10,
-                    "goalsFor": 23,
-                    "goalsAgainst": 106,
+                    "losses": 11,
+                    "goalsFor": 27,
+                    "goalsAgainst": 111,
                     "points": 5
                 },
                 {
                     "position": 10,
                     "team": "Mexilhoeira Grande Fc",
-                    "played": 13,
-                    "wins": 0,
+                    "played": 14,
+                    "wins": 1,
                     "draws": 1,
                     "losses": 12,
-                    "goalsFor": 32,
-                    "goalsAgainst": 125,
-                    "points": 1
+                    "goalsFor": 37,
+                    "goalsAgainst": 129,
+                    "points": 4
                 }
             ]
         },
@@ -2629,29 +2629,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Sc Olhanense",
-                    "away": "Vilamoura Saa",
-                    "date": "23 mai",
-                    "time": "10:30",
-                    "stadium": "Estádio José Arcanjo",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Mexilhoeira Grande Fc",
                     "away": "Gd Lagoa",
                     "date": "23 mai",
                     "time": "10:30",
                     "stadium": "Campo Municipal Mexilhoeira Grande",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Cdr Quarteirense",
-                    "away": "Aef Monte Gordo 2019",
-                    "date": "23 mai",
-                    "time": "10:30",
-                    "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2663,118 +2645,136 @@
                     "stadium": "Campo Da Palmeira Nº 2",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Sc Olhanense",
+                    "away": "Vilamoura Saa",
+                    "date": "23 mai",
+                    "time": "10:30",
+                    "stadium": "Estádio José Arcanjo",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cdr Quarteirense",
+                    "away": "Aef Monte Gordo 2019",
+                    "date": "23 mai",
+                    "time": "10:30",
+                    "stadium": "Estadio Municipal Quarteira Nº 2",
+                    "homeScore": null,
+                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Aef Faro",
-                    "played": 13,
-                    "wins": 13,
+                    "played": 15,
+                    "wins": 15,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 126,
-                    "goalsAgainst": 15,
-                    "points": 39
+                    "goalsFor": 156,
+                    "goalsAgainst": 18,
+                    "points": 45
                 },
                 {
                     "position": 2,
                     "team": "Imortal Dc",
-                    "played": 13,
-                    "wins": 11,
+                    "played": 15,
+                    "wins": 12,
                     "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 106,
-                    "goalsAgainst": 25,
-                    "points": 33
+                    "losses": 3,
+                    "goalsFor": 118,
+                    "goalsAgainst": 32,
+                    "points": 36
                 },
                 {
                     "position": 3,
                     "team": "Cf Os Armacenenses",
-                    "played": 13,
-                    "wins": 8,
+                    "played": 15,
+                    "wins": 10,
                     "draws": 0,
                     "losses": 5,
-                    "goalsFor": 62,
-                    "goalsAgainst": 49,
-                    "points": 24
+                    "goalsFor": 82,
+                    "goalsAgainst": 50,
+                    "points": 30
                 },
                 {
                     "position": 4,
-                    "team": "Sc Olhanense",
-                    "played": 13,
-                    "wins": 7,
-                    "draws": 1,
+                    "team": "Nucleo Sporting C.P. Olhao",
+                    "played": 14,
+                    "wins": 9,
+                    "draws": 0,
                     "losses": 5,
-                    "goalsFor": 59,
-                    "goalsAgainst": 51,
-                    "points": 22
+                    "goalsFor": 96,
+                    "goalsAgainst": 36,
+                    "points": 27
                 },
                 {
                     "position": 5,
-                    "team": "Nucleo Sporting C.P. Olhao",
-                    "played": 12,
-                    "wins": 7,
-                    "draws": 0,
+                    "team": "Sc Olhanense",
+                    "played": 14,
+                    "wins": 8,
+                    "draws": 1,
                     "losses": 5,
-                    "goalsFor": 83,
-                    "goalsAgainst": 35,
-                    "points": 21
+                    "goalsFor": 64,
+                    "goalsAgainst": 52,
+                    "points": 25
                 },
                 {
                     "position": 6,
                     "team": "Aef Monte Gordo 2019",
-                    "played": 12,
+                    "played": 15,
                     "wins": 6,
                     "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 57,
-                    "goalsAgainst": 51,
+                    "losses": 9,
+                    "goalsFor": 59,
+                    "goalsAgainst": 78,
                     "points": 18
                 },
                 {
                     "position": 7,
                     "team": "Gd Lagoa",
-                    "played": 13,
+                    "played": 15,
                     "wins": 4,
                     "draws": 1,
-                    "losses": 8,
-                    "goalsFor": 43,
-                    "goalsAgainst": 78,
+                    "losses": 10,
+                    "goalsFor": 46,
+                    "goalsAgainst": 103,
                     "points": 13
                 },
                 {
                     "position": 8,
                     "team": "Vilamoura Saa",
-                    "played": 13,
+                    "played": 15,
                     "wins": 4,
                     "draws": 1,
-                    "losses": 8,
-                    "goalsFor": 25,
-                    "goalsAgainst": 81,
+                    "losses": 10,
+                    "goalsFor": 27,
+                    "goalsAgainst": 103,
                     "points": 13
                 },
                 {
                     "position": 9,
                     "team": "Cdr Quarteirense",
-                    "played": 13,
+                    "played": 14,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 10,
-                    "goalsFor": 23,
-                    "goalsAgainst": 106,
+                    "losses": 11,
+                    "goalsFor": 27,
+                    "goalsAgainst": 111,
                     "points": 5
                 },
                 {
                     "position": 10,
                     "team": "Mexilhoeira Grande Fc",
-                    "played": 13,
-                    "wins": 0,
+                    "played": 14,
+                    "wins": 1,
                     "draws": 1,
                     "losses": 12,
-                    "goalsFor": 32,
-                    "goalsAgainst": 125,
-                    "points": 1
+                    "goalsFor": 37,
+                    "goalsAgainst": 129,
+                    "points": 4
                 }
             ]
         },
@@ -2783,20 +2783,11 @@
             "fixtureId": "635353",
             "matches": [
                 {
-                    "home": "Nucleo Sporting C.P. Olhao",
-                    "away": "Cdr Quarteirense",
+                    "home": "Gd Lagoa",
+                    "away": "Sc Olhanense",
                     "date": "30 mai",
                     "time": "10:30",
-                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Vilamoura Saa",
-                    "away": "Cf Os Armacenenses",
-                    "date": "30 mai",
-                    "time": "10:30",
-                    "stadium": "Campo Montes Elois",
+                    "stadium": "Campo De Futebol Sete - Espamol",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2810,11 +2801,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Gd Lagoa",
-                    "away": "Sc Olhanense",
+                    "home": "Nucleo Sporting C.P. Olhao",
+                    "away": "Cdr Quarteirense",
                     "date": "30 mai",
                     "time": "10:30",
-                    "stadium": "Campo De Futebol Sete - Espamol",
+                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2826,118 +2817,127 @@
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Vilamoura Saa",
+                    "away": "Cf Os Armacenenses",
+                    "date": "30 mai",
+                    "time": "10:30",
+                    "stadium": "Campo Montes Elois",
+                    "homeScore": null,
+                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Aef Faro",
-                    "played": 13,
-                    "wins": 13,
+                    "played": 15,
+                    "wins": 15,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 126,
-                    "goalsAgainst": 15,
-                    "points": 39
+                    "goalsFor": 156,
+                    "goalsAgainst": 18,
+                    "points": 45
                 },
                 {
                     "position": 2,
                     "team": "Imortal Dc",
-                    "played": 13,
-                    "wins": 11,
+                    "played": 15,
+                    "wins": 12,
                     "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 106,
-                    "goalsAgainst": 25,
-                    "points": 33
+                    "losses": 3,
+                    "goalsFor": 118,
+                    "goalsAgainst": 32,
+                    "points": 36
                 },
                 {
                     "position": 3,
                     "team": "Cf Os Armacenenses",
-                    "played": 13,
-                    "wins": 8,
+                    "played": 15,
+                    "wins": 10,
                     "draws": 0,
                     "losses": 5,
-                    "goalsFor": 62,
-                    "goalsAgainst": 49,
-                    "points": 24
+                    "goalsFor": 82,
+                    "goalsAgainst": 50,
+                    "points": 30
                 },
                 {
                     "position": 4,
-                    "team": "Sc Olhanense",
-                    "played": 13,
-                    "wins": 7,
-                    "draws": 1,
+                    "team": "Nucleo Sporting C.P. Olhao",
+                    "played": 14,
+                    "wins": 9,
+                    "draws": 0,
                     "losses": 5,
-                    "goalsFor": 59,
-                    "goalsAgainst": 51,
-                    "points": 22
+                    "goalsFor": 96,
+                    "goalsAgainst": 36,
+                    "points": 27
                 },
                 {
                     "position": 5,
-                    "team": "Nucleo Sporting C.P. Olhao",
-                    "played": 12,
-                    "wins": 7,
-                    "draws": 0,
+                    "team": "Sc Olhanense",
+                    "played": 14,
+                    "wins": 8,
+                    "draws": 1,
                     "losses": 5,
-                    "goalsFor": 83,
-                    "goalsAgainst": 35,
-                    "points": 21
+                    "goalsFor": 64,
+                    "goalsAgainst": 52,
+                    "points": 25
                 },
                 {
                     "position": 6,
                     "team": "Aef Monte Gordo 2019",
-                    "played": 12,
+                    "played": 15,
                     "wins": 6,
                     "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 57,
-                    "goalsAgainst": 51,
+                    "losses": 9,
+                    "goalsFor": 59,
+                    "goalsAgainst": 78,
                     "points": 18
                 },
                 {
                     "position": 7,
                     "team": "Gd Lagoa",
-                    "played": 13,
+                    "played": 15,
                     "wins": 4,
                     "draws": 1,
-                    "losses": 8,
-                    "goalsFor": 43,
-                    "goalsAgainst": 78,
+                    "losses": 10,
+                    "goalsFor": 46,
+                    "goalsAgainst": 103,
                     "points": 13
                 },
                 {
                     "position": 8,
                     "team": "Vilamoura Saa",
-                    "played": 13,
+                    "played": 15,
                     "wins": 4,
                     "draws": 1,
-                    "losses": 8,
-                    "goalsFor": 25,
-                    "goalsAgainst": 81,
+                    "losses": 10,
+                    "goalsFor": 27,
+                    "goalsAgainst": 103,
                     "points": 13
                 },
                 {
                     "position": 9,
                     "team": "Cdr Quarteirense",
-                    "played": 13,
+                    "played": 14,
                     "wins": 1,
                     "draws": 2,
-                    "losses": 10,
-                    "goalsFor": 23,
-                    "goalsAgainst": 106,
+                    "losses": 11,
+                    "goalsFor": 27,
+                    "goalsAgainst": 111,
                     "points": 5
                 },
                 {
                     "position": 10,
                     "team": "Mexilhoeira Grande Fc",
-                    "played": 13,
-                    "wins": 0,
+                    "played": 14,
+                    "wins": 1,
                     "draws": 1,
                     "losses": 12,
-                    "goalsFor": 32,
-                    "goalsAgainst": 125,
-                    "points": 1
+                    "goalsFor": 37,
+                    "goalsAgainst": 129,
+                    "points": 4
                 }
             ]
         }

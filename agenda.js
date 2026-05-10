@@ -998,8 +998,6 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             renderList(listResultados, summaryResultados, matches);
         }
-        void hydrateMatchesFromCompetitionPayloads(currentToken);
-        void hydrateVisibleMatches(currentToken);
     };
 
     const loadFreshData = async () => {
