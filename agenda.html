@@ -41,6 +41,8 @@
                         </div>
                         <div class="agenda-range-picker__nav">
                             <button type="button" id="date-range-prev" class="agenda-range-nav" aria-label="Mês anterior">‹</button>
+                            <select id="date-range-month-select" class="agenda-range-select" aria-label="Selecionar mês"></select>
+                            <select id="date-range-year-select" class="agenda-range-select agenda-range-select--year" aria-label="Selecionar ano"></select>
                             <button type="button" id="date-range-next" class="agenda-range-nav" aria-label="Mês seguinte">›</button>
                         </div>
                         <div class="agenda-range-inputs">
@@ -55,6 +57,7 @@
                         </div>
                         <div id="date-range-calendars" class="agenda-range-picker__calendars"></div>
                         <div class="agenda-range-picker__actions">
+                            <button type="button" id="date-range-clear" class="agenda-range-action agenda-range-action--secondary">Limpar</button>
                             <button type="button" id="date-range-cancel" class="agenda-range-action agenda-range-action--secondary">Cancelar</button>
                             <button type="button" id="date-range-apply" class="agenda-range-action">OK</button>
                         </div>

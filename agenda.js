@@ -13,7 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const dateRangeCalendars = document.getElementById('date-range-calendars');
     const dateRangePrev = document.getElementById('date-range-prev');
     const dateRangeNext = document.getElementById('date-range-next');
+    const dateRangeMonthSelect = document.getElementById('date-range-month-select');
+    const dateRangeYearSelect = document.getElementById('date-range-year-select');
     const dateRangeApply = document.getElementById('date-range-apply');
+    const dateRangeClear = document.getElementById('date-range-clear');
     const dateRangeCancel = document.getElementById('date-range-cancel');
     const dateRangeClose = document.getElementById('date-range-picker-close');
     const dateRangeStartInput = document.getElementById('date-range-start-input');
@@ -28,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const CALENDAR_CACHE_MAX_AGE_MS = 30 * 60 * 1000;
     const COMPETITION_CACHE_MAX_AGE_MS = 2 * 60 * 60 * 1000;
     const MONTH_LABELS = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
-    const WEEKDAY_LABELS = ['S', 'T', 'Q', 'Q', 'S', 'S', 'D'];
+    const WEEKDAY_LABELS = ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom'];
     const LIVE_DATA_ENDPOINT = 'https://resultados.fpf.pt/Competition/GetClassificationAndMatchesByFixture?fixtureId=';
     const LIVE_DATA_SOURCES = [
         (fixtureId) => `${LIVE_DATA_ENDPOINT}${fixtureId}`,
@@ -41,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let crestsData = null;
     let selectedRange = { start: null, end: null };
     let draftRange = { start: null, end: null };
+    let hasAppliedRange = false;
     let pickerMonth = null;
     let renderToken = 0;
     const remoteRoundCache = new Map();
@@ -383,11 +387,19 @@ document.addEventListener('DOMContentLoaded', () => {
             start: start ? createDateAtMidday(start) : null,
             end: end ? createDateAtMidday(end) : null,
         };
+        hasAppliedRange = Boolean(selectedRange.start && selectedRange.end);
         updateRangeTrigger();
     };
 
     const updateRangeTrigger = () => {
         dateRangeTrigger.textContent = formatRangeLabel(selectedRange);
+    };
+
+    const clearSelectedRange = () => {
+        selectedRange = { start: null, end: null };
+        draftRange = { start: null, end: null };
+        hasAppliedRange = false;
+        updateRangeTrigger();
     };
 
     const formatPickerSummary = (range) => {
@@ -526,8 +538,10 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const openDateRangePicker = () => {
-        draftRange = cloneRange(selectedRange);
         const today = createDateAtMidday(new Date());
+        draftRange = hasAppliedRange
+            ? cloneRange(selectedRange)
+            : { start: today, end: today };
         pickerMonth = new Date((draftRange.start || today).getFullYear(), (draftRange.start || today).getMonth(), 1, 12, 0, 0, 0);
         dateRangeStartInput.value = draftRange.start ? formatInputDate(draftRange.start) : '';
         dateRangeEndInput.value = draftRange.end ? formatInputDate(draftRange.end) : '';
@@ -565,7 +579,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const cells = [];
 
         for (let index = 0; index < startingWeekday; index += 1) {
-            cells.push('<span class="agenda-calendar__cell agenda-calendar__cell--empty" aria-hidden="true"></span>');
+            const previousMonthDate = new Date(year, month, index - startingWeekday + 1, 12, 0, 0, 0);
+            cells.push(`<span class="agenda-calendar__cell agenda-calendar__cell--outside" aria-hidden="true">${previousMonthDate.getDate()}</span>`);
         }
 
         for (let day = 1; day <= daysInMonth; day += 1) {
@@ -587,9 +602,14 @@ document.addEventListener('DOMContentLoaded', () => {
             );
         }
 
+        const filledCells = startingWeekday + daysInMonth;
+        const trailingCells = (7 - (filledCells % 7)) % 7;
+        for (let index = 1; index <= trailingCells; index += 1) {
+            cells.push(`<span class="agenda-calendar__cell agenda-calendar__cell--outside" aria-hidden="true">${index}</span>`);
+        }
+
         return `
             <section class="agenda-calendar">
-                <header class="agenda-calendar__header">${MONTH_LABELS[month]} ${year}</header>
                 <div class="agenda-calendar__weekdays">
                     ${WEEKDAY_LABELS.map((label) => `<span>${label}</span>`).join('')}
                 </div>
@@ -602,10 +622,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const renderDateRangePicker = () => {
         dateRangePickerSummary.textContent = formatPickerSummary(draftRange);
-        dateRangeCalendars.innerHTML = [
-            renderSingleCalendarMonth(pickerMonth),
-            renderSingleCalendarMonth(addMonths(pickerMonth, 1)),
-        ].join('');
+        dateRangeMonthSelect.innerHTML = MONTH_LABELS.map((label, index) => (
+            `<option value="${index}" ${index === pickerMonth.getMonth() ? 'selected' : ''}>${label.charAt(0).toUpperCase()}${label.slice(1)}</option>`
+        )).join('');
+
+        const currentYear = new Date().getFullYear();
+        const yearOptions = [];
+        for (let year = currentYear - 2; year <= currentYear + 2; year += 1) {
+            yearOptions.push(
+                `<option value="${year}" ${year === pickerMonth.getFullYear() ? 'selected' : ''}>${year}</option>`
+            );
+        }
+        dateRangeYearSelect.innerHTML = yearOptions.join('');
+        dateRangeCalendars.innerHTML = renderSingleCalendarMonth(pickerMonth);
     };
 
     const updateDraftRangeFromInputs = () => {
@@ -662,22 +691,6 @@ document.addEventListener('DOMContentLoaded', () => {
         render();
     };
 
-    const ensureDefaultFilters = () => {
-        const today = new Date();
-        today.setHours(0, 0, 0, 0);
-        if (!selectedRange.start || !selectedRange.end) {
-            if (activeTab === 'resultados') {
-                const start = new Date(today);
-                start.setDate(today.getDate() - 6);
-                setSelectedRange(start, today);
-            } else {
-                const end = new Date(today);
-                end.setDate(today.getDate() + 6);
-                setSelectedRange(today, end);
-            }
-        }
-    };
-
     const populateCompetitionFilter = () => {
         if (!calendarData || !Array.isArray(calendarData.competitions)) return;
         const currentValue = competitionSelect.value;
@@ -693,6 +706,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const renderDataStatus = () => {
         if (!calendarData) {
+            dataStatus.classList.add('hidden');
+            dataStatus.innerHTML = '';
+            return;
+        }
+        if (!hasAppliedRange) {
             dataStatus.classList.add('hidden');
             dataStatus.innerHTML = '';
             return;
@@ -732,11 +750,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const setActiveTab = (nextTab) => {
         activeTab = nextTab === 'resultados' ? 'resultados' : 'proximos';
         updateTabsUI();
-        ensureDefaultFilters();
         history.replaceState(null, '', `#${activeTab}`);
     };
 
     const getDateRange = () => {
+        if (!hasAppliedRange || !selectedRange.start || !selectedRange.end) {
+            return { start: null, end: null };
+        }
         const start = startOfDay(selectedRange.start);
         const end = endOfDay(selectedRange.end);
         return { start, end };
@@ -752,6 +772,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const getCandidateMatches = () => {
         if (!calendarData || !Array.isArray(calendarData.matches)) return [];
+        if (!hasAppliedRange) return [];
         const { start, end } = getDateRange();
         const competitionKey = competitionSelect.value;
 
@@ -952,6 +973,11 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const renderList = (container, summary, matches) => {
+        if (!hasAppliedRange) {
+            summary.textContent = '';
+            container.innerHTML = '<p class="agenda-empty-state">Seleciona um período no calendário para ver jogos.</p>';
+            return;
+        }
         if (!matches.length) {
             summary.textContent = 'Sem jogos para os filtros selecionados.';
             container.innerHTML = '<p class="agenda-empty-state">Nenhum jogo encontrado.</p>';
@@ -990,8 +1016,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const render = () => {
         renderToken += 1;
-        const currentToken = renderToken;
-        ensureDefaultFilters();
+        renderDataStatus();
         const matches = getFilteredMatches();
         if (activeTab === 'proximos') {
             renderList(listProximos, summaryProximos, matches);
@@ -1109,6 +1134,16 @@ document.addEventListener('DOMContentLoaded', () => {
         renderDateRangePicker();
     });
 
+    dateRangeMonthSelect.addEventListener('change', () => {
+        pickerMonth = new Date(pickerMonth.getFullYear(), Number.parseInt(dateRangeMonthSelect.value, 10), 1, 12, 0, 0, 0);
+        renderDateRangePicker();
+    });
+
+    dateRangeYearSelect.addEventListener('change', () => {
+        pickerMonth = new Date(Number.parseInt(dateRangeYearSelect.value, 10), pickerMonth.getMonth(), 1, 12, 0, 0, 0);
+        renderDateRangePicker();
+    });
+
     dateRangeCalendars.addEventListener('click', (event) => {
         const button = event.target.closest('[data-date]');
         if (!button) return;
@@ -1131,8 +1166,17 @@ document.addEventListener('DOMContentLoaded', () => {
         render();
     });
 
+    dateRangeClear.addEventListener('click', () => {
+        clearSelectedRange();
+        closeDateRangePicker();
+        renderDataStatus();
+        render();
+    });
+
     const dismissRangePicker = () => {
-        draftRange = cloneRange(selectedRange);
+        draftRange = hasAppliedRange
+            ? cloneRange(selectedRange)
+            : { start: null, end: null };
         closeDateRangePicker();
     };
 
