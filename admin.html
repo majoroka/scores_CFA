@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estado dos Dados - CF Os Armacenenses</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="details-header">
+        <a href="index.html" class="back-button" aria-label="Voltar à lista de competições">
+            <img src="img/seta.png" alt="Voltar">
+        </a>
+        <div class="competition-title">
+            <img src="img/logo.png" alt="Logo CF Os Armacenenses" class="competition-logo">
+            <h1>Estado dos Dados <small>Diagnóstico global das competições</small></h1>
+        </div>
+    </header>
+
+    <main class="container admin-page">
+        <div class="data-status hidden" id="admin-data-status" aria-live="polite"></div>
+
+        <section class="admin-summary-grid" id="admin-summary-grid">
+            <article class="admin-summary-card">
+                <span class="admin-summary-card__label">Competições</span>
+                <strong class="admin-summary-card__value">-</strong>
+            </article>
+            <article class="admin-summary-card">
+                <span class="admin-summary-card__label">OK</span>
+                <strong class="admin-summary-card__value">-</strong>
+            </article>
+            <article class="admin-summary-card">
+                <span class="admin-summary-card__label">Partial</span>
+                <strong class="admin-summary-card__value">-</strong>
+            </article>
+            <article class="admin-summary-card">
+                <span class="admin-summary-card__label">Degraded</span>
+                <strong class="admin-summary-card__value">-</strong>
+            </article>
+        </section>
+
+        <section class="admin-table-wrapper">
+            <table class="admin-status-table">
+                <thead>
+                    <tr>
+                        <th>Competição</th>
+                        <th>Estado</th>
+                        <th>Atualizado</th>
+                        <th>Fallbacks</th>
+                        <th>Sem score</th>
+                        <th>Jogos</th>
+                        <th>Equipas</th>
+                    </tr>
+                </thead>
+                <tbody id="admin-status-body">
+                    <tr>
+                        <td colspan="7">A carregar estado das competições...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
