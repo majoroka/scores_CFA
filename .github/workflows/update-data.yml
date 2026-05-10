@@ -37,7 +37,7 @@ env:
   PREMATCH_WINDOW_HOURS: "3"
   ACTIVE_RESULT_WINDOW_DAYS: "2"
   HISTORICAL_LOOKBACK_DAYS: "14"
-  ACTIVE_RETRY_DELAYS_MINUTES: "5,10"
+  ACTIVE_RETRY_DELAYS_MINUTES: "5,10,20,40"
 
 jobs:
   build:
@@ -65,7 +65,7 @@ jobs:
         run: python plan_fetchers.py
 
       - name: Correr fetchers selecionados com retries e validacao
-        timeout-minutes: 70
+        timeout-minutes: 180
         run: |
           python - <<'PY'
           import json
