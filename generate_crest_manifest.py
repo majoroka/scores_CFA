@@ -4,6 +4,9 @@ import unicodedata
 
 CRESTS_DIR = "img/crests"
 OUTPUT_FILE = "data/crests.json"
+IGNORED_CREST_KEYS = {
+    "apagar",
+}
 
 def _strip_diacritics(text: str) -> str:
     return ''.join(
@@ -30,6 +33,8 @@ def main():
     for filename in os.listdir(CRESTS_DIR):
         if filename.lower().endswith('.png'):
             normalized = normalize_name(filename)
+            if normalized in IGNORED_CREST_KEYS:
+                continue
             path = f"{CRESTS_DIR}/{filename}"
             crest_map[normalized] = path
 
