@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-11T14:13:23Z",
+  "generatedAt": "2026-05-11T14:37:36Z",
   "competitionCount": 15,
   "matchCount": 220,
   "competitions": [
@@ -23,13 +23,11 @@
       "subtitle": "Liga Algarve Futebol (Fase de Campeão)",
       "pagePath": "juniores.html",
       "outputFile": "data/juniores.json",
-      "lastUpdatedAt": "2026-05-11T14:12:18Z",
+      "lastUpdatedAt": "2026-05-11T14:37:28Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 634962: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       },
       "roundCount": 18
     },
@@ -39,7 +37,7 @@
       "subtitle": "Liga 2 Algarve Futebol (2ª Fase - Série 3)",
       "pagePath": "juvenis.html",
       "outputFile": "data/juvenis.json",
-      "lastUpdatedAt": "2026-05-11T14:13:09Z",
+      "lastUpdatedAt": "2026-05-11T14:36:42Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -53,7 +51,7 @@
       "subtitle": "Liga 2 Algarve Futebol (Fase de Campeão)",
       "pagePath": "iniciados-a.html",
       "outputFile": "data/iniciados-a.json",
-      "lastUpdatedAt": "2026-05-11T14:01:11Z",
+      "lastUpdatedAt": "2026-05-11T14:24:30Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -67,13 +65,11 @@
       "subtitle": "Liga 2 Algarve Futebol (2ª Fase - Série 7)",
       "pagePath": "iniciados-b.html",
       "outputFile": "data/iniciados-b.json",
-      "lastUpdatedAt": "2026-05-11T14:03:04Z",
+      "lastUpdatedAt": "2026-05-11T14:25:39Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 641043: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       },
       "roundCount": 14
     },
@@ -167,30 +163,11 @@
       "subtitle": "Liga Algarve Futebol 7 (2ª Fase – Série 6)",
       "pagePath": "benjamins-bb.html",
       "outputFile": "data/benjamins-bb.json",
-      "lastUpdatedAt": "2026-05-11T13:32:57Z",
+      "lastUpdatedAt": "2026-05-11T14:23:02Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 18,
-        "issues": [
-          "fixture 635360: fallback to existing round",
-          "fixture 635361: fallback to existing round",
-          "fixture 635362: fallback to existing round",
-          "fixture 635364: fallback to existing round",
-          "fixture 635366: fallback to existing round",
-          "fixture 635369: fallback to existing round",
-          "fixture 635372: fallback to existing round",
-          "fixture 635375: fallback to existing round",
-          "fixture 635377: fallback to existing round",
-          "fixture 635379: fallback to existing round",
-          "fixture 635380: fallback to existing round",
-          "fixture 635381: fallback to existing round",
-          "fixture 635384: fallback to existing round",
-          "fixture 635386: fallback to existing round",
-          "fixture 635389: fallback to existing round",
-          "fixture 635391: fallback to existing round",
-          "fixture 635394: fallback to existing round",
-          "fixture 635397: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       },
       "roundCount": 18
     },
@@ -214,7 +191,7 @@
       "subtitle": "Liga 2 Algarve Futebol (2ª Fase - Série 7)",
       "pagePath": "feminino-sub17.html",
       "outputFile": "data/feminino-sub17.json",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -228,7 +205,7 @@
       "subtitle": "Liga Algarve Futebol 9 (2ª Fase – Série 4)",
       "pagePath": "feminino-sub15.html",
       "outputFile": "data/feminino-sub15.json",
-      "lastUpdatedAt": "2026-05-11T13:59:53Z",
+      "lastUpdatedAt": "2026-05-11T14:23:31Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -281,7 +258,7 @@
       "displayDate": "10 jan",
       "displayTime": "",
       "stadium": "Estádio Nora Nº 2",
-      "lastUpdatedAt": "2026-05-11T13:59:53Z",
+      "lastUpdatedAt": "2026-05-11T14:23:31Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -356,7 +333,7 @@
       "displayDate": "11 jan",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:13:09Z",
+      "lastUpdatedAt": "2026-05-11T14:36:42Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -381,7 +358,7 @@
       "displayDate": "17 jan",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T13:59:53Z",
+      "lastUpdatedAt": "2026-05-11T14:23:31Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -456,7 +433,7 @@
       "displayDate": "18 jan",
       "displayTime": "",
       "stadium": "Parque Desp. Joaquim António Teixeira",
-      "lastUpdatedAt": "2026-05-11T14:13:09Z",
+      "lastUpdatedAt": "2026-05-11T14:36:42Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -506,30 +483,11 @@
       "displayDate": "24 jan",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T13:32:57Z",
+      "lastUpdatedAt": "2026-05-11T14:23:02Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 18,
-        "issues": [
-          "fixture 635360: fallback to existing round",
-          "fixture 635361: fallback to existing round",
-          "fixture 635362: fallback to existing round",
-          "fixture 635364: fallback to existing round",
-          "fixture 635366: fallback to existing round",
-          "fixture 635369: fallback to existing round",
-          "fixture 635372: fallback to existing round",
-          "fixture 635375: fallback to existing round",
-          "fixture 635377: fallback to existing round",
-          "fixture 635379: fallback to existing round",
-          "fixture 635380: fallback to existing round",
-          "fixture 635381: fallback to existing round",
-          "fixture 635384: fallback to existing round",
-          "fixture 635386: fallback to existing round",
-          "fixture 635389: fallback to existing round",
-          "fixture 635391: fallback to existing round",
-          "fixture 635394: fallback to existing round",
-          "fixture 635397: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -550,7 +508,7 @@
       "displayDate": "24 jan",
       "displayTime": "",
       "stadium": "Parque Desportivo Municipal Estombar",
-      "lastUpdatedAt": "2026-05-11T13:59:53Z",
+      "lastUpdatedAt": "2026-05-11T14:23:31Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -650,13 +608,11 @@
       "displayDate": "25 jan",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:12:18Z",
+      "lastUpdatedAt": "2026-05-11T14:37:28Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 634962: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -677,7 +633,7 @@
       "displayDate": "25 jan",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:13:09Z",
+      "lastUpdatedAt": "2026-05-11T14:36:42Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -727,30 +683,11 @@
       "displayDate": "31 jan",
       "displayTime": "",
       "stadium": "Campo Eiras",
-      "lastUpdatedAt": "2026-05-11T13:32:57Z",
+      "lastUpdatedAt": "2026-05-11T14:23:02Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 18,
-        "issues": [
-          "fixture 635360: fallback to existing round",
-          "fixture 635361: fallback to existing round",
-          "fixture 635362: fallback to existing round",
-          "fixture 635364: fallback to existing round",
-          "fixture 635366: fallback to existing round",
-          "fixture 635369: fallback to existing round",
-          "fixture 635372: fallback to existing round",
-          "fixture 635375: fallback to existing round",
-          "fixture 635377: fallback to existing round",
-          "fixture 635379: fallback to existing round",
-          "fixture 635380: fallback to existing round",
-          "fixture 635381: fallback to existing round",
-          "fixture 635384: fallback to existing round",
-          "fixture 635386: fallback to existing round",
-          "fixture 635389: fallback to existing round",
-          "fixture 635391: fallback to existing round",
-          "fixture 635394: fallback to existing round",
-          "fixture 635397: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -846,13 +783,11 @@
       "displayDate": "1 fev",
       "displayTime": "",
       "stadium": "Estádio Nora Nº 2",
-      "lastUpdatedAt": "2026-05-11T14:12:18Z",
+      "lastUpdatedAt": "2026-05-11T14:37:28Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 634962: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -873,7 +808,7 @@
       "displayDate": "1 fev",
       "displayTime": "",
       "stadium": "Complexo Desportivo 1º Maio",
-      "lastUpdatedAt": "2026-05-11T14:13:09Z",
+      "lastUpdatedAt": "2026-05-11T14:36:42Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -923,13 +858,11 @@
       "displayDate": "8 fev",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:12:18Z",
+      "lastUpdatedAt": "2026-05-11T14:37:28Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 634962: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -950,7 +883,7 @@
       "displayDate": "8 fev",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:13:09Z",
+      "lastUpdatedAt": "2026-05-11T14:36:42Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -1000,30 +933,11 @@
       "displayDate": "14 fev",
       "displayTime": "",
       "stadium": "Estádio Dr. Francisco Vieira",
-      "lastUpdatedAt": "2026-05-11T13:32:57Z",
+      "lastUpdatedAt": "2026-05-11T14:23:02Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 18,
-        "issues": [
-          "fixture 635360: fallback to existing round",
-          "fixture 635361: fallback to existing round",
-          "fixture 635362: fallback to existing round",
-          "fixture 635364: fallback to existing round",
-          "fixture 635366: fallback to existing round",
-          "fixture 635369: fallback to existing round",
-          "fixture 635372: fallback to existing round",
-          "fixture 635375: fallback to existing round",
-          "fixture 635377: fallback to existing round",
-          "fixture 635379: fallback to existing round",
-          "fixture 635380: fallback to existing round",
-          "fixture 635381: fallback to existing round",
-          "fixture 635384: fallback to existing round",
-          "fixture 635386: fallback to existing round",
-          "fixture 635389: fallback to existing round",
-          "fixture 635391: fallback to existing round",
-          "fixture 635394: fallback to existing round",
-          "fixture 635397: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -1069,7 +983,7 @@
       "displayDate": "14 fev",
       "displayTime": "",
       "stadium": "Estadio Municipal Quarteira Nº 2",
-      "lastUpdatedAt": "2026-05-11T13:59:53Z",
+      "lastUpdatedAt": "2026-05-11T14:23:31Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -1169,13 +1083,11 @@
       "displayDate": "15 fev",
       "displayTime": "",
       "stadium": "Estadio Municipal De Almancil",
-      "lastUpdatedAt": "2026-05-11T14:12:18Z",
+      "lastUpdatedAt": "2026-05-11T14:37:28Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 634962: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -1196,30 +1108,11 @@
       "displayDate": "17 fev",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T13:32:57Z",
+      "lastUpdatedAt": "2026-05-11T14:23:02Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 18,
-        "issues": [
-          "fixture 635360: fallback to existing round",
-          "fixture 635361: fallback to existing round",
-          "fixture 635362: fallback to existing round",
-          "fixture 635364: fallback to existing round",
-          "fixture 635366: fallback to existing round",
-          "fixture 635369: fallback to existing round",
-          "fixture 635372: fallback to existing round",
-          "fixture 635375: fallback to existing round",
-          "fixture 635377: fallback to existing round",
-          "fixture 635379: fallback to existing round",
-          "fixture 635380: fallback to existing round",
-          "fixture 635381: fallback to existing round",
-          "fixture 635384: fallback to existing round",
-          "fixture 635386: fallback to existing round",
-          "fixture 635389: fallback to existing round",
-          "fixture 635391: fallback to existing round",
-          "fixture 635394: fallback to existing round",
-          "fixture 635397: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -1265,30 +1158,11 @@
       "displayDate": "21 fev",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T13:32:57Z",
+      "lastUpdatedAt": "2026-05-11T14:23:02Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 18,
-        "issues": [
-          "fixture 635360: fallback to existing round",
-          "fixture 635361: fallback to existing round",
-          "fixture 635362: fallback to existing round",
-          "fixture 635364: fallback to existing round",
-          "fixture 635366: fallback to existing round",
-          "fixture 635369: fallback to existing round",
-          "fixture 635372: fallback to existing round",
-          "fixture 635375: fallback to existing round",
-          "fixture 635377: fallback to existing round",
-          "fixture 635379: fallback to existing round",
-          "fixture 635380: fallback to existing round",
-          "fixture 635381: fallback to existing round",
-          "fixture 635384: fallback to existing round",
-          "fixture 635386: fallback to existing round",
-          "fixture 635389: fallback to existing round",
-          "fixture 635391: fallback to existing round",
-          "fixture 635394: fallback to existing round",
-          "fixture 635397: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -1334,7 +1208,7 @@
       "displayDate": "21 fev",
       "displayTime": "",
       "stadium": "Campo Complexo Desportivo Penha",
-      "lastUpdatedAt": "2026-05-11T13:59:53Z",
+      "lastUpdatedAt": "2026-05-11T14:23:31Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -1434,13 +1308,11 @@
       "displayDate": "22 fev",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:12:18Z",
+      "lastUpdatedAt": "2026-05-11T14:37:28Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 634962: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -1461,7 +1333,7 @@
       "displayDate": "22 fev",
       "displayTime": "",
       "stadium": "Estádio Municipal De Lagos N.º 2",
-      "lastUpdatedAt": "2026-05-11T14:13:09Z",
+      "lastUpdatedAt": "2026-05-11T14:36:42Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -1561,30 +1433,11 @@
       "displayDate": "28 fev",
       "displayTime": "",
       "stadium": "Campo Da Palmeira Nº 2",
-      "lastUpdatedAt": "2026-05-11T13:32:57Z",
+      "lastUpdatedAt": "2026-05-11T14:23:02Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 18,
-        "issues": [
-          "fixture 635360: fallback to existing round",
-          "fixture 635361: fallback to existing round",
-          "fixture 635362: fallback to existing round",
-          "fixture 635364: fallback to existing round",
-          "fixture 635366: fallback to existing round",
-          "fixture 635369: fallback to existing round",
-          "fixture 635372: fallback to existing round",
-          "fixture 635375: fallback to existing round",
-          "fixture 635377: fallback to existing round",
-          "fixture 635379: fallback to existing round",
-          "fixture 635380: fallback to existing round",
-          "fixture 635381: fallback to existing round",
-          "fixture 635384: fallback to existing round",
-          "fixture 635386: fallback to existing round",
-          "fixture 635389: fallback to existing round",
-          "fixture 635391: fallback to existing round",
-          "fixture 635394: fallback to existing round",
-          "fixture 635397: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -1605,7 +1458,7 @@
       "displayDate": "28 fev",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T13:59:53Z",
+      "lastUpdatedAt": "2026-05-11T14:23:31Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -1705,7 +1558,7 @@
       "displayDate": "1 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -1730,7 +1583,7 @@
       "displayDate": "1 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:01:11Z",
+      "lastUpdatedAt": "2026-05-11T14:24:30Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -1755,13 +1608,11 @@
       "displayDate": "1 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:03:04Z",
+      "lastUpdatedAt": "2026-05-11T14:25:39Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 641043: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -1782,13 +1633,11 @@
       "displayDate": "1 mar",
       "displayTime": "",
       "stadium": "Parque Desportivo Municipal Estombar",
-      "lastUpdatedAt": "2026-05-11T14:12:18Z",
+      "lastUpdatedAt": "2026-05-11T14:37:28Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 634962: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -1809,7 +1658,7 @@
       "displayDate": "1 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:13:09Z",
+      "lastUpdatedAt": "2026-05-11T14:36:42Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -1934,30 +1783,11 @@
       "displayDate": "7 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T13:32:57Z",
+      "lastUpdatedAt": "2026-05-11T14:23:02Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 18,
-        "issues": [
-          "fixture 635360: fallback to existing round",
-          "fixture 635361: fallback to existing round",
-          "fixture 635362: fallback to existing round",
-          "fixture 635364: fallback to existing round",
-          "fixture 635366: fallback to existing round",
-          "fixture 635369: fallback to existing round",
-          "fixture 635372: fallback to existing round",
-          "fixture 635375: fallback to existing round",
-          "fixture 635377: fallback to existing round",
-          "fixture 635379: fallback to existing round",
-          "fixture 635380: fallback to existing round",
-          "fixture 635381: fallback to existing round",
-          "fixture 635384: fallback to existing round",
-          "fixture 635386: fallback to existing round",
-          "fixture 635389: fallback to existing round",
-          "fixture 635391: fallback to existing round",
-          "fixture 635394: fallback to existing round",
-          "fixture 635397: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -2053,7 +1883,7 @@
       "displayDate": "8 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -2078,7 +1908,7 @@
       "displayDate": "8 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Messines",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -2103,7 +1933,7 @@
       "displayDate": "8 mar",
       "displayTime": "",
       "stadium": "Estadio Municipal De Almancil",
-      "lastUpdatedAt": "2026-05-11T14:01:11Z",
+      "lastUpdatedAt": "2026-05-11T14:24:30Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -2128,13 +1958,11 @@
       "displayDate": "8 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Messines",
-      "lastUpdatedAt": "2026-05-11T14:03:04Z",
+      "lastUpdatedAt": "2026-05-11T14:25:39Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 641043: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -2155,13 +1983,11 @@
       "displayDate": "8 mar",
       "displayTime": "",
       "stadium": "Estádio José Arcanjo",
-      "lastUpdatedAt": "2026-05-11T14:12:18Z",
+      "lastUpdatedAt": "2026-05-11T14:37:28Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 634962: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -2182,7 +2008,7 @@
       "displayDate": "8 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Messines",
-      "lastUpdatedAt": "2026-05-11T14:13:09Z",
+      "lastUpdatedAt": "2026-05-11T14:36:42Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -2282,30 +2108,11 @@
       "displayDate": "14 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal De Lagos N.º 2",
-      "lastUpdatedAt": "2026-05-11T13:32:57Z",
+      "lastUpdatedAt": "2026-05-11T14:23:02Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 18,
-        "issues": [
-          "fixture 635360: fallback to existing round",
-          "fixture 635361: fallback to existing round",
-          "fixture 635362: fallback to existing round",
-          "fixture 635364: fallback to existing round",
-          "fixture 635366: fallback to existing round",
-          "fixture 635369: fallback to existing round",
-          "fixture 635372: fallback to existing round",
-          "fixture 635375: fallback to existing round",
-          "fixture 635377: fallback to existing round",
-          "fixture 635379: fallback to existing round",
-          "fixture 635380: fallback to existing round",
-          "fixture 635381: fallback to existing round",
-          "fixture 635384: fallback to existing round",
-          "fixture 635386: fallback to existing round",
-          "fixture 635389: fallback to existing round",
-          "fixture 635391: fallback to existing round",
-          "fixture 635394: fallback to existing round",
-          "fixture 635397: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -2326,7 +2133,7 @@
       "displayDate": "14 mar",
       "displayTime": "",
       "stadium": "Campo De Futebol Municipal De Tavira",
-      "lastUpdatedAt": "2026-05-11T13:59:53Z",
+      "lastUpdatedAt": "2026-05-11T14:23:31Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -2401,7 +2208,7 @@
       "displayDate": "15 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -2426,7 +2233,7 @@
       "displayDate": "15 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -2451,7 +2258,7 @@
       "displayDate": "15 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:01:11Z",
+      "lastUpdatedAt": "2026-05-11T14:24:30Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -2476,13 +2283,11 @@
       "displayDate": "15 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:03:04Z",
+      "lastUpdatedAt": "2026-05-11T14:25:39Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 641043: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -2503,13 +2308,11 @@
       "displayDate": "15 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:12:18Z",
+      "lastUpdatedAt": "2026-05-11T14:37:28Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 634962: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -2555,30 +2358,11 @@
       "displayDate": "21 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T13:32:57Z",
+      "lastUpdatedAt": "2026-05-11T14:23:02Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 18,
-        "issues": [
-          "fixture 635360: fallback to existing round",
-          "fixture 635361: fallback to existing round",
-          "fixture 635362: fallback to existing round",
-          "fixture 635364: fallback to existing round",
-          "fixture 635366: fallback to existing round",
-          "fixture 635369: fallback to existing round",
-          "fixture 635372: fallback to existing round",
-          "fixture 635375: fallback to existing round",
-          "fixture 635377: fallback to existing round",
-          "fixture 635379: fallback to existing round",
-          "fixture 635380: fallback to existing round",
-          "fixture 635381: fallback to existing round",
-          "fixture 635384: fallback to existing round",
-          "fixture 635386: fallback to existing round",
-          "fixture 635389: fallback to existing round",
-          "fixture 635391: fallback to existing round",
-          "fixture 635394: fallback to existing round",
-          "fixture 635397: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -2599,7 +2383,7 @@
       "displayDate": "21 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T13:59:53Z",
+      "lastUpdatedAt": "2026-05-11T14:23:31Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -2698,7 +2482,7 @@
       "displayDate": "22 mar",
       "displayTime": "",
       "stadium": "Campo Horta Da Areia",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -2723,7 +2507,7 @@
       "displayDate": "22 mar",
       "displayTime": "",
       "stadium": "Campo Montes Elois",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -2748,7 +2532,7 @@
       "displayDate": "22 mar",
       "displayTime": "",
       "stadium": "Estádio Nora Nº 2",
-      "lastUpdatedAt": "2026-05-11T14:01:11Z",
+      "lastUpdatedAt": "2026-05-11T14:24:30Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -2773,13 +2557,11 @@
       "displayDate": "22 mar",
       "displayTime": "",
       "stadium": "Campo Montes Elois",
-      "lastUpdatedAt": "2026-05-11T14:03:04Z",
+      "lastUpdatedAt": "2026-05-11T14:25:39Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 641043: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -2800,13 +2582,11 @@
       "displayDate": "22 mar",
       "displayTime": "",
       "stadium": "Estadio Municipal Quarteira Nº 2",
-      "lastUpdatedAt": "2026-05-11T14:12:18Z",
+      "lastUpdatedAt": "2026-05-11T14:37:28Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 634962: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -2827,7 +2607,7 @@
       "displayDate": "22 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:13:09Z",
+      "lastUpdatedAt": "2026-05-11T14:36:42Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -2927,30 +2707,11 @@
       "displayDate": "28 mar",
       "displayTime": "",
       "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-      "lastUpdatedAt": "2026-05-11T13:32:57Z",
+      "lastUpdatedAt": "2026-05-11T14:23:02Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 18,
-        "issues": [
-          "fixture 635360: fallback to existing round",
-          "fixture 635361: fallback to existing round",
-          "fixture 635362: fallback to existing round",
-          "fixture 635364: fallback to existing round",
-          "fixture 635366: fallback to existing round",
-          "fixture 635369: fallback to existing round",
-          "fixture 635372: fallback to existing round",
-          "fixture 635375: fallback to existing round",
-          "fixture 635377: fallback to existing round",
-          "fixture 635379: fallback to existing round",
-          "fixture 635380: fallback to existing round",
-          "fixture 635381: fallback to existing round",
-          "fixture 635384: fallback to existing round",
-          "fixture 635386: fallback to existing round",
-          "fixture 635389: fallback to existing round",
-          "fixture 635391: fallback to existing round",
-          "fixture 635394: fallback to existing round",
-          "fixture 635397: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -3045,7 +2806,7 @@
       "displayDate": "29 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -3070,7 +2831,7 @@
       "displayDate": "29 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -3095,7 +2856,7 @@
       "displayDate": "29 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:01:11Z",
+      "lastUpdatedAt": "2026-05-11T14:24:30Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -3120,13 +2881,11 @@
       "displayDate": "29 mar",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:03:04Z",
+      "lastUpdatedAt": "2026-05-11T14:25:39Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 641043: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -3147,13 +2906,11 @@
       "displayDate": "29 mar",
       "displayTime": "",
       "stadium": "Estádio Ginásio Clube Tavira",
-      "lastUpdatedAt": "2026-05-11T14:12:18Z",
+      "lastUpdatedAt": "2026-05-11T14:37:28Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 634962: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -3174,7 +2931,7 @@
       "displayDate": "29 mar",
       "displayTime": "",
       "stadium": "Estádio Dr.António Joao Eusebio",
-      "lastUpdatedAt": "2026-05-11T14:13:09Z",
+      "lastUpdatedAt": "2026-05-11T14:36:42Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -3249,7 +3006,7 @@
       "displayDate": "8 abr",
       "displayTime": "",
       "stadium": "Parque Desportivo Municipal Estombar",
-      "lastUpdatedAt": "2026-05-11T13:59:53Z",
+      "lastUpdatedAt": "2026-05-11T14:23:31Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -3324,30 +3081,11 @@
       "displayDate": "11 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T13:32:57Z",
+      "lastUpdatedAt": "2026-05-11T14:23:02Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 18,
-        "issues": [
-          "fixture 635360: fallback to existing round",
-          "fixture 635361: fallback to existing round",
-          "fixture 635362: fallback to existing round",
-          "fixture 635364: fallback to existing round",
-          "fixture 635366: fallback to existing round",
-          "fixture 635369: fallback to existing round",
-          "fixture 635372: fallback to existing round",
-          "fixture 635375: fallback to existing round",
-          "fixture 635377: fallback to existing round",
-          "fixture 635379: fallback to existing round",
-          "fixture 635380: fallback to existing round",
-          "fixture 635381: fallback to existing round",
-          "fixture 635384: fallback to existing round",
-          "fixture 635386: fallback to existing round",
-          "fixture 635389: fallback to existing round",
-          "fixture 635391: fallback to existing round",
-          "fixture 635394: fallback to existing round",
-          "fixture 635397: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -3368,7 +3106,7 @@
       "displayDate": "11 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T13:59:53Z",
+      "lastUpdatedAt": "2026-05-11T14:23:31Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -3492,7 +3230,7 @@
       "displayDate": "12 abr",
       "displayTime": "",
       "stadium": "Parque Desportivo Municipal Estombar",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -3517,7 +3255,7 @@
       "displayDate": "12 abr",
       "displayTime": "",
       "stadium": "Campo Municipal Aljezur",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -3542,7 +3280,7 @@
       "displayDate": "12 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:01:11Z",
+      "lastUpdatedAt": "2026-05-11T14:24:30Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -3567,13 +3305,11 @@
       "displayDate": "12 abr",
       "displayTime": "",
       "stadium": "Parque Desportivo Municipal Estombar",
-      "lastUpdatedAt": "2026-05-11T14:03:04Z",
+      "lastUpdatedAt": "2026-05-11T14:25:39Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 641043: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -3594,7 +3330,7 @@
       "displayDate": "12 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:13:09Z",
+      "lastUpdatedAt": "2026-05-11T14:36:42Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -3719,30 +3455,11 @@
       "displayDate": "18 abr",
       "displayTime": "",
       "stadium": "Campo Francisco Gomes Socorro",
-      "lastUpdatedAt": "2026-05-11T13:32:57Z",
+      "lastUpdatedAt": "2026-05-11T14:23:02Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 18,
-        "issues": [
-          "fixture 635360: fallback to existing round",
-          "fixture 635361: fallback to existing round",
-          "fixture 635362: fallback to existing round",
-          "fixture 635364: fallback to existing round",
-          "fixture 635366: fallback to existing round",
-          "fixture 635369: fallback to existing round",
-          "fixture 635372: fallback to existing round",
-          "fixture 635375: fallback to existing round",
-          "fixture 635377: fallback to existing round",
-          "fixture 635379: fallback to existing round",
-          "fixture 635380: fallback to existing round",
-          "fixture 635381: fallback to existing round",
-          "fixture 635384: fallback to existing round",
-          "fixture 635386: fallback to existing round",
-          "fixture 635389: fallback to existing round",
-          "fixture 635391: fallback to existing round",
-          "fixture 635394: fallback to existing round",
-          "fixture 635397: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -3763,7 +3480,7 @@
       "displayDate": "18 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T13:59:53Z",
+      "lastUpdatedAt": "2026-05-11T14:23:31Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -3887,7 +3604,7 @@
       "displayDate": "19 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -3912,7 +3629,7 @@
       "displayDate": "19 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -3937,7 +3654,7 @@
       "displayDate": "19 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Da Bela Vista",
-      "lastUpdatedAt": "2026-05-11T14:01:11Z",
+      "lastUpdatedAt": "2026-05-11T14:24:30Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -3962,13 +3679,11 @@
       "displayDate": "19 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:03:04Z",
+      "lastUpdatedAt": "2026-05-11T14:25:39Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 641043: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -3989,13 +3704,11 @@
       "displayDate": "19 abr",
       "displayTime": "",
       "stadium": "Campo Complexo Desportivo Penha",
-      "lastUpdatedAt": "2026-05-11T14:12:18Z",
+      "lastUpdatedAt": "2026-05-11T14:37:28Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 634962: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -4016,7 +3729,7 @@
       "displayDate": "19 abr",
       "displayTime": "",
       "stadium": "Campo Montes Elois",
-      "lastUpdatedAt": "2026-05-11T14:13:09Z",
+      "lastUpdatedAt": "2026-05-11T14:36:42Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -4066,13 +3779,11 @@
       "displayDate": "22 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:12:18Z",
+      "lastUpdatedAt": "2026-05-11T14:37:28Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 634962: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -4118,30 +3829,11 @@
       "displayDate": "25 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T13:32:57Z",
+      "lastUpdatedAt": "2026-05-11T14:23:02Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 18,
-        "issues": [
-          "fixture 635360: fallback to existing round",
-          "fixture 635361: fallback to existing round",
-          "fixture 635362: fallback to existing round",
-          "fixture 635364: fallback to existing round",
-          "fixture 635366: fallback to existing round",
-          "fixture 635369: fallback to existing round",
-          "fixture 635372: fallback to existing round",
-          "fixture 635375: fallback to existing round",
-          "fixture 635377: fallback to existing round",
-          "fixture 635379: fallback to existing round",
-          "fixture 635380: fallback to existing round",
-          "fixture 635381: fallback to existing round",
-          "fixture 635384: fallback to existing round",
-          "fixture 635386: fallback to existing round",
-          "fixture 635389: fallback to existing round",
-          "fixture 635391: fallback to existing round",
-          "fixture 635394: fallback to existing round",
-          "fixture 635397: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -4236,7 +3928,7 @@
       "displayDate": "26 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -4261,7 +3953,7 @@
       "displayDate": "26 abr",
       "displayTime": "",
       "stadium": "Campo Municipal Nº 2 De Loule",
-      "lastUpdatedAt": "2026-05-11T14:01:11Z",
+      "lastUpdatedAt": "2026-05-11T14:24:30Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -4286,13 +3978,11 @@
       "displayDate": "26 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:03:04Z",
+      "lastUpdatedAt": "2026-05-11T14:25:39Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 641043: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -4313,57 +4003,11 @@
       "displayDate": "26 abr",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:12:18Z",
+      "lastUpdatedAt": "2026-05-11T14:37:28Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 634962: fallback to existing round"
-        ]
-      }
-    },
-    {
-      "competitionKey": "benjamins-bb",
-      "competitionTitle": "Benjamins BB – Sub10",
-      "competitionSubtitle": "Liga Algarve Futebol 7 (2ª Fase – Série 6)",
-      "competitionPage": "benjamins-bb.html",
-      "competitionUrl": "benjamins-bb.html#resultados-j14",
-      "roundNumber": 14,
-      "fixtureId": "635386",
-      "matchDateISO": "2026-05-02T10:30:00+01:00",
-      "sortTimestamp": 1777714200,
-      "status": "unknown",
-      "home": "Fc Ferreiras",
-      "away": "Cf Os Armacenenses",
-      "homeScore": null,
-      "awayScore": null,
-      "displayDate": "2 mai",
-      "displayTime": "10:30",
-      "stadium": "Estádio Nora Nº 2",
-      "lastUpdatedAt": "2026-05-11T13:32:57Z",
-      "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 18,
-        "issues": [
-          "fixture 635360: fallback to existing round",
-          "fixture 635361: fallback to existing round",
-          "fixture 635362: fallback to existing round",
-          "fixture 635364: fallback to existing round",
-          "fixture 635366: fallback to existing round",
-          "fixture 635369: fallback to existing round",
-          "fixture 635372: fallback to existing round",
-          "fixture 635375: fallback to existing round",
-          "fixture 635377: fallback to existing round",
-          "fixture 635379: fallback to existing round",
-          "fixture 635380: fallback to existing round",
-          "fixture 635381: fallback to existing round",
-          "fixture 635384: fallback to existing round",
-          "fixture 635386: fallback to existing round",
-          "fixture 635389: fallback to existing round",
-          "fixture 635391: fallback to existing round",
-          "fixture 635394: fallback to existing round",
-          "fixture 635397: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -4435,6 +4079,31 @@
       "displayTime": "",
       "stadium": "Campo De Futebol Sete - Espamol",
       "lastUpdatedAt": "2026-05-11T13:34:59Z",
+      "sourceHealth": {
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
+      }
+    },
+    {
+      "competitionKey": "benjamins-bb",
+      "competitionTitle": "Benjamins BB – Sub10",
+      "competitionSubtitle": "Liga Algarve Futebol 7 (2ª Fase – Série 6)",
+      "competitionPage": "benjamins-bb.html",
+      "competitionUrl": "benjamins-bb.html#resultados-j14",
+      "roundNumber": 14,
+      "fixtureId": "635386",
+      "matchDateISO": "2026-05-02T12:00:00+01:00",
+      "sortTimestamp": 1777719600,
+      "status": "finished",
+      "home": "Fc Ferreiras",
+      "away": "Cf Os Armacenenses",
+      "homeScore": 5,
+      "awayScore": 5,
+      "displayDate": "2 mai",
+      "displayTime": "",
+      "stadium": "Estádio Nora Nº 2",
+      "lastUpdatedAt": "2026-05-11T14:23:02Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -4558,7 +4227,7 @@
       "displayDate": "3 mai",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -4583,7 +4252,7 @@
       "displayDate": "3 mai",
       "displayTime": "",
       "stadium": "Parque Desportivo Jd Monchiquense",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -4608,13 +4277,11 @@
       "displayDate": "3 mai",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:03:04Z",
+      "lastUpdatedAt": "2026-05-11T14:25:39Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 641043: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -4635,13 +4302,11 @@
       "displayDate": "3 mai",
       "displayTime": "",
       "stadium": "Campo Eiras",
-      "lastUpdatedAt": "2026-05-11T14:12:18Z",
+      "lastUpdatedAt": "2026-05-11T14:37:28Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 634962: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -4662,7 +4327,7 @@
       "displayDate": "3 mai",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:13:09Z",
+      "lastUpdatedAt": "2026-05-11T14:36:42Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -4687,55 +4352,11 @@
       "displayDate": "4 mai",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T13:59:53Z",
+      "lastUpdatedAt": "2026-05-11T14:23:31Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
         "issues": []
-      }
-    },
-    {
-      "competitionKey": "benjamins-bb",
-      "competitionTitle": "Benjamins BB – Sub10",
-      "competitionSubtitle": "Liga Algarve Futebol 7 (2ª Fase – Série 6)",
-      "competitionPage": "benjamins-bb.html",
-      "competitionUrl": "benjamins-bb.html#resultados-j15",
-      "roundNumber": 15,
-      "fixtureId": "635389",
-      "matchDateISO": "2026-05-09T09:00:00+01:00",
-      "sortTimestamp": 1778313600,
-      "status": "unknown",
-      "home": "Cf Os Armacenenses",
-      "away": "Imortal Dc",
-      "homeScore": null,
-      "awayScore": null,
-      "displayDate": "9 mai",
-      "displayTime": "09:00",
-      "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T13:32:57Z",
-      "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 18,
-        "issues": [
-          "fixture 635360: fallback to existing round",
-          "fixture 635361: fallback to existing round",
-          "fixture 635362: fallback to existing round",
-          "fixture 635364: fallback to existing round",
-          "fixture 635366: fallback to existing round",
-          "fixture 635369: fallback to existing round",
-          "fixture 635372: fallback to existing round",
-          "fixture 635375: fallback to existing round",
-          "fixture 635377: fallback to existing round",
-          "fixture 635379: fallback to existing round",
-          "fixture 635380: fallback to existing round",
-          "fixture 635381: fallback to existing round",
-          "fixture 635384: fallback to existing round",
-          "fixture 635386: fallback to existing round",
-          "fixture 635389: fallback to existing round",
-          "fixture 635391: fallback to existing round",
-          "fixture 635394: fallback to existing round",
-          "fixture 635397: fallback to existing round"
-        ]
       }
     },
     {
@@ -4864,6 +4485,31 @@
       }
     },
     {
+      "competitionKey": "benjamins-bb",
+      "competitionTitle": "Benjamins BB – Sub10",
+      "competitionSubtitle": "Liga Algarve Futebol 7 (2ª Fase – Série 6)",
+      "competitionPage": "benjamins-bb.html",
+      "competitionUrl": "benjamins-bb.html#resultados-j15",
+      "roundNumber": 15,
+      "fixtureId": "635389",
+      "matchDateISO": "2026-05-09T12:00:00+01:00",
+      "sortTimestamp": 1778324400,
+      "status": "finished",
+      "home": "Cf Os Armacenenses",
+      "away": "Imortal Dc",
+      "homeScore": 4,
+      "awayScore": 2,
+      "displayDate": "9 mai",
+      "displayTime": "",
+      "stadium": "Estádio Municipal Armação De Pêra",
+      "lastUpdatedAt": "2026-05-11T14:23:02Z",
+      "sourceHealth": {
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
+      }
+    },
+    {
       "competitionKey": "feminino-sub15",
       "competitionTitle": "Feminino – Sub15",
       "competitionSubtitle": "Liga Algarve Futebol 9 (2ª Fase – Série 4)",
@@ -4881,7 +4527,7 @@
       "displayDate": "9 mai",
       "displayTime": "",
       "stadium": "Estádio Nora Nº 2",
-      "lastUpdatedAt": "2026-05-11T13:59:53Z",
+      "lastUpdatedAt": "2026-05-11T14:23:31Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -4955,7 +4601,7 @@
       "displayDate": "10 mai",
       "displayTime": "11:00",
       "stadium": "Estádio Municipal Messines",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -4980,7 +4626,7 @@
       "displayDate": "10 mai",
       "displayTime": "11:00",
       "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-      "lastUpdatedAt": "2026-05-11T14:01:11Z",
+      "lastUpdatedAt": "2026-05-11T14:24:30Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -5005,7 +4651,7 @@
       "displayDate": "10 mai",
       "displayTime": "",
       "stadium": "Campo Horta Da Areia",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -5030,13 +4676,11 @@
       "displayDate": "10 mai",
       "displayTime": "",
       "stadium": "Campo Horta Da Areia",
-      "lastUpdatedAt": "2026-05-11T14:03:04Z",
+      "lastUpdatedAt": "2026-05-11T14:25:39Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 641043: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -5057,13 +4701,11 @@
       "displayDate": "10 mai",
       "displayTime": "",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:12:18Z",
+      "lastUpdatedAt": "2026-05-11T14:37:28Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 634962: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -5084,7 +4726,7 @@
       "displayDate": "10 mai",
       "displayTime": "13:00",
       "stadium": "Campo Horta Da Areia",
-      "lastUpdatedAt": "2026-05-11T14:13:09Z",
+      "lastUpdatedAt": "2026-05-11T14:36:42Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -5134,7 +4776,7 @@
       "displayDate": "15 mai",
       "displayTime": "20:00",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:01:11Z",
+      "lastUpdatedAt": "2026-05-11T14:24:30Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -5259,7 +4901,7 @@
       "displayDate": "16 mai",
       "displayTime": "12:00",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T13:59:53Z",
+      "lastUpdatedAt": "2026-05-11T14:23:31Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -5333,7 +4975,7 @@
       "displayDate": "17 mai",
       "displayTime": "09:00",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -5358,13 +5000,11 @@
       "displayDate": "17 mai",
       "displayTime": "09:00",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:03:04Z",
+      "lastUpdatedAt": "2026-05-11T14:25:39Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 641043: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -5385,7 +5025,7 @@
       "displayDate": "17 mai",
       "displayTime": "11:00",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:01:11Z",
+      "lastUpdatedAt": "2026-05-11T14:24:30Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -5410,13 +5050,11 @@
       "displayDate": "17 mai",
       "displayTime": "15:00",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:12:18Z",
+      "lastUpdatedAt": "2026-05-11T14:37:28Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 634962: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -5437,7 +5075,7 @@
       "displayDate": "17 mai",
       "displayTime": "17:00",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -5462,30 +5100,11 @@
       "displayDate": "18 mai",
       "displayTime": "18:30",
       "stadium": "Campo Complexo Desportivo Penha",
-      "lastUpdatedAt": "2026-05-11T13:32:57Z",
+      "lastUpdatedAt": "2026-05-11T14:23:02Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 18,
-        "issues": [
-          "fixture 635360: fallback to existing round",
-          "fixture 635361: fallback to existing round",
-          "fixture 635362: fallback to existing round",
-          "fixture 635364: fallback to existing round",
-          "fixture 635366: fallback to existing round",
-          "fixture 635369: fallback to existing round",
-          "fixture 635372: fallback to existing round",
-          "fixture 635375: fallback to existing round",
-          "fixture 635377: fallback to existing round",
-          "fixture 635379: fallback to existing round",
-          "fixture 635380: fallback to existing round",
-          "fixture 635381: fallback to existing round",
-          "fixture 635384: fallback to existing round",
-          "fixture 635386: fallback to existing round",
-          "fixture 635389: fallback to existing round",
-          "fixture 635391: fallback to existing round",
-          "fixture 635394: fallback to existing round",
-          "fixture 635397: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -5631,30 +5250,11 @@
       "displayDate": "23 mai",
       "displayTime": "12:00",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T13:32:57Z",
+      "lastUpdatedAt": "2026-05-11T14:23:02Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 18,
-        "issues": [
-          "fixture 635360: fallback to existing round",
-          "fixture 635361: fallback to existing round",
-          "fixture 635362: fallback to existing round",
-          "fixture 635364: fallback to existing round",
-          "fixture 635366: fallback to existing round",
-          "fixture 635369: fallback to existing round",
-          "fixture 635372: fallback to existing round",
-          "fixture 635375: fallback to existing round",
-          "fixture 635377: fallback to existing round",
-          "fixture 635379: fallback to existing round",
-          "fixture 635380: fallback to existing round",
-          "fixture 635381: fallback to existing round",
-          "fixture 635384: fallback to existing round",
-          "fixture 635386: fallback to existing round",
-          "fixture 635389: fallback to existing round",
-          "fixture 635391: fallback to existing round",
-          "fixture 635394: fallback to existing round",
-          "fixture 635397: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -5699,7 +5299,7 @@
       "displayDate": "24 mai",
       "displayTime": "11:00",
       "stadium": "Campo Municipal Aljezur",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -5724,7 +5324,7 @@
       "displayDate": "24 mai",
       "displayTime": "11:00",
       "stadium": "Campo Montes Elois",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -5749,7 +5349,7 @@
       "displayDate": "24 mai",
       "displayTime": "11:00",
       "stadium": "Parque Desportivo Municipal Estombar",
-      "lastUpdatedAt": "2026-05-11T14:01:11Z",
+      "lastUpdatedAt": "2026-05-11T14:24:30Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -5774,13 +5374,11 @@
       "displayDate": "24 mai",
       "displayTime": "11:00",
       "stadium": "Campo Municipal Aljezur",
-      "lastUpdatedAt": "2026-05-11T14:03:04Z",
+      "lastUpdatedAt": "2026-05-11T14:25:39Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 641043: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -5801,13 +5399,11 @@
       "displayDate": "24 mai",
       "displayTime": "15:00",
       "stadium": "Campo Polidesportivo",
-      "lastUpdatedAt": "2026-05-11T14:12:18Z",
+      "lastUpdatedAt": "2026-05-11T14:37:28Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 634962: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -5853,30 +5449,11 @@
       "displayDate": "30 mai",
       "displayTime": "10:30",
       "stadium": "Estadio Municipal De Almancil",
-      "lastUpdatedAt": "2026-05-11T13:32:57Z",
+      "lastUpdatedAt": "2026-05-11T14:23:02Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 18,
-        "issues": [
-          "fixture 635360: fallback to existing round",
-          "fixture 635361: fallback to existing round",
-          "fixture 635362: fallback to existing round",
-          "fixture 635364: fallback to existing round",
-          "fixture 635366: fallback to existing round",
-          "fixture 635369: fallback to existing round",
-          "fixture 635372: fallback to existing round",
-          "fixture 635375: fallback to existing round",
-          "fixture 635377: fallback to existing round",
-          "fixture 635379: fallback to existing round",
-          "fixture 635380: fallback to existing round",
-          "fixture 635381: fallback to existing round",
-          "fixture 635384: fallback to existing round",
-          "fixture 635386: fallback to existing round",
-          "fixture 635389: fallback to existing round",
-          "fixture 635391: fallback to existing round",
-          "fixture 635394: fallback to existing round",
-          "fixture 635397: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -5921,7 +5498,7 @@
       "displayDate": "31 mai",
       "displayTime": "11:00",
       "stadium": "A Indicar",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -5946,7 +5523,7 @@
       "displayDate": "31 mai",
       "displayTime": "11:00",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -5971,13 +5548,11 @@
       "displayDate": "31 mai",
       "displayTime": "11:00",
       "stadium": "A Indicar",
-      "lastUpdatedAt": "2026-05-11T14:03:04Z",
+      "lastUpdatedAt": "2026-05-11T14:25:39Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 641043: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -5998,7 +5573,7 @@
       "displayDate": "31 mai",
       "displayTime": "16:00",
       "stadium": "Campo Complexo Desportivo Penha",
-      "lastUpdatedAt": "2026-05-11T14:01:11Z",
+      "lastUpdatedAt": "2026-05-11T14:24:30Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -6023,13 +5598,11 @@
       "displayDate": "31 mai",
       "displayTime": "16:00",
       "stadium": "A Indicar",
-      "lastUpdatedAt": "2026-05-11T14:12:18Z",
+      "lastUpdatedAt": "2026-05-11T14:37:28Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 634962: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     },
     {
@@ -6050,7 +5623,7 @@
       "displayDate": "6 jun",
       "displayTime": "11:00",
       "stadium": "Parque Desportivo Municipal Estombar",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -6075,7 +5648,7 @@
       "displayDate": "6 jun",
       "displayTime": "11:00",
       "stadium": "Parque Desportivo Jd Monchiquense",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -6100,7 +5673,7 @@
       "displayDate": "6 jun",
       "displayTime": "11:00",
       "stadium": "Estádio Municipal Armação De Pêra",
-      "lastUpdatedAt": "2026-05-11T14:01:11Z",
+      "lastUpdatedAt": "2026-05-11T14:24:30Z",
       "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -6125,13 +5698,11 @@
       "displayDate": "6 jun",
       "displayTime": "11:00",
       "stadium": "Parque Desportivo Jd Monchiquense",
-      "lastUpdatedAt": "2026-05-11T14:03:04Z",
+      "lastUpdatedAt": "2026-05-11T14:25:39Z",
       "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-          "fixture 641043: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
       }
     }
   ]

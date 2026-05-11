@@ -1,13 +1,11 @@
 {
     "defaultRoundIndex": 9,
     "defaultRoundNumber": 10,
-    "lastUpdatedAt": "2026-05-11T14:03:04Z",
+    "lastUpdatedAt": "2026-05-11T14:25:39Z",
     "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 1,
-        "issues": [
-            "fixture 641043: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
     },
     "dataQuality": {
         "roundCount": 14,

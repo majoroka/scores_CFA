@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-11T14:13:23Z",
+  "generatedAt": "2026-05-11T14:37:54Z",
   "competitionCount": 15,
   "statusCounts": {
     "ok": 2,
-    "partial": 10,
-    "degraded": 3,
+    "partial": 13,
+    "degraded": 0,
     "missing": 0
   },
   "competitions": {
@@ -26,9 +26,9 @@
       "outputFile": "data/seniores.json"
     },
     "juniores": {
-      "status": "degraded",
-      "lastUpdatedAt": "2026-05-11T14:12:18Z",
-      "fallbackReuseCount": 1,
+      "status": "partial",
+      "lastUpdatedAt": "2026-05-11T14:37:28Z",
+      "fallbackReuseCount": 0,
       "matchesWithoutScore": 17,
       "pastMatchesWithoutScore": 2,
       "matchCount": 90,
@@ -36,9 +36,7 @@
       "roundCount": 18,
       "teamCount": 10,
       "roundsWithCompletedMatches": 15,
-      "issues": [
-        "fixture 634962: fallback to existing round"
-      ],
+      "issues": [],
       "title": "Juniores - Sub19",
       "subtitle": "Liga Algarve Futebol (Fase de Campeão)",
       "pagePath": "juniores.html",
@@ -46,7 +44,7 @@
     },
     "juvenis": {
       "status": "partial",
-      "lastUpdatedAt": "2026-05-11T14:13:09Z",
+      "lastUpdatedAt": "2026-05-11T14:36:42Z",
       "fallbackReuseCount": 0,
       "matchesWithoutScore": 3,
       "pastMatchesWithoutScore": 3,
@@ -63,7 +61,7 @@
     },
     "iniciados-a": {
       "status": "partial",
-      "lastUpdatedAt": "2026-05-11T14:01:11Z",
+      "lastUpdatedAt": "2026-05-11T14:24:30Z",
       "fallbackReuseCount": 0,
       "matchesWithoutScore": 20,
       "pastMatchesWithoutScore": 3,
@@ -79,9 +77,9 @@
       "outputFile": "data/iniciados-a.json"
     },
     "iniciados-b": {
-      "status": "degraded",
-      "lastUpdatedAt": "2026-05-11T14:03:04Z",
-      "fallbackReuseCount": 1,
+      "status": "partial",
+      "lastUpdatedAt": "2026-05-11T14:25:39Z",
+      "fallbackReuseCount": 0,
       "matchesWithoutScore": 19,
       "pastMatchesWithoutScore": 3,
       "matchCount": 56,
@@ -89,9 +87,7 @@
       "roundCount": 14,
       "teamCount": 8,
       "roundsWithCompletedMatches": 11,
-      "issues": [
-        "fixture 641043: fallback to existing round"
-      ],
+      "issues": [],
       "title": "Iniciados B – Sub15",
       "subtitle": "Liga 2 Algarve Futebol (2ª Fase - Série 7)",
       "pagePath": "iniciados-b.html",
@@ -200,36 +196,17 @@
       "outputFile": "data/benjamins-b.json"
     },
     "benjamins-bb": {
-      "status": "degraded",
-      "lastUpdatedAt": "2026-05-11T13:32:57Z",
-      "fallbackReuseCount": 18,
-      "matchesWithoutScore": 25,
-      "pastMatchesWithoutScore": 10,
+      "status": "partial",
+      "lastUpdatedAt": "2026-05-11T14:23:02Z",
+      "fallbackReuseCount": 0,
+      "matchesWithoutScore": 17,
+      "pastMatchesWithoutScore": 2,
       "matchCount": 90,
-      "completedMatchCount": 65,
+      "completedMatchCount": 73,
       "roundCount": 18,
       "teamCount": 10,
-      "roundsWithCompletedMatches": 13,
-      "issues": [
-        "fixture 635360: fallback to existing round",
-        "fixture 635361: fallback to existing round",
-        "fixture 635362: fallback to existing round",
-        "fixture 635364: fallback to existing round",
-        "fixture 635366: fallback to existing round",
-        "fixture 635369: fallback to existing round",
-        "fixture 635372: fallback to existing round",
-        "fixture 635375: fallback to existing round",
-        "fixture 635377: fallback to existing round",
-        "fixture 635379: fallback to existing round",
-        "fixture 635380: fallback to existing round",
-        "fixture 635381: fallback to existing round",
-        "fixture 635384: fallback to existing round",
-        "fixture 635386: fallback to existing round",
-        "fixture 635389: fallback to existing round",
-        "fixture 635391: fallback to existing round",
-        "fixture 635394: fallback to existing round",
-        "fixture 635397: fallback to existing round"
-      ],
+      "roundsWithCompletedMatches": 15,
+      "issues": [],
       "title": "Benjamins BB – Sub10",
       "subtitle": "Liga Algarve Futebol 7 (2ª Fase – Série 6)",
       "pagePath": "benjamins-bb.html",
@@ -254,7 +231,7 @@
     },
     "feminino-sub17": {
       "status": "partial",
-      "lastUpdatedAt": "2026-05-11T14:00:20Z",
+      "lastUpdatedAt": "2026-05-11T14:24:00Z",
       "fallbackReuseCount": 0,
       "matchesWithoutScore": 19,
       "pastMatchesWithoutScore": 3,
@@ -271,7 +248,7 @@
     },
     "feminino-sub15": {
       "status": "partial",
-      "lastUpdatedAt": "2026-05-11T13:59:53Z",
+      "lastUpdatedAt": "2026-05-11T14:23:31Z",
       "fallbackReuseCount": 0,
       "matchesWithoutScore": 6,
       "pastMatchesWithoutScore": 3,

@@ -1,44 +1,25 @@
 {
     "defaultRoundIndex": 14,
     "defaultRoundNumber": 15,
-    "lastUpdatedAt": "2026-05-11T13:32:57Z",
+    "lastUpdatedAt": "2026-05-11T14:23:02Z",
     "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 18,
-        "issues": [
-            "fixture 635360: fallback to existing round",
-            "fixture 635361: fallback to existing round",
-            "fixture 635362: fallback to existing round",
-            "fixture 635364: fallback to existing round",
-            "fixture 635366: fallback to existing round",
-            "fixture 635369: fallback to existing round",
-            "fixture 635372: fallback to existing round",
-            "fixture 635375: fallback to existing round",
-            "fixture 635377: fallback to existing round",
-            "fixture 635379: fallback to existing round",
-            "fixture 635380: fallback to existing round",
-            "fixture 635381: fallback to existing round",
-            "fixture 635384: fallback to existing round",
-            "fixture 635386: fallback to existing round",
-            "fixture 635389: fallback to existing round",
-            "fixture 635391: fallback to existing round",
-            "fixture 635394: fallback to existing round",
-            "fixture 635397: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
     },
     "dataQuality": {
         "roundCount": 18,
         "matchCount": 90,
         "classificationCount": 180,
         "teamCount": 10,
-        "completedMatchCount": 65,
-        "matchesWithoutScore": 25,
+        "completedMatchCount": 73,
+        "matchesWithoutScore": 17,
         "pastMatchCount": 75,
-        "pastMatchesWithoutScore": 10,
+        "pastMatchesWithoutScore": 2,
         "futureMatchCount": 15,
         "roundsWithMatches": 18,
         "roundsWithClassification": 18,
-        "roundsWithCompletedMatches": 13,
+        "roundsWithCompletedMatches": 15,
         "roundsWithoutData": 0
     },
     "rounds": [
@@ -382,24 +363,6 @@
                     "awayScore": 2
                 },
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Lusitano Fc Vrsa",
-                    "date": "17 fev",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 1,
-                    "awayScore": 4
-                },
-                {
-                    "home": "Internacional Ca",
-                    "away": "Imortal Dc",
-                    "date": "17 fev",
-                    "time": "",
-                    "stadium": "Estadio Municipal De Almancil",
-                    "homeScore": 7,
-                    "awayScore": 2
-                },
-                {
                     "home": "Ad Geração Génios",
                     "away": "Fc Ferreiras",
                     "date": "17 fev",
@@ -416,6 +379,24 @@
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": 6,
                     "awayScore": 6
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Lusitano Fc Vrsa",
+                    "date": "17 fev",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 1,
+                    "awayScore": 4
+                },
+                {
+                    "home": "Internacional Ca",
+                    "away": "Imortal Dc",
+                    "date": "17 fev",
+                    "time": "",
+                    "stadium": "Estadio Municipal De Almancil",
+                    "homeScore": 7,
+                    "awayScore": 2
                 }
             ],
             "classification": [
@@ -536,15 +517,6 @@
             "fixtureId": "635364",
             "matches": [
                 {
-                    "home": "Imortal Dc",
-                    "away": "Ad Geração Génios",
-                    "date": "14 fev",
-                    "time": "",
-                    "stadium": "Campo Da Palmeira Nº 2",
-                    "homeScore": 4,
-                    "awayScore": 3
-                },
-                {
                     "home": "Lusitano Fc Vrsa",
                     "away": "Associacao Fut. F.O.",
                     "date": "14 fev",
@@ -561,6 +533,15 @@
                     "stadium": "Campo Eiras",
                     "homeScore": 0,
                     "awayScore": 7
+                },
+                {
+                    "home": "Imortal Dc",
+                    "away": "Ad Geração Génios",
+                    "date": "14 fev",
+                    "time": "",
+                    "stadium": "Campo Da Palmeira Nº 2",
+                    "homeScore": 4,
+                    "awayScore": 3
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -880,15 +861,6 @@
                     "awayScore": 2
                 },
                 {
-                    "home": "Silves Fc",
-                    "away": "Cd Odiáxere",
-                    "date": "28 fev",
-                    "time": "",
-                    "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": 0,
-                    "awayScore": 2
-                },
-                {
                     "home": "Fc Ferreiras",
                     "away": "Associacao Fut. F.O.",
                     "date": "28 fev",
@@ -904,6 +876,15 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 8,
+                    "awayScore": 2
+                },
+                {
+                    "home": "Silves Fc",
+                    "away": "Cd Odiáxere",
+                    "date": "28 fev",
+                    "time": "",
+                    "stadium": "Estádio Dr. Francisco Vieira",
+                    "homeScore": 0,
                     "awayScore": 2
                 }
             ],
@@ -1034,15 +1015,6 @@
                     "awayScore": 7
                 },
                 {
-                    "home": "Cd Odiáxere",
-                    "away": "Fc Ferreiras",
-                    "date": "7 mar",
-                    "time": "",
-                    "stadium": "Campo Eiras",
-                    "homeScore": 1,
-                    "awayScore": 10
-                },
-                {
                     "home": "Cf Os Armacenenses",
                     "away": "Ad Geração Génios",
                     "date": "7 mar",
@@ -1059,6 +1031,15 @@
                     "stadium": "Estadio Municipal De Almancil",
                     "homeScore": 13,
                     "awayScore": 1
+                },
+                {
+                    "home": "Cd Odiáxere",
+                    "away": "Fc Ferreiras",
+                    "date": "7 mar",
+                    "time": "",
+                    "stadium": "Campo Eiras",
+                    "homeScore": 1,
+                    "awayScore": 10
                 },
                 {
                     "home": "Lusitano Fc Vrsa",
@@ -1677,15 +1658,6 @@
             "fixtureId": "635380",
             "matches": [
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Cd Odiáxere",
-                    "date": "11 abr",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 7,
-                    "awayScore": 4
-                },
-                {
                     "home": "Ad Geração Génios",
                     "away": "Silves Fc",
                     "date": "11 abr",
@@ -1693,6 +1665,15 @@
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 9,
                     "awayScore": 1
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Cd Odiáxere",
+                    "date": "11 abr",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 7,
+                    "awayScore": 4
                 },
                 {
                     "home": "Internacional Ca",
@@ -1849,15 +1830,6 @@
                     "awayScore": 5
                 },
                 {
-                    "home": "Lusitano Fc Vrsa",
-                    "away": "Cf Os Armacenenses",
-                    "date": "18 abr",
-                    "time": "",
-                    "stadium": "Campo Francisco Gomes Socorro",
-                    "homeScore": 6,
-                    "awayScore": 6
-                },
-                {
                     "home": "Imortal Dc",
                     "away": "Internacional Ca",
                     "date": "18 abr",
@@ -1874,6 +1846,15 @@
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 1,
                     "awayScore": 8
+                },
+                {
+                    "home": "Lusitano Fc Vrsa",
+                    "away": "Cf Os Armacenenses",
+                    "date": "18 abr",
+                    "time": "",
+                    "stadium": "Campo Francisco Gomes Socorro",
+                    "homeScore": 6,
+                    "awayScore": 6
                 },
                 {
                     "home": "Cd Odiáxere",
@@ -2003,15 +1984,6 @@
             "fixtureId": "635384",
             "matches": [
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Silves Fc",
-                    "date": "25 abr",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 8,
-                    "awayScore": 2
-                },
-                {
                     "home": "Ad Geração Génios",
                     "away": "Imortal Dc",
                     "date": "25 abr",
@@ -2019,6 +1991,15 @@
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 6,
                     "awayScore": 4
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Silves Fc",
+                    "date": "25 abr",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 8,
+                    "awayScore": 2
                 },
                 {
                     "home": "Associacao Fut. F.O.",
@@ -2169,157 +2150,157 @@
                     "home": "Ad Geração Génios",
                     "away": "Internacional Ca",
                     "date": "1 mai",
-                    "time": "09:00",
+                    "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 6,
+                    "awayScore": 7
                 },
                 {
                     "home": "Fc Ferreiras",
                     "away": "Cf Os Armacenenses",
                     "date": "2 mai",
-                    "time": "10:30",
+                    "time": "",
                     "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 5,
+                    "awayScore": 5
                 },
                 {
                     "home": "Imortal Dc",
                     "away": "Cf Esperança Lagos",
                     "date": "2 mai",
-                    "time": "10:30",
+                    "time": "",
                     "stadium": "Campo Da Palmeira Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Silves Fc",
-                    "away": "Associacao Fut. F.O.",
-                    "date": "2 mai",
-                    "time": "12:00",
-                    "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 6,
+                    "awayScore": 1
                 },
                 {
                     "home": "Lusitano Fc Vrsa",
                     "away": "Cd Odiáxere",
                     "date": "2 mai",
-                    "time": "12:00",
+                    "time": "",
                     "stadium": "Campo Francisco Gomes Socorro",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 7,
+                    "awayScore": 3
+                },
+                {
+                    "home": "Silves Fc",
+                    "away": "Associacao Fut. F.O.",
+                    "date": "2 mai",
+                    "time": "",
+                    "stadium": "Estádio Dr. Francisco Vieira",
+                    "homeScore": 1,
+                    "awayScore": 14
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Lusitano Fc Vrsa",
-                    "played": 13,
-                    "wins": 11,
+                    "played": 14,
+                    "wins": 12,
                     "draws": 2,
                     "losses": 0,
-                    "goalsFor": 89,
-                    "goalsAgainst": 27,
-                    "points": 35
+                    "goalsFor": 96,
+                    "goalsAgainst": 30,
+                    "points": 38
                 },
                 {
                     "position": 2,
                     "team": "Internacional Ca",
-                    "played": 13,
-                    "wins": 11,
+                    "played": 14,
+                    "wins": 12,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 84,
-                    "goalsAgainst": 23,
-                    "points": 33
+                    "goalsFor": 91,
+                    "goalsAgainst": 29,
+                    "points": 36
                 },
                 {
                     "position": 3,
                     "team": "Ad Geração Génios",
-                    "played": 13,
+                    "played": 14,
                     "wins": 8,
                     "draws": 1,
-                    "losses": 4,
-                    "goalsFor": 70,
-                    "goalsAgainst": 44,
+                    "losses": 5,
+                    "goalsFor": 76,
+                    "goalsAgainst": 51,
                     "points": 25
                 },
                 {
                     "position": 4,
                     "team": "Cf Os Armacenenses",
-                    "played": 13,
+                    "played": 14,
                     "wins": 7,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 5,
-                    "goalsFor": 61,
-                    "goalsAgainst": 44,
-                    "points": 22
+                    "goalsFor": 66,
+                    "goalsAgainst": 49,
+                    "points": 23
                 },
                 {
                     "position": 5,
                     "team": "Imortal Dc",
-                    "played": 13,
-                    "wins": 6,
+                    "played": 14,
+                    "wins": 7,
                     "draws": 2,
                     "losses": 5,
-                    "goalsFor": 50,
-                    "goalsAgainst": 53,
-                    "points": 20
+                    "goalsFor": 56,
+                    "goalsAgainst": 54,
+                    "points": 23
                 },
                 {
                     "position": 6,
                     "team": "Associacao Fut. F.O.",
-                    "played": 13,
-                    "wins": 5,
+                    "played": 14,
+                    "wins": 6,
                     "draws": 2,
                     "losses": 6,
-                    "goalsFor": 63,
-                    "goalsAgainst": 66,
-                    "points": 17
+                    "goalsFor": 77,
+                    "goalsAgainst": 67,
+                    "points": 20
                 },
                 {
                     "position": 7,
                     "team": "Cd Odiáxere",
-                    "played": 13,
+                    "played": 14,
                     "wins": 4,
                     "draws": 2,
-                    "losses": 7,
-                    "goalsFor": 42,
-                    "goalsAgainst": 67,
+                    "losses": 8,
+                    "goalsFor": 45,
+                    "goalsAgainst": 74,
                     "points": 14
                 },
                 {
                     "position": 8,
                     "team": "Fc Ferreiras",
-                    "played": 13,
+                    "played": 14,
                     "wins": 3,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 10,
-                    "goalsFor": 48,
-                    "goalsAgainst": 66,
-                    "points": 9
+                    "goalsFor": 53,
+                    "goalsAgainst": 71,
+                    "points": 10
                 },
                 {
                     "position": 9,
                     "team": "Cf Esperança Lagos",
-                    "played": 13,
+                    "played": 14,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 10,
-                    "goalsFor": 36,
-                    "goalsAgainst": 94,
+                    "losses": 11,
+                    "goalsFor": 37,
+                    "goalsAgainst": 100,
                     "points": 9
                 },
                 {
                     "position": 10,
                     "team": "Silves Fc",
-                    "played": 13,
+                    "played": 14,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 11,
-                    "goalsFor": 28,
-                    "goalsAgainst": 87,
+                    "losses": 12,
+                    "goalsFor": 29,
+                    "goalsAgainst": 101,
                     "points": 6
                 }
             ]
@@ -2332,19 +2313,10 @@
                     "home": "Cf Os Armacenenses",
                     "away": "Imortal Dc",
                     "date": "9 mai",
-                    "time": "09:00",
+                    "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Internacional Ca",
-                    "away": "Lusitano Fc Vrsa",
-                    "date": "9 mai",
-                    "time": "10:30",
-                    "stadium": "Estadio Municipal De Almancil",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 4,
+                    "awayScore": 2
                 },
                 {
                     "home": "Cf Esperança Lagos",
@@ -2359,10 +2331,19 @@
                     "home": "Associacao Fut. F.O.",
                     "away": "Fc Ferreiras",
                     "date": "9 mai",
-                    "time": "10:30",
+                    "time": "",
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 5,
+                    "awayScore": 2
+                },
+                {
+                    "home": "Internacional Ca",
+                    "away": "Lusitano Fc Vrsa",
+                    "date": "9 mai",
+                    "time": "",
+                    "stadium": "Estadio Municipal De Almancil",
+                    "homeScore": 2,
+                    "awayScore": 1
                 },
                 {
                     "home": "Cd Odiáxere",
@@ -2377,112 +2358,112 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Lusitano Fc Vrsa",
-                    "played": 13,
-                    "wins": 11,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 89,
-                    "goalsAgainst": 27,
-                    "points": 35
+                    "team": "Internacional Ca",
+                    "played": 15,
+                    "wins": 13,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 93,
+                    "goalsAgainst": 30,
+                    "points": 39
                 },
                 {
                     "position": 2,
-                    "team": "Internacional Ca",
-                    "played": 13,
-                    "wins": 11,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 84,
-                    "goalsAgainst": 23,
-                    "points": 33
+                    "team": "Lusitano Fc Vrsa",
+                    "played": 15,
+                    "wins": 12,
+                    "draws": 2,
+                    "losses": 1,
+                    "goalsFor": 97,
+                    "goalsAgainst": 32,
+                    "points": 38
                 },
                 {
                     "position": 3,
-                    "team": "Ad Geração Génios",
-                    "played": 13,
+                    "team": "Cf Os Armacenenses",
+                    "played": 15,
                     "wins": 8,
-                    "draws": 1,
-                    "losses": 4,
+                    "draws": 2,
+                    "losses": 5,
                     "goalsFor": 70,
-                    "goalsAgainst": 44,
-                    "points": 25
+                    "goalsAgainst": 51,
+                    "points": 26
                 },
                 {
                     "position": 4,
-                    "team": "Cf Os Armacenenses",
-                    "played": 13,
-                    "wins": 7,
+                    "team": "Ad Geração Génios",
+                    "played": 14,
+                    "wins": 8,
                     "draws": 1,
                     "losses": 5,
-                    "goalsFor": 61,
-                    "goalsAgainst": 44,
-                    "points": 22
+                    "goalsFor": 76,
+                    "goalsAgainst": 51,
+                    "points": 25
                 },
                 {
                     "position": 5,
-                    "team": "Imortal Dc",
-                    "played": 13,
-                    "wins": 6,
+                    "team": "Associacao Fut. F.O.",
+                    "played": 15,
+                    "wins": 7,
                     "draws": 2,
-                    "losses": 5,
-                    "goalsFor": 50,
-                    "goalsAgainst": 53,
-                    "points": 20
+                    "losses": 6,
+                    "goalsFor": 82,
+                    "goalsAgainst": 69,
+                    "points": 23
                 },
                 {
                     "position": 6,
-                    "team": "Associacao Fut. F.O.",
-                    "played": 13,
-                    "wins": 5,
+                    "team": "Imortal Dc",
+                    "played": 15,
+                    "wins": 7,
                     "draws": 2,
                     "losses": 6,
-                    "goalsFor": 63,
-                    "goalsAgainst": 66,
-                    "points": 17
+                    "goalsFor": 58,
+                    "goalsAgainst": 58,
+                    "points": 23
                 },
                 {
                     "position": 7,
                     "team": "Cd Odiáxere",
-                    "played": 13,
+                    "played": 14,
                     "wins": 4,
                     "draws": 2,
-                    "losses": 7,
-                    "goalsFor": 42,
-                    "goalsAgainst": 67,
+                    "losses": 8,
+                    "goalsFor": 45,
+                    "goalsAgainst": 74,
                     "points": 14
                 },
                 {
                     "position": 8,
                     "team": "Fc Ferreiras",
-                    "played": 13,
+                    "played": 15,
                     "wins": 3,
-                    "draws": 0,
-                    "losses": 10,
-                    "goalsFor": 48,
-                    "goalsAgainst": 66,
-                    "points": 9
+                    "draws": 1,
+                    "losses": 11,
+                    "goalsFor": 55,
+                    "goalsAgainst": 76,
+                    "points": 10
                 },
                 {
                     "position": 9,
                     "team": "Cf Esperança Lagos",
-                    "played": 13,
+                    "played": 14,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 10,
-                    "goalsFor": 36,
-                    "goalsAgainst": 94,
+                    "losses": 11,
+                    "goalsFor": 37,
+                    "goalsAgainst": 100,
                     "points": 9
                 },
                 {
                     "position": 10,
                     "team": "Silves Fc",
-                    "played": 13,
+                    "played": 14,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 11,
-                    "goalsFor": 28,
-                    "goalsAgainst": 87,
+                    "losses": 12,
+                    "goalsFor": 29,
+                    "goalsAgainst": 101,
                     "points": 6
                 }
             ]
@@ -2513,7 +2494,7 @@
                     "home": "Imortal Dc",
                     "away": "Associacao Fut. F.O.",
                     "date": "16 mai",
-                    "time": "12:00",
+                    "time": "16:00",
                     "stadium": "Campo Da Palmeira Nº 2",
                     "homeScore": null,
                     "awayScore": null
@@ -2540,112 +2521,112 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Lusitano Fc Vrsa",
-                    "played": 13,
-                    "wins": 11,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 89,
-                    "goalsAgainst": 27,
-                    "points": 35
+                    "team": "Internacional Ca",
+                    "played": 15,
+                    "wins": 13,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 93,
+                    "goalsAgainst": 30,
+                    "points": 39
                 },
                 {
                     "position": 2,
-                    "team": "Internacional Ca",
-                    "played": 13,
-                    "wins": 11,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 84,
-                    "goalsAgainst": 23,
-                    "points": 33
+                    "team": "Lusitano Fc Vrsa",
+                    "played": 15,
+                    "wins": 12,
+                    "draws": 2,
+                    "losses": 1,
+                    "goalsFor": 97,
+                    "goalsAgainst": 32,
+                    "points": 38
                 },
                 {
                     "position": 3,
-                    "team": "Ad Geração Génios",
-                    "played": 13,
+                    "team": "Cf Os Armacenenses",
+                    "played": 15,
                     "wins": 8,
-                    "draws": 1,
-                    "losses": 4,
+                    "draws": 2,
+                    "losses": 5,
                     "goalsFor": 70,
-                    "goalsAgainst": 44,
-                    "points": 25
+                    "goalsAgainst": 51,
+                    "points": 26
                 },
                 {
                     "position": 4,
-                    "team": "Cf Os Armacenenses",
-                    "played": 13,
-                    "wins": 7,
+                    "team": "Ad Geração Génios",
+                    "played": 14,
+                    "wins": 8,
                     "draws": 1,
                     "losses": 5,
-                    "goalsFor": 61,
-                    "goalsAgainst": 44,
-                    "points": 22
+                    "goalsFor": 76,
+                    "goalsAgainst": 51,
+                    "points": 25
                 },
                 {
                     "position": 5,
-                    "team": "Imortal Dc",
-                    "played": 13,
-                    "wins": 6,
+                    "team": "Associacao Fut. F.O.",
+                    "played": 15,
+                    "wins": 7,
                     "draws": 2,
-                    "losses": 5,
-                    "goalsFor": 50,
-                    "goalsAgainst": 53,
-                    "points": 20
+                    "losses": 6,
+                    "goalsFor": 82,
+                    "goalsAgainst": 69,
+                    "points": 23
                 },
                 {
                     "position": 6,
-                    "team": "Associacao Fut. F.O.",
-                    "played": 13,
-                    "wins": 5,
+                    "team": "Imortal Dc",
+                    "played": 15,
+                    "wins": 7,
                     "draws": 2,
                     "losses": 6,
-                    "goalsFor": 63,
-                    "goalsAgainst": 66,
-                    "points": 17
+                    "goalsFor": 58,
+                    "goalsAgainst": 58,
+                    "points": 23
                 },
                 {
                     "position": 7,
                     "team": "Cd Odiáxere",
-                    "played": 13,
+                    "played": 14,
                     "wins": 4,
                     "draws": 2,
-                    "losses": 7,
-                    "goalsFor": 42,
-                    "goalsAgainst": 67,
+                    "losses": 8,
+                    "goalsFor": 45,
+                    "goalsAgainst": 74,
                     "points": 14
                 },
                 {
                     "position": 8,
                     "team": "Fc Ferreiras",
-                    "played": 13,
+                    "played": 15,
                     "wins": 3,
-                    "draws": 0,
-                    "losses": 10,
-                    "goalsFor": 48,
-                    "goalsAgainst": 66,
-                    "points": 9
+                    "draws": 1,
+                    "losses": 11,
+                    "goalsFor": 55,
+                    "goalsAgainst": 76,
+                    "points": 10
                 },
                 {
                     "position": 9,
                     "team": "Cf Esperança Lagos",
-                    "played": 13,
+                    "played": 14,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 10,
-                    "goalsFor": 36,
-                    "goalsAgainst": 94,
+                    "losses": 11,
+                    "goalsFor": 37,
+                    "goalsAgainst": 100,
                     "points": 9
                 },
                 {
                     "position": 10,
                     "team": "Silves Fc",
-                    "played": 13,
+                    "played": 14,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 11,
-                    "goalsFor": 28,
-                    "goalsAgainst": 87,
+                    "losses": 12,
+                    "goalsFor": 29,
+                    "goalsAgainst": 101,
                     "points": 6
                 }
             ]
@@ -2703,112 +2684,112 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Lusitano Fc Vrsa",
-                    "played": 13,
-                    "wins": 11,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 89,
-                    "goalsAgainst": 27,
-                    "points": 35
+                    "team": "Internacional Ca",
+                    "played": 15,
+                    "wins": 13,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 93,
+                    "goalsAgainst": 30,
+                    "points": 39
                 },
                 {
                     "position": 2,
-                    "team": "Internacional Ca",
-                    "played": 13,
-                    "wins": 11,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 84,
-                    "goalsAgainst": 23,
-                    "points": 33
+                    "team": "Lusitano Fc Vrsa",
+                    "played": 15,
+                    "wins": 12,
+                    "draws": 2,
+                    "losses": 1,
+                    "goalsFor": 97,
+                    "goalsAgainst": 32,
+                    "points": 38
                 },
                 {
                     "position": 3,
-                    "team": "Ad Geração Génios",
-                    "played": 13,
+                    "team": "Cf Os Armacenenses",
+                    "played": 15,
                     "wins": 8,
-                    "draws": 1,
-                    "losses": 4,
+                    "draws": 2,
+                    "losses": 5,
                     "goalsFor": 70,
-                    "goalsAgainst": 44,
-                    "points": 25
+                    "goalsAgainst": 51,
+                    "points": 26
                 },
                 {
                     "position": 4,
-                    "team": "Cf Os Armacenenses",
-                    "played": 13,
-                    "wins": 7,
+                    "team": "Ad Geração Génios",
+                    "played": 14,
+                    "wins": 8,
                     "draws": 1,
                     "losses": 5,
-                    "goalsFor": 61,
-                    "goalsAgainst": 44,
-                    "points": 22
+                    "goalsFor": 76,
+                    "goalsAgainst": 51,
+                    "points": 25
                 },
                 {
                     "position": 5,
-                    "team": "Imortal Dc",
-                    "played": 13,
-                    "wins": 6,
+                    "team": "Associacao Fut. F.O.",
+                    "played": 15,
+                    "wins": 7,
                     "draws": 2,
-                    "losses": 5,
-                    "goalsFor": 50,
-                    "goalsAgainst": 53,
-                    "points": 20
+                    "losses": 6,
+                    "goalsFor": 82,
+                    "goalsAgainst": 69,
+                    "points": 23
                 },
                 {
                     "position": 6,
-                    "team": "Associacao Fut. F.O.",
-                    "played": 13,
-                    "wins": 5,
+                    "team": "Imortal Dc",
+                    "played": 15,
+                    "wins": 7,
                     "draws": 2,
                     "losses": 6,
-                    "goalsFor": 63,
-                    "goalsAgainst": 66,
-                    "points": 17
+                    "goalsFor": 58,
+                    "goalsAgainst": 58,
+                    "points": 23
                 },
                 {
                     "position": 7,
                     "team": "Cd Odiáxere",
-                    "played": 13,
+                    "played": 14,
                     "wins": 4,
                     "draws": 2,
-                    "losses": 7,
-                    "goalsFor": 42,
-                    "goalsAgainst": 67,
+                    "losses": 8,
+                    "goalsFor": 45,
+                    "goalsAgainst": 74,
                     "points": 14
                 },
                 {
                     "position": 8,
                     "team": "Fc Ferreiras",
-                    "played": 13,
+                    "played": 15,
                     "wins": 3,
-                    "draws": 0,
-                    "losses": 10,
-                    "goalsFor": 48,
-                    "goalsAgainst": 66,
-                    "points": 9
+                    "draws": 1,
+                    "losses": 11,
+                    "goalsFor": 55,
+                    "goalsAgainst": 76,
+                    "points": 10
                 },
                 {
                     "position": 9,
                     "team": "Cf Esperança Lagos",
-                    "played": 13,
+                    "played": 14,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 10,
-                    "goalsFor": 36,
-                    "goalsAgainst": 94,
+                    "losses": 11,
+                    "goalsFor": 37,
+                    "goalsAgainst": 100,
                     "points": 9
                 },
                 {
                     "position": 10,
                     "team": "Silves Fc",
-                    "played": 13,
+                    "played": 14,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 11,
-                    "goalsFor": 28,
-                    "goalsAgainst": 87,
+                    "losses": 12,
+                    "goalsFor": 29,
+                    "goalsAgainst": 101,
                     "points": 6
                 }
             ]
@@ -2817,6 +2798,15 @@
             "index": 18,
             "fixtureId": "635397",
             "matches": [
+                {
+                    "home": "Cf Esperança Lagos",
+                    "away": "Associacao Fut. F.O.",
+                    "date": "30 mai",
+                    "time": "10:30",
+                    "stadium": "Estádio Municipal De Lagos N.º 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
                 {
                     "home": "Internacional Ca",
                     "away": "Cf Os Armacenenses",
@@ -2827,11 +2817,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Imortal Dc",
-                    "away": "Lusitano Fc Vrsa",
+                    "home": "Fc Ferreiras",
+                    "away": "Silves Fc",
                     "date": "30 mai",
                     "time": "10:30",
-                    "stadium": "Campo Da Palmeira Nº 2",
+                    "stadium": "Estádio Nora Nº 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2845,20 +2835,11 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Cf Esperança Lagos",
-                    "away": "Associacao Fut. F.O.",
+                    "home": "Imortal Dc",
+                    "away": "Lusitano Fc Vrsa",
                     "date": "30 mai",
                     "time": "10:30",
-                    "stadium": "Estádio Municipal De Lagos N.º 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Fc Ferreiras",
-                    "away": "Silves Fc",
-                    "date": "30 mai",
-                    "time": "10:30",
-                    "stadium": "Estádio Nora Nº 2",
+                    "stadium": "Campo Da Palmeira Nº 2",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -2866,112 +2847,112 @@
             "classification": [
                 {
                     "position": 1,
-                    "team": "Lusitano Fc Vrsa",
-                    "played": 13,
-                    "wins": 11,
-                    "draws": 2,
-                    "losses": 0,
-                    "goalsFor": 89,
-                    "goalsAgainst": 27,
-                    "points": 35
+                    "team": "Internacional Ca",
+                    "played": 15,
+                    "wins": 13,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 93,
+                    "goalsAgainst": 30,
+                    "points": 39
                 },
                 {
                     "position": 2,
-                    "team": "Internacional Ca",
-                    "played": 13,
-                    "wins": 11,
-                    "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 84,
-                    "goalsAgainst": 23,
-                    "points": 33
+                    "team": "Lusitano Fc Vrsa",
+                    "played": 15,
+                    "wins": 12,
+                    "draws": 2,
+                    "losses": 1,
+                    "goalsFor": 97,
+                    "goalsAgainst": 32,
+                    "points": 38
                 },
                 {
                     "position": 3,
-                    "team": "Ad Geração Génios",
-                    "played": 13,
+                    "team": "Cf Os Armacenenses",
+                    "played": 15,
                     "wins": 8,
-                    "draws": 1,
-                    "losses": 4,
+                    "draws": 2,
+                    "losses": 5,
                     "goalsFor": 70,
-                    "goalsAgainst": 44,
-                    "points": 25
+                    "goalsAgainst": 51,
+                    "points": 26
                 },
                 {
                     "position": 4,
-                    "team": "Cf Os Armacenenses",
-                    "played": 13,
-                    "wins": 7,
+                    "team": "Ad Geração Génios",
+                    "played": 14,
+                    "wins": 8,
                     "draws": 1,
                     "losses": 5,
-                    "goalsFor": 61,
-                    "goalsAgainst": 44,
-                    "points": 22
+                    "goalsFor": 76,
+                    "goalsAgainst": 51,
+                    "points": 25
                 },
                 {
                     "position": 5,
-                    "team": "Imortal Dc",
-                    "played": 13,
-                    "wins": 6,
+                    "team": "Associacao Fut. F.O.",
+                    "played": 15,
+                    "wins": 7,
                     "draws": 2,
-                    "losses": 5,
-                    "goalsFor": 50,
-                    "goalsAgainst": 53,
-                    "points": 20
+                    "losses": 6,
+                    "goalsFor": 82,
+                    "goalsAgainst": 69,
+                    "points": 23
                 },
                 {
                     "position": 6,
-                    "team": "Associacao Fut. F.O.",
-                    "played": 13,
-                    "wins": 5,
+                    "team": "Imortal Dc",
+                    "played": 15,
+                    "wins": 7,
                     "draws": 2,
                     "losses": 6,
-                    "goalsFor": 63,
-                    "goalsAgainst": 66,
-                    "points": 17
+                    "goalsFor": 58,
+                    "goalsAgainst": 58,
+                    "points": 23
                 },
                 {
                     "position": 7,
                     "team": "Cd Odiáxere",
-                    "played": 13,
+                    "played": 14,
                     "wins": 4,
                     "draws": 2,
-                    "losses": 7,
-                    "goalsFor": 42,
-                    "goalsAgainst": 67,
+                    "losses": 8,
+                    "goalsFor": 45,
+                    "goalsAgainst": 74,
                     "points": 14
                 },
                 {
                     "position": 8,
                     "team": "Fc Ferreiras",
-                    "played": 13,
+                    "played": 15,
                     "wins": 3,
-                    "draws": 0,
-                    "losses": 10,
-                    "goalsFor": 48,
-                    "goalsAgainst": 66,
-                    "points": 9
+                    "draws": 1,
+                    "losses": 11,
+                    "goalsFor": 55,
+                    "goalsAgainst": 76,
+                    "points": 10
                 },
                 {
                     "position": 9,
                     "team": "Cf Esperança Lagos",
-                    "played": 13,
+                    "played": 14,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 10,
-                    "goalsFor": 36,
-                    "goalsAgainst": 94,
+                    "losses": 11,
+                    "goalsFor": 37,
+                    "goalsAgainst": 100,
                     "points": 9
                 },
                 {
                     "position": 10,
                     "team": "Silves Fc",
-                    "played": 13,
+                    "played": 14,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 11,
-                    "goalsFor": 28,
-                    "goalsAgainst": 87,
+                    "losses": 12,
+                    "goalsFor": 29,
+                    "goalsAgainst": 101,
                     "points": 6
                 }
             ]
