@@ -21,7 +21,7 @@ env:
   PREMATCH_WINDOW_HOURS: "3"
   ACTIVE_RESULT_WINDOW_DAYS: "2"
   HISTORICAL_LOOKBACK_DAYS: "14"
-  ACTIVE_RETRY_DELAYS_MINUTES: "5,10,20,40"
+  ACTIVE_RETRY_DELAYS_MINUTES: "5,10,15,20,30,45"
 
 jobs:
   retry_followup:
@@ -72,15 +72,15 @@ jobs:
           from pathlib import Path
 
           plan = json.loads(Path("cache/fetch_plan.json").read_text(encoding="utf-8"))
-          active_selected = [
+          retry_selected = [
               item["fetcher"]
               for item in plan.get("competitions", [])
-              if item.get("state") in {"active_pending", "missing_payload"}
+              if item.get("state") in {"active_pending", "historical_backfill", "missing_payload"}
           ]
 
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as handle:
               handle.write(f"plan_mode={plan.get('mode', 'idle')}\n")
-              handle.write(f"active_selected_count={len(active_selected)}\n")
+              handle.write(f"active_selected_count={len(retry_selected)}\n")
           PY
 
       - name: Publicar resumo do plano de follow-up
@@ -128,12 +128,21 @@ jobs:
               if item.strip()
           ]
 
-          def active_pending_fetchers(current_plan):
+          def retryable_fetchers(current_plan):
               return sorted({
                   item["fetcher"]
                   for item in current_plan.get("competitions", [])
-                  if item.get("state") in {"active_pending", "missing_payload"}
+                  if item.get("state") in {"active_pending", "historical_backfill", "missing_payload"}
               })
+
+          def unresolved_fetchers(current_plan, retry_report, previous_remaining):
+              still_selected = set(retryable_fetchers(current_plan))
+              problem_fetchers = {
+                  item["fetcher"]
+                  for item in retry_report.get("fetchers", [])
+                  if (not item.get("success")) or item.get("degraded")
+              }
+              return sorted((still_selected & set(previous_remaining)) | problem_fetchers)
 
           report = {
               "generated_at_epoch": 0,
@@ -148,12 +157,12 @@ jobs:
           }
 
           current_plan = json.loads(Path("cache/fetch_plan.json").read_text(encoding="utf-8"))
-          remaining = active_pending_fetchers(current_plan)
+          remaining = retryable_fetchers(current_plan)
 
           for delay in retry_delays:
               current_plan = plan_fetchers.build_plan()
               plan_fetchers.write_plan(current_plan)
-              remaining = active_pending_fetchers(current_plan)
+              remaining = [fetcher for fetcher in remaining if fetcher in retryable_fetchers(current_plan)]
               if not remaining:
                   break
 
@@ -162,7 +171,7 @@ jobs:
 
               current_plan = plan_fetchers.build_plan()
               plan_fetchers.write_plan(current_plan)
-              remaining = active_pending_fetchers(current_plan)
+              remaining = [fetcher for fetcher in remaining if fetcher in retryable_fetchers(current_plan)]
               if not remaining:
                   break
 
@@ -175,6 +184,9 @@ jobs:
                   latest_by_fetcher[item["fetcher"]] = item
               report["fetchers"] = list(latest_by_fetcher.values())
               run_fetchers.summarize_report(report)
+              current_plan = plan_fetchers.build_plan()
+              plan_fetchers.write_plan(current_plan)
+              remaining = unresolved_fetchers(current_plan, retry_report, remaining)
 
           current_plan = plan_fetchers.build_plan()
           plan_fetchers.write_plan(current_plan)
