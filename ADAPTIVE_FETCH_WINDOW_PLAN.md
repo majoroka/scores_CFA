@@ -1,5 +1,41 @@
 # Adaptive Fetch Window Plan
 
+## Implementation Status
+
+### Already implemented
+
+The following parts of this plan are already in place:
+
+- `plan_fetchers.py` now computes:
+  - `awaiting_window`
+  - `result_chase`
+  - `historical_backfill`
+  - `missing_payload`
+- the planner now emits:
+  - `nextScheduledKickoff`
+  - `firstResultFetchAt`
+  - `lastMeaningfulFetchAt`
+  - `nextRecommendedFetchAt`
+  - `technicalState`
+  - `technicalBackoffLevel`
+  - `dueNow`
+- the follow-up workflow now waits until `nextRecommendedFetchAt`
+- the follow-up workflow no longer depends only on fixed retry waves
+- historical polling now respects the `6h` recovery rhythm
+
+### Still pending
+
+The following parts are still not fully implemented:
+
+- explicit technical error typing inside `run_fetchers.py`
+  - `403`
+  - `429`
+  - `timeout`
+  - `network_error`
+- persistent technical failure memory between runs
+- finer workflow summaries based on technical error class
+- possible refinement of planner heuristics after observing real runs
+
 ## Goal
 
 Make result polling more reliable and less noisy by separating:
@@ -290,3 +326,14 @@ The implementation is successful when:
 4. recent unresolved scores are still chased automatically
 5. historical missing scores continue recovering in the background
 6. the workflow history becomes more predictable and easier to interpret
+
+
+## Immediate Next Steps
+
+1. publish the current implementation
+2. observe one or two real workflow cycles
+3. if needed, refine technical error classification in `run_fetchers.py`:
+   - `403`
+   - `429`
+   - `timeout`
+   - `network_error`

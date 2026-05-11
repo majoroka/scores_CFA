@@ -1,5 +1,24 @@
 # Fetch Scheduling Strategy
 
+## Status
+
+This document is still useful as the high-level scheduling rationale.
+
+However, part of the strategy has now been implemented more concretely in:
+
+- [ADAPTIVE_FETCH_WINDOW_PLAN.md](/Users/mariocabano/Documents/GitHub/scores_CFA/ADAPTIVE_FETCH_WINDOW_PLAN.md)
+- `plan_fetchers.py`
+- `.github/workflows/retry-pending-results.yml`
+
+The current code already supports:
+
+- fetch timing based on match windows
+- `kickoff + 2h` first meaningful fetch
+- `15-minute` short chase for same-day pending scores
+- hourly same-day continuation
+- `6-hour` historical recovery
+- workflow follow-up based on `nextRecommendedFetchAt`
+
 ## Objetivo
 
 Reduzir ao mínimo o scraping à FPF, sem perder resultados relevantes nem deixar competições estagnadas quando a origem atualiza tarde.
@@ -257,6 +276,16 @@ Mitigação:
 ## Recomendação de implementação
 
 ### Fase 1
+
+## Próximos passos imediatos
+
+1. publicar a implementação atual
+2. observar 1 ou 2 ciclos reais do workflow
+3. se fizer sentido, refinar a classificação técnica de erro em `run_fetchers.py`:
+   - `403`
+   - `429`
+   - `timeout`
+   - `network_error`
 
 Adicionar um avaliador de necessidade de fetch:
 

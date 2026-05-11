@@ -50,6 +50,8 @@ Já existe:
 - agenda construída a partir dos JSON finais;
 - `sourceHealth` e `lastUpdatedAt` nos payloads;
 - frontend mais dependente de JSON publicado do que de hidratação local.
+- planner temporal com `nextRecommendedFetchAt`;
+- follow-up workflow orientado a janela temporal em vez de vagas fixas cegas.
 
 Ainda falta consolidar:
 
@@ -233,7 +235,20 @@ Concentrar esforço de scraping nas competições com maior probabilidade de mud
 
 ### Nota
 
-Parte desta fase já existe em `plan_fetchers.py`, mas precisa de ser consolidada com as novas classificações de qualidade.
+Parte desta fase já existe em `plan_fetchers.py`.
+
+Neste momento já existe:
+
+- separação entre `awaiting_window`, `result_chase` e `historical_backfill`;
+- primeira tentativa útil em `hora do jogo + 2h`;
+- follow-up guiado por `nextRecommendedFetchAt`;
+- recuperação histórica em janela mais lenta.
+
+O que ainda falta consolidar:
+
+- classificação técnica explícita de erros;
+- persistência de memória técnica entre runs;
+- tuning do planeador com base em runs reais.
 
 ### Critérios de aceitação
 
@@ -258,6 +273,16 @@ Uma página `admin.html` ou equivalente com:
 - fallback reuse;
 - último erro;
 - origem FPF;
+
+## Próximos passos imediatos
+
+1. publicar a implementação atual do `ADAPTIVE_FETCH_WINDOW_PLAN`
+2. observar 1 ou 2 ciclos reais do workflow
+3. se fizer sentido, refinar a classificação técnica de erro em `run_fetchers.py`:
+   - `403`
+   - `429`
+   - `timeout`
+   - `network_error`
 - indicação se a app está a consumir JSON publicado ou fallback local.
 
 ### Critérios de aceitação
