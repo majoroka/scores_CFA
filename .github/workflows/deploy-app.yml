@@ -1,4 +1,4 @@
-name: Deploy app
+name: Deploy site
 
 on:
   push:
@@ -8,6 +8,7 @@ on:
       - "*.html"
       - "*.js"
       - "css/**"
+      - "data/**"
       - "img/**"
       - ".github/workflows/deploy-app.yml"
   workflow_dispatch: {}
@@ -18,7 +19,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "deploy-app-pages"
+  group: "deploy-site-pages"
   cancel-in-progress: true
 
 jobs:
