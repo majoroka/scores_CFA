@@ -16,7 +16,6 @@ on:
       - "competition_sync.py"
       - ".github/workflows/update-data.yml"
       - ".github/workflows/retry-pending-results.yml"
-      - "data/*.json"
   workflow_dispatch: {}
   schedule:
     - cron: "17 * * * *"
