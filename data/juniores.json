@@ -1,9 +1,9 @@
 {
     "defaultRoundIndex": 14,
     "defaultRoundNumber": 15,
-    "lastUpdatedAt": "2026-05-11T14:37:28Z",
+    "lastUpdatedAt": "2026-05-11T15:03:54Z",
     "sourceHealth": {
-        "status": "partial",
+        "status": "ok",
         "fallbackReuseCount": 0,
         "issues": []
     },
@@ -12,10 +12,10 @@
         "matchCount": 90,
         "classificationCount": 180,
         "teamCount": 10,
-        "completedMatchCount": 73,
-        "matchesWithoutScore": 17,
+        "completedMatchCount": 75,
+        "matchesWithoutScore": 15,
         "pastMatchCount": 75,
-        "pastMatchesWithoutScore": 2,
+        "pastMatchesWithoutScore": 0,
         "futureMatchCount": 15,
         "roundsWithMatches": 18,
         "roundsWithClassification": 18,
@@ -2324,8 +2324,8 @@
                     "date": "10 mai",
                     "time": "16:00",
                     "stadium": "Estádio José Arcanjo",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 1,
+                    "awayScore": 1
                 },
                 {
                     "home": "Udr Sambrasense",
@@ -2333,8 +2333,8 @@
                     "date": "10 mai",
                     "time": "16:00",
                     "stadium": "Campo Polidesportivo",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 2,
+                    "awayScore": 0
                 },
                 {
                     "home": "Cdr Quarteirense",

@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from typing import FrozenSet
+from typing import FrozenSet, Mapping
 
 
 @dataclass(frozen=True)
@@ -16,6 +16,9 @@ class CompetitionConfig:
     ignored_team_names: FrozenSet[str] = field(default_factory=frozenset)
     strip_score_from_date: bool = False
     club_team_names: FrozenSet[str] = field(default_factory=frozenset)
+    secondary_results_url: str = ''
+    secondary_results_phase_id: str = ''
+    secondary_results_team_aliases: Mapping[str, str] = field(default_factory=dict)
     key: str = ''
     title: str = ''
     subtitle: str = ''
@@ -220,6 +223,20 @@ JUNIORES = CompetitionConfig(
     fixture_cache_prefix='juniores_fixture',
     target_serie_name='APURAMENTO CAMPEÃO',
     club_team_names=frozenset({'Cf Os Armacenenses'}),
+    secondary_results_url='https://www.zerozero.pt/edicao/af-algarve-juniores-a-2-fase-apuramento-campeao-2025-26/212078',
+    secondary_results_phase_id='232614',
+    secondary_results_team_aliases={
+        'Cf Os Armacenenses': 'Armacenenses',
+        'Sc Olhanense': 'Olhanense',
+        'Fc Ferreiras': 'Ferreiras',
+        'Udr Sambrasense': 'Sambrasense',
+        'Cd Odiáxere': 'Odixere',
+        'Odiáxere': 'Odixere',
+        'Internacional Ca': 'Inter Almancil',
+        'Adt - Ass. Desp. Tavira': 'ADT - Associao Desportiva Tavira',
+        'Cdr Quarteirense': 'Quarteirense',
+        'Sc Farense': 'Farense B',
+    },
 )
 
 JUVENIS = CompetitionConfig(

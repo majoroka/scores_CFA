@@ -4,6 +4,8 @@ import os
 import re
 import time
 import unicodedata
+import urllib.error
+import urllib.request
 from datetime import datetime, timezone
 from typing import Optional
 
@@ -26,6 +28,19 @@ MONTH_MAP = {
     'nov': 11,
     'dez': 12,
 }
+ZEROZERO_HEADERS = {
+    'User-Agent': (
+        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
+        'AppleWebKit/537.36 (KHTML, like Gecko) '
+        'Chrome/136.0.0.0 Safari/537.36'
+    ),
+    'Accept-Language': 'pt-PT,pt;q=0.9,en;q=0.8',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+}
+SECONDARY_PREFIX_TOKENS = {
+    'acf', 'ad', 'adc', 'adt', 'associacao', 'ca', 'cdr', 'cd', 'cf', 'cr',
+    'dc', 'fc', 'gd', 'sc', 'slb', 'ud', 'udr',
+}
 
 
 class SyncCriticalError(RuntimeError):
@@ -42,6 +57,10 @@ def _clean_text(value: str) -> str:
     value = re.sub(r'<br\s*/?>', ' ', value, flags=re.IGNORECASE)
     value = re.sub(r'<.*?>', '', value)
     return html.unescape(value).strip()
+
+
+def _normalize_spaces(value: str) -> str:
+    return re.sub(r'\s+', ' ', value).strip()
 
 
 def _normalize_month_token(value: str):
@@ -427,6 +446,132 @@ def parse_classification(html_fragment: str):
     return classification
 
 
+def _secondary_team_key(team_name: str, aliases: Optional[dict[str, str]] = None):
+    normalized = _normalize_spaces(_normalize(team_name or ''))
+    if not normalized:
+        return ''
+
+    if aliases and normalized in aliases:
+        return aliases[normalized]
+
+    cleaned = re.sub(r'[^a-z0-9 ]+', ' ', normalized)
+    tokens = [token for token in cleaned.split() if token and token not in SECONDARY_PREFIX_TOKENS]
+    simplified = ' '.join(tokens) or cleaned.strip() or normalized
+    simplified = _normalize_spaces(simplified)
+
+    if aliases and simplified in aliases:
+        return aliases[simplified]
+    return simplified
+
+
+def fetch_secondary_results_page(url: str):
+    request = urllib.request.Request(url, headers=ZEROZERO_HEADERS)
+    try:
+        with urllib.request.urlopen(request, timeout=30) as response:
+            return response.read().decode('utf-8', 'ignore')
+    except (urllib.error.URLError, TimeoutError, ValueError):
+        return ''
+
+
+def parse_zerozero_round_results(html_content: str):
+    section_match = re.search(
+        r'<div id="fixture_games"[^>]*>[\s\S]*?<tbody>([\s\S]*?)</tbody>',
+        html_content,
+        re.IGNORECASE,
+    )
+    if not section_match:
+        return []
+
+    results = []
+    row_pattern = re.compile(r'<tr>([\s\S]*?)</tr>', re.IGNORECASE)
+    for row_html in row_pattern.findall(section_match.group(1)):
+        columns = re.findall(r'<td[^>]*>([\s\S]*?)</td>', row_html, re.IGNORECASE)
+        if len(columns) < 6:
+            continue
+
+        date_value = _clean_text(columns[0]).replace('\xa0', ' ').strip()
+        home_team = _clean_text(columns[1])
+        score_text = _clean_text(columns[3])
+        away_team = _clean_text(columns[5])
+        score_match = re.search(r'(\d{1,2})\s*[-–]\s*(\d{1,2})', score_text)
+        if not home_team or not away_team or not score_match:
+            continue
+
+        results.append({
+            'date': date_value,
+            'home': home_team,
+            'away': away_team,
+            'homeScore': int(score_match.group(1)),
+            'awayScore': int(score_match.group(2)),
+        })
+
+    return results
+
+
+def fill_missing_scores_from_secondary_results(
+    rounds,
+    config: CompetitionConfig,
+    today: Optional[datetime] = None,
+    page_fetcher=None,
+):
+    if not config.secondary_results_url or not config.secondary_results_phase_id:
+        return 0
+
+    reference_today = (today or datetime.now()).replace(hour=12, minute=0, second=0, microsecond=0)
+    aliases = {
+        _normalize_spaces(_normalize(source)): _normalize_spaces(_normalize(target))
+        for source, target in dict(config.secondary_results_team_aliases).items()
+    }
+    fetcher = page_fetcher or fetch_secondary_results_page
+    filled_scores = 0
+
+    for round_data in rounds:
+        matches = round_data.get('matches', [])
+        pending_matches = []
+        for match in matches:
+            has_score = isinstance(match.get('homeScore'), int) and isinstance(match.get('awayScore'), int)
+            if has_score:
+                continue
+            parsed_date = parse_match_date(match.get('date', ''), today=reference_today)
+            if not parsed_date or parsed_date > reference_today:
+                continue
+            pending_matches.append(match)
+
+        if not pending_matches:
+            continue
+
+        url = (
+            f'{config.secondary_results_url}?fase={config.secondary_results_phase_id}'
+            f'&jornada_in={round_data.get("index")}'
+        )
+        page = fetcher(url)
+        if not page:
+            continue
+
+        zerozero_results = parse_zerozero_round_results(page)
+        zerozero_by_pair = {
+            (
+                _secondary_team_key(item['home'], aliases),
+                _secondary_team_key(item['away'], aliases),
+            ): item
+            for item in zerozero_results
+        }
+
+        for match in pending_matches:
+            key = (
+                _secondary_team_key(match.get('home', ''), aliases),
+                _secondary_team_key(match.get('away', ''), aliases),
+            )
+            secondary_match = zerozero_by_pair.get(key)
+            if not secondary_match:
+                continue
+            match['homeScore'] = secondary_match['homeScore']
+            match['awayScore'] = secondary_match['awayScore']
+            filled_scores += 1
+
+    return filled_scores
+
+
 def build_classification_from_results(rounds, ignored_team_names):
     ignored = {_normalize(name) for name in ignored_team_names}
     team_labels = {}
@@ -615,6 +760,8 @@ def run_sync(config: CompetitionConfig):
             'classification': classification,
         })
         time.sleep(1)
+
+    fill_missing_scores_from_secondary_results(rounds, config)
 
     if config.derive_classification:
         build_classification_from_results(rounds, config.ignored_team_names)

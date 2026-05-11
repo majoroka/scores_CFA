@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-11T14:37:54Z",
+  "generatedAt": "2026-05-11T15:03:54Z",
   "competitionCount": 15,
   "statusCounts": {
-    "ok": 2,
-    "partial": 13,
+    "ok": 3,
+    "partial": 12,
     "degraded": 0,
     "missing": 0
   },
@@ -26,13 +26,13 @@
       "outputFile": "data/seniores.json"
     },
     "juniores": {
-      "status": "partial",
-      "lastUpdatedAt": "2026-05-11T14:37:28Z",
+      "status": "ok",
+      "lastUpdatedAt": "2026-05-11T15:03:54Z",
       "fallbackReuseCount": 0,
-      "matchesWithoutScore": 17,
-      "pastMatchesWithoutScore": 2,
+      "matchesWithoutScore": 15,
+      "pastMatchesWithoutScore": 0,
       "matchCount": 90,
-      "completedMatchCount": 73,
+      "completedMatchCount": 75,
       "roundCount": 18,
       "teamCount": 10,
       "roundsWithCompletedMatches": 15,

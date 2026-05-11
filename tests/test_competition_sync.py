@@ -8,10 +8,12 @@ from competition_sync import (
     collect_quality_metrics,
     compute_default_round_index,
     extract_fixture_ids,
+    fill_missing_scores_from_secondary_results,
     infer_payload_status,
     parse_classification,
     parse_match_date,
     parse_matches,
+    parse_zerozero_round_results,
 )
 
 
@@ -233,6 +235,119 @@ class CompetitionSyncTests(unittest.TestCase):
         self.assertEqual(first_match['date'], '28 fev')
         self.assertEqual(first_match['homeScore'], 3)
         self.assertEqual(first_match['awayScore'], 6)
+
+    def test_parse_zerozero_round_results(self):
+        html = '''
+        <div id="fixture_games" class="box_container">
+            <table class="zztable stats">
+                <tbody>
+                    <tr>
+                        <td>10/05</td>
+                        <td class="text"><a>Olhanense</a></td>
+                        <td><img alt="Olhanense"></td>
+                        <td class="result"><a>1-1</a></td>
+                        <td><img alt="Ferreiras"></td>
+                        <td class="text"><a>Ferreiras</a></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td class="text"><a>Sambrasense</a></td>
+                        <td><img alt="Sambrasense"></td>
+                        <td class="result"><a>2-0</a></td>
+                        <td><img alt="Odiáxere"></td>
+                        <td class="text"><a>Odiáxere</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        '''
+        results = parse_zerozero_round_results(html)
+        self.assertEqual(len(results), 2)
+        self.assertEqual(results[0]['home'], 'Olhanense')
+        self.assertEqual(results[0]['away'], 'Ferreiras')
+        self.assertEqual(results[0]['homeScore'], 1)
+        self.assertEqual(results[0]['awayScore'], 1)
+
+    def test_fill_missing_scores_from_secondary_results(self):
+        rounds = [
+            {
+                'index': 15,
+                'matches': [
+                    {
+                        'home': 'Sc Olhanense',
+                        'away': 'Fc Ferreiras',
+                        'date': '10 mai',
+                        'time': '16:00',
+                        'stadium': 'Estádio José Arcanjo',
+                        'homeScore': None,
+                        'awayScore': None,
+                    },
+                    {
+                        'home': 'Udr Sambrasense',
+                        'away': 'Cd Odiáxere',
+                        'date': '10 mai',
+                        'time': '16:00',
+                        'stadium': 'Campo Polidesportivo',
+                        'homeScore': None,
+                        'awayScore': None,
+                    },
+                ],
+                'classification': [],
+            }
+        ]
+        config = CompetitionConfig(
+            competition_url='https://example.test',
+            output_file='data/example.json',
+            main_cache_key='example_main',
+            fixture_cache_prefix='example_fixture',
+            secondary_results_url='https://zerozero.example/edition',
+            secondary_results_phase_id='232614',
+            secondary_results_team_aliases={
+                'Sc Olhanense': 'Olhanense',
+                'Fc Ferreiras': 'Ferreiras',
+                'Udr Sambrasense': 'Sambrasense',
+                'Cd Odiáxere': 'Odiáxere',
+            },
+        )
+
+        def fake_fetcher(_url):
+            return '''
+            <div id="fixture_games" class="box_container">
+                <table class="zztable stats">
+                    <tbody>
+                        <tr>
+                            <td>10/05</td>
+                            <td class="text"><a>Olhanense</a></td>
+                            <td><img alt="Olhanense"></td>
+                            <td class="result"><a>1-1</a></td>
+                            <td><img alt="Ferreiras"></td>
+                            <td class="text"><a>Ferreiras</a></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td class="text"><a>Sambrasense</a></td>
+                            <td><img alt="Sambrasense"></td>
+                            <td class="result"><a>2-0</a></td>
+                            <td><img alt="Odiáxere"></td>
+                            <td class="text"><a>Odiáxere</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            '''
+
+        filled = fill_missing_scores_from_secondary_results(
+            rounds,
+            config,
+            today=datetime(2026, 5, 11, 12, 0, 0),
+            page_fetcher=fake_fetcher,
+        )
+
+        self.assertEqual(filled, 2)
+        self.assertEqual(rounds[0]['matches'][0]['homeScore'], 1)
+        self.assertEqual(rounds[0]['matches'][0]['awayScore'], 1)
+        self.assertEqual(rounds[0]['matches'][1]['homeScore'], 2)
+        self.assertEqual(rounds[0]['matches'][1]['awayScore'], 0)
 
 
 if __name__ == '__main__':
