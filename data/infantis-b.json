@@ -1,10 +1,26 @@
 {
     "defaultRoundIndex": 15,
     "defaultRoundNumber": 16,
-    "lastUpdatedAt": "2026-05-10T10:47:41Z",
+    "lastUpdatedAt": "2026-05-11T13:16:33Z",
     "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 11
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
+    },
+    "dataQuality": {
+        "roundCount": 18,
+        "matchCount": 90,
+        "classificationCount": 180,
+        "teamCount": 10,
+        "completedMatchCount": 78,
+        "matchesWithoutScore": 12,
+        "pastMatchCount": 79,
+        "pastMatchesWithoutScore": 1,
+        "futureMatchCount": 11,
+        "roundsWithMatches": 18,
+        "roundsWithClassification": 18,
+        "roundsWithCompletedMatches": 16,
+        "roundsWithoutData": 0
     },
     "rounds": [
         {
@@ -528,15 +544,6 @@
                     "awayScore": 8
                 },
                 {
-                    "home": "Imortal Dc",
-                    "away": "Portimonense Sc",
-                    "date": "4 - 5                            \r\n                \r\n                    31 jan",
-                    "time": "",
-                    "stadium": "Campo Da Palmeira Nº 2",
-                    "homeScore": 4,
-                    "awayScore": 5
-                },
-                {
                     "home": "Aef Monte Gordo 2019",
                     "away": "Cr Infante Sagres",
                     "date": "0 - 6                            \r\n                \r\n                    31 jan",
@@ -544,6 +551,15 @@
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": 0,
                     "awayScore": 6
+                },
+                {
+                    "home": "Imortal Dc",
+                    "away": "Portimonense Sc",
+                    "date": "4 - 5                            \r\n                \r\n                    31 jan",
+                    "time": "",
+                    "stadium": "Campo Da Palmeira Nº 2",
+                    "homeScore": 4,
+                    "awayScore": 5
                 }
             ],
             "classification": [
@@ -664,15 +680,6 @@
             "fixtureId": "626192",
             "matches": [
                 {
-                    "home": "Cr Infante Sagres",
-                    "away": "Fc Ferreiras",
-                    "date": "10 - 0                            \r\n                \r\n                    14 fev",
-                    "time": "",
-                    "stadium": "Complexo Desportivo 1º Maio",
-                    "homeScore": 10,
-                    "awayScore": 0
-                },
-                {
                     "home": "Csl Benfica Lagos",
                     "away": "Aef Faro",
                     "date": "5 - 1                            \r\n                \r\n                    14 fev",
@@ -680,6 +687,15 @@
                     "stadium": "Campo Zona Verde",
                     "homeScore": 5,
                     "awayScore": 1
+                },
+                {
+                    "home": "Cr Infante Sagres",
+                    "away": "Fc Ferreiras",
+                    "date": "10 - 0                            \r\n                \r\n                    14 fev",
+                    "time": "",
+                    "stadium": "Complexo Desportivo 1º Maio",
+                    "homeScore": 10,
+                    "awayScore": 0
                 },
                 {
                     "home": "4 Ao Cubo Ad Olhão",
@@ -854,15 +870,6 @@
                     "awayScore": 2
                 },
                 {
-                    "home": "Aef Monte Gordo 2019",
-                    "away": "Imortal Dc",
-                    "date": "1 - 10                            \r\n                \r\n                    21 fev",
-                    "time": "",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": 1,
-                    "awayScore": 10
-                },
-                {
                     "home": "Aef Faro",
                     "away": "Cr Infante Sagres",
                     "date": "6 - 2                            \r\n                \r\n                    21 fev",
@@ -870,6 +877,15 @@
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 6,
                     "awayScore": 2
+                },
+                {
+                    "home": "Aef Monte Gordo 2019",
+                    "away": "Imortal Dc",
+                    "date": "1 - 10                            \r\n                \r\n                    21 fev",
+                    "time": "",
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
+                    "homeScore": 1,
+                    "awayScore": 10
                 }
             ],
             "classification": [
@@ -1479,15 +1495,6 @@
             "fixtureId": "626197",
             "matches": [
                 {
-                    "home": "Imortal Dc",
-                    "away": "Csl Benfica Lagos",
-                    "date": "1 - 3                            \r\n                \r\n                    21 mar",
-                    "time": "",
-                    "stadium": "Campo Da Palmeira Nº 2",
-                    "homeScore": 1,
-                    "awayScore": 3
-                },
-                {
                     "home": "Aef Monte Gordo 2019",
                     "away": "Aef Faro",
                     "date": "0 - 16                            \r\n                \r\n                    21 mar",
@@ -1495,6 +1502,15 @@
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": 0,
                     "awayScore": 16
+                },
+                {
+                    "home": "Imortal Dc",
+                    "away": "Csl Benfica Lagos",
+                    "date": "1 - 3                            \r\n                \r\n                    21 mar",
+                    "time": "",
+                    "stadium": "Campo Da Palmeira Nº 2",
+                    "homeScore": 1,
+                    "awayScore": 3
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -1986,15 +2002,6 @@
                     "awayScore": 4
                 },
                 {
-                    "home": "Csl Benfica Lagos",
-                    "away": "Fc Ferreiras",
-                    "date": "5 - 1                            \r\n                \r\n                    18 abr",
-                    "time": "",
-                    "stadium": "Campo Zona Verde",
-                    "homeScore": 5,
-                    "awayScore": 1
-                },
-                {
                     "home": "4 Ao Cubo Ad Olhão",
                     "away": "Cf Os Armacenenses",
                     "date": "8 - 0                            \r\n                \r\n                    18 abr",
@@ -2002,6 +2009,15 @@
                     "stadium": "Estádio Municipal Olhão",
                     "homeScore": 8,
                     "awayScore": 0
+                },
+                {
+                    "home": "Csl Benfica Lagos",
+                    "away": "Fc Ferreiras",
+                    "date": "5 - 1                            \r\n                \r\n                    18 abr",
+                    "time": "",
+                    "stadium": "Campo Zona Verde",
+                    "homeScore": 5,
+                    "awayScore": 1
                 },
                 {
                     "home": "Cr Infante Sagres",
@@ -2294,160 +2310,160 @@
             "fixtureId": "626202",
             "matches": [
                 {
+                    "home": "4 Ao Cubo Ad Olhão",
+                    "away": "Fc Ferreiras",
+                    "date": "13 - 0                            \r\n                \r\n                    1 mai",
+                    "time": "",
+                    "stadium": "Estádio Municipal Olhão",
+                    "homeScore": 13,
+                    "awayScore": 0
+                },
+                {
                     "home": "Portimonense Sc",
                     "away": "Cf Os Armacenenses",
-                    "date": "2 mai",
-                    "time": "09:30",
+                    "date": "2 - 5                            \r\n                \r\n                    2 mai",
+                    "time": "",
                     "stadium": "Campo Major David Neto 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 2,
+                    "awayScore": 5
                 },
                 {
                     "home": "Cr Infante Sagres",
                     "away": "Aef Faro",
-                    "date": "2 mai",
-                    "time": "10:30",
+                    "date": "6 - 5                            \r\n                \r\n                    2 mai",
+                    "time": "",
                     "stadium": "Complexo Desportivo 1º Maio",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "4 Ao Cubo Ad Olhão",
-                    "away": "Fc Ferreiras",
-                    "date": "2 mai",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Olhão",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 6,
+                    "awayScore": 5
                 },
                 {
                     "home": "Csl Benfica Lagos",
                     "away": "Mexilhoeira Grande Fc",
-                    "date": "2 mai",
-                    "time": "11:00",
+                    "date": "6 - 5                            \r\n                \r\n                    2 mai",
+                    "time": "",
                     "stadium": "Campo Zona Verde",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 6,
+                    "awayScore": 5
                 },
                 {
                     "home": "Imortal Dc",
                     "away": "Aef Monte Gordo 2019",
-                    "date": "2 mai",
-                    "time": "12:00",
+                    "date": "7 - 1                            \r\n                \r\n                    2 mai",
+                    "time": "",
                     "stadium": "Campo Da Palmeira Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 7,
+                    "awayScore": 1
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Csl Benfica Lagos",
-                    "played": 14,
-                    "wins": 11,
+                    "played": 15,
+                    "wins": 12,
                     "draws": 2,
                     "losses": 1,
-                    "goalsFor": 70,
-                    "goalsAgainst": 16,
-                    "points": 35
+                    "goalsFor": 76,
+                    "goalsAgainst": 21,
+                    "points": 38
                 },
                 {
                     "position": 2,
                     "team": "4 Ao Cubo Ad Olhão",
-                    "played": 14,
-                    "wins": 11,
+                    "played": 15,
+                    "wins": 12,
                     "draws": 1,
                     "losses": 2,
-                    "goalsFor": 105,
+                    "goalsFor": 118,
                     "goalsAgainst": 19,
-                    "points": 34
+                    "points": 37
                 },
                 {
                     "position": 3,
                     "team": "Cr Infante Sagres",
-                    "played": 14,
-                    "wins": 11,
+                    "played": 15,
+                    "wins": 12,
                     "draws": 0,
                     "losses": 3,
-                    "goalsFor": 81,
-                    "goalsAgainst": 29,
-                    "points": 33
+                    "goalsFor": 87,
+                    "goalsAgainst": 34,
+                    "points": 36
                 },
                 {
                     "position": 4,
                     "team": "Aef Faro",
-                    "played": 14,
+                    "played": 15,
                     "wins": 9,
                     "draws": 1,
-                    "losses": 4,
-                    "goalsFor": 83,
-                    "goalsAgainst": 21,
+                    "losses": 5,
+                    "goalsFor": 88,
+                    "goalsAgainst": 27,
                     "points": 28
                 },
                 {
                     "position": 5,
                     "team": "Portimonense Sc",
-                    "played": 14,
+                    "played": 15,
                     "wins": 6,
                     "draws": 2,
-                    "losses": 6,
-                    "goalsFor": 45,
-                    "goalsAgainst": 42,
+                    "losses": 7,
+                    "goalsFor": 47,
+                    "goalsAgainst": 47,
                     "points": 20
                 },
                 {
                     "position": 6,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 13,
+                    "team": "Imortal Dc",
+                    "played": 15,
                     "wins": 6,
                     "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 45,
-                    "goalsAgainst": 51,
+                    "losses": 8,
+                    "goalsFor": 53,
+                    "goalsAgainst": 57,
                     "points": 19
                 },
                 {
                     "position": 7,
-                    "team": "Imortal Dc",
+                    "team": "Mexilhoeira Grande Fc",
                     "played": 14,
-                    "wins": 5,
+                    "wins": 6,
                     "draws": 1,
-                    "losses": 8,
-                    "goalsFor": 46,
-                    "goalsAgainst": 56,
-                    "points": 16
+                    "losses": 7,
+                    "goalsFor": 50,
+                    "goalsAgainst": 57,
+                    "points": 19
                 },
                 {
                     "position": 8,
                     "team": "Cf Os Armacenenses",
-                    "played": 14,
-                    "wins": 5,
+                    "played": 15,
+                    "wins": 6,
                     "draws": 0,
                     "losses": 9,
-                    "goalsFor": 37,
-                    "goalsAgainst": 61,
-                    "points": 15
+                    "goalsFor": 42,
+                    "goalsAgainst": 63,
+                    "points": 18
                 },
                 {
                     "position": 9,
                     "team": "Fc Ferreiras",
-                    "played": 14,
+                    "played": 15,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 13,
+                    "losses": 14,
                     "goalsFor": 15,
-                    "goalsAgainst": 99,
+                    "goalsAgainst": 112,
                     "points": 3
                 },
                 {
                     "position": 10,
                     "team": "Aef Monte Gordo 2019",
-                    "played": 13,
+                    "played": 14,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 13,
-                    "goalsFor": 8,
-                    "goalsAgainst": 141,
+                    "losses": 14,
+                    "goalsFor": 9,
+                    "goalsAgainst": 148,
                     "points": 0
                 }
             ]
@@ -2457,22 +2473,22 @@
             "fixtureId": "626203",
             "matches": [
                 {
-                    "home": "Aef Faro",
-                    "away": "4 Ao Cubo Ad Olhão",
-                    "date": "9 mai",
-                    "time": "09:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Csl Benfica Lagos",
                     "away": "Portimonense Sc",
-                    "date": "9 mai",
-                    "time": "09:00",
+                    "date": "4 - 0                            \r\n                \r\n                    9 mai",
+                    "time": "",
                     "stadium": "Campo Zona Verde",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 4,
+                    "awayScore": 0
+                },
+                {
+                    "home": "Aef Faro",
+                    "away": "4 Ao Cubo Ad Olhão",
+                    "date": "0 - 4                            \r\n                \r\n                    9 mai",
+                    "time": "",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": 0,
+                    "awayScore": 4
                 },
                 {
                     "home": "Aef Monte Gordo 2019",
@@ -2486,131 +2502,131 @@
                 {
                     "home": "Fc Ferreiras",
                     "away": "Imortal Dc",
-                    "date": "9 mai",
-                    "time": "10:30",
+                    "date": "0 - 3                            \r\n                \r\n                    9 mai",
+                    "time": "",
                     "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 0,
+                    "awayScore": 3
                 },
                 {
                     "home": "Mexilhoeira Grande Fc",
                     "away": "Cr Infante Sagres",
-                    "date": "9 mai",
-                    "time": "12:00",
+                    "date": "4 - 8                            \r\n                \r\n                    9 mai",
+                    "time": "",
                     "stadium": "Campo Municipal Mexilhoeira Grande",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 4,
+                    "awayScore": 8
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Csl Benfica Lagos",
-                    "played": 14,
-                    "wins": 11,
+                    "played": 16,
+                    "wins": 13,
                     "draws": 2,
                     "losses": 1,
-                    "goalsFor": 70,
-                    "goalsAgainst": 16,
-                    "points": 35
+                    "goalsFor": 80,
+                    "goalsAgainst": 21,
+                    "points": 41
                 },
                 {
                     "position": 2,
                     "team": "4 Ao Cubo Ad Olhão",
-                    "played": 14,
-                    "wins": 11,
+                    "played": 16,
+                    "wins": 13,
                     "draws": 1,
                     "losses": 2,
-                    "goalsFor": 105,
+                    "goalsFor": 122,
                     "goalsAgainst": 19,
-                    "points": 34
+                    "points": 40
                 },
                 {
                     "position": 3,
                     "team": "Cr Infante Sagres",
-                    "played": 14,
-                    "wins": 11,
+                    "played": 16,
+                    "wins": 13,
                     "draws": 0,
                     "losses": 3,
-                    "goalsFor": 81,
-                    "goalsAgainst": 29,
-                    "points": 33
+                    "goalsFor": 95,
+                    "goalsAgainst": 38,
+                    "points": 39
                 },
                 {
                     "position": 4,
                     "team": "Aef Faro",
-                    "played": 14,
+                    "played": 16,
                     "wins": 9,
                     "draws": 1,
-                    "losses": 4,
-                    "goalsFor": 83,
-                    "goalsAgainst": 21,
+                    "losses": 6,
+                    "goalsFor": 88,
+                    "goalsAgainst": 31,
                     "points": 28
                 },
                 {
                     "position": 5,
-                    "team": "Portimonense Sc",
-                    "played": 14,
-                    "wins": 6,
-                    "draws": 2,
-                    "losses": 6,
-                    "goalsFor": 45,
-                    "goalsAgainst": 42,
-                    "points": 20
+                    "team": "Imortal Dc",
+                    "played": 16,
+                    "wins": 7,
+                    "draws": 1,
+                    "losses": 8,
+                    "goalsFor": 56,
+                    "goalsAgainst": 57,
+                    "points": 22
                 },
                 {
                     "position": 6,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 13,
+                    "team": "Portimonense Sc",
+                    "played": 16,
                     "wins": 6,
-                    "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 45,
+                    "draws": 2,
+                    "losses": 8,
+                    "goalsFor": 47,
                     "goalsAgainst": 51,
-                    "points": 19
+                    "points": 20
                 },
                 {
                     "position": 7,
-                    "team": "Imortal Dc",
-                    "played": 14,
-                    "wins": 5,
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 15,
+                    "wins": 6,
                     "draws": 1,
                     "losses": 8,
-                    "goalsFor": 46,
-                    "goalsAgainst": 56,
-                    "points": 16
+                    "goalsFor": 54,
+                    "goalsAgainst": 65,
+                    "points": 19
                 },
                 {
                     "position": 8,
                     "team": "Cf Os Armacenenses",
-                    "played": 14,
-                    "wins": 5,
+                    "played": 15,
+                    "wins": 6,
                     "draws": 0,
                     "losses": 9,
-                    "goalsFor": 37,
-                    "goalsAgainst": 61,
-                    "points": 15
+                    "goalsFor": 42,
+                    "goalsAgainst": 63,
+                    "points": 18
                 },
                 {
                     "position": 9,
                     "team": "Fc Ferreiras",
-                    "played": 14,
+                    "played": 16,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 13,
+                    "losses": 15,
                     "goalsFor": 15,
-                    "goalsAgainst": 99,
+                    "goalsAgainst": 115,
                     "points": 3
                 },
                 {
                     "position": 10,
                     "team": "Aef Monte Gordo 2019",
-                    "played": 13,
+                    "played": 14,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 13,
-                    "goalsFor": 8,
-                    "goalsAgainst": 141,
+                    "losses": 14,
+                    "goalsFor": 9,
+                    "goalsAgainst": 148,
                     "points": 0
                 }
             ]
@@ -2647,20 +2663,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Aef Monte Gordo 2019",
-                    "away": "Portimonense Sc",
-                    "date": "16 mai",
-                    "time": "12:00",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "4 Ao Cubo Ad Olhão",
                     "away": "Mexilhoeira Grande Fc",
                     "date": "16 mai",
                     "time": "12:00",
                     "stadium": "Estádio Municipal Olhão",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Aef Monte Gordo 2019",
+                    "away": "Portimonense Sc",
+                    "date": "16 mai",
+                    "time": "12:00",
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -2669,111 +2685,111 @@
                 {
                     "position": 1,
                     "team": "Csl Benfica Lagos",
-                    "played": 14,
-                    "wins": 11,
+                    "played": 16,
+                    "wins": 13,
                     "draws": 2,
                     "losses": 1,
-                    "goalsFor": 70,
-                    "goalsAgainst": 16,
-                    "points": 35
+                    "goalsFor": 80,
+                    "goalsAgainst": 21,
+                    "points": 41
                 },
                 {
                     "position": 2,
                     "team": "4 Ao Cubo Ad Olhão",
-                    "played": 14,
-                    "wins": 11,
+                    "played": 16,
+                    "wins": 13,
                     "draws": 1,
                     "losses": 2,
-                    "goalsFor": 105,
+                    "goalsFor": 122,
                     "goalsAgainst": 19,
-                    "points": 34
+                    "points": 40
                 },
                 {
                     "position": 3,
                     "team": "Cr Infante Sagres",
-                    "played": 14,
-                    "wins": 11,
+                    "played": 16,
+                    "wins": 13,
                     "draws": 0,
                     "losses": 3,
-                    "goalsFor": 81,
-                    "goalsAgainst": 29,
-                    "points": 33
+                    "goalsFor": 95,
+                    "goalsAgainst": 38,
+                    "points": 39
                 },
                 {
                     "position": 4,
                     "team": "Aef Faro",
-                    "played": 14,
+                    "played": 16,
                     "wins": 9,
                     "draws": 1,
-                    "losses": 4,
-                    "goalsFor": 83,
-                    "goalsAgainst": 21,
+                    "losses": 6,
+                    "goalsFor": 88,
+                    "goalsAgainst": 31,
                     "points": 28
                 },
                 {
                     "position": 5,
-                    "team": "Portimonense Sc",
-                    "played": 14,
-                    "wins": 6,
-                    "draws": 2,
-                    "losses": 6,
-                    "goalsFor": 45,
-                    "goalsAgainst": 42,
-                    "points": 20
+                    "team": "Imortal Dc",
+                    "played": 16,
+                    "wins": 7,
+                    "draws": 1,
+                    "losses": 8,
+                    "goalsFor": 56,
+                    "goalsAgainst": 57,
+                    "points": 22
                 },
                 {
                     "position": 6,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 13,
+                    "team": "Portimonense Sc",
+                    "played": 16,
                     "wins": 6,
-                    "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 45,
+                    "draws": 2,
+                    "losses": 8,
+                    "goalsFor": 47,
                     "goalsAgainst": 51,
-                    "points": 19
+                    "points": 20
                 },
                 {
                     "position": 7,
-                    "team": "Imortal Dc",
-                    "played": 14,
-                    "wins": 5,
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 15,
+                    "wins": 6,
                     "draws": 1,
                     "losses": 8,
-                    "goalsFor": 46,
-                    "goalsAgainst": 56,
-                    "points": 16
+                    "goalsFor": 54,
+                    "goalsAgainst": 65,
+                    "points": 19
                 },
                 {
                     "position": 8,
                     "team": "Cf Os Armacenenses",
-                    "played": 14,
-                    "wins": 5,
+                    "played": 15,
+                    "wins": 6,
                     "draws": 0,
                     "losses": 9,
-                    "goalsFor": 37,
-                    "goalsAgainst": 61,
-                    "points": 15
+                    "goalsFor": 42,
+                    "goalsAgainst": 63,
+                    "points": 18
                 },
                 {
                     "position": 9,
                     "team": "Fc Ferreiras",
-                    "played": 14,
+                    "played": 16,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 13,
+                    "losses": 15,
                     "goalsFor": 15,
-                    "goalsAgainst": 99,
+                    "goalsAgainst": 115,
                     "points": 3
                 },
                 {
                     "position": 10,
                     "team": "Aef Monte Gordo 2019",
-                    "played": 13,
+                    "played": 14,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 13,
-                    "goalsFor": 8,
-                    "goalsAgainst": 141,
+                    "losses": 14,
+                    "goalsFor": 9,
+                    "goalsAgainst": 148,
                     "points": 0
                 }
             ]
@@ -2792,29 +2808,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Portimonense Sc",
-                    "away": "Cr Infante Sagres",
-                    "date": "23 mai",
-                    "time": "09:00",
-                    "stadium": "Campo Major David Neto 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Mexilhoeira Grande Fc",
-                    "away": "Imortal Dc",
-                    "date": "23 mai",
-                    "time": "09:00",
-                    "stadium": "Campo Municipal Mexilhoeira Grande",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Csl Benfica Lagos",
                     "away": "4 Ao Cubo Ad Olhão",
                     "date": "23 mai",
                     "time": "09:00",
                     "stadium": "Campo Zona Verde",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Portimonense Sc",
+                    "away": "Cr Infante Sagres",
+                    "date": "23 mai",
+                    "time": "09:00",
+                    "stadium": "Campo Major David Neto 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2826,117 +2833,126 @@
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Mexilhoeira Grande Fc",
+                    "away": "Imortal Dc",
+                    "date": "23 mai",
+                    "time": "09:00",
+                    "stadium": "Campo Municipal Mexilhoeira Grande",
+                    "homeScore": null,
+                    "awayScore": null
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Csl Benfica Lagos",
-                    "played": 14,
-                    "wins": 11,
+                    "played": 16,
+                    "wins": 13,
                     "draws": 2,
                     "losses": 1,
-                    "goalsFor": 70,
-                    "goalsAgainst": 16,
-                    "points": 35
+                    "goalsFor": 80,
+                    "goalsAgainst": 21,
+                    "points": 41
                 },
                 {
                     "position": 2,
                     "team": "4 Ao Cubo Ad Olhão",
-                    "played": 14,
-                    "wins": 11,
+                    "played": 16,
+                    "wins": 13,
                     "draws": 1,
                     "losses": 2,
-                    "goalsFor": 105,
+                    "goalsFor": 122,
                     "goalsAgainst": 19,
-                    "points": 34
+                    "points": 40
                 },
                 {
                     "position": 3,
                     "team": "Cr Infante Sagres",
-                    "played": 14,
-                    "wins": 11,
+                    "played": 16,
+                    "wins": 13,
                     "draws": 0,
                     "losses": 3,
-                    "goalsFor": 81,
-                    "goalsAgainst": 29,
-                    "points": 33
+                    "goalsFor": 95,
+                    "goalsAgainst": 38,
+                    "points": 39
                 },
                 {
                     "position": 4,
                     "team": "Aef Faro",
-                    "played": 14,
+                    "played": 16,
                     "wins": 9,
                     "draws": 1,
-                    "losses": 4,
-                    "goalsFor": 83,
-                    "goalsAgainst": 21,
+                    "losses": 6,
+                    "goalsFor": 88,
+                    "goalsAgainst": 31,
                     "points": 28
                 },
                 {
                     "position": 5,
-                    "team": "Portimonense Sc",
-                    "played": 14,
-                    "wins": 6,
-                    "draws": 2,
-                    "losses": 6,
-                    "goalsFor": 45,
-                    "goalsAgainst": 42,
-                    "points": 20
+                    "team": "Imortal Dc",
+                    "played": 16,
+                    "wins": 7,
+                    "draws": 1,
+                    "losses": 8,
+                    "goalsFor": 56,
+                    "goalsAgainst": 57,
+                    "points": 22
                 },
                 {
                     "position": 6,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 13,
+                    "team": "Portimonense Sc",
+                    "played": 16,
                     "wins": 6,
-                    "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 45,
+                    "draws": 2,
+                    "losses": 8,
+                    "goalsFor": 47,
                     "goalsAgainst": 51,
-                    "points": 19
+                    "points": 20
                 },
                 {
                     "position": 7,
-                    "team": "Imortal Dc",
-                    "played": 14,
-                    "wins": 5,
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 15,
+                    "wins": 6,
                     "draws": 1,
                     "losses": 8,
-                    "goalsFor": 46,
-                    "goalsAgainst": 56,
-                    "points": 16
+                    "goalsFor": 54,
+                    "goalsAgainst": 65,
+                    "points": 19
                 },
                 {
                     "position": 8,
                     "team": "Cf Os Armacenenses",
-                    "played": 14,
-                    "wins": 5,
+                    "played": 15,
+                    "wins": 6,
                     "draws": 0,
                     "losses": 9,
-                    "goalsFor": 37,
-                    "goalsAgainst": 61,
-                    "points": 15
+                    "goalsFor": 42,
+                    "goalsAgainst": 63,
+                    "points": 18
                 },
                 {
                     "position": 9,
                     "team": "Fc Ferreiras",
-                    "played": 14,
+                    "played": 16,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 13,
+                    "losses": 15,
                     "goalsFor": 15,
-                    "goalsAgainst": 99,
+                    "goalsAgainst": 115,
                     "points": 3
                 },
                 {
                     "position": 10,
                     "team": "Aef Monte Gordo 2019",
-                    "played": 13,
+                    "played": 14,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 13,
-                    "goalsFor": 8,
-                    "goalsAgainst": 141,
+                    "losses": 14,
+                    "goalsFor": 9,
+                    "goalsAgainst": 148,
                     "points": 0
                 }
             ]

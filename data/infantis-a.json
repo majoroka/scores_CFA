@@ -1,25 +1,32 @@
 {
     "defaultRoundIndex": 15,
     "defaultRoundNumber": 16,
-    "lastUpdatedAt": "2026-05-10T10:44:43Z",
+    "lastUpdatedAt": "2026-05-11T13:16:05Z",
     "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
+    },
+    "dataQuality": {
+        "roundCount": 18,
+        "matchCount": 90,
+        "classificationCount": 180,
+        "teamCount": 10,
+        "completedMatchCount": 77,
+        "matchesWithoutScore": 13,
+        "pastMatchCount": 80,
+        "pastMatchesWithoutScore": 3,
+        "futureMatchCount": 10,
+        "roundsWithMatches": 18,
+        "roundsWithClassification": 18,
+        "roundsWithCompletedMatches": 17,
+        "roundsWithoutData": 0
     },
     "rounds": [
         {
             "index": 1,
             "fixtureId": "626080",
             "matches": [
-                {
-                    "home": "Silves Fc",
-                    "away": "Js Campinense",
-                    "date": "2 - 1                            \r\n                \r\n                    10 jan",
-                    "time": "",
-                    "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": 2,
-                    "awayScore": 1
-                },
                 {
                     "home": "Cf Os Armacenenses",
                     "away": "Nucleo Sporting C.P. Olhão",
@@ -28,6 +35,15 @@
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 4,
                     "awayScore": 2
+                },
+                {
+                    "home": "Silves Fc",
+                    "away": "Js Campinense",
+                    "date": "2 - 1                            \r\n                \r\n                    10 jan",
+                    "time": "",
+                    "stadium": "Estádio Dr. Francisco Vieira",
+                    "homeScore": 2,
+                    "awayScore": 1
                 },
                 {
                     "home": "Cd Montenegro",
@@ -338,15 +354,6 @@
             "fixtureId": "626082",
             "matches": [
                 {
-                    "home": "Cf Esperança Lagos",
-                    "away": "Portimonense Sc",
-                    "date": "4 - 0                            \r\n                \r\n                    24 jan",
-                    "time": "",
-                    "stadium": "Estádio Municipal De Lagos N.º 2",
-                    "homeScore": 4,
-                    "awayScore": 0
-                },
-                {
                     "home": "Silves Fc",
                     "away": "Sc Farense",
                     "date": "3 - 3                            \r\n                \r\n                    24 jan",
@@ -354,6 +361,15 @@
                     "stadium": "Estádio Dr. Francisco Vieira",
                     "homeScore": 3,
                     "awayScore": 3
+                },
+                {
+                    "home": "Cf Esperança Lagos",
+                    "away": "Portimonense Sc",
+                    "date": "4 - 0                            \r\n                \r\n                    24 jan",
+                    "time": "",
+                    "stadium": "Estádio Municipal De Lagos N.º 2",
+                    "homeScore": 4,
+                    "awayScore": 0
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -519,15 +535,6 @@
                     "awayScore": 3
                 },
                 {
-                    "home": "Fc Ferreiras",
-                    "away": "Nucleo Sporting C.P. Olhão",
-                    "date": "1 - 4                            \r\n                \r\n                    31 jan",
-                    "time": "",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": 1,
-                    "awayScore": 4
-                },
-                {
                     "home": "Portimonense Sc",
                     "away": "Cf Os Armacenenses",
                     "date": "4 - 3                            \r\n                \r\n                    31 jan",
@@ -535,6 +542,15 @@
                     "stadium": "Campo Major David Neto 2",
                     "homeScore": 4,
                     "awayScore": 3
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Nucleo Sporting C.P. Olhão",
+                    "date": "1 - 4                            \r\n                \r\n                    31 jan",
+                    "time": "",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": 1,
+                    "awayScore": 4
                 },
                 {
                     "home": "Sc Farense",
@@ -990,15 +1006,6 @@
             "fixtureId": "626086",
             "matches": [
                 {
-                    "home": "Silves Fc",
-                    "away": "Cf Esperança Lagos",
-                    "date": "0 - 0                            \r\n                \r\n                    28 fev",
-                    "time": "",
-                    "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": 0,
-                    "awayScore": 0
-                },
-                {
                     "home": "Nucleo Sporting C.P. Olhão",
                     "away": "Sc Farense",
                     "date": "3 - 0                            \r\n                \r\n                    28 fev",
@@ -1008,13 +1015,13 @@
                     "awayScore": 0
                 },
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Cd Montenegro",
-                    "date": "4 - 3                            \r\n                \r\n                    28 fev",
+                    "home": "Silves Fc",
+                    "away": "Cf Esperança Lagos",
+                    "date": "0 - 0                            \r\n                \r\n                    28 fev",
                     "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 4,
-                    "awayScore": 3
+                    "stadium": "Estádio Dr. Francisco Vieira",
+                    "homeScore": 0,
+                    "awayScore": 0
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -1024,6 +1031,15 @@
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 3,
                     "awayScore": 2
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Cd Montenegro",
+                    "date": "4 - 3                            \r\n                \r\n                    28 fev",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 4,
+                    "awayScore": 3
                 },
                 {
                     "home": "Adt - Ass. Desp. Tavira",
@@ -2158,20 +2174,20 @@
                     "awayScore": 1
                 },
                 {
-                    "home": "Sc Farense",
-                    "away": "Cf Esperança Lagos",
-                    "date": "2 - 4                            \r\n                \r\n                    25 abr",
-                    "time": "",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": 2,
-                    "awayScore": 4
-                },
-                {
                     "home": "Js Campinense",
                     "away": "Cf Os Armacenenses",
                     "date": "2 - 4                            \r\n                \r\n                    25 abr",
                     "time": "",
                     "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": 2,
+                    "awayScore": 4
+                },
+                {
+                    "home": "Sc Farense",
+                    "away": "Cf Esperança Lagos",
+                    "date": "2 - 4                            \r\n                \r\n                    25 abr",
+                    "time": "",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 2,
                     "awayScore": 4
                 }
@@ -2312,15 +2328,6 @@
                     "awayScore": 2
                 },
                 {
-                    "home": "Adt - Ass. Desp. Tavira",
-                    "away": "Portimonense Sc",
-                    "date": "5 - 0                            \r\n                \r\n                    2 mai",
-                    "time": "",
-                    "stadium": "Estádio Ginásio Clube Tavira",
-                    "homeScore": 5,
-                    "awayScore": 0
-                },
-                {
                     "home": "Cf Esperança Lagos",
                     "away": "Cd Montenegro",
                     "date": "4 - 4                            \r\n                \r\n                    2 mai",
@@ -2328,6 +2335,15 @@
                     "stadium": "Estádio Municipal De Lagos N.º 2",
                     "homeScore": 4,
                     "awayScore": 4
+                },
+                {
+                    "home": "Adt - Ass. Desp. Tavira",
+                    "away": "Portimonense Sc",
+                    "date": "5 - 0                            \r\n                \r\n                    2 mai",
+                    "time": "",
+                    "stadium": "Estádio Ginásio Clube Tavira",
+                    "homeScore": 5,
+                    "awayScore": 0
                 },
                 {
                     "home": "Silves Fc",
@@ -2629,20 +2645,20 @@
                     "awayScore": 1
                 },
                 {
+                    "home": "Nucleo Sporting C.P. Olhão",
+                    "away": "Cd Montenegro",
+                    "date": "13 mai",
+                    "time": "19:00",
+                    "stadium": "Campo Horta Da Areia",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
                     "home": "Fc Ferreiras",
                     "away": "Js Campinense",
                     "date": "16 mai",
                     "time": "09:00",
                     "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Nucleo Sporting C.P. Olhão",
-                    "away": "Cd Montenegro",
-                    "date": "16 mai",
-                    "time": "09:00",
-                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2783,20 +2799,11 @@
             "fixtureId": "626097",
             "matches": [
                 {
-                    "home": "Cd Montenegro",
-                    "away": "Adt - Ass. Desp. Tavira",
+                    "home": "Js Campinense",
+                    "away": "Portimonense Sc",
                     "date": "23 mai",
                     "time": "10:30",
-                    "stadium": "Campo Horta Da Areia",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Cf Esperança Lagos",
-                    "away": "Nucleo Sporting C.P. Olhão",
-                    "date": "23 mai",
-                    "time": "10:30",
-                    "stadium": "Estádio Municipal De Lagos N.º 2",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -2819,11 +2826,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Js Campinense",
-                    "away": "Portimonense Sc",
+                    "home": "Cf Esperança Lagos",
+                    "away": "Nucleo Sporting C.P. Olhão",
                     "date": "23 mai",
                     "time": "10:30",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "stadium": "Estádio Municipal De Lagos N.º 2",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Cd Montenegro",
+                    "away": "Adt - Ass. Desp. Tavira",
+                    "date": "23 mai",
+                    "time": "10:30",
+                    "stadium": "Campo Horta Da Areia",
                     "homeScore": null,
                     "awayScore": null
                 }
