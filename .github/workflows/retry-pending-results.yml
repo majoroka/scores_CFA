@@ -18,10 +18,13 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  PREMATCH_WINDOW_HOURS: "3"
-  ACTIVE_RESULT_WINDOW_DAYS: "2"
+  RESULT_PUBLISH_DELAY_HOURS: "2"
+  RESULT_CHASE_RETRY_MINUTES: "15"
+  RESULT_CHASE_SHORT_WAVES: "4"
   HISTORICAL_LOOKBACK_DAYS: "14"
-  ACTIVE_RETRY_DELAYS_MINUTES: "5,10,15,20,30,45"
+  HISTORICAL_RETRY_HOURS: "6"
+  TECHNICAL_BACKOFF_MINUTES: "10,20,40"
+  FOLLOWUP_MAX_MINUTES: "180"
 
 jobs:
   retry_followup:
@@ -35,7 +38,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       changed: ${{ steps.retry_commit.outputs.changed }}
-      active_selected_count: ${{ steps.plan_meta.outputs.active_selected_count }}
+      pending_selected_count: ${{ steps.plan_meta.outputs.pending_selected_count }}
       plan_mode: ${{ steps.plan_meta.outputs.plan_mode }}
     steps:
       - name: Checkout
@@ -75,12 +78,12 @@ jobs:
           retry_selected = [
               item["fetcher"]
               for item in plan.get("competitions", [])
-              if item.get("state") in {"active_pending", "historical_backfill", "missing_payload"}
+              if item.get("state") in {"awaiting_window", "result_chase", "historical_backfill", "missing_payload"}
           ]
 
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as handle:
               handle.write(f"plan_mode={plan.get('mode', 'idle')}\n")
-              handle.write(f"active_selected_count={len(retry_selected)}\n")
+              handle.write(f"pending_selected_count={len(retry_selected)}\n")
           PY
 
       - name: Publicar resumo do plano de follow-up
@@ -96,53 +99,80 @@ jobs:
               "",
               f"- Modo: {plan['mode']}",
               f"- Fetchers selecionados: {plan['selected_count']}",
+              f"- Próximo fetch global: {plan.get('next_global_fetch_at') or '-'}",
               "",
-              "| Competição | Fetcher | Estado | Ativo pendente | Hoje fora da janela | Histórico pendente |",
-              "| --- | --- | --- | ---: | ---: | ---: |",
+              "| Competição | Fetcher | Estado | Deve correr agora | Pendente hoje | Histórico pendente | Próximo fetch recomendado |",
+              "| --- | --- | --- | --- | ---: | ---: | --- |",
           ]
 
           for item in plan["competitions"]:
               lines.append(
-                  "| {competition_key} | {fetcher} | {state} | {active_pending_count} | {upcoming_today_count} | {historical_pending_count} |".format(**item)
+                  "| {competition_key} | {fetcher} | {state} | {should_fetch} | {pending_today_count} | {pending_historical_count} | {next_recommended_fetch_at} |".format(
+                      competition_key=item["competition_key"],
+                      fetcher=item["fetcher"],
+                      state=item["state"],
+                      should_fetch="sim" if item["should_fetch"] else "nao",
+                      pending_today_count=item.get("pending_today_count", 0),
+                      pending_historical_count=item.get("pending_historical_count", 0),
+                      next_recommended_fetch_at=item.get("next_recommended_fetch_at") or "-",
+                  )
               )
 
           with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as handle:
               handle.write("\n".join(lines) + "\n")
           PY
 
-      - name: Repetir fetchers pendentes em vagas curtas
-        if: steps.plan_meta.outputs.active_selected_count != '0'
+      - name: Repetir fetchers pendentes conforme janela recomendada
+        if: steps.plan_meta.outputs.pending_selected_count != '0'
         timeout-minutes: 180
         run: |
           python - <<'PY'
           import json
           import os
           import time
+          from datetime import datetime
           from pathlib import Path
           import plan_fetchers
           import run_fetchers
 
-          retry_delays = [
-              int(item.strip())
-              for item in os.environ.get("ACTIVE_RETRY_DELAYS_MINUTES", "").split(",")
-              if item.strip()
-          ]
+          followup_max_minutes = int(os.environ.get("FOLLOWUP_MAX_MINUTES", "180"))
+          deadline_epoch = time.time() + (followup_max_minutes * 60)
+
+          def retryable_competitions(current_plan):
+              return [
+                  item
+                  for item in current_plan.get("competitions", [])
+                  if item.get("state") in {"awaiting_window", "result_chase", "historical_backfill", "missing_payload"}
+              ]
 
           def retryable_fetchers(current_plan):
               return sorted({
                   item["fetcher"]
-                  for item in current_plan.get("competitions", [])
-                  if item.get("state") in {"active_pending", "historical_backfill", "missing_payload"}
+                  for item in retryable_competitions(current_plan)
               })
 
-          def unresolved_fetchers(current_plan, retry_report, previous_remaining):
-              still_selected = set(retryable_fetchers(current_plan))
-              problem_fetchers = {
+          def due_fetchers(current_plan):
+              return sorted({
                   item["fetcher"]
-                  for item in retry_report.get("fetchers", [])
-                  if (not item.get("success")) or item.get("degraded")
-              }
-              return sorted((still_selected & set(previous_remaining)) | problem_fetchers)
+                  for item in retryable_competitions(current_plan)
+                  if item.get("should_fetch")
+              })
+
+          def parse_iso(value):
+              if not value:
+                  return None
+              try:
+                  return datetime.fromisoformat(value)
+              except ValueError:
+                  return None
+
+          def next_due_timestamp(current_plan):
+              candidates = []
+              for item in retryable_competitions(current_plan):
+                  parsed = parse_iso(item.get("next_recommended_fetch_at"))
+                  if parsed is not None:
+                      candidates.append(parsed.timestamp())
+              return min(candidates) if candidates else None
 
           report = {
               "generated_at_epoch": 0,
@@ -156,37 +186,40 @@ jobs:
               "followup_only": True,
           }
 
-          current_plan = json.loads(Path("cache/fetch_plan.json").read_text(encoding="utf-8"))
-          remaining = retryable_fetchers(current_plan)
-
-          for delay in retry_delays:
+          while True:
               current_plan = plan_fetchers.build_plan()
               plan_fetchers.write_plan(current_plan)
-              remaining = [fetcher for fetcher in remaining if fetcher in retryable_fetchers(current_plan)]
-              if not remaining:
+              candidates = retryable_fetchers(current_plan)
+              if not candidates:
                   break
 
-              print(f"Waiting {delay} minutes before retrying: {', '.join(remaining)}")
-              time.sleep(delay * 60)
+              due_now = due_fetchers(current_plan)
+              if due_now:
+                  print(f"Running due fetchers: {', '.join(due_now)}")
+                  retry_report = run_fetchers.run_fetchers_report(due_now)
+                  retry_report["scheduled_at_epoch"] = int(time.time())
+                  report["retry_waves"].append(retry_report)
 
-              current_plan = plan_fetchers.build_plan()
-              plan_fetchers.write_plan(current_plan)
-              remaining = [fetcher for fetcher in remaining if fetcher in retryable_fetchers(current_plan)]
-              if not remaining:
+                  latest_by_fetcher = {item["fetcher"]: item for item in report["fetchers"]}
+                  for item in retry_report["fetchers"]:
+                      latest_by_fetcher[item["fetcher"]] = item
+                  report["fetchers"] = list(latest_by_fetcher.values())
+                  run_fetchers.summarize_report(report)
+                  continue
+
+              next_due = next_due_timestamp(current_plan)
+              if next_due is None:
                   break
 
-              retry_report = run_fetchers.run_fetchers_report(remaining)
-              retry_report["delay_minutes"] = delay
-              report["retry_waves"].append(retry_report)
+              sleep_seconds = max(0, int(next_due - time.time()))
+              if sleep_seconds <= 0:
+                  continue
+              if time.time() + sleep_seconds > deadline_epoch:
+                  print("Follow-up window ended before next recommended fetch.")
+                  break
 
-              latest_by_fetcher = {item["fetcher"]: item for item in report["fetchers"]}
-              for item in retry_report["fetchers"]:
-                  latest_by_fetcher[item["fetcher"]] = item
-              report["fetchers"] = list(latest_by_fetcher.values())
-              run_fetchers.summarize_report(report)
-              current_plan = plan_fetchers.build_plan()
-              plan_fetchers.write_plan(current_plan)
-              remaining = unresolved_fetchers(current_plan, retry_report, remaining)
+              print(f"Waiting {sleep_seconds}s until next recommended fetch window")
+              time.sleep(sleep_seconds)
 
           current_plan = plan_fetchers.build_plan()
           plan_fetchers.write_plan(current_plan)
@@ -196,7 +229,7 @@ jobs:
           PY
 
       - name: Escrever relatório vazio quando não há follow-up ativo
-        if: steps.plan_meta.outputs.active_selected_count == '0'
+        if: steps.plan_meta.outputs.pending_selected_count == '0'
         run: |
           python - <<'PY'
           import run_fetchers

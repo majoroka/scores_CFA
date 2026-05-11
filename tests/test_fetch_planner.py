@@ -22,6 +22,7 @@ class FetchPlannerTests(unittest.TestCase):
 
     def test_selects_today_pending_matches(self):
         payload = {
+            "lastUpdatedAt": "2026-05-10T08:00:00Z",
             "rounds": [
                 {
                     "index": 1,
@@ -34,10 +35,12 @@ class FetchPlannerTests(unittest.TestCase):
         with patch("plan_fetchers.load_payload", return_value=payload):
             result = analyze_competition(self.config, self.now)
         self.assertTrue(result["should_fetch"])
-        self.assertEqual(result["state"], "active_pending")
+        self.assertEqual(result["state"], "result_chase")
+        self.assertTrue(result["due_now"])
 
     def test_selects_yesterday_pending_matches_as_active(self):
         payload = {
+            "lastUpdatedAt": "2026-05-10T00:00:00Z",
             "rounds": [
                 {
                     "index": 1,
@@ -50,11 +53,12 @@ class FetchPlannerTests(unittest.TestCase):
         with patch("plan_fetchers.load_payload", return_value=payload):
             result = analyze_competition(self.config, self.now)
         self.assertTrue(result["should_fetch"])
-        self.assertEqual(result["state"], "active_pending")
-        self.assertEqual(result["active_pending_count"], 1)
+        self.assertEqual(result["state"], "historical_backfill")
+        self.assertEqual(result["historical_pending_count"], 1)
 
     def test_skips_today_matches_outside_prematch_window(self):
         payload = {
+            "lastUpdatedAt": "2026-05-10T08:00:00Z",
             "rounds": [
                 {
                     "index": 1,
@@ -67,10 +71,13 @@ class FetchPlannerTests(unittest.TestCase):
         with patch("plan_fetchers.load_payload", return_value=payload):
             result = analyze_competition(self.config, self.now)
         self.assertFalse(result["should_fetch"])
-        self.assertEqual(result["state"], "prematch_wait")
+        self.assertEqual(result["state"], "awaiting_window")
+        self.assertFalse(result["due_now"])
+        self.assertIsNotNone(result["next_recommended_fetch_at"])
 
     def test_selects_historical_backfill(self):
         payload = {
+            "lastUpdatedAt": "2026-05-10T00:00:00Z",
             "rounds": [
                 {
                     "index": 1,
@@ -87,6 +94,7 @@ class FetchPlannerTests(unittest.TestCase):
 
     def test_ignores_historical_backfill_outside_window(self):
         payload = {
+            "lastUpdatedAt": "2026-05-10T00:00:00Z",
             "rounds": [
                 {
                     "index": 1,
@@ -106,10 +114,20 @@ class FetchPlannerTests(unittest.TestCase):
             "competition_key": "infantis-a",
             "fetcher": "fetch_infantis_a.py",
             "should_fetch": False,
+            "due_now": False,
             "state": "idle",
+            "functional_state": "idle",
+            "technical_state": "healthy",
+            "technical_backoff_level": 0,
             "active_pending_count": 0,
             "upcoming_today_count": 0,
             "historical_pending_count": 0,
+            "pending_today_count": 0,
+            "pending_historical_count": 0,
+            "next_scheduled_kickoff": None,
+            "first_result_fetch_at": None,
+            "last_meaningful_fetch_at": None,
+            "next_recommended_fetch_at": None,
             "reasons": ["idle"],
         }
         with patch("plan_fetchers.analyze_competition", return_value=analysis):
@@ -123,27 +141,47 @@ class FetchPlannerTests(unittest.TestCase):
                 "competition_key": "infantis-a",
                 "fetcher": "fetch_infantis_a.py",
                 "should_fetch": True,
+                "due_now": True,
                 "state": "historical_backfill",
+                "functional_state": "historical_backfill",
+                "technical_state": "healthy",
+                "technical_backoff_level": 0,
                 "active_pending_count": 0,
                 "upcoming_today_count": 0,
                 "historical_pending_count": 2,
+                "pending_today_count": 0,
+                "pending_historical_count": 2,
+                "next_scheduled_kickoff": None,
+                "first_result_fetch_at": None,
+                "last_meaningful_fetch_at": None,
+                "next_recommended_fetch_at": "2026-05-10T06:00:00+01:00",
                 "reasons": ["historical"],
             },
             {
                 "competition_key": "juvenis",
                 "fetcher": "fetch_juvenis.py",
                 "should_fetch": True,
-                "state": "active_pending",
+                "due_now": True,
+                "state": "result_chase",
+                "functional_state": "result_chase",
+                "technical_state": "healthy",
+                "technical_backoff_level": 0,
                 "active_pending_count": 1,
                 "upcoming_today_count": 0,
                 "historical_pending_count": 0,
+                "pending_today_count": 1,
+                "pending_historical_count": 0,
+                "next_scheduled_kickoff": "2026-05-10T09:00:00+01:00",
+                "first_result_fetch_at": "2026-05-10T11:00:00+01:00",
+                "last_meaningful_fetch_at": "2026-05-10T10:00:00+01:00",
+                "next_recommended_fetch_at": "2026-05-10T11:00:00+01:00",
                 "reasons": ["active"],
             },
         ]
         competition_subset = [self.config, self.config]
         with patch("plan_fetchers.ALL_COMPETITIONS", competition_subset), patch("plan_fetchers.analyze_competition", side_effect=analyses):
             plan = build_plan(self.now)
-        self.assertEqual(plan["mode"], "active_pending")
+        self.assertEqual(plan["mode"], "result_chase")
 
 
 if __name__ == "__main__":

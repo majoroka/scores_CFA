@@ -32,10 +32,12 @@ concurrency:
 env:
   MAX_FETCH_FAILURES: "0"
   MAX_FETCH_DEGRADED: "2"
-  PREMATCH_WINDOW_HOURS: "3"
-  ACTIVE_RESULT_WINDOW_DAYS: "2"
+  RESULT_PUBLISH_DELAY_HOURS: "2"
+  RESULT_CHASE_RETRY_MINUTES: "15"
+  RESULT_CHASE_SHORT_WAVES: "4"
   HISTORICAL_LOOKBACK_DAYS: "14"
-  ACTIVE_RETRY_DELAYS_MINUTES: "5,10,20,40"
+  HISTORICAL_RETRY_HOURS: "6"
+  TECHNICAL_BACKOFF_MINUTES: "10,20,40"
 
 jobs:
   build_initial:
@@ -145,17 +147,28 @@ jobs:
               "",
               f"- Modo: {plan['mode']}",
               f"- Fetchers selecionados: {plan['selected_count']}",
-              f"- Janela pré-jogo (h): {plan['prematch_window_hours']}",
-              f"- Janela ativa de resultados (dias): {plan['active_result_window_days']}",
+              f"- Delay após jogo (h): {plan['result_publish_delay_hours']}",
+              f"- Retry curto (min): {plan['result_chase_retry_minutes']}",
+              f"- Número de vagas curtas: {plan['result_chase_short_waves']}",
               f"- Janela de recuperação histórica (dias): {plan['historical_lookback_days']}",
+              f"- Retry histórico (h): {plan['historical_retry_hours']}",
+              f"- Próximo fetch global: {plan.get('next_global_fetch_at') or '-'}",
               "",
-              "| Competição | Fetcher | Estado | Ativo pendente | Hoje fora da janela | Histórico pendente |",
-              "| --- | --- | --- | ---: | ---: | ---: |",
+              "| Competição | Fetcher | Estado | Deve correr agora | Pendente hoje | Histórico pendente | Próximo fetch recomendado |",
+              "| --- | --- | --- | --- | ---: | ---: | --- |",
           ]
 
           for item in plan["competitions"]:
               lines.append(
-                  "| {competition_key} | {fetcher} | {state} | {active_pending_count} | {upcoming_today_count} | {historical_pending_count} |".format(**item)
+                  "| {competition_key} | {fetcher} | {state} | {should_fetch} | {pending_today_count} | {pending_historical_count} | {next_recommended_fetch_at} |".format(
+                      competition_key=item["competition_key"],
+                      fetcher=item["fetcher"],
+                      state=item["state"],
+                      should_fetch="sim" if item["should_fetch"] else "nao",
+                      pending_today_count=item.get("pending_today_count", 0),
+                      pending_historical_count=item.get("pending_historical_count", 0),
+                      next_recommended_fetch_at=item.get("next_recommended_fetch_at") or "-",
+                  )
               )
 
           summary_path = os.environ["GITHUB_STEP_SUMMARY"]
