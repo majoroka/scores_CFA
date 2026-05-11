@@ -4,7 +4,7 @@ on:
   workflow_dispatch: {}
   workflow_run:
     workflows:
-      - Update all data and deploy
+      - Sync data
     types:
       - completed
 
@@ -110,8 +110,8 @@ jobs:
               handle.write("\n".join(lines) + "\n")
           PY
 
-      - name: Repetir fetchers ativos em vagas curtas
-        if: steps.plan_meta.outputs.plan_mode == 'active_pending' && steps.plan_meta.outputs.active_selected_count != '0'
+      - name: Repetir fetchers pendentes em vagas curtas
+        if: steps.plan_meta.outputs.active_selected_count != '0'
         timeout-minutes: 180
         run: |
           python - <<'PY'
@@ -196,7 +196,7 @@ jobs:
           PY
 
       - name: Escrever relatório vazio quando não há follow-up ativo
-        if: steps.plan_meta.outputs.plan_mode != 'active_pending' || steps.plan_meta.outputs.active_selected_count == '0'
+        if: steps.plan_meta.outputs.active_selected_count == '0'
         run: |
           python - <<'PY'
           import run_fetchers

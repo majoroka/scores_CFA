@@ -1,4 +1,4 @@
-name: Update all data and deploy
+name: Sync data
 
 on:
   push:
@@ -8,16 +8,14 @@ on:
       - "fetch_*.py"
       - "fpf_http.py"
       - "run_fetchers.py"
+      - "plan_fetchers.py"
       - "build_calendar.py"
       - "build_status.py"
       - "requirements.txt"
       - "competition_configs.py"
       - "competition_sync.py"
       - ".github/workflows/update-data.yml"
-      - "main.js"
-      - "agenda.js"
-      - "css/**"
-      - "*.html"
+      - ".github/workflows/retry-pending-results.yml"
       - "data/*.json"
   workflow_dispatch: {}
   schedule:
@@ -29,7 +27,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "update-data-and-pages"
+  group: "sync-data-and-pages"
   cancel-in-progress: true
 
 env:
