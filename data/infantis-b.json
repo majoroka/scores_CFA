@@ -1,9 +1,9 @@
 {
     "defaultRoundIndex": 15,
     "defaultRoundNumber": 16,
-    "lastUpdatedAt": "2026-05-11T13:16:33Z",
+    "lastUpdatedAt": "2026-05-11T17:11:20Z",
     "sourceHealth": {
-        "status": "partial",
+        "status": "ok",
         "fallbackReuseCount": 0,
         "issues": []
     },
@@ -12,10 +12,10 @@
         "matchCount": 90,
         "classificationCount": 180,
         "teamCount": 10,
-        "completedMatchCount": 78,
-        "matchesWithoutScore": 12,
+        "completedMatchCount": 79,
+        "matchesWithoutScore": 11,
         "pastMatchCount": 79,
-        "pastMatchesWithoutScore": 1,
+        "pastMatchesWithoutScore": 0,
         "futureMatchCount": 11,
         "roundsWithMatches": 18,
         "roundsWithClassification": 18,
@@ -2493,11 +2493,11 @@
                 {
                     "home": "Aef Monte Gordo 2019",
                     "away": "Cf Os Armacenenses",
-                    "date": "9 mai",
-                    "time": "10:30",
+                    "date": "1 - 8                            \r\n                \r\n                    9 mai",
+                    "time": "",
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 1,
+                    "awayScore": 8
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -2576,6 +2576,17 @@
                 },
                 {
                     "position": 6,
+                    "team": "Cf Os Armacenenses",
+                    "played": 16,
+                    "wins": 7,
+                    "draws": 0,
+                    "losses": 9,
+                    "goalsFor": 50,
+                    "goalsAgainst": 64,
+                    "points": 21
+                },
+                {
+                    "position": 7,
                     "team": "Portimonense Sc",
                     "played": 16,
                     "wins": 6,
@@ -2586,7 +2597,7 @@
                     "points": 20
                 },
                 {
-                    "position": 7,
+                    "position": 8,
                     "team": "Mexilhoeira Grande Fc",
                     "played": 15,
                     "wins": 6,
@@ -2595,17 +2606,6 @@
                     "goalsFor": 54,
                     "goalsAgainst": 65,
                     "points": 19
-                },
-                {
-                    "position": 8,
-                    "team": "Cf Os Armacenenses",
-                    "played": 15,
-                    "wins": 6,
-                    "draws": 0,
-                    "losses": 9,
-                    "goalsFor": 42,
-                    "goalsAgainst": 63,
-                    "points": 18
                 },
                 {
                     "position": 9,
@@ -2621,12 +2621,12 @@
                 {
                     "position": 10,
                     "team": "Aef Monte Gordo 2019",
-                    "played": 14,
+                    "played": 15,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 14,
-                    "goalsFor": 9,
-                    "goalsAgainst": 148,
+                    "losses": 15,
+                    "goalsFor": 10,
+                    "goalsAgainst": 156,
                     "points": 0
                 }
             ]
@@ -2739,6 +2739,17 @@
                 },
                 {
                     "position": 6,
+                    "team": "Cf Os Armacenenses",
+                    "played": 16,
+                    "wins": 7,
+                    "draws": 0,
+                    "losses": 9,
+                    "goalsFor": 50,
+                    "goalsAgainst": 64,
+                    "points": 21
+                },
+                {
+                    "position": 7,
                     "team": "Portimonense Sc",
                     "played": 16,
                     "wins": 6,
@@ -2749,7 +2760,7 @@
                     "points": 20
                 },
                 {
-                    "position": 7,
+                    "position": 8,
                     "team": "Mexilhoeira Grande Fc",
                     "played": 15,
                     "wins": 6,
@@ -2758,17 +2769,6 @@
                     "goalsFor": 54,
                     "goalsAgainst": 65,
                     "points": 19
-                },
-                {
-                    "position": 8,
-                    "team": "Cf Os Armacenenses",
-                    "played": 15,
-                    "wins": 6,
-                    "draws": 0,
-                    "losses": 9,
-                    "goalsFor": 42,
-                    "goalsAgainst": 63,
-                    "points": 18
                 },
                 {
                     "position": 9,
@@ -2784,12 +2784,12 @@
                 {
                     "position": 10,
                     "team": "Aef Monte Gordo 2019",
-                    "played": 14,
+                    "played": 15,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 14,
-                    "goalsFor": 9,
-                    "goalsAgainst": 148,
+                    "losses": 15,
+                    "goalsFor": 10,
+                    "goalsAgainst": 156,
                     "points": 0
                 }
             ]
@@ -2902,6 +2902,17 @@
                 },
                 {
                     "position": 6,
+                    "team": "Cf Os Armacenenses",
+                    "played": 16,
+                    "wins": 7,
+                    "draws": 0,
+                    "losses": 9,
+                    "goalsFor": 50,
+                    "goalsAgainst": 64,
+                    "points": 21
+                },
+                {
+                    "position": 7,
                     "team": "Portimonense Sc",
                     "played": 16,
                     "wins": 6,
@@ -2912,7 +2923,7 @@
                     "points": 20
                 },
                 {
-                    "position": 7,
+                    "position": 8,
                     "team": "Mexilhoeira Grande Fc",
                     "played": 15,
                     "wins": 6,
@@ -2921,17 +2932,6 @@
                     "goalsFor": 54,
                     "goalsAgainst": 65,
                     "points": 19
-                },
-                {
-                    "position": 8,
-                    "team": "Cf Os Armacenenses",
-                    "played": 15,
-                    "wins": 6,
-                    "draws": 0,
-                    "losses": 9,
-                    "goalsFor": 42,
-                    "goalsAgainst": 63,
-                    "points": 18
                 },
                 {
                     "position": 9,
@@ -2947,12 +2947,12 @@
                 {
                     "position": 10,
                     "team": "Aef Monte Gordo 2019",
-                    "played": 14,
+                    "played": 15,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 14,
-                    "goalsFor": 9,
-                    "goalsAgainst": 148,
+                    "losses": 15,
+                    "goalsFor": 10,
+                    "goalsAgainst": 156,
                     "points": 0
                 }
             ]
