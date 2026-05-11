@@ -22,6 +22,8 @@ env:
   RESULT_CHASE_RETRY_MINUTES: "15"
   RESULT_CHASE_SHORT_WAVES: "4"
   HISTORICAL_LOOKBACK_DAYS: "14"
+  RECENT_HISTORICAL_WINDOW_DAYS: "2"
+  RECENT_HISTORICAL_RETRY_HOURS: "2"
   HISTORICAL_RETRY_HOURS: "6"
   TECHNICAL_BACKOFF_MINUTES: "10,20,40"
   FOLLOWUP_MAX_MINUTES: "180"
@@ -78,7 +80,7 @@ jobs:
           retry_selected = [
               item["fetcher"]
               for item in plan.get("competitions", [])
-              if item.get("state") in {"awaiting_window", "result_chase", "historical_backfill", "missing_payload"}
+              if item.get("state") in {"awaiting_window", "result_chase", "recent_historical_backfill", "historical_backfill", "missing_payload"}
           ]
 
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as handle:
@@ -99,6 +101,9 @@ jobs:
               "",
               f"- Modo: {plan['mode']}",
               f"- Fetchers selecionados: {plan['selected_count']}",
+              f"- Histórico recente (dias): {plan['recent_historical_window_days']}",
+              f"- Retry histórico recente (h): {plan['recent_historical_retry_hours']}",
+              f"- Retry histórico (h): {plan['historical_retry_hours']}",
               f"- Próximo fetch global: {plan.get('next_global_fetch_at') or '-'}",
               "",
               "| Competição | Fetcher | Estado | Deve correr agora | Pendente hoje | Histórico pendente | Próximo fetch recomendado |",
@@ -142,7 +147,7 @@ jobs:
               return [
                   item
                   for item in current_plan.get("competitions", [])
-                  if item.get("state") in {"awaiting_window", "result_chase", "historical_backfill", "missing_payload"}
+                  if item.get("state") in {"awaiting_window", "result_chase", "recent_historical_backfill", "historical_backfill", "missing_payload"}
               ]
 
           def retryable_fetchers(current_plan):

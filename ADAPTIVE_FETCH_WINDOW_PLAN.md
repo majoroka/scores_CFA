@@ -22,6 +22,9 @@ The following parts of this plan are already in place:
 - the follow-up workflow now waits until `nextRecommendedFetchAt`
 - the follow-up workflow no longer depends only on fixed retry waves
 - historical polling now respects the `6h` recovery rhythm
+- a `recent_historical_backfill` tier now exists for very recent past matches
+  - default window: `2 days`
+  - default retry cadence: `2 hours`
 
 ### Still pending
 
@@ -128,6 +131,17 @@ Behavior:
 - apply a maximum historical lookback window, for example `14 days`
 
 
+### `recent_historical_backfill`
+
+The match day has passed recently and the score is still missing, but the case is too fresh to wait a full historical `6h` cadence.
+
+Behavior:
+
+- apply to recent historical matches, defaulting to the last `2 days`
+- retry every `2 hours`
+- fall back to standard historical cadence after that recent window expires
+
+
 ## Technical State
 
 This state is independent from the functional state.
@@ -186,9 +200,11 @@ The scheduler should decide next execution time using these rules:
    - follow technical backoff
 3. else if functional state is `result_chase`:
    - follow `15-minute` and then `hourly` schedule
-4. else if functional state is `historical_backfill`:
+4. else if functional state is `recent_historical_backfill`:
+   - follow `2-hour` schedule
+5. else if functional state is `historical_backfill`:
    - follow `6-hour` schedule
-5. else:
+6. else:
    - no fetch
 
 

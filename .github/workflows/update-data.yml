@@ -36,6 +36,8 @@ env:
   RESULT_CHASE_RETRY_MINUTES: "15"
   RESULT_CHASE_SHORT_WAVES: "4"
   HISTORICAL_LOOKBACK_DAYS: "14"
+  RECENT_HISTORICAL_WINDOW_DAYS: "2"
+  RECENT_HISTORICAL_RETRY_HOURS: "2"
   HISTORICAL_RETRY_HOURS: "6"
   TECHNICAL_BACKOFF_MINUTES: "10,20,40"
 
@@ -151,6 +153,8 @@ jobs:
               f"- Retry curto (min): {plan['result_chase_retry_minutes']}",
               f"- Número de vagas curtas: {plan['result_chase_short_waves']}",
               f"- Janela de recuperação histórica (dias): {plan['historical_lookback_days']}",
+              f"- Histórico recente (dias): {plan['recent_historical_window_days']}",
+              f"- Retry histórico recente (h): {plan['recent_historical_retry_hours']}",
               f"- Retry histórico (h): {plan['historical_retry_hours']}",
               f"- Próximo fetch global: {plan.get('next_global_fetch_at') or '-'}",
               "",

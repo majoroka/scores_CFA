@@ -53,8 +53,9 @@ class FetchPlannerTests(unittest.TestCase):
         with patch("plan_fetchers.load_payload", return_value=payload):
             result = analyze_competition(self.config, self.now)
         self.assertTrue(result["should_fetch"])
-        self.assertEqual(result["state"], "historical_backfill")
+        self.assertEqual(result["state"], "recent_historical_backfill")
         self.assertEqual(result["historical_pending_count"], 1)
+        self.assertEqual(result["recent_historical_pending_count"], 1)
 
     def test_skips_today_matches_outside_prematch_window(self):
         payload = {
@@ -91,6 +92,25 @@ class FetchPlannerTests(unittest.TestCase):
             result = analyze_competition(self.config, self.now)
         self.assertTrue(result["should_fetch"])
         self.assertEqual(result["state"], "historical_backfill")
+        self.assertEqual(result["recent_historical_pending_count"], 0)
+
+    def test_recent_historical_backfill_waits_shorter_than_default_historical(self):
+        payload = {
+            "lastUpdatedAt": "2026-05-10T10:30:00+01:00",
+            "rounds": [
+                {
+                    "index": 1,
+                    "matches": [
+                        {"date": "9 mai", "time": "16:00", "homeScore": None, "awayScore": None},
+                    ],
+                }
+            ]
+        }
+        with patch("plan_fetchers.load_payload", return_value=payload):
+            result = analyze_competition(self.config, self.now)
+        self.assertFalse(result["should_fetch"])
+        self.assertEqual(result["state"], "recent_historical_backfill")
+        self.assertEqual(result["next_recommended_fetch_at"], "2026-05-10T12:30:00+01:00")
 
     def test_ignores_historical_backfill_outside_window(self):
         payload = {
@@ -121,6 +141,7 @@ class FetchPlannerTests(unittest.TestCase):
             "technical_backoff_level": 0,
             "active_pending_count": 0,
             "upcoming_today_count": 0,
+            "recent_historical_pending_count": 0,
             "historical_pending_count": 0,
             "pending_today_count": 0,
             "pending_historical_count": 0,
@@ -148,6 +169,7 @@ class FetchPlannerTests(unittest.TestCase):
                 "technical_backoff_level": 0,
                 "active_pending_count": 0,
                 "upcoming_today_count": 0,
+                "recent_historical_pending_count": 0,
                 "historical_pending_count": 2,
                 "pending_today_count": 0,
                 "pending_historical_count": 2,
@@ -168,6 +190,7 @@ class FetchPlannerTests(unittest.TestCase):
                 "technical_backoff_level": 0,
                 "active_pending_count": 1,
                 "upcoming_today_count": 0,
+                "recent_historical_pending_count": 0,
                 "historical_pending_count": 0,
                 "pending_today_count": 1,
                 "pending_historical_count": 0,
