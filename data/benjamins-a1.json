@@ -1,10 +1,26 @@
 {
     "defaultRoundIndex": 7,
     "defaultRoundNumber": 8,
-    "lastUpdatedAt": "2026-05-10T10:32:52Z",
+    "lastUpdatedAt": "2026-05-11T13:34:02Z",
     "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
+    },
+    "dataQuality": {
+        "roundCount": 10,
+        "matchCount": 30,
+        "classificationCount": 60,
+        "teamCount": 6,
+        "completedMatchCount": 22,
+        "matchesWithoutScore": 8,
+        "pastMatchCount": 24,
+        "pastMatchesWithoutScore": 2,
+        "futureMatchCount": 6,
+        "roundsWithMatches": 10,
+        "roundsWithClassification": 10,
+        "roundsWithCompletedMatches": 9,
+        "roundsWithoutData": 0
     },
     "rounds": [
         {
@@ -526,15 +542,6 @@
                     "awayScore": 9
                 },
                 {
-                    "home": "Associacao Fut. F.O.",
-                    "away": "Cf Os Armacenenses",
-                    "date": "18 abr",
-                    "time": "",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": 2,
-                    "awayScore": 6
-                },
-                {
                     "home": "Portimonense Sc",
                     "away": "Jc Aljezurense",
                     "date": "18 abr",
@@ -542,6 +549,15 @@
                     "stadium": "Campo Major David Neto 2",
                     "homeScore": 10,
                     "awayScore": 0
+                },
+                {
+                    "home": "Associacao Fut. F.O.",
+                    "away": "Cf Os Armacenenses",
+                    "date": "18 abr",
+                    "time": "",
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
+                    "homeScore": 2,
+                    "awayScore": 6
                 }
             ],
             "classification": [
@@ -627,15 +643,6 @@
                     "awayScore": 8
                 },
                 {
-                    "home": "Jc Aljezurense",
-                    "away": "Sc Farense",
-                    "date": "2 mai",
-                    "time": "",
-                    "stadium": "Campo Municipal Aljezur",
-                    "homeScore": 1,
-                    "awayScore": 5
-                },
-                {
                     "home": "Fc Ferreiras",
                     "away": "Associacao Fut. F.O.",
                     "date": "2 mai",
@@ -643,6 +650,15 @@
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 16,
                     "awayScore": 3
+                },
+                {
+                    "home": "Jc Aljezurense",
+                    "away": "Sc Farense",
+                    "date": "2 mai",
+                    "time": "",
+                    "stadium": "Campo Municipal Aljezur",
+                    "homeScore": 1,
+                    "awayScore": 5
                 }
             ],
             "classification": [
@@ -832,7 +848,7 @@
                     "home": "Sc Farense",
                     "away": "Portimonense Sc",
                     "date": "16 mai",
-                    "time": "09:00",
+                    "time": "10:30",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
@@ -921,15 +937,6 @@
             "fixtureId": "641133",
             "matches": [
                 {
-                    "home": "Portimonense Sc",
-                    "away": "Associacao Fut. F.O.",
-                    "date": "23 mai",
-                    "time": "10:30",
-                    "stadium": "Campo Major David Neto 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Cf Os Armacenenses",
                     "away": "Sc Farense",
                     "date": "23 mai",
@@ -944,6 +951,15 @@
                     "date": "23 mai",
                     "time": "10:30",
                     "stadium": "Campo Municipal Aljezur",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Portimonense Sc",
+                    "away": "Associacao Fut. F.O.",
+                    "date": "23 mai",
+                    "time": "10:30",
+                    "stadium": "Campo Major David Neto 2",
                     "homeScore": null,
                     "awayScore": null
                 }

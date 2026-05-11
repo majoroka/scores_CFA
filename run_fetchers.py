@@ -18,6 +18,8 @@ RETRY_DELAYS_SECONDS = (10, 30)
 FALLBACK_MARKERS = (
     "a reutilizar dados existentes",
 )
+FETCHER_COOLDOWN_SECONDS = int(os.environ.get("FETCHER_COOLDOWN_SECONDS", "8"))
+DEGRADED_FETCHER_COOLDOWN_SECONDS = int(os.environ.get("DEGRADED_FETCHER_COOLDOWN_SECONDS", "30"))
 
 
 def discover_fetchers(selected_names=None):
@@ -140,23 +142,36 @@ def run_fetcher(fetcher_path: Path, output_path: Path):
             time.sleep(delay_seconds)
 
         started_at = time.time()
-        result = subprocess.run(
-            [sys.executable, fetcher_path.name],
-            cwd=ROOT,
-            capture_output=True,
-            text=True,
-            timeout=FETCH_TIMEOUT_SECONDS,
-        )
-
-        attempt_report = {
-            "attempt": attempt_index + 1,
-            "returncode": result.returncode,
-            "duration_seconds": round(time.time() - started_at, 2),
-            "stdout_tail": result.stdout[-4000:],
-            "stderr_tail": result.stderr[-4000:],
-            "validation_error": None,
-            "degraded": False,
-        }
+        try:
+            result = subprocess.run(
+                [sys.executable, fetcher_path.name],
+                cwd=ROOT,
+                capture_output=True,
+                text=True,
+                timeout=FETCH_TIMEOUT_SECONDS,
+            )
+            attempt_report = {
+                "attempt": attempt_index + 1,
+                "returncode": result.returncode,
+                "duration_seconds": round(time.time() - started_at, 2),
+                "stdout_tail": result.stdout[-4000:],
+                "stderr_tail": result.stderr[-4000:],
+                "validation_error": None,
+                "degraded": False,
+            }
+        except subprocess.TimeoutExpired as exc:
+            attempt_report = {
+                "attempt": attempt_index + 1,
+                "returncode": None,
+                "duration_seconds": round(time.time() - started_at, 2),
+                "stdout_tail": (exc.stdout or "")[-4000:],
+                "stderr_tail": (exc.stderr or "")[-4000:],
+                "validation_error": f"timeout after {FETCH_TIMEOUT_SECONDS}s",
+                "degraded": False,
+            }
+            attempts.append(attempt_report)
+            restore_backup(backup_path, output_path)
+            continue
 
         if result.returncode == 0:
             try:
@@ -233,6 +248,15 @@ def run_fetchers_report(selected_fetchers=None):
             f"(attempts={attempts_used}, rounds={final_rounds}, {changed_flag})",
             flush=True,
         )
+
+        if fetcher_path != fetchers[-1]:
+            cooldown_seconds = DEGRADED_FETCHER_COOLDOWN_SECONDS if fetcher_report["degraded"] or not fetcher_report["success"] else FETCHER_COOLDOWN_SECONDS
+            if cooldown_seconds > 0:
+                print(
+                    f"Cooling down {cooldown_seconds}s before next fetcher",
+                    flush=True,
+                )
+                time.sleep(cooldown_seconds)
 
     return summarize_report(report)
 

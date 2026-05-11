@@ -1,10 +1,26 @@
 {
     "defaultRoundIndex": 4,
     "defaultRoundNumber": 5,
-    "lastUpdatedAt": "2026-05-07T14:33:14Z",
+    "lastUpdatedAt": "2026-05-11T14:00:38Z",
     "sourceHealth": {
         "status": "ok",
-        "fallbackReuseCount": 0
+        "fallbackReuseCount": 0,
+        "issues": []
+    },
+    "dataQuality": {
+        "roundCount": 5,
+        "matchCount": 10,
+        "classificationCount": 25,
+        "teamCount": 5,
+        "completedMatchCount": 10,
+        "matchesWithoutScore": 0,
+        "pastMatchCount": 10,
+        "pastMatchesWithoutScore": 0,
+        "futureMatchCount": 0,
+        "roundsWithMatches": 5,
+        "roundsWithClassification": 5,
+        "roundsWithCompletedMatches": 5,
+        "roundsWithoutData": 0
     },
     "rounds": [
         {
@@ -12,21 +28,21 @@
             "fixtureId": "626332",
             "matches": [
                 {
-                    "home": "Portimonense Sc",
-                    "away": "Cd Beja",
-                    "date": "2 - 5                            \r\n                \r\n                    10 jan",
-                    "time": "",
-                    "stadium": "Campo Major David Neto N.º1",
-                    "homeScore": 2,
-                    "awayScore": 5
-                },
-                {
                     "home": "Lusitano Gc",
                     "away": "Cf Os Armacenenses",
                     "date": "0 - 5                            \r\n                \r\n                    10 jan",
                     "time": "",
                     "stadium": "Academia Lusitano Ginasio Clube - Campo Nº2",
                     "homeScore": 0,
+                    "awayScore": 5
+                },
+                {
+                    "home": "Portimonense Sc",
+                    "away": "Cd Beja",
+                    "date": "2 - 5                            \r\n                \r\n                    10 jan",
+                    "time": "",
+                    "stadium": "Campo Major David Neto N.º1",
+                    "homeScore": 2,
                     "awayScore": 5
                 }
             ],
@@ -336,15 +352,6 @@
             "fixtureId": "626336",
             "matches": [
                 {
-                    "home": "Cd Beja",
-                    "away": "Damaiense Sad",
-                    "date": "7 - 1                            \r\n                \r\n                    21 fev",
-                    "time": "",
-                    "stadium": "Compl. Desp. Fernando Mamede Campo 2",
-                    "homeScore": 7,
-                    "awayScore": 1
-                },
-                {
                     "home": "Cf Os Armacenenses",
                     "away": "Portimonense Sc",
                     "date": "4 - 0                            \r\n                \r\n                    21 fev",
@@ -352,6 +359,15 @@
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 4,
                     "awayScore": 0
+                },
+                {
+                    "home": "Cd Beja",
+                    "away": "Damaiense Sad",
+                    "date": "7 - 1                            \r\n                \r\n                    21 fev",
+                    "time": "",
+                    "stadium": "Compl. Desp. Fernando Mamede Campo 2",
+                    "homeScore": 7,
+                    "awayScore": 1
                 }
             ],
             "classification": [

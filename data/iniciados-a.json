@@ -1,10 +1,26 @@
 {
     "defaultRoundIndex": 9,
     "defaultRoundNumber": 10,
-    "lastUpdatedAt": "2026-05-10T10:54:48Z",
+    "lastUpdatedAt": "2026-05-11T14:01:11Z",
     "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 14
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
+    },
+    "dataQuality": {
+        "roundCount": 14,
+        "matchCount": 56,
+        "classificationCount": 112,
+        "teamCount": 8,
+        "completedMatchCount": 36,
+        "matchesWithoutScore": 20,
+        "pastMatchCount": 39,
+        "pastMatchesWithoutScore": 3,
+        "futureMatchCount": 17,
+        "roundsWithMatches": 14,
+        "roundsWithClassification": 14,
+        "roundsWithCompletedMatches": 11,
+        "roundsWithoutData": 0
     },
     "rounds": [
         {
@@ -12,12 +28,12 @@
             "fixtureId": "640944",
             "matches": [
                 {
-                    "home": "Gd Lagoa",
-                    "away": "Fc Ferreiras",
-                    "date": "2 - 1                            \r\n                \r\n                    1 mar",
+                    "home": "Aef Monte Gordo 2019",
+                    "away": "Sc Farense",
+                    "date": "4 - 1                            \r\n                \r\n                    1 mar",
                     "time": "",
-                    "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": 2,
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
+                    "homeScore": 4,
                     "awayScore": 1
                 },
                 {
@@ -30,6 +46,15 @@
                     "awayScore": 3
                 },
                 {
+                    "home": "Gd Lagoa",
+                    "away": "Fc Ferreiras",
+                    "date": "2 - 1                            \r\n                \r\n                    1 mar",
+                    "time": "",
+                    "stadium": "Parque Desportivo Municipal Estombar",
+                    "homeScore": 2,
+                    "awayScore": 1
+                },
+                {
                     "home": "Aa Belavista",
                     "away": "Internacional Ca",
                     "date": "8 - 2                            \r\n                \r\n                    1 mar",
@@ -37,15 +62,6 @@
                     "stadium": "Estádio Municipal Da Bela Vista",
                     "homeScore": 8,
                     "awayScore": 2
-                },
-                {
-                    "home": "Aef Monte Gordo 2019",
-                    "away": "Sc Farense",
-                    "date": "4 - 1                            \r\n                \r\n                    1 mar",
-                    "time": "",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": 4,
-                    "awayScore": 1
                 }
             ],
             "classification": [
@@ -144,15 +160,6 @@
             "fixtureId": "640945",
             "matches": [
                 {
-                    "home": "Js Campinense",
-                    "away": "Aef Monte Gordo 2019",
-                    "date": "4 - 2                            \r\n                \r\n                    8 mar",
-                    "time": "",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": 4,
-                    "awayScore": 2
-                },
-                {
                     "home": "Fc Ferreiras",
                     "away": "Aa Belavista",
                     "date": "1 - 5                            \r\n                \r\n                    8 mar",
@@ -160,6 +167,15 @@
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 1,
                     "awayScore": 5
+                },
+                {
+                    "home": "Js Campinense",
+                    "away": "Aef Monte Gordo 2019",
+                    "date": "4 - 2                            \r\n                \r\n                    8 mar",
+                    "time": "",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": 4,
+                    "awayScore": 2
                 },
                 {
                     "home": "Internacional Ca",
@@ -276,6 +292,15 @@
             "fixtureId": "640946",
             "matches": [
                 {
+                    "home": "Aa Belavista",
+                    "away": "Sc Farense",
+                    "date": "6 - 0                            \r\n                \r\n                    15 mar",
+                    "time": "",
+                    "stadium": "Estádio Municipal Da Bela Vista",
+                    "homeScore": 6,
+                    "awayScore": 0
+                },
+                {
                     "home": "Cf Os Armacenenses",
                     "away": "Aef Monte Gordo 2019",
                     "date": "3 - 3                            \r\n                \r\n                    15 mar",
@@ -292,15 +317,6 @@
                     "stadium": "Estadio Municipal De Almancil",
                     "homeScore": 0,
                     "awayScore": 5
-                },
-                {
-                    "home": "Aa Belavista",
-                    "away": "Sc Farense",
-                    "date": "6 - 0                            \r\n                \r\n                    15 mar",
-                    "time": "",
-                    "stadium": "Estádio Municipal Da Bela Vista",
-                    "homeScore": 6,
-                    "awayScore": 0
                 },
                 {
                     "home": "Gd Lagoa",
@@ -426,21 +442,21 @@
                     "awayScore": 4
                 },
                 {
-                    "home": "Fc Ferreiras",
-                    "away": "Cf Os Armacenenses",
-                    "date": "7 - 2                            \r\n                \r\n                    22 mar",
-                    "time": "",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": 7,
-                    "awayScore": 2
-                },
-                {
                     "home": "Aef Monte Gordo 2019",
                     "away": "Gd Lagoa",
                     "date": "1 - 2                            \r\n                \r\n                    22 mar",
                     "time": "",
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": 1,
+                    "awayScore": 2
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Cf Os Armacenenses",
+                    "date": "7 - 2                            \r\n                \r\n                    22 mar",
+                    "time": "",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": 7,
                     "awayScore": 2
                 }
             ],
@@ -549,15 +565,6 @@
                     "awayScore": 8
                 },
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Gd Lagoa",
-                    "date": "1 - 3                            \r\n                \r\n                    29 mar",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 1,
-                    "awayScore": 3
-                },
-                {
                     "home": "Fc Ferreiras",
                     "away": "Sc Farense",
                     "date": "8 - 0                            \r\n                \r\n                    29 mar",
@@ -565,6 +572,15 @@
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 8,
                     "awayScore": 0
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Gd Lagoa",
+                    "date": "1 - 3                            \r\n                \r\n                    29 mar",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 1,
+                    "awayScore": 3
                 },
                 {
                     "home": "Aa Belavista",
@@ -813,15 +829,6 @@
                     "awayScore": 2
                 },
                 {
-                    "home": "Aa Belavista",
-                    "away": "Cf Os Armacenenses",
-                    "date": "8 - 1                            \r\n                \r\n                    19 abr",
-                    "time": "",
-                    "stadium": "Estádio Municipal Da Bela Vista",
-                    "homeScore": 8,
-                    "awayScore": 1
-                },
-                {
                     "home": "Fc Ferreiras",
                     "away": "Aef Monte Gordo 2019",
                     "date": "2 - 4                            \r\n                \r\n                    19 abr",
@@ -829,6 +836,15 @@
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 2,
                     "awayScore": 4
+                },
+                {
+                    "home": "Aa Belavista",
+                    "away": "Cf Os Armacenenses",
+                    "date": "8 - 1                            \r\n                \r\n                    19 abr",
+                    "time": "",
+                    "stadium": "Estádio Municipal Da Bela Vista",
+                    "homeScore": 8,
+                    "awayScore": 1
                 },
                 {
                     "home": "Sc Farense",
@@ -954,15 +970,6 @@
                     "awayScore": 3
                 },
                 {
-                    "home": "Fc Ferreiras",
-                    "away": "Gd Lagoa",
-                    "date": "2 - 0                            \r\n                \r\n                    26 abr",
-                    "time": "",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": 2,
-                    "awayScore": 0
-                },
-                {
                     "home": "Internacional Ca",
                     "away": "Aa Belavista",
                     "date": "2 - 11                            \r\n                \r\n                    26 abr",
@@ -970,6 +977,15 @@
                     "stadium": "Estadio Municipal De Almancil",
                     "homeScore": 2,
                     "awayScore": 11
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Gd Lagoa",
+                    "date": "2 - 0                            \r\n                \r\n                    26 abr",
+                    "time": "",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": 2,
+                    "awayScore": 0
                 }
             ],
             "classification": [
@@ -1077,6 +1093,15 @@
                     "awayScore": 0
                 },
                 {
+                    "home": "Aef Monte Gordo 2019",
+                    "away": "Js Campinense",
+                    "date": "6 - 0                            \r\n                \r\n                    3 mai",
+                    "time": "",
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
+                    "homeScore": 6,
+                    "awayScore": 0
+                },
+                {
                     "home": "Aa Belavista",
                     "away": "Fc Ferreiras",
                     "date": "2 - 1                            \r\n                \r\n                    3 mai",
@@ -1084,15 +1109,6 @@
                     "stadium": "Estádio Municipal Da Bela Vista",
                     "homeScore": 2,
                     "awayScore": 1
-                },
-                {
-                    "home": "Aef Monte Gordo 2019",
-                    "away": "Js Campinense",
-                    "date": "3 mai",
-                    "time": "11:00",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": null,
-                    "awayScore": null
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -1119,12 +1135,12 @@
                 {
                     "position": 2,
                     "team": "Js Campinense",
-                    "played": 8,
+                    "played": 9,
                     "wins": 5,
                     "draws": 1,
-                    "losses": 2,
+                    "losses": 3,
                     "goalsFor": 25,
-                    "goalsAgainst": 16,
+                    "goalsAgainst": 22,
                     "points": 16
                 },
                 {
@@ -1140,6 +1156,17 @@
                 },
                 {
                     "position": 4,
+                    "team": "Aef Monte Gordo 2019",
+                    "played": 9,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 3,
+                    "goalsFor": 31,
+                    "goalsAgainst": 19,
+                    "points": 16
+                },
+                {
+                    "position": 5,
                     "team": "Fc Ferreiras",
                     "played": 9,
                     "wins": 5,
@@ -1148,17 +1175,6 @@
                     "goalsFor": 28,
                     "goalsAgainst": 15,
                     "points": 15
-                },
-                {
-                    "position": 5,
-                    "team": "Aef Monte Gordo 2019",
-                    "played": 8,
-                    "wins": 4,
-                    "draws": 1,
-                    "losses": 3,
-                    "goalsFor": 25,
-                    "goalsAgainst": 19,
-                    "points": 13
                 },
                 {
                     "position": 6,
@@ -1200,11 +1216,11 @@
             "fixtureId": "640953",
             "matches": [
                 {
-                    "home": "Sc Farense",
-                    "away": "Aa Belavista",
+                    "home": "Aef Monte Gordo 2019",
+                    "away": "Cf Os Armacenenses",
                     "date": "10 mai",
-                    "time": "09:00",
-                    "stadium": "Campo Complexo Desportivo Penha",
+                    "time": "11:00",
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1218,20 +1234,20 @@
                     "awayScore": null
                 },
                 {
-                    "home": "Aef Monte Gordo 2019",
-                    "away": "Cf Os Armacenenses",
-                    "date": "10 mai",
-                    "time": "11:00",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Js Campinense",
                     "away": "Gd Lagoa",
+                    "date": "3 - 0                            \r\n                \r\n                    10 mai",
+                    "time": "",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": 3,
+                    "awayScore": 0
+                },
+                {
+                    "home": "Sc Farense",
+                    "away": "Aa Belavista",
                     "date": "10 mai",
                     "time": "18:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null
                 }
@@ -1251,27 +1267,38 @@
                 {
                     "position": 2,
                     "team": "Js Campinense",
-                    "played": 8,
-                    "wins": 5,
+                    "played": 10,
+                    "wins": 6,
                     "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 25,
-                    "goalsAgainst": 16,
-                    "points": 16
+                    "losses": 3,
+                    "goalsFor": 28,
+                    "goalsAgainst": 22,
+                    "points": 19
                 },
                 {
                     "position": 3,
                     "team": "Gd Lagoa",
-                    "played": 9,
+                    "played": 10,
                     "wins": 5,
                     "draws": 1,
-                    "losses": 3,
+                    "losses": 4,
                     "goalsFor": 17,
-                    "goalsAgainst": 15,
+                    "goalsAgainst": 18,
                     "points": 16
                 },
                 {
                     "position": 4,
+                    "team": "Aef Monte Gordo 2019",
+                    "played": 9,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 3,
+                    "goalsFor": 31,
+                    "goalsAgainst": 19,
+                    "points": 16
+                },
+                {
+                    "position": 5,
                     "team": "Fc Ferreiras",
                     "played": 9,
                     "wins": 5,
@@ -1280,17 +1307,6 @@
                     "goalsFor": 28,
                     "goalsAgainst": 15,
                     "points": 15
-                },
-                {
-                    "position": 5,
-                    "team": "Aef Monte Gordo 2019",
-                    "played": 8,
-                    "wins": 4,
-                    "draws": 1,
-                    "losses": 3,
-                    "goalsFor": 25,
-                    "goalsAgainst": 19,
-                    "points": 13
                 },
                 {
                     "position": 6,
@@ -1383,27 +1399,38 @@
                 {
                     "position": 2,
                     "team": "Js Campinense",
-                    "played": 8,
-                    "wins": 5,
+                    "played": 10,
+                    "wins": 6,
                     "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 25,
-                    "goalsAgainst": 16,
-                    "points": 16
+                    "losses": 3,
+                    "goalsFor": 28,
+                    "goalsAgainst": 22,
+                    "points": 19
                 },
                 {
                     "position": 3,
                     "team": "Gd Lagoa",
-                    "played": 9,
+                    "played": 10,
                     "wins": 5,
                     "draws": 1,
-                    "losses": 3,
+                    "losses": 4,
                     "goalsFor": 17,
-                    "goalsAgainst": 15,
+                    "goalsAgainst": 18,
                     "points": 16
                 },
                 {
                     "position": 4,
+                    "team": "Aef Monte Gordo 2019",
+                    "played": 9,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 3,
+                    "goalsFor": 31,
+                    "goalsAgainst": 19,
+                    "points": 16
+                },
+                {
+                    "position": 5,
                     "team": "Fc Ferreiras",
                     "played": 9,
                     "wins": 5,
@@ -1412,17 +1439,6 @@
                     "goalsFor": 28,
                     "goalsAgainst": 15,
                     "points": 15
-                },
-                {
-                    "position": 5,
-                    "team": "Aef Monte Gordo 2019",
-                    "played": 8,
-                    "wins": 4,
-                    "draws": 1,
-                    "losses": 3,
-                    "goalsFor": 25,
-                    "goalsAgainst": 19,
-                    "points": 13
                 },
                 {
                     "position": 6,
@@ -1515,27 +1531,38 @@
                 {
                     "position": 2,
                     "team": "Js Campinense",
-                    "played": 8,
-                    "wins": 5,
+                    "played": 10,
+                    "wins": 6,
                     "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 25,
-                    "goalsAgainst": 16,
-                    "points": 16
+                    "losses": 3,
+                    "goalsFor": 28,
+                    "goalsAgainst": 22,
+                    "points": 19
                 },
                 {
                     "position": 3,
                     "team": "Gd Lagoa",
-                    "played": 9,
+                    "played": 10,
                     "wins": 5,
                     "draws": 1,
-                    "losses": 3,
+                    "losses": 4,
                     "goalsFor": 17,
-                    "goalsAgainst": 15,
+                    "goalsAgainst": 18,
                     "points": 16
                 },
                 {
                     "position": 4,
+                    "team": "Aef Monte Gordo 2019",
+                    "played": 9,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 3,
+                    "goalsFor": 31,
+                    "goalsAgainst": 19,
+                    "points": 16
+                },
+                {
+                    "position": 5,
                     "team": "Fc Ferreiras",
                     "played": 9,
                     "wins": 5,
@@ -1544,17 +1571,6 @@
                     "goalsFor": 28,
                     "goalsAgainst": 15,
                     "points": 15
-                },
-                {
-                    "position": 5,
-                    "team": "Aef Monte Gordo 2019",
-                    "played": 8,
-                    "wins": 4,
-                    "draws": 1,
-                    "losses": 3,
-                    "goalsFor": 25,
-                    "goalsAgainst": 19,
-                    "points": 13
                 },
                 {
                     "position": 6,
@@ -1596,20 +1612,20 @@
             "fixtureId": "640956",
             "matches": [
                 {
-                    "home": "Internacional Ca",
-                    "away": "Aef Monte Gordo 2019",
-                    "date": "31 mai",
-                    "time": "09:00",
-                    "stadium": "Estadio Municipal De Almancil",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Aa Belavista",
                     "away": "Gd Lagoa",
                     "date": "31 mai",
                     "time": "09:00",
                     "stadium": "Estádio Municipal Da Bela Vista",
+                    "homeScore": null,
+                    "awayScore": null
+                },
+                {
+                    "home": "Internacional Ca",
+                    "away": "Aef Monte Gordo 2019",
+                    "date": "31 mai",
+                    "time": "09:00",
+                    "stadium": "Estadio Municipal De Almancil",
                     "homeScore": null,
                     "awayScore": null
                 },
@@ -1647,27 +1663,38 @@
                 {
                     "position": 2,
                     "team": "Js Campinense",
-                    "played": 8,
-                    "wins": 5,
+                    "played": 10,
+                    "wins": 6,
                     "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 25,
-                    "goalsAgainst": 16,
-                    "points": 16
+                    "losses": 3,
+                    "goalsFor": 28,
+                    "goalsAgainst": 22,
+                    "points": 19
                 },
                 {
                     "position": 3,
                     "team": "Gd Lagoa",
-                    "played": 9,
+                    "played": 10,
                     "wins": 5,
                     "draws": 1,
-                    "losses": 3,
+                    "losses": 4,
                     "goalsFor": 17,
-                    "goalsAgainst": 15,
+                    "goalsAgainst": 18,
                     "points": 16
                 },
                 {
                     "position": 4,
+                    "team": "Aef Monte Gordo 2019",
+                    "played": 9,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 3,
+                    "goalsFor": 31,
+                    "goalsAgainst": 19,
+                    "points": 16
+                },
+                {
+                    "position": 5,
                     "team": "Fc Ferreiras",
                     "played": 9,
                     "wins": 5,
@@ -1676,17 +1703,6 @@
                     "goalsFor": 28,
                     "goalsAgainst": 15,
                     "points": 15
-                },
-                {
-                    "position": 5,
-                    "team": "Aef Monte Gordo 2019",
-                    "played": 8,
-                    "wins": 4,
-                    "draws": 1,
-                    "losses": 3,
-                    "goalsFor": 25,
-                    "goalsAgainst": 19,
-                    "points": 13
                 },
                 {
                     "position": 6,
@@ -1728,15 +1744,6 @@
             "fixtureId": "640957",
             "matches": [
                 {
-                    "home": "Gd Lagoa",
-                    "away": "Internacional Ca",
-                    "date": "6 jun",
-                    "time": "11:00",
-                    "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
                     "home": "Js Campinense",
                     "away": "Sc Farense",
                     "date": "6 jun",
@@ -1762,6 +1769,15 @@
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Gd Lagoa",
+                    "away": "Internacional Ca",
+                    "date": "6 jun",
+                    "time": "11:00",
+                    "stadium": "Parque Desportivo Municipal Estombar",
+                    "homeScore": null,
+                    "awayScore": null
                 }
             ],
             "classification": [
@@ -1779,27 +1795,38 @@
                 {
                     "position": 2,
                     "team": "Js Campinense",
-                    "played": 8,
-                    "wins": 5,
+                    "played": 10,
+                    "wins": 6,
                     "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 25,
-                    "goalsAgainst": 16,
-                    "points": 16
+                    "losses": 3,
+                    "goalsFor": 28,
+                    "goalsAgainst": 22,
+                    "points": 19
                 },
                 {
                     "position": 3,
                     "team": "Gd Lagoa",
-                    "played": 9,
+                    "played": 10,
                     "wins": 5,
                     "draws": 1,
-                    "losses": 3,
+                    "losses": 4,
                     "goalsFor": 17,
-                    "goalsAgainst": 15,
+                    "goalsAgainst": 18,
                     "points": 16
                 },
                 {
                     "position": 4,
+                    "team": "Aef Monte Gordo 2019",
+                    "played": 9,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 3,
+                    "goalsFor": 31,
+                    "goalsAgainst": 19,
+                    "points": 16
+                },
+                {
+                    "position": 5,
                     "team": "Fc Ferreiras",
                     "played": 9,
                     "wins": 5,
@@ -1808,17 +1835,6 @@
                     "goalsFor": 28,
                     "goalsAgainst": 15,
                     "points": 15
-                },
-                {
-                    "position": 5,
-                    "team": "Aef Monte Gordo 2019",
-                    "played": 8,
-                    "wins": 4,
-                    "draws": 1,
-                    "losses": 3,
-                    "goalsFor": 25,
-                    "goalsAgainst": 19,
-                    "points": 13
                 },
                 {
                     "position": 6,

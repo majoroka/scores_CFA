@@ -21,9 +21,11 @@ BLOCKED_MARKERS = (
 )
 
 SESSION_IMPERSONATION = "chrome124"
+BLOCK_COOLDOWN_SECONDS = int(os.environ.get("FPF_BLOCK_COOLDOWN_SECONDS", "45"))
 
 _SESSION = None
 _LAST_SUCCESSFUL_URL = None
+_BLOCKED_UNTIL = 0.0
 
 
 def _build_session():
@@ -44,6 +46,18 @@ def _reset_session():
     global _SESSION
     _SESSION = _build_session()
     return _SESSION
+
+
+def _respect_block_cooldown():
+    remaining = _BLOCKED_UNTIL - time.time()
+    if remaining > 0:
+        print(f"Cooling down for {int(remaining)}s after FPF block/rate limit")
+        time.sleep(remaining)
+
+
+def _mark_blocked():
+    global _BLOCKED_UNTIL
+    _BLOCKED_UNTIL = max(_BLOCKED_UNTIL, time.time() + BLOCK_COOLDOWN_SECONDS)
 
 
 def _same_origin(left: str, right: str) -> bool:
@@ -84,6 +98,7 @@ def get_page_content(
 
     last_error = None
     for attempt in range(max_retries + 1):
+        _respect_block_cooldown()
         if verbose:
             print(f"Buscando da web: {url}")
         try:
@@ -98,25 +113,29 @@ def get_page_content(
                 timeout=60,
             )
             if response.status_code == 429 and attempt < max_retries:
-                time.sleep(60)
+                _mark_blocked()
+                _reset_session()
+                time.sleep(max(60, 10 * (attempt + 1)))
                 continue
             if response.status_code >= 400:
                 print(f"HTTP error {response.status_code} while requesting {url}")
+                if response.status_code in {403, 429}:
+                    _mark_blocked()
                 if response.status_code == 403 and attempt < max_retries:
-                    # Recriamos a sessão no último retry para renovar cookies/contexto.
                     _reset_session()
                 if attempt < max_retries:
-                    time.sleep(5 * (attempt + 1))
+                    time.sleep(max(5 * (attempt + 1), BLOCK_COOLDOWN_SECONDS))
                     continue
                 return None
 
             content = response.text
             if is_blocked_content(content):
                 print(f"Blocked content while requesting {url}")
+                _mark_blocked()
                 if attempt < max_retries:
                     _reset_session()
                 if attempt < max_retries:
-                    time.sleep(5 * (attempt + 1))
+                    time.sleep(max(5 * (attempt + 1), BLOCK_COOLDOWN_SECONDS))
                     continue
                 return None
             _LAST_SUCCESSFUL_URL = url

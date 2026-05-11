@@ -1,25 +1,32 @@
 {
     "defaultRoundIndex": 7,
     "defaultRoundNumber": 8,
-    "lastUpdatedAt": "2026-05-10T10:33:07Z",
+    "lastUpdatedAt": "2026-05-11T13:34:25Z",
     "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
+    },
+    "dataQuality": {
+        "roundCount": 10,
+        "matchCount": 30,
+        "classificationCount": 50,
+        "teamCount": 6,
+        "completedMatchCount": 16,
+        "matchesWithoutScore": 14,
+        "pastMatchCount": 24,
+        "pastMatchesWithoutScore": 8,
+        "futureMatchCount": 6,
+        "roundsWithMatches": 10,
+        "roundsWithClassification": 10,
+        "roundsWithCompletedMatches": 9,
+        "roundsWithoutData": 0
     },
     "rounds": [
         {
             "index": 1,
             "fixtureId": "641094",
             "matches": [
-                {
-                    "home": "Jd Monchiquense",
-                    "away": "Fc Ferreiras - A",
-                    "date": "28 fev",
-                    "time": "",
-                    "stadium": "Parque Desportivo Jd Monchiquense",
-                    "homeScore": 2,
-                    "awayScore": 6
-                },
                 {
                     "home": "A Indicar",
                     "away": "Gdr Alvorense",
@@ -28,6 +35,15 @@
                     "stadium": "A Indicar",
                     "homeScore": null,
                     "awayScore": null
+                },
+                {
+                    "home": "Jd Monchiquense",
+                    "away": "Fc Ferreiras - A",
+                    "date": "28 fev",
+                    "time": "",
+                    "stadium": "Parque Desportivo Jd Monchiquense",
+                    "homeScore": 2,
+                    "awayScore": 6
                 },
                 {
                     "home": "Fc Ferreiras - B",

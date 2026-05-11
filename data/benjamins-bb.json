@@ -1,10 +1,45 @@
 {
     "defaultRoundIndex": 14,
     "defaultRoundNumber": 15,
-    "lastUpdatedAt": "2026-05-10T10:36:55Z",
+    "lastUpdatedAt": "2026-05-11T13:32:57Z",
     "sourceHealth": {
         "status": "degraded",
-        "fallbackReuseCount": 12
+        "fallbackReuseCount": 18,
+        "issues": [
+            "fixture 635360: fallback to existing round",
+            "fixture 635361: fallback to existing round",
+            "fixture 635362: fallback to existing round",
+            "fixture 635364: fallback to existing round",
+            "fixture 635366: fallback to existing round",
+            "fixture 635369: fallback to existing round",
+            "fixture 635372: fallback to existing round",
+            "fixture 635375: fallback to existing round",
+            "fixture 635377: fallback to existing round",
+            "fixture 635379: fallback to existing round",
+            "fixture 635380: fallback to existing round",
+            "fixture 635381: fallback to existing round",
+            "fixture 635384: fallback to existing round",
+            "fixture 635386: fallback to existing round",
+            "fixture 635389: fallback to existing round",
+            "fixture 635391: fallback to existing round",
+            "fixture 635394: fallback to existing round",
+            "fixture 635397: fallback to existing round"
+        ]
+    },
+    "dataQuality": {
+        "roundCount": 18,
+        "matchCount": 90,
+        "classificationCount": 180,
+        "teamCount": 10,
+        "completedMatchCount": 65,
+        "matchesWithoutScore": 25,
+        "pastMatchCount": 75,
+        "pastMatchesWithoutScore": 10,
+        "futureMatchCount": 15,
+        "roundsWithMatches": 18,
+        "roundsWithClassification": 18,
+        "roundsWithCompletedMatches": 13,
+        "roundsWithoutData": 0
     },
     "rounds": [
         {
@@ -30,15 +65,6 @@
                     "awayScore": 2
                 },
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Associacao Fut. F.O.",
-                    "date": "24 jan",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 5,
-                    "awayScore": 2
-                },
-                {
                     "home": "Cf Esperança Lagos",
                     "away": "Cd Odiáxere",
                     "date": "24 jan",
@@ -46,6 +72,15 @@
                     "stadium": "Estádio Municipal De Lagos N.º 2",
                     "homeScore": 3,
                     "awayScore": 6
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Associacao Fut. F.O.",
+                    "date": "24 jan",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 5,
+                    "awayScore": 2
                 },
                 {
                     "home": "Imortal Dc",
