@@ -1084,27 +1084,45 @@ body::after {
 }
 
 @media (max-width: 480px) {
+    .agenda-match-card__link {
+        padding: 0.85rem;
+    }
+
     .agenda-match-card__meta {
-        flex-direction: column;
+        display: grid;
         align-items: flex-start;
+        gap: 0.4rem;
+        margin-bottom: 0.75rem;
     }
 
     .agenda-match-card__subtitle {
+        width: 100%;
         margin-left: 0;
         text-align: left;
+        font-size: 0.82rem;
+        line-height: 1.3;
     }
 
     .agenda-match-card__teams {
         grid-template-columns: 1fr;
-        gap: 0.7rem;
+        gap: 0.55rem;
+        margin-bottom: 0.65rem;
     }
 
     .agenda-match-card__center {
         order: -1;
         min-width: 0;
+        gap: 0.1rem;
+        padding: 0.1rem 0 0.2rem;
+    }
+
+    .agenda-match-card__round {
+        font-size: 0.88rem;
+        text-align: center;
     }
 
     .agenda-match-card__score {
+        font-size: 1.12rem;
         min-width: 0;
     }
 
@@ -1112,11 +1130,19 @@ body::after {
     .agenda-team:last-child {
         justify-content: flex-start;
         text-align: left;
+        font-size: 0.98rem;
+        gap: 0.4rem;
+    }
+
+    .agenda-team span {
+        white-space: normal;
     }
 
     .agenda-match-card__footer {
         flex-direction: column;
         align-items: flex-start;
+        gap: 0.2rem;
+        font-size: 0.82rem;
     }
 
     .agenda-range-picker {
