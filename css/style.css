@@ -607,6 +607,7 @@ body.agenda-picker-open::before {
     inset: 0;
     background: rgba(13, 17, 23, 0.32);
     z-index: 25;
+    pointer-events: none;
 }
 
 :root[data-theme="light"] body.agenda-picker-open::before {
@@ -618,7 +619,7 @@ body.agenda-picker-open::before {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 30;
+    z-index: 40;
     width: min(440px, calc(100vw - 2rem));
     border: 1px solid var(--border-color);
     border-radius: 18px;
