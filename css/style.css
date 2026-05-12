@@ -668,12 +668,13 @@ body::after {
 
 .agenda-range-select {
     width: 100%;
-    height: 46px;
+    min-height: 48px;
     border-radius: 12px;
-    padding: 0 0.8rem;
-    font-size: 0.92rem;
-    font-weight: 700;
-    line-height: 1.2;
+    padding: 0.65rem 0.85rem 0.5rem;
+    font-size: 0.98rem;
+    font-weight: 600;
+    line-height: normal;
+    box-sizing: border-box;
     text-transform: capitalize;
 }
 
