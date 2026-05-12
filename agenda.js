@@ -37,6 +37,24 @@ document.addEventListener('DOMContentLoaded', () => {
         (fixtureId) => `https://corsproxy.io/?${LIVE_DATA_ENDPOINT}${fixtureId}`,
         (fixtureId) => `https://r.jina.ai/http://resultados.fpf.pt/Competition/GetClassificationAndMatchesByFixture?fixtureId=${fixtureId}`,
     ];
+    const COMPETITION_ACCENTS = {
+        agenda: '#c8a84d',
+        seniores: '#0f59a7',
+        juniores: '#383e42',
+        juvenis: '#55738c',
+        'iniciados-a': '#277e86',
+        'iniciados-b': '#277e86',
+        'infantis-a': '#0db3d8',
+        'infantis-b': '#0db3d8',
+        'infantis-c': '#0db3d8',
+        'benjamins-a1': '#fb6a68',
+        'benjamins-a2': '#fb6a68',
+        'benjamins-b': '#fb6a68',
+        'benjamins-bb': '#fb6a68',
+        'feminino-sub19': '#e678b1',
+        'feminino-sub17': '#e678b1',
+        'feminino-sub15': '#e678b1',
+    };
 
     let activeTab = 'proximos';
     let calendarData = null;
@@ -103,6 +121,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const fallback = 'img/crests/jornada.png';
         if (!crestsData) return fallback;
         return crestsData[canonicalTeamName(teamName)] || fallback;
+    };
+
+    const hexToRgba = (hex, alpha) => {
+        if (!hex || typeof hex !== 'string') return `rgba(17, 24, 32, ${alpha})`;
+        const normalized = hex.replace('#', '').trim();
+        if (normalized.length !== 6) return `rgba(17, 24, 32, ${alpha})`;
+        const r = Number.parseInt(normalized.slice(0, 2), 16);
+        const g = Number.parseInt(normalized.slice(2, 4), 16);
+        const b = Number.parseInt(normalized.slice(4, 6), 16);
+        return `rgba(${r}, ${g}, ${b}, ${alpha})`;
     };
 
     const decodeHTML = (value = '') => {
@@ -925,32 +953,41 @@ document.addEventListener('DOMContentLoaded', () => {
         const awayDisplayName = displayTeamName(entry.away, entry.competitionKey);
         const homeCrest = getCrestUrl(entry.home);
         const awayCrest = getCrestUrl(entry.away);
+        const accentColor = COMPETITION_ACCENTS[entry.competitionKey] || '#7d8590';
+        const inlineVars = [
+            `--agenda-competition-accent: ${accentColor}`,
+            `--agenda-competition-accent-soft: ${hexToRgba(accentColor, 0.18)}`,
+            `--agenda-competition-accent-border: ${hexToRgba(accentColor, 0.38)}`,
+        ].join('; ');
         const score = Number.isInteger(entry.homeScore) && Number.isInteger(entry.awayScore)
             ? `${entry.homeScore} - ${entry.awayScore}`
             : (entry.displayTime || 'Agendado');
+        const metaLine = [entry.displayDate, entry.displayTime].filter(Boolean).join(' · ');
 
         return `
-            <article class="agenda-match-card">
+            <article class="agenda-match-card" style="${inlineVars}">
                 <a href="${entry.competitionUrl || '#'}" class="agenda-match-card__link" aria-label="Abrir ${entry.competitionTitle}">
                     <div class="agenda-match-card__meta">
                         <span class="agenda-chip">${entry.competitionTitle}</span>
-                        <span class="agenda-match-card__round">Jornada ${entry.roundNumber}</span>
+                        <span class="agenda-match-card__subtitle">${entry.competitionSubtitle}</span>
                     </div>
                     <div class="agenda-match-card__teams">
                         <div class="agenda-team ${isArmacenensesTeam(entry.home, entry.competitionKey) ? 'agenda-team--highlight' : ''}">
                             <img src="${homeCrest}" alt="${homeDisplayName}" class="team-crest">
                             <span>${homeDisplayName}</span>
                         </div>
-                        <div class="agenda-match-card__score">${score}</div>
+                        <div class="agenda-match-card__center">
+                            <span class="agenda-match-card__round">Jornada ${entry.roundNumber}</span>
+                            <div class="agenda-match-card__score">${score}</div>
+                        </div>
                         <div class="agenda-team ${isArmacenensesTeam(entry.away, entry.competitionKey) ? 'agenda-team--highlight' : ''}">
                             <span>${awayDisplayName}</span>
                             <img src="${awayCrest}" alt="${awayDisplayName}" class="team-crest">
                         </div>
                     </div>
                     <div class="agenda-match-card__footer">
-                        <span>${entry.displayDate}${entry.displayTime ? ` · ${entry.displayTime}` : ''}</span>
+                        <span>${metaLine}</span>
                         <span>${entry.stadium || ''}</span>
-                        <span>${entry.competitionSubtitle}</span>
                     </div>
                 </a>
             </article>
