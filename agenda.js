@@ -969,24 +969,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 <a href="${entry.competitionUrl || '#'}" class="agenda-match-card__link" aria-label="Abrir ${entry.competitionTitle}">
                     <div class="agenda-match-card__meta">
                         <span class="agenda-chip">${entry.competitionTitle}</span>
+                        <span class="agenda-match-card__subtitle">${entry.competitionSubtitle}</span>
                     </div>
-                    <div class="agenda-match-card__body">
-                        <div class="agenda-match-card__teams">
-                            <div class="agenda-team ${isArmacenensesTeam(entry.home, entry.competitionKey) ? 'agenda-team--highlight' : ''}">
-                                <img src="${homeCrest}" alt="${homeDisplayName}" class="team-crest">
-                                <span>${homeDisplayName}</span>
-                            </div>
-                            <div class="agenda-team ${isArmacenensesTeam(entry.away, entry.competitionKey) ? 'agenda-team--highlight' : ''}">
-                                <img src="${awayCrest}" alt="${awayDisplayName}" class="team-crest">
-                                <span>${awayDisplayName}</span>
-                            </div>
+                    <div class="agenda-match-card__teams">
+                        <div class="agenda-team ${isArmacenensesTeam(entry.home, entry.competitionKey) ? 'agenda-team--highlight' : ''}">
+                            <img src="${homeCrest}" alt="${homeDisplayName}" class="team-crest">
+                            <span>${homeDisplayName}</span>
                         </div>
-                        <div class="agenda-match-card__center agenda-match-card__center--side">
+                        <div class="agenda-match-card__center">
                             <span class="agenda-match-card__round">Jornada ${entry.roundNumber}</span>
                             <div class="agenda-match-card__score">${score}</div>
                         </div>
+                        <div class="agenda-team ${isArmacenensesTeam(entry.away, entry.competitionKey) ? 'agenda-team--highlight' : ''}">
+                            <span>${awayDisplayName}</span>
+                            <img src="${awayCrest}" alt="${awayDisplayName}" class="team-crest">
+                        </div>
                     </div>
-                    <div class="agenda-match-card__subtitle">${entry.competitionSubtitle}</div>
                     <div class="agenda-match-card__footer">
                         <span>${metaLine}</span>
                         <span>${entry.stadium || ''}</span>
