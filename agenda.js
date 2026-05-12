@@ -551,11 +551,13 @@ document.addEventListener('DOMContentLoaded', () => {
         dateRangeEndInput.value = draftRange.end ? formatInputDate(draftRange.end) : '';
         renderDateRangePicker();
         dateRangePicker.classList.remove('hidden');
+        document.body.classList.add('agenda-picker-open');
         dateRangeTrigger.setAttribute('aria-expanded', 'true');
     };
 
     const closeDateRangePicker = () => {
         dateRangePicker.classList.add('hidden');
+        document.body.classList.remove('agenda-picker-open');
         dateRangeTrigger.setAttribute('aria-expanded', 'false');
     };
 
