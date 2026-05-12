@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-12T13:34:26Z",
+  "generatedAt": "2026-05-12T16:47:19Z",
   "competitionCount": 15,
   "statusCounts": {
-    "ok": 4,
-    "partial": 11,
+    "ok": 5,
+    "partial": 10,
     "degraded": 0,
     "missing": 0
   },
@@ -230,19 +230,19 @@
       "outputFile": "data/feminino-sub19.json"
     },
     "feminino-sub17": {
-      "status": "partial",
-      "lastUpdatedAt": "2026-05-11T14:24:00Z",
+      "status": "ok",
+      "lastUpdatedAt": "2026-05-12T16:47:19Z",
       "fallbackReuseCount": 0,
-      "matchesWithoutScore": 19,
-      "pastMatchesWithoutScore": 3,
-      "matchCount": 56,
-      "completedMatchCount": 37,
-      "roundCount": 14,
-      "teamCount": 8,
-      "roundsWithCompletedMatches": 11,
+      "matchesWithoutScore": 0,
+      "pastMatchesWithoutScore": 0,
+      "matchCount": 6,
+      "completedMatchCount": 6,
+      "roundCount": 3,
+      "teamCount": 4,
+      "roundsWithCompletedMatches": 3,
       "issues": [],
       "title": "Feminino – Sub17",
-      "subtitle": "Liga 2 Algarve Futebol (2ª Fase - Série 7)",
+      "subtitle": "Taça Nacional Futebol Feminino - Sub17 - Fase Distrital",
       "pagePath": "feminino-sub17.html",
       "outputFile": "data/feminino-sub17.json"
     },

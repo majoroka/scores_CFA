@@ -108,14 +108,13 @@ FEMININO_SUB15 = CompetitionConfig(
 FEMININO_SUB17 = CompetitionConfig(
     key='feminino-sub17',
     title='Feminino – Sub17',
-    subtitle='Liga 2 Algarve Futebol (2ª Fase - Série 7)',
+    subtitle='Taça Nacional Futebol Feminino - Sub17 - Fase Distrital',
     page_path='feminino-sub17.html',
-    competition_url='https://resultados.fpf.pt/Competition/Details?competitionId=28476&seasonId=105',
+    competition_url='https://resultados.fpf.pt/Competition/Details?competitionId=29200&seasonId=105',
     output_file='data/feminino-sub17.json',
     main_cache_key='feminino_sub17_competition_main',
     fixture_cache_prefix='feminino_sub17_fixture',
-    target_phase_name='2ª FASE',
-    target_serie_name='SÉRIE 7',
+    allow_first_block_fallback=True,
     club_team_names=frozenset({'Cf Os Armacenenses - A', 'Cf Os Armacenenses - B'}),
 )
 
