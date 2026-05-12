@@ -804,7 +804,7 @@ body::after {
     border-radius: 999px;
     border: 1px solid var(--agenda-competition-accent-border, var(--border-color));
     background: var(--agenda-competition-accent-soft, var(--surface-muted));
-    color: var(--primary-color);
+    color: #fff;
     font-family: var(--font-sans);
     font-size: 0.9rem;
     padding: 0.45rem 0.8rem;
