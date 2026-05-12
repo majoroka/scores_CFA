@@ -25,6 +25,11 @@ The following parts of this plan are already in place:
 - a `recent_historical_backfill` tier now exists for very recent past matches
   - default window: `2 days`
   - default retry cadence: `2 hours`
+- the initial `Sync data` wave is now intentionally lightweight
+  - `1` attempt per selected fetcher
+  - no normal cooldown between fetchers
+  - small cooldown only after degraded/failing runs
+  - heavier persistence is deferred to the follow-up workflow
 
 ### Still pending
 

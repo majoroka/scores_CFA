@@ -46,18 +46,22 @@ Já existe:
 - motor comum de sincronização em `competition_sync.py`;
 - configuração central em `competition_configs.py`;
 - workflow com planeamento adaptativo;
-- deploy inicial separado do follow-up;
+- deploy do site separado da sincronização de dados;
+- deploy de `data/*.json` garantido mesmo em commits manuais;
+- vaga inicial leve no `Sync data`, com insistência deixada para o follow-up;
+- follow-up separado do workflow principal;
 - agenda construída a partir dos JSON finais;
 - `sourceHealth` e `lastUpdatedAt` nos payloads;
+- `status.json` global;
 - frontend mais dependente de JSON publicado do que de hidratação local.
 - planner temporal com `nextRecommendedFetchAt`;
 - follow-up workflow orientado a janela temporal em vez de vagas fixas cegas.
+- tier `recent_historical_backfill` para resultados históricos muito recentes.
 
 Ainda falta consolidar:
 
 - falha explícita em erros críticos de scraping;
 - política forte de validade mínima por competição;
-- `status.json` global;
 - UX mais clara para estados `degraded`, `partial` e `local cache fallback`;
 - diagnóstico centralizado por competição;
 - logs estruturados por competição quando a FPF falha.

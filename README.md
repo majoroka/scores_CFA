@@ -6,17 +6,21 @@ Microsite estático que agrega resultados, classificações e calendários das e
 
 - Agregação de várias competições numa página principal com navegação dedicada por equipa.
 - Visualização por jornada e tabelas de classificação com destaque automático para o CF Os Armacenenses.
-- Dados locais completos por jornada: mesmo sem hidratação em tempo real, todas as equipas da classificação aparecem imediatamente (essencial para smartphones/tablets).
+- Dados publicados por competição (`data/*.json`) como fonte principal para todos os dispositivos.
+- Agenda e resultados globais suportados por `data/calendar.json`.
+- Estado global das competições suportado por `data/status.json`.
 - Interface responsiva (CSS Grid) com suporte para títulos/subtítulos dinâmicos, alternância de tema claro/escuro e preferência persistida em `localStorage`.
 - Atualização periódica de dados através de scrapers Python que consomem o site oficial da FPF.
+- `localStorage` usado apenas como fallback quando o fetch do JSON publicado falha.
 - Manifesto de emblemas para carregamento imediato dos logótipos de cada clube.
 
 ## Estrutura do projeto
 
 - `index.html` e `*.html`: páginas estáticas para o hub principal e para cada competição.
-- `main.js`: lógica de UI, carregamento de dados, gestão de tema e renderização dos componentes dinâmicos.
+- `main.js`: lógica de UI das páginas de competição, carregamento de dados publicados, gestão de tema e renderização dos componentes dinâmicos.
+- `agenda.js`: lógica dedicada da Agenda/Resultados globais.
 - `css/`: estilos principais (`css/style.css`) e ativos suplementares.
-- `data/`: ficheiros JSON gerados pelos scrapers (`{competicao}.json`, `crests.json`) consumidos pelo frontend.
+- `data/`: ficheiros JSON gerados pelos scrapers (`{competicao}.json`, `calendar.json`, `status.json`, `crests.json`) consumidos pelo frontend.
 - `img/`: logótipos do clube, emblemas (`img/crests/`) e ícones utilizados nas páginas.
 - `fetch_*.py`: wrappers específicos por competição, usados pelo workflow e por execuções manuais, que delegam no motor comum de sincronização.
 - `competition_configs.py`: configuração central das competições, equipas do clube e metadados usados por fetch, agenda e planeamento.
@@ -24,9 +28,12 @@ Microsite estático que agrega resultados, classificações e calendários das e
 - `run_fetchers.py`: runner com validação, retries e relatório de execução.
 - `plan_fetchers.py`: planeador adaptativo que decide que competições devem ser atualizadas em cada run.
 - `build_calendar.py`: gera `data/calendar.json` para a Agenda/Resultados globais.
+- `build_status.py`: gera `data/status.json` com o estado agregado das competições.
 - `generate_crest_manifest.py`: gera automaticamente o mapa normalizado de emblemas em `data/crests.json`.
 - `tools/`: utilitários de apoio (ex.: `tools/probe_fixture.py` para inspecionar fixtures da FPF).
-- `.github/workflows/update-data.yml`: pipeline de CI que renova os dados e publica o site no GitHub Pages.
+- `.github/workflows/deploy-app.yml`: publica o site no GitHub Pages quando mudam frontend e/ou `data/`.
+- `.github/workflows/update-data.yml`: workflow principal de sincronização de dados.
+- `.github/workflows/retry-pending-results.yml`: follow-up de retries orientado pelo planner temporal.
 
 ## Pré-requisitos
 
@@ -38,9 +45,10 @@ Microsite estático que agrega resultados, classificações e calendários das e
 1. Para atualizar uma competição isolada, execute o wrapper respetivo (ex.: `python fetch_juniores.py`).
 2. Para atualizar várias competições com a mesma lógica do workflow, execute `python run_fetchers.py`.
 3. Para regenerar a Agenda global depois de atualizar dados, execute `python build_calendar.py`.
-4. Confirme os JSON atualizados em `data/` e valide se os valores foram normalizados corretamente (ex.: `python3 -m json.tool data/seniores.json`).
-5. (Opcional) Se novos emblemas forem adicionados a `img/crests/`, execute `python generate_crest_manifest.py` para atualizar `data/crests.json`.
-6. Caso ocorram conflitos de merge nos JSON, remova os marcadores (`<<<<<<<`, `=======`, `>>>>>>>`) e volte a executar o `fetch_*.py` respetivo para gerar um ficheiro limpo antes de o commitar.
+4. Para regenerar o estado global das competições, execute `python build_status.py`.
+5. Confirme os JSON atualizados em `data/` e valide se os valores foram normalizados corretamente (ex.: `python3 -m json.tool data/seniores.json`).
+6. (Opcional) Se novos emblemas forem adicionados a `img/crests/`, execute `python generate_crest_manifest.py` para atualizar `data/crests.json`.
+7. Caso ocorram conflitos de merge nos JSON, remova os marcadores (`<<<<<<<`, `=======`, `>>>>>>>`) e volte a executar o `fetch_*.py` respetivo para gerar um ficheiro limpo antes de o commitar.
 
 ## Visualizar localmente
 
@@ -49,13 +57,26 @@ Microsite estático que agrega resultados, classificações e calendários das e
 
 ## Automação com GitHub Actions
 
-O workflow `.github/workflows/update-data.yml`:
+### `Deploy site`
 
-- Pode ser acionado manualmente, em `push` relevante, ou corre automaticamente de hora a hora.
+- Publica o conteúdo estático no GitHub Pages.
+- Dispara em alterações de frontend e em alterações publicadas em `data/**`.
+- Garante que um commit manual em `data/*.json` chega efetivamente ao site.
+
+### `Sync data`
+
+- Pode ser acionado manualmente, em `push` relevante de código de sync, ou por `schedule`.
 - Usa `plan_fetchers.py` para decidir que competições precisam mesmo de ser atualizadas.
-- Executa `run_fetchers.py` com validação, retries e relatório estruturado.
-- Regera `data/calendar.json` e o manifesto de emblemas quando necessário.
-- Realiza commit automático dos ficheiros alterados e publica o site em GitHub Pages.
+- Executa uma vaga inicial leve através de `run_fetchers.py`, com foco em publicar cedo o que já estiver válido.
+- Regera `data/calendar.json`, `data/status.json` e o manifesto de emblemas quando necessário.
+- Realiza commit automático dos ficheiros alterados e publica o site.
+
+### `Retry pending results and deploy`
+
+- Arranca depois do `Sync data` quando o follow-up faz sentido.
+- Reavalia o plano e só corre fetchers que continuem pendentes.
+- Respeita `nextRecommendedFetchAt` calculado pelo planner adaptativo.
+- Faz retries mais tarde sem bloquear a vaga inicial.
 
 ## Scripts auxiliares
 

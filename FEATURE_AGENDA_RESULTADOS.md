@@ -1,5 +1,23 @@
 # Feature Spec: Agenda E Resultados Globais
 
+## Estado Atual
+
+Esta feature já está implementada na base, mas o comportamento final divergiu em alguns pontos do plano original.
+
+Hoje já existe:
+
+- página dedicada em [agenda.html](/Users/mariocabano/Documents/GitHub/scores_CFA/agenda.html);
+- script dedicado em [agenda.js](/Users/mariocabano/Documents/GitHub/scores_CFA/agenda.js);
+- agregado publicado em [data/calendar.json](/Users/mariocabano/Documents/GitHub/scores_CFA/data/calendar.json);
+- leitura `published-first`, alinhada com o resto da app;
+- picker de período por calendário, em modal centrado;
+- filtro por competição;
+- cards visuais com badge de competição colorido e layout responsivo.
+
+Já não faz parte da implementação atual:
+
+- atalhos rápidos como `Hoje`, `Fim de semana`, `Próximos 7 dias`, `Últimos 7 dias`.
+
 ## Objetivo
 
 Adicionar uma funcionalidade global de consulta transversal a todas as competições, permitindo:
@@ -80,25 +98,14 @@ O utilizador entra em `Agenda > Resultados` e pode:
 #### Próximos Jogos
 
 - Filtro obrigatório por intervalo de datas.
-- Intervalo default recomendado:
-  - `hoje` até `hoje + 7 dias`
-- Atalhos rápidos recomendados:
-  - `Hoje`
-  - `Amanhã`
-  - `Fim de semana`
-  - `Próximos 7 dias`
+- O período é escolhido exclusivamente através do calendário modal.
+- A vista abre vazia até o utilizador aplicar um período.
 
 #### Resultados
 
 - Filtro por intervalo de datas.
 - Filtro opcional por competição.
-- Intervalo default recomendado:
-  - `últimos 7 dias`
-- Atalhos rápidos recomendados:
-  - `Hoje`
-  - `Ontem`
-  - `Últimos 7 dias`
-  - `Últimos 30 dias`
+- O período é escolhido exclusivamente através do calendário modal.
 
 ### Ordenação
 
@@ -121,7 +128,7 @@ Isto melhora bastante a leitura quando existem vários jogos em datas próximas.
 
 ### Dados a mostrar por jogo
 
-Cada item da lista deve mostrar:
+Cada item da lista mostra:
 
 - competição
 - subtítulo da competição
@@ -153,11 +160,7 @@ Gerar no pipeline um ficheiro agregado global, por exemplo:
 
 - `data/calendar.json`
 
-ou, em alternativa:
-
-- `data/all-matches.json`
-
-Este ficheiro deve ser produzido durante o processo de sync, a partir dos JSON de todas as competições.
+Este ficheiro é produzido durante o processo de sync, a partir dos JSON de todas as competições.
 
 ## Estrutura De Dados Recomendada
 
@@ -253,11 +256,11 @@ Criar uma nova página, por exemplo:
 
 e reutilizar `main.js` apenas se isso não complicar demasiado a separação de responsabilidades.
 
-Recomendação:
+Implementado:
 
-- criar um script dedicado, por exemplo `agenda.js`
-
-Isso evita sobrecarregar [main.js](/Users/mariocabano/Documents/GitHub/scores_CFA/main.js), que hoje está focado nas páginas de competição.
+- [agenda.js](/Users/mariocabano/Documents/GitHub/scores_CFA/agenda.js) foi separado de [main.js](/Users/mariocabano/Documents/GitHub/scores_CFA/main.js)
+- a Agenda consome `data/calendar.json`
+- a página usa a mesma política `published-first` do resto da app
 
 ## Requisitos De Performance
 
@@ -279,6 +282,26 @@ Isso evita sobrecarregar [main.js](/Users/mariocabano/Documents/GitHub/scores_CF
   - resultado ou estado
   - competição
   - estádio
+
+## Estado da UI
+
+### Picker de período
+
+- modal centrado no ecrã
+- seleção apenas por calendário
+- período inicial vazio até o utilizador confirmar
+
+### Cards de jogo
+
+- badge de competição com cor sólida por competição
+- jornada e score/hora destacados
+- layout com adaptações específicas para desktop e mobile
+
+## Questões que esta feature já resolveu
+
+- deixou de ser necessário abrir competição a competição para ver agenda global;
+- eliminou dependência do browser para agregação local pesada;
+- alinhou a Agenda com a mesma fonte de verdade publicada da app.
 
 ## Requisitos De Robustez
 

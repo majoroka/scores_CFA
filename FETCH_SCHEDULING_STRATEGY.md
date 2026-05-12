@@ -16,8 +16,10 @@ The current code already supports:
 - `kickoff + 2h` first meaningful fetch
 - `15-minute` short chase for same-day pending scores
 - hourly same-day continuation
+- `2-hour` recent historical backfill
 - `6-hour` historical recovery
 - workflow follow-up based on `nextRecommendedFetchAt`
+- lightweight initial sync wave, with heavier persistence deferred to follow-up
 
 ## Objetivo
 
