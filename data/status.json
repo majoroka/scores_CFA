@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-11T16:57:04Z",
+  "generatedAt": "2026-05-12T12:29:25Z",
   "competitionCount": 15,
   "statusCounts": {
-    "ok": 3,
-    "partial": 12,
+    "ok": 4,
+    "partial": 11,
     "degraded": 0,
     "missing": 0
   },
@@ -111,13 +111,13 @@
       "outputFile": "data/infantis-a.json"
     },
     "infantis-b": {
-      "status": "partial",
-      "lastUpdatedAt": "2026-05-11T13:16:33Z",
+      "status": "ok",
+      "lastUpdatedAt": "2026-05-11T17:11:20Z",
       "fallbackReuseCount": 0,
-      "matchesWithoutScore": 12,
-      "pastMatchesWithoutScore": 1,
+      "matchesWithoutScore": 11,
+      "pastMatchesWithoutScore": 0,
       "matchCount": 90,
-      "completedMatchCount": 78,
+      "completedMatchCount": 79,
       "roundCount": 18,
       "teamCount": 10,
       "roundsWithCompletedMatches": 16,
@@ -146,12 +146,12 @@
     },
     "benjamins-a1": {
       "status": "partial",
-      "lastUpdatedAt": "2026-05-11T13:34:02Z",
+      "lastUpdatedAt": "2026-05-11T17:16:02Z",
       "fallbackReuseCount": 0,
-      "matchesWithoutScore": 8,
-      "pastMatchesWithoutScore": 2,
+      "matchesWithoutScore": 7,
+      "pastMatchesWithoutScore": 1,
       "matchCount": 30,
-      "completedMatchCount": 22,
+      "completedMatchCount": 23,
       "roundCount": 10,
       "teamCount": 6,
       "roundsWithCompletedMatches": 9,
