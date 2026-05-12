@@ -121,7 +121,7 @@ def restore_backup(backup_path: Path, output_path: Path):
         output_path.unlink()
 
 
-def run_fetcher(fetcher_path: Path, output_path: Path):
+def run_fetcher(fetcher_path: Path, output_path: Path, max_attempts: int = MAX_ATTEMPTS):
     previous_snapshot = load_snapshot(output_path)
     backup_path = CACHE_DIR / f"{output_path.name}.bak"
     if output_path.exists():
@@ -136,7 +136,7 @@ def run_fetcher(fetcher_path: Path, output_path: Path):
     final_snapshot = previous_snapshot
     changed = False
 
-    for attempt_index in range(MAX_ATTEMPTS):
+    for attempt_index in range(max_attempts):
         delay_seconds = RETRY_DELAYS_SECONDS[min(attempt_index - 1, len(RETRY_DELAYS_SECONDS) - 1)] if attempt_index > 0 else 0
         if delay_seconds:
             time.sleep(delay_seconds)
@@ -220,7 +220,13 @@ def write_report(report: dict, path: Path = REPORT_PATH):
         json.dump(report, handle, ensure_ascii=False, indent=2)
 
 
-def run_fetchers_report(selected_fetchers=None):
+def run_fetchers_report(
+    selected_fetchers=None,
+    *,
+    max_attempts: int = MAX_ATTEMPTS,
+    fetcher_cooldown_seconds: int = FETCHER_COOLDOWN_SECONDS,
+    degraded_fetcher_cooldown_seconds: int = DEGRADED_FETCHER_COOLDOWN_SECONDS,
+):
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
     report = {
         "generated_at_epoch": int(time.time()),
@@ -231,7 +237,7 @@ def run_fetchers_report(selected_fetchers=None):
     for fetcher_path in fetchers:
         output_path = extract_output_file(fetcher_path)
         print(f"RUN {fetcher_path.name} -> {output_path.relative_to(ROOT)}", flush=True)
-        fetcher_report = run_fetcher(fetcher_path, output_path)
+        fetcher_report = run_fetcher(fetcher_path, output_path, max_attempts=max_attempts)
         report["fetchers"].append(fetcher_report)
 
         if not fetcher_report["success"]:
@@ -250,7 +256,11 @@ def run_fetchers_report(selected_fetchers=None):
         )
 
         if fetcher_path != fetchers[-1]:
-            cooldown_seconds = DEGRADED_FETCHER_COOLDOWN_SECONDS if fetcher_report["degraded"] or not fetcher_report["success"] else FETCHER_COOLDOWN_SECONDS
+            cooldown_seconds = (
+                degraded_fetcher_cooldown_seconds
+                if fetcher_report["degraded"] or not fetcher_report["success"]
+                else fetcher_cooldown_seconds
+            )
             if cooldown_seconds > 0:
                 print(
                     f"Cooling down {cooldown_seconds}s before next fetcher",

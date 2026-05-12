@@ -32,6 +32,9 @@ concurrency:
 env:
   MAX_FETCH_FAILURES: "0"
   MAX_FETCH_DEGRADED: "2"
+  INITIAL_MAX_ATTEMPTS: "1"
+  INITIAL_FETCHER_COOLDOWN_SECONDS: "0"
+  INITIAL_DEGRADED_FETCHER_COOLDOWN_SECONDS: "5"
   RESULT_PUBLISH_DELAY_HOURS: "2"
   RESULT_CHASE_RETRY_MINUTES: "15"
   RESULT_CHASE_SHORT_WAVES: "4"
@@ -71,6 +74,7 @@ jobs:
         run: |
           python - <<'PY'
           import json
+          import os
           from pathlib import Path
           import run_fetchers
 
@@ -91,7 +95,12 @@ jobs:
               run_fetchers.write_report(report)
               print("No fetchers selected by adaptive plan.")
           else:
-              report = run_fetchers.run_fetchers_report(selected)
+              report = run_fetchers.run_fetchers_report(
+                  selected,
+                  max_attempts=int(os.environ.get("INITIAL_MAX_ATTEMPTS", "1")),
+                  fetcher_cooldown_seconds=int(os.environ.get("INITIAL_FETCHER_COOLDOWN_SECONDS", "0")),
+                  degraded_fetcher_cooldown_seconds=int(os.environ.get("INITIAL_DEGRADED_FETCHER_COOLDOWN_SECONDS", "5")),
+              )
               report["plan_mode"] = plan.get("mode", "idle")
               report["retry_waves"] = []
               run_fetchers.summarize_report(report)
@@ -149,6 +158,9 @@ jobs:
               "",
               f"- Modo: {plan['mode']}",
               f"- Fetchers selecionados: {plan['selected_count']}",
+              f"- Tentativas na vaga inicial: {os.environ.get('INITIAL_MAX_ATTEMPTS', '1')}",
+              f"- Cooldown normal na vaga inicial (s): {os.environ.get('INITIAL_FETCHER_COOLDOWN_SECONDS', '0')}",
+              f"- Cooldown degradado na vaga inicial (s): {os.environ.get('INITIAL_DEGRADED_FETCHER_COOLDOWN_SECONDS', '5')}",
               f"- Delay após jogo (h): {plan['result_publish_delay_hours']}",
               f"- Retry curto (min): {plan['result_chase_retry_minutes']}",
               f"- Número de vagas curtas: {plan['result_chase_short_waves']}",
