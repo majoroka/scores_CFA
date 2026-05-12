@@ -956,8 +956,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const accentColor = COMPETITION_ACCENTS[entry.competitionKey] || '#7d8590';
         const inlineVars = [
             `--agenda-competition-accent: ${accentColor}`,
-            `--agenda-competition-accent-soft: ${hexToRgba(accentColor, 0.92)}`,
-            `--agenda-competition-accent-border: ${hexToRgba(accentColor, 1)}`,
+            `--agenda-competition-accent-soft: ${accentColor}`,
+            `--agenda-competition-accent-border: ${accentColor}`,
         ].join('; ');
         const score = Number.isInteger(entry.homeScore) && Number.isInteger(entry.awayScore)
             ? `${entry.homeScore} - ${entry.awayScore}`
