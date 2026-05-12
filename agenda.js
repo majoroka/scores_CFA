@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const dateRangeEndInput = document.getElementById('date-range-end-input');
     const competitionSelect = document.getElementById('filter-competition');
     const dataStatus = document.getElementById('agenda-data-status');
-    const presetButtons = Array.from(document.querySelectorAll('.agenda-preset-btn'));
 
     const CALENDAR_CACHE_KEY = 'cfa-calendar-cache-v1';
     const CRESTS_CACHE_KEY = 'cfa-crests-cache-v1';
@@ -661,42 +660,6 @@ document.addEventListener('DOMContentLoaded', () => {
         renderDateRangePicker();
     };
 
-    const applyPreset = (preset) => {
-        const today = new Date();
-        today.setHours(0, 0, 0, 0);
-        const start = new Date(today);
-        const end = new Date(today);
-
-        switch (preset) {
-            case 'today':
-                break;
-            case 'weekend': {
-                const day = today.getDay();
-                const daysUntilSaturday = day === 6 ? 0 : (6 - day + 7) % 7;
-                start.setDate(today.getDate() + daysUntilSaturday);
-                end.setTime(start.getTime());
-                end.setDate(start.getDate() + 1);
-                break;
-            }
-            case 'next7':
-                end.setDate(today.getDate() + 6);
-                break;
-            case 'last7':
-                start.setDate(today.getDate() - 6);
-                break;
-            default:
-                return;
-        }
-        setSelectedRange(start, end);
-
-        if (preset === 'last7') {
-            setActiveTab('resultados');
-        } else {
-            setActiveTab('proximos');
-        }
-        render();
-    };
-
     const populateCompetitionFilter = () => {
         if (!calendarData || !Array.isArray(calendarData.competitions)) return;
         const currentValue = competitionSelect.value;
@@ -1129,10 +1092,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     competitionSelect.addEventListener('change', render);
-
-    presetButtons.forEach((button) => {
-        button.addEventListener('click', () => applyPreset(button.dataset.preset));
-    });
 
     dateRangePicker.addEventListener('click', (event) => {
         event.stopPropagation();
