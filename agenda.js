@@ -1169,6 +1169,7 @@ document.addEventListener('DOMContentLoaded', () => {
     dateRangeCalendars.addEventListener('click', (event) => {
         const button = event.target.closest('[data-date]');
         if (!button) return;
+        event.stopPropagation();
         const [year, month, day] = button.dataset.date.split('-').map((value) => Number.parseInt(value, 10));
         handleDraftDateSelection(new Date(year, month - 1, day, 12, 0, 0, 0));
     });
