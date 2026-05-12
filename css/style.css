@@ -606,7 +606,6 @@ body.agenda-picker-open::before {
     position: fixed;
     inset: 0;
     background: rgba(13, 17, 23, 0.32);
-    backdrop-filter: blur(2px);
     z-index: 25;
 }
 
