@@ -1089,8 +1089,9 @@ body::after {
     }
 
     .agenda-match-card__meta {
-        display: grid;
-        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         gap: 0.4rem;
         margin-bottom: 0.75rem;
     }
@@ -1098,40 +1099,48 @@ body::after {
     .agenda-match-card__subtitle {
         width: 100%;
         margin-left: 0;
-        text-align: left;
+        text-align: center;
         font-size: 0.82rem;
         line-height: 1.3;
     }
 
     .agenda-match-card__teams {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
         gap: 0.55rem;
         margin-bottom: 0.65rem;
     }
 
     .agenda-match-card__center {
-        order: -1;
-        min-width: 0;
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        min-width: 72px;
         gap: 0.1rem;
-        padding: 0.1rem 0 0.2rem;
+        padding: 0;
+        align-items: flex-end;
     }
 
     .agenda-match-card__round {
         font-size: 0.88rem;
-        text-align: center;
+        text-align: right;
     }
 
     .agenda-match-card__score {
         font-size: 1.12rem;
-        min-width: 0;
+        min-width: 72px;
+        text-align: right;
     }
 
-    .agenda-team,
-    .agenda-team:last-child {
+    .agenda-team {
         justify-content: flex-start;
         text-align: left;
         font-size: 0.98rem;
         gap: 0.4rem;
+    }
+
+    .agenda-team:last-child {
+        justify-content: flex-start;
+        text-align: left;
     }
 
     .agenda-team span {
@@ -1140,9 +1149,10 @@ body::after {
 
     .agenda-match-card__footer {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 0.2rem;
         font-size: 0.82rem;
+        text-align: center;
     }
 
     .agenda-range-picker {
