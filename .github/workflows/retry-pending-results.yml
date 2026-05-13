@@ -27,6 +27,10 @@ env:
   HISTORICAL_RETRY_HOURS: "6"
   TECHNICAL_BACKOFF_MINUTES: "10,20,40"
   FOLLOWUP_MAX_MINUTES: "180"
+  FOLLOWUP_MAX_ATTEMPTS: "1"
+  FOLLOWUP_FETCHER_COOLDOWN_SECONDS: "0"
+  FOLLOWUP_DEGRADED_FETCHER_COOLDOWN_SECONDS: "5"
+  FOLLOWUP_MAX_NO_PROGRESS_WAVES: "2"
 
 jobs:
   retry_followup:
@@ -141,7 +145,12 @@ jobs:
           import run_fetchers
 
           followup_max_minutes = int(os.environ.get("FOLLOWUP_MAX_MINUTES", "180"))
+          followup_max_attempts = int(os.environ.get("FOLLOWUP_MAX_ATTEMPTS", "1"))
+          followup_fetcher_cooldown_seconds = int(os.environ.get("FOLLOWUP_FETCHER_COOLDOWN_SECONDS", "0"))
+          followup_degraded_fetcher_cooldown_seconds = int(os.environ.get("FOLLOWUP_DEGRADED_FETCHER_COOLDOWN_SECONDS", "5"))
+          followup_max_no_progress_waves = int(os.environ.get("FOLLOWUP_MAX_NO_PROGRESS_WAVES", "2"))
           deadline_epoch = time.time() + (followup_max_minutes * 60)
+          consecutive_no_progress_waves = 0
 
           def retryable_competitions(current_plan):
               return [
@@ -201,7 +210,12 @@ jobs:
               due_now = due_fetchers(current_plan)
               if due_now:
                   print(f"Running due fetchers: {', '.join(due_now)}")
-                  retry_report = run_fetchers.run_fetchers_report(due_now)
+                  retry_report = run_fetchers.run_fetchers_report(
+                      due_now,
+                      max_attempts=followup_max_attempts,
+                      fetcher_cooldown_seconds=followup_fetcher_cooldown_seconds,
+                      degraded_fetcher_cooldown_seconds=followup_degraded_fetcher_cooldown_seconds,
+                  )
                   retry_report["scheduled_at_epoch"] = int(time.time())
                   report["retry_waves"].append(retry_report)
 
@@ -210,6 +224,19 @@ jobs:
                       latest_by_fetcher[item["fetcher"]] = item
                   report["fetchers"] = list(latest_by_fetcher.values())
                   run_fetchers.summarize_report(report)
+
+                  wave_had_progress = retry_report.get("changed_count", 0) > 0
+                  if wave_had_progress:
+                      consecutive_no_progress_waves = 0
+                  else:
+                      consecutive_no_progress_waves += 1
+                      print(
+                          "No progress in follow-up wave "
+                          f"({consecutive_no_progress_waves}/{followup_max_no_progress_waves})"
+                      )
+                      if consecutive_no_progress_waves >= followup_max_no_progress_waves:
+                          print("Ending follow-up early after repeated no-progress waves.")
+                          break
                   continue
 
               next_due = next_due_timestamp(current_plan)
