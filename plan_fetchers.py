@@ -21,6 +21,10 @@ HISTORICAL_LOOKBACK_DAYS = int(os.environ.get("HISTORICAL_LOOKBACK_DAYS", "14"))
 RECENT_HISTORICAL_WINDOW_DAYS = int(os.environ.get("RECENT_HISTORICAL_WINDOW_DAYS", "2"))
 RECENT_HISTORICAL_RETRY_HOURS = int(os.environ.get("RECENT_HISTORICAL_RETRY_HOURS", "2"))
 HISTORICAL_RETRY_HOURS = int(os.environ.get("HISTORICAL_RETRY_HOURS", "6"))
+SCHEDULE_REFRESH_LOOKAHEAD_DAYS = int(os.environ.get("SCHEDULE_REFRESH_LOOKAHEAD_DAYS", "3"))
+SCHEDULE_REFRESH_NEAR_HOURS = int(os.environ.get("SCHEDULE_REFRESH_NEAR_HOURS", "24"))
+SCHEDULE_REFRESH_NEAR_CADENCE_HOURS = int(os.environ.get("SCHEDULE_REFRESH_NEAR_CADENCE_HOURS", "6"))
+SCHEDULE_REFRESH_FAR_CADENCE_HOURS = int(os.environ.get("SCHEDULE_REFRESH_FAR_CADENCE_HOURS", "12"))
 TECHNICAL_BACKOFF_MINUTES = tuple(
     int(item.strip())
     for item in os.environ.get("TECHNICAL_BACKOFF_MINUTES", "10,20,40").split(",")
@@ -148,6 +152,27 @@ def compute_next_fetch_for_historical_match(
     return last_fetch_at + timedelta(hours=HISTORICAL_RETRY_HOURS)
 
 
+def compute_next_fetch_for_future_match(
+    match_dt: datetime,
+    last_fetch_at: Optional[datetime],
+    now: datetime,
+    technical_state: str,
+    technical_level: int,
+) -> datetime:
+    if technical_state != "healthy" and last_fetch_at is not None:
+        return last_fetch_at + timedelta(minutes=technical_backoff_minutes(technical_level))
+    if last_fetch_at is None:
+        return now
+
+    hours_until_match = max(0, (match_dt - now).total_seconds() / 3600)
+    cadence_hours = (
+        SCHEDULE_REFRESH_NEAR_CADENCE_HOURS
+        if hours_until_match <= SCHEDULE_REFRESH_NEAR_HOURS
+        else SCHEDULE_REFRESH_FAR_CADENCE_HOURS
+    )
+    return last_fetch_at + timedelta(hours=cadence_hours)
+
+
 def analyze_competition(config: CompetitionConfig, now: datetime) -> dict:
     if now.tzinfo is None:
         now = now.replace(tzinfo=LOCAL_TZ)
@@ -186,11 +211,13 @@ def analyze_competition(config: CompetitionConfig, now: datetime) -> dict:
     tomorrow_start = today_start + timedelta(days=1)
     historical_cutoff = today_start - timedelta(days=HISTORICAL_LOOKBACK_DAYS)
     recent_historical_cutoff = today_start - timedelta(days=RECENT_HISTORICAL_WINDOW_DAYS)
+    schedule_refresh_cutoff = now + timedelta(days=SCHEDULE_REFRESH_LOOKAHEAD_DAYS)
 
     upcoming_today_count = 0
     active_pending_count = 0
     recent_historical_pending_count = 0
     historical_pending_count = 0
+    future_schedule_refresh_count = 0
     next_scheduled_kickoff = None
     first_result_fetch_at = None
     next_recommended_fetch_at = None
@@ -217,8 +244,17 @@ def analyze_competition(config: CompetitionConfig, now: datetime) -> dict:
 
                 if now < candidate_first_fetch:
                     upcoming_today_count += 1
-                    if next_recommended_fetch_at is None or candidate_first_fetch < next_recommended_fetch_at:
-                        next_recommended_fetch_at = candidate_first_fetch
+                    future_schedule_refresh_count += 1
+                    candidate_schedule_refresh = compute_next_fetch_for_future_match(
+                        match_dt,
+                        last_fetch_at,
+                        now,
+                        technical_state,
+                        technical_level,
+                    )
+                    candidate_next_fetch = min(candidate_first_fetch, candidate_schedule_refresh)
+                    if next_recommended_fetch_at is None or candidate_next_fetch < next_recommended_fetch_at:
+                        next_recommended_fetch_at = candidate_next_fetch
                 else:
                     active_pending_count += 1
                     candidate_next_fetch = compute_next_fetch_for_today_match(
@@ -230,6 +266,17 @@ def analyze_competition(config: CompetitionConfig, now: datetime) -> dict:
                     )
                     if next_recommended_fetch_at is None or candidate_next_fetch < next_recommended_fetch_at:
                         next_recommended_fetch_at = candidate_next_fetch
+            elif tomorrow_start <= match_dt <= schedule_refresh_cutoff:
+                future_schedule_refresh_count += 1
+                candidate_next_fetch = compute_next_fetch_for_future_match(
+                    match_dt,
+                    last_fetch_at,
+                    now,
+                    technical_state,
+                    technical_level,
+                )
+                if next_recommended_fetch_at is None or candidate_next_fetch < next_recommended_fetch_at:
+                    next_recommended_fetch_at = candidate_next_fetch
             elif match_dt < today_start:
                 historical_pending_count += 1
                 if match_dt >= recent_historical_cutoff:
@@ -256,6 +303,13 @@ def analyze_competition(config: CompetitionConfig, now: datetime) -> dict:
         should_fetch = due_now
         reasons.append(
             f"{active_pending_count} jogo(s) de hoje já dentro da janela de resultados"
+        )
+    elif future_schedule_refresh_count > 0:
+        state = "schedule_refresh"
+        due_now = next_recommended_fetch_at is not None and now >= next_recommended_fetch_at
+        should_fetch = due_now
+        reasons.append(
+            f"{future_schedule_refresh_count} jogo(s) futuros dentro da janela de vigilância de calendário"
         )
     elif upcoming_today_count > 0:
         state = "awaiting_window"
@@ -290,6 +344,7 @@ def analyze_competition(config: CompetitionConfig, now: datetime) -> dict:
         "technical_backoff_level": technical_level,
         "active_pending_count": active_pending_count,
         "upcoming_today_count": upcoming_today_count,
+        "future_schedule_refresh_count": future_schedule_refresh_count,
         "recent_historical_pending_count": recent_historical_pending_count,
         "historical_pending_count": historical_pending_count,
         "pending_today_count": pending_today_count,
@@ -317,6 +372,8 @@ def build_plan(now: Optional[datetime] = None) -> dict:
         mode = "missing_payload"
     elif "result_chase" in states:
         mode = "result_chase"
+    elif "schedule_refresh" in states:
+        mode = "schedule_refresh"
     elif "recent_historical_backfill" in states:
         mode = "recent_historical_backfill"
     elif "historical_backfill" in states:
@@ -344,6 +401,10 @@ def build_plan(now: Optional[datetime] = None) -> dict:
         "recent_historical_window_days": RECENT_HISTORICAL_WINDOW_DAYS,
         "recent_historical_retry_hours": RECENT_HISTORICAL_RETRY_HOURS,
         "historical_retry_hours": HISTORICAL_RETRY_HOURS,
+        "schedule_refresh_lookahead_days": SCHEDULE_REFRESH_LOOKAHEAD_DAYS,
+        "schedule_refresh_near_hours": SCHEDULE_REFRESH_NEAR_HOURS,
+        "schedule_refresh_near_cadence_hours": SCHEDULE_REFRESH_NEAR_CADENCE_HOURS,
+        "schedule_refresh_far_cadence_hours": SCHEDULE_REFRESH_FAR_CADENCE_HOURS,
         "technical_backoff_minutes": list(TECHNICAL_BACKOFF_MINUTES),
         "next_global_fetch_at": next_due_candidates[0] if next_due_candidates else None,
     }
@@ -365,6 +426,7 @@ def main():
         f"historical_lookback_days={plan['historical_lookback_days']} "
         f"recent_historical_window_days={plan['recent_historical_window_days']} "
         f"recent_historical_retry_hours={plan['recent_historical_retry_hours']} "
+        f"schedule_refresh_lookahead_days={plan['schedule_refresh_lookahead_days']} "
         f"historical_retry_hours={plan['historical_retry_hours']}"
     )
     for item in plan["competitions"]:

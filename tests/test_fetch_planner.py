@@ -72,9 +72,46 @@ class FetchPlannerTests(unittest.TestCase):
         with patch("plan_fetchers.load_payload", return_value=payload):
             result = analyze_competition(self.config, self.now)
         self.assertFalse(result["should_fetch"])
-        self.assertEqual(result["state"], "awaiting_window")
+        self.assertEqual(result["state"], "schedule_refresh")
         self.assertFalse(result["due_now"])
         self.assertIsNotNone(result["next_recommended_fetch_at"])
+
+    def test_same_day_future_match_enters_schedule_refresh_when_calendar_check_is_due(self):
+        payload = {
+            "lastUpdatedAt": "2026-05-10T00:00:00+01:00",
+            "rounds": [
+                {
+                    "index": 1,
+                    "matches": [
+                        {"date": "10 mai", "time": "18:00", "homeScore": None, "awayScore": None},
+                    ],
+                }
+            ]
+        }
+        with patch("plan_fetchers.load_payload", return_value=payload):
+            result = analyze_competition(self.config, self.now)
+        self.assertTrue(result["should_fetch"])
+        self.assertEqual(result["state"], "schedule_refresh")
+        self.assertTrue(result["due_now"])
+        self.assertEqual(result["future_schedule_refresh_count"], 1)
+
+    def test_tomorrow_match_enters_schedule_refresh_when_within_lookahead(self):
+        payload = {
+            "lastUpdatedAt": "2026-05-10T00:00:00+01:00",
+            "rounds": [
+                {
+                    "index": 1,
+                    "matches": [
+                        {"date": "11 mai", "time": "10:00", "homeScore": None, "awayScore": None},
+                    ],
+                }
+            ]
+        }
+        with patch("plan_fetchers.load_payload", return_value=payload):
+            result = analyze_competition(self.config, self.now)
+        self.assertTrue(result["should_fetch"])
+        self.assertEqual(result["state"], "schedule_refresh")
+        self.assertEqual(result["future_schedule_refresh_count"], 1)
 
     def test_selects_historical_backfill(self):
         payload = {
@@ -141,6 +178,7 @@ class FetchPlannerTests(unittest.TestCase):
             "technical_backoff_level": 0,
             "active_pending_count": 0,
             "upcoming_today_count": 0,
+            "future_schedule_refresh_count": 0,
             "recent_historical_pending_count": 0,
             "historical_pending_count": 0,
             "pending_today_count": 0,
@@ -169,6 +207,7 @@ class FetchPlannerTests(unittest.TestCase):
                 "technical_backoff_level": 0,
                 "active_pending_count": 0,
                 "upcoming_today_count": 0,
+                "future_schedule_refresh_count": 0,
                 "recent_historical_pending_count": 0,
                 "historical_pending_count": 2,
                 "pending_today_count": 0,
@@ -190,6 +229,7 @@ class FetchPlannerTests(unittest.TestCase):
                 "technical_backoff_level": 0,
                 "active_pending_count": 1,
                 "upcoming_today_count": 0,
+                "future_schedule_refresh_count": 0,
                 "recent_historical_pending_count": 0,
                 "historical_pending_count": 0,
                 "pending_today_count": 1,
