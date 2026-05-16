@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-05-15T23:30:00Z",
+  "generatedAt": "2026-05-16T00:15:51Z",
   "competitionCount": 15,
   "statusCounts": {
-    "ok": 5,
-    "partial": 10,
+    "ok": 4,
+    "partial": 11,
     "degraded": 0,
     "missing": 0
   },
   "competitions": {
     "seniores": {
-      "status": "ok",
+      "status": "partial",
       "lastUpdatedAt": "2026-05-10T10:44:10Z",
       "fallbackReuseCount": 0,
       "matchesWithoutScore": 9,
-      "pastMatchesWithoutScore": 0,
+      "pastMatchesWithoutScore": 3,
       "matchCount": 30,
       "completedMatchCount": 21,
       "roundCount": 10,
