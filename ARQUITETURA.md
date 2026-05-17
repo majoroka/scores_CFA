@@ -93,6 +93,23 @@ graph TD
 - Os testes unitários e os testes de regressão usam snapshots reais em [tests/fixtures/fpf](/Users/mariocabano/Documents/GitHub/scores_CFA/tests/fixtures/fpf), o que ajuda a apanhar mudanças do HTML da FPF antes de afetarem o deploy.
 - Após os dados serem atualizados, o site é publicado usando GitHub Pages (`actions/deploy-pages`). Como não existem etapas de build, o artefacto enviado corresponde à árvore de ficheiros do repositório.
 
+## Próxima Fase Recomendada
+
+A arquitetura atual já separa bem frontend, JSON publicados, workflows e geração agregada. O problema principal da fase seguinte já não é estrutural: é observabilidade, granularidade e deteção real de mudanças.
+
+O plano principal para essa evolução está em:
+
+- [SCRAPING_RELIABILITY_EXECUTION_PLAN.md](/Users/mariocabano/Documents/GitHub/scores_CFA/SCRAPING_RELIABILITY_EXECUTION_PLAN.md)
+
+Esse plano passa a ser a referência principal para:
+
+- `FetchResult` estruturado;
+- `fetch_state.json`;
+- relatório por fixture;
+- separação real entre `calendar_watch` e `result_chase`;
+- workflow gates críticos antes de commit/deploy;
+- uniformização do schema publicado.
+
 ## Fluxo de Desenvolvimento
 
 - Para adicionar uma nova competição, crie a respetiva página HTML (copiando um template existente), defina a chave `data-competition`, adicione uma entrada em [competition_configs.py](/Users/mariocabano/Documents/GitHub/scores_CFA/competition_configs.py), crie um wrapper `fetch_<competicao>.py` mínimo e execute-o para gerar `data/<competicao>.json`.

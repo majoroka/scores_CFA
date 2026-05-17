@@ -2,6 +2,21 @@
 
 ## Implementation Status
 
+## Note
+
+This document remains useful for the temporal side of the planner.
+
+However, it should no longer be treated as the standalone plan for the next phase. The next phase must combine:
+
+- temporal windows;
+- persistent technical memory;
+- fixture-level reporting;
+- clear separation between calendar changes and result changes.
+
+The main reference for that next phase is:
+
+- [SCRAPING_RELIABILITY_EXECUTION_PLAN.md](/Users/mariocabano/Documents/GitHub/scores_CFA/SCRAPING_RELIABILITY_EXECUTION_PLAN.md)
+
 ### Already implemented
 
 The following parts of this plan are already in place:

@@ -90,3 +90,10 @@ Microsite estático que agrega resultados, classificações e calendários das e
 1. Crie uma branch dedicada e assegure que os scrapers geram dados consistentes antes de submeter alterações.
 2. Prefira assets otimizados (PNG ≤ 512px) ao adicionar emblemas.
 3. Atualize a documentação (`README.md`, `ARQUITETURA.md`, `ROADMAP.md`) sempre que modificar fluxos ou dependências relevantes.
+
+## Documentos de referência
+
+- [ARQUITETURA.md](/Users/mariocabano/Documents/GitHub/scores_CFA/ARQUITETURA.md): visão geral da arquitetura atual.
+- [DATA_CONSISTENCY_IMPROVEMENT_PLAN.md](/Users/mariocabano/Documents/GitHub/scores_CFA/DATA_CONSISTENCY_IMPROVEMENT_PLAN.md): plano de consistência de dados já em curso.
+- [ADAPTIVE_FETCH_WINDOW_PLAN.md](/Users/mariocabano/Documents/GitHub/scores_CFA/ADAPTIVE_FETCH_WINDOW_PLAN.md): evolução do planner temporal.
+- [SCRAPING_RELIABILITY_EXECUTION_PLAN.md](/Users/mariocabano/Documents/GitHub/scores_CFA/SCRAPING_RELIABILITY_EXECUTION_PLAN.md): plano principal da próxima fase para tornar o scraping observável, granular e fiável.

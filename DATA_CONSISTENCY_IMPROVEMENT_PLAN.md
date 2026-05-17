@@ -4,6 +4,19 @@
 
 Garantir que resultados, jornadas, classificações e agenda são publicados de forma consistente e consumidos da mesma forma por todos os dispositivos.
 
+## Nota de posicionamento
+
+Este documento continua válido como plano de consistência de dados.
+
+No entanto, a referência principal da próxima fase de trabalho passa a ser:
+
+- [SCRAPING_RELIABILITY_EXECUTION_PLAN.md](/Users/mariocabano/Documents/GitHub/scores_CFA/SCRAPING_RELIABILITY_EXECUTION_PLAN.md)
+
+Razão:
+
+- o problema atual deixou de ser apenas consistência publicada;
+- passou a ser observabilidade do scraping, granularidade técnica e deteção real de alterações de calendário e resultado.
+
 Arquitetura alvo:
 
 `FPF -> sincronização/validação -> JSON publicados em data/ -> app`
@@ -65,6 +78,10 @@ Ainda falta consolidar:
 - UX mais clara para estados `degraded`, `partial` e `local cache fallback`;
 - diagnóstico centralizado por competição;
 - logs estruturados por competição quando a FPF falha.
+
+Esses pontos estão agora detalhados de forma executável em:
+
+- `SCRAPING_RELIABILITY_EXECUTION_PLAN.md`
 
 ## Princípios de implementação
 
