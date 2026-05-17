@@ -7,13 +7,30 @@ import unicodedata
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
+from pathlib import Path
 from typing import Optional
 
 from competition_configs import CompetitionConfig
-from fpf_http import get_page_content as fetch_page_content, load_existing_rounds
+from fetch_state import (
+    get_competition_state,
+    get_fixture_state,
+    load_fetch_state,
+    save_fetch_state,
+    snapshot_entry,
+    update_fetch_entry,
+    utc_now_iso,
+)
+from fpf_http import fetch_page_result, get_page_content as fetch_page_content, load_existing_rounds
 
 CACHE_DIR = 'cache'
 USE_CACHE = False
+SYNC_METADATA_DIR = Path(CACHE_DIR) / 'sync_metadata'
+ERROR_SNAPSHOT_DIR = Path(CACHE_DIR) / 'errors'
+TECHNICAL_BACKOFF_MINUTES = [
+    int(item.strip())
+    for item in os.environ.get('TECHNICAL_BACKOFF_MINUTES', '10,20,40').split(',')
+    if item.strip()
+]
 MONTH_MAP = {
     'jan': 1,
     'fev': 2,
@@ -44,7 +61,64 @@ SECONDARY_PREFIX_TOKENS = {
 
 
 class SyncCriticalError(RuntimeError):
-    pass
+    def __init__(self, message: str, error_type: str = 'sync_error'):
+        super().__init__(message)
+        self.error_type = error_type
+
+
+def _read_file_text(path: str):
+    if not os.path.exists(path):
+        return ''
+    with open(path, 'r', encoding='utf-8') as handle:
+        return handle.read()
+
+
+def _write_sync_metadata(config: CompetitionConfig, metadata: dict):
+    SYNC_METADATA_DIR.mkdir(parents=True, exist_ok=True)
+    target = SYNC_METADATA_DIR / f'{config.key}.json'
+    with open(target, 'w', encoding='utf-8') as handle:
+        json.dump(metadata, handle, ensure_ascii=False, indent=2)
+        handle.write('\n')
+
+
+def _save_error_snapshot(config: CompetitionConfig, snapshot_name: str, content: str):
+    if not content:
+        return None
+    target_dir = ERROR_SNAPSHOT_DIR / config.key
+    target_dir.mkdir(parents=True, exist_ok=True)
+    timestamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+    target = target_dir / f'{snapshot_name}_{timestamp}.html'
+    with open(target, 'w', encoding='utf-8') as handle:
+        handle.write(content)
+    return str(target)
+
+
+def _result_to_metadata(result):
+    if result is None:
+        return {
+            'ok': False,
+            'errorType': 'network_error',
+            'statusCode': None,
+            'blocked': False,
+            'attempts': 0,
+            'durationSeconds': 0.0,
+            'responseSize': 0,
+            'cacheUsed': False,
+            'url': None,
+            'errorMessage': None,
+        }
+    return {
+        'ok': result.ok,
+        'errorType': result.error_type,
+        'statusCode': result.status_code,
+        'blocked': result.blocked,
+        'attempts': result.attempts,
+        'durationSeconds': result.duration_seconds,
+        'responseSize': result.response_size,
+        'cacheUsed': result.cache_used,
+        'url': result.url,
+        'errorMessage': result.error_message,
+    }
 
 
 def _normalize(value: str) -> str:
@@ -687,96 +761,289 @@ def get_page_content(url: str, cache_key: str):
 
 def validate_sync_result(config: CompetitionConfig, rounds, fixture_ids, existing_rounds):
     if not fixture_ids:
-        raise SyncCriticalError(f'{config.key}: no fixture ids found')
+        raise SyncCriticalError(f'{config.key}: no fixture ids found', 'no_fixture_ids')
     if not rounds:
-        raise SyncCriticalError(f'{config.key}: no rounds extracted')
+        raise SyncCriticalError(f'{config.key}: no rounds extracted', 'no_rounds')
     if existing_rounds and len(rounds) < len(existing_rounds):
         raise SyncCriticalError(
-            f'{config.key}: extracted only {len(rounds)} rounds, existing file has {len(existing_rounds)}'
+            f'{config.key}: extracted only {len(rounds)} rounds, existing file has {len(existing_rounds)}',
+            'round_count_shrank',
         )
     if len(rounds) < len(fixture_ids):
         raise SyncCriticalError(
-            f'{config.key}: extracted only {len(rounds)} rounds for {len(fixture_ids)} fixture ids'
+            f'{config.key}: extracted only {len(rounds)} rounds for {len(fixture_ids)} fixture ids',
+            'incomplete_rounds',
         )
 
     quality_metrics = collect_quality_metrics(rounds)
     if quality_metrics['roundCount'] <= 0:
-        raise SyncCriticalError(f'{config.key}: no rounds after validation')
+        raise SyncCriticalError(f'{config.key}: no rounds after validation', 'no_rounds')
     if quality_metrics['matchCount'] <= 0:
-        raise SyncCriticalError(f'{config.key}: no matches extracted')
+        raise SyncCriticalError(f'{config.key}: no matches extracted', 'no_matches')
     if quality_metrics['teamCount'] <= 0:
-        raise SyncCriticalError(f'{config.key}: no teams extracted')
+        raise SyncCriticalError(f'{config.key}: no teams extracted', 'no_teams')
     return quality_metrics
 
 
 def run_sync(config: CompetitionConfig):
-    main_page = get_page_content(config.competition_url, config.main_cache_key)
-    if not main_page:
-        raise SyncCriticalError(f'{config.key}: failed to fetch competition page')
+    fetch_state = load_fetch_state()
+    competition_state = get_competition_state(fetch_state, config.key)
+    attempt_started_at = utc_now_iso()
+    existing_output_text = _read_file_text(config.output_file)
+    metadata = {
+        'competitionKey': config.key,
+        'attemptStartedAt': attempt_started_at,
+        'success': False,
+        'changed': False,
+        'errorType': None,
+        'errorMessage': None,
+        'mainPage': None,
+        'fixtures': [],
+        'fallbackReuseCount': 0,
+        'syncIssues': [],
+        'outputFile': config.output_file,
+        'stateBefore': snapshot_entry(competition_state),
+        'stateAfter': None,
+    }
 
-    fixture_ids = extract_fixture_ids(main_page, config)
-    if not fixture_ids:
-        raise SyncCriticalError(f'{config.key}: no fixture ids found for target series')
-
-    existing_rounds = load_existing_rounds(config.output_file)
-    rounds = []
-    fallback_reuse_count = 0
-    sync_issues = []
-    for index, fixture_id in enumerate(fixture_ids, start=1):
-        print(f'Processando jornada {index} (fixtureId={fixture_id})')
-        url = (
-            'https://resultados.fpf.pt/Competition/'
-            f'GetClassificationAndMatchesByFixture?fixtureId={fixture_id}'
+    try:
+        competition_state['lastAttemptAt'] = attempt_started_at
+        main_result = fetch_page_result(
+            config.competition_url,
+            cache_dir=CACHE_DIR,
+            use_cache=USE_CACHE,
+            cache_key=config.main_cache_key,
         )
-        fragment = get_page_content(url, f'{config.fixture_cache_prefix}_{fixture_id}')
-        existing_round = existing_rounds.get(str(fixture_id))
-        if not fragment:
-            if existing_round:
-                print(f'Falha ao obter dados da jornada {index}; a reutilizar dados existentes.')
+        metadata['mainPage'] = _result_to_metadata(main_result)
+        if not main_result.ok or not main_result.content:
+            if main_result.content:
+                snapshot_path = _save_error_snapshot(config, 'main', main_result.content)
+                if snapshot_path:
+                    metadata['mainPage']['errorSnapshotPath'] = snapshot_path
+            error_type = main_result.error_type or 'network_error'
+            update_fetch_entry(
+                competition_state,
+                attempted_at=attempt_started_at,
+                success=False,
+                error_type=error_type,
+                backoff_minutes=TECHNICAL_BACKOFF_MINUTES,
+            )
+            raise SyncCriticalError(f'{config.key}: failed to fetch competition page', error_type)
+
+        fixture_ids = extract_fixture_ids(main_result.content, config)
+        if not fixture_ids:
+            snapshot_path = _save_error_snapshot(config, 'main_no_fixture_ids', main_result.content)
+            if snapshot_path:
+                metadata['mainPage']['errorSnapshotPath'] = snapshot_path
+            update_fetch_entry(
+                competition_state,
+                attempted_at=attempt_started_at,
+                success=False,
+                error_type='no_fixture_ids',
+                backoff_minutes=TECHNICAL_BACKOFF_MINUTES,
+            )
+            raise SyncCriticalError(f'{config.key}: no fixture ids found for target series', 'no_fixture_ids')
+
+        existing_rounds = load_existing_rounds(config.output_file)
+        rounds = []
+        fallback_reuse_count = 0
+        sync_issues = []
+        for index, fixture_id in enumerate(fixture_ids, start=1):
+            print(f'Processando jornada {index} (fixtureId={fixture_id})')
+            url = (
+                'https://resultados.fpf.pt/Competition/'
+                f'GetClassificationAndMatchesByFixture?fixtureId={fixture_id}'
+            )
+            fixture_attempt_at = utc_now_iso()
+            fixture_state = get_fixture_state(fetch_state, config.key, str(fixture_id))
+            fixture_state['lastAttemptAt'] = fixture_attempt_at
+            fixture_result = fetch_page_result(
+                url,
+                cache_dir=CACHE_DIR,
+                use_cache=USE_CACHE,
+                cache_key=f'{config.fixture_cache_prefix}_{fixture_id}',
+            )
+            fixture_meta = {
+                'index': index,
+                'fixtureId': str(fixture_id),
+                'fetch': _result_to_metadata(fixture_result),
+                'fetchStatus': 'unknown',
+                'fallbackUsed': False,
+                'errorType': None,
+                'changed': False,
+            }
+            existing_round = existing_rounds.get(str(fixture_id))
+            if not fixture_result.ok or not fixture_result.content:
+                if fixture_result.content:
+                    snapshot_path = _save_error_snapshot(config, f'fixture_{fixture_id}', fixture_result.content)
+                    if snapshot_path:
+                        fixture_meta['fetch']['errorSnapshotPath'] = snapshot_path
+                error_type = fixture_result.error_type or 'network_error'
+                update_fetch_entry(
+                    fixture_state,
+                    attempted_at=fixture_attempt_at,
+                    success=False,
+                    error_type=error_type,
+                    backoff_minutes=TECHNICAL_BACKOFF_MINUTES,
+                )
+                fixture_meta['fetchStatus'] = 'error'
+                fixture_meta['errorType'] = error_type
+                if existing_round:
+                    print(f'Falha ao obter dados da jornada {index}; a reutilizar dados existentes.')
+                    rounds.append(existing_round)
+                    fallback_reuse_count += 1
+                    sync_issues.append(f'fixture {fixture_id}: fallback to existing round')
+                    fixture_meta['fallbackUsed'] = True
+                    fixture_meta['fetchStatus'] = 'fallback_reused'
+                else:
+                    print(f'Falha ao obter dados da jornada {index}')
+                    sync_issues.append(f'fixture {fixture_id}: missing fragment and no fallback')
+                metadata['fixtures'].append(fixture_meta)
+                continue
+
+            try:
+                matches = parse_matches(
+                    fixture_result.content,
+                    strip_score_from_date=config.strip_score_from_date,
+                )
+                classification = parse_classification(fixture_result.content)
+            except Exception as exc:
+                snapshot_path = _save_error_snapshot(config, f'fixture_{fixture_id}_parse_error', fixture_result.content)
+                if snapshot_path:
+                    fixture_meta['fetch']['errorSnapshotPath'] = snapshot_path
+                update_fetch_entry(
+                    fixture_state,
+                    attempted_at=fixture_attempt_at,
+                    success=False,
+                    error_type='parse_error',
+                    backoff_minutes=TECHNICAL_BACKOFF_MINUTES,
+                )
+                fixture_meta['fetchStatus'] = 'parse_error'
+                fixture_meta['errorType'] = 'parse_error'
+                fixture_meta['errorMessage'] = str(exc)
+                if existing_round:
+                    rounds.append(existing_round)
+                    fallback_reuse_count += 1
+                    sync_issues.append(f'fixture {fixture_id}: fallback to existing round after parse error')
+                    fixture_meta['fallbackUsed'] = True
+                else:
+                    sync_issues.append(f'fixture {fixture_id}: parse error and no fallback')
+                metadata['fixtures'].append(fixture_meta)
+                continue
+
+            if not matches and not classification and existing_round:
+                print(f'Jornada {index} sem dados novos; a reutilizar dados existentes.')
                 rounds.append(existing_round)
                 fallback_reuse_count += 1
-                sync_issues.append(f'fixture {fixture_id}: fallback to existing round')
-            else:
-                print(f'Falha ao obter dados da jornada {index}')
-                sync_issues.append(f'fixture {fixture_id}: missing fragment and no fallback')
-            continue
+                sync_issues.append(f'fixture {fixture_id}: reused existing round because fragment had no data')
+                update_fetch_entry(
+                    fixture_state,
+                    attempted_at=fixture_attempt_at,
+                    success=False,
+                    error_type='no_usable_data',
+                    backoff_minutes=TECHNICAL_BACKOFF_MINUTES,
+                )
+                fixture_meta['fetchStatus'] = 'fallback_reused'
+                fixture_meta['fallbackUsed'] = True
+                fixture_meta['errorType'] = 'no_usable_data'
+                snapshot_path = _save_error_snapshot(config, f'fixture_{fixture_id}_no_usable_data', fixture_result.content)
+                if snapshot_path:
+                    fixture_meta['fetch']['errorSnapshotPath'] = snapshot_path
+                metadata['fixtures'].append(fixture_meta)
+                continue
+            if not matches and not classification:
+                print(f'Jornada {index} sem dados utilizáveis.')
+                sync_issues.append(f'fixture {fixture_id}: fragment returned no usable data')
+                update_fetch_entry(
+                    fixture_state,
+                    attempted_at=fixture_attempt_at,
+                    success=False,
+                    error_type='no_usable_data',
+                    backoff_minutes=TECHNICAL_BACKOFF_MINUTES,
+                )
+                fixture_meta['fetchStatus'] = 'no_usable_data'
+                fixture_meta['errorType'] = 'no_usable_data'
+                snapshot_path = _save_error_snapshot(config, f'fixture_{fixture_id}_no_usable_data', fixture_result.content)
+                if snapshot_path:
+                    fixture_meta['fetch']['errorSnapshotPath'] = snapshot_path
+                metadata['fixtures'].append(fixture_meta)
+                continue
 
-        matches = parse_matches(fragment, strip_score_from_date=config.strip_score_from_date)
-        classification = parse_classification(fragment)
-        if not matches and not classification and existing_round:
-            print(f'Jornada {index} sem dados novos; a reutilizar dados existentes.')
-            rounds.append(existing_round)
-            fallback_reuse_count += 1
-            sync_issues.append(f'fixture {fixture_id}: reused existing round because fragment had no data')
-            continue
-        if not matches and not classification:
-            print(f'Jornada {index} sem dados utilizáveis.')
-            sync_issues.append(f'fixture {fixture_id}: fragment returned no usable data')
-            continue
-        rounds.append({
-            'index': index,
-            'fixtureId': fixture_id,
-            'matches': matches,
-            'classification': classification,
-        })
-        time.sleep(1)
+            round_payload = {
+                'index': index,
+                'fixtureId': fixture_id,
+                'matches': matches,
+                'classification': classification,
+            }
+            rounds.append(round_payload)
+            update_fetch_entry(
+                fixture_state,
+                attempted_at=fixture_attempt_at,
+                success=True,
+                changed=True,
+                backoff_minutes=TECHNICAL_BACKOFF_MINUTES,
+            )
+            fixture_meta['fetchStatus'] = 'ok'
+            fixture_meta['changed'] = True
+            metadata['fixtures'].append(fixture_meta)
+            time.sleep(1)
 
-    fill_missing_scores_from_secondary_results(rounds, config)
+        fill_missing_scores_from_secondary_results(rounds, config)
 
-    if config.derive_classification:
-        build_classification_from_results(rounds, config.ignored_team_names)
+        if config.derive_classification:
+            build_classification_from_results(rounds, config.ignored_team_names)
 
-    quality_metrics = validate_sync_result(config, rounds, fixture_ids, existing_rounds)
-    data = build_payload(
-        rounds,
-        fallback_reuse_count=fallback_reuse_count,
-        sync_issues=sync_issues,
-        quality_metrics=quality_metrics,
-    )
-    os.makedirs(os.path.dirname(config.output_file), exist_ok=True)
-    with open(config.output_file, 'w', encoding='utf-8') as handle:
-        json.dump(data, handle, ensure_ascii=False, indent=4)
-        handle.write('\n')
+        quality_metrics = validate_sync_result(config, rounds, fixture_ids, existing_rounds)
+        data = build_payload(
+            rounds,
+            fallback_reuse_count=fallback_reuse_count,
+            sync_issues=sync_issues,
+            quality_metrics=quality_metrics,
+        )
+        os.makedirs(os.path.dirname(config.output_file), exist_ok=True)
+        rendered_output = json.dumps(data, ensure_ascii=False, indent=4) + '\n'
+        with open(config.output_file, 'w', encoding='utf-8') as handle:
+            handle.write(rendered_output)
 
-    print(f'Dados guardados em {config.output_file}')
-    return data
+        changed = rendered_output != existing_output_text
+        update_fetch_entry(
+            competition_state,
+            attempted_at=attempt_started_at,
+            success=True,
+            changed=changed,
+            backoff_minutes=TECHNICAL_BACKOFF_MINUTES,
+        )
+        metadata['success'] = True
+        metadata['changed'] = changed
+        metadata['fallbackReuseCount'] = fallback_reuse_count
+        metadata['syncIssues'] = sync_issues
+        metadata['dataQuality'] = quality_metrics
+        metadata['sourceHealth'] = data.get('sourceHealth')
+        print(f'Dados guardados em {config.output_file}')
+        return data
+    except SyncCriticalError as exc:
+        metadata['errorType'] = exc.error_type
+        metadata['errorMessage'] = str(exc)
+        update_fetch_entry(
+            competition_state,
+            attempted_at=attempt_started_at,
+            success=False,
+            error_type=exc.error_type,
+            backoff_minutes=TECHNICAL_BACKOFF_MINUTES,
+        )
+        raise
+    except Exception as exc:
+        metadata['errorType'] = 'unexpected_error'
+        metadata['errorMessage'] = str(exc)
+        update_fetch_entry(
+            competition_state,
+            attempted_at=attempt_started_at,
+            success=False,
+            error_type='unexpected_error',
+            backoff_minutes=TECHNICAL_BACKOFF_MINUTES,
+        )
+        raise
+    finally:
+        metadata['stateAfter'] = snapshot_entry(competition_state)
+        save_fetch_state(fetch_state)
+        _write_sync_metadata(config, metadata)

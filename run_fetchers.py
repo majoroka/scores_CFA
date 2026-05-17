@@ -12,6 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 CACHE_DIR = ROOT / "cache"
 REPORT_PATH = CACHE_DIR / "fetch_report.json"
+SYNC_METADATA_DIR = CACHE_DIR / "sync_metadata"
 FETCH_TIMEOUT_SECONDS = 300
 MAX_ATTEMPTS = 3
 RETRY_DELAYS_SECONDS = (10, 30)
@@ -121,6 +122,17 @@ def restore_backup(backup_path: Path, output_path: Path):
         output_path.unlink()
 
 
+def load_sync_metadata(output_path: Path):
+    metadata_path = SYNC_METADATA_DIR / f"{output_path.stem}.json"
+    if not metadata_path.exists():
+        return None
+    try:
+        with open(metadata_path, "r", encoding="utf-8") as handle:
+            return json.load(handle)
+    except (OSError, json.JSONDecodeError):
+        return None
+
+
 def run_fetcher(fetcher_path: Path, output_path: Path, max_attempts: int = MAX_ATTEMPTS):
     previous_snapshot = load_snapshot(output_path)
     backup_path = CACHE_DIR / f"{output_path.name}.bak"
@@ -195,15 +207,19 @@ def run_fetcher(fetcher_path: Path, output_path: Path, max_attempts: int = MAX_A
     if backup_path.exists():
         backup_path.unlink()
 
+    sync_metadata = load_sync_metadata(output_path)
+
     return {
         "fetcher": fetcher_path.name,
         "output_file": str(output_path.relative_to(ROOT)),
         "success": success,
         "degraded": degraded,
         "changed": changed,
+        "error_type": (sync_metadata or {}).get("errorType"),
         "previous_snapshot": previous_snapshot,
         "final_snapshot": final_snapshot,
         "attempts": attempts,
+        "sync_metadata": sync_metadata,
     }
 
 
