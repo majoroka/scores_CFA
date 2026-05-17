@@ -1,0 +1,261 @@
+PLANO DE EXECUCAO — SCRAPING / FETCH SCORES CFA
+Data: 17/05/2026
+
+OBJETIVO
+Ter um sistema que:
+- publique resultados frescos rapidamente quando a FPF já os expõe;
+- reflita alterações de data/hora/local antes dos jogos;
+- distinga atraso normal da FPF, bloqueio técnico e falha de parser;
+- torne os workflows “verdes” realmente significativos.
+
+REFERENCIA PRINCIPAL
+- SCRAPING_RELIABILITY_EXECUTION_PLAN.md
+
+ESTADO ATUAL RESUMIDO
+- a app lê corretamente os JSON publicados;
+- os workflows correm e publicam;
+- calendar.json e status.json são regenerados com frequência;
+- várias competições continuam com lastUpdatedAt antigo;
+- portanto, o problema principal está no scraping/sincronização, não no deploy nem no frontend.
+
+ORDEM DE EXECUCAO RECOMENDADA
+
+BLOCO A — OBSERVABILIDADE TECNICA
+Prioridade: muito alta
+Objetivo:
+- saber exatamente o que falhou e porquê.
+
+Tarefas:
+1. Criar FetchResult estruturado em fpf_http.py
+2. Criar cache/fetch_state.json
+3. Registar lastAttemptAt, lastSuccessAt, lastChangedAt
+4. Guardar HTML bruto em caso de erro
+5. Classificar erros técnicos explicitamente
+
+Erros mínimos a distinguir:
+- http_403
+- http_429
+- timeout
+- network_error
+- blocked_content
+- empty_response
+- parse_error
+- no_fixture_ids
+- no_matches
+- no_usable_data
+
+Critério de conclusão do Bloco A:
+- cada fetch tem resultado estruturado;
+- cada falha tem tipo explícito;
+- existe memória técnica persistente entre runs.
+
+
+BLOCO B — RELATORIO ESTRUTURADO POR FIXTURE
+Prioridade: muito alta
+Objetivo:
+- saber o que mudou realmente em cada jornada/jogo.
+
+Tarefas:
+1. Fazer competition_sync.py produzir metadata estruturada
+2. Registar por fixture:
+   - fetchStatus
+   - changed
+   - changedFields
+   - matchChanges
+   - fallbackUsed
+   - errorType
+3. Fazer run_fetchers.py ler metadata estruturada
+4. Remover dependência de deteção por stdout
+
+Campos de mudança a detetar:
+- score_changed
+- date_changed
+- time_changed
+- stadium_changed
+- match_added
+- match_removed
+
+Critério de conclusão do Bloco B:
+- conseguimos saber se um run alterou score, calendário ou nada;
+- um workflow verde deixa de significar apenas “correu”.
+
+
+BLOCO C — UNIFORMIZACAO DO SCHEMA DOS JSON
+Prioridade: alta
+Objetivo:
+- eliminar diferenças entre competições.
+
+Tarefas:
+1. Uniformizar schema de todas as competições
+2. Alinhar seniores.json com as restantes
+3. Adicionar campos mínimos obrigatórios
+
+Campos mínimos por competição:
+- schemaVersion
+- generatedAt
+- lastAttemptAt
+- lastSuccessAt
+- lastChangedAt
+- lastPublishedAt
+- sourceHealth
+- dataQuality
+- rounds
+
+Critério de conclusão do Bloco C:
+- build_status.py deixa de depender de exceções por competição;
+- todos os JSON seguem o mesmo schema.
+
+
+BLOCO D — SEPARACAO REAL ENTRE CALENDARIO E RESULTADOS
+Prioridade: alta
+Objetivo:
+- tratar alteração de calendário futuro como fluxo independente.
+
+Estados alvo:
+- calendar_watch_far
+- calendar_watch_near
+- calendar_watch_matchday
+- result_chase
+- recent_historical_backfill
+- historical_backfill
+- technical_backoff
+- idle
+
+Cadência alvo para calendário:
+- 14 a 8 dias: 1x/dia
+- 7 a 4 dias: 12h
+- 3 a 2 dias: 6h
+- últimas 24h: 1h ou 2h
+
+Cadência alvo para resultados:
+- kickoff + 105/110 min: primeira tentativa
+- depois 15 em 15 min durante 1h
+- depois 30 em 30 min até 4h/6h pós-jogo
+- depois 2 em 2h durante 48h
+- depois 6 em 6h até 14 dias
+
+Critério de conclusão do Bloco D:
+- mudanças de hora/data/local entram na app antes do jogo com boa probabilidade;
+- result_chase deixa de depender da mesma lógica de calendar watch.
+
+
+BLOCO E — PLANNER COM MEMORIA TECNICA
+Prioridade: alta
+Objetivo:
+- decidir a próxima tentativa com base em histórico real.
+
+Tarefas:
+1. Fazer plan_fetchers.py usar fetch_state.json
+2. Aplicar backoff técnico por competição e por fixture
+3. Distinguir erro funcional de erro técnico
+4. Evitar retries inúteis quando não há perspetiva de progresso
+
+Critério de conclusão do Bloco E:
+- uma competição bloqueada não arrasta o resto;
+- o follow-up deixa de insistir cegamente.
+
+
+BLOCO F — GATES REAIS NOS WORKFLOWS
+Prioridade: alta
+Objetivo:
+- um workflow verde deve ter significado real.
+
+Tarefas:
+1. Mover validação crítica para antes de commit/deploy
+2. Remover continue-on-error em erros críticos
+3. Manter warnings para partial normais
+
+Falhas críticas:
+- JSON inválido
+- zero jornadas
+- zero jogos
+- perda anormal de jornadas/jogos
+- série errada
+- competição sem equipa esperada
+
+Critério de conclusão do Bloco F:
+- o sistema já não publica dados estruturalmente inúteis.
+
+
+BLOCO G — FRONTEND E TRANSPARENCIA
+Prioridade: média/alta
+Objetivo:
+- mostrar ao utilizador o estado real dos dados.
+
+Tarefas:
+1. Criar data/manifest.json
+2. Usar buildId/hash para cache busting controlado
+3. Remover ou isolar scraping remoto morto no browser
+4. Mostrar:
+   - lastAttemptAt
+   - lastSuccessAt
+   - lastChangedAt
+   - lastErrorType
+
+Mensagens alvo:
+- Dados publicados atualizados em...
+- Última tentativa de sincronização...
+- Última alteração detetada...
+- A FPF ainda não publicou X resultado(s).
+- A FPF alterou data/hora deste jogo recentemente.
+
+Critério de conclusão do Bloco G:
+- o utilizador percebe a diferença entre verificação, alteração e falha.
+
+
+BLOCO H — ROBUSTEZ DO PARSER
+Prioridade: média
+Objetivo:
+- reduzir fragilidade perante alterações HTML da FPF.
+
+Tarefas:
+1. Migrar parse_matches para parser DOM
+2. Migrar parse_classification para parser DOM
+3. Melhorar seleção de série/fase com aliases e confiança
+4. Reduzir dependência de regex
+
+Critério de conclusão do Bloco H:
+- pequenas mudanças HTML deixam de partir o scraping com tanta facilidade.
+
+
+BLOCO I — TESTES OPERACIONAIS
+Prioridade: média
+Objetivo:
+- proteger o sistema contra regressões reais.
+
+Tarefas:
+1. Testes para 403/429
+2. Testes para timeout
+3. Testes para blocked_content
+4. Testes para HTML alterado
+5. Testes para alteração de hora sem alteração de score
+6. Testes para fixture reaproveitado
+7. Testes para série errada
+
+Critério de conclusão do Bloco I:
+- alterações futuras em parser/planner/workflow ficam cobertas.
+
+
+PRIMEIRO BLOCO A EXECUTAR AGORA
+Executar já:
+1. FetchResult
+2. fetch_state.json
+3. relatório por fixture
+
+Razão:
+- sem isto, continuamos sem visibilidade suficiente para atacar o problema real.
+
+
+SINAIS DE SUCESSO A OBSERVAR
+- lastUpdatedAt das competições deixa de ficar congelado durante vários dias;
+- status.json deixa de parecer fresco quando os JSON das competições não mudam;
+- workflows verdes passam a coincidir com atualização real de dados;
+- alterações de horário pré-jogo passam a aparecer na app;
+- resultados de ontem deixam de ficar presos sem explicação.
+
+
+NAO FAZER JA
+- não voltar a pôr scraping no browser como fonte principal;
+- não introduzir cache busting agressivo com Date.now();
+- não fazer migração total de regex para DOM sem antes criar observabilidade;
+- não mexer mais na UI antes de estabilizar o fetch.
