@@ -4,6 +4,7 @@ from pathlib import Path
 
 from competition_configs import CompetitionConfig, FEMININO_SUB15, INICIADOS_A
 from competition_sync import (
+    analyze_round_changes,
     build_payload,
     collect_quality_metrics,
     compute_default_round_index,
@@ -267,6 +268,48 @@ class CompetitionSyncTests(unittest.TestCase):
         self.assertEqual(results[0]['away'], 'Ferreiras')
         self.assertEqual(results[0]['homeScore'], 1)
         self.assertEqual(results[0]['awayScore'], 1)
+
+    def test_analyze_round_changes_detects_score_and_calendar_updates(self):
+        previous_round = {
+            'index': 1,
+            'fixtureId': '100',
+            'matches': [
+                {
+                    'home': 'Casa FC',
+                    'away': 'Fora FC',
+                    'date': '10 mai',
+                    'time': '10:00',
+                    'stadium': 'Campo A',
+                    'homeScore': None,
+                    'awayScore': None,
+                }
+            ],
+            'classification': [],
+        }
+        current_round = {
+            'index': 1,
+            'fixtureId': '100',
+            'matches': [
+                {
+                    'home': 'Casa FC',
+                    'away': 'Fora FC',
+                    'date': '10 mai',
+                    'time': '11:00',
+                    'stadium': 'Campo B',
+                    'homeScore': 2,
+                    'awayScore': 1,
+                }
+            ],
+            'classification': [],
+        }
+
+        result = analyze_round_changes(previous_round, current_round)
+
+        self.assertTrue(result['changed'])
+        self.assertIn('score_changed', result['changedFields'])
+        self.assertIn('time_changed', result['changedFields'])
+        self.assertIn('stadium_changed', result['changedFields'])
+        self.assertEqual(result['matchChanges'][0]['type'], 'match_updated')
 
     def test_fill_missing_scores_from_secondary_results(self):
         rounds = [

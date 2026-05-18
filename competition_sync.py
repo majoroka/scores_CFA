@@ -121,6 +121,121 @@ def _result_to_metadata(result):
     }
 
 
+def _normalize_team_name(value: str):
+    return _normalize_spaces(_normalize(value or ''))
+
+
+def _build_match_key(match: dict):
+    return (
+        _normalize_team_name(match.get('home', '')),
+        _normalize_team_name(match.get('away', '')),
+    )
+
+
+def _compare_matches(previous_match: dict, current_match: dict):
+    changes = []
+    if previous_match.get('homeScore') != current_match.get('homeScore') or previous_match.get('awayScore') != current_match.get('awayScore'):
+        changes.append('score_changed')
+    if (previous_match.get('date') or '') != (current_match.get('date') or ''):
+        changes.append('date_changed')
+    if (previous_match.get('time') or '') != (current_match.get('time') or ''):
+        changes.append('time_changed')
+    if (previous_match.get('stadium') or '') != (current_match.get('stadium') or ''):
+        changes.append('stadium_changed')
+    return changes
+
+
+def analyze_round_changes(existing_round: Optional[dict], new_round: dict):
+    if not existing_round:
+        return {
+            'changed': True,
+            'changedFields': ['round_added'],
+            'matchChanges': [
+                {
+                    'type': 'match_added',
+                    'matchKey': _build_match_key(match),
+                    'home': match.get('home'),
+                    'away': match.get('away'),
+                }
+                for match in new_round.get('matches', [])
+            ],
+        }
+
+    changed_fields = []
+    match_changes = []
+    previous_matches = {
+        _build_match_key(match): match
+        for match in existing_round.get('matches', [])
+    }
+    current_matches = {
+        _build_match_key(match): match
+        for match in new_round.get('matches', [])
+    }
+
+    for match_key, current_match in current_matches.items():
+        previous_match = previous_matches.get(match_key)
+        if previous_match is None:
+            match_changes.append({
+                'type': 'match_added',
+                'matchKey': match_key,
+                'home': current_match.get('home'),
+                'away': current_match.get('away'),
+            })
+            if 'match_added' not in changed_fields:
+                changed_fields.append('match_added')
+            continue
+
+        match_field_changes = _compare_matches(previous_match, current_match)
+        if match_field_changes:
+            match_changes.append({
+                'type': 'match_updated',
+                'matchKey': match_key,
+                'home': current_match.get('home'),
+                'away': current_match.get('away'),
+                'changedFields': match_field_changes,
+                'before': {
+                    'date': previous_match.get('date'),
+                    'time': previous_match.get('time'),
+                    'stadium': previous_match.get('stadium'),
+                    'homeScore': previous_match.get('homeScore'),
+                    'awayScore': previous_match.get('awayScore'),
+                },
+                'after': {
+                    'date': current_match.get('date'),
+                    'time': current_match.get('time'),
+                    'stadium': current_match.get('stadium'),
+                    'homeScore': current_match.get('homeScore'),
+                    'awayScore': current_match.get('awayScore'),
+                },
+            })
+            for field_name in match_field_changes:
+                if field_name not in changed_fields:
+                    changed_fields.append(field_name)
+
+    for match_key, previous_match in previous_matches.items():
+        if match_key in current_matches:
+            continue
+        match_changes.append({
+            'type': 'match_removed',
+            'matchKey': match_key,
+            'home': previous_match.get('home'),
+            'away': previous_match.get('away'),
+        })
+        if 'match_removed' not in changed_fields:
+            changed_fields.append('match_removed')
+
+    previous_classification = existing_round.get('classification', [])
+    current_classification = new_round.get('classification', [])
+    if previous_classification != current_classification:
+        changed_fields.append('classification_changed')
+
+    return {
+        'changed': bool(changed_fields),
+        'changedFields': changed_fields,
+        'matchChanges': match_changes,
+    }
+
+
 def _normalize(value: str) -> str:
     normalized = unicodedata.normalize('NFD', value)
     normalized = normalized.encode('ascii', 'ignore').decode('ascii')
@@ -802,6 +917,12 @@ def run_sync(config: CompetitionConfig):
         'fallbackReuseCount': 0,
         'syncIssues': [],
         'outputFile': config.output_file,
+        'successfulFixtureIds': [],
+        'failedFixtureIds': [],
+        'reusedFixtureIds': [],
+        'technicalErrors': [],
+        'calendarChangedCount': 0,
+        'scoreChangedCount': 0,
         'stateBefore': snapshot_entry(competition_state),
         'stateAfter': None,
     }
@@ -871,6 +992,8 @@ def run_sync(config: CompetitionConfig):
                 'fallbackUsed': False,
                 'errorType': None,
                 'changed': False,
+                'changedFields': [],
+                'matchChanges': [],
             }
             existing_round = existing_rounds.get(str(fixture_id))
             if not fixture_result.ok or not fixture_result.content:
@@ -888,6 +1011,12 @@ def run_sync(config: CompetitionConfig):
                 )
                 fixture_meta['fetchStatus'] = 'error'
                 fixture_meta['errorType'] = error_type
+                metadata['failedFixtureIds'].append(str(fixture_id))
+                metadata['technicalErrors'].append({
+                    'fixtureId': str(fixture_id),
+                    'errorType': error_type,
+                    'stage': 'fetch',
+                })
                 if existing_round:
                     print(f'Falha ao obter dados da jornada {index}; a reutilizar dados existentes.')
                     rounds.append(existing_round)
@@ -895,6 +1024,7 @@ def run_sync(config: CompetitionConfig):
                     sync_issues.append(f'fixture {fixture_id}: fallback to existing round')
                     fixture_meta['fallbackUsed'] = True
                     fixture_meta['fetchStatus'] = 'fallback_reused'
+                    metadata['reusedFixtureIds'].append(str(fixture_id))
                 else:
                     print(f'Falha ao obter dados da jornada {index}')
                     sync_issues.append(f'fixture {fixture_id}: missing fragment and no fallback')
@@ -921,11 +1051,18 @@ def run_sync(config: CompetitionConfig):
                 fixture_meta['fetchStatus'] = 'parse_error'
                 fixture_meta['errorType'] = 'parse_error'
                 fixture_meta['errorMessage'] = str(exc)
+                metadata['failedFixtureIds'].append(str(fixture_id))
+                metadata['technicalErrors'].append({
+                    'fixtureId': str(fixture_id),
+                    'errorType': 'parse_error',
+                    'stage': 'parse',
+                })
                 if existing_round:
                     rounds.append(existing_round)
                     fallback_reuse_count += 1
                     sync_issues.append(f'fixture {fixture_id}: fallback to existing round after parse error')
                     fixture_meta['fallbackUsed'] = True
+                    metadata['reusedFixtureIds'].append(str(fixture_id))
                 else:
                     sync_issues.append(f'fixture {fixture_id}: parse error and no fallback')
                 metadata['fixtures'].append(fixture_meta)
@@ -946,6 +1083,8 @@ def run_sync(config: CompetitionConfig):
                 fixture_meta['fetchStatus'] = 'fallback_reused'
                 fixture_meta['fallbackUsed'] = True
                 fixture_meta['errorType'] = 'no_usable_data'
+                metadata['failedFixtureIds'].append(str(fixture_id))
+                metadata['reusedFixtureIds'].append(str(fixture_id))
                 snapshot_path = _save_error_snapshot(config, f'fixture_{fixture_id}_no_usable_data', fixture_result.content)
                 if snapshot_path:
                     fixture_meta['fetch']['errorSnapshotPath'] = snapshot_path
@@ -963,6 +1102,7 @@ def run_sync(config: CompetitionConfig):
                 )
                 fixture_meta['fetchStatus'] = 'no_usable_data'
                 fixture_meta['errorType'] = 'no_usable_data'
+                metadata['failedFixtureIds'].append(str(fixture_id))
                 snapshot_path = _save_error_snapshot(config, f'fixture_{fixture_id}_no_usable_data', fixture_result.content)
                 if snapshot_path:
                     fixture_meta['fetch']['errorSnapshotPath'] = snapshot_path
@@ -975,16 +1115,30 @@ def run_sync(config: CompetitionConfig):
                 'matches': matches,
                 'classification': classification,
             }
+            change_info = analyze_round_changes(existing_round, round_payload)
             rounds.append(round_payload)
             update_fetch_entry(
                 fixture_state,
                 attempted_at=fixture_attempt_at,
                 success=True,
-                changed=True,
+                changed=change_info['changed'],
                 backoff_minutes=TECHNICAL_BACKOFF_MINUTES,
             )
             fixture_meta['fetchStatus'] = 'ok'
-            fixture_meta['changed'] = True
+            fixture_meta['changed'] = change_info['changed']
+            fixture_meta['changedFields'] = change_info['changedFields']
+            fixture_meta['matchChanges'] = change_info['matchChanges']
+            metadata['successfulFixtureIds'].append(str(fixture_id))
+            metadata['calendarChangedCount'] += sum(
+                1
+                for field_name in change_info['changedFields']
+                if field_name in {'date_changed', 'time_changed', 'stadium_changed', 'match_added', 'match_removed'}
+            )
+            metadata['scoreChangedCount'] += sum(
+                1
+                for field_name in change_info['changedFields']
+                if field_name == 'score_changed'
+            )
             metadata['fixtures'].append(fixture_meta)
             time.sleep(1)
 

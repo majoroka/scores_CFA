@@ -7,6 +7,7 @@ import subprocess
 import sys
 import time
 from pathlib import Path
+from typing import Optional
 
 
 ROOT = Path(__file__).resolve().parent
@@ -16,9 +17,6 @@ SYNC_METADATA_DIR = CACHE_DIR / "sync_metadata"
 FETCH_TIMEOUT_SECONDS = 300
 MAX_ATTEMPTS = 3
 RETRY_DELAYS_SECONDS = (10, 30)
-FALLBACK_MARKERS = (
-    "a reutilizar dados existentes",
-)
 FETCHER_COOLDOWN_SECONDS = int(os.environ.get("FETCHER_COOLDOWN_SECONDS", "8"))
 DEGRADED_FETCHER_COOLDOWN_SECONDS = int(os.environ.get("DEGRADED_FETCHER_COOLDOWN_SECONDS", "30"))
 
@@ -110,9 +108,18 @@ def is_valid_update(previous_snapshot, current_snapshot):
     return True, None
 
 
-def detect_fallback_usage(stdout_text: str) -> bool:
-    lowered = (stdout_text or "").lower()
-    return any(marker in lowered for marker in FALLBACK_MARKERS)
+def detect_degraded_from_sync_metadata(sync_metadata: Optional[dict]):
+    if not sync_metadata:
+        return False
+    if sync_metadata.get("fallbackReuseCount", 0) > 0:
+        return True
+    source_health = sync_metadata.get("sourceHealth") or {}
+    if source_health.get("status") == "degraded":
+        return True
+    for fixture in sync_metadata.get("fixtures", []):
+        if fixture.get("fallbackUsed"):
+            return True
+    return False
 
 
 def restore_backup(backup_path: Path, output_path: Path):
@@ -190,11 +197,13 @@ def run_fetcher(fetcher_path: Path, output_path: Path, max_attempts: int = MAX_A
                 current_snapshot = load_snapshot(output_path)
                 is_valid, reason = is_valid_update(previous_snapshot, current_snapshot)
                 if is_valid:
+                    sync_metadata = load_sync_metadata(output_path)
                     final_snapshot = current_snapshot
                     changed = previous_snapshot != current_snapshot
                     success = True
-                    degraded = detect_fallback_usage(result.stdout)
+                    degraded = detect_degraded_from_sync_metadata(sync_metadata)
                     attempt_report["degraded"] = degraded
+                    attempt_report["sync_error_type"] = (sync_metadata or {}).get("errorType")
                     attempts.append(attempt_report)
                     break
                 attempt_report["validation_error"] = reason
