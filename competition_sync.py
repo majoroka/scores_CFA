@@ -1,4 +1,5 @@
 import html
+import hashlib
 import json
 import os
 import re
@@ -82,6 +83,17 @@ def _write_sync_metadata(config: CompetitionConfig, metadata: dict):
         handle.write('\n')
 
 
+def _load_previous_sync_metadata(config: CompetitionConfig):
+    target = SYNC_METADATA_DIR / f'{config.key}.json'
+    if not target.exists():
+        return {}
+    try:
+        with open(target, 'r', encoding='utf-8') as handle:
+            return json.load(handle)
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
 def _save_error_snapshot(config: CompetitionConfig, snapshot_name: str, content: str):
     if not content:
         return None
@@ -120,6 +132,12 @@ def _result_to_metadata(result):
         'url': result.url,
         'errorMessage': result.error_message,
     }
+
+
+def _content_hash(content: Optional[str]):
+    if not content:
+        return None
+    return hashlib.sha256(content.encode('utf-8')).hexdigest()
 
 
 def _normalize_team_name(value: str):
@@ -963,6 +981,7 @@ def validate_sync_result(config: CompetitionConfig, rounds, fixture_ids, existin
 def run_sync(config: CompetitionConfig):
     fetch_state = load_fetch_state()
     competition_state = get_competition_state(fetch_state, config.key)
+    previous_sync_metadata = _load_previous_sync_metadata(config)
     attempt_started_at = utc_now_iso()
     existing_output_text = _read_file_text(config.output_file)
     metadata = {
@@ -983,6 +1002,10 @@ def run_sync(config: CompetitionConfig):
         'technicalErrors': [],
         'calendarChangedCount': 0,
         'scoreChangedCount': 0,
+        'sourceChangedCount': 0,
+        'sourceChanged': False,
+        'parsedChanged': False,
+        'publishedChanged': False,
         'stateBefore': snapshot_entry(competition_state),
         'stateAfter': None,
     }
@@ -996,6 +1019,12 @@ def run_sync(config: CompetitionConfig):
             cache_key=config.main_cache_key,
         )
         metadata['mainPage'] = _result_to_metadata(main_result)
+        metadata['mainPage']['contentHash'] = _content_hash(main_result.content)
+        previous_main_hash = ((previous_sync_metadata or {}).get('mainPage') or {}).get('contentHash')
+        metadata['mainPage']['sourceChanged'] = bool(
+            metadata['mainPage']['contentHash']
+            and metadata['mainPage']['contentHash'] != previous_main_hash
+        )
         if not main_result.ok or not main_result.content:
             if main_result.content:
                 snapshot_path = _save_error_snapshot(config, 'main', main_result.content)
@@ -1052,9 +1081,25 @@ def run_sync(config: CompetitionConfig):
                 'fallbackUsed': False,
                 'errorType': None,
                 'changed': False,
+                'sourceChanged': False,
                 'changedFields': [],
                 'matchChanges': [],
             }
+            fixture_meta['fetch']['contentHash'] = _content_hash(fixture_result.content)
+            previous_fixture_meta = next(
+                (
+                    item for item in (previous_sync_metadata or {}).get('fixtures', [])
+                    if item.get('fixtureId') == str(fixture_id)
+                ),
+                {},
+            )
+            previous_fixture_hash = (previous_fixture_meta.get('fetch') or {}).get('contentHash')
+            fixture_meta['sourceChanged'] = bool(
+                fixture_meta['fetch']['contentHash']
+                and fixture_meta['fetch']['contentHash'] != previous_fixture_hash
+            )
+            if fixture_meta['sourceChanged']:
+                metadata['sourceChangedCount'] += 1
             existing_round = existing_rounds.get(str(fixture_id))
             if not fixture_result.ok or not fixture_result.content:
                 if fixture_result.content:
@@ -1186,6 +1231,7 @@ def run_sync(config: CompetitionConfig):
             )
             fixture_meta['fetchStatus'] = 'ok'
             fixture_meta['changed'] = change_info['changed']
+            fixture_meta['sourceChanged'] = fixture_meta['sourceChanged']
             fixture_meta['changedFields'] = change_info['changedFields']
             fixture_meta['matchChanges'] = change_info['matchChanges']
             metadata['successfulFixtureIds'].append(str(fixture_id))
@@ -1240,6 +1286,16 @@ def run_sync(config: CompetitionConfig):
         )
         metadata['success'] = True
         metadata['changed'] = changed
+        metadata['sourceChanged'] = bool(
+            metadata['mainPage'].get('sourceChanged')
+            or any(item.get('sourceChanged') for item in metadata['fixtures'])
+        )
+        metadata['parsedChanged'] = bool(
+            any(item.get('changed') for item in metadata['fixtures'])
+            or metadata['calendarChangedCount'] > 0
+            or metadata['scoreChangedCount'] > 0
+        )
+        metadata['publishedChanged'] = changed
         metadata['fallbackReuseCount'] = fallback_reuse_count
         metadata['syncIssues'] = sync_issues
         metadata['dataQuality'] = quality_metrics

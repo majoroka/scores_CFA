@@ -122,6 +122,13 @@ def detect_degraded_from_sync_metadata(sync_metadata: Optional[dict]):
     return False
 
 
+def detect_publish_inconsistency(sync_metadata: Optional[dict], published_changed: bool):
+    if not sync_metadata:
+        return False
+    parsed_changed = bool(sync_metadata.get("parsedChanged"))
+    return parsed_changed and not published_changed
+
+
 def restore_backup(backup_path: Path, output_path: Path):
     if backup_path.exists():
         shutil.copy2(backup_path, output_path)
@@ -224,6 +231,10 @@ def run_fetcher(fetcher_path: Path, output_path: Path, max_attempts: int = MAX_A
         "success": success,
         "degraded": degraded,
         "changed": changed,
+        "source_changed": bool((sync_metadata or {}).get("sourceChanged")),
+        "parsed_changed": bool((sync_metadata or {}).get("parsedChanged")),
+        "published_changed": changed,
+        "publish_inconsistent": detect_publish_inconsistency(sync_metadata, changed),
         "error_type": (sync_metadata or {}).get("errorType"),
         "previous_snapshot": previous_snapshot,
         "final_snapshot": final_snapshot,
@@ -237,6 +248,10 @@ def summarize_report(report: dict):
     report["failure_count"] = sum(1 for item in report["fetchers"] if not item["success"])
     report["degraded_count"] = sum(1 for item in report["fetchers"] if item["degraded"])
     report["changed_count"] = sum(1 for item in report["fetchers"] if item["changed"])
+    report["source_changed_count"] = sum(1 for item in report["fetchers"] if item.get("source_changed"))
+    report["parsed_changed_count"] = sum(1 for item in report["fetchers"] if item.get("parsed_changed"))
+    report["published_changed_count"] = sum(1 for item in report["fetchers"] if item.get("published_changed"))
+    report["publish_inconsistency_count"] = sum(1 for item in report["fetchers"] if item.get("publish_inconsistent"))
     return report
 
 

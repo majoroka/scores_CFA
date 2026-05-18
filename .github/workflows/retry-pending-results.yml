@@ -349,18 +349,52 @@ jobs:
               f"- Sucesso: {report['success_count']}",
               f"- Falhas: {report['failure_count']}",
               f"- Degradados: {report.get('degraded_count', 0)}",
-              f"- Alterados: {report['changed_count']}",
+              f"- Origem alterada: {report.get('source_changed_count', 0)}",
+              f"- Parse alterado: {report.get('parsed_changed_count', 0)}",
+              f"- Publicado alterado: {report.get('published_changed_count', 0)}",
+              f"- Inconsistências publicação: {report.get('publish_inconsistency_count', 0)}",
               f"- Vagas executadas: {len(report.get('retry_waves', []))}",
           ]
           with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as handle:
               handle.write("\n".join(lines) + "\n")
           PY
 
+      - name: Publicar artefactos de diagnóstico do follow-up
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: retry-followup-diagnostics
+          if-no-files-found: warn
+          path: |
+            cache/fetch_plan.json
+            cache/fetch_report.json
+            cache/fetch_state.json
+            cache/sync_metadata/**
+            cache/errors/**
+
       - name: Atualizar manifesto de emblemas (opcional)
         run: |
           if [ -f generate_crest_manifest.py ]; then
             python generate_crest_manifest.py
           fi
+
+      - name: Validar inconsistências de publicação
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          report = json.loads(Path("cache/fetch_report.json").read_text(encoding="utf-8"))
+          inconsistencies = [
+              item["fetcher"]
+              for item in report.get("fetchers", [])
+              if item.get("publish_inconsistent")
+          ]
+          if inconsistencies:
+              raise SystemExit(
+                  "Publish inconsistency detected for fetchers: " + ", ".join(inconsistencies)
+              )
+          PY
 
       - name: Commit de dados atualizados após retries
         id: retry_commit

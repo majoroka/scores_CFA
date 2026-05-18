@@ -229,20 +229,26 @@ jobs:
               f"- Sucesso: {report['success_count']}",
               f"- Falhas: {report['failure_count']}",
               f"- Degradados: {report.get('degraded_count', 0)}",
-              f"- Alterados: {report['changed_count']}",
+              f"- Origem alterada: {report.get('source_changed_count', 0)}",
+              f"- Parse alterado: {report.get('parsed_changed_count', 0)}",
+              f"- Publicado alterado: {report.get('published_changed_count', 0)}",
+              f"- Inconsistências publicação: {report.get('publish_inconsistency_count', 0)}",
               "",
-              "| Fetcher | Estado | Tentativas | Jornadas | Alterou JSON |",
-              "| --- | --- | ---: | ---: | --- |",
+              "| Fetcher | Estado | Tentativas | Jornadas | Origem | Parse | Publicado | Inconsistência |",
+              "| --- | --- | ---: | ---: | --- | --- | --- | --- |",
           ]
 
           for item in report["fetchers"]:
               lines.append(
-                  "| {fetcher} | {status} | {attempts} | {rounds} | {changed} |".format(
+                  "| {fetcher} | {status} | {attempts} | {rounds} | {source_changed} | {parsed_changed} | {published_changed} | {publish_inconsistent} |".format(
                       fetcher=item["fetcher"],
                       status="FAIL" if not item["success"] else ("DEGRADED" if item.get("degraded") else "OK"),
                       attempts=len(item["attempts"]),
                       rounds=item["final_snapshot"]["round_count"],
-                      changed="sim" if item["changed"] else "nao",
+                      source_changed="sim" if item.get("source_changed") else "nao",
+                      parsed_changed="sim" if item.get("parsed_changed") else "nao",
+                      published_changed="sim" if item.get("published_changed") else "nao",
+                      publish_inconsistent="sim" if item.get("publish_inconsistent") else "nao",
                   )
               )
 
@@ -251,11 +257,42 @@ jobs:
               handle.write("\n".join(lines) + "\n")
           PY
 
+      - name: Publicar artefactos de diagnóstico do fetch
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sync-data-diagnostics
+          if-no-files-found: warn
+          path: |
+            cache/fetch_plan.json
+            cache/fetch_report.json
+            cache/fetch_state.json
+            cache/sync_metadata/**
+            cache/errors/**
+
       - name: Atualizar manifesto de emblemas (opcional)
         run: |
           if [ -f generate_crest_manifest.py ]; then
             python generate_crest_manifest.py
           fi
+
+      - name: Validar inconsistências de publicação
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          report = json.loads(Path("cache/fetch_report.json").read_text(encoding="utf-8"))
+          inconsistencies = [
+              item["fetcher"]
+              for item in report.get("fetchers", [])
+              if item.get("publish_inconsistent")
+          ]
+          if inconsistencies:
+              raise SystemExit(
+                  "Publish inconsistency detected for fetchers: " + ", ".join(inconsistencies)
+              )
+          PY
 
       - name: Commit de dados atualizados (se houver alterações)
         run: |
