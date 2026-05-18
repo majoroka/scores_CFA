@@ -57,6 +57,9 @@ FETCHER_BY_KEY = {
     "feminino-sub15": "fetch_feminino_sub15.py",
 }
 
+SELECTIVE_REFRESH_PILOT_KEYS = {"seniores"}
+SELECTIVE_REFRESH_MAX_FIXTURE_IDS = 2
+
 
 def load_payload(config: CompetitionConfig) -> Optional[dict]:
     output_path = ROOT / config.output_file
@@ -202,6 +205,61 @@ def classify_calendar_watch_state(match_dt: datetime, now: datetime) -> str:
     return "calendar_watch_far"
 
 
+def select_fixture_ids_to_refresh(config: CompetitionConfig, payload: dict, now: datetime) -> list[str]:
+    if config.key not in SELECTIVE_REFRESH_PILOT_KEYS:
+        return []
+
+    historical_cutoff = now.replace(hour=0, minute=0, second=0, microsecond=0) - timedelta(days=HISTORICAL_LOOKBACK_DAYS)
+    calendar_watch_cutoff = now + timedelta(days=CALENDAR_WATCH_LOOKAHEAD_DAYS)
+    candidates = []
+
+    for round_data in payload.get("rounds", []):
+        fixture_id = str(round_data.get("fixtureId") or "").strip()
+        if not fixture_id:
+            continue
+
+        best_priority = None
+        best_match_dt = None
+        for match in round_data.get("matches", []):
+            match_dt = build_match_datetime(match)
+            if not match_dt or match_dt < historical_cutoff or match_dt > calendar_watch_cutoff:
+                continue
+
+            if match_dt <= now and not has_score(match):
+                if match_dt + timedelta(hours=RESULT_CHASE_LONG_WINDOW_HOURS) >= now:
+                    priority = 1
+                else:
+                    priority = 2
+            elif match_dt > now:
+                if (match_dt - now).total_seconds() / 3600.0 <= CALENDAR_WATCH_MATCHDAY_HOURS:
+                    priority = 3
+                elif (match_dt - now).days < CALENDAR_WATCH_NEAR_DAYS:
+                    priority = 4
+                else:
+                    priority = 5
+            else:
+                continue
+
+            if best_priority is None or priority < best_priority or (priority == best_priority and match_dt < best_match_dt):
+                best_priority = priority
+                best_match_dt = match_dt
+
+        if best_priority is not None and best_match_dt is not None:
+            candidates.append((best_priority, best_match_dt, fixture_id))
+
+    candidates.sort(key=lambda item: (item[0], item[1], item[2]))
+    selected = []
+    seen = set()
+    for _, _, fixture_id in candidates:
+        if fixture_id in seen:
+            continue
+        seen.add(fixture_id)
+        selected.append(fixture_id)
+        if len(selected) >= SELECTIVE_REFRESH_MAX_FIXTURE_IDS:
+            break
+    return selected
+
+
 def analyze_competition(config: CompetitionConfig, now: datetime) -> dict:
     if now.tzinfo is None:
         now = now.replace(tzinfo=LOCAL_TZ)
@@ -236,6 +294,8 @@ def analyze_competition(config: CompetitionConfig, now: datetime) -> dict:
 
     last_fetch_at = last_fetch_reference(payload)
     technical_state, technical_level = classify_technical_state(payload)
+    fixture_ids_to_refresh = select_fixture_ids_to_refresh(config, payload, now)
+    allow_full_discovery = config.key not in SELECTIVE_REFRESH_PILOT_KEYS
 
     today_start = now.replace(hour=0, minute=0, second=0, microsecond=0)
     historical_cutoff = today_start - timedelta(days=HISTORICAL_LOOKBACK_DAYS)
@@ -359,6 +419,13 @@ def analyze_competition(config: CompetitionConfig, now: datetime) -> dict:
     else:
         reasons.append("sem jogos pendentes elegíveis para fetch")
 
+    if config.key in SELECTIVE_REFRESH_PILOT_KEYS:
+        if fixture_ids_to_refresh:
+            reasons.append(f"piloto seletivo: {len(fixture_ids_to_refresh)} fixtureId(s) elegíveis")
+        else:
+            reasons.append("piloto seletivo: sem fixtureIds elegíveis")
+        should_fetch = should_fetch and bool(fixture_ids_to_refresh)
+
     return {
         "competition_key": config.key,
         "fetcher": fetcher,
@@ -379,6 +446,8 @@ def analyze_competition(config: CompetitionConfig, now: datetime) -> dict:
         "first_result_fetch_at": isoformat_or_none(first_result_fetch_at),
         "last_meaningful_fetch_at": isoformat_or_none(last_fetch_at),
         "next_recommended_fetch_at": isoformat_or_none(next_recommended_fetch_at),
+        "fixture_ids_to_refresh": fixture_ids_to_refresh,
+        "allow_full_discovery": allow_full_discovery,
         "reasons": reasons,
     }
 

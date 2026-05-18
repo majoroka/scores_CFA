@@ -978,12 +978,28 @@ def validate_sync_result(config: CompetitionConfig, rounds, fixture_ids, existin
     return quality_metrics
 
 
-def run_sync(config: CompetitionConfig):
+def run_sync(
+    config: CompetitionConfig,
+    *,
+    selected_fixture_ids: Optional[list[str]] = None,
+    allow_full_discovery: bool = True,
+):
     fetch_state = load_fetch_state()
     competition_state = get_competition_state(fetch_state, config.key)
     previous_sync_metadata = _load_previous_sync_metadata(config)
     attempt_started_at = utc_now_iso()
     existing_output_text = _read_file_text(config.output_file)
+    existing_rounds = load_existing_rounds(config.output_file)
+    normalized_selected_fixture_ids = [
+        str(fixture_id).strip()
+        for fixture_id in (selected_fixture_ids or [])
+        if str(fixture_id).strip()
+    ]
+    selective_mode = (
+        bool(normalized_selected_fixture_ids)
+        and not allow_full_discovery
+        and all(fixture_id in existing_rounds for fixture_id in normalized_selected_fixture_ids)
+    )
     metadata = {
         'competitionKey': config.key,
         'attemptStartedAt': attempt_started_at,
@@ -1006,59 +1022,86 @@ def run_sync(config: CompetitionConfig):
         'sourceChanged': False,
         'parsedChanged': False,
         'publishedChanged': False,
+        'selectedFixtureIds': normalized_selected_fixture_ids,
+        'fullDiscoveryUsed': not selective_mode,
         'stateBefore': snapshot_entry(competition_state),
         'stateAfter': None,
     }
 
     try:
         competition_state['lastAttemptAt'] = attempt_started_at
-        main_result = fetch_page_result(
-            config.competition_url,
-            cache_dir=CACHE_DIR,
-            use_cache=USE_CACHE,
-            cache_key=config.main_cache_key,
-        )
-        metadata['mainPage'] = _result_to_metadata(main_result)
-        metadata['mainPage']['contentHash'] = _content_hash(main_result.content)
-        previous_main_hash = ((previous_sync_metadata or {}).get('mainPage') or {}).get('contentHash')
-        metadata['mainPage']['sourceChanged'] = bool(
-            metadata['mainPage']['contentHash']
-            and metadata['mainPage']['contentHash'] != previous_main_hash
-        )
-        if not main_result.ok or not main_result.content:
-            if main_result.content:
-                snapshot_path = _save_error_snapshot(config, 'main', main_result.content)
+        if selective_mode:
+            metadata['mainPage'] = {
+                'ok': True,
+                'errorType': None,
+                'statusCode': None,
+                'blocked': False,
+                'attempts': 0,
+                'durationSeconds': 0.0,
+                'responseSize': 0,
+                'cacheUsed': True,
+                'url': config.competition_url,
+                'errorMessage': None,
+                'contentHash': None,
+                'sourceChanged': False,
+                'skipped': True,
+                'skipReason': 'selected_fixture_ids',
+            }
+            fixture_ids = sorted(
+                normalized_selected_fixture_ids,
+                key=lambda fixture_id: int(existing_rounds[fixture_id].get('index', 0)),
+            )
+        else:
+            main_result = fetch_page_result(
+                config.competition_url,
+                cache_dir=CACHE_DIR,
+                use_cache=USE_CACHE,
+                cache_key=config.main_cache_key,
+            )
+            metadata['mainPage'] = _result_to_metadata(main_result)
+            metadata['mainPage']['contentHash'] = _content_hash(main_result.content)
+            previous_main_hash = ((previous_sync_metadata or {}).get('mainPage') or {}).get('contentHash')
+            metadata['mainPage']['sourceChanged'] = bool(
+                metadata['mainPage']['contentHash']
+                and metadata['mainPage']['contentHash'] != previous_main_hash
+            )
+            if not main_result.ok or not main_result.content:
+                if main_result.content:
+                    snapshot_path = _save_error_snapshot(config, 'main', main_result.content)
+                    if snapshot_path:
+                        metadata['mainPage']['errorSnapshotPath'] = snapshot_path
+                error_type = main_result.error_type or 'network_error'
+                update_fetch_entry(
+                    competition_state,
+                    attempted_at=attempt_started_at,
+                    success=False,
+                    error_type=error_type,
+                    backoff_minutes=TECHNICAL_BACKOFF_MINUTES,
+                )
+                raise SyncCriticalError(f'{config.key}: failed to fetch competition page', error_type)
+
+            fixture_ids = extract_fixture_ids(main_result.content, config)
+            if not fixture_ids:
+                snapshot_path = _save_error_snapshot(config, 'main_no_fixture_ids', main_result.content)
                 if snapshot_path:
                     metadata['mainPage']['errorSnapshotPath'] = snapshot_path
-            error_type = main_result.error_type or 'network_error'
-            update_fetch_entry(
-                competition_state,
-                attempted_at=attempt_started_at,
-                success=False,
-                error_type=error_type,
-                backoff_minutes=TECHNICAL_BACKOFF_MINUTES,
-            )
-            raise SyncCriticalError(f'{config.key}: failed to fetch competition page', error_type)
+                update_fetch_entry(
+                    competition_state,
+                    attempted_at=attempt_started_at,
+                    success=False,
+                    error_type='no_fixture_ids',
+                    backoff_minutes=TECHNICAL_BACKOFF_MINUTES,
+                )
+                raise SyncCriticalError(f'{config.key}: no fixture ids found for target series', 'no_fixture_ids')
 
-        fixture_ids = extract_fixture_ids(main_result.content, config)
-        if not fixture_ids:
-            snapshot_path = _save_error_snapshot(config, 'main_no_fixture_ids', main_result.content)
-            if snapshot_path:
-                metadata['mainPage']['errorSnapshotPath'] = snapshot_path
-            update_fetch_entry(
-                competition_state,
-                attempted_at=attempt_started_at,
-                success=False,
-                error_type='no_fixture_ids',
-                backoff_minutes=TECHNICAL_BACKOFF_MINUTES,
-            )
-            raise SyncCriticalError(f'{config.key}: no fixture ids found for target series', 'no_fixture_ids')
-
-        existing_rounds = load_existing_rounds(config.output_file)
-        rounds = []
+        rounds_by_fixture_id = {
+            str(fixture_id): dict(round_data)
+            for fixture_id, round_data in existing_rounds.items()
+        } if selective_mode else {}
         fallback_reuse_count = 0
         sync_issues = []
         for index, fixture_id in enumerate(fixture_ids, start=1):
+            round_index = existing_rounds.get(str(fixture_id), {}).get('index', index)
             print(f'Processando jornada {index} (fixtureId={fixture_id})')
             url = (
                 'https://resultados.fpf.pt/Competition/'
@@ -1124,7 +1167,7 @@ def run_sync(config: CompetitionConfig):
                 })
                 if existing_round:
                     print(f'Falha ao obter dados da jornada {index}; a reutilizar dados existentes.')
-                    rounds.append(existing_round)
+                    rounds_by_fixture_id[str(fixture_id)] = existing_round
                     fallback_reuse_count += 1
                     sync_issues.append(f'fixture {fixture_id}: fallback to existing round')
                     fixture_meta['fallbackUsed'] = True
@@ -1163,7 +1206,7 @@ def run_sync(config: CompetitionConfig):
                     'stage': 'parse',
                 })
                 if existing_round:
-                    rounds.append(existing_round)
+                    rounds_by_fixture_id[str(fixture_id)] = existing_round
                     fallback_reuse_count += 1
                     sync_issues.append(f'fixture {fixture_id}: fallback to existing round after parse error')
                     fixture_meta['fallbackUsed'] = True
@@ -1175,7 +1218,7 @@ def run_sync(config: CompetitionConfig):
 
             if not matches and not classification and existing_round:
                 print(f'Jornada {index} sem dados novos; a reutilizar dados existentes.')
-                rounds.append(existing_round)
+                rounds_by_fixture_id[str(fixture_id)] = existing_round
                 fallback_reuse_count += 1
                 sync_issues.append(f'fixture {fixture_id}: reused existing round because fragment had no data')
                 update_fetch_entry(
@@ -1215,13 +1258,13 @@ def run_sync(config: CompetitionConfig):
                 continue
 
             round_payload = {
-                'index': index,
+                'index': round_index,
                 'fixtureId': fixture_id,
                 'matches': matches,
                 'classification': classification,
             }
             change_info = analyze_round_changes(existing_round, round_payload)
-            rounds.append(round_payload)
+            rounds_by_fixture_id[str(fixture_id)] = round_payload
             update_fetch_entry(
                 fixture_state,
                 attempted_at=fixture_attempt_at,
@@ -1247,6 +1290,11 @@ def run_sync(config: CompetitionConfig):
             )
             metadata['fixtures'].append(fixture_meta)
             time.sleep(1)
+
+        rounds = sorted(
+            rounds_by_fixture_id.values(),
+            key=lambda round_data: int(round_data.get('index', 0)),
+        )
 
         fill_missing_scores_from_secondary_results(rounds, config)
 

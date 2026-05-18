@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parent
 CACHE_DIR = ROOT / "cache"
 REPORT_PATH = CACHE_DIR / "fetch_report.json"
 SYNC_METADATA_DIR = CACHE_DIR / "sync_metadata"
+PLAN_PATH = CACHE_DIR / "fetch_plan.json"
 FETCH_TIMEOUT_SECONDS = 300
 MAX_ATTEMPTS = 3
 RETRY_DELAYS_SECONDS = (10, 30)
@@ -147,7 +148,28 @@ def load_sync_metadata(output_path: Path):
         return None
 
 
-def run_fetcher(fetcher_path: Path, output_path: Path, max_attempts: int = MAX_ATTEMPTS):
+def load_plan_selections():
+    if not PLAN_PATH.exists():
+        return {}
+    try:
+        with open(PLAN_PATH, "r", encoding="utf-8") as handle:
+            plan = json.load(handle)
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+    selections = {}
+    for item in plan.get("competitions", []):
+        fetcher = item.get("fetcher")
+        if not fetcher:
+            continue
+        selections[fetcher] = {
+            "fixture_ids_to_refresh": [str(value) for value in item.get("fixture_ids_to_refresh", []) if str(value).strip()],
+            "allow_full_discovery": bool(item.get("allow_full_discovery", True)),
+        }
+    return selections
+
+
+def run_fetcher(fetcher_path: Path, output_path: Path, max_attempts: int = MAX_ATTEMPTS, selection: Optional[dict] = None):
     previous_snapshot = load_snapshot(output_path)
     backup_path = CACHE_DIR / f"{output_path.name}.bak"
     if output_path.exists():
@@ -169,12 +191,18 @@ def run_fetcher(fetcher_path: Path, output_path: Path, max_attempts: int = MAX_A
 
         started_at = time.time()
         try:
+            child_env = os.environ.copy()
+            selected_fixture_ids = (selection or {}).get("fixture_ids_to_refresh") or []
+            if selected_fixture_ids:
+                child_env["SELECTED_FIXTURE_IDS"] = json.dumps(selected_fixture_ids)
+            child_env["ALLOW_FULL_DISCOVERY"] = "1" if (selection or {}).get("allow_full_discovery", True) else "0"
             result = subprocess.run(
                 [sys.executable, fetcher_path.name],
                 cwd=ROOT,
                 capture_output=True,
                 text=True,
                 timeout=FETCH_TIMEOUT_SECONDS,
+                env=child_env,
             )
             attempt_report = {
                 "attempt": attempt_index + 1,
@@ -236,6 +264,7 @@ def run_fetcher(fetcher_path: Path, output_path: Path, max_attempts: int = MAX_A
         "published_changed": changed,
         "publish_inconsistent": detect_publish_inconsistency(sync_metadata, changed),
         "error_type": (sync_metadata or {}).get("errorType"),
+        "selected_fixture_ids": (selection or {}).get("fixture_ids_to_refresh", []),
         "previous_snapshot": previous_snapshot,
         "final_snapshot": final_snapshot,
         "attempts": attempts,
@@ -274,10 +303,16 @@ def run_fetchers_report(
     }
 
     fetchers = discover_fetchers(selected_fetchers)
+    plan_selections = load_plan_selections()
     for fetcher_path in fetchers:
         output_path = extract_output_file(fetcher_path)
         print(f"RUN {fetcher_path.name} -> {output_path.relative_to(ROOT)}", flush=True)
-        fetcher_report = run_fetcher(fetcher_path, output_path, max_attempts=max_attempts)
+        fetcher_report = run_fetcher(
+            fetcher_path,
+            output_path,
+            max_attempts=max_attempts,
+            selection=plan_selections.get(fetcher_path.name),
+        )
         report["fetchers"].append(fetcher_report)
 
         if not fetcher_report["success"]:

@@ -262,6 +262,48 @@ class FetchPlannerTests(unittest.TestCase):
             plan = build_plan(self.now)
         self.assertEqual(plan["mode"], "result_chase")
 
+    def test_seniores_pilot_selects_specific_fixture_ids(self):
+        config = CompetitionConfig(
+            competition_url="https://example.test",
+            output_file="data/seniores.json",
+            main_cache_key="seniores_main",
+            fixture_cache_prefix="seniores_fixture",
+            key="seniores",
+            title="Seniores",
+            subtitle="Liga 1",
+            page_path="seniores.html",
+        )
+        payload = {
+            "lastAttemptAt": "2026-05-18T09:00:00+01:00",
+            "rounds": [
+                {
+                    "index": 8,
+                    "fixtureId": "645299",
+                    "matches": [
+                        {"date": "16 mai", "time": "17:00", "homeScore": None, "awayScore": None},
+                    ],
+                },
+                {
+                    "index": 9,
+                    "fixtureId": "645300",
+                    "matches": [
+                        {"date": "23 mai", "time": "16:00", "homeScore": None, "awayScore": None},
+                    ],
+                },
+                {
+                    "index": 10,
+                    "fixtureId": "645301",
+                    "matches": [
+                        {"date": "30 mai", "time": "17:00", "homeScore": None, "awayScore": None},
+                    ],
+                },
+            ],
+        }
+        with patch("plan_fetchers.load_payload", return_value=payload):
+            result = analyze_competition(config, datetime(2026, 5, 18, 12, 0, 0))
+        self.assertEqual(result["fixture_ids_to_refresh"], ["645299", "645300"])
+        self.assertFalse(result["allow_full_discovery"])
+
 
 if __name__ == "__main__":
     unittest.main()
