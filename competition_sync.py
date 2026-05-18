@@ -24,6 +24,7 @@ from fpf_http import fetch_page_result, get_page_content as fetch_page_content, 
 
 CACHE_DIR = 'cache'
 USE_CACHE = False
+SCHEMA_VERSION = 2
 SYNC_METADATA_DIR = Path(CACHE_DIR) / 'sync_metadata'
 ERROR_SNAPSHOT_DIR = Path(CACHE_DIR) / 'errors'
 TECHNICAL_BACKOFF_MINUTES = [
@@ -234,6 +235,56 @@ def analyze_round_changes(existing_round: Optional[dict], new_round: dict):
         'changedFields': changed_fields,
         'matchChanges': match_changes,
     }
+
+
+def enrich_rounds_for_schema(rounds, fixture_states_by_id: dict, fixture_meta_by_id: dict):
+    enriched_rounds = []
+    for round_data in rounds:
+        fixture_id = str(round_data.get('fixtureId'))
+        fixture_state = fixture_states_by_id.get(fixture_id, {})
+        fixture_meta = fixture_meta_by_id.get(fixture_id, {})
+        change_fields_by_key = {}
+        match_added_keys = set()
+        for match_change in fixture_meta.get('matchChanges', []):
+            match_key = tuple(match_change.get('matchKey', ()))
+            if not match_key:
+                continue
+            if match_change.get('type') == 'match_updated':
+                change_fields_by_key[match_key] = list(match_change.get('changedFields', []))
+            elif match_change.get('type') == 'match_added':
+                match_added_keys.add(match_key)
+
+        enriched_matches = []
+        for match in round_data.get('matches', []):
+            match_key = _build_match_key(match)
+            change_flags = list(match.get('changeFlags', []))
+            for field_name in change_fields_by_key.get(match_key, []):
+                if field_name not in change_flags:
+                    change_flags.append(field_name)
+            if match_key in match_added_keys and 'match_added' not in change_flags:
+                change_flags.append('match_added')
+
+            score_source = match.get('scoreSource')
+            if score_source is None and isinstance(match.get('homeScore'), int) and isinstance(match.get('awayScore'), int):
+                score_source = 'fpf'
+
+            enriched_match = dict(match)
+            enriched_match['scoreSource'] = score_source
+            enriched_match['calendarSource'] = match.get('calendarSource') or 'fpf'
+            enriched_match['lastChangedAt'] = match.get('lastChangedAt') or fixture_state.get('lastChangedAt')
+            enriched_match['changeFlags'] = change_flags
+            enriched_matches.append(enriched_match)
+
+        enriched_round = dict(round_data)
+        enriched_round['lastAttemptAt'] = fixture_state.get('lastAttemptAt')
+        enriched_round['lastSuccessAt'] = fixture_state.get('lastSuccessAt')
+        enriched_round['lastChangedAt'] = fixture_state.get('lastChangedAt')
+        enriched_round['sourceStatus'] = fixture_meta.get('fetchStatus', 'unknown')
+        enriched_round['sourceIssue'] = fixture_meta.get('errorType')
+        enriched_round['matches'] = enriched_matches
+        enriched_rounds.append(enriched_round)
+
+    return enriched_rounds
 
 
 def _normalize(value: str) -> str:
@@ -467,6 +518,7 @@ def build_payload(
     last_updated_at: Optional[str] = None,
     sync_issues: Optional[list[str]] = None,
     quality_metrics: Optional[dict] = None,
+    fetch_state_entry: Optional[dict] = None,
 ):
     default_round_index = compute_default_round_index(rounds)
     default_round_number = None
@@ -476,8 +528,15 @@ def build_payload(
     timestamp = last_updated_at or datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace('+00:00', 'Z')
     metrics = quality_metrics or collect_quality_metrics(rounds)
     health_status = infer_payload_status(fallback_reuse_count, metrics)
+    fetch_state_entry = fetch_state_entry or {}
 
     return {
+        'schemaVersion': SCHEMA_VERSION,
+        'generatedAt': timestamp,
+        'lastAttemptAt': fetch_state_entry.get('lastAttemptAt'),
+        'lastSuccessAt': fetch_state_entry.get('lastSuccessAt'),
+        'lastChangedAt': fetch_state_entry.get('lastChangedAt'),
+        'lastPublishedAt': timestamp,
         'defaultRoundIndex': default_round_index,
         'defaultRoundNumber': default_round_number,
         'lastUpdatedAt': timestamp,
@@ -756,6 +815,7 @@ def fill_missing_scores_from_secondary_results(
                 continue
             match['homeScore'] = secondary_match['homeScore']
             match['awayScore'] = secondary_match['awayScore']
+            match['scoreSource'] = 'secondary'
             filled_scores += 1
 
     return filled_scores
@@ -1147,12 +1207,23 @@ def run_sync(config: CompetitionConfig):
         if config.derive_classification:
             build_classification_from_results(rounds, config.ignored_team_names)
 
+        fixture_meta_by_id = {
+            item.get('fixtureId'): item
+            for item in metadata['fixtures']
+        }
+        fixture_states_by_id = {
+            str(fixture_id): state
+            for fixture_id, state in competition_state.get('fixtures', {}).items()
+        }
+        rounds = enrich_rounds_for_schema(rounds, fixture_states_by_id, fixture_meta_by_id)
+
         quality_metrics = validate_sync_result(config, rounds, fixture_ids, existing_rounds)
         data = build_payload(
             rounds,
             fallback_reuse_count=fallback_reuse_count,
             sync_issues=sync_issues,
             quality_metrics=quality_metrics,
+            fetch_state_entry=competition_state,
         )
         os.makedirs(os.path.dirname(config.output_file), exist_ok=True)
         rendered_output = json.dumps(data, ensure_ascii=False, indent=4) + '\n'

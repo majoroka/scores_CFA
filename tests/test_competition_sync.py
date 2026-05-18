@@ -138,7 +138,18 @@ class CompetitionSyncTests(unittest.TestCase):
             rounds,
             fallback_reuse_count=2,
             last_updated_at='2026-05-07T15:00:00Z',
+            fetch_state_entry={
+                'lastAttemptAt': '2026-05-07T14:55:00Z',
+                'lastSuccessAt': '2026-05-07T15:00:00Z',
+                'lastChangedAt': '2026-05-07T15:00:00Z',
+            },
         )
+        self.assertEqual(payload['schemaVersion'], 2)
+        self.assertEqual(payload['generatedAt'], '2026-05-07T15:00:00Z')
+        self.assertEqual(payload['lastAttemptAt'], '2026-05-07T14:55:00Z')
+        self.assertEqual(payload['lastSuccessAt'], '2026-05-07T15:00:00Z')
+        self.assertEqual(payload['lastChangedAt'], '2026-05-07T15:00:00Z')
+        self.assertEqual(payload['lastPublishedAt'], '2026-05-07T15:00:00Z')
         self.assertEqual(payload['defaultRoundIndex'], 1)
         self.assertEqual(payload['defaultRoundNumber'], 2)
         self.assertEqual(payload['lastUpdatedAt'], '2026-05-07T15:00:00Z')

@@ -116,7 +116,10 @@ def build_calendar_entries(config: CompetitionConfig, payload: dict, now: dateti
                 'displayDate': display_date,
                 'displayTime': display_time,
                 'stadium': match.get('stadium', ''),
-                'lastUpdatedAt': payload.get('lastUpdatedAt'),
+                'lastUpdatedAt': payload.get('lastPublishedAt') or payload.get('lastUpdatedAt'),
+                'lastAttemptAt': payload.get('lastAttemptAt'),
+                'lastSuccessAt': payload.get('lastSuccessAt'),
+                'lastChangedAt': payload.get('lastChangedAt'),
                 'sourceHealth': payload.get('sourceHealth', {}),
             })
 
@@ -137,11 +140,17 @@ def build_calendar_payload(now: Optional[datetime] = None) -> dict:
         fallback_reuse_count = raw_source_health.get('fallbackReuseCount', 0) if isinstance(raw_source_health.get('fallbackReuseCount', 0), int) else 0
         competitions.append({
             'key': config.key,
+            'schemaVersion': payload.get('schemaVersion'),
             'title': config.title,
             'subtitle': config.subtitle,
             'pagePath': config.page_path,
             'outputFile': config.output_file,
-            'lastUpdatedAt': payload.get('lastUpdatedAt'),
+            'generatedAt': payload.get('generatedAt'),
+            'lastAttemptAt': payload.get('lastAttemptAt'),
+            'lastSuccessAt': payload.get('lastSuccessAt'),
+            'lastChangedAt': payload.get('lastChangedAt'),
+            'lastPublishedAt': payload.get('lastPublishedAt'),
+            'lastUpdatedAt': payload.get('lastPublishedAt') or payload.get('lastUpdatedAt'),
             'sourceHealth': {
                 'status': infer_payload_status(fallback_reuse_count, quality),
                 'fallbackReuseCount': fallback_reuse_count,

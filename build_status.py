@@ -32,8 +32,14 @@ def build_competition_status(config, payload):
     status = infer_payload_status(fallback_reuse_count, quality)
 
     return {
+        'schemaVersion': payload.get('schemaVersion'),
+        'generatedAt': payload.get('generatedAt'),
+        'lastAttemptAt': payload.get('lastAttemptAt'),
+        'lastSuccessAt': payload.get('lastSuccessAt'),
+        'lastChangedAt': payload.get('lastChangedAt'),
+        'lastPublishedAt': payload.get('lastPublishedAt'),
         'status': status,
-        'lastUpdatedAt': payload.get('lastUpdatedAt'),
+        'lastUpdatedAt': payload.get('lastPublishedAt') or payload.get('lastUpdatedAt'),
         'fallbackReuseCount': fallback_reuse_count,
         'matchesWithoutScore': quality.get('matchesWithoutScore', 0),
         'pastMatchesWithoutScore': quality.get('pastMatchesWithoutScore', 0),
@@ -56,6 +62,12 @@ def build_status_payload():
         payload = load_payload(ROOT / config.output_file)
         if not isinstance(payload, dict):
             competitions[config.key] = {
+                'schemaVersion': None,
+                'generatedAt': None,
+                'lastAttemptAt': None,
+                'lastSuccessAt': None,
+                'lastChangedAt': None,
+                'lastPublishedAt': None,
                 'status': 'missing',
                 'lastUpdatedAt': None,
                 'fallbackReuseCount': 0,

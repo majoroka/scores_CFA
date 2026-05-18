@@ -35,12 +35,23 @@ class BuildCalendarTests(unittest.TestCase):
 
     def test_build_calendar_entries_assigns_status_and_metadata(self):
         payload = {
+            'schemaVersion': 2,
+            'generatedAt': '2026-05-08T18:18:11Z',
+            'lastAttemptAt': '2026-05-08T18:00:00Z',
+            'lastSuccessAt': '2026-05-08T18:10:00Z',
+            'lastChangedAt': '2026-05-08T18:15:00Z',
+            'lastPublishedAt': '2026-05-08T18:18:11Z',
             'lastUpdatedAt': '2026-05-08T18:18:11Z',
             'sourceHealth': {'status': 'ok', 'fallbackReuseCount': 0},
             'rounds': [
                 {
                     'index': 9,
                     'fixtureId': '12345',
+                    'lastAttemptAt': '2026-05-08T18:00:00Z',
+                    'lastSuccessAt': '2026-05-08T18:10:00Z',
+                    'lastChangedAt': '2026-05-08T18:15:00Z',
+                    'sourceStatus': 'ok',
+                    'sourceIssue': None,
                     'matches': [
                         {
                             'home': 'Casa FC',
@@ -50,6 +61,10 @@ class BuildCalendarTests(unittest.TestCase):
                             'stadium': 'Campo A',
                             'homeScore': 5,
                             'awayScore': 2,
+                            'scoreSource': 'fpf',
+                            'calendarSource': 'fpf',
+                            'lastChangedAt': '2026-05-08T18:15:00Z',
+                            'changeFlags': ['score_changed'],
                         },
                         {
                             'home': 'Casa B',
@@ -88,6 +103,9 @@ class BuildCalendarTests(unittest.TestCase):
         self.assertEqual(finished['displayDate'], '3 mai')
         self.assertEqual(finished['competitionKey'], 'example-key')
         self.assertEqual(finished['competitionUrl'], 'example.html#resultados-j9')
+        self.assertEqual(finished['lastAttemptAt'], '2026-05-08T18:00:00Z')
+        self.assertEqual(finished['lastSuccessAt'], '2026-05-08T18:10:00Z')
+        self.assertEqual(finished['lastChangedAt'], '2026-05-08T18:15:00Z')
 
     def test_build_calendar_entries_accepts_multiple_club_team_names(self):
         config = CompetitionConfig(

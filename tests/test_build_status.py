@@ -7,6 +7,12 @@ from competition_configs import SENIORES
 class BuildStatusTests(unittest.TestCase):
     def test_build_competition_status_uses_payload_quality(self):
         payload = {
+            'schemaVersion': 2,
+            'generatedAt': '2026-05-10T21:12:00Z',
+            'lastAttemptAt': '2026-05-10T21:10:00Z',
+            'lastSuccessAt': '2026-05-10T21:11:00Z',
+            'lastChangedAt': '2026-05-10T21:11:30Z',
+            'lastPublishedAt': '2026-05-10T21:11:55Z',
             'lastUpdatedAt': '2026-05-10T21:11:55Z',
             'sourceHealth': {
                 'status': 'partial',
@@ -25,6 +31,12 @@ class BuildStatusTests(unittest.TestCase):
             'rounds': [],
         }
         status = build_competition_status(SENIORES, payload)
+        self.assertEqual(status['schemaVersion'], 2)
+        self.assertEqual(status['generatedAt'], '2026-05-10T21:12:00Z')
+        self.assertEqual(status['lastAttemptAt'], '2026-05-10T21:10:00Z')
+        self.assertEqual(status['lastSuccessAt'], '2026-05-10T21:11:00Z')
+        self.assertEqual(status['lastChangedAt'], '2026-05-10T21:11:30Z')
+        self.assertEqual(status['lastPublishedAt'], '2026-05-10T21:11:55Z')
         self.assertEqual(status['status'], 'partial')
         self.assertEqual(status['fallbackReuseCount'], 0)
         self.assertEqual(status['matchesWithoutScore'], 2)
