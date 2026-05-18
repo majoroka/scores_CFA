@@ -18,6 +18,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
+  RETRY_FOLLOWUP_ENABLED: "false"
   RESULT_PUBLISH_DELAY_MINUTES: "110"
   RESULT_CHASE_SHORT_RETRY_MINUTES: "15"
   RESULT_CHASE_SHORT_WINDOW_MINUTES: "60"
@@ -47,11 +48,14 @@ env:
 jobs:
   retry_followup:
     if: >
-      github.event_name == 'workflow_dispatch' ||
+      env.RETRY_FOLLOWUP_ENABLED == 'true' &&
       (
-        github.event.workflow_run.conclusion == 'success' &&
-        github.event.workflow_run.head_branch == 'main' &&
-        github.event.workflow_run.actor.login != 'github-actions[bot]'
+        github.event_name == 'workflow_dispatch' ||
+        (
+          github.event.workflow_run.conclusion == 'success' &&
+          github.event.workflow_run.head_branch == 'main' &&
+          github.event.workflow_run.actor.login != 'github-actions[bot]'
+        )
       )
     runs-on: ubuntu-latest
     outputs:
