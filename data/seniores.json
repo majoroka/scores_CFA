@@ -1,34 +1,31 @@
 {
     "schemaVersion": 2,
-    "generatedAt": "2026-05-18T19:20:53Z",
-    "lastAttemptAt": "2026-05-18T19:17:08Z",
-    "lastSuccessAt": null,
-    "lastChangedAt": null,
-    "lastPublishedAt": "2026-05-18T19:20:53Z",
+    "generatedAt": "2026-05-18T19:56:21Z",
+    "lastAttemptAt": "2026-05-18T19:56:06Z",
+    "lastSuccessAt": "2026-05-18T14:34:55Z",
+    "lastChangedAt": "2026-05-18T14:34:55Z",
+    "lastPublishedAt": "2026-05-18T19:56:21Z",
     "defaultRoundIndex": 7,
     "defaultRoundNumber": 8,
-    "lastUpdatedAt": "2026-05-18T19:20:53Z",
+    "lastUpdatedAt": "2026-05-18T19:56:21Z",
     "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 2,
-        "issues": [
-            "fixture 645299: fallback to existing round",
-            "fixture 645300: fallback to existing round"
-        ]
+        "status": "partial",
+        "fallbackReuseCount": 0,
+        "issues": []
     },
     "dataQuality": {
         "roundCount": 10,
         "matchCount": 30,
         "classificationCount": 60,
         "teamCount": 6,
-        "completedMatchCount": 21,
-        "matchesWithoutScore": 9,
+        "completedMatchCount": 23,
+        "matchesWithoutScore": 7,
         "pastMatchCount": 24,
-        "pastMatchesWithoutScore": 3,
+        "pastMatchesWithoutScore": 1,
         "futureMatchCount": 6,
         "roundsWithMatches": 10,
         "roundsWithClassification": 10,
-        "roundsWithCompletedMatches": 7,
+        "roundsWithCompletedMatches": 8,
         "roundsWithoutData": 0
     },
     "rounds": [
@@ -144,10 +141,10 @@
                     "points": 16
                 }
             ],
-            "lastAttemptAt": null,
-            "lastSuccessAt": null,
+            "lastAttemptAt": "2026-05-18T19:56:07Z",
+            "lastSuccessAt": "2026-05-18T19:56:07Z",
             "lastChangedAt": null,
-            "sourceStatus": "unknown",
+            "sourceStatus": "ok",
             "sourceIssue": null
         },
         {
@@ -262,10 +259,10 @@
                     "points": 17
                 }
             ],
-            "lastAttemptAt": null,
-            "lastSuccessAt": null,
+            "lastAttemptAt": "2026-05-18T19:56:08Z",
+            "lastSuccessAt": "2026-05-18T19:56:08Z",
             "lastChangedAt": null,
-            "sourceStatus": "unknown",
+            "sourceStatus": "ok",
             "sourceIssue": null
         },
         {
@@ -380,10 +377,10 @@
                     "points": 17
                 }
             ],
-            "lastAttemptAt": null,
-            "lastSuccessAt": null,
+            "lastAttemptAt": "2026-05-18T19:56:09Z",
+            "lastSuccessAt": "2026-05-18T19:56:09Z",
             "lastChangedAt": null,
-            "sourceStatus": "unknown",
+            "sourceStatus": "ok",
             "sourceIssue": null
         },
         {
@@ -498,10 +495,10 @@
                     "points": 17
                 }
             ],
-            "lastAttemptAt": null,
-            "lastSuccessAt": null,
+            "lastAttemptAt": "2026-05-18T19:56:11Z",
+            "lastSuccessAt": "2026-05-18T19:56:11Z",
             "lastChangedAt": null,
-            "sourceStatus": "unknown",
+            "sourceStatus": "ok",
             "sourceIssue": null
         },
         {
@@ -616,10 +613,10 @@
                     "points": 17
                 }
             ],
-            "lastAttemptAt": null,
-            "lastSuccessAt": null,
+            "lastAttemptAt": "2026-05-18T19:56:12Z",
+            "lastSuccessAt": "2026-05-18T19:56:12Z",
             "lastChangedAt": null,
-            "sourceStatus": "unknown",
+            "sourceStatus": "ok",
             "sourceIssue": null
         },
         {
@@ -734,10 +731,10 @@
                     "points": 18
                 }
             ],
-            "lastAttemptAt": null,
-            "lastSuccessAt": null,
+            "lastAttemptAt": "2026-05-18T19:56:14Z",
+            "lastSuccessAt": "2026-05-18T19:56:14Z",
             "lastChangedAt": null,
-            "sourceStatus": "unknown",
+            "sourceStatus": "ok",
             "sourceIssue": null
         },
         {
@@ -852,10 +849,10 @@
                     "points": 18
                 }
             ],
-            "lastAttemptAt": null,
-            "lastSuccessAt": null,
+            "lastAttemptAt": "2026-05-18T19:56:15Z",
+            "lastSuccessAt": "2026-05-18T19:56:15Z",
             "lastChangedAt": null,
-            "sourceStatus": "unknown",
+            "sourceStatus": "ok",
             "sourceIssue": null
         },
         {
@@ -863,16 +860,29 @@
             "fixtureId": "645299",
             "matches": [
                 {
+                    "home": "Cd Odiáxere",
+                    "away": "Fc Os 11 Esperanças",
+                    "date": "6 - 4                            \r\n                \r\n                    16 mai",
+                    "time": "",
+                    "stadium": "Campo Eiras",
+                    "homeScore": 6,
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-18T14:35:07Z",
+                    "changeFlags": []
+                },
+                {
                     "home": "Louletano Dc",
                     "away": "Clube U Culatrense",
-                    "date": "16 mai",
-                    "time": "17:00",
+                    "date": "2 - 2                            \r\n                \r\n                    16 mai",
+                    "time": "",
                     "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": null,
-                    "awayScore": null,
-                    "scoreSource": null,
+                    "homeScore": 2,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": null,
+                    "lastChangedAt": "2026-05-18T14:35:07Z",
                     "changeFlags": []
                 },
                 {
@@ -885,20 +895,7 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": null,
-                    "changeFlags": []
-                },
-                {
-                    "home": "Cd Odiáxere",
-                    "away": "Fc Os 11 Esperanças",
-                    "date": "16 mai",
-                    "time": "17:00",
-                    "stadium": "Campo Eiras",
-                    "homeScore": null,
-                    "awayScore": null,
-                    "scoreSource": null,
-                    "calendarSource": "fpf",
-                    "lastChangedAt": null,
+                    "lastChangedAt": "2026-05-18T14:35:07Z",
                     "changeFlags": []
                 }
             ],
@@ -906,13 +903,13 @@
                 {
                     "position": 1,
                     "team": "Cd Odiáxere",
-                    "played": 7,
-                    "wins": 5,
+                    "played": 8,
+                    "wins": 6,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 17,
-                    "goalsAgainst": 10,
-                    "points": 38
+                    "goalsFor": 23,
+                    "goalsAgainst": 14,
+                    "points": 41
                 },
                 {
                     "position": 2,
@@ -928,23 +925,23 @@
                 {
                     "position": 3,
                     "team": "Louletano Dc",
-                    "played": 7,
+                    "played": 8,
                     "wins": 2,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 4,
-                    "goalsFor": 9,
-                    "goalsAgainst": 10,
-                    "points": 34
+                    "goalsFor": 11,
+                    "goalsAgainst": 12,
+                    "points": 35
                 },
                 {
                     "position": 4,
                     "team": "Fc Os 11 Esperanças",
-                    "played": 7,
+                    "played": 8,
                     "wins": 4,
                     "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 10,
-                    "goalsAgainst": 6,
+                    "losses": 2,
+                    "goalsFor": 14,
+                    "goalsAgainst": 12,
                     "points": 29
                 },
                 {
@@ -961,25 +958,38 @@
                 {
                     "position": 6,
                     "team": "Clube U Culatrense",
-                    "played": 7,
+                    "played": 8,
                     "wins": 0,
-                    "draws": 3,
+                    "draws": 4,
                     "losses": 4,
-                    "goalsFor": 9,
-                    "goalsAgainst": 15,
-                    "points": 18
+                    "goalsFor": 11,
+                    "goalsAgainst": 17,
+                    "points": 19
                 }
             ],
-            "lastAttemptAt": "2026-05-18T19:17:08Z",
-            "lastSuccessAt": null,
-            "lastChangedAt": null,
-            "sourceStatus": "fallback_reused",
-            "sourceIssue": "http_403"
+            "lastAttemptAt": "2026-05-18T19:56:17Z",
+            "lastSuccessAt": "2026-05-18T19:56:17Z",
+            "lastChangedAt": "2026-05-18T14:35:07Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 9,
             "fixtureId": "645300",
             "matches": [
+                {
+                    "home": "Cd Odiáxere",
+                    "away": "Clube U Culatrense",
+                    "date": "23 mai",
+                    "time": "16:00",
+                    "stadium": "Campo Eiras",
+                    "homeScore": null,
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-18T14:35:08Z",
+                    "changeFlags": []
+                },
                 {
                     "home": "Cf Os Armacenenses",
                     "away": "Louletano Dc",
@@ -990,7 +1000,7 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": null,
+                    "lastChangedAt": "2026-05-18T14:35:08Z",
                     "changeFlags": []
                 },
                 {
@@ -1003,20 +1013,7 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": null,
-                    "changeFlags": []
-                },
-                {
-                    "home": "Cd Odiáxere",
-                    "away": "Clube U Culatrense",
-                    "date": "23 mai",
-                    "time": "17:00",
-                    "stadium": "Campo Eiras",
-                    "homeScore": null,
-                    "awayScore": null,
-                    "scoreSource": null,
-                    "calendarSource": "fpf",
-                    "lastChangedAt": null,
+                    "lastChangedAt": "2026-05-18T14:35:08Z",
                     "changeFlags": []
                 }
             ],
@@ -1024,13 +1021,13 @@
                 {
                     "position": 1,
                     "team": "Cd Odiáxere",
-                    "played": 7,
-                    "wins": 5,
+                    "played": 8,
+                    "wins": 6,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 17,
-                    "goalsAgainst": 10,
-                    "points": 38
+                    "goalsFor": 23,
+                    "goalsAgainst": 14,
+                    "points": 41
                 },
                 {
                     "position": 2,
@@ -1046,23 +1043,23 @@
                 {
                     "position": 3,
                     "team": "Louletano Dc",
-                    "played": 7,
+                    "played": 8,
                     "wins": 2,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 4,
-                    "goalsFor": 9,
-                    "goalsAgainst": 10,
-                    "points": 34
+                    "goalsFor": 11,
+                    "goalsAgainst": 12,
+                    "points": 35
                 },
                 {
                     "position": 4,
                     "team": "Fc Os 11 Esperanças",
-                    "played": 7,
+                    "played": 8,
                     "wins": 4,
                     "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 10,
-                    "goalsAgainst": 6,
+                    "losses": 2,
+                    "goalsFor": 14,
+                    "goalsAgainst": 12,
                     "points": 29
                 },
                 {
@@ -1079,20 +1076,20 @@
                 {
                     "position": 6,
                     "team": "Clube U Culatrense",
-                    "played": 7,
+                    "played": 8,
                     "wins": 0,
-                    "draws": 3,
+                    "draws": 4,
                     "losses": 4,
-                    "goalsFor": 9,
-                    "goalsAgainst": 15,
-                    "points": 18
+                    "goalsFor": 11,
+                    "goalsAgainst": 17,
+                    "points": 19
                 }
             ],
-            "lastAttemptAt": "2026-05-18T19:18:38Z",
-            "lastSuccessAt": null,
-            "lastChangedAt": null,
-            "sourceStatus": "fallback_reused",
-            "sourceIssue": "http_403"
+            "lastAttemptAt": "2026-05-18T19:56:18Z",
+            "lastSuccessAt": "2026-05-18T19:56:18Z",
+            "lastChangedAt": "2026-05-18T14:35:08Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 10,
@@ -1108,7 +1105,7 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": null,
+                    "lastChangedAt": "2026-05-18T14:35:09Z",
                     "changeFlags": []
                 },
                 {
@@ -1121,7 +1118,7 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": null,
+                    "lastChangedAt": "2026-05-18T14:35:09Z",
                     "changeFlags": []
                 },
                 {
@@ -1134,7 +1131,7 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": null,
+                    "lastChangedAt": "2026-05-18T14:35:09Z",
                     "changeFlags": []
                 }
             ],
@@ -1142,13 +1139,13 @@
                 {
                     "position": 1,
                     "team": "Cd Odiáxere",
-                    "played": 7,
-                    "wins": 5,
+                    "played": 8,
+                    "wins": 6,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 17,
-                    "goalsAgainst": 10,
-                    "points": 38
+                    "goalsFor": 23,
+                    "goalsAgainst": 14,
+                    "points": 41
                 },
                 {
                     "position": 2,
@@ -1164,23 +1161,23 @@
                 {
                     "position": 3,
                     "team": "Louletano Dc",
-                    "played": 7,
+                    "played": 8,
                     "wins": 2,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 4,
-                    "goalsFor": 9,
-                    "goalsAgainst": 10,
-                    "points": 34
+                    "goalsFor": 11,
+                    "goalsAgainst": 12,
+                    "points": 35
                 },
                 {
                     "position": 4,
                     "team": "Fc Os 11 Esperanças",
-                    "played": 7,
+                    "played": 8,
                     "wins": 4,
                     "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 10,
-                    "goalsAgainst": 6,
+                    "losses": 2,
+                    "goalsFor": 14,
+                    "goalsAgainst": 12,
                     "points": 29
                 },
                 {
@@ -1197,19 +1194,19 @@
                 {
                     "position": 6,
                     "team": "Clube U Culatrense",
-                    "played": 7,
+                    "played": 8,
                     "wins": 0,
-                    "draws": 3,
+                    "draws": 4,
                     "losses": 4,
-                    "goalsFor": 9,
-                    "goalsAgainst": 15,
-                    "points": 18
+                    "goalsFor": 11,
+                    "goalsAgainst": 17,
+                    "points": 19
                 }
             ],
-            "lastAttemptAt": null,
-            "lastSuccessAt": null,
-            "lastChangedAt": null,
-            "sourceStatus": "unknown",
+            "lastAttemptAt": "2026-05-18T19:56:20Z",
+            "lastSuccessAt": "2026-05-18T19:56:20Z",
+            "lastChangedAt": "2026-05-18T14:35:09Z",
+            "sourceStatus": "ok",
             "sourceIssue": null
         }
     ]
