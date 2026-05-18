@@ -64,6 +64,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Restaurar memória técnica do scraping
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            cache/fetch_state.json
+            cache/sync_metadata
+          key: fetch-state-${{ runner.os }}-main-${{ github.run_id }}
+          restore-keys: |
+            fetch-state-${{ runner.os }}-main-
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -269,6 +279,15 @@ jobs:
             cache/fetch_state.json
             cache/sync_metadata/**
             cache/errors/**
+
+      - name: Persistir memória técnica do scraping
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            cache/fetch_state.json
+            cache/sync_metadata
+          key: fetch-state-${{ runner.os }}-main-${{ github.run_id }}
 
       - name: Atualizar manifesto de emblemas (opcional)
         run: |

@@ -65,6 +65,16 @@ jobs:
           ref: main
           fetch-depth: 0
 
+      - name: Restaurar memória técnica do scraping
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            cache/fetch_state.json
+            cache/sync_metadata
+          key: fetch-state-${{ runner.os }}-main-${{ github.run_id }}
+          restore-keys: |
+            fetch-state-${{ runner.os }}-main-
+
       - name: Sincronizar com o último main publicado
         run: |
           git fetch origin main
@@ -371,6 +381,15 @@ jobs:
             cache/fetch_state.json
             cache/sync_metadata/**
             cache/errors/**
+
+      - name: Persistir memória técnica do scraping
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            cache/fetch_state.json
+            cache/sync_metadata
+          key: fetch-state-${{ runner.os }}-main-${{ github.run_id }}
 
       - name: Atualizar manifesto de emblemas (opcional)
         run: |
