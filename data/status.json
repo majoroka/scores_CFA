@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-05-18T21:07:12Z",
+  "generatedAt": "2026-05-18T22:38:09Z",
   "competitionCount": 15,
   "statusCounts": {
     "ok": 4,
-    "partial": 11,
-    "degraded": 0,
+    "partial": 10,
+    "degraded": 1,
     "missing": 0
   },
   "competitions": {
     "seniores": {
       "schemaVersion": 2,
-      "generatedAt": "2026-05-18T19:56:21Z",
-      "lastAttemptAt": "2026-05-18T19:56:06Z",
-      "lastSuccessAt": "2026-05-18T14:34:55Z",
-      "lastChangedAt": "2026-05-18T14:34:55Z",
-      "lastPublishedAt": "2026-05-18T19:56:21Z",
-      "status": "partial",
-      "lastUpdatedAt": "2026-05-18T19:56:21Z",
-      "fallbackReuseCount": 0,
+      "generatedAt": "2026-05-18T22:38:08Z",
+      "lastAttemptAt": "2026-05-18T22:34:23Z",
+      "lastSuccessAt": null,
+      "lastChangedAt": null,
+      "lastPublishedAt": "2026-05-18T22:38:08Z",
+      "status": "degraded",
+      "lastUpdatedAt": "2026-05-18T22:38:08Z",
+      "fallbackReuseCount": 2,
       "matchesWithoutScore": 7,
       "pastMatchesWithoutScore": 1,
       "matchCount": 30,
@@ -25,7 +25,10 @@
       "roundCount": 10,
       "teamCount": 6,
       "roundsWithCompletedMatches": 8,
-      "issues": [],
+      "issues": [
+        "fixture 645299: fallback to existing round",
+        "fixture 645300: fallback to existing round"
+      ],
       "title": "Seniores",
       "subtitle": "Liga 1 Algarve Futebol (2ª Fase - Manutenção/Descida)",
       "pagePath": "seniores.html",
