@@ -22,7 +22,7 @@ class FetchPlannerTests(unittest.TestCase):
 
     def test_selects_today_pending_matches(self):
         payload = {
-            "lastUpdatedAt": "2026-05-10T08:00:00Z",
+            "lastAttemptAt": "2026-05-10T08:00:00Z",
             "rounds": [
                 {
                     "index": 1,
@@ -40,7 +40,7 @@ class FetchPlannerTests(unittest.TestCase):
 
     def test_selects_yesterday_pending_matches_as_active(self):
         payload = {
-            "lastUpdatedAt": "2026-05-10T00:00:00Z",
+            "lastAttemptAt": "2026-05-10T00:00:00Z",
             "rounds": [
                 {
                     "index": 1,
@@ -53,13 +53,12 @@ class FetchPlannerTests(unittest.TestCase):
         with patch("plan_fetchers.load_payload", return_value=payload):
             result = analyze_competition(self.config, self.now)
         self.assertTrue(result["should_fetch"])
-        self.assertEqual(result["state"], "recent_historical_backfill")
-        self.assertEqual(result["historical_pending_count"], 1)
-        self.assertEqual(result["recent_historical_pending_count"], 1)
+        self.assertEqual(result["state"], "result_chase")
+        self.assertEqual(result["active_pending_count"], 1)
 
-    def test_skips_today_matches_outside_prematch_window(self):
+    def test_same_day_future_match_uses_calendar_watch_matchday(self):
         payload = {
-            "lastUpdatedAt": "2026-05-10T08:00:00Z",
+            "lastAttemptAt": "2026-05-10T10:30:00+01:00",
             "rounds": [
                 {
                     "index": 1,
@@ -72,13 +71,13 @@ class FetchPlannerTests(unittest.TestCase):
         with patch("plan_fetchers.load_payload", return_value=payload):
             result = analyze_competition(self.config, self.now)
         self.assertFalse(result["should_fetch"])
-        self.assertEqual(result["state"], "schedule_refresh")
+        self.assertEqual(result["state"], "calendar_watch_matchday")
         self.assertFalse(result["due_now"])
         self.assertIsNotNone(result["next_recommended_fetch_at"])
 
-    def test_same_day_future_match_enters_schedule_refresh_when_calendar_check_is_due(self):
+    def test_same_day_future_match_enters_calendar_watch_when_check_is_due(self):
         payload = {
-            "lastUpdatedAt": "2026-05-10T00:00:00+01:00",
+            "lastAttemptAt": "2026-05-10T00:00:00+01:00",
             "rounds": [
                 {
                     "index": 1,
@@ -91,31 +90,48 @@ class FetchPlannerTests(unittest.TestCase):
         with patch("plan_fetchers.load_payload", return_value=payload):
             result = analyze_competition(self.config, self.now)
         self.assertTrue(result["should_fetch"])
-        self.assertEqual(result["state"], "schedule_refresh")
+        self.assertEqual(result["state"], "calendar_watch_matchday")
         self.assertTrue(result["due_now"])
         self.assertEqual(result["future_schedule_refresh_count"], 1)
 
-    def test_tomorrow_match_enters_schedule_refresh_when_within_lookahead(self):
+    def test_future_match_within_week_enters_calendar_watch_near(self):
         payload = {
-            "lastUpdatedAt": "2026-05-10T00:00:00+01:00",
+            "lastAttemptAt": "2026-05-10T00:00:00+01:00",
             "rounds": [
                 {
                     "index": 1,
                     "matches": [
-                        {"date": "11 mai", "time": "10:00", "homeScore": None, "awayScore": None},
+                        {"date": "14 mai", "time": "10:00", "homeScore": None, "awayScore": None},
                     ],
                 }
             ]
         }
         with patch("plan_fetchers.load_payload", return_value=payload):
             result = analyze_competition(self.config, self.now)
-        self.assertTrue(result["should_fetch"])
-        self.assertEqual(result["state"], "schedule_refresh")
+        self.assertFalse(result["should_fetch"])
+        self.assertEqual(result["state"], "calendar_watch_near")
         self.assertEqual(result["future_schedule_refresh_count"], 1)
+
+    def test_future_match_beyond_week_enters_calendar_watch_far(self):
+        payload = {
+            "lastAttemptAt": "2026-05-10T00:00:00+01:00",
+            "rounds": [
+                {
+                    "index": 1,
+                    "matches": [
+                        {"date": "20 mai", "time": "10:00", "homeScore": None, "awayScore": None},
+                    ],
+                }
+            ]
+        }
+        with patch("plan_fetchers.load_payload", return_value=payload):
+            result = analyze_competition(self.config, self.now)
+        self.assertFalse(result["should_fetch"])
+        self.assertEqual(result["state"], "calendar_watch_far")
 
     def test_selects_historical_backfill(self):
         payload = {
-            "lastUpdatedAt": "2026-05-10T00:00:00Z",
+            "lastAttemptAt": "2026-05-10T00:00:00Z",
             "rounds": [
                 {
                     "index": 1,
@@ -133,12 +149,12 @@ class FetchPlannerTests(unittest.TestCase):
 
     def test_recent_historical_backfill_waits_shorter_than_default_historical(self):
         payload = {
-            "lastUpdatedAt": "2026-05-10T10:30:00+01:00",
+            "lastAttemptAt": "2026-05-10T10:30:00+01:00",
             "rounds": [
                 {
                     "index": 1,
                     "matches": [
-                        {"date": "9 mai", "time": "16:00", "homeScore": None, "awayScore": None},
+                        {"date": "8 mai", "time": "16:00", "homeScore": None, "awayScore": None},
                     ],
                 }
             ]
@@ -146,12 +162,12 @@ class FetchPlannerTests(unittest.TestCase):
         with patch("plan_fetchers.load_payload", return_value=payload):
             result = analyze_competition(self.config, self.now)
         self.assertFalse(result["should_fetch"])
-        self.assertEqual(result["state"], "recent_historical_backfill")
+        self.assertEqual(result["state"], "result_chase")
         self.assertEqual(result["next_recommended_fetch_at"], "2026-05-10T12:30:00+01:00")
 
     def test_ignores_historical_backfill_outside_window(self):
         payload = {
-            "lastUpdatedAt": "2026-05-10T00:00:00Z",
+            "lastAttemptAt": "2026-05-10T00:00:00Z",
             "rounds": [
                 {
                     "index": 1,
@@ -194,7 +210,7 @@ class FetchPlannerTests(unittest.TestCase):
         self.assertEqual(plan["mode"], "idle")
         self.assertEqual(plan["selected_fetchers"], [])
 
-    def test_build_plan_prefers_active_pending_mode(self):
+    def test_build_plan_prefers_result_chase_mode(self):
         analyses = [
             {
                 "competition_key": "infantis-a",
@@ -235,9 +251,9 @@ class FetchPlannerTests(unittest.TestCase):
                 "pending_today_count": 1,
                 "pending_historical_count": 0,
                 "next_scheduled_kickoff": "2026-05-10T09:00:00+01:00",
-                "first_result_fetch_at": "2026-05-10T11:00:00+01:00",
+                "first_result_fetch_at": "2026-05-10T10:50:00+01:00",
                 "last_meaningful_fetch_at": "2026-05-10T10:00:00+01:00",
-                "next_recommended_fetch_at": "2026-05-10T11:00:00+01:00",
+                "next_recommended_fetch_at": "2026-05-10T11:05:00+01:00",
                 "reasons": ["active"],
             },
         ]

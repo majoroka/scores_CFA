@@ -18,17 +18,25 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  RESULT_PUBLISH_DELAY_HOURS: "2"
-  RESULT_CHASE_RETRY_MINUTES: "15"
-  RESULT_CHASE_SHORT_WAVES: "4"
+  RESULT_PUBLISH_DELAY_MINUTES: "110"
+  RESULT_CHASE_SHORT_RETRY_MINUTES: "15"
+  RESULT_CHASE_SHORT_WINDOW_MINUTES: "60"
+  RESULT_CHASE_MEDIUM_RETRY_MINUTES: "30"
+  RESULT_CHASE_MEDIUM_WINDOW_HOURS: "6"
+  RESULT_CHASE_LONG_RETRY_HOURS: "2"
+  RESULT_CHASE_LONG_WINDOW_HOURS: "48"
   HISTORICAL_LOOKBACK_DAYS: "14"
   RECENT_HISTORICAL_WINDOW_DAYS: "2"
   RECENT_HISTORICAL_RETRY_HOURS: "2"
   HISTORICAL_RETRY_HOURS: "6"
-  SCHEDULE_REFRESH_LOOKAHEAD_DAYS: "3"
-  SCHEDULE_REFRESH_NEAR_HOURS: "24"
-  SCHEDULE_REFRESH_NEAR_CADENCE_HOURS: "6"
-  SCHEDULE_REFRESH_FAR_CADENCE_HOURS: "12"
+  CALENDAR_WATCH_LOOKAHEAD_DAYS: "14"
+  CALENDAR_WATCH_MATCHDAY_HOURS: "24"
+  CALENDAR_WATCH_NEAR_DAYS: "7"
+  CALENDAR_WATCH_FAR_DAYS: "14"
+  CALENDAR_WATCH_MATCHDAY_CADENCE_HOURS: "2"
+  CALENDAR_WATCH_CLOSE_CADENCE_HOURS: "6"
+  CALENDAR_WATCH_NEAR_CADENCE_HOURS: "12"
+  CALENDAR_WATCH_FAR_CADENCE_HOURS: "24"
   TECHNICAL_BACKOFF_MINUTES: "10,20,40"
   FOLLOWUP_MAX_MINUTES: "180"
   FOLLOWUP_MAX_ATTEMPTS: "1"
@@ -88,7 +96,7 @@ jobs:
           retry_selected = [
               item["fetcher"]
               for item in plan.get("competitions", [])
-              if item.get("state") in {"awaiting_window", "schedule_refresh", "result_chase", "recent_historical_backfill", "historical_backfill", "missing_payload"}
+              if item.get("state") in {"calendar_watch_matchday", "calendar_watch_near", "calendar_watch_far", "result_chase", "recent_historical_backfill", "historical_backfill", "missing_payload"}
           ]
 
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as handle:
@@ -109,12 +117,22 @@ jobs:
               "",
               f"- Modo: {plan['mode']}",
               f"- Fetchers selecionados: {plan['selected_count']}",
+              f"- Delay após jogo (min): {plan['result_publish_delay_minutes']}",
+              f"- Retry curto (min): {plan['result_chase_short_retry_minutes']}",
+              f"- Janela curta (min): {plan['result_chase_short_window_minutes']}",
+              f"- Retry intermédio (min): {plan['result_chase_medium_retry_minutes']}",
+              f"- Janela intermédia (h): {plan['result_chase_medium_window_hours']}",
+              f"- Retry longo (h): {plan['result_chase_long_retry_hours']}",
+              f"- Janela longa (h): {plan['result_chase_long_window_hours']}",
               f"- Histórico recente (dias): {plan['recent_historical_window_days']}",
               f"- Retry histórico recente (h): {plan['recent_historical_retry_hours']}",
               f"- Retry histórico (h): {plan['historical_retry_hours']}",
-              f"- Janela de vigilância de calendário (dias): {plan['schedule_refresh_lookahead_days']}",
-              f"- Refresh calendário até {plan['schedule_refresh_near_hours']}h (h): {plan['schedule_refresh_near_cadence_hours']}",
-              f"- Refresh calendário além disso (h): {plan['schedule_refresh_far_cadence_hours']}",
+              f"- Janela de vigilância de calendário (dias): {plan['calendar_watch_lookahead_days']}",
+              f"- Matchday watch até (h): {plan['calendar_watch_matchday_hours']}",
+              f"- Matchday cadence (h): {plan['calendar_watch_matchday_cadence_hours']}",
+              f"- Close watch cadence (h): {plan['calendar_watch_close_cadence_hours']}",
+              f"- Near watch cadence (h): {plan['calendar_watch_near_cadence_hours']}",
+              f"- Far watch cadence (h): {plan['calendar_watch_far_cadence_hours']}",
               f"- Próximo fetch global: {plan.get('next_global_fetch_at') or '-'}",
               "",
               "| Competição | Fetcher | Estado | Deve correr agora | Pendente hoje | Futuros vigiados | Histórico pendente | Próximo fetch recomendado |",
@@ -164,7 +182,7 @@ jobs:
               return [
                   item
                   for item in current_plan.get("competitions", [])
-                  if item.get("state") in {"awaiting_window", "schedule_refresh", "result_chase", "recent_historical_backfill", "historical_backfill", "missing_payload"}
+                  if item.get("state") in {"calendar_watch_matchday", "calendar_watch_near", "calendar_watch_far", "result_chase", "recent_historical_backfill", "historical_backfill", "missing_payload"}
               ]
 
           def retryable_fetchers(current_plan):
