@@ -1,10 +1,35 @@
 {
-    "defaultRoundIndex": 6,
-    "defaultRoundNumber": 7,
-    "lastUpdatedAt": "2026-05-10T10:44:10Z",
+    "schemaVersion": 2,
+    "generatedAt": "2026-05-18T19:20:53Z",
+    "lastAttemptAt": "2026-05-18T19:17:08Z",
+    "lastSuccessAt": null,
+    "lastChangedAt": null,
+    "lastPublishedAt": "2026-05-18T19:20:53Z",
+    "defaultRoundIndex": 7,
+    "defaultRoundNumber": 8,
+    "lastUpdatedAt": "2026-05-18T19:20:53Z",
     "sourceHealth": {
-        "status": "ok",
-        "fallbackReuseCount": 0
+        "status": "degraded",
+        "fallbackReuseCount": 2,
+        "issues": [
+            "fixture 645299: fallback to existing round",
+            "fixture 645300: fallback to existing round"
+        ]
+    },
+    "dataQuality": {
+        "roundCount": 10,
+        "matchCount": 30,
+        "classificationCount": 60,
+        "teamCount": 6,
+        "completedMatchCount": 21,
+        "matchesWithoutScore": 9,
+        "pastMatchCount": 24,
+        "pastMatchesWithoutScore": 3,
+        "futureMatchCount": 6,
+        "roundsWithMatches": 10,
+        "roundsWithClassification": 10,
+        "roundsWithCompletedMatches": 7,
+        "roundsWithoutData": 0
     },
     "rounds": [
         {
@@ -18,7 +43,11 @@
                     "time": "",
                     "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": 1,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Clube U Culatrense",
@@ -27,7 +56,11 @@
                     "time": "",
                     "stadium": "Campo Horta Da Areia",
                     "homeScore": 2,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -36,7 +69,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 2,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -106,7 +143,12 @@
                     "goalsAgainst": 2,
                     "points": 16
                 }
-            ]
+            ],
+            "lastAttemptAt": null,
+            "lastSuccessAt": null,
+            "lastChangedAt": null,
+            "sourceStatus": "unknown",
+            "sourceIssue": null
         },
         {
             "index": 2,
@@ -119,7 +161,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Messines",
                     "homeScore": 1,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cd Odiáxere",
@@ -128,7 +174,11 @@
                     "time": "",
                     "stadium": "Campo Eiras",
                     "homeScore": 1,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Os 11 Esperanças",
@@ -137,7 +187,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 2,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -207,7 +261,12 @@
                     "goalsAgainst": 4,
                     "points": 17
                 }
-            ]
+            ],
+            "lastAttemptAt": null,
+            "lastSuccessAt": null,
+            "lastChangedAt": null,
+            "sourceStatus": "unknown",
+            "sourceIssue": null
         },
         {
             "index": 3,
@@ -220,7 +279,11 @@
                     "time": "",
                     "stadium": "Campo Horta Da Areia",
                     "homeScore": 0,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -229,7 +292,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 1,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Os 11 Esperanças",
@@ -238,7 +305,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 1,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -308,7 +379,12 @@
                     "goalsAgainst": 7,
                     "points": 17
                 }
-            ]
+            ],
+            "lastAttemptAt": null,
+            "lastSuccessAt": null,
+            "lastChangedAt": null,
+            "sourceStatus": "unknown",
+            "sourceIssue": null
         },
         {
             "index": 4,
@@ -321,7 +397,11 @@
                     "time": "",
                     "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": 0,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Clube U Culatrense",
@@ -330,7 +410,11 @@
                     "time": "",
                     "stadium": "Campo Horta Da Areia",
                     "homeScore": 2,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Ud Messinense",
@@ -339,7 +423,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Messines",
                     "homeScore": 0,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -409,7 +497,12 @@
                     "goalsAgainst": 10,
                     "points": 17
                 }
-            ]
+            ],
+            "lastAttemptAt": null,
+            "lastSuccessAt": null,
+            "lastChangedAt": null,
+            "sourceStatus": "unknown",
+            "sourceIssue": null
         },
         {
             "index": 5,
@@ -422,7 +515,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 1,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cd Odiáxere",
@@ -431,7 +528,11 @@
                     "time": "",
                     "stadium": "Campo Eiras",
                     "homeScore": 4,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -440,7 +541,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 2,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -510,7 +615,12 @@
                     "goalsAgainst": 12,
                     "points": 17
                 }
-            ]
+            ],
+            "lastAttemptAt": null,
+            "lastSuccessAt": null,
+            "lastChangedAt": null,
+            "sourceStatus": "unknown",
+            "sourceIssue": null
         },
         {
             "index": 6,
@@ -523,7 +633,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 1,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Ud Messinense",
@@ -532,7 +646,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Messines",
                     "homeScore": 2,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cd Odiáxere",
@@ -541,7 +659,11 @@
                     "time": "",
                     "stadium": "Campo Eiras",
                     "homeScore": 0,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -611,7 +733,12 @@
                     "goalsAgainst": 14,
                     "points": 18
                 }
-            ]
+            ],
+            "lastAttemptAt": null,
+            "lastSuccessAt": null,
+            "lastChangedAt": null,
+            "sourceStatus": "unknown",
+            "sourceIssue": null
         },
         {
             "index": 7,
@@ -624,7 +751,11 @@
                     "time": "",
                     "stadium": "Campo Horta Da Areia",
                     "homeScore": 0,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -633,7 +764,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 0,
-                    "awayScore": 4
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Louletano Dc",
@@ -642,7 +777,11 @@
                     "time": "",
                     "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": 2,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -712,7 +851,12 @@
                     "goalsAgainst": 15,
                     "points": 18
                 }
-            ]
+            ],
+            "lastAttemptAt": null,
+            "lastSuccessAt": null,
+            "lastChangedAt": null,
+            "sourceStatus": "unknown",
+            "sourceIssue": null
         },
         {
             "index": 8,
@@ -725,7 +869,11 @@
                     "time": "17:00",
                     "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Ud Messinense",
@@ -734,7 +882,11 @@
                     "time": "17:00",
                     "stadium": "Estádio Municipal Messines",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cd Odiáxere",
@@ -743,7 +895,11 @@
                     "time": "17:00",
                     "stadium": "Campo Eiras",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -813,7 +969,12 @@
                     "goalsAgainst": 15,
                     "points": 18
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-18T19:17:08Z",
+            "lastSuccessAt": null,
+            "lastChangedAt": null,
+            "sourceStatus": "fallback_reused",
+            "sourceIssue": "http_403"
         },
         {
             "index": 9,
@@ -826,7 +987,11 @@
                     "time": "17:00",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Os 11 Esperanças",
@@ -835,7 +1000,11 @@
                     "time": "17:00",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cd Odiáxere",
@@ -844,7 +1013,11 @@
                     "time": "17:00",
                     "stadium": "Campo Eiras",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -914,7 +1087,12 @@
                     "goalsAgainst": 15,
                     "points": 18
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-18T19:18:38Z",
+            "lastSuccessAt": null,
+            "lastChangedAt": null,
+            "sourceStatus": "fallback_reused",
+            "sourceIssue": "http_403"
         },
         {
             "index": 10,
@@ -927,7 +1105,11 @@
                     "time": "17:00",
                     "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Clube U Culatrense",
@@ -936,7 +1118,11 @@
                     "time": "17:00",
                     "stadium": "Campo Horta Da Areia",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Ud Messinense",
@@ -945,7 +1131,11 @@
                     "time": "17:00",
                     "stadium": "Estádio Municipal Messines",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1015,7 +1205,12 @@
                     "goalsAgainst": 15,
                     "points": 18
                 }
-            ]
+            ],
+            "lastAttemptAt": null,
+            "lastSuccessAt": null,
+            "lastChangedAt": null,
+            "sourceStatus": "unknown",
+            "sourceIssue": null
         }
     ]
 }
