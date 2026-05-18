@@ -80,7 +80,7 @@ Microsite estático que agrega resultados, classificações e calendários das e
 
 ## Scripts auxiliares
 
-- `fetch_fpf.py`: wrapper da competição `seniores`.
+- `fetch_seniores.py`: wrapper da competição `seniores`.
 - `generate_crest_manifest.py`: cria o mapa normalizado entre nomes de clubes e emblemas.
 - `competition_sync.py`: contém o parser partilhado e a lógica comum de sincronização das competições.
 - `tools/probe_fixture.py`: descarrega o HTML bruto de um fixture da FPF para análise e guarda em `cache/`.

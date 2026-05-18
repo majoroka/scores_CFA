@@ -40,7 +40,7 @@ TECHNICAL_BACKOFF_MINUTES = tuple(
 )
 
 FETCHER_BY_KEY = {
-    "seniores": "fetch_fpf.py",
+    "seniores": "fetch_seniores.py",
     "juniores": "fetch_juniores.py",
     "juvenis": "fetch_juvenis.py",
     "iniciados-a": "fetch_iniciados_a.py",

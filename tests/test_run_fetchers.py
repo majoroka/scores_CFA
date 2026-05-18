@@ -72,7 +72,7 @@ class RunFetchersTests(unittest.TestCase):
             plan_path.write_text(json.dumps({
                 "competitions": [
                     {
-                        "fetcher": "fetch_fpf.py",
+                        "fetcher": "fetch_seniores.py",
                         "fixture_ids_to_refresh": ["645299", "645300"],
                         "allow_full_discovery": False,
                     }
@@ -81,7 +81,7 @@ class RunFetchersTests(unittest.TestCase):
             with patch("run_fetchers.PLAN_PATH", plan_path):
                 selections = load_plan_selections()
         self.assertEqual(
-            selections["fetch_fpf.py"],
+            selections["fetch_seniores.py"],
             {
                 "fixture_ids_to_refresh": ["645299", "645300"],
                 "allow_full_discovery": False,
