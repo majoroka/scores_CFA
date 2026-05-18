@@ -76,6 +76,63 @@ Isto indica que o sistema precisa de distinguir:
 
 Sem essa cadeia explícita, a operação parece saudável sem entregar valor ao utilizador.
 
+## Estado de execução atual
+
+### Blocos já concluídos
+
+- Fase 1 / Bloco A — Observabilidade técnica
+- Fase 2 / Bloco B — Relatório estruturado por fixture
+- Fase 3 / Bloco C — Uniformização do schema publicado
+- Fase 4 / Bloco D — Separação real de `calendar_watch` e `result_chase`
+
+### Blocos ainda pendentes
+
+- Bloco E — Planner com memória técnica
+- Bloco F — Gates reais nos workflows
+- Bloco G — Frontend e transparência
+- Bloco H — Robustez do parser
+- Bloco I — Testes operacionais
+
+### Investigação dirigida em curso
+
+Antes de avançar para o Bloco E, há uma investigação operacional obrigatória em dois casos de referência:
+
+- `seniores`
+- `infantis-b`
+
+O que já ficou provado:
+
+1. o Pages está a servir JSON stale nestas duas competições;
+2. a FPF já tem dados mais frescos;
+3. os fetchers locais conseguem gerar JSON novo;
+4. em pelo menos um `Sync data` verde real, os fetchers foram executados mas classificados como `unchanged`;
+5. o commit automático desse run alterou agregados, não os JSON dessas competições.
+
+Isto desloca o foco atual para:
+
+- deteção de mudança útil;
+- persistência do round atualizado;
+- decisão de commit/publicação;
+
+e afasta, para estes casos:
+
+- frontend;
+- deploy do Pages;
+- impossibilidade de acesso HTTP;
+- incapacidade base do parser nessas duas competições.
+
+## Checkpoint obrigatório antes do Bloco E
+
+O sistema deve conseguir responder, para `seniores` e `infantis-b`, a estas perguntas sem ambiguidade:
+
+1. a origem mudou?
+2. o fetch correu?
+3. o parser detetou a mudança?
+4. o JSON final da competição mudou?
+5. o Pages publicou essa mudança?
+
+Enquanto esta cadeia não estiver fechada, avançar para o Bloco E só tornaria mais sofisticado um processo que ainda não garante publicação útil.
+
 ## Princípios de arquitetura
 
 1. `data/<competição>.json` continua a ser a fonte principal da app.

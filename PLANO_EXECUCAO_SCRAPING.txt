@@ -18,6 +18,79 @@ ESTADO ATUAL RESUMIDO
 - várias competições continuam com lastUpdatedAt antigo;
 - portanto, o problema principal está no scraping/sincronização, não no deploy nem no frontend.
 
+ESTADO DE EXECUCAO ATUAL
+- Bloco A: concluído
+- Bloco B: concluído
+- Bloco C: concluído
+- Bloco D: concluído
+- Bloco E: pendente
+- Bloco F: pendente
+- Bloco G: pendente
+- Bloco H: pendente
+- Bloco I: pendente
+
+INVESTIGACAO DIRIGIDA ATUAL
+Casos de referência:
+- seniores
+- infantis-b
+
+Factos já provados:
+1. a app/Pages está a servir JSON stale nestas duas competições;
+2. a origem FPF já tem dados mais frescos;
+3. os fetchers locais conseguem gerar JSON novo;
+4. num run verde real, os fetchers foram executados mas ficaram classificados como `unchanged`;
+5. o commit automático desse run alterou essencialmente agregados, não os JSON destas competições.
+
+Conclusão provisória:
+- o bloqueio atual está entre:
+  - deteção de mudança útil;
+  - persistência do payload atualizado;
+  - decisão de commit/publicação;
+- não está no frontend;
+- não está no deploy final do Pages;
+- e, para estes 2 casos, não está no parser base nem no acesso HTTP real à FPF.
+
+CHECKLIST OPERACIONAL ATUAL
+Objetivo imediato:
+- fechar a causa exata de `source fresco -> fetch executa -> workflow decide unchanged -> Pages continua stale`
+
+Passos em curso antes do Bloco E:
+1. Confirmar em cada run dirigido:
+   - `source_changed`
+   - `parsed_changed`
+   - `published_changed`
+2. Guardar como artifact obrigatório:
+   - `cache/fetch_plan.json`
+   - `cache/fetch_report.json`
+   - `cache/sync_metadata/*.json`
+   - `cache/errors/**`
+   - snapshots HTML de fixtures corridos
+3. Verificar por fixture:
+   - se a origem mudou;
+   - se o parser detetou a mudança;
+   - se o round final mudou;
+   - se o ficheiro final mudou no `git diff`;
+   - se o commit automático incluiu essa mudança
+4. Falhar ou degradar explicitamente o run quando:
+   - `source_changed = true`
+   - e `published_changed = false`
+5. Só depois avançar para Bloco E
+
+CRITERIO DE SAIDA DA INVESTIGACAO ATUAL
+Para `seniores` e `infantis-b`, um run deve permitir responder sem ambiguidade:
+1. a origem mudou?
+2. o fetch ocorreu?
+3. o parser captou a mudança?
+4. o JSON da competição mudou?
+5. o Pages publicou essa mudança?
+
+Quando estes 5 pontos estiverem claros, retomamos a sequência:
+1. Bloco E
+2. Bloco F
+3. Bloco G
+4. Bloco H
+5. Bloco I
+
 ORDEM DE EXECUCAO RECOMENDADA
 
 BLOCO A — OBSERVABILIDADE TECNICA
@@ -138,6 +211,11 @@ Critério de conclusão do Bloco D:
 - mudanças de hora/data/local entram na app antes do jogo com boa probabilidade;
 - result_chase deixa de depender da mesma lógica de calendar watch.
 
+Estado:
+- concluído no código;
+- ainda não suficiente para garantir publicação de dados frescos em todas as competições;
+- a investigação dirigida acima continua a ser obrigatória antes de seguir para a memória técnica do Bloco E.
+
 
 BLOCO E — PLANNER COM MEMORIA TECNICA
 Prioridade: alta
@@ -153,6 +231,10 @@ Tarefas:
 Critério de conclusão do Bloco E:
 - uma competição bloqueada não arrasta o resto;
 - o follow-up deixa de insistir cegamente.
+
+Pré-condição para avançar:
+- fechar a investigação dirigida de `seniores` e `infantis-b`;
+- confirmar onde se perde a alteração útil antes da publicação.
 
 
 BLOCO F — GATES REAIS NOS WORKFLOWS
@@ -237,13 +319,15 @@ Critério de conclusão do Bloco I:
 
 
 PRIMEIRO BLOCO A EXECUTAR AGORA
-Executar já:
-1. FetchResult
-2. fetch_state.json
-3. relatório por fixture
+Executar agora:
+1. investigação dirigida `seniores` + `infantis-b`
+2. fechar o ponto exato onde `changed` se perde
+3. só depois retomar pelo Bloco E
 
 Razão:
-- sem isto, continuamos sem visibilidade suficiente para atacar o problema real.
+- A-D já deram observabilidade suficiente;
+- o problema atual já não é falta de telemetria mínima;
+- é preciso usar a telemetria para localizar o bloqueio real antes de continuar a sofisticar o planner.
 
 
 SINAIS DE SUCESSO A OBSERVAR
