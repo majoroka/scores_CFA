@@ -1,30 +1,27 @@
 {
     "schemaVersion": 2,
-    "generatedAt": "2026-05-19T12:44:57Z",
-    "lastAttemptAt": "2026-05-19T12:41:12Z",
-    "lastSuccessAt": "2026-05-19T08:59:21Z",
-    "lastChangedAt": "2026-05-19T08:59:21Z",
-    "lastPublishedAt": "2026-05-19T12:44:57Z",
+    "generatedAt": "2026-05-19T13:39:06Z",
+    "lastAttemptAt": "2026-05-19T13:38:51Z",
+    "lastSuccessAt": "2026-05-18T19:56:06Z",
+    "lastChangedAt": "2026-05-18T19:56:06Z",
+    "lastPublishedAt": "2026-05-19T13:39:06Z",
     "defaultRoundIndex": 7,
     "defaultRoundNumber": 8,
-    "lastUpdatedAt": "2026-05-19T12:44:57Z",
+    "lastUpdatedAt": "2026-05-19T13:39:06Z",
     "sourceHealth": {
-        "status": "degraded",
-        "fallbackReuseCount": 2,
-        "issues": [
-            "fixture 645299: fallback to existing round",
-            "fixture 645300: fallback to existing round"
-        ]
+        "status": "ok",
+        "fallbackReuseCount": 0,
+        "issues": []
     },
     "dataQuality": {
         "roundCount": 10,
         "matchCount": 30,
         "classificationCount": 60,
         "teamCount": 6,
-        "completedMatchCount": 23,
-        "matchesWithoutScore": 7,
+        "completedMatchCount": 24,
+        "matchesWithoutScore": 6,
         "pastMatchCount": 24,
-        "pastMatchesWithoutScore": 1,
+        "pastMatchesWithoutScore": 0,
         "futureMatchCount": 6,
         "roundsWithMatches": 10,
         "roundsWithClassification": 10,
@@ -144,10 +141,10 @@
                     "points": 16
                 }
             ],
-            "lastAttemptAt": null,
-            "lastSuccessAt": null,
+            "lastAttemptAt": "2026-05-19T13:38:52Z",
+            "lastSuccessAt": "2026-05-19T13:38:52Z",
             "lastChangedAt": null,
-            "sourceStatus": "unknown",
+            "sourceStatus": "ok",
             "sourceIssue": null
         },
         {
@@ -262,10 +259,10 @@
                     "points": 17
                 }
             ],
-            "lastAttemptAt": null,
-            "lastSuccessAt": null,
+            "lastAttemptAt": "2026-05-19T13:38:53Z",
+            "lastSuccessAt": "2026-05-19T13:38:53Z",
             "lastChangedAt": null,
-            "sourceStatus": "unknown",
+            "sourceStatus": "ok",
             "sourceIssue": null
         },
         {
@@ -380,10 +377,10 @@
                     "points": 17
                 }
             ],
-            "lastAttemptAt": null,
-            "lastSuccessAt": null,
+            "lastAttemptAt": "2026-05-19T13:38:54Z",
+            "lastSuccessAt": "2026-05-19T13:38:54Z",
             "lastChangedAt": null,
-            "sourceStatus": "unknown",
+            "sourceStatus": "ok",
             "sourceIssue": null
         },
         {
@@ -498,10 +495,10 @@
                     "points": 17
                 }
             ],
-            "lastAttemptAt": null,
-            "lastSuccessAt": null,
+            "lastAttemptAt": "2026-05-19T13:38:56Z",
+            "lastSuccessAt": "2026-05-19T13:38:56Z",
             "lastChangedAt": null,
-            "sourceStatus": "unknown",
+            "sourceStatus": "ok",
             "sourceIssue": null
         },
         {
@@ -616,10 +613,10 @@
                     "points": 17
                 }
             ],
-            "lastAttemptAt": null,
-            "lastSuccessAt": null,
+            "lastAttemptAt": "2026-05-19T13:38:58Z",
+            "lastSuccessAt": "2026-05-19T13:38:58Z",
             "lastChangedAt": null,
-            "sourceStatus": "unknown",
+            "sourceStatus": "ok",
             "sourceIssue": null
         },
         {
@@ -734,10 +731,10 @@
                     "points": 18
                 }
             ],
-            "lastAttemptAt": null,
-            "lastSuccessAt": null,
+            "lastAttemptAt": "2026-05-19T13:38:59Z",
+            "lastSuccessAt": "2026-05-19T13:38:59Z",
             "lastChangedAt": null,
-            "sourceStatus": "unknown",
+            "sourceStatus": "ok",
             "sourceIssue": null
         },
         {
@@ -852,10 +849,10 @@
                     "points": 18
                 }
             ],
-            "lastAttemptAt": null,
-            "lastSuccessAt": null,
+            "lastAttemptAt": "2026-05-19T13:39:00Z",
+            "lastSuccessAt": "2026-05-19T13:39:00Z",
             "lastChangedAt": null,
-            "sourceStatus": "unknown",
+            "sourceStatus": "ok",
             "sourceIssue": null
         },
         {
@@ -872,7 +869,7 @@
                     "awayScore": 4,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-18T14:35:07Z",
+                    "lastChangedAt": "2026-05-19T13:39:02Z",
                     "changeFlags": []
                 },
                 {
@@ -885,21 +882,25 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-18T14:35:07Z",
+                    "lastChangedAt": "2026-05-19T13:39:02Z",
                     "changeFlags": []
                 },
                 {
                     "home": "Ud Messinense",
                     "away": "Cf Os Armacenenses",
-                    "date": "16 mai",
-                    "time": "17:00",
+                    "date": "1 - 1                            \r\n                \r\n                    16 mai",
+                    "time": "",
                     "stadium": "Estádio Municipal Messines",
-                    "homeScore": null,
-                    "awayScore": null,
-                    "scoreSource": null,
+                    "homeScore": 1,
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-18T14:35:07Z",
-                    "changeFlags": []
+                    "lastChangedAt": "2026-05-19T13:39:02Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 }
             ],
             "classification": [
@@ -917,13 +918,13 @@
                 {
                     "position": 2,
                     "team": "Cf Os Armacenenses",
-                    "played": 7,
+                    "played": 8,
                     "wins": 4,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 2,
-                    "goalsFor": 9,
-                    "goalsAgainst": 9,
-                    "points": 35
+                    "goalsFor": 10,
+                    "goalsAgainst": 10,
+                    "points": 36
                 },
                 {
                     "position": 3,
@@ -950,13 +951,13 @@
                 {
                     "position": 5,
                     "team": "Ud Messinense",
-                    "played": 7,
+                    "played": 8,
                     "wins": 1,
-                    "draws": 3,
+                    "draws": 4,
                     "losses": 3,
-                    "goalsFor": 10,
-                    "goalsAgainst": 14,
-                    "points": 26
+                    "goalsFor": 11,
+                    "goalsAgainst": 15,
+                    "points": 27
                 },
                 {
                     "position": 6,
@@ -970,11 +971,11 @@
                     "points": 19
                 }
             ],
-            "lastAttemptAt": "2026-05-19T12:41:12Z",
-            "lastSuccessAt": null,
-            "lastChangedAt": null,
-            "sourceStatus": "fallback_reused",
-            "sourceIssue": "http_403"
+            "lastAttemptAt": "2026-05-19T13:39:02Z",
+            "lastSuccessAt": "2026-05-19T13:39:02Z",
+            "lastChangedAt": "2026-05-19T13:39:02Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 9,
@@ -990,7 +991,7 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-18T14:35:08Z",
+                    "lastChangedAt": "2026-05-19T13:39:03Z",
                     "changeFlags": []
                 },
                 {
@@ -1003,7 +1004,7 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-18T14:35:08Z",
+                    "lastChangedAt": "2026-05-19T13:39:03Z",
                     "changeFlags": []
                 },
                 {
@@ -1016,7 +1017,7 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-18T14:35:08Z",
+                    "lastChangedAt": "2026-05-19T13:39:03Z",
                     "changeFlags": []
                 }
             ],
@@ -1035,13 +1036,13 @@
                 {
                     "position": 2,
                     "team": "Cf Os Armacenenses",
-                    "played": 7,
+                    "played": 8,
                     "wins": 4,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 2,
-                    "goalsFor": 9,
-                    "goalsAgainst": 9,
-                    "points": 35
+                    "goalsFor": 10,
+                    "goalsAgainst": 10,
+                    "points": 36
                 },
                 {
                     "position": 3,
@@ -1068,13 +1069,13 @@
                 {
                     "position": 5,
                     "team": "Ud Messinense",
-                    "played": 7,
+                    "played": 8,
                     "wins": 1,
-                    "draws": 3,
+                    "draws": 4,
                     "losses": 3,
-                    "goalsFor": 10,
-                    "goalsAgainst": 14,
-                    "points": 26
+                    "goalsFor": 11,
+                    "goalsAgainst": 15,
+                    "points": 27
                 },
                 {
                     "position": 6,
@@ -1088,11 +1089,11 @@
                     "points": 19
                 }
             ],
-            "lastAttemptAt": "2026-05-19T12:42:42Z",
-            "lastSuccessAt": null,
-            "lastChangedAt": null,
-            "sourceStatus": "fallback_reused",
-            "sourceIssue": "http_403"
+            "lastAttemptAt": "2026-05-19T13:39:03Z",
+            "lastSuccessAt": "2026-05-19T13:39:03Z",
+            "lastChangedAt": "2026-05-19T13:39:03Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 10,
@@ -1108,7 +1109,7 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-18T14:35:09Z",
+                    "lastChangedAt": "2026-05-19T13:39:04Z",
                     "changeFlags": []
                 },
                 {
@@ -1121,7 +1122,7 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-18T14:35:09Z",
+                    "lastChangedAt": "2026-05-19T13:39:04Z",
                     "changeFlags": []
                 },
                 {
@@ -1134,7 +1135,7 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-18T14:35:09Z",
+                    "lastChangedAt": "2026-05-19T13:39:04Z",
                     "changeFlags": []
                 }
             ],
@@ -1153,13 +1154,13 @@
                 {
                     "position": 2,
                     "team": "Cf Os Armacenenses",
-                    "played": 7,
+                    "played": 8,
                     "wins": 4,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 2,
-                    "goalsFor": 9,
-                    "goalsAgainst": 9,
-                    "points": 35
+                    "goalsFor": 10,
+                    "goalsAgainst": 10,
+                    "points": 36
                 },
                 {
                     "position": 3,
@@ -1186,13 +1187,13 @@
                 {
                     "position": 5,
                     "team": "Ud Messinense",
-                    "played": 7,
+                    "played": 8,
                     "wins": 1,
-                    "draws": 3,
+                    "draws": 4,
                     "losses": 3,
-                    "goalsFor": 10,
-                    "goalsAgainst": 14,
-                    "points": 26
+                    "goalsFor": 11,
+                    "goalsAgainst": 15,
+                    "points": 27
                 },
                 {
                     "position": 6,
@@ -1206,10 +1207,10 @@
                     "points": 19
                 }
             ],
-            "lastAttemptAt": null,
-            "lastSuccessAt": null,
-            "lastChangedAt": null,
-            "sourceStatus": "unknown",
+            "lastAttemptAt": "2026-05-19T13:39:04Z",
+            "lastSuccessAt": "2026-05-19T13:39:04Z",
+            "lastChangedAt": "2026-05-19T13:39:04Z",
+            "sourceStatus": "ok",
             "sourceIssue": null
         }
     ]
