@@ -1,9 +1,15 @@
 {
-    "defaultRoundIndex": 15,
-    "defaultRoundNumber": 16,
-    "lastUpdatedAt": "2026-05-11T17:11:20Z",
+    "schemaVersion": 2,
+    "generatedAt": "2026-05-19T13:46:15Z",
+    "lastAttemptAt": "2026-05-19T13:45:50Z",
+    "lastSuccessAt": "2026-05-18T14:35:11Z",
+    "lastChangedAt": "2026-05-18T14:35:11Z",
+    "lastPublishedAt": "2026-05-19T13:46:15Z",
+    "defaultRoundIndex": 16,
+    "defaultRoundNumber": 17,
+    "lastUpdatedAt": "2026-05-19T13:46:15Z",
     "sourceHealth": {
-        "status": "ok",
+        "status": "partial",
         "fallbackReuseCount": 0,
         "issues": []
     },
@@ -12,14 +18,14 @@
         "matchCount": 90,
         "classificationCount": 180,
         "teamCount": 10,
-        "completedMatchCount": 79,
-        "matchesWithoutScore": 11,
-        "pastMatchCount": 79,
-        "pastMatchesWithoutScore": 0,
-        "futureMatchCount": 11,
+        "completedMatchCount": 82,
+        "matchesWithoutScore": 8,
+        "pastMatchCount": 84,
+        "pastMatchesWithoutScore": 2,
+        "futureMatchCount": 6,
         "roundsWithMatches": 18,
         "roundsWithClassification": 18,
-        "roundsWithCompletedMatches": 16,
+        "roundsWithCompletedMatches": 17,
         "roundsWithoutData": 0
     },
     "rounds": [
@@ -34,7 +40,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 13,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Portimonense Sc",
@@ -43,7 +53,11 @@
                     "time": "",
                     "stadium": "Campo Major David Neto 2",
                     "homeScore": 6,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cr Infante Sagres",
@@ -52,7 +66,11 @@
                     "time": "",
                     "stadium": "Complexo Desportivo 1º Maio",
                     "homeScore": 5,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Mexilhoeira Grande Fc",
@@ -61,7 +79,11 @@
                     "time": "",
                     "stadium": "Campo Municipal Mexilhoeira Grande",
                     "homeScore": 6,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Csl Benfica Lagos",
@@ -70,7 +92,11 @@
                     "time": "",
                     "stadium": "Campo Zona Verde",
                     "homeScore": 8,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -184,7 +210,12 @@
                     "goalsAgainst": 13,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:45:50Z",
+            "lastSuccessAt": "2026-05-19T13:45:50Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 2,
@@ -197,7 +228,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 0,
-                    "awayScore": 7
+                    "awayScore": 7,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Aef Monte Gordo 2019",
@@ -206,7 +241,11 @@
                     "time": "",
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": 2,
-                    "awayScore": 9
+                    "awayScore": 9,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Imortal Dc",
@@ -215,7 +254,11 @@
                     "time": "",
                     "stadium": "Campo Da Palmeira Nº 2",
                     "homeScore": 1,
-                    "awayScore": 5
+                    "awayScore": 5,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -224,7 +267,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 0,
-                    "awayScore": 5
+                    "awayScore": 5,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "4 Ao Cubo Ad Olhão",
@@ -233,7 +280,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Olhão",
                     "homeScore": 5,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -347,7 +398,12 @@
                     "goalsAgainst": 22,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:45:51Z",
+            "lastSuccessAt": "2026-05-19T13:45:51Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 3,
@@ -360,7 +416,11 @@
                     "time": "",
                     "stadium": "Campo Major David Neto 2",
                     "homeScore": 0,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "4 Ao Cubo Ad Olhão",
@@ -369,7 +429,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Olhão",
                     "homeScore": 10,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cr Infante Sagres",
@@ -378,7 +442,11 @@
                     "time": "",
                     "stadium": "Complexo Desportivo 1º Maio",
                     "homeScore": 9,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Mexilhoeira Grande Fc",
@@ -387,7 +455,11 @@
                     "time": "",
                     "stadium": "Campo Municipal Mexilhoeira Grande",
                     "homeScore": 5,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Csl Benfica Lagos",
@@ -396,7 +468,11 @@
                     "time": "",
                     "stadium": "Campo Zona Verde",
                     "homeScore": 11,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -510,7 +586,12 @@
                     "goalsAgainst": 33,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:45:53Z",
+            "lastSuccessAt": "2026-05-19T13:45:53Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 4,
@@ -523,7 +604,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 0,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Aef Faro",
@@ -532,7 +617,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 1,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -541,16 +630,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 1,
-                    "awayScore": 8
-                },
-                {
-                    "home": "Aef Monte Gordo 2019",
-                    "away": "Cr Infante Sagres",
-                    "date": "0 - 6                            \r\n                \r\n                    31 jan",
-                    "time": "",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": 0,
-                    "awayScore": 6
+                    "awayScore": 8,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Imortal Dc",
@@ -559,7 +643,24 @@
                     "time": "",
                     "stadium": "Campo Da Palmeira Nº 2",
                     "homeScore": 4,
-                    "awayScore": 5
+                    "awayScore": 5,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Aef Monte Gordo 2019",
+                    "away": "Cr Infante Sagres",
+                    "date": "0 - 6                            \r\n                \r\n                    31 jan",
+                    "time": "",
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
+                    "homeScore": 0,
+                    "awayScore": 6,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -673,21 +774,17 @@
                     "goalsAgainst": 39,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:45:54Z",
+            "lastSuccessAt": "2026-05-19T13:45:54Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 5,
             "fixtureId": "626192",
             "matches": [
-                {
-                    "home": "Csl Benfica Lagos",
-                    "away": "Aef Faro",
-                    "date": "5 - 1                            \r\n                \r\n                    14 fev",
-                    "time": "",
-                    "stadium": "Campo Zona Verde",
-                    "homeScore": 5,
-                    "awayScore": 1
-                },
                 {
                     "home": "Cr Infante Sagres",
                     "away": "Fc Ferreiras",
@@ -695,7 +792,24 @@
                     "time": "",
                     "stadium": "Complexo Desportivo 1º Maio",
                     "homeScore": 10,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Csl Benfica Lagos",
+                    "away": "Aef Faro",
+                    "date": "5 - 1                            \r\n                \r\n                    14 fev",
+                    "time": "",
+                    "stadium": "Campo Zona Verde",
+                    "homeScore": 5,
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "4 Ao Cubo Ad Olhão",
@@ -704,7 +818,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Olhão",
                     "homeScore": 8,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Imortal Dc",
@@ -713,7 +831,11 @@
                     "time": "",
                     "stadium": "Campo Da Palmeira Nº 2",
                     "homeScore": 5,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Portimonense Sc",
@@ -722,7 +844,11 @@
                     "time": "",
                     "stadium": "Campo Major David Neto 2",
                     "homeScore": 2,
-                    "awayScore": 4
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -836,7 +962,12 @@
                     "goalsAgainst": 47,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:45:55Z",
+            "lastSuccessAt": "2026-05-19T13:45:55Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 6,
@@ -849,7 +980,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 0,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -858,7 +993,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 0,
-                    "awayScore": 17
+                    "awayScore": 17,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Mexilhoeira Grande Fc",
@@ -867,16 +1006,11 @@
                     "time": "",
                     "stadium": "Campo Municipal Mexilhoeira Grande",
                     "homeScore": 2,
-                    "awayScore": 2
-                },
-                {
-                    "home": "Aef Faro",
-                    "away": "Cr Infante Sagres",
-                    "date": "6 - 2                            \r\n                \r\n                    21 fev",
-                    "time": "",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": 6,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Aef Monte Gordo 2019",
@@ -885,7 +1019,24 @@
                     "time": "",
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": 1,
-                    "awayScore": 10
+                    "awayScore": 10,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Aef Faro",
+                    "away": "Cr Infante Sagres",
+                    "date": "6 - 2                            \r\n                \r\n                    21 fev",
+                    "time": "",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": 6,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -999,7 +1150,12 @@
                     "goalsAgainst": 57,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:45:57Z",
+            "lastSuccessAt": "2026-05-19T13:45:57Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 7,
@@ -1012,7 +1168,11 @@
                     "time": "",
                     "stadium": "Campo Major David Neto 2",
                     "homeScore": 3,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "4 Ao Cubo Ad Olhão",
@@ -1021,7 +1181,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Olhão",
                     "homeScore": 3,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cr Infante Sagres",
@@ -1030,7 +1194,11 @@
                     "time": "",
                     "stadium": "Complexo Desportivo 1º Maio",
                     "homeScore": 6,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -1039,7 +1207,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 12,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Imortal Dc",
@@ -1048,7 +1220,11 @@
                     "time": "",
                     "stadium": "Campo Da Palmeira Nº 2",
                     "homeScore": 5,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1162,7 +1338,12 @@
                     "goalsAgainst": 69,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:45:58Z",
+            "lastSuccessAt": "2026-05-19T13:45:58Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 8,
@@ -1175,7 +1356,11 @@
                     "time": "",
                     "stadium": "Campo Zona Verde",
                     "homeScore": 6,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -1184,7 +1369,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 2,
-                    "awayScore": 4
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Mexilhoeira Grande Fc",
@@ -1193,7 +1382,11 @@
                     "time": "",
                     "stadium": "Campo Municipal Mexilhoeira Grande",
                     "homeScore": 0,
-                    "awayScore": 8
+                    "awayScore": 8,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Portimonense Sc",
@@ -1202,7 +1395,11 @@
                     "time": "",
                     "stadium": "Campo Major David Neto 2",
                     "homeScore": 12,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Aef Faro",
@@ -1211,7 +1408,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 7,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1325,7 +1526,12 @@
                     "goalsAgainst": 81,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:46:00Z",
+            "lastSuccessAt": "2026-05-19T13:46:00Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 9,
@@ -1338,7 +1544,11 @@
                     "time": "",
                     "stadium": "Campo Da Palmeira Nº 2",
                     "homeScore": 8,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cr Infante Sagres",
@@ -1347,25 +1557,11 @@
                     "time": "",
                     "stadium": "Complexo Desportivo 1º Maio",
                     "homeScore": 5,
-                    "awayScore": 2
-                },
-                {
-                    "home": "Aef Monte Gordo 2019",
-                    "away": "Fc Ferreiras",
-                    "date": "2 - 4                            \r\n                \r\n                    14 mar",
-                    "time": "",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": 2,
-                    "awayScore": 4
-                },
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Aef Faro",
-                    "date": "3 - 2                            \r\n                \r\n                    14 mar",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 3,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "4 Ao Cubo Ad Olhão",
@@ -1374,7 +1570,37 @@
                     "time": "",
                     "stadium": "Estádio Municipal Olhão",
                     "homeScore": 4,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Aef Monte Gordo 2019",
+                    "away": "Fc Ferreiras",
+                    "date": "2 - 4                            \r\n                \r\n                    14 mar",
+                    "time": "",
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
+                    "homeScore": 2,
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Aef Faro",
+                    "date": "3 - 2                            \r\n                \r\n                    14 mar",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 3,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1488,21 +1714,17 @@
                     "goalsAgainst": 85,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:46:02Z",
+            "lastSuccessAt": "2026-05-19T13:46:02Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 10,
             "fixtureId": "626197",
             "matches": [
-                {
-                    "home": "Aef Monte Gordo 2019",
-                    "away": "Aef Faro",
-                    "date": "0 - 16                            \r\n                \r\n                    21 mar",
-                    "time": "",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": 0,
-                    "awayScore": 16
-                },
                 {
                     "home": "Imortal Dc",
                     "away": "Csl Benfica Lagos",
@@ -1510,7 +1732,11 @@
                     "time": "",
                     "stadium": "Campo Da Palmeira Nº 2",
                     "homeScore": 1,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -1519,7 +1745,24 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 0,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Aef Monte Gordo 2019",
+                    "away": "Aef Faro",
+                    "date": "0 - 16                            \r\n                \r\n                    21 mar",
+                    "time": "",
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
+                    "homeScore": 0,
+                    "awayScore": 16,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "4 Ao Cubo Ad Olhão",
@@ -1528,7 +1771,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Olhão",
                     "homeScore": 4,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -1537,7 +1784,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 7,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1651,7 +1902,12 @@
                     "goalsAgainst": 101,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:46:04Z",
+            "lastSuccessAt": "2026-05-19T13:46:04Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 11,
@@ -1664,7 +1920,11 @@
                     "time": "",
                     "stadium": "Campo Major David Neto 2",
                     "homeScore": 1,
-                    "awayScore": 9
+                    "awayScore": 9,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Aef Faro",
@@ -1673,7 +1933,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 17,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Csl Benfica Lagos",
@@ -1682,7 +1946,11 @@
                     "time": "",
                     "stadium": "Campo Zona Verde",
                     "homeScore": 6,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cr Infante Sagres",
@@ -1691,7 +1959,11 @@
                     "time": "",
                     "stadium": "Complexo Desportivo 1º Maio",
                     "homeScore": 6,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Mexilhoeira Grande Fc",
@@ -1700,7 +1972,11 @@
                     "time": "10:30",
                     "stadium": "Campo Municipal Mexilhoeira Grande",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1814,7 +2090,12 @@
                     "goalsAgainst": 101,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:46:05Z",
+            "lastSuccessAt": "2026-05-19T13:46:05Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 12,
@@ -1827,16 +2108,11 @@
                     "time": "",
                     "stadium": "Campo Da Palmeira Nº 2",
                     "homeScore": 4,
-                    "awayScore": 2
-                },
-                {
-                    "home": "Aef Monte Gordo 2019",
-                    "away": "Csl Benfica Lagos",
-                    "date": "0 - 11                            \r\n                \r\n                    11 abr",
-                    "time": "",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": 0,
-                    "awayScore": 11
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -1845,7 +2121,24 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 2,
-                    "awayScore": 6
+                    "awayScore": 6,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Aef Monte Gordo 2019",
+                    "away": "Csl Benfica Lagos",
+                    "date": "0 - 11                            \r\n                \r\n                    11 abr",
+                    "time": "",
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
+                    "homeScore": 0,
+                    "awayScore": 11,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Aef Faro",
@@ -1854,7 +2147,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 5,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -1863,7 +2160,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 2,
-                    "awayScore": 4
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1977,7 +2278,12 @@
                     "goalsAgainst": 112,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:46:06Z",
+            "lastSuccessAt": "2026-05-19T13:46:06Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 13,
@@ -1990,16 +2296,11 @@
                     "time": "",
                     "stadium": "Campo Major David Neto 2",
                     "homeScore": 2,
-                    "awayScore": 2
-                },
-                {
-                    "home": "Mexilhoeira Grande Fc",
-                    "away": "Aef Faro",
-                    "date": "1 - 4                            \r\n                \r\n                    18 abr",
-                    "time": "",
-                    "stadium": "Campo Municipal Mexilhoeira Grande",
-                    "homeScore": 1,
-                    "awayScore": 4
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "4 Ao Cubo Ad Olhão",
@@ -2008,7 +2309,24 @@
                     "time": "",
                     "stadium": "Estádio Municipal Olhão",
                     "homeScore": 8,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Mexilhoeira Grande Fc",
+                    "away": "Aef Faro",
+                    "date": "1 - 4                            \r\n                \r\n                    18 abr",
+                    "time": "",
+                    "stadium": "Campo Municipal Mexilhoeira Grande",
+                    "homeScore": 1,
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Csl Benfica Lagos",
@@ -2017,7 +2335,11 @@
                     "time": "",
                     "stadium": "Campo Zona Verde",
                     "homeScore": 5,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cr Infante Sagres",
@@ -2026,7 +2348,11 @@
                     "time": "",
                     "stadium": "Complexo Desportivo 1º Maio",
                     "homeScore": 11,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -2140,7 +2466,12 @@
                     "goalsAgainst": 123,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:46:08Z",
+            "lastSuccessAt": "2026-05-19T13:46:08Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 14,
@@ -2153,7 +2484,11 @@
                     "time": "",
                     "stadium": "Campo Municipal Mexilhoeira Grande",
                     "homeScore": 2,
-                    "awayScore": 5
+                    "awayScore": 5,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Aef Faro",
@@ -2162,16 +2497,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 0,
-                    "awayScore": 1
-                },
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Imortal Dc",
-                    "date": "2 - 1                            \r\n                \r\n                    25 abr",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 2,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Aef Monte Gordo 2019",
@@ -2180,7 +2510,24 @@
                     "time": "",
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": 0,
-                    "awayScore": 18
+                    "awayScore": 18,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Imortal Dc",
+                    "date": "2 - 1                            \r\n                \r\n                    25 abr",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 2,
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -2189,7 +2536,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 0,
-                    "awayScore": 11
+                    "awayScore": 11,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -2303,7 +2654,12 @@
                     "goalsAgainst": 141,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:46:09Z",
+            "lastSuccessAt": "2026-05-19T13:46:09Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 15,
@@ -2316,7 +2672,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Olhão",
                     "homeScore": 13,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Portimonense Sc",
@@ -2325,7 +2685,11 @@
                     "time": "",
                     "stadium": "Campo Major David Neto 2",
                     "homeScore": 2,
-                    "awayScore": 5
+                    "awayScore": 5,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cr Infante Sagres",
@@ -2334,7 +2698,11 @@
                     "time": "",
                     "stadium": "Complexo Desportivo 1º Maio",
                     "homeScore": 6,
-                    "awayScore": 5
+                    "awayScore": 5,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Csl Benfica Lagos",
@@ -2343,7 +2711,11 @@
                     "time": "",
                     "stadium": "Campo Zona Verde",
                     "homeScore": 6,
-                    "awayScore": 5
+                    "awayScore": 5,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Imortal Dc",
@@ -2352,7 +2724,11 @@
                     "time": "",
                     "stadium": "Campo Da Palmeira Nº 2",
                     "homeScore": 7,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -2466,21 +2842,17 @@
                     "goalsAgainst": 148,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:46:10Z",
+            "lastSuccessAt": "2026-05-19T13:46:10Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 16,
             "fixtureId": "626203",
             "matches": [
-                {
-                    "home": "Csl Benfica Lagos",
-                    "away": "Portimonense Sc",
-                    "date": "4 - 0                            \r\n                \r\n                    9 mai",
-                    "time": "",
-                    "stadium": "Campo Zona Verde",
-                    "homeScore": 4,
-                    "awayScore": 0
-                },
                 {
                     "home": "Aef Faro",
                     "away": "4 Ao Cubo Ad Olhão",
@@ -2488,7 +2860,24 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 0,
-                    "awayScore": 4
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Csl Benfica Lagos",
+                    "away": "Portimonense Sc",
+                    "date": "4 - 0                            \r\n                \r\n                    9 mai",
+                    "time": "",
+                    "stadium": "Campo Zona Verde",
+                    "homeScore": 4,
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Aef Monte Gordo 2019",
@@ -2497,7 +2886,11 @@
                     "time": "",
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": 1,
-                    "awayScore": 8
+                    "awayScore": 8,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -2506,7 +2899,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 0,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Mexilhoeira Grande Fc",
@@ -2515,7 +2912,11 @@
                     "time": "",
                     "stadium": "Campo Municipal Mexilhoeira Grande",
                     "homeScore": 4,
-                    "awayScore": 8
+                    "awayScore": 8,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -2629,61 +3030,114 @@
                     "goalsAgainst": 156,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:46:12Z",
+            "lastSuccessAt": "2026-05-19T13:46:12Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 17,
             "fixtureId": "626204",
             "matches": [
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Fc Ferreiras",
-                    "date": "16 mai",
-                    "time": "09:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
+                    "home": "Imortal Dc",
+                    "away": "Aef Faro",
+                    "date": "11 - 9                            \r\n                \r\n                    16 mai",
+                    "time": "",
+                    "stadium": "Campo Da Palmeira Nº 2",
+                    "homeScore": 11,
+                    "awayScore": 9,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:46:13Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Cr Infante Sagres",
                     "away": "Csl Benfica Lagos",
                     "date": "16 mai",
-                    "time": "09:30",
+                    "time": "11:00",
                     "stadium": "Complexo Desportivo 1º Maio",
                     "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Imortal Dc",
-                    "away": "Aef Faro",
-                    "date": "16 mai",
-                    "time": "10:30",
-                    "stadium": "Campo Da Palmeira Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:46:13Z",
+                    "changeFlags": [
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "4 Ao Cubo Ad Olhão",
                     "away": "Mexilhoeira Grande Fc",
-                    "date": "16 mai",
-                    "time": "12:00",
+                    "date": "10 - 2                            \r\n                \r\n                    16 mai",
+                    "time": "",
                     "stadium": "Estádio Municipal Olhão",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 10,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:46:13Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Aef Monte Gordo 2019",
                     "away": "Portimonense Sc",
-                    "date": "16 mai",
-                    "time": "12:00",
+                    "date": "2 - 2                            \r\n                \r\n                    16 mai",
+                    "time": "",
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
+                    "homeScore": 2,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:46:13Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Fc Ferreiras",
+                    "date": "19 mai",
+                    "time": "19:30",
+                    "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:46:13Z",
+                    "changeFlags": [
+                        "date_changed",
+                        "time_changed"
+                    ]
                 }
             ],
             "classification": [
                 {
                     "position": 1,
+                    "team": "4 Ao Cubo Ad Olhão",
+                    "played": 17,
+                    "wins": 14,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 132,
+                    "goalsAgainst": 21,
+                    "points": 43
+                },
+                {
+                    "position": 2,
                     "team": "Csl Benfica Lagos",
                     "played": 16,
                     "wins": 13,
@@ -2692,17 +3146,6 @@
                     "goalsFor": 80,
                     "goalsAgainst": 21,
                     "points": 41
-                },
-                {
-                    "position": 2,
-                    "team": "4 Ao Cubo Ad Olhão",
-                    "played": 16,
-                    "wins": 13,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 122,
-                    "goalsAgainst": 19,
-                    "points": 40
                 },
                 {
                     "position": 3,
@@ -2718,27 +3161,38 @@
                 {
                     "position": 4,
                     "team": "Aef Faro",
-                    "played": 16,
+                    "played": 17,
                     "wins": 9,
                     "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 88,
-                    "goalsAgainst": 31,
+                    "losses": 7,
+                    "goalsFor": 97,
+                    "goalsAgainst": 42,
                     "points": 28
                 },
                 {
                     "position": 5,
                     "team": "Imortal Dc",
-                    "played": 16,
-                    "wins": 7,
+                    "played": 17,
+                    "wins": 8,
                     "draws": 1,
                     "losses": 8,
-                    "goalsFor": 56,
-                    "goalsAgainst": 57,
-                    "points": 22
+                    "goalsFor": 67,
+                    "goalsAgainst": 66,
+                    "points": 25
                 },
                 {
                     "position": 6,
+                    "team": "Portimonense Sc",
+                    "played": 17,
+                    "wins": 6,
+                    "draws": 3,
+                    "losses": 8,
+                    "goalsFor": 49,
+                    "goalsAgainst": 53,
+                    "points": 21
+                },
+                {
+                    "position": 7,
                     "team": "Cf Os Armacenenses",
                     "played": 16,
                     "wins": 7,
@@ -2749,25 +3203,14 @@
                     "points": 21
                 },
                 {
-                    "position": 7,
-                    "team": "Portimonense Sc",
-                    "played": 16,
-                    "wins": 6,
-                    "draws": 2,
-                    "losses": 8,
-                    "goalsFor": 47,
-                    "goalsAgainst": 51,
-                    "points": 20
-                },
-                {
                     "position": 8,
                     "team": "Mexilhoeira Grande Fc",
-                    "played": 15,
+                    "played": 16,
                     "wins": 6,
                     "draws": 1,
-                    "losses": 8,
-                    "goalsFor": 54,
-                    "goalsAgainst": 65,
+                    "losses": 9,
+                    "goalsFor": 56,
+                    "goalsAgainst": 75,
                     "points": 19
                 },
                 {
@@ -2784,38 +3227,25 @@
                 {
                     "position": 10,
                     "team": "Aef Monte Gordo 2019",
-                    "played": 15,
+                    "played": 16,
                     "wins": 0,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 15,
-                    "goalsFor": 10,
-                    "goalsAgainst": 156,
-                    "points": 0
+                    "goalsFor": 12,
+                    "goalsAgainst": 158,
+                    "points": 1
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:46:13Z",
+            "lastSuccessAt": "2026-05-19T13:46:13Z",
+            "lastChangedAt": "2026-05-19T13:46:13Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 18,
             "fixtureId": "626205",
             "matches": [
-                {
-                    "home": "Fc Ferreiras",
-                    "away": "Aef Monte Gordo 2019",
-                    "date": "23 mai",
-                    "time": "09:00",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Csl Benfica Lagos",
-                    "away": "4 Ao Cubo Ad Olhão",
-                    "date": "23 mai",
-                    "time": "09:00",
-                    "stadium": "Campo Zona Verde",
-                    "homeScore": null,
-                    "awayScore": null
-                },
                 {
                     "home": "Portimonense Sc",
                     "away": "Cr Infante Sagres",
@@ -2823,7 +3253,24 @@
                     "time": "09:00",
                     "stadium": "Campo Major David Neto 2",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:46:14Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Aef Monte Gordo 2019",
+                    "date": "23 mai",
+                    "time": "09:00",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": null,
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:46:14Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Aef Faro",
@@ -2832,7 +3279,11 @@
                     "time": "09:00",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:46:14Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Mexilhoeira Grande Fc",
@@ -2841,12 +3292,40 @@
                     "time": "09:00",
                     "stadium": "Campo Municipal Mexilhoeira Grande",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:46:14Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Csl Benfica Lagos",
+                    "away": "4 Ao Cubo Ad Olhão",
+                    "date": "23 mai",
+                    "time": "09:00",
+                    "stadium": "Campo Zona Verde",
+                    "homeScore": null,
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:46:14Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
                 {
                     "position": 1,
+                    "team": "4 Ao Cubo Ad Olhão",
+                    "played": 17,
+                    "wins": 14,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 132,
+                    "goalsAgainst": 21,
+                    "points": 43
+                },
+                {
+                    "position": 2,
                     "team": "Csl Benfica Lagos",
                     "played": 16,
                     "wins": 13,
@@ -2855,17 +3334,6 @@
                     "goalsFor": 80,
                     "goalsAgainst": 21,
                     "points": 41
-                },
-                {
-                    "position": 2,
-                    "team": "4 Ao Cubo Ad Olhão",
-                    "played": 16,
-                    "wins": 13,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 122,
-                    "goalsAgainst": 19,
-                    "points": 40
                 },
                 {
                     "position": 3,
@@ -2881,27 +3349,38 @@
                 {
                     "position": 4,
                     "team": "Aef Faro",
-                    "played": 16,
+                    "played": 17,
                     "wins": 9,
                     "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 88,
-                    "goalsAgainst": 31,
+                    "losses": 7,
+                    "goalsFor": 97,
+                    "goalsAgainst": 42,
                     "points": 28
                 },
                 {
                     "position": 5,
                     "team": "Imortal Dc",
-                    "played": 16,
-                    "wins": 7,
+                    "played": 17,
+                    "wins": 8,
                     "draws": 1,
                     "losses": 8,
-                    "goalsFor": 56,
-                    "goalsAgainst": 57,
-                    "points": 22
+                    "goalsFor": 67,
+                    "goalsAgainst": 66,
+                    "points": 25
                 },
                 {
                     "position": 6,
+                    "team": "Portimonense Sc",
+                    "played": 17,
+                    "wins": 6,
+                    "draws": 3,
+                    "losses": 8,
+                    "goalsFor": 49,
+                    "goalsAgainst": 53,
+                    "points": 21
+                },
+                {
+                    "position": 7,
                     "team": "Cf Os Armacenenses",
                     "played": 16,
                     "wins": 7,
@@ -2912,25 +3391,14 @@
                     "points": 21
                 },
                 {
-                    "position": 7,
-                    "team": "Portimonense Sc",
-                    "played": 16,
-                    "wins": 6,
-                    "draws": 2,
-                    "losses": 8,
-                    "goalsFor": 47,
-                    "goalsAgainst": 51,
-                    "points": 20
-                },
-                {
                     "position": 8,
                     "team": "Mexilhoeira Grande Fc",
-                    "played": 15,
+                    "played": 16,
                     "wins": 6,
                     "draws": 1,
-                    "losses": 8,
-                    "goalsFor": 54,
-                    "goalsAgainst": 65,
+                    "losses": 9,
+                    "goalsFor": 56,
+                    "goalsAgainst": 75,
                     "points": 19
                 },
                 {
@@ -2947,15 +3415,20 @@
                 {
                     "position": 10,
                     "team": "Aef Monte Gordo 2019",
-                    "played": 15,
+                    "played": 16,
                     "wins": 0,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 15,
-                    "goalsFor": 10,
-                    "goalsAgainst": 156,
-                    "points": 0
+                    "goalsFor": 12,
+                    "goalsAgainst": 158,
+                    "points": 1
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:46:14Z",
+            "lastSuccessAt": "2026-05-19T13:46:14Z",
+            "lastChangedAt": "2026-05-19T13:46:14Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         }
     ]
 }
