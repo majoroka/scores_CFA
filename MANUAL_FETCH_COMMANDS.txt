@@ -1,0 +1,161 @@
+SCRAPING MANUAL POR COMPETICAO
+Repositorio:
+/Users/mariocabano/Documents/GitHub/scores_CFA
+
+Nota:
+- Os workflows automaticos de scraping ficaram desativados.
+- O Deploy site continua a publicar no push.
+- Faz uma competicao de cada vez.
+- Se o push for rejeitado, usa o bloco "Push rejeitado" no fim.
+
+==============================================================================
+SENIORES
+==============================================================================
+cd /Users/mariocabano/Documents/GitHub/scores_CFA
+python3 fetch_seniores.py
+git add data/seniores.json
+git commit -m "chore(data): refresh seniores results"
+git push origin main
+
+==============================================================================
+JUNIORES
+==============================================================================
+cd /Users/mariocabano/Documents/GitHub/scores_CFA
+python3 fetch_juniores.py
+git add data/juniores.json
+git commit -m "chore(data): refresh juniores results"
+git push origin main
+
+==============================================================================
+JUVENIS
+==============================================================================
+cd /Users/mariocabano/Documents/GitHub/scores_CFA
+python3 fetch_juvenis.py
+git add data/juvenis.json
+git commit -m "chore(data): refresh juvenis results"
+git push origin main
+
+==============================================================================
+INICIADOS A
+==============================================================================
+cd /Users/mariocabano/Documents/GitHub/scores_CFA
+python3 fetch_iniciados_a.py
+git add data/iniciados-a.json
+git commit -m "chore(data): refresh iniciados-a results"
+git push origin main
+
+==============================================================================
+INICIADOS B
+==============================================================================
+cd /Users/mariocabano/Documents/GitHub/scores_CFA
+python3 fetch_iniciados_b.py
+git add data/iniciados-b.json
+git commit -m "chore(data): refresh iniciados-b results"
+git push origin main
+
+==============================================================================
+INFANTIS A
+==============================================================================
+cd /Users/mariocabano/Documents/GitHub/scores_CFA
+python3 fetch_infantis_a.py
+git add data/infantis-a.json
+git commit -m "chore(data): refresh infantis-a results"
+git push origin main
+
+==============================================================================
+INFANTIS B
+==============================================================================
+cd /Users/mariocabano/Documents/GitHub/scores_CFA
+python3 fetch_infantis_b.py
+git add data/infantis-b.json
+git commit -m "chore(data): refresh infantis-b results"
+git push origin main
+
+==============================================================================
+INFANTIS C
+==============================================================================
+cd /Users/mariocabano/Documents/GitHub/scores_CFA
+python3 fetch_infantis_c.py
+git add data/infantis-c.json
+git commit -m "chore(data): refresh infantis-c results"
+git push origin main
+
+==============================================================================
+BENJAMINS A1
+==============================================================================
+cd /Users/mariocabano/Documents/GitHub/scores_CFA
+python3 fetch_benjamins_a1.py
+git add data/benjamins-a1.json
+git commit -m "chore(data): refresh benjamins-a1 results"
+git push origin main
+
+==============================================================================
+BENJAMINS A2
+==============================================================================
+cd /Users/mariocabano/Documents/GitHub/scores_CFA
+python3 fetch_benjamins_a2.py
+git add data/benjamins-a2.json
+git commit -m "chore(data): refresh benjamins-a2 results"
+git push origin main
+
+==============================================================================
+BENJAMINS B
+==============================================================================
+cd /Users/mariocabano/Documents/GitHub/scores_CFA
+python3 fetch_benjamins_b.py
+git add data/benjamins-b.json
+git commit -m "chore(data): refresh benjamins-b results"
+git push origin main
+
+==============================================================================
+BENJAMINS BB
+==============================================================================
+cd /Users/mariocabano/Documents/GitHub/scores_CFA
+python3 fetch_benjamins_bb.py
+git add data/benjamins-bb.json
+git commit -m "chore(data): refresh benjamins-bb results"
+git push origin main
+
+==============================================================================
+FEMININO SUB15
+==============================================================================
+cd /Users/mariocabano/Documents/GitHub/scores_CFA
+python3 fetch_feminino_sub15.py
+git add data/feminino-sub15.json
+git commit -m "chore(data): refresh feminino-sub15 results"
+git push origin main
+
+==============================================================================
+FEMININO SUB17
+==============================================================================
+cd /Users/mariocabano/Documents/GitHub/scores_CFA
+python3 fetch_feminino_sub17.py
+git add data/feminino-sub17.json
+git commit -m "chore(data): refresh feminino-sub17 results"
+git push origin main
+
+==============================================================================
+FEMININO SUB19
+==============================================================================
+cd /Users/mariocabano/Documents/GitHub/scores_CFA
+python3 fetch_feminino_sub19.py
+git add data/feminino-sub19.json
+git commit -m "chore(data): refresh feminino-sub19 results"
+git push origin main
+
+==============================================================================
+PUSH REJEITADO
+==============================================================================
+Se o push for rejeitado:
+
+cd /Users/mariocabano/Documents/GitHub/scores_CFA
+git fetch origin
+git pull --rebase origin main
+git push origin main
+
+Se houver conflito no proprio ficheiro da competicao que acabaste de atualizar,
+mantem a tua versao desse ficheiro, faz:
+
+git add <ficheiro-json-da-competicao>
+GIT_EDITOR=true git rebase --continue
+git push origin main
