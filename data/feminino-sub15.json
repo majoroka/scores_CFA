@@ -1,7 +1,13 @@
 {
-    "defaultRoundIndex": 12,
-    "defaultRoundNumber": 13,
-    "lastUpdatedAt": "2026-05-11T14:23:31Z",
+    "schemaVersion": 2,
+    "generatedAt": "2026-05-19T14:00:19Z",
+    "lastAttemptAt": "2026-05-19T13:59:48Z",
+    "lastSuccessAt": null,
+    "lastChangedAt": null,
+    "lastPublishedAt": "2026-05-19T14:00:19Z",
+    "defaultRoundIndex": 13,
+    "defaultRoundNumber": 14,
+    "lastUpdatedAt": "2026-05-19T14:00:19Z",
     "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -12,14 +18,14 @@
         "matchCount": 56,
         "classificationCount": 126,
         "teamCount": 7,
-        "completedMatchCount": 50,
-        "matchesWithoutScore": 6,
-        "pastMatchCount": 53,
-        "pastMatchesWithoutScore": 3,
-        "futureMatchCount": 3,
+        "completedMatchCount": 55,
+        "matchesWithoutScore": 1,
+        "pastMatchCount": 56,
+        "pastMatchesWithoutScore": 1,
+        "futureMatchCount": 0,
         "roundsWithMatches": 14,
         "roundsWithClassification": 14,
-        "roundsWithCompletedMatches": 13,
+        "roundsWithCompletedMatches": 14,
         "roundsWithoutData": 0
     },
     "rounds": [
@@ -34,7 +40,11 @@
                     "time": "",
                     "stadium": "Parque Desportivo Municipal Estombar",
                     "homeScore": 2,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -43,7 +53,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 0,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cdr Quarteirense",
@@ -52,7 +66,11 @@
                     "time": "",
                     "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": 0,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Gd Lagoa",
@@ -61,7 +79,11 @@
                     "time": "",
                     "stadium": "Parque Desportivo Municipal Estombar",
                     "homeScore": 2,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -164,21 +186,17 @@
                     "goalsAgainst": 3,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:59:49Z",
+            "lastSuccessAt": "2026-05-19T13:59:49Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 2,
             "fixtureId": "626067",
             "matches": [
-                {
-                    "home": "Casa Benfica Tavira",
-                    "away": "Aef João Moutinho",
-                    "date": "5 - 0                            \r\n                \r\n                    17 jan",
-                    "time": "",
-                    "stadium": "Campo De Futebol Municipal De Tavira",
-                    "homeScore": 5,
-                    "awayScore": 0
-                },
                 {
                     "home": "Cf Os Armacenenses",
                     "away": "Gd Lagoa",
@@ -186,7 +204,24 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 1,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Casa Benfica Tavira",
+                    "away": "Aef João Moutinho",
+                    "date": "5 - 0                            \r\n                \r\n                    17 jan",
+                    "time": "",
+                    "stadium": "Campo De Futebol Municipal De Tavira",
+                    "homeScore": 5,
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Sc Farense",
@@ -195,7 +230,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 9,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -204,7 +243,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 0,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -307,7 +350,12 @@
                     "goalsAgainst": 12,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:59:50Z",
+            "lastSuccessAt": "2026-05-19T13:59:50Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 3,
@@ -320,7 +368,11 @@
                     "time": "",
                     "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": 1,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -329,7 +381,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 0,
-                    "awayScore": 4
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Aef João Moutinho",
@@ -338,7 +394,11 @@
                     "time": "",
                     "stadium": "Parque Desportivo Municipal Estombar",
                     "homeScore": 1,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Sc Farense",
@@ -347,7 +407,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 1,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -450,7 +514,12 @@
                     "goalsAgainst": 16,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:59:52Z",
+            "lastSuccessAt": "2026-05-19T13:59:52Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 4,
@@ -463,16 +532,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 0,
-                    "awayScore": 2
-                },
-                {
-                    "home": "Gd Lagoa",
-                    "away": "Aef João Moutinho",
-                    "date": "4 - 1                            \r\n                \r\n                    14 fev",
-                    "time": "",
-                    "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": 4,
-                    "awayScore": 1
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Casa Benfica Tavira",
@@ -481,7 +545,24 @@
                     "time": "",
                     "stadium": "Campo De Futebol Municipal De Tavira",
                     "homeScore": 3,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Gd Lagoa",
+                    "away": "Aef João Moutinho",
+                    "date": "4 - 1                            \r\n                \r\n                    14 fev",
+                    "time": "",
+                    "stadium": "Parque Desportivo Municipal Estombar",
+                    "homeScore": 4,
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -490,7 +571,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 1,
-                    "awayScore": 10
+                    "awayScore": 10,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -593,7 +678,12 @@
                     "goalsAgainst": 18,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:59:53Z",
+            "lastSuccessAt": "2026-05-19T13:59:53Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 5,
@@ -606,7 +696,11 @@
                     "time": "",
                     "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": 2,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -615,7 +709,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 1,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -624,7 +722,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 0,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Sc Farense",
@@ -633,7 +735,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 1,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -736,21 +842,17 @@
                     "goalsAgainst": 21,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:59:55Z",
+            "lastSuccessAt": "2026-05-19T13:59:55Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 6,
             "fixtureId": "626071",
             "matches": [
-                {
-                    "home": "Aef João Moutinho",
-                    "away": "Cdr Quarteirense",
-                    "date": "1 - 0                            \r\n                \r\n                    28 fev",
-                    "time": "",
-                    "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": 1,
-                    "awayScore": 0
-                },
                 {
                     "home": "Cf Os Armacenenses",
                     "away": "Fc Ferreiras",
@@ -758,7 +860,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 0,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -767,7 +873,24 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 1,
-                    "awayScore": 5
+                    "awayScore": 5,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Aef João Moutinho",
+                    "away": "Cdr Quarteirense",
+                    "date": "1 - 0                            \r\n                \r\n                    28 fev",
+                    "time": "",
+                    "stadium": "Parque Desportivo Municipal Estombar",
+                    "homeScore": 1,
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Gd Lagoa",
@@ -776,7 +899,11 @@
                     "time": "",
                     "stadium": "Parque Desportivo Municipal Estombar",
                     "homeScore": 4,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -879,7 +1006,12 @@
                     "goalsAgainst": 26,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:59:59Z",
+            "lastSuccessAt": "2026-05-19T13:59:59Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 7,
@@ -892,7 +1024,11 @@
                     "time": "",
                     "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": 9,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Casa Benfica Tavira",
@@ -901,7 +1037,11 @@
                     "time": "",
                     "stadium": "Campo De Futebol Municipal De Tavira",
                     "homeScore": 6,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Sc Farense",
@@ -910,7 +1050,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 10,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -919,7 +1063,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 2,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1022,7 +1170,12 @@
                     "goalsAgainst": 35,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T14:00:01Z",
+            "lastSuccessAt": "2026-05-19T14:00:01Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 8,
@@ -1035,7 +1188,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 2,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -1044,7 +1201,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 2,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Casa Benfica Tavira",
@@ -1053,7 +1214,11 @@
                     "time": "",
                     "stadium": "Campo De Futebol Municipal De Tavira",
                     "homeScore": 3,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Sc Farense",
@@ -1062,7 +1227,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 2,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1165,21 +1334,17 @@
                     "goalsAgainst": 37,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T14:00:03Z",
+            "lastSuccessAt": "2026-05-19T14:00:03Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 9,
             "fixtureId": "626074",
             "matches": [
-                {
-                    "home": "Fc Ferreiras",
-                    "away": "Sc Farense",
-                    "date": "0 - 6                            \r\n                \r\n                    28 mar",
-                    "time": "",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": 0,
-                    "awayScore": 6
-                },
                 {
                     "home": "Cdr Quarteirense",
                     "away": "Fc Ferreiras",
@@ -1187,7 +1352,24 @@
                     "time": "",
                     "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": 5,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Sc Farense",
+                    "date": "0 - 6                            \r\n                \r\n                    28 mar",
+                    "time": "",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": 0,
+                    "awayScore": 6,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Aef João Moutinho",
@@ -1196,7 +1378,11 @@
                     "time": "",
                     "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": 2,
-                    "awayScore": 7
+                    "awayScore": 7,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Gd Lagoa",
@@ -1205,7 +1391,11 @@
                     "time": "",
                     "stadium": "Parque Desportivo Municipal Estombar",
                     "homeScore": 1,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1308,7 +1498,12 @@
                     "goalsAgainst": 43,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T14:00:07Z",
+            "lastSuccessAt": "2026-05-19T14:00:07Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 10,
@@ -1321,7 +1516,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 0,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Gd Lagoa",
@@ -1330,7 +1529,11 @@
                     "time": "",
                     "stadium": "Parque Desportivo Municipal Estombar",
                     "homeScore": 7,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -1339,7 +1542,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 1,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Casa Benfica Tavira",
@@ -1348,7 +1555,11 @@
                     "time": "",
                     "stadium": "Campo De Futebol Municipal De Tavira",
                     "homeScore": 1,
-                    "awayScore": 5
+                    "awayScore": 5,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1451,7 +1662,12 @@
                     "goalsAgainst": 50,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T14:00:09Z",
+            "lastSuccessAt": "2026-05-19T14:00:09Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 11,
@@ -1464,7 +1680,11 @@
                     "time": "",
                     "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": 4,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Aef João Moutinho",
@@ -1473,7 +1693,11 @@
                     "time": "",
                     "stadium": "Parque Desportivo Municipal Estombar",
                     "homeScore": 1,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Sc Farense",
@@ -1482,7 +1706,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 2,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -1491,7 +1719,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 3,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1594,7 +1826,12 @@
                     "goalsAgainst": 53,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T14:00:10Z",
+            "lastSuccessAt": "2026-05-19T14:00:10Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 12,
@@ -1607,7 +1844,11 @@
                     "time": "",
                     "stadium": "Parque Desportivo Municipal Estombar",
                     "homeScore": 4,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Gd Lagoa",
@@ -1616,7 +1857,11 @@
                     "time": "",
                     "stadium": "Parque Desportivo Municipal Estombar",
                     "homeScore": 2,
-                    "awayScore": 5
+                    "awayScore": 5,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Casa Benfica Tavira",
@@ -1625,7 +1870,11 @@
                     "time": "",
                     "stadium": "Campo De Futebol Municipal De Tavira",
                     "homeScore": 0,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -1634,7 +1883,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 0,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1737,7 +1990,12 @@
                     "goalsAgainst": 57,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T14:00:11Z",
+            "lastSuccessAt": "2026-05-19T14:00:11Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 13,
@@ -1750,7 +2008,11 @@
                     "time": "",
                     "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": 10,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T14:00:13Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -1759,7 +2021,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 1,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T14:00:13Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Sc Farense",
@@ -1768,16 +2034,28 @@
                     "time": "20:30",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T14:00:13Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Casa Benfica Tavira",
                     "away": "Fc Ferreiras",
-                    "date": "10 mai",
-                    "time": "11:00",
+                    "date": "6 - 2                            \r\n                \r\n                    10 mai",
+                    "time": "",
                     "stadium": "Campo De Futebol Municipal De Tavira",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 6,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T14:00:13Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 }
             ],
             "classification": [
@@ -1817,13 +2095,13 @@
                 {
                     "position": 4,
                     "team": "Casa Benfica Tavira",
-                    "played": 12,
-                    "wins": 6,
+                    "played": 13,
+                    "wins": 7,
                     "draws": 2,
                     "losses": 4,
-                    "goalsFor": 34,
-                    "goalsAgainst": 20,
-                    "points": 20
+                    "goalsFor": 40,
+                    "goalsAgainst": 22,
+                    "points": 23
                 },
                 {
                     "position": 5,
@@ -1872,15 +2150,20 @@
                 {
                     "position": 9,
                     "team": "Fc Ferreiras",
-                    "played": 12,
+                    "played": 13,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 12,
-                    "goalsFor": 4,
-                    "goalsAgainst": 57,
+                    "losses": 13,
+                    "goalsFor": 6,
+                    "goalsAgainst": 63,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T14:00:13Z",
+            "lastSuccessAt": "2026-05-19T14:00:13Z",
+            "lastChangedAt": "2026-05-19T14:00:13Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 14,
@@ -1889,116 +2172,148 @@
                 {
                     "home": "Gd Lagoa",
                     "away": "Fc Ferreiras",
-                    "date": "10 mai",
-                    "time": "18:00",
+                    "date": "0 - 1                            \r\n                \r\n                    10 mai",
+                    "time": "",
                     "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 0,
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T14:00:15Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Aef João Moutinho",
                     "away": "Sc Farense",
-                    "date": "16 mai",
-                    "time": "12:00",
+                    "date": "0 - 3                            \r\n                \r\n                    13 mai",
+                    "time": "",
                     "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 0,
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T14:00:15Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Cf Os Armacenenses",
                     "away": "Casa Benfica Tavira",
-                    "date": "16 mai",
-                    "time": "12:00",
+                    "date": "4 - 9                            \r\n                \r\n                    16 mai",
+                    "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 4,
+                    "awayScore": 9,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T14:00:15Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Fc Ferreiras",
                     "away": "Cdr Quarteirense",
-                    "date": "16 mai",
-                    "time": "12:00",
+                    "date": "0 - 3                            \r\n                \r\n                    16 mai",
+                    "time": "",
                     "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 0,
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T14:00:15Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Cdr Quarteirense",
-                    "played": 13,
-                    "wins": 9,
+                    "played": 14,
+                    "wins": 10,
                     "draws": 2,
                     "losses": 2,
-                    "goalsFor": 54,
+                    "goalsFor": 57,
                     "goalsAgainst": 10,
-                    "points": 29
+                    "points": 32
                 },
                 {
                     "position": 2,
                     "team": "Sc Farense",
-                    "played": 12,
-                    "wins": 9,
+                    "played": 13,
+                    "wins": 10,
                     "draws": 0,
                     "losses": 3,
-                    "goalsFor": 36,
+                    "goalsFor": 39,
                     "goalsAgainst": 12,
-                    "points": 27
+                    "points": 30
                 },
                 {
                     "position": 3,
                     "team": "Fc Ferreiras",
-                    "played": 13,
-                    "wins": 7,
+                    "played": 14,
+                    "wins": 8,
                     "draws": 3,
                     "losses": 3,
-                    "goalsFor": 21,
+                    "goalsFor": 22,
                     "goalsAgainst": 14,
-                    "points": 24
+                    "points": 27
                 },
                 {
                     "position": 4,
                     "team": "Casa Benfica Tavira",
-                    "played": 12,
-                    "wins": 6,
+                    "played": 14,
+                    "wins": 8,
                     "draws": 2,
                     "losses": 4,
-                    "goalsFor": 34,
-                    "goalsAgainst": 20,
-                    "points": 20
+                    "goalsFor": 49,
+                    "goalsAgainst": 26,
+                    "points": 26
                 },
                 {
                     "position": 5,
                     "team": "Gd Lagoa",
-                    "played": 12,
+                    "played": 13,
                     "wins": 6,
                     "draws": 2,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 30,
-                    "goalsAgainst": 18,
+                    "goalsAgainst": 19,
                     "points": 20
                 },
                 {
                     "position": 6,
                     "team": "Aef João Moutinho",
-                    "played": 13,
+                    "played": 14,
                     "wins": 4,
                     "draws": 2,
-                    "losses": 7,
+                    "losses": 8,
                     "goalsFor": 17,
-                    "goalsAgainst": 44,
+                    "goalsAgainst": 47,
                     "points": 14
                 },
                 {
                     "position": 7,
                     "team": "Cf Os Armacenenses",
-                    "played": 13,
+                    "played": 14,
                     "wins": 3,
                     "draws": 1,
-                    "losses": 9,
-                    "goalsFor": 12,
-                    "goalsAgainst": 33,
+                    "losses": 10,
+                    "goalsFor": 16,
+                    "goalsAgainst": 42,
                     "points": 10
                 },
                 {
@@ -2015,15 +2330,20 @@
                 {
                     "position": 9,
                     "team": "Fc Ferreiras",
-                    "played": 12,
+                    "played": 14,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 12,
-                    "goalsFor": 4,
-                    "goalsAgainst": 57,
+                    "losses": 14,
+                    "goalsFor": 6,
+                    "goalsAgainst": 66,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T14:00:15Z",
+            "lastSuccessAt": "2026-05-19T14:00:15Z",
+            "lastChangedAt": "2026-05-19T14:00:15Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         }
     ]
 }
