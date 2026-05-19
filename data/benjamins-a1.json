@@ -1,22 +1,30 @@
 {
-    "defaultRoundIndex": 7,
-    "defaultRoundNumber": 8,
-    "lastUpdatedAt": "2026-05-11T17:16:02Z",
+    "schemaVersion": 2,
+    "generatedAt": "2026-05-19T13:52:22Z",
+    "lastAttemptAt": "2026-05-19T13:51:51Z",
+    "lastSuccessAt": null,
+    "lastChangedAt": null,
+    "lastPublishedAt": "2026-05-19T13:52:22Z",
+    "defaultRoundIndex": 3,
+    "defaultRoundNumber": 4,
+    "lastUpdatedAt": "2026-05-19T13:52:22Z",
     "sourceHealth": {
-        "status": "partial",
-        "fallbackReuseCount": 0,
-        "issues": []
+        "status": "degraded",
+        "fallbackReuseCount": 1,
+        "issues": [
+            "fixture 641133: reused existing round because fragment had no data"
+        ]
     },
     "dataQuality": {
         "roundCount": 10,
         "matchCount": 30,
         "classificationCount": 60,
         "teamCount": 6,
-        "completedMatchCount": 23,
-        "matchesWithoutScore": 7,
-        "pastMatchCount": 24,
-        "pastMatchesWithoutScore": 1,
-        "futureMatchCount": 6,
+        "completedMatchCount": 27,
+        "matchesWithoutScore": 3,
+        "pastMatchCount": 27,
+        "pastMatchesWithoutScore": 0,
+        "futureMatchCount": 3,
         "roundsWithMatches": 10,
         "roundsWithClassification": 10,
         "roundsWithCompletedMatches": 9,
@@ -34,7 +42,11 @@
                     "time": "",
                     "stadium": "Campo Municipal Aljezur",
                     "homeScore": 3,
-                    "awayScore": 6
+                    "awayScore": 6,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:51:51Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -43,7 +55,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 4,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:51:51Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -52,7 +68,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 9,
-                    "awayScore": 6
+                    "awayScore": 6,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:51:51Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -122,7 +142,12 @@
                     "goalsAgainst": 6,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:51:51Z",
+            "lastSuccessAt": "2026-05-19T13:51:51Z",
+            "lastChangedAt": "2026-05-19T13:51:51Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 2,
@@ -135,7 +160,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 5,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:51:55Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Associacao Fut. F.O.",
@@ -144,7 +173,11 @@
                     "time": "",
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": 2,
-                    "awayScore": 6
+                    "awayScore": 6,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:51:55Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Portimonense Sc",
@@ -153,7 +186,11 @@
                     "time": "",
                     "stadium": "Campo Major David Neto 2",
                     "homeScore": 6,
-                    "awayScore": 4
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:51:55Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -223,7 +260,12 @@
                     "goalsAgainst": 11,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:51:55Z",
+            "lastSuccessAt": "2026-05-19T13:51:55Z",
+            "lastChangedAt": "2026-05-19T13:51:55Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 3,
@@ -236,7 +278,11 @@
                     "time": "",
                     "stadium": "Campo Municipal Aljezur",
                     "homeScore": 4,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:51:58Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -245,7 +291,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 6,
-                    "awayScore": 4
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:51:58Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Sc Farense",
@@ -254,7 +304,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 2,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:51:58Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -324,7 +378,12 @@
                     "goalsAgainst": 12,
                     "points": 3
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:51:58Z",
+            "lastSuccessAt": "2026-05-19T13:51:58Z",
+            "lastChangedAt": "2026-05-19T13:51:58Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 4,
@@ -337,7 +396,11 @@
                     "time": "",
                     "stadium": "Campo Major David Neto N.º1",
                     "homeScore": 8,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:52:00Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Jc Aljezurense",
@@ -346,29 +409,40 @@
                     "time": "",
                     "stadium": "Campo Municipal Aljezur",
                     "homeScore": 3,
-                    "awayScore": 6
+                    "awayScore": 6,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:52:00Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
                     "away": "Fc Ferreiras",
                     "date": "16 mai",
-                    "time": "09:00",
+                    "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 2,
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:52:00Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "time_changed"
+                    ]
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Fc Ferreiras",
-                    "played": 3,
-                    "wins": 3,
+                    "played": 4,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 21,
-                    "goalsAgainst": 12,
-                    "points": 9
+                    "goalsFor": 25,
+                    "goalsAgainst": 14,
+                    "points": 12
                 },
                 {
                     "position": 2,
@@ -395,12 +469,12 @@
                 {
                     "position": 4,
                     "team": "Cf Os Armacenenses",
-                    "played": 3,
+                    "played": 4,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 2,
-                    "goalsFor": 10,
-                    "goalsAgainst": 12,
+                    "losses": 3,
+                    "goalsFor": 12,
+                    "goalsAgainst": 16,
                     "points": 3
                 },
                 {
@@ -425,7 +499,12 @@
                     "goalsAgainst": 19,
                     "points": 3
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:52:00Z",
+            "lastSuccessAt": "2026-05-19T13:52:00Z",
+            "lastChangedAt": "2026-05-19T13:52:00Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 5,
@@ -438,7 +517,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 2,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:52:02Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Associacao Fut. F.O.",
@@ -447,7 +530,11 @@
                     "time": "",
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": 3,
-                    "awayScore": 12
+                    "awayScore": 12,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:52:02Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Sc Farense",
@@ -456,12 +543,27 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 6,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:52:02Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
                 {
                     "position": 1,
+                    "team": "Fc Ferreiras",
+                    "played": 5,
+                    "wins": 5,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 27,
+                    "goalsAgainst": 15,
+                    "points": 15
+                },
+                {
+                    "position": 2,
                     "team": "Portimonense Sc",
                     "played": 5,
                     "wins": 4,
@@ -469,17 +571,6 @@
                     "losses": 1,
                     "goalsFor": 36,
                     "goalsAgainst": 19,
-                    "points": 12
-                },
-                {
-                    "position": 2,
-                    "team": "Fc Ferreiras",
-                    "played": 4,
-                    "wins": 4,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 23,
-                    "goalsAgainst": 13,
                     "points": 12
                 },
                 {
@@ -507,12 +598,12 @@
                 {
                     "position": 5,
                     "team": "Cf Os Armacenenses",
-                    "played": 4,
+                    "played": 5,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 12,
-                    "goalsAgainst": 18,
+                    "losses": 4,
+                    "goalsFor": 14,
+                    "goalsAgainst": 22,
                     "points": 3
                 },
                 {
@@ -526,7 +617,12 @@
                     "goalsAgainst": 21,
                     "points": 3
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:52:02Z",
+            "lastSuccessAt": "2026-05-19T13:52:02Z",
+            "lastChangedAt": "2026-05-19T13:52:02Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 6,
@@ -539,16 +635,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 3,
-                    "awayScore": 9
-                },
-                {
-                    "home": "Portimonense Sc",
-                    "away": "Jc Aljezurense",
-                    "date": "18 abr",
-                    "time": "",
-                    "stadium": "Campo Major David Neto 2",
-                    "homeScore": 10,
-                    "awayScore": 0
+                    "awayScore": 9,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:52:05Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Associacao Fut. F.O.",
@@ -557,12 +648,40 @@
                     "time": "",
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": 2,
-                    "awayScore": 6
+                    "awayScore": 6,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:52:05Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Portimonense Sc",
+                    "away": "Jc Aljezurense",
+                    "date": "18 abr",
+                    "time": "",
+                    "stadium": "Campo Major David Neto 2",
+                    "homeScore": 10,
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:52:05Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
                 {
                     "position": 1,
+                    "team": "Fc Ferreiras",
+                    "played": 6,
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 36,
+                    "goalsAgainst": 18,
+                    "points": 18
+                },
+                {
+                    "position": 2,
                     "team": "Portimonense Sc",
                     "played": 6,
                     "wins": 5,
@@ -573,25 +692,14 @@
                     "points": 15
                 },
                 {
-                    "position": 2,
-                    "team": "Fc Ferreiras",
-                    "played": 5,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 32,
-                    "goalsAgainst": 16,
-                    "points": 15
-                },
-                {
                     "position": 3,
                     "team": "Cf Os Armacenenses",
-                    "played": 5,
+                    "played": 6,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 18,
-                    "goalsAgainst": 20,
+                    "losses": 4,
+                    "goalsFor": 20,
+                    "goalsAgainst": 24,
                     "points": 6
                 },
                 {
@@ -627,7 +735,12 @@
                     "goalsAgainst": 31,
                     "points": 3
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:52:05Z",
+            "lastSuccessAt": "2026-05-19T13:52:05Z",
+            "lastChangedAt": "2026-05-19T13:52:05Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 7,
@@ -640,16 +753,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 5,
-                    "awayScore": 8
-                },
-                {
-                    "home": "Fc Ferreiras",
-                    "away": "Associacao Fut. F.O.",
-                    "date": "2 mai",
-                    "time": "",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": 16,
-                    "awayScore": 3
+                    "awayScore": 8,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:52:08Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Jc Aljezurense",
@@ -658,12 +766,40 @@
                     "time": "",
                     "stadium": "Campo Municipal Aljezur",
                     "homeScore": 1,
-                    "awayScore": 5
+                    "awayScore": 5,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:52:08Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Associacao Fut. F.O.",
+                    "date": "2 mai",
+                    "time": "",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": 16,
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:52:08Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
                 {
                     "position": 1,
+                    "team": "Fc Ferreiras",
+                    "played": 7,
+                    "wins": 7,
+                    "draws": 0,
+                    "losses": 0,
+                    "goalsFor": 52,
+                    "goalsAgainst": 21,
+                    "points": 21
+                },
+                {
+                    "position": 2,
                     "team": "Portimonense Sc",
                     "played": 7,
                     "wins": 6,
@@ -671,17 +807,6 @@
                     "losses": 1,
                     "goalsFor": 54,
                     "goalsAgainst": 24,
-                    "points": 18
-                },
-                {
-                    "position": 2,
-                    "team": "Fc Ferreiras",
-                    "played": 6,
-                    "wins": 6,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 48,
-                    "goalsAgainst": 19,
                     "points": 18
                 },
                 {
@@ -698,12 +823,12 @@
                 {
                     "position": 4,
                     "team": "Cf Os Armacenenses",
-                    "played": 6,
+                    "played": 7,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 23,
-                    "goalsAgainst": 28,
+                    "losses": 5,
+                    "goalsFor": 25,
+                    "goalsAgainst": 32,
                     "points": 6
                 },
                 {
@@ -728,7 +853,12 @@
                     "goalsAgainst": 36,
                     "points": 3
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:52:08Z",
+            "lastSuccessAt": "2026-05-19T13:52:08Z",
+            "lastChangedAt": "2026-05-19T13:52:08Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 8,
@@ -741,16 +871,27 @@
                     "time": "",
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": 6,
-                    "awayScore": 4
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:52:10Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Portimonense Sc",
                     "away": "Fc Ferreiras",
                     "date": "9 mai",
-                    "time": "10:30",
+                    "time": "",
                     "stadium": "Campo Major David Neto 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 6,
+                    "awayScore": 7,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:52:10Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -759,41 +900,45 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 7,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:52:10Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
                 {
                     "position": 1,
-                    "team": "Portimonense Sc",
-                    "played": 7,
-                    "wins": 6,
+                    "team": "Fc Ferreiras",
+                    "played": 8,
+                    "wins": 8,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 54,
-                    "goalsAgainst": 24,
-                    "points": 18
+                    "losses": 0,
+                    "goalsFor": 59,
+                    "goalsAgainst": 27,
+                    "points": 24
                 },
                 {
                     "position": 2,
-                    "team": "Fc Ferreiras",
-                    "played": 6,
+                    "team": "Portimonense Sc",
+                    "played": 8,
                     "wins": 6,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 48,
-                    "goalsAgainst": 19,
+                    "losses": 2,
+                    "goalsFor": 60,
+                    "goalsAgainst": 31,
                     "points": 18
                 },
                 {
                     "position": 3,
                     "team": "Cf Os Armacenenses",
-                    "played": 7,
+                    "played": 8,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 4,
-                    "goalsFor": 30,
-                    "goalsAgainst": 29,
+                    "losses": 5,
+                    "goalsFor": 32,
+                    "goalsAgainst": 33,
                     "points": 9
                 },
                 {
@@ -829,7 +974,12 @@
                     "goalsAgainst": 43,
                     "points": 3
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:52:10Z",
+            "lastSuccessAt": "2026-05-19T13:52:10Z",
+            "lastChangedAt": "2026-05-19T13:52:10Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 9,
@@ -842,95 +992,118 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 6,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:52:12Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Sc Farense",
                     "away": "Portimonense Sc",
                     "date": "16 mai",
-                    "time": "10:30",
+                    "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 0,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:52:12Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Associacao Fut. F.O.",
                     "away": "Jc Aljezurense",
                     "date": "16 mai",
-                    "time": "12:00",
+                    "time": "",
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 7,
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:52:12Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "time_changed"
+                    ]
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Fc Ferreiras",
-                    "played": 7,
-                    "wins": 7,
+                    "played": 9,
+                    "wins": 9,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 54,
-                    "goalsAgainst": 22,
-                    "points": 21
+                    "goalsFor": 65,
+                    "goalsAgainst": 30,
+                    "points": 27
                 },
                 {
                     "position": 2,
                     "team": "Portimonense Sc",
-                    "played": 7,
-                    "wins": 6,
+                    "played": 9,
+                    "wins": 7,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 54,
-                    "goalsAgainst": 24,
-                    "points": 18
+                    "losses": 2,
+                    "goalsFor": 62,
+                    "goalsAgainst": 31,
+                    "points": 21
                 },
                 {
                     "position": 3,
-                    "team": "Cf Os Armacenenses",
-                    "played": 8,
-                    "wins": 3,
-                    "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 33,
-                    "goalsAgainst": 35,
-                    "points": 9
-                },
-                {
-                    "position": 4,
-                    "team": "Sc Farense",
-                    "played": 8,
-                    "wins": 3,
+                    "team": "Associacao Fut. F.O.",
+                    "played": 9,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 5,
                     "goalsFor": 34,
+                    "goalsAgainst": 57,
+                    "points": 12
+                },
+                {
+                    "position": 4,
+                    "team": "Cf Os Armacenenses",
+                    "played": 9,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 35,
                     "goalsAgainst": 39,
                     "points": 9
                 },
                 {
                     "position": 5,
-                    "team": "Associacao Fut. F.O.",
-                    "played": 8,
+                    "team": "Sc Farense",
+                    "played": 9,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 27,
-                    "goalsAgainst": 53,
+                    "losses": 6,
+                    "goalsFor": 34,
+                    "goalsAgainst": 41,
                     "points": 9
                 },
                 {
                     "position": 6,
                     "team": "Jc Aljezurense",
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 7,
-                    "goalsFor": 14,
-                    "goalsAgainst": 43,
+                    "losses": 8,
+                    "goalsFor": 18,
+                    "goalsAgainst": 50,
                     "points": 3
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:52:12Z",
+            "lastSuccessAt": "2026-05-19T13:52:12Z",
+            "lastChangedAt": "2026-05-19T13:52:12Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 10,
@@ -943,7 +1116,11 @@
                     "time": "10:30",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Jc Aljezurense",
@@ -952,7 +1129,11 @@
                     "time": "10:30",
                     "stadium": "Campo Municipal Aljezur",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Portimonense Sc",
@@ -961,77 +1142,86 @@
                     "time": "10:30",
                     "stadium": "Campo Major David Neto 2",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Fc Ferreiras",
-                    "played": 7,
-                    "wins": 7,
+                    "played": 9,
+                    "wins": 9,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 54,
-                    "goalsAgainst": 22,
-                    "points": 21
+                    "goalsFor": 65,
+                    "goalsAgainst": 30,
+                    "points": 27
                 },
                 {
                     "position": 2,
                     "team": "Portimonense Sc",
-                    "played": 7,
-                    "wins": 6,
+                    "played": 9,
+                    "wins": 7,
                     "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 54,
-                    "goalsAgainst": 24,
-                    "points": 18
+                    "losses": 2,
+                    "goalsFor": 62,
+                    "goalsAgainst": 31,
+                    "points": 21
                 },
                 {
                     "position": 3,
-                    "team": "Cf Os Armacenenses",
-                    "played": 8,
-                    "wins": 3,
-                    "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 33,
-                    "goalsAgainst": 35,
-                    "points": 9
-                },
-                {
-                    "position": 4,
-                    "team": "Sc Farense",
-                    "played": 8,
-                    "wins": 3,
+                    "team": "Associacao Fut. F.O.",
+                    "played": 9,
+                    "wins": 4,
                     "draws": 0,
                     "losses": 5,
                     "goalsFor": 34,
+                    "goalsAgainst": 57,
+                    "points": 12
+                },
+                {
+                    "position": 4,
+                    "team": "Cf Os Armacenenses",
+                    "played": 9,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 35,
                     "goalsAgainst": 39,
                     "points": 9
                 },
                 {
                     "position": 5,
-                    "team": "Associacao Fut. F.O.",
-                    "played": 8,
+                    "team": "Sc Farense",
+                    "played": 9,
                     "wins": 3,
                     "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 27,
-                    "goalsAgainst": 53,
+                    "losses": 6,
+                    "goalsFor": 34,
+                    "goalsAgainst": 41,
                     "points": 9
                 },
                 {
                     "position": 6,
                     "team": "Jc Aljezurense",
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
                     "draws": 0,
-                    "losses": 7,
-                    "goalsFor": 14,
-                    "goalsAgainst": 43,
+                    "losses": 8,
+                    "goalsFor": 18,
+                    "goalsAgainst": 50,
                     "points": 3
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:52:17Z",
+            "lastSuccessAt": null,
+            "lastChangedAt": null,
+            "sourceStatus": "fallback_reused",
+            "sourceIssue": "no_usable_data"
         }
     ]
 }
