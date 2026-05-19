@@ -9,13 +9,19 @@
 - ✅ Adicionar validações automáticas, retries e relatório por fetcher através de `run_fetchers.py`.
 - ✅ Publicar metadata de sincronização nos JSON (`defaultRoundIndex`, `defaultRoundNumber`, `lastUpdatedAt`, `sourceHealth`).
 - ✅ Introduzir testes unitários e testes de regressão com snapshots reais da FPF.
+- ✅ Desligar scraping automático em GitHub-hosted runners e passar temporariamente para operação manual local.
 - Monitorizar e adaptar scrapers para futuras fases e competições (ex: Taças Nacionais, Fases de Manutenção).
 - Rever o manifesto de emblemas, garantindo que todos os clubes presentes nos JSON têm correspondência em `data/crests.json`.
 
 ## Próximos passos (1-3 meses)
 
+- Consolidar um fluxo manual simples e disciplinado: `fetch_<competicao>.py` -> `build_calendar.py` -> `build_status.py` -> `git push`.
+- Reduzir documentação de fases automáticas antigas e manter apenas a que reflete o estado real.
+- Decidir a próxima estratégia de execução do scraping:
+  - manter manual local por algum tempo;
+  - migrar para self-hosted runner;
+  - migrar para VM/cloud com cron.
 - Mostrar `lastUpdatedAt` e `sourceHealth` na UI para dar visibilidade ao estado real dos dados.
-- Definir uma política operacional para `DEGRADED` no workflow: apenas informar, falhar acima de limiar ou acionar alerta.
 - Alargar a biblioteca de snapshots reais da FPF a mais famílias de competição e mais casos-limite.
 - Criar uma camada de serviço em `main.js` que armazene em `localStorage` a última versão dos dados carregados, permitindo fallback em modo offline.
 - Melhorar a acessibilidade: acrescentar textos alternativos descritivos, focos visuais para navegação por teclado e labels claras nas tabs.
@@ -25,4 +31,4 @@
 - Internacionalização dos textos da interface e possibilidade de alternar entre português e inglês sem duplicar páginas.
 - Permitir seleção de equipa favorita com vista filtrada (apenas jogos dessa equipa em todas as competições).
 - Expor os dados num formato API (JSON estático ou endpoints serverless) para integração com outras plataformas do clube.
-- Automatizar notificações (e-mail ou webhook) sempre que o workflow falhar ao atualizar dados, reduzindo tempo de reação da equipa.
+- Automatizar notificações (e-mail ou webhook) sempre que o processo escolhido de scraping/publicação falhar, reduzindo tempo de reação da equipa.

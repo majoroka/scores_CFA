@@ -11,12 +11,10 @@ graph TD
         B -->|Uses| B1("competition_configs.py");
         B -->|Writes| C{"data/*.json + calendar.json + status.json"};
     end
-    subgraph "CI/CD (Automation)"
-        D[GitHub Repo] -- push frontend/data --> E("Deploy site");
-        D -- schedule/manual/code sync --> F("Sync data");
-        F -->|follow-up| G("Retry pending results");
-        F -->|updates data| D;
-        G -->|updates data| D;
+    subgraph "Operacao Atual"
+        D[Computador Local] -->|fetch_*.py| B;
+        D -->|build_calendar.py / build_status.py| C;
+        D -->|git push| E("Deploy site");
         E -->|Deploys| H[GitHub Pages];
     end
     subgraph "Frontend (Browser)"
@@ -53,62 +51,32 @@ graph TD
 
 ## Scrapers e Geração de Conteúdo
 
-- O código de sincronização está centralizado em [competition_sync.py](/Users/mariocabano/Documents/GitHub/scores_CFA/competition_sync.py). Este motor:
-  - descarrega a página da competição;
-  - localiza fase/série;
-  - obtém os `fixtureId`;
-  - descarrega os fragmentos por jornada;
-  - faz parsing de jogos e classificação;
-  - reutiliza jornadas existentes quando a origem falha;
-  - publica metadata adicional no JSON.
+- O código de sincronização está centralizado em [competition_sync.py](/Users/mariocabano/Documents/GitHub/scores_CFA/competition_sync.py). Este motor descarrega dados da FPF, faz parsing de jogos e classificação, reutiliza jornadas existentes quando a origem falha e grava os JSON finais em `data/`.
 - A configuração por competição está centralizada em [competition_configs.py](/Users/mariocabano/Documents/GitHub/scores_CFA/competition_configs.py). Os ficheiros `fetch_<competicao>.py` são agora wrappers mínimos sobre essa configuração, mantidos por compatibilidade com a automação e com o fluxo atual de desenvolvimento.
+- Na operação atual, o fluxo manual correto é:
+  1. correr `python3 fetch_<competicao>.py`;
+  2. correr `python3 build_calendar.py`;
+  3. correr `python3 build_status.py`;
+  4. fazer `git add`, `git commit` e `git push`.
 - Todos os scrapers partilham o mesmo padrão de regex para a classificação, com lookahead que aceita o fim da secção. Esta alteração elimina perdas da última linha quando a FPF altera ligeiramente a marcação, garantindo JSON consistente entre competições.
 - O cliente HTTP comum está em [fpf_http.py](/Users/mariocabano/Documents/GitHub/scores_CFA/fpf_http.py). Ele concentra sessão persistente, headers, retries, deteção de bloqueios e reaproveitamento de contexto HTTP, reduzindo `403` intermitentes da FPF.
 - Algumas competições podem definir fallback secundário apenas para score. O caso atualmente ativo é `juniores`, onde o Zerozero é usado apenas para preencher resultados em falta, mantendo a FPF como fonte de jornadas, calendário e estrutura.
 - `generate_crest_manifest.py` percorre `img/crests/`, normaliza os nomes de ficheiros (retirando acentos e símbolos) e cria o manifesto `data/crests.json`, adicionando aliases para variações comuns dos nomes.
 - `tools/probe_fixture.py` é um utilitário rápido para descarregar o HTML de um `fixtureId` específico, gravando a resposta em `cache/fixture_<id>.html` para apoiar a criação ou debugging dos scrapers.
 
-## Automação e Deploy
+## Publicação
 
-- O workflow [/.github/workflows/update-data.yml](/Users/mariocabano/Documents/GitHub/scores_CFA/.github/workflows/update-data.yml) (`Sync data`) é o coração da sincronização: corre manualmente, por schedule e em alterações relevantes de código de sync, instala dependências, corre testes unitários, executa uma primeira vaga leve dos fetchers selecionados, regenera agregados e faz commit automático das alterações em `data/`.
-- O workflow [/.github/workflows/retry-pending-results.yml](/Users/mariocabano/Documents/GitHub/scores_CFA/.github/workflows/retry-pending-results.yml) faz o follow-up de resultados pendentes. Reavalia o plano e só corre novos fetches quando o planner indicar que a próxima janela útil chegou (`nextRecommendedFetchAt`).
 - O workflow [/.github/workflows/deploy-app.yml](/Users/mariocabano/Documents/GitHub/scores_CFA/.github/workflows/deploy-app.yml) (`Deploy site`) publica frontend e JSON já gerados. Isto garante que commits manuais em `data/*.json` também chegam ao Pages.
-- [run_fetchers.py](/Users/mariocabano/Documents/GitHub/scores_CFA/run_fetchers.py) adiciona:
-  - retries por fetcher;
-  - backup e restauro do JSON anterior;
-  - validação estrutural do output;
-  - deteção de estado `DEGRADED` quando houve reaproveitamento de jornadas antigas;
-  - overrides por workflow para tornar a vaga inicial leve e deixar a insistência para o follow-up.
-- [plan_fetchers.py](/Users/mariocabano/Documents/GitHub/scores_CFA/plan_fetchers.py) já aplica a lógica adaptativa principal:
-  - `awaiting_window`
-  - `result_chase`
-  - `recent_historical_backfill`
-  - `historical_backfill`
-  - `missing_payload`
-- O follow-up já respeita as janelas:
-  - primeiro fetch útil em `kickoff + 2h`
-  - retries curtos em `15 minutos`
-  - recuperação recente em `2h`
-  - recuperação histórica em `6h`
+- Os workflows automáticos de scraping foram desligados/removidos por causa dos bloqueios `403` da FPF nos runners do GitHub. O scraping ocorre agora localmente no computador do utilizador, e o GitHub mantém apenas a publicação.
 - Os testes unitários e os testes de regressão usam snapshots reais em [tests/fixtures/fpf](/Users/mariocabano/Documents/GitHub/scores_CFA/tests/fixtures/fpf), o que ajuda a apanhar mudanças do HTML da FPF antes de afetarem o deploy.
 - Após os dados serem atualizados, o site é publicado usando GitHub Pages (`actions/deploy-pages`). Como não existem etapas de build, o artefacto enviado corresponde à árvore de ficheiros do repositório.
 
-## Próxima Fase Recomendada
+## Estado Atual
 
-A arquitetura atual já separa bem frontend, JSON publicados, workflows e geração agregada. O problema principal da fase seguinte já não é estrutural: é observabilidade, granularidade e deteção real de mudanças.
-
-O plano principal para essa evolução está em:
-
-- [SCRAPING_RELIABILITY_EXECUTION_PLAN.md](/Users/mariocabano/Documents/GitHub/scores_CFA/SCRAPING_RELIABILITY_EXECUTION_PLAN.md)
-
-Esse plano passa a ser a referência principal para:
-
-- `FetchResult` estruturado;
-- `fetch_state.json`;
-- relatório por fixture;
-- separação real entre `calendar_watch` e `result_chase`;
-- workflow gates críticos antes de commit/deploy;
-- uniformização do schema publicado.
+- O frontend continua published-first.
+- O deploy do site continua automático no `push`.
+- O scraping passa a ser manual e local até nova decisão de infraestrutura.
+- `calendar.json` e `status.json` têm de ser regenerados manualmente após qualquer fetch de competição.
 
 ## Fluxo de Desenvolvimento
 

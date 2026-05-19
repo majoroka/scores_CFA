@@ -10,7 +10,7 @@ Microsite estático que agrega resultados, classificações e calendários das e
 - Agenda e resultados globais suportados por `data/calendar.json`.
 - Estado global das competições suportado por `data/status.json`.
 - Interface responsiva (CSS Grid) com suporte para títulos/subtítulos dinâmicos, alternância de tema claro/escuro e preferência persistida em `localStorage`.
-- Atualização periódica de dados através de scrapers Python que consomem o site oficial da FPF.
+- Atualização manual de dados através de scrapers Python executados localmente contra o site oficial da FPF.
 - `localStorage` usado apenas como fallback quando o fetch do JSON publicado falha.
 - Manifesto de emblemas para carregamento imediato dos logótipos de cada clube.
 
@@ -32,8 +32,6 @@ Microsite estático que agrega resultados, classificações e calendários das e
 - `generate_crest_manifest.py`: gera automaticamente o mapa normalizado de emblemas em `data/crests.json`.
 - `tools/`: utilitários de apoio (ex.: `tools/probe_fixture.py` para inspecionar fixtures da FPF).
 - `.github/workflows/deploy-app.yml`: publica o site no GitHub Pages quando mudam frontend e/ou `data/`.
-- `.github/workflows/update-data.yml`: workflow principal de sincronização de dados.
-- `.github/workflows/retry-pending-results.yml`: follow-up de retries orientado pelo planner temporal.
 
 ## Pré-requisitos
 
@@ -42,20 +40,22 @@ Microsite estático que agrega resultados, classificações e calendários das e
 
 ## Atualizar dados manualmente
 
-1. Para atualizar uma competição isolada, execute o wrapper respetivo (ex.: `python fetch_juniores.py`).
-2. Para atualizar várias competições com a mesma lógica do workflow, execute `python run_fetchers.py`.
-3. Para regenerar a Agenda global depois de atualizar dados, execute `python build_calendar.py`.
-4. Para regenerar o estado global das competições, execute `python build_status.py`.
-5. Confirme os JSON atualizados em `data/` e valide se os valores foram normalizados corretamente (ex.: `python3 -m json.tool data/seniores.json`).
-6. (Opcional) Se novos emblemas forem adicionados a `img/crests/`, execute `python generate_crest_manifest.py` para atualizar `data/crests.json`.
-7. Caso ocorram conflitos de merge nos JSON, remova os marcadores (`<<<<<<<`, `=======`, `>>>>>>>`) e volte a executar o `fetch_*.py` respetivo para gerar um ficheiro limpo antes de o commitar.
+1. Atualize uma competição isolada com o wrapper respetivo (ex.: `python3 fetch_juniores.py`).
+2. Depois de qualquer `fetch_*.py`, execute sempre:
+   - `python3 build_calendar.py`
+   - `python3 build_status.py`
+3. Faça `git add`, `git commit` e `git push` dos ficheiros alterados em `data/`.
+4. Confirme os JSON atualizados em `data/` e valide se os valores foram normalizados corretamente (ex.: `python3 -m json.tool data/seniores.json`).
+5. (Opcional) Se novos emblemas forem adicionados a `img/crests/`, execute `python generate_crest_manifest.py` para atualizar `data/crests.json`.
+6. Caso ocorram conflitos de merge nos JSON, remova os marcadores (`<<<<<<<`, `=======`, `>>>>>>>`) e volte a executar o `fetch_*.py` respetivo para gerar um ficheiro limpo antes de o commitar.
+7. Para comandos prontos por competição, use [MANUAL_FETCH_COMMANDS.txt](/Users/mariocabano/Documents/GitHub/scores_CFA/MANUAL_FETCH_COMMANDS.txt).
 
 ## Visualizar localmente
 
 - Abra qualquer `*.html` diretamente no navegador para verificações rápidas (pode ocorrer bloqueio CORS ao ler JSON).
 - Para evitar CORS, sirva a pasta via HTTP simples: `python -m http.server` e aceda a `http://localhost:8000`.
 
-## Automação com GitHub Actions
+## GitHub Actions
 
 ### `Deploy site`
 
@@ -63,20 +63,7 @@ Microsite estático que agrega resultados, classificações e calendários das e
 - Dispara em alterações de frontend e em alterações publicadas em `data/**`.
 - Garante que um commit manual em `data/*.json` chega efetivamente ao site.
 
-### `Sync data`
-
-- Pode ser acionado manualmente, em `push` relevante de código de sync, ou por `schedule`.
-- Usa `plan_fetchers.py` para decidir que competições precisam mesmo de ser atualizadas.
-- Executa uma vaga inicial leve através de `run_fetchers.py`, com foco em publicar cedo o que já estiver válido.
-- Regera `data/calendar.json`, `data/status.json` e o manifesto de emblemas quando necessário.
-- Realiza commit automático dos ficheiros alterados e publica o site.
-
-### `Retry pending results and deploy`
-
-- Arranca depois do `Sync data` quando o follow-up faz sentido.
-- Reavalia o plano e só corre fetchers que continuem pendentes.
-- Respeita `nextRecommendedFetchAt` calculado pelo planner adaptativo.
-- Faz retries mais tarde sem bloquear a vaga inicial.
+Neste momento, os workflows automáticos de scraping foram removidos/desligados. O scraping é efetuado manualmente no computador do utilizador e o GitHub fica responsável apenas por publicar o site após `push`.
 
 ## Scripts auxiliares
 
@@ -94,6 +81,6 @@ Microsite estático que agrega resultados, classificações e calendários das e
 ## Documentos de referência
 
 - [ARQUITETURA.md](/Users/mariocabano/Documents/GitHub/scores_CFA/ARQUITETURA.md): visão geral da arquitetura atual.
-- [DATA_CONSISTENCY_IMPROVEMENT_PLAN.md](/Users/mariocabano/Documents/GitHub/scores_CFA/DATA_CONSISTENCY_IMPROVEMENT_PLAN.md): plano de consistência de dados já em curso.
-- [ADAPTIVE_FETCH_WINDOW_PLAN.md](/Users/mariocabano/Documents/GitHub/scores_CFA/ADAPTIVE_FETCH_WINDOW_PLAN.md): evolução do planner temporal.
-- [SCRAPING_RELIABILITY_EXECUTION_PLAN.md](/Users/mariocabano/Documents/GitHub/scores_CFA/SCRAPING_RELIABILITY_EXECUTION_PLAN.md): plano principal da próxima fase para tornar o scraping observável, granular e fiável.
+- [FEATURE_AGENDA_RESULTADOS.md](/Users/mariocabano/Documents/GitHub/scores_CFA/FEATURE_AGENDA_RESULTADOS.md): comportamento atual da Agenda/Resultados globais.
+- [ROADMAP.md](/Users/mariocabano/Documents/GitHub/scores_CFA/ROADMAP.md): prioridades atuais após a transição para scraping manual local.
+- [MANUAL_FETCH_COMMANDS.txt](/Users/mariocabano/Documents/GitHub/scores_CFA/MANUAL_FETCH_COMMANDS.txt): comandos manuais por competição e builds agregados.
