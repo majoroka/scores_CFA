@@ -1,7 +1,13 @@
 {
-    "defaultRoundIndex": 14,
-    "defaultRoundNumber": 15,
-    "lastUpdatedAt": "2026-05-11T15:03:54Z",
+    "schemaVersion": 2,
+    "generatedAt": "2026-05-19T13:30:49Z",
+    "lastAttemptAt": "2026-05-19T13:30:23Z",
+    "lastSuccessAt": null,
+    "lastChangedAt": null,
+    "lastPublishedAt": "2026-05-19T13:30:49Z",
+    "defaultRoundIndex": 15,
+    "defaultRoundNumber": 16,
+    "lastUpdatedAt": "2026-05-19T13:30:49Z",
     "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0,
@@ -12,14 +18,14 @@
         "matchCount": 90,
         "classificationCount": 180,
         "teamCount": 10,
-        "completedMatchCount": 75,
-        "matchesWithoutScore": 15,
-        "pastMatchCount": 75,
+        "completedMatchCount": 79,
+        "matchesWithoutScore": 11,
+        "pastMatchCount": 79,
         "pastMatchesWithoutScore": 0,
-        "futureMatchCount": 15,
+        "futureMatchCount": 11,
         "roundsWithMatches": 18,
         "roundsWithClassification": 18,
-        "roundsWithCompletedMatches": 15,
+        "roundsWithCompletedMatches": 16,
         "roundsWithoutData": 0
     },
     "rounds": [
@@ -28,31 +34,30 @@
             "fixtureId": "634962",
             "matches": [
                 {
+                    "home": "Sc Olhanense",
+                    "away": "Internacional Ca",
+                    "date": "2 - 1                            \r\n                \r\n                    25 jan",
+                    "time": "",
+                    "stadium": "Estádio José Arcanjo",
+                    "homeScore": 2,
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
                     "home": "Udr Sambrasense",
                     "away": "Cdr Quarteirense",
                     "date": "2 - 0                            \r\n                \r\n                    25 jan",
                     "time": "",
                     "stadium": "Campo Sousa Uva",
                     "homeScore": 2,
-                    "awayScore": 0
-                },
-                {
-                    "home": "Cd Odiáxere",
-                    "away": "Sc Farense",
-                    "date": "0 - 2                            \r\n                \r\n                    25 jan",
-                    "time": "",
-                    "stadium": "Campo Eiras",
-                    "homeScore": 0,
-                    "awayScore": 2
-                },
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Adt - Ass. Desp. Tavira",
-                    "date": "0 - 1                            \r\n                \r\n                    25 jan",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 0,
-                    "awayScore": 1
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Gd Lagoa",
@@ -61,16 +66,37 @@
                     "time": "",
                     "stadium": "Parque Desportivo Municipal Estombar",
                     "homeScore": 2,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
-                    "home": "Sc Olhanense",
-                    "away": "Internacional Ca",
-                    "date": "2 - 1                            \r\n                \r\n                    25 jan",
+                    "home": "Cf Os Armacenenses",
+                    "away": "Adt - Ass. Desp. Tavira",
+                    "date": "0 - 1                            \r\n                \r\n                    25 jan",
                     "time": "",
-                    "stadium": "Estádio José Arcanjo",
-                    "homeScore": 2,
-                    "awayScore": 1
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 0,
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cd Odiáxere",
+                    "away": "Sc Farense",
+                    "date": "0 - 2                            \r\n                \r\n                    25 jan",
+                    "time": "",
+                    "stadium": "Campo Eiras",
+                    "homeScore": 0,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -184,7 +210,12 @@
                     "goalsAgainst": 2,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:30:23Z",
+            "lastSuccessAt": "2026-05-19T13:30:23Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 2,
@@ -197,7 +228,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 1,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -206,7 +241,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 2,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Internacional Ca",
@@ -215,7 +254,11 @@
                     "time": "",
                     "stadium": "Estadio Municipal De Almancil",
                     "homeScore": 2,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Adt - Ass. Desp. Tavira",
@@ -224,7 +267,11 @@
                     "time": "",
                     "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": 3,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cdr Quarteirense",
@@ -233,7 +280,11 @@
                     "time": "",
                     "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": 1,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -347,7 +398,12 @@
                     "goalsAgainst": 5,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:30:25Z",
+            "lastSuccessAt": "2026-05-19T13:30:25Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 3,
@@ -360,7 +416,11 @@
                     "time": "",
                     "stadium": "Estádio José Arcanjo",
                     "homeScore": 1,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Gd Lagoa",
@@ -369,7 +429,11 @@
                     "time": "",
                     "stadium": "Parque Desportivo Municipal Estombar",
                     "homeScore": 0,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cdr Quarteirense",
@@ -378,7 +442,11 @@
                     "time": "",
                     "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": 3,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -387,7 +455,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 0,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Udr Sambrasense",
@@ -396,7 +468,11 @@
                     "time": "",
                     "stadium": "Campo Polidesportivo",
                     "homeScore": 0,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -510,7 +586,12 @@
                     "goalsAgainst": 5,
                     "points": 1
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:30:27Z",
+            "lastSuccessAt": "2026-05-19T13:30:27Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 4,
@@ -523,16 +604,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 1,
-                    "awayScore": 0
-                },
-                {
-                    "home": "Adt - Ass. Desp. Tavira",
-                    "away": "Sc Olhanense",
-                    "date": "3 - 1                            \r\n                \r\n                    15 fev",
-                    "time": "",
-                    "stadium": "Estádio Ginásio Clube Tavira",
-                    "homeScore": 3,
-                    "awayScore": 1
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -541,7 +617,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 0,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cd Odiáxere",
@@ -550,7 +630,11 @@
                     "time": "",
                     "stadium": "Campo Eiras",
                     "homeScore": 3,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Internacional Ca",
@@ -559,7 +643,24 @@
                     "time": "",
                     "stadium": "Estadio Municipal De Almancil",
                     "homeScore": 0,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Adt - Ass. Desp. Tavira",
+                    "away": "Sc Olhanense",
+                    "date": "3 - 1                            \r\n                \r\n                    15 fev",
+                    "time": "",
+                    "stadium": "Estádio Ginásio Clube Tavira",
+                    "homeScore": 3,
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -673,7 +774,12 @@
                     "goalsAgainst": 7,
                     "points": 1
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:30:28Z",
+            "lastSuccessAt": "2026-05-19T13:30:28Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 5,
@@ -686,16 +792,11 @@
                     "time": "",
                     "stadium": "Estádio José Arcanjo",
                     "homeScore": 4,
-                    "awayScore": 1
-                },
-                {
-                    "home": "Adt - Ass. Desp. Tavira",
-                    "away": "Fc Ferreiras",
-                    "date": "1 - 3                            \r\n                \r\n                    22 fev",
-                    "time": "",
-                    "stadium": "Estádio Ginásio Clube Tavira",
-                    "homeScore": 1,
-                    "awayScore": 3
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Udr Sambrasense",
@@ -704,7 +805,24 @@
                     "time": "",
                     "stadium": "Campo Polidesportivo",
                     "homeScore": 3,
-                    "awayScore": 5
+                    "awayScore": 5,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Adt - Ass. Desp. Tavira",
+                    "away": "Fc Ferreiras",
+                    "date": "1 - 3                            \r\n                \r\n                    22 fev",
+                    "time": "",
+                    "stadium": "Estádio Ginásio Clube Tavira",
+                    "homeScore": 1,
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cdr Quarteirense",
@@ -713,7 +831,11 @@
                     "time": "",
                     "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": 4,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -722,7 +844,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 1,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -836,7 +962,12 @@
                     "goalsAgainst": 10,
                     "points": 3
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:30:30Z",
+            "lastSuccessAt": "2026-05-19T13:30:30Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 6,
@@ -849,7 +980,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 1,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Gd Lagoa",
@@ -858,16 +993,11 @@
                     "time": "",
                     "stadium": "Parque Desportivo Municipal Estombar",
                     "homeScore": 0,
-                    "awayScore": 3
-                },
-                {
-                    "home": "Cd Odiáxere",
-                    "away": "Udr Sambrasense",
-                    "date": "0 - 1                            \r\n                \r\n                    1 mar",
-                    "time": "",
-                    "stadium": "Campo Eiras",
-                    "homeScore": 0,
-                    "awayScore": 1
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -876,7 +1006,24 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 2,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cd Odiáxere",
+                    "away": "Udr Sambrasense",
+                    "date": "0 - 1                            \r\n                \r\n                    1 mar",
+                    "time": "",
+                    "stadium": "Campo Eiras",
+                    "homeScore": 0,
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Internacional Ca",
@@ -885,7 +1032,11 @@
                     "time": "",
                     "stadium": "Estadio Municipal De Almancil",
                     "homeScore": 0,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -999,21 +1150,17 @@
                     "goalsAgainst": 12,
                     "points": 4
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:30:31Z",
+            "lastSuccessAt": "2026-05-19T13:30:31Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 7,
             "fixtureId": "634968",
             "matches": [
-                {
-                    "home": "Udr Sambrasense",
-                    "away": "Gd Lagoa",
-                    "date": "0 - 2                            \r\n                \r\n                    8 mar",
-                    "time": "",
-                    "stadium": "Campo Polidesportivo",
-                    "homeScore": 0,
-                    "awayScore": 2
-                },
                 {
                     "home": "Sc Olhanense",
                     "away": "Cf Os Armacenenses",
@@ -1021,7 +1168,24 @@
                     "time": "",
                     "stadium": "Estádio José Arcanjo",
                     "homeScore": 3,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Udr Sambrasense",
+                    "away": "Gd Lagoa",
+                    "date": "0 - 2                            \r\n                \r\n                    8 mar",
+                    "time": "",
+                    "stadium": "Campo Polidesportivo",
+                    "homeScore": 0,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cdr Quarteirense",
@@ -1030,7 +1194,11 @@
                     "time": "",
                     "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": 2,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Adt - Ass. Desp. Tavira",
@@ -1039,7 +1207,11 @@
                     "time": "",
                     "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": 2,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -1048,7 +1220,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 1,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1162,21 +1338,17 @@
                     "goalsAgainst": 14,
                     "points": 4
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:30:32Z",
+            "lastSuccessAt": "2026-05-19T13:30:32Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 8,
             "fixtureId": "634969",
             "matches": [
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Udr Sambrasense",
-                    "date": "2 - 0                            \r\n                \r\n                    15 mar",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 2,
-                    "awayScore": 0
-                },
                 {
                     "home": "Gd Lagoa",
                     "away": "Cdr Quarteirense",
@@ -1184,7 +1356,24 @@
                     "time": "",
                     "stadium": "Parque Desportivo Municipal Estombar",
                     "homeScore": 0,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Udr Sambrasense",
+                    "date": "2 - 0                            \r\n                \r\n                    15 mar",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 2,
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cd Odiáxere",
@@ -1193,7 +1382,11 @@
                     "time": "",
                     "stadium": "Campo Eiras",
                     "homeScore": 2,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Internacional Ca",
@@ -1202,7 +1395,11 @@
                     "time": "",
                     "stadium": "Estadio Municipal De Almancil",
                     "homeScore": 1,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Sc Olhanense",
@@ -1211,7 +1408,11 @@
                     "time": "",
                     "stadium": "Estádio José Arcanjo",
                     "homeScore": 2,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1325,12 +1526,30 @@
                     "goalsAgainst": 15,
                     "points": 5
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:30:34Z",
+            "lastSuccessAt": "2026-05-19T13:30:34Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 9,
             "fixtureId": "634970",
             "matches": [
+                {
+                    "home": "Sc Farense",
+                    "away": "Internacional Ca",
+                    "date": "1 - 0                            \r\n                \r\n                    22 mar",
+                    "time": "",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": 1,
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
                 {
                     "home": "Udr Sambrasense",
                     "away": "Sc Olhanense",
@@ -1338,16 +1557,11 @@
                     "time": "",
                     "stadium": "Campo Polidesportivo",
                     "homeScore": 1,
-                    "awayScore": 1
-                },
-                {
-                    "home": "Adt - Ass. Desp. Tavira",
-                    "away": "Gd Lagoa",
-                    "date": "3 - 0                            \r\n                \r\n                    22 mar",
-                    "time": "",
-                    "stadium": "Estádio Ginásio Clube Tavira",
-                    "homeScore": 3,
-                    "awayScore": 0
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cdr Quarteirense",
@@ -1356,7 +1570,11 @@
                     "time": "",
                     "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": 0,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -1365,16 +1583,24 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 2,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
-                    "home": "Sc Farense",
-                    "away": "Internacional Ca",
-                    "date": "1 - 0                            \r\n                \r\n                    22 mar",
+                    "home": "Adt - Ass. Desp. Tavira",
+                    "away": "Gd Lagoa",
+                    "date": "3 - 0                            \r\n                \r\n                    22 mar",
                     "time": "",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": 1,
-                    "awayScore": 0
+                    "stadium": "Estádio Ginásio Clube Tavira",
+                    "homeScore": 3,
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1488,12 +1714,30 @@
                     "goalsAgainst": 16,
                     "points": 5
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:30:35Z",
+            "lastSuccessAt": "2026-05-19T13:30:35Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 10,
             "fixtureId": "634971",
             "matches": [
+                {
+                    "home": "Sc Farense",
+                    "away": "Cd Odiáxere",
+                    "date": "1 - 2                            \r\n                \r\n                    29 mar",
+                    "time": "",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": 1,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
                 {
                     "home": "Cdr Quarteirense",
                     "away": "Udr Sambrasense",
@@ -1501,16 +1745,11 @@
                     "time": "",
                     "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": 4,
-                    "awayScore": 0
-                },
-                {
-                    "home": "Internacional Ca",
-                    "away": "Sc Olhanense",
-                    "date": "0 - 2                            \r\n                \r\n                    29 mar",
-                    "time": "",
-                    "stadium": "Estadio Municipal De Almancil",
-                    "homeScore": 0,
-                    "awayScore": 2
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -1519,7 +1758,24 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 2,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Internacional Ca",
+                    "away": "Sc Olhanense",
+                    "date": "0 - 2                            \r\n                \r\n                    29 mar",
+                    "time": "",
+                    "stadium": "Estadio Municipal De Almancil",
+                    "homeScore": 0,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Adt - Ass. Desp. Tavira",
@@ -1528,16 +1784,11 @@
                     "time": "",
                     "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": 1,
-                    "awayScore": 1
-                },
-                {
-                    "home": "Sc Farense",
-                    "away": "Cd Odiáxere",
-                    "date": "1 - 2                            \r\n                \r\n                    29 mar",
-                    "time": "",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": 1,
-                    "awayScore": 2
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1651,7 +1902,12 @@
                     "goalsAgainst": 18,
                     "points": 5
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:30:37Z",
+            "lastSuccessAt": "2026-05-19T13:30:37Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 11,
@@ -1664,16 +1920,11 @@
                     "time": "",
                     "stadium": "Parque Desportivo Municipal Estombar",
                     "homeScore": 0,
-                    "awayScore": 2
-                },
-                {
-                    "home": "Udr Sambrasense",
-                    "away": "Adt - Ass. Desp. Tavira",
-                    "date": "1 - 4                            \r\n                \r\n                    12 abr",
-                    "time": "",
-                    "stadium": "Campo Polidesportivo",
-                    "homeScore": 1,
-                    "awayScore": 4
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Sc Olhanense",
@@ -1682,7 +1933,24 @@
                     "time": "",
                     "stadium": "Estádio José Arcanjo",
                     "homeScore": 0,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Udr Sambrasense",
+                    "away": "Adt - Ass. Desp. Tavira",
+                    "date": "1 - 4                            \r\n                \r\n                    12 abr",
+                    "time": "",
+                    "stadium": "Campo Polidesportivo",
+                    "homeScore": 1,
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cd Odiáxere",
@@ -1691,7 +1959,11 @@
                     "time": "",
                     "stadium": "Campo Eiras",
                     "homeScore": 2,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -1700,7 +1972,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 0,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1814,7 +2090,12 @@
                     "goalsAgainst": 20,
                     "points": 5
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:30:38Z",
+            "lastSuccessAt": "2026-05-19T13:30:38Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 12,
@@ -1827,7 +2108,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 0,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cd Odiáxere",
@@ -1836,16 +2121,11 @@
                     "time": "",
                     "stadium": "Campo Eiras",
                     "homeScore": 1,
-                    "awayScore": 2
-                },
-                {
-                    "home": "Adt - Ass. Desp. Tavira",
-                    "away": "Cdr Quarteirense",
-                    "date": "2 - 6                            \r\n                \r\n                    19 abr",
-                    "time": "",
-                    "stadium": "Estádio Ginásio Clube Tavira",
-                    "homeScore": 2,
-                    "awayScore": 6
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Internacional Ca",
@@ -1854,7 +2134,24 @@
                     "time": "",
                     "stadium": "Estadio Municipal De Almancil",
                     "homeScore": 1,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Adt - Ass. Desp. Tavira",
+                    "away": "Cdr Quarteirense",
+                    "date": "2 - 6                            \r\n                \r\n                    19 abr",
+                    "time": "",
+                    "stadium": "Estádio Ginásio Clube Tavira",
+                    "homeScore": 2,
+                    "awayScore": 6,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Sc Farense",
@@ -1863,7 +2160,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 1,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1977,21 +2278,17 @@
                     "goalsAgainst": 20,
                     "points": 8
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:30:39Z",
+            "lastSuccessAt": "2026-05-19T13:30:39Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 13,
             "fixtureId": "634974",
             "matches": [
-                {
-                    "home": "Udr Sambrasense",
-                    "away": "Sc Farense",
-                    "date": "1 - 2                            \r\n                \r\n                    26 abr",
-                    "time": "",
-                    "stadium": "Campo Polidesportivo",
-                    "homeScore": 1,
-                    "awayScore": 2
-                },
                 {
                     "home": "Sc Olhanense",
                     "away": "Adt - Ass. Desp. Tavira",
@@ -1999,7 +2296,24 @@
                     "time": "",
                     "stadium": "Estádio José Arcanjo",
                     "homeScore": 1,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Udr Sambrasense",
+                    "away": "Sc Farense",
+                    "date": "1 - 2                            \r\n                \r\n                    26 abr",
+                    "time": "",
+                    "stadium": "Campo Polidesportivo",
+                    "homeScore": 1,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cdr Quarteirense",
@@ -2008,7 +2322,11 @@
                     "time": "",
                     "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": 4,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Gd Lagoa",
@@ -2017,7 +2335,11 @@
                     "time": "",
                     "stadium": "Parque Desportivo Municipal Estombar",
                     "homeScore": 3,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -2026,7 +2348,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 1,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -2140,20 +2466,29 @@
                     "goalsAgainst": 21,
                     "points": 8
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:30:41Z",
+            "lastSuccessAt": "2026-05-19T13:30:41Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 14,
             "fixtureId": "634975",
             "matches": [
                 {
-                    "home": "Internacional Ca",
-                    "away": "Udr Sambrasense",
-                    "date": "3 - 1                            \r\n                \r\n                    3 mai",
+                    "home": "Sc Farense",
+                    "away": "Cdr Quarteirense",
+                    "date": "0 - 0                            \r\n                \r\n                    3 mai",
                     "time": "",
-                    "stadium": "Estadio Municipal De Almancil",
-                    "homeScore": 3,
-                    "awayScore": 1
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": 0,
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Gd Lagoa",
@@ -2162,16 +2497,11 @@
                     "time": "",
                     "stadium": "Parque Desportivo Municipal Estombar",
                     "homeScore": 1,
-                    "awayScore": 4
-                },
-                {
-                    "home": "Sc Farense",
-                    "away": "Cdr Quarteirense",
-                    "date": "0 - 0                            \r\n                \r\n                    3 mai",
-                    "time": "",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": 0,
-                    "awayScore": 0
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -2180,7 +2510,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 0,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cd Odiáxere",
@@ -2189,7 +2523,24 @@
                     "time": "",
                     "stadium": "Campo Eiras",
                     "homeScore": 1,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Internacional Ca",
+                    "away": "Udr Sambrasense",
+                    "date": "3 - 1                            \r\n                \r\n                    3 mai",
+                    "time": "",
+                    "stadium": "Estadio Municipal De Almancil",
+                    "homeScore": 3,
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -2303,38 +2654,48 @@
                     "goalsAgainst": 28,
                     "points": 10
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:30:42Z",
+            "lastSuccessAt": "2026-05-19T13:30:42Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 15,
             "fixtureId": "634976",
             "matches": [
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Gd Lagoa",
-                    "date": "4 - 1                            \r\n                \r\n                    10 mai",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 4,
-                    "awayScore": 1
-                },
-                {
                     "home": "Sc Olhanense",
                     "away": "Fc Ferreiras",
-                    "date": "10 mai",
-                    "time": "16:00",
+                    "date": "1 - 1                            \r\n                \r\n                    10 mai",
+                    "time": "",
                     "stadium": "Estádio José Arcanjo",
                     "homeScore": 1,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:30:43Z",
+                    "changeFlags": [
+                        "date_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Udr Sambrasense",
                     "away": "Cd Odiáxere",
-                    "date": "10 mai",
-                    "time": "16:00",
+                    "date": "2 - 0                            \r\n                \r\n                    10 mai",
+                    "time": "",
                     "stadium": "Campo Polidesportivo",
                     "homeScore": 2,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:30:43Z",
+                    "changeFlags": [
+                        "date_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Cdr Quarteirense",
@@ -2343,7 +2704,24 @@
                     "time": "",
                     "stadium": "Estadio Municipal Quarteira Nº 2",
                     "homeScore": 5,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:30:43Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Gd Lagoa",
+                    "date": "4 - 1                            \r\n                \r\n                    10 mai",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 4,
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:30:43Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Adt - Ass. Desp. Tavira",
@@ -2352,7 +2730,11 @@
                     "time": "",
                     "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": 2,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:30:43Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -2381,13 +2763,13 @@
                 {
                     "position": 3,
                     "team": "Sc Olhanense",
-                    "played": 14,
+                    "played": 15,
                     "wins": 7,
-                    "draws": 5,
+                    "draws": 6,
                     "losses": 2,
-                    "goalsFor": 25,
-                    "goalsAgainst": 14,
-                    "points": 26
+                    "goalsFor": 26,
+                    "goalsAgainst": 15,
+                    "points": 27
                 },
                 {
                     "position": 4,
@@ -2414,24 +2796,24 @@
                 {
                     "position": 6,
                     "team": "Cd Odiáxere",
-                    "played": 14,
+                    "played": 15,
                     "wins": 5,
                     "draws": 4,
-                    "losses": 5,
+                    "losses": 6,
                     "goalsFor": 19,
-                    "goalsAgainst": 22,
+                    "goalsAgainst": 24,
                     "points": 19
                 },
                 {
                     "position": 7,
                     "team": "Fc Ferreiras",
-                    "played": 14,
+                    "played": 15,
                     "wins": 4,
-                    "draws": 4,
+                    "draws": 5,
                     "losses": 6,
-                    "goalsFor": 18,
-                    "goalsAgainst": 24,
-                    "points": 16
+                    "goalsFor": 19,
+                    "goalsAgainst": 25,
+                    "points": 17
                 },
                 {
                     "position": 8,
@@ -2446,6 +2828,17 @@
                 },
                 {
                     "position": 9,
+                    "team": "Udr Sambrasense",
+                    "played": 15,
+                    "wins": 4,
+                    "draws": 1,
+                    "losses": 10,
+                    "goalsFor": 16,
+                    "goalsAgainst": 28,
+                    "points": 13
+                },
+                {
+                    "position": 10,
                     "team": "Internacional Ca",
                     "played": 15,
                     "wins": 3,
@@ -2454,19 +2847,13 @@
                     "goalsFor": 14,
                     "goalsAgainst": 27,
                     "points": 11
-                },
-                {
-                    "position": 10,
-                    "team": "Udr Sambrasense",
-                    "played": 14,
-                    "wins": 3,
-                    "draws": 1,
-                    "losses": 10,
-                    "goalsFor": 14,
-                    "goalsAgainst": 28,
-                    "points": 10
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:30:43Z",
+            "lastSuccessAt": "2026-05-19T13:30:43Z",
+            "lastChangedAt": "2026-05-19T13:30:43Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 16,
@@ -2475,63 +2862,113 @@
                 {
                     "home": "Gd Lagoa",
                     "away": "Udr Sambrasense",
-                    "date": "17 mai",
-                    "time": "15:00",
+                    "date": "1 - 3                            \r\n                \r\n                    17 mai",
+                    "time": "",
                     "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 1,
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:30:45Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Cf Os Armacenenses",
                     "away": "Sc Olhanense",
-                    "date": "17 mai",
-                    "time": "15:00",
+                    "date": "3 - 1                            \r\n                \r\n                    17 mai",
+                    "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 3,
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:30:45Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Internacional Ca",
                     "away": "Adt - Ass. Desp. Tavira",
-                    "date": "17 mai",
-                    "time": "15:00",
+                    "date": "1 - 1                            \r\n                \r\n                    17 mai",
+                    "time": "",
                     "stadium": "Estadio Municipal De Almancil",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 1,
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:30:45Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Cd Odiáxere",
                     "away": "Cdr Quarteirense",
-                    "date": "17 mai",
-                    "time": "16:00",
+                    "date": "3 - 8                            \r\n                \r\n                    17 mai",
+                    "time": "",
                     "stadium": "Campo Eiras",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 3,
+                    "awayScore": 8,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:30:45Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Sc Farense",
                     "away": "Fc Ferreiras",
-                    "date": "17 mai",
-                    "time": "17:00",
+                    "date": "21 mai",
+                    "time": "20:30",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:30:45Z",
+                    "changeFlags": [
+                        "date_changed",
+                        "time_changed"
+                    ]
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Cdr Quarteirense",
-                    "played": 15,
-                    "wins": 11,
+                    "played": 16,
+                    "wins": 12,
                     "draws": 3,
                     "losses": 1,
-                    "goalsFor": 34,
-                    "goalsAgainst": 5,
-                    "points": 36
+                    "goalsFor": 42,
+                    "goalsAgainst": 8,
+                    "points": 39
                 },
                 {
                     "position": 2,
+                    "team": "Cf Os Armacenenses",
+                    "played": 16,
+                    "wins": 7,
+                    "draws": 6,
+                    "losses": 3,
+                    "goalsFor": 22,
+                    "goalsAgainst": 15,
+                    "points": 27
+                },
+                {
+                    "position": 3,
                     "team": "Sc Farense",
                     "played": 15,
                     "wins": 8,
@@ -2542,94 +2979,88 @@
                     "points": 27
                 },
                 {
-                    "position": 3,
-                    "team": "Sc Olhanense",
-                    "played": 14,
-                    "wins": 7,
-                    "draws": 5,
-                    "losses": 2,
-                    "goalsFor": 25,
-                    "goalsAgainst": 14,
-                    "points": 26
-                },
-                {
                     "position": 4,
-                    "team": "Cf Os Armacenenses",
-                    "played": 15,
-                    "wins": 6,
+                    "team": "Sc Olhanense",
+                    "played": 16,
+                    "wins": 7,
                     "draws": 6,
                     "losses": 3,
-                    "goalsFor": 19,
-                    "goalsAgainst": 14,
-                    "points": 24
+                    "goalsFor": 27,
+                    "goalsAgainst": 18,
+                    "points": 27
                 },
                 {
                     "position": 5,
                     "team": "Adt - Ass. Desp. Tavira",
-                    "played": 15,
+                    "played": 16,
                     "wins": 7,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 7,
-                    "goalsFor": 26,
-                    "goalsAgainst": 24,
-                    "points": 22
+                    "goalsFor": 27,
+                    "goalsAgainst": 25,
+                    "points": 23
                 },
                 {
                     "position": 6,
                     "team": "Cd Odiáxere",
-                    "played": 14,
+                    "played": 16,
                     "wins": 5,
                     "draws": 4,
-                    "losses": 5,
-                    "goalsFor": 19,
-                    "goalsAgainst": 22,
+                    "losses": 7,
+                    "goalsFor": 22,
+                    "goalsAgainst": 32,
                     "points": 19
                 },
                 {
                     "position": 7,
                     "team": "Fc Ferreiras",
-                    "played": 14,
+                    "played": 15,
                     "wins": 4,
-                    "draws": 4,
+                    "draws": 5,
                     "losses": 6,
-                    "goalsFor": 18,
-                    "goalsAgainst": 24,
-                    "points": 16
+                    "goalsFor": 19,
+                    "goalsAgainst": 25,
+                    "points": 17
                 },
                 {
                     "position": 8,
-                    "team": "Gd Lagoa",
-                    "played": 15,
-                    "wins": 4,
+                    "team": "Udr Sambrasense",
+                    "played": 16,
+                    "wins": 5,
                     "draws": 1,
                     "losses": 10,
-                    "goalsFor": 14,
-                    "goalsAgainst": 30,
-                    "points": 13
+                    "goalsFor": 19,
+                    "goalsAgainst": 29,
+                    "points": 16
                 },
                 {
                     "position": 9,
-                    "team": "Internacional Ca",
-                    "played": 15,
-                    "wins": 3,
-                    "draws": 2,
-                    "losses": 10,
-                    "goalsFor": 14,
-                    "goalsAgainst": 27,
-                    "points": 11
+                    "team": "Gd Lagoa",
+                    "played": 16,
+                    "wins": 4,
+                    "draws": 1,
+                    "losses": 11,
+                    "goalsFor": 15,
+                    "goalsAgainst": 33,
+                    "points": 13
                 },
                 {
                     "position": 10,
-                    "team": "Udr Sambrasense",
-                    "played": 14,
+                    "team": "Internacional Ca",
+                    "played": 16,
                     "wins": 3,
-                    "draws": 1,
+                    "draws": 3,
                     "losses": 10,
-                    "goalsFor": 14,
+                    "goalsFor": 15,
                     "goalsAgainst": 28,
-                    "points": 10
+                    "points": 12
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:30:45Z",
+            "lastSuccessAt": "2026-05-19T13:30:45Z",
+            "lastChangedAt": "2026-05-19T13:30:45Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 17,
@@ -2642,16 +3073,26 @@
                     "time": "15:00",
                     "stadium": "Campo Polidesportivo",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:30:47Z",
+                    "changeFlags": []
                 },
                 {
-                    "home": "Adt - Ass. Desp. Tavira",
-                    "away": "Cd Odiáxere",
+                    "home": "Cdr Quarteirense",
+                    "away": "Gd Lagoa",
                     "date": "24 mai",
                     "time": "16:00",
-                    "stadium": "Estádio Ginásio Clube Tavira",
+                    "stadium": "Estádio Municipal Quarteira",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:30:47Z",
+                    "changeFlags": [
+                        "stadium_changed"
+                    ]
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -2660,7 +3101,24 @@
                     "time": "16:00",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:30:47Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Adt - Ass. Desp. Tavira",
+                    "away": "Cd Odiáxere",
+                    "date": "24 mai",
+                    "time": "16:00",
+                    "stadium": "Estádio Ginásio Clube Tavira",
+                    "homeScore": null,
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:30:47Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Sc Farense",
@@ -2669,32 +3127,38 @@
                     "time": "16:00",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Cdr Quarteirense",
-                    "away": "Gd Lagoa",
-                    "date": "24 mai",
-                    "time": "16:00",
-                    "stadium": "Estadio Municipal Quarteira Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:30:47Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Cdr Quarteirense",
-                    "played": 15,
-                    "wins": 11,
+                    "played": 16,
+                    "wins": 12,
                     "draws": 3,
                     "losses": 1,
-                    "goalsFor": 34,
-                    "goalsAgainst": 5,
-                    "points": 36
+                    "goalsFor": 42,
+                    "goalsAgainst": 8,
+                    "points": 39
                 },
                 {
                     "position": 2,
+                    "team": "Cf Os Armacenenses",
+                    "played": 16,
+                    "wins": 7,
+                    "draws": 6,
+                    "losses": 3,
+                    "goalsFor": 22,
+                    "goalsAgainst": 15,
+                    "points": 27
+                },
+                {
+                    "position": 3,
                     "team": "Sc Farense",
                     "played": 15,
                     "wins": 8,
@@ -2705,94 +3169,88 @@
                     "points": 27
                 },
                 {
-                    "position": 3,
-                    "team": "Sc Olhanense",
-                    "played": 14,
-                    "wins": 7,
-                    "draws": 5,
-                    "losses": 2,
-                    "goalsFor": 25,
-                    "goalsAgainst": 14,
-                    "points": 26
-                },
-                {
                     "position": 4,
-                    "team": "Cf Os Armacenenses",
-                    "played": 15,
-                    "wins": 6,
+                    "team": "Sc Olhanense",
+                    "played": 16,
+                    "wins": 7,
                     "draws": 6,
                     "losses": 3,
-                    "goalsFor": 19,
-                    "goalsAgainst": 14,
-                    "points": 24
+                    "goalsFor": 27,
+                    "goalsAgainst": 18,
+                    "points": 27
                 },
                 {
                     "position": 5,
                     "team": "Adt - Ass. Desp. Tavira",
-                    "played": 15,
+                    "played": 16,
                     "wins": 7,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 7,
-                    "goalsFor": 26,
-                    "goalsAgainst": 24,
-                    "points": 22
+                    "goalsFor": 27,
+                    "goalsAgainst": 25,
+                    "points": 23
                 },
                 {
                     "position": 6,
                     "team": "Cd Odiáxere",
-                    "played": 14,
+                    "played": 16,
                     "wins": 5,
                     "draws": 4,
-                    "losses": 5,
-                    "goalsFor": 19,
-                    "goalsAgainst": 22,
+                    "losses": 7,
+                    "goalsFor": 22,
+                    "goalsAgainst": 32,
                     "points": 19
                 },
                 {
                     "position": 7,
                     "team": "Fc Ferreiras",
-                    "played": 14,
+                    "played": 15,
                     "wins": 4,
-                    "draws": 4,
+                    "draws": 5,
                     "losses": 6,
-                    "goalsFor": 18,
-                    "goalsAgainst": 24,
-                    "points": 16
+                    "goalsFor": 19,
+                    "goalsAgainst": 25,
+                    "points": 17
                 },
                 {
                     "position": 8,
-                    "team": "Gd Lagoa",
-                    "played": 15,
-                    "wins": 4,
+                    "team": "Udr Sambrasense",
+                    "played": 16,
+                    "wins": 5,
                     "draws": 1,
                     "losses": 10,
-                    "goalsFor": 14,
-                    "goalsAgainst": 30,
-                    "points": 13
+                    "goalsFor": 19,
+                    "goalsAgainst": 29,
+                    "points": 16
                 },
                 {
                     "position": 9,
-                    "team": "Internacional Ca",
-                    "played": 15,
-                    "wins": 3,
-                    "draws": 2,
-                    "losses": 10,
-                    "goalsFor": 14,
-                    "goalsAgainst": 27,
-                    "points": 11
+                    "team": "Gd Lagoa",
+                    "played": 16,
+                    "wins": 4,
+                    "draws": 1,
+                    "losses": 11,
+                    "goalsFor": 15,
+                    "goalsAgainst": 33,
+                    "points": 13
                 },
                 {
                     "position": 10,
-                    "team": "Udr Sambrasense",
-                    "played": 14,
+                    "team": "Internacional Ca",
+                    "played": 16,
                     "wins": 3,
-                    "draws": 1,
+                    "draws": 3,
                     "losses": 10,
-                    "goalsFor": 14,
+                    "goalsFor": 15,
                     "goalsAgainst": 28,
-                    "points": 10
+                    "points": 12
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:30:47Z",
+            "lastSuccessAt": "2026-05-19T13:30:47Z",
+            "lastChangedAt": "2026-05-19T13:30:47Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 18,
@@ -2805,25 +3263,11 @@
                     "time": "16:00",
                     "stadium": "Estádio José Arcanjo",
                     "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Cdr Quarteirense",
-                    "date": "31 mai",
-                    "time": "16:00",
-                    "stadium": "A Indicar",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Internacional Ca",
-                    "away": "Sc Farense",
-                    "date": "31 mai",
-                    "time": "16:00",
-                    "stadium": "Estadio Municipal De Almancil",
-                    "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:30:48Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Gd Lagoa",
@@ -2832,7 +3276,24 @@
                     "time": "16:00",
                     "stadium": "Parque Desportivo Municipal Estombar",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:30:48Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Cdr Quarteirense",
+                    "date": "31 mai",
+                    "time": "16:00",
+                    "stadium": "A Indicar",
+                    "homeScore": null,
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:30:48Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cd Odiáxere",
@@ -2841,23 +3302,51 @@
                     "time": "16:00",
                     "stadium": "Campo Eiras",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:30:48Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Internacional Ca",
+                    "away": "Sc Farense",
+                    "date": "31 mai",
+                    "time": "16:00",
+                    "stadium": "Estadio Municipal De Almancil",
+                    "homeScore": null,
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:30:48Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Cdr Quarteirense",
-                    "played": 15,
-                    "wins": 11,
+                    "played": 16,
+                    "wins": 12,
                     "draws": 3,
                     "losses": 1,
-                    "goalsFor": 34,
-                    "goalsAgainst": 5,
-                    "points": 36
+                    "goalsFor": 42,
+                    "goalsAgainst": 8,
+                    "points": 39
                 },
                 {
                     "position": 2,
+                    "team": "Cf Os Armacenenses",
+                    "played": 16,
+                    "wins": 7,
+                    "draws": 6,
+                    "losses": 3,
+                    "goalsFor": 22,
+                    "goalsAgainst": 15,
+                    "points": 27
+                },
+                {
+                    "position": 3,
                     "team": "Sc Farense",
                     "played": 15,
                     "wins": 8,
@@ -2868,94 +3357,88 @@
                     "points": 27
                 },
                 {
-                    "position": 3,
-                    "team": "Sc Olhanense",
-                    "played": 14,
-                    "wins": 7,
-                    "draws": 5,
-                    "losses": 2,
-                    "goalsFor": 25,
-                    "goalsAgainst": 14,
-                    "points": 26
-                },
-                {
                     "position": 4,
-                    "team": "Cf Os Armacenenses",
-                    "played": 15,
-                    "wins": 6,
+                    "team": "Sc Olhanense",
+                    "played": 16,
+                    "wins": 7,
                     "draws": 6,
                     "losses": 3,
-                    "goalsFor": 19,
-                    "goalsAgainst": 14,
-                    "points": 24
+                    "goalsFor": 27,
+                    "goalsAgainst": 18,
+                    "points": 27
                 },
                 {
                     "position": 5,
                     "team": "Adt - Ass. Desp. Tavira",
-                    "played": 15,
+                    "played": 16,
                     "wins": 7,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 7,
-                    "goalsFor": 26,
-                    "goalsAgainst": 24,
-                    "points": 22
+                    "goalsFor": 27,
+                    "goalsAgainst": 25,
+                    "points": 23
                 },
                 {
                     "position": 6,
                     "team": "Cd Odiáxere",
-                    "played": 14,
+                    "played": 16,
                     "wins": 5,
                     "draws": 4,
-                    "losses": 5,
-                    "goalsFor": 19,
-                    "goalsAgainst": 22,
+                    "losses": 7,
+                    "goalsFor": 22,
+                    "goalsAgainst": 32,
                     "points": 19
                 },
                 {
                     "position": 7,
                     "team": "Fc Ferreiras",
-                    "played": 14,
+                    "played": 15,
                     "wins": 4,
-                    "draws": 4,
+                    "draws": 5,
                     "losses": 6,
-                    "goalsFor": 18,
-                    "goalsAgainst": 24,
-                    "points": 16
+                    "goalsFor": 19,
+                    "goalsAgainst": 25,
+                    "points": 17
                 },
                 {
                     "position": 8,
-                    "team": "Gd Lagoa",
-                    "played": 15,
-                    "wins": 4,
+                    "team": "Udr Sambrasense",
+                    "played": 16,
+                    "wins": 5,
                     "draws": 1,
                     "losses": 10,
-                    "goalsFor": 14,
-                    "goalsAgainst": 30,
-                    "points": 13
+                    "goalsFor": 19,
+                    "goalsAgainst": 29,
+                    "points": 16
                 },
                 {
                     "position": 9,
-                    "team": "Internacional Ca",
-                    "played": 15,
-                    "wins": 3,
-                    "draws": 2,
-                    "losses": 10,
-                    "goalsFor": 14,
-                    "goalsAgainst": 27,
-                    "points": 11
+                    "team": "Gd Lagoa",
+                    "played": 16,
+                    "wins": 4,
+                    "draws": 1,
+                    "losses": 11,
+                    "goalsFor": 15,
+                    "goalsAgainst": 33,
+                    "points": 13
                 },
                 {
                     "position": 10,
-                    "team": "Udr Sambrasense",
-                    "played": 14,
+                    "team": "Internacional Ca",
+                    "played": 16,
                     "wins": 3,
-                    "draws": 1,
+                    "draws": 3,
                     "losses": 10,
-                    "goalsFor": 14,
+                    "goalsFor": 15,
                     "goalsAgainst": 28,
-                    "points": 10
+                    "points": 12
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:30:48Z",
+            "lastSuccessAt": "2026-05-19T13:30:48Z",
+            "lastChangedAt": "2026-05-19T13:30:48Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         }
     ]
 }
