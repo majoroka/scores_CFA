@@ -1,7 +1,13 @@
 {
-    "defaultRoundIndex": 15,
-    "defaultRoundNumber": 16,
-    "lastUpdatedAt": "2026-05-11T13:16:05Z",
+    "schemaVersion": 2,
+    "generatedAt": "2026-05-19T13:42:40Z",
+    "lastAttemptAt": "2026-05-19T13:42:16Z",
+    "lastSuccessAt": null,
+    "lastChangedAt": null,
+    "lastPublishedAt": "2026-05-19T13:42:40Z",
+    "defaultRoundIndex": 7,
+    "defaultRoundNumber": 8,
+    "lastUpdatedAt": "2026-05-19T13:42:40Z",
     "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -12,11 +18,11 @@
         "matchCount": 90,
         "classificationCount": 180,
         "teamCount": 10,
-        "completedMatchCount": 77,
-        "matchesWithoutScore": 13,
-        "pastMatchCount": 80,
-        "pastMatchesWithoutScore": 3,
-        "futureMatchCount": 10,
+        "completedMatchCount": 83,
+        "matchesWithoutScore": 7,
+        "pastMatchCount": 85,
+        "pastMatchesWithoutScore": 2,
+        "futureMatchCount": 5,
         "roundsWithMatches": 18,
         "roundsWithClassification": 18,
         "roundsWithCompletedMatches": 17,
@@ -28,22 +34,30 @@
             "fixtureId": "626080",
             "matches": [
                 {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Nucleo Sporting C.P. Olhão",
-                    "date": "4 - 2                            \r\n                \r\n                    10 jan",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 4,
-                    "awayScore": 2
-                },
-                {
                     "home": "Silves Fc",
                     "away": "Js Campinense",
                     "date": "2 - 1                            \r\n                \r\n                    10 jan",
                     "time": "",
                     "stadium": "Estádio Dr. Francisco Vieira",
                     "homeScore": 2,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Nucleo Sporting C.P. Olhão",
+                    "date": "4 - 2                            \r\n                \r\n                    10 jan",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 4,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cd Montenegro",
@@ -52,7 +66,11 @@
                     "time": "",
                     "stadium": "Campo Horta Da Areia",
                     "homeScore": 5,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Esperança Lagos",
@@ -61,7 +79,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal De Lagos N.º 2",
                     "homeScore": 7,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Sc Farense",
@@ -70,7 +92,11 @@
                     "time": "",
                     "stadium": "Campo Horta Da Areia",
                     "homeScore": 1,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -184,7 +210,12 @@
                     "goalsAgainst": 7,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:42:16Z",
+            "lastSuccessAt": "2026-05-19T13:42:16Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 2,
@@ -197,7 +228,11 @@
                     "time": "",
                     "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
                     "homeScore": 3,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Js Campinense",
@@ -206,7 +241,11 @@
                     "time": "",
                     "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": 3,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Adt - Ass. Desp. Tavira",
@@ -215,7 +254,11 @@
                     "time": "",
                     "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": 1,
-                    "awayScore": 4
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Portimonense Sc",
@@ -224,7 +267,11 @@
                     "time": "",
                     "stadium": "Campo Major David Neto 2",
                     "homeScore": 2,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -233,7 +280,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 2,
-                    "awayScore": 4
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -347,21 +398,17 @@
                     "goalsAgainst": 11,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:42:17Z",
+            "lastSuccessAt": "2026-05-19T13:42:17Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 3,
             "fixtureId": "626082",
             "matches": [
-                {
-                    "home": "Silves Fc",
-                    "away": "Sc Farense",
-                    "date": "3 - 3                            \r\n                \r\n                    24 jan",
-                    "time": "",
-                    "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": 3,
-                    "awayScore": 3
-                },
                 {
                     "home": "Cf Esperança Lagos",
                     "away": "Portimonense Sc",
@@ -369,7 +416,24 @@
                     "time": "",
                     "stadium": "Estádio Municipal De Lagos N.º 2",
                     "homeScore": 4,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Silves Fc",
+                    "away": "Sc Farense",
+                    "date": "3 - 3                            \r\n                \r\n                    24 jan",
+                    "time": "",
+                    "stadium": "Estádio Dr. Francisco Vieira",
+                    "homeScore": 3,
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -378,7 +442,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 10,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Nucleo Sporting C.P. Olhão",
@@ -387,7 +455,11 @@
                     "time": "",
                     "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
                     "homeScore": 3,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cd Montenegro",
@@ -396,7 +468,11 @@
                     "time": "",
                     "stadium": "Campo Horta Da Areia",
                     "homeScore": 2,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -510,7 +586,12 @@
                     "goalsAgainst": 19,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:42:18Z",
+            "lastSuccessAt": "2026-05-19T13:42:18Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 4,
@@ -523,7 +604,11 @@
                     "time": "",
                     "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": 2,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Js Campinense",
@@ -532,16 +617,11 @@
                     "time": "",
                     "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": 0,
-                    "awayScore": 3
-                },
-                {
-                    "home": "Portimonense Sc",
-                    "away": "Cf Os Armacenenses",
-                    "date": "4 - 3                            \r\n                \r\n                    31 jan",
-                    "time": "",
-                    "stadium": "Campo Major David Neto 2",
-                    "homeScore": 4,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -550,7 +630,24 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 1,
-                    "awayScore": 4
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Portimonense Sc",
+                    "away": "Cf Os Armacenenses",
+                    "date": "4 - 3                            \r\n                \r\n                    31 jan",
+                    "time": "",
+                    "stadium": "Campo Major David Neto 2",
+                    "homeScore": 4,
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Sc Farense",
@@ -559,7 +656,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 2,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -673,7 +774,12 @@
                     "goalsAgainst": 23,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:42:20Z",
+            "lastSuccessAt": "2026-05-19T13:42:20Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 5,
@@ -686,7 +792,11 @@
                     "time": "",
                     "stadium": "Estádio Dr. Francisco Vieira",
                     "homeScore": 0,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -695,7 +805,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 3,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Nucleo Sporting C.P. Olhão",
@@ -704,7 +818,11 @@
                     "time": "",
                     "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
                     "homeScore": 2,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Adt - Ass. Desp. Tavira",
@@ -713,7 +831,11 @@
                     "time": "",
                     "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": 5,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Esperança Lagos",
@@ -722,7 +844,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal De Lagos N.º 2",
                     "homeScore": 5,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -836,7 +962,12 @@
                     "goalsAgainst": 28,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:42:21Z",
+            "lastSuccessAt": "2026-05-19T13:42:21Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 6,
@@ -849,7 +980,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 1,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Portimonense Sc",
@@ -858,7 +993,11 @@
                     "time": "",
                     "stadium": "Campo Major David Neto 2",
                     "homeScore": 1,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cd Montenegro",
@@ -867,7 +1006,11 @@
                     "time": "",
                     "stadium": "Campo Horta Da Areia",
                     "homeScore": 4,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Sc Farense",
@@ -876,7 +1019,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 1,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Js Campinense",
@@ -885,7 +1032,11 @@
                     "time": "",
                     "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": 6,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -999,21 +1150,17 @@
                     "goalsAgainst": 30,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:42:22Z",
+            "lastSuccessAt": "2026-05-19T13:42:22Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 7,
             "fixtureId": "626086",
             "matches": [
-                {
-                    "home": "Nucleo Sporting C.P. Olhão",
-                    "away": "Sc Farense",
-                    "date": "3 - 0                            \r\n                \r\n                    28 fev",
-                    "time": "",
-                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
-                    "homeScore": 3,
-                    "awayScore": 0
-                },
                 {
                     "home": "Silves Fc",
                     "away": "Cf Esperança Lagos",
@@ -1021,16 +1168,24 @@
                     "time": "",
                     "stadium": "Estádio Dr. Francisco Vieira",
                     "homeScore": 0,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
-                    "home": "Fc Ferreiras",
-                    "away": "Portimonense Sc",
-                    "date": "3 - 2                            \r\n                \r\n                    28 fev",
+                    "home": "Nucleo Sporting C.P. Olhão",
+                    "away": "Sc Farense",
+                    "date": "3 - 0                            \r\n                \r\n                    28 fev",
                     "time": "",
-                    "stadium": "Estádio Nora Nº 2",
+                    "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
                     "homeScore": 3,
-                    "awayScore": 2
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -1039,7 +1194,24 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 4,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Portimonense Sc",
+                    "date": "3 - 2                            \r\n                \r\n                    28 fev",
+                    "time": "",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": 3,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 },
                 {
                     "home": "Adt - Ass. Desp. Tavira",
@@ -1048,7 +1220,11 @@
                     "time": "",
                     "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": 6,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1162,7 +1338,12 @@
                     "goalsAgainst": 20,
                     "points": 2
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:42:24Z",
+            "lastSuccessAt": "2026-05-19T13:42:24Z",
+            "lastChangedAt": null,
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 8,
@@ -1175,7 +1356,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal De Lagos N.º 2",
                     "homeScore": 3,
-                    "awayScore": 6
+                    "awayScore": 6,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:25Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cd Montenegro",
@@ -1184,7 +1369,11 @@
                     "time": "",
                     "stadium": "Campo Horta Da Areia",
                     "homeScore": 2,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:25Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Js Campinense",
@@ -1193,7 +1382,11 @@
                     "time": "",
                     "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": 1,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:25Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Sc Farense",
@@ -1202,16 +1395,28 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 5,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:25Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Silves Fc",
                     "away": "Portimonense Sc",
-                    "date": "16 mai",
-                    "time": "09:00",
+                    "date": "1 - 0                            \r\n                \r\n                    16 mai",
+                    "time": "",
                     "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 1,
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:25Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 }
             ],
             "classification": [
@@ -1261,28 +1466,17 @@
                 },
                 {
                     "position": 5,
-                    "team": "Portimonense Sc",
+                    "team": "Silves Fc",
                     "played": 8,
-                    "wins": 4,
-                    "draws": 0,
-                    "losses": 4,
+                    "wins": 3,
+                    "draws": 4,
+                    "losses": 1,
                     "goalsFor": 13,
-                    "goalsAgainst": 17,
-                    "points": 12
+                    "goalsAgainst": 12,
+                    "points": 13
                 },
                 {
                     "position": 6,
-                    "team": "Silves Fc",
-                    "played": 8,
-                    "wins": 2,
-                    "draws": 4,
-                    "losses": 2,
-                    "goalsFor": 13,
-                    "goalsAgainst": 14,
-                    "points": 10
-                },
-                {
-                    "position": 7,
                     "team": "Adt - Ass. Desp. Tavira",
                     "played": 8,
                     "wins": 3,
@@ -1293,13 +1487,24 @@
                     "points": 10
                 },
                 {
-                    "position": 8,
+                    "position": 7,
                     "team": "Js Campinense",
                     "played": 8,
                     "wins": 3,
                     "draws": 0,
                     "losses": 5,
                     "goalsFor": 15,
+                    "goalsAgainst": 17,
+                    "points": 9
+                },
+                {
+                    "position": 8,
+                    "team": "Portimonense Sc",
+                    "played": 8,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 5,
+                    "goalsFor": 11,
                     "goalsAgainst": 17,
                     "points": 9
                 },
@@ -1325,7 +1530,12 @@
                     "goalsAgainst": 33,
                     "points": 3
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:42:25Z",
+            "lastSuccessAt": "2026-05-19T13:42:25Z",
+            "lastChangedAt": "2026-05-19T13:42:25Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 9,
@@ -1338,7 +1548,11 @@
                     "time": "",
                     "stadium": "Campo Major David Neto 2",
                     "homeScore": 0,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:27Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Nucleo Sporting C.P. Olhão",
@@ -1347,7 +1561,11 @@
                     "time": "",
                     "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
                     "homeScore": 3,
-                    "awayScore": 6
+                    "awayScore": 6,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:27Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -1356,7 +1574,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 1,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:27Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Adt - Ass. Desp. Tavira",
@@ -1365,7 +1587,11 @@
                     "time": "",
                     "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": 4,
-                    "awayScore": 5
+                    "awayScore": 5,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:27Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -1374,7 +1600,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 2,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:27Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1424,6 +1654,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Silves Fc",
+                    "played": 9,
+                    "wins": 3,
+                    "draws": 4,
+                    "losses": 2,
+                    "goalsFor": 13,
+                    "goalsAgainst": 14,
+                    "points": 13
+                },
+                {
+                    "position": 6,
                     "team": "Js Campinense",
                     "played": 9,
                     "wins": 4,
@@ -1434,29 +1675,7 @@
                     "points": 12
                 },
                 {
-                    "position": 6,
-                    "team": "Portimonense Sc",
-                    "played": 9,
-                    "wins": 4,
-                    "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 13,
-                    "goalsAgainst": 20,
-                    "points": 12
-                },
-                {
                     "position": 7,
-                    "team": "Silves Fc",
-                    "played": 9,
-                    "wins": 2,
-                    "draws": 4,
-                    "losses": 3,
-                    "goalsFor": 13,
-                    "goalsAgainst": 16,
-                    "points": 10
-                },
-                {
-                    "position": 8,
                     "team": "Adt - Ass. Desp. Tavira",
                     "played": 9,
                     "wins": 3,
@@ -1465,6 +1684,17 @@
                     "goalsFor": 23,
                     "goalsAgainst": 31,
                     "points": 10
+                },
+                {
+                    "position": 8,
+                    "team": "Portimonense Sc",
+                    "played": 9,
+                    "wins": 3,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 11,
+                    "goalsAgainst": 20,
+                    "points": 9
                 },
                 {
                     "position": 9,
@@ -1488,7 +1718,12 @@
                     "goalsAgainst": 35,
                     "points": 3
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:42:27Z",
+            "lastSuccessAt": "2026-05-19T13:42:27Z",
+            "lastChangedAt": "2026-05-19T13:42:27Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 10,
@@ -1501,7 +1736,11 @@
                     "time": "",
                     "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": 3,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:28Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -1510,7 +1749,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 0,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:28Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Nucleo Sporting C.P. Olhão",
@@ -1519,7 +1762,11 @@
                     "time": "",
                     "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
                     "homeScore": 3,
-                    "awayScore": 4
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:28Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Adt - Ass. Desp. Tavira",
@@ -1528,7 +1775,11 @@
                     "time": "",
                     "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": 2,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:28Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Portimonense Sc",
@@ -1537,7 +1788,11 @@
                     "time": "",
                     "stadium": "Campo Major David Neto 2",
                     "homeScore": 2,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:28Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1587,17 +1842,6 @@
                 },
                 {
                     "position": 5,
-                    "team": "Portimonense Sc",
-                    "played": 10,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 5,
-                    "goalsFor": 15,
-                    "goalsAgainst": 21,
-                    "points": 15
-                },
-                {
-                    "position": 6,
                     "team": "Nucleo Sporting C.P. Olhão",
                     "played": 10,
                     "wins": 4,
@@ -1605,6 +1849,17 @@
                     "losses": 5,
                     "goalsFor": 25,
                     "goalsAgainst": 28,
+                    "points": 13
+                },
+                {
+                    "position": 6,
+                    "team": "Silves Fc",
+                    "played": 10,
+                    "wins": 3,
+                    "draws": 4,
+                    "losses": 3,
+                    "goalsFor": 14,
+                    "goalsAgainst": 17,
                     "points": 13
                 },
                 {
@@ -1620,14 +1875,14 @@
                 },
                 {
                     "position": 8,
-                    "team": "Silves Fc",
+                    "team": "Portimonense Sc",
                     "played": 10,
-                    "wins": 2,
-                    "draws": 4,
-                    "losses": 4,
-                    "goalsFor": 14,
-                    "goalsAgainst": 19,
-                    "points": 10
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 6,
+                    "goalsFor": 13,
+                    "goalsAgainst": 21,
+                    "points": 12
                 },
                 {
                     "position": 9,
@@ -1651,7 +1906,12 @@
                     "goalsAgainst": 37,
                     "points": 3
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:42:28Z",
+            "lastSuccessAt": "2026-05-19T13:42:28Z",
+            "lastChangedAt": "2026-05-19T13:42:28Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 11,
@@ -1664,7 +1924,11 @@
                     "time": "",
                     "stadium": "Estádio Dr. Francisco Vieira",
                     "homeScore": 2,
-                    "awayScore": 5
+                    "awayScore": 5,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:29Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Esperança Lagos",
@@ -1673,7 +1937,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal De Lagos N.º 2",
                     "homeScore": 4,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:29Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cd Montenegro",
@@ -1682,7 +1950,11 @@
                     "time": "",
                     "stadium": "Campo Horta Da Areia",
                     "homeScore": 1,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:29Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Sc Farense",
@@ -1691,7 +1963,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 4,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:29Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -1700,7 +1976,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 4,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:29Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1750,17 +2030,6 @@
                 },
                 {
                     "position": 5,
-                    "team": "Portimonense Sc",
-                    "played": 11,
-                    "wins": 5,
-                    "draws": 1,
-                    "losses": 5,
-                    "goalsFor": 16,
-                    "goalsAgainst": 22,
-                    "points": 16
-                },
-                {
-                    "position": 6,
                     "team": "Js Campinense",
                     "played": 11,
                     "wins": 5,
@@ -1769,6 +2038,17 @@
                     "goalsFor": 23,
                     "goalsAgainst": 22,
                     "points": 15
+                },
+                {
+                    "position": 6,
+                    "team": "Silves Fc",
+                    "played": 11,
+                    "wins": 3,
+                    "draws": 4,
+                    "losses": 4,
+                    "goalsFor": 16,
+                    "goalsAgainst": 22,
+                    "points": 13
                 },
                 {
                     "position": 7,
@@ -1783,6 +2063,17 @@
                 },
                 {
                     "position": 8,
+                    "team": "Portimonense Sc",
+                    "played": 11,
+                    "wins": 4,
+                    "draws": 1,
+                    "losses": 6,
+                    "goalsFor": 14,
+                    "goalsAgainst": 22,
+                    "points": 13
+                },
+                {
+                    "position": 9,
                     "team": "Sc Farense",
                     "played": 11,
                     "wins": 3,
@@ -1791,17 +2082,6 @@
                     "goalsFor": 20,
                     "goalsAgainst": 26,
                     "points": 11
-                },
-                {
-                    "position": 9,
-                    "team": "Silves Fc",
-                    "played": 11,
-                    "wins": 2,
-                    "draws": 4,
-                    "losses": 5,
-                    "goalsFor": 16,
-                    "goalsAgainst": 24,
-                    "points": 10
                 },
                 {
                     "position": 10,
@@ -1814,7 +2094,12 @@
                     "goalsAgainst": 41,
                     "points": 3
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:42:29Z",
+            "lastSuccessAt": "2026-05-19T13:42:29Z",
+            "lastChangedAt": "2026-05-19T13:42:29Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 12,
@@ -1827,7 +2112,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 5,
-                    "awayScore": 5
+                    "awayScore": 5,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:31Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -1836,7 +2125,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 2,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:31Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Portimonense Sc",
@@ -1845,7 +2138,11 @@
                     "time": "",
                     "stadium": "Campo Major David Neto 2",
                     "homeScore": 3,
-                    "awayScore": 7
+                    "awayScore": 7,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:31Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Adt - Ass. Desp. Tavira",
@@ -1854,7 +2151,11 @@
                     "time": "",
                     "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": 2,
-                    "awayScore": 6
+                    "awayScore": 6,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:31Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Js Campinense",
@@ -1863,7 +2164,11 @@
                     "time": "",
                     "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": 0,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:31Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1913,17 +2218,6 @@
                 },
                 {
                     "position": 5,
-                    "team": "Portimonense Sc",
-                    "played": 12,
-                    "wins": 5,
-                    "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 19,
-                    "goalsAgainst": 29,
-                    "points": 16
-                },
-                {
-                    "position": 6,
                     "team": "Js Campinense",
                     "played": 12,
                     "wins": 5,
@@ -1932,6 +2226,17 @@
                     "goalsFor": 23,
                     "goalsAgainst": 23,
                     "points": 15
+                },
+                {
+                    "position": 6,
+                    "team": "Silves Fc",
+                    "played": 12,
+                    "wins": 3,
+                    "draws": 5,
+                    "losses": 4,
+                    "goalsFor": 21,
+                    "goalsAgainst": 27,
+                    "points": 14
                 },
                 {
                     "position": 7,
@@ -1946,6 +2251,17 @@
                 },
                 {
                     "position": 8,
+                    "team": "Portimonense Sc",
+                    "played": 12,
+                    "wins": 4,
+                    "draws": 1,
+                    "losses": 7,
+                    "goalsFor": 17,
+                    "goalsAgainst": 29,
+                    "points": 13
+                },
+                {
+                    "position": 9,
                     "team": "Sc Farense",
                     "played": 12,
                     "wins": 3,
@@ -1954,17 +2270,6 @@
                     "goalsFor": 25,
                     "goalsAgainst": 31,
                     "points": 12
-                },
-                {
-                    "position": 9,
-                    "team": "Silves Fc",
-                    "played": 12,
-                    "wins": 2,
-                    "draws": 5,
-                    "losses": 5,
-                    "goalsFor": 21,
-                    "goalsAgainst": 29,
-                    "points": 11
                 },
                 {
                     "position": 10,
@@ -1977,7 +2282,12 @@
                     "goalsAgainst": 43,
                     "points": 4
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:42:31Z",
+            "lastSuccessAt": "2026-05-19T13:42:31Z",
+            "lastChangedAt": "2026-05-19T13:42:31Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 13,
@@ -1990,7 +2300,11 @@
                     "time": "",
                     "stadium": "Campo Horta Da Areia",
                     "homeScore": 3,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:32Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -1999,7 +2313,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 2,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:32Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Nucleo Sporting C.P. Olhão",
@@ -2008,7 +2326,11 @@
                     "time": "",
                     "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
                     "homeScore": 2,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:32Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Esperança Lagos",
@@ -2017,7 +2339,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal De Lagos N.º 2",
                     "homeScore": 3,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:32Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Silves Fc",
@@ -2026,7 +2352,11 @@
                     "time": "",
                     "stadium": "Estádio Dr. Francisco Vieira",
                     "homeScore": 3,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:32Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -2076,14 +2406,14 @@
                 },
                 {
                     "position": 5,
-                    "team": "Portimonense Sc",
+                    "team": "Silves Fc",
                     "played": 13,
-                    "wins": 6,
-                    "draws": 1,
-                    "losses": 6,
-                    "goalsFor": 22,
-                    "goalsAgainst": 31,
-                    "points": 19
+                    "wins": 4,
+                    "draws": 5,
+                    "losses": 4,
+                    "goalsFor": 24,
+                    "goalsAgainst": 29,
+                    "points": 17
                 },
                 {
                     "position": 6,
@@ -2098,14 +2428,14 @@
                 },
                 {
                     "position": 7,
-                    "team": "Silves Fc",
+                    "team": "Portimonense Sc",
                     "played": 13,
-                    "wins": 3,
-                    "draws": 5,
-                    "losses": 5,
-                    "goalsFor": 24,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 7,
+                    "goalsFor": 20,
                     "goalsAgainst": 31,
-                    "points": 14
+                    "points": 16
                 },
                 {
                     "position": 8,
@@ -2140,7 +2470,12 @@
                     "goalsAgainst": 45,
                     "points": 5
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:42:32Z",
+            "lastSuccessAt": "2026-05-19T13:42:32Z",
+            "lastChangedAt": "2026-05-19T13:42:32Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 14,
@@ -2153,7 +2488,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 4,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:33Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Portimonense Sc",
@@ -2162,7 +2501,11 @@
                     "time": "",
                     "stadium": "Campo Major David Neto 2",
                     "homeScore": 0,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:33Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cd Montenegro",
@@ -2171,16 +2514,11 @@
                     "time": "",
                     "stadium": "Campo Horta Da Areia",
                     "homeScore": 2,
-                    "awayScore": 1
-                },
-                {
-                    "home": "Js Campinense",
-                    "away": "Cf Os Armacenenses",
-                    "date": "2 - 4                            \r\n                \r\n                    25 abr",
-                    "time": "",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": 2,
-                    "awayScore": 4
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:33Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Sc Farense",
@@ -2189,7 +2527,24 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 2,
-                    "awayScore": 4
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:33Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Js Campinense",
+                    "away": "Cf Os Armacenenses",
+                    "date": "2 - 4                            \r\n                \r\n                    25 abr",
+                    "time": "",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": 2,
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:33Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -2239,14 +2594,14 @@
                 },
                 {
                     "position": 5,
-                    "team": "Portimonense Sc",
+                    "team": "Silves Fc",
                     "played": 14,
-                    "wins": 6,
-                    "draws": 1,
-                    "losses": 7,
-                    "goalsFor": 22,
-                    "goalsAgainst": 32,
-                    "points": 19
+                    "wins": 4,
+                    "draws": 5,
+                    "losses": 5,
+                    "goalsFor": 25,
+                    "goalsAgainst": 31,
+                    "points": 17
                 },
                 {
                     "position": 6,
@@ -2261,14 +2616,14 @@
                 },
                 {
                     "position": 7,
-                    "team": "Silves Fc",
+                    "team": "Portimonense Sc",
                     "played": 14,
-                    "wins": 3,
-                    "draws": 5,
-                    "losses": 6,
-                    "goalsFor": 25,
-                    "goalsAgainst": 33,
-                    "points": 14
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 8,
+                    "goalsFor": 20,
+                    "goalsAgainst": 32,
+                    "points": 16
                 },
                 {
                     "position": 8,
@@ -2303,7 +2658,12 @@
                     "goalsAgainst": 48,
                     "points": 8
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:42:33Z",
+            "lastSuccessAt": "2026-05-19T13:42:33Z",
+            "lastChangedAt": "2026-05-19T13:42:33Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 15,
@@ -2316,7 +2676,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 2,
-                    "awayScore": 4
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:35Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Nucleo Sporting C.P. Olhão",
@@ -2325,16 +2689,11 @@
                     "time": "",
                     "stadium": "Complexo Desportivo Arsenio Catuna N.º 2",
                     "homeScore": 4,
-                    "awayScore": 2
-                },
-                {
-                    "home": "Cf Esperança Lagos",
-                    "away": "Cd Montenegro",
-                    "date": "4 - 4                            \r\n                \r\n                    2 mai",
-                    "time": "",
-                    "stadium": "Estádio Municipal De Lagos N.º 2",
-                    "homeScore": 4,
-                    "awayScore": 4
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:35Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Adt - Ass. Desp. Tavira",
@@ -2343,7 +2702,24 @@
                     "time": "",
                     "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": 5,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:35Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cf Esperança Lagos",
+                    "away": "Cd Montenegro",
+                    "date": "4 - 4                            \r\n                \r\n                    2 mai",
+                    "time": "",
+                    "stadium": "Estádio Municipal De Lagos N.º 2",
+                    "homeScore": 4,
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:35Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Silves Fc",
@@ -2352,7 +2728,11 @@
                     "time": "",
                     "stadium": "Estádio Dr. Francisco Vieira",
                     "homeScore": 1,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:35Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -2402,14 +2782,14 @@
                 },
                 {
                     "position": 5,
-                    "team": "Portimonense Sc",
+                    "team": "Silves Fc",
                     "played": 15,
-                    "wins": 6,
-                    "draws": 1,
-                    "losses": 8,
-                    "goalsFor": 22,
-                    "goalsAgainst": 37,
-                    "points": 19
+                    "wins": 4,
+                    "draws": 6,
+                    "losses": 5,
+                    "goalsFor": 26,
+                    "goalsAgainst": 32,
+                    "points": 18
                 },
                 {
                     "position": 6,
@@ -2435,6 +2815,17 @@
                 },
                 {
                     "position": 8,
+                    "team": "Portimonense Sc",
+                    "played": 15,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 9,
+                    "goalsFor": 20,
+                    "goalsAgainst": 37,
+                    "points": 16
+                },
+                {
+                    "position": 9,
                     "team": "Sc Farense",
                     "played": 15,
                     "wins": 4,
@@ -2442,17 +2833,6 @@
                     "losses": 8,
                     "goalsFor": 33,
                     "goalsAgainst": 40,
-                    "points": 15
-                },
-                {
-                    "position": 9,
-                    "team": "Silves Fc",
-                    "played": 15,
-                    "wins": 3,
-                    "draws": 6,
-                    "losses": 6,
-                    "goalsFor": 26,
-                    "goalsAgainst": 34,
                     "points": 15
                 },
                 {
@@ -2466,7 +2846,12 @@
                     "goalsAgainst": 49,
                     "points": 9
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:42:35Z",
+            "lastSuccessAt": "2026-05-19T13:42:35Z",
+            "lastChangedAt": "2026-05-19T13:42:35Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 16,
@@ -2479,7 +2864,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal De Lagos N.º 2",
                     "homeScore": 6,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:36Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cd Montenegro",
@@ -2488,34 +2877,62 @@
                     "time": "",
                     "stadium": "Campo Horta Da Areia",
                     "homeScore": 1,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:36Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Portimonense Sc",
                     "away": "Fc Ferreiras",
-                    "date": "9 mai",
-                    "time": "12:00",
+                    "date": "0 - 1                            \r\n                \r\n                    9 mai",
+                    "time": "",
                     "stadium": "Campo Major David Neto 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 0,
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:36Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Js Campinense",
                     "away": "Adt - Ass. Desp. Tavira",
-                    "date": "9 mai",
-                    "time": "15:00",
+                    "date": "1 - 3                            \r\n                \r\n                    9 mai",
+                    "time": "",
                     "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 1,
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:36Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Sc Farense",
                     "away": "Nucleo Sporting C.P. Olhão",
-                    "date": "9 mai",
-                    "time": "19:00",
+                    "date": "2 - 0                            \r\n                \r\n                    9 mai",
+                    "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 2,
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:36Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 }
             ],
             "classification": [
@@ -2555,81 +2972,86 @@
                 {
                     "position": 4,
                     "team": "Nucleo Sporting C.P. Olhão",
-                    "played": 15,
+                    "played": 16,
                     "wins": 8,
                     "draws": 2,
-                    "losses": 5,
+                    "losses": 6,
                     "goalsFor": 43,
-                    "goalsAgainst": 36,
+                    "goalsAgainst": 38,
                     "points": 26
                 },
                 {
                     "position": 5,
-                    "team": "Portimonense Sc",
-                    "played": 15,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 16,
                     "wins": 6,
                     "draws": 1,
-                    "losses": 8,
-                    "goalsFor": 22,
-                    "goalsAgainst": 37,
+                    "losses": 9,
+                    "goalsFor": 41,
+                    "goalsAgainst": 50,
                     "points": 19
                 },
                 {
                     "position": 6,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 15,
+                    "team": "Sc Farense",
+                    "played": 16,
                     "wins": 5,
-                    "draws": 1,
-                    "losses": 9,
-                    "goalsFor": 38,
-                    "goalsAgainst": 49,
-                    "points": 16
+                    "draws": 3,
+                    "losses": 8,
+                    "goalsFor": 35,
+                    "goalsAgainst": 40,
+                    "points": 18
                 },
                 {
                     "position": 7,
-                    "team": "Js Campinense",
-                    "played": 15,
-                    "wins": 5,
-                    "draws": 1,
-                    "losses": 9,
-                    "goalsFor": 30,
-                    "goalsAgainst": 34,
-                    "points": 16
+                    "team": "Silves Fc",
+                    "played": 16,
+                    "wins": 4,
+                    "draws": 6,
+                    "losses": 6,
+                    "goalsFor": 26,
+                    "goalsAgainst": 38,
+                    "points": 18
                 },
                 {
                     "position": 8,
-                    "team": "Sc Farense",
-                    "played": 15,
-                    "wins": 4,
-                    "draws": 3,
-                    "losses": 8,
-                    "goalsFor": 33,
-                    "goalsAgainst": 40,
-                    "points": 15
+                    "team": "Js Campinense",
+                    "played": 16,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 10,
+                    "goalsFor": 31,
+                    "goalsAgainst": 37,
+                    "points": 16
                 },
                 {
                     "position": 9,
-                    "team": "Silves Fc",
+                    "team": "Portimonense Sc",
                     "played": 16,
-                    "wins": 3,
-                    "draws": 6,
-                    "losses": 7,
-                    "goalsFor": 26,
-                    "goalsAgainst": 40,
-                    "points": 15
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 10,
+                    "goalsFor": 20,
+                    "goalsAgainst": 38,
+                    "points": 16
                 },
                 {
                     "position": 10,
                     "team": "Fc Ferreiras",
-                    "played": 15,
-                    "wins": 2,
+                    "played": 16,
+                    "wins": 3,
                     "draws": 3,
                     "losses": 10,
-                    "goalsFor": 21,
+                    "goalsFor": 22,
                     "goalsAgainst": 49,
-                    "points": 9
+                    "points": 12
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:42:36Z",
+            "lastSuccessAt": "2026-05-19T13:42:36Z",
+            "lastChangedAt": "2026-05-19T13:42:36Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 17,
@@ -2642,25 +3064,45 @@
                     "time": "",
                     "stadium": "Campo Major David Neto 2",
                     "homeScore": 2,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:37Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Nucleo Sporting C.P. Olhão",
                     "away": "Cd Montenegro",
-                    "date": "13 mai",
-                    "time": "19:00",
+                    "date": "5 - 3                            \r\n                \r\n                    13 mai",
+                    "time": "",
                     "stadium": "Campo Horta Da Areia",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 5,
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:37Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Fc Ferreiras",
                     "away": "Js Campinense",
-                    "date": "16 mai",
-                    "time": "09:00",
+                    "date": "4 - 0                            \r\n                \r\n                    16 mai",
+                    "time": "",
                     "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 4,
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:37Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Adt - Ass. Desp. Tavira",
@@ -2669,7 +3111,11 @@
                     "time": "11:00",
                     "stadium": "Estádio Ginásio Clube Tavira",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:37Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -2678,7 +3124,11 @@
                     "time": "18:30",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:37Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -2696,12 +3146,12 @@
                 {
                     "position": 2,
                     "team": "Cd Montenegro",
-                    "played": 16,
+                    "played": 17,
                     "wins": 10,
                     "draws": 3,
-                    "losses": 3,
-                    "goalsFor": 40,
-                    "goalsAgainst": 28,
+                    "losses": 4,
+                    "goalsFor": 43,
+                    "goalsAgainst": 33,
                     "points": 33
                 },
                 {
@@ -2718,112 +3168,103 @@
                 {
                     "position": 4,
                     "team": "Nucleo Sporting C.P. Olhão",
-                    "played": 15,
-                    "wins": 8,
+                    "played": 17,
+                    "wins": 9,
                     "draws": 2,
-                    "losses": 5,
-                    "goalsFor": 43,
-                    "goalsAgainst": 36,
-                    "points": 26
+                    "losses": 6,
+                    "goalsFor": 48,
+                    "goalsAgainst": 41,
+                    "points": 29
                 },
                 {
                     "position": 5,
-                    "team": "Portimonense Sc",
-                    "played": 15,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 16,
                     "wins": 6,
                     "draws": 1,
-                    "losses": 8,
-                    "goalsFor": 22,
-                    "goalsAgainst": 37,
+                    "losses": 9,
+                    "goalsFor": 41,
+                    "goalsAgainst": 50,
                     "points": 19
                 },
                 {
                     "position": 6,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 15,
-                    "wins": 5,
+                    "team": "Portimonense Sc",
+                    "played": 17,
+                    "wins": 6,
                     "draws": 1,
-                    "losses": 9,
-                    "goalsFor": 38,
-                    "goalsAgainst": 49,
-                    "points": 16
+                    "losses": 10,
+                    "goalsFor": 22,
+                    "goalsAgainst": 39,
+                    "points": 19
                 },
                 {
                     "position": 7,
-                    "team": "Js Campinense",
-                    "played": 15,
+                    "team": "Sc Farense",
+                    "played": 16,
                     "wins": 5,
-                    "draws": 1,
-                    "losses": 9,
-                    "goalsFor": 30,
-                    "goalsAgainst": 34,
-                    "points": 16
+                    "draws": 3,
+                    "losses": 8,
+                    "goalsFor": 35,
+                    "goalsAgainst": 40,
+                    "points": 18
                 },
                 {
                     "position": 8,
-                    "team": "Sc Farense",
-                    "played": 15,
+                    "team": "Silves Fc",
+                    "played": 17,
                     "wins": 4,
-                    "draws": 3,
-                    "losses": 8,
-                    "goalsFor": 33,
+                    "draws": 6,
+                    "losses": 7,
+                    "goalsFor": 27,
                     "goalsAgainst": 40,
-                    "points": 15
+                    "points": 18
                 },
                 {
                     "position": 9,
-                    "team": "Silves Fc",
-                    "played": 16,
-                    "wins": 3,
-                    "draws": 6,
-                    "losses": 7,
-                    "goalsFor": 26,
-                    "goalsAgainst": 40,
-                    "points": 15
+                    "team": "Js Campinense",
+                    "played": 17,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 11,
+                    "goalsFor": 31,
+                    "goalsAgainst": 41,
+                    "points": 16
                 },
                 {
                     "position": 10,
                     "team": "Fc Ferreiras",
-                    "played": 15,
-                    "wins": 2,
+                    "played": 17,
+                    "wins": 4,
                     "draws": 3,
                     "losses": 10,
-                    "goalsFor": 21,
+                    "goalsFor": 26,
                     "goalsAgainst": 49,
-                    "points": 9
+                    "points": 15
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:42:37Z",
+            "lastSuccessAt": "2026-05-19T13:42:37Z",
+            "lastChangedAt": "2026-05-19T13:42:37Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 18,
             "fixtureId": "626097",
             "matches": [
                 {
-                    "home": "Js Campinense",
-                    "away": "Portimonense Sc",
+                    "home": "Cd Montenegro",
+                    "away": "Adt - Ass. Desp. Tavira",
                     "date": "23 mai",
                     "time": "10:30",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "stadium": "Campo Horta Da Areia",
                     "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Silves Fc",
-                    "away": "Cf Os Armacenenses",
-                    "date": "23 mai",
-                    "time": "10:30",
-                    "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Sc Farense",
-                    "away": "Fc Ferreiras",
-                    "date": "23 mai",
-                    "time": "10:30",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:39Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Esperança Lagos",
@@ -2832,16 +3273,50 @@
                     "time": "10:30",
                     "stadium": "Estádio Municipal De Lagos N.º 2",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:39Z",
+                    "changeFlags": []
                 },
                 {
-                    "home": "Cd Montenegro",
-                    "away": "Adt - Ass. Desp. Tavira",
+                    "home": "Silves Fc",
+                    "away": "Cf Os Armacenenses",
                     "date": "23 mai",
                     "time": "10:30",
-                    "stadium": "Campo Horta Da Areia",
+                    "stadium": "Estádio Dr. Francisco Vieira",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:39Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Sc Farense",
+                    "away": "Fc Ferreiras",
+                    "date": "23 mai",
+                    "time": "10:30",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:39Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Js Campinense",
+                    "away": "Portimonense Sc",
+                    "date": "23 mai",
+                    "time": "10:30",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": null,
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:42:39Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -2859,12 +3334,12 @@
                 {
                     "position": 2,
                     "team": "Cd Montenegro",
-                    "played": 16,
+                    "played": 17,
                     "wins": 10,
                     "draws": 3,
-                    "losses": 3,
-                    "goalsFor": 40,
-                    "goalsAgainst": 28,
+                    "losses": 4,
+                    "goalsFor": 43,
+                    "goalsAgainst": 33,
                     "points": 33
                 },
                 {
@@ -2881,81 +3356,86 @@
                 {
                     "position": 4,
                     "team": "Nucleo Sporting C.P. Olhão",
-                    "played": 15,
-                    "wins": 8,
+                    "played": 17,
+                    "wins": 9,
                     "draws": 2,
-                    "losses": 5,
-                    "goalsFor": 43,
-                    "goalsAgainst": 36,
-                    "points": 26
+                    "losses": 6,
+                    "goalsFor": 48,
+                    "goalsAgainst": 41,
+                    "points": 29
                 },
                 {
                     "position": 5,
-                    "team": "Portimonense Sc",
-                    "played": 15,
+                    "team": "Adt - Ass. Desp. Tavira",
+                    "played": 16,
                     "wins": 6,
                     "draws": 1,
-                    "losses": 8,
-                    "goalsFor": 22,
-                    "goalsAgainst": 37,
+                    "losses": 9,
+                    "goalsFor": 41,
+                    "goalsAgainst": 50,
                     "points": 19
                 },
                 {
                     "position": 6,
-                    "team": "Adt - Ass. Desp. Tavira",
-                    "played": 15,
-                    "wins": 5,
+                    "team": "Portimonense Sc",
+                    "played": 17,
+                    "wins": 6,
                     "draws": 1,
-                    "losses": 9,
-                    "goalsFor": 38,
-                    "goalsAgainst": 49,
-                    "points": 16
+                    "losses": 10,
+                    "goalsFor": 22,
+                    "goalsAgainst": 39,
+                    "points": 19
                 },
                 {
                     "position": 7,
-                    "team": "Js Campinense",
-                    "played": 15,
+                    "team": "Sc Farense",
+                    "played": 16,
                     "wins": 5,
-                    "draws": 1,
-                    "losses": 9,
-                    "goalsFor": 30,
-                    "goalsAgainst": 34,
-                    "points": 16
+                    "draws": 3,
+                    "losses": 8,
+                    "goalsFor": 35,
+                    "goalsAgainst": 40,
+                    "points": 18
                 },
                 {
                     "position": 8,
-                    "team": "Sc Farense",
-                    "played": 15,
+                    "team": "Silves Fc",
+                    "played": 17,
                     "wins": 4,
-                    "draws": 3,
-                    "losses": 8,
-                    "goalsFor": 33,
+                    "draws": 6,
+                    "losses": 7,
+                    "goalsFor": 27,
                     "goalsAgainst": 40,
-                    "points": 15
+                    "points": 18
                 },
                 {
                     "position": 9,
-                    "team": "Silves Fc",
-                    "played": 16,
-                    "wins": 3,
-                    "draws": 6,
-                    "losses": 7,
-                    "goalsFor": 26,
-                    "goalsAgainst": 40,
-                    "points": 15
+                    "team": "Js Campinense",
+                    "played": 17,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 11,
+                    "goalsFor": 31,
+                    "goalsAgainst": 41,
+                    "points": 16
                 },
                 {
                     "position": 10,
                     "team": "Fc Ferreiras",
-                    "played": 15,
-                    "wins": 2,
+                    "played": 17,
+                    "wins": 4,
                     "draws": 3,
                     "losses": 10,
-                    "goalsFor": 21,
+                    "goalsFor": 26,
                     "goalsAgainst": 49,
-                    "points": 9
+                    "points": 15
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:42:39Z",
+            "lastSuccessAt": "2026-05-19T13:42:39Z",
+            "lastChangedAt": "2026-05-19T13:42:39Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         }
     ]
 }
