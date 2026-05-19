@@ -1,7 +1,13 @@
 {
-    "defaultRoundIndex": 14,
-    "defaultRoundNumber": 15,
-    "lastUpdatedAt": "2026-05-11T14:23:02Z",
+    "schemaVersion": 2,
+    "generatedAt": "2026-05-19T13:58:20Z",
+    "lastAttemptAt": "2026-05-19T13:57:31Z",
+    "lastSuccessAt": null,
+    "lastChangedAt": null,
+    "lastPublishedAt": "2026-05-19T13:58:20Z",
+    "defaultRoundIndex": 15,
+    "defaultRoundNumber": 16,
+    "lastUpdatedAt": "2026-05-19T13:58:20Z",
     "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -12,14 +18,14 @@
         "matchCount": 90,
         "classificationCount": 180,
         "teamCount": 10,
-        "completedMatchCount": 73,
-        "matchesWithoutScore": 17,
-        "pastMatchCount": 75,
-        "pastMatchesWithoutScore": 2,
-        "futureMatchCount": 15,
+        "completedMatchCount": 79,
+        "matchesWithoutScore": 11,
+        "pastMatchCount": 80,
+        "pastMatchesWithoutScore": 1,
+        "futureMatchCount": 10,
         "roundsWithMatches": 18,
         "roundsWithClassification": 18,
-        "roundsWithCompletedMatches": 15,
+        "roundsWithCompletedMatches": 16,
         "roundsWithoutData": 0
     },
     "rounds": [
@@ -34,7 +40,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 2,
-                    "awayScore": 6
+                    "awayScore": 6,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:32Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Internacional Ca",
@@ -43,16 +53,11 @@
                     "time": "",
                     "stadium": "Estadio Municipal De Almancil",
                     "homeScore": 9,
-                    "awayScore": 2
-                },
-                {
-                    "home": "Cf Esperança Lagos",
-                    "away": "Cd Odiáxere",
-                    "date": "24 jan",
-                    "time": "",
-                    "stadium": "Estádio Municipal De Lagos N.º 2",
-                    "homeScore": 3,
-                    "awayScore": 6
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:32Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -61,7 +66,24 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 5,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:32Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cf Esperança Lagos",
+                    "away": "Cd Odiáxere",
+                    "date": "24 jan",
+                    "time": "",
+                    "stadium": "Estádio Municipal De Lagos N.º 2",
+                    "homeScore": 3,
+                    "awayScore": 6,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:32Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Imortal Dc",
@@ -70,7 +92,11 @@
                     "time": "",
                     "stadium": "Campo Da Palmeira Nº 2",
                     "homeScore": 6,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:32Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -184,7 +210,12 @@
                     "goalsAgainst": 9,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:57:32Z",
+            "lastSuccessAt": "2026-05-19T13:57:32Z",
+            "lastChangedAt": "2026-05-19T13:57:32Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 2,
@@ -197,7 +228,11 @@
                     "time": "",
                     "stadium": "Campo Eiras",
                     "homeScore": 5,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:36Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Silves Fc",
@@ -206,7 +241,11 @@
                     "time": "",
                     "stadium": "Estádio Dr. Francisco Vieira",
                     "homeScore": 0,
-                    "awayScore": 5
+                    "awayScore": 5,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:36Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Lusitano Fc Vrsa",
@@ -215,7 +254,11 @@
                     "time": "",
                     "stadium": "Campo Francisco Gomes Socorro",
                     "homeScore": 7,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:36Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -224,7 +267,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 0,
-                    "awayScore": 6
+                    "awayScore": 6,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:36Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Associacao Fut. F.O.",
@@ -233,7 +280,11 @@
                     "time": "",
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": 2,
-                    "awayScore": 5
+                    "awayScore": 5,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:36Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -347,7 +398,12 @@
                     "goalsAgainst": 15,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:57:36Z",
+            "lastSuccessAt": "2026-05-19T13:57:36Z",
+            "lastChangedAt": "2026-05-19T13:57:36Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 3,
@@ -360,25 +416,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal De Lagos N.º 2",
                     "homeScore": 6,
-                    "awayScore": 2
-                },
-                {
-                    "home": "Ad Geração Génios",
-                    "away": "Fc Ferreiras",
-                    "date": "17 fev",
-                    "time": "",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": 4,
-                    "awayScore": 2
-                },
-                {
-                    "home": "Associacao Fut. F.O.",
-                    "away": "Cd Odiáxere",
-                    "date": "17 fev",
-                    "time": "",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": 6,
-                    "awayScore": 6
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:39Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -387,7 +429,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 1,
-                    "awayScore": 4
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:39Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Internacional Ca",
@@ -396,7 +442,37 @@
                     "time": "",
                     "stadium": "Estadio Municipal De Almancil",
                     "homeScore": 7,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:39Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Ad Geração Génios",
+                    "away": "Fc Ferreiras",
+                    "date": "17 fev",
+                    "time": "",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": 4,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:39Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Associacao Fut. F.O.",
+                    "away": "Cd Odiáxere",
+                    "date": "17 fev",
+                    "time": "",
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
+                    "homeScore": 6,
+                    "awayScore": 6,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:39Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -510,12 +586,30 @@
                     "goalsAgainst": 17,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:57:39Z",
+            "lastSuccessAt": "2026-05-19T13:57:39Z",
+            "lastChangedAt": "2026-05-19T13:57:39Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 4,
             "fixtureId": "635364",
             "matches": [
+                {
+                    "home": "Imortal Dc",
+                    "away": "Ad Geração Génios",
+                    "date": "14 fev",
+                    "time": "",
+                    "stadium": "Campo Da Palmeira Nº 2",
+                    "homeScore": 4,
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:43Z",
+                    "changeFlags": []
+                },
                 {
                     "home": "Lusitano Fc Vrsa",
                     "away": "Associacao Fut. F.O.",
@@ -523,7 +617,11 @@
                     "time": "",
                     "stadium": "Campo Francisco Gomes Socorro",
                     "homeScore": 6,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:43Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cd Odiáxere",
@@ -532,16 +630,11 @@
                     "time": "",
                     "stadium": "Campo Eiras",
                     "homeScore": 0,
-                    "awayScore": 7
-                },
-                {
-                    "home": "Imortal Dc",
-                    "away": "Ad Geração Génios",
-                    "date": "14 fev",
-                    "time": "",
-                    "stadium": "Campo Da Palmeira Nº 2",
-                    "homeScore": 4,
-                    "awayScore": 3
+                    "awayScore": 7,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:43Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -550,7 +643,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 6,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:43Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Silves Fc",
@@ -559,7 +656,11 @@
                     "time": "",
                     "stadium": "Estádio Dr. Francisco Vieira",
                     "homeScore": 0,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:43Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -673,7 +774,12 @@
                     "goalsAgainst": 20,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:57:43Z",
+            "lastSuccessAt": "2026-05-19T13:57:43Z",
+            "lastChangedAt": "2026-05-19T13:57:43Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 5,
@@ -686,7 +792,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal De Lagos N.º 2",
                     "homeScore": 3,
-                    "awayScore": 6
+                    "awayScore": 6,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:45Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Internacional Ca",
@@ -695,7 +805,11 @@
                     "time": "",
                     "stadium": "Estadio Municipal De Almancil",
                     "homeScore": 5,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:45Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Associacao Fut. F.O.",
@@ -704,7 +818,11 @@
                     "time": "",
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": 11,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:45Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -713,7 +831,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 4,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:45Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cd Odiáxere",
@@ -722,7 +844,11 @@
                     "time": "",
                     "stadium": "Campo Eiras",
                     "homeScore": 1,
-                    "awayScore": 9
+                    "awayScore": 9,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:45Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -836,7 +962,12 @@
                     "goalsAgainst": 31,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:57:45Z",
+            "lastSuccessAt": "2026-05-19T13:57:45Z",
+            "lastChangedAt": "2026-05-19T13:57:45Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 6,
@@ -849,7 +980,11 @@
                     "time": "",
                     "stadium": "Campo Da Palmeira Nº 2",
                     "homeScore": 3,
-                    "awayScore": 5
+                    "awayScore": 5,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:46Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Lusitano Fc Vrsa",
@@ -858,25 +993,11 @@
                     "time": "",
                     "stadium": "Campo Francisco Gomes Socorro",
                     "homeScore": 5,
-                    "awayScore": 2
-                },
-                {
-                    "home": "Fc Ferreiras",
-                    "away": "Associacao Fut. F.O.",
-                    "date": "28 fev",
-                    "time": "",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": 6,
-                    "awayScore": 7
-                },
-                {
-                    "home": "Ad Geração Génios",
-                    "away": "Cf Esperança Lagos",
-                    "date": "28 fev",
-                    "time": "",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": 8,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:46Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Silves Fc",
@@ -885,7 +1006,37 @@
                     "time": "",
                     "stadium": "Estádio Dr. Francisco Vieira",
                     "homeScore": 0,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:46Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Associacao Fut. F.O.",
+                    "date": "28 fev",
+                    "time": "",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": 6,
+                    "awayScore": 7,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:46Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Ad Geração Génios",
+                    "away": "Cf Esperança Lagos",
+                    "date": "28 fev",
+                    "time": "",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": 8,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:46Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -999,7 +1150,12 @@
                     "goalsAgainst": 33,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:57:46Z",
+            "lastSuccessAt": "2026-05-19T13:57:46Z",
+            "lastChangedAt": "2026-05-19T13:57:46Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 7,
@@ -1012,7 +1168,11 @@
                     "time": "",
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": 7,
-                    "awayScore": 7
+                    "awayScore": 7,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:48Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -1021,16 +1181,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 6,
-                    "awayScore": 9
-                },
-                {
-                    "home": "Internacional Ca",
-                    "away": "Cf Esperança Lagos",
-                    "date": "7 mar",
-                    "time": "",
-                    "stadium": "Estadio Municipal De Almancil",
-                    "homeScore": 13,
-                    "awayScore": 1
+                    "awayScore": 9,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:48Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cd Odiáxere",
@@ -1039,7 +1194,24 @@
                     "time": "",
                     "stadium": "Campo Eiras",
                     "homeScore": 1,
-                    "awayScore": 10
+                    "awayScore": 10,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:48Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Internacional Ca",
+                    "away": "Cf Esperança Lagos",
+                    "date": "7 mar",
+                    "time": "",
+                    "stadium": "Estadio Municipal De Almancil",
+                    "homeScore": 13,
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:48Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Lusitano Fc Vrsa",
@@ -1048,7 +1220,11 @@
                     "time": "",
                     "stadium": "Campo Francisco Gomes Socorro",
                     "homeScore": 12,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:48Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1162,7 +1338,12 @@
                     "goalsAgainst": 45,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:57:48Z",
+            "lastSuccessAt": "2026-05-19T13:57:48Z",
+            "lastChangedAt": "2026-05-19T13:57:48Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 8,
@@ -1175,7 +1356,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal De Lagos N.º 2",
                     "homeScore": 1,
-                    "awayScore": 9
+                    "awayScore": 9,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:49Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Imortal Dc",
@@ -1184,7 +1369,11 @@
                     "time": "",
                     "stadium": "Campo Da Palmeira Nº 2",
                     "homeScore": 4,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:49Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Ad Geração Génios",
@@ -1193,7 +1382,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 8,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:49Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -1202,7 +1395,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 2,
-                    "awayScore": 8
+                    "awayScore": 8,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:49Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Internacional Ca",
@@ -1211,7 +1408,11 @@
                     "time": "",
                     "stadium": "Estadio Municipal De Almancil",
                     "homeScore": 9,
-                    "awayScore": 0
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:49Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1325,7 +1526,12 @@
                     "goalsAgainst": 54,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:57:49Z",
+            "lastSuccessAt": "2026-05-19T13:57:49Z",
+            "lastChangedAt": "2026-05-19T13:57:49Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 9,
@@ -1338,7 +1544,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 2,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:50Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cd Odiáxere",
@@ -1347,7 +1557,11 @@
                     "time": "",
                     "stadium": "Campo Eiras",
                     "homeScore": 3,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:50Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Lusitano Fc Vrsa",
@@ -1356,7 +1570,11 @@
                     "time": "",
                     "stadium": "Campo Francisco Gomes Socorro",
                     "homeScore": 1,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:50Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Silves Fc",
@@ -1365,7 +1583,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Messines",
                     "homeScore": 1,
-                    "awayScore": 9
+                    "awayScore": 9,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:50Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Associacao Fut. F.O.",
@@ -1374,7 +1596,11 @@
                     "time": "",
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": 3,
-                    "awayScore": 4
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:50Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1488,7 +1714,12 @@
                     "goalsAgainst": 63,
                     "points": 0
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:57:50Z",
+            "lastSuccessAt": "2026-05-19T13:57:50Z",
+            "lastChangedAt": "2026-05-19T13:57:50Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 10,
@@ -1501,16 +1732,11 @@
                     "time": "",
                     "stadium": "Campo Eiras",
                     "homeScore": 9,
-                    "awayScore": 1
-                },
-                {
-                    "home": "Fc Ferreiras",
-                    "away": "Internacional Ca",
-                    "date": "28 mar",
-                    "time": "",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": 2,
-                    "awayScore": 6
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:52Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Lusitano Fc Vrsa",
@@ -1519,7 +1745,24 @@
                     "time": "",
                     "stadium": "Campo Francisco Gomes Socorro",
                     "homeScore": 7,
-                    "awayScore": 4
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:52Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Internacional Ca",
+                    "date": "28 mar",
+                    "time": "",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": 2,
+                    "awayScore": 6,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:52Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Associacao Fut. F.O.",
@@ -1528,7 +1771,11 @@
                     "time": "",
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": 4,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:52Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Silves Fc",
@@ -1537,7 +1784,11 @@
                     "time": "",
                     "stadium": "Estádio Dr. Francisco Vieira",
                     "homeScore": 10,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:52Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1651,21 +1902,17 @@
                     "goalsAgainst": 65,
                     "points": 3
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:57:52Z",
+            "lastSuccessAt": "2026-05-19T13:57:52Z",
+            "lastChangedAt": "2026-05-19T13:57:52Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 11,
             "fixtureId": "635380",
             "matches": [
-                {
-                    "home": "Ad Geração Génios",
-                    "away": "Silves Fc",
-                    "date": "11 abr",
-                    "time": "",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": 9,
-                    "awayScore": 1
-                },
                 {
                     "home": "Cf Os Armacenenses",
                     "away": "Cd Odiáxere",
@@ -1673,7 +1920,24 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 7,
-                    "awayScore": 4
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:54Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Ad Geração Génios",
+                    "away": "Silves Fc",
+                    "date": "11 abr",
+                    "time": "",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": 9,
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:54Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Internacional Ca",
@@ -1682,7 +1946,11 @@
                     "time": "",
                     "stadium": "Estadio Municipal De Almancil",
                     "homeScore": 3,
-                    "awayScore": 5
+                    "awayScore": 5,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:54Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Esperança Lagos",
@@ -1691,7 +1959,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal De Lagos N.º 2",
                     "homeScore": 2,
-                    "awayScore": 10
+                    "awayScore": 10,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:54Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Imortal Dc",
@@ -1700,7 +1972,11 @@
                     "time": "",
                     "stadium": "Campo Da Palmeira Nº 2",
                     "homeScore": 5,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:54Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1814,7 +2090,12 @@
                     "goalsAgainst": 74,
                     "points": 3
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:57:54Z",
+            "lastSuccessAt": "2026-05-19T13:57:54Z",
+            "lastChangedAt": "2026-05-19T13:57:54Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 12,
@@ -1827,16 +2108,11 @@
                     "time": "",
                     "stadium": "Estádio Dr. Francisco Vieira",
                     "homeScore": 11,
-                    "awayScore": 5
-                },
-                {
-                    "home": "Imortal Dc",
-                    "away": "Internacional Ca",
-                    "date": "18 abr",
-                    "time": "",
-                    "stadium": "Campo Da Palmeira Nº 2",
-                    "homeScore": 0,
-                    "awayScore": 8
+                    "awayScore": 5,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:56Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -1845,7 +2121,24 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 1,
-                    "awayScore": 8
+                    "awayScore": 8,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:56Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Imortal Dc",
+                    "away": "Internacional Ca",
+                    "date": "18 abr",
+                    "time": "",
+                    "stadium": "Campo Da Palmeira Nº 2",
+                    "homeScore": 0,
+                    "awayScore": 8,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:56Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Lusitano Fc Vrsa",
@@ -1854,7 +2147,11 @@
                     "time": "",
                     "stadium": "Campo Francisco Gomes Socorro",
                     "homeScore": 6,
-                    "awayScore": 6
+                    "awayScore": 6,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:56Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cd Odiáxere",
@@ -1863,7 +2160,11 @@
                     "time": "",
                     "stadium": "Campo Eiras",
                     "homeScore": 4,
-                    "awayScore": 8
+                    "awayScore": 8,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:57:56Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1977,21 +2278,17 @@
                     "goalsAgainst": 90,
                     "points": 6
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:57:56Z",
+            "lastSuccessAt": "2026-05-19T13:57:56Z",
+            "lastChangedAt": "2026-05-19T13:57:56Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 13,
             "fixtureId": "635384",
             "matches": [
-                {
-                    "home": "Ad Geração Génios",
-                    "away": "Imortal Dc",
-                    "date": "25 abr",
-                    "time": "",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": 6,
-                    "awayScore": 4
-                },
                 {
                     "home": "Cf Os Armacenenses",
                     "away": "Silves Fc",
@@ -1999,7 +2296,24 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 8,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:01Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Ad Geração Génios",
+                    "away": "Imortal Dc",
+                    "date": "25 abr",
+                    "time": "",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": 6,
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:01Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Associacao Fut. F.O.",
@@ -2008,7 +2322,11 @@
                     "time": "",
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": 4,
-                    "awayScore": 8
+                    "awayScore": 8,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:01Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Internacional Ca",
@@ -2017,7 +2335,11 @@
                     "time": "",
                     "stadium": "Estadio Municipal De Almancil",
                     "homeScore": 7,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:01Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Esperança Lagos",
@@ -2026,7 +2348,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal De Lagos N.º 2",
                     "homeScore": 5,
-                    "awayScore": 4
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:01Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -2140,7 +2466,12 @@
                     "goalsAgainst": 87,
                     "points": 6
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:58:01Z",
+            "lastSuccessAt": "2026-05-19T13:58:01Z",
+            "lastChangedAt": "2026-05-19T13:58:01Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 14,
@@ -2153,7 +2484,11 @@
                     "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 6,
-                    "awayScore": 7
+                    "awayScore": 7,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:07Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
@@ -2162,7 +2497,11 @@
                     "time": "",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": 5,
-                    "awayScore": 5
+                    "awayScore": 5,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:07Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Imortal Dc",
@@ -2171,7 +2510,11 @@
                     "time": "",
                     "stadium": "Campo Da Palmeira Nº 2",
                     "homeScore": 6,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:07Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Lusitano Fc Vrsa",
@@ -2180,7 +2523,11 @@
                     "time": "",
                     "stadium": "Campo Francisco Gomes Socorro",
                     "homeScore": 7,
-                    "awayScore": 3
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:07Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Silves Fc",
@@ -2189,7 +2536,11 @@
                     "time": "",
                     "stadium": "Estádio Dr. Francisco Vieira",
                     "homeScore": 1,
-                    "awayScore": 14
+                    "awayScore": 14,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:07Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -2303,7 +2654,12 @@
                     "goalsAgainst": 101,
                     "points": 6
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:58:07Z",
+            "lastSuccessAt": "2026-05-19T13:58:07Z",
+            "lastChangedAt": "2026-05-19T13:58:07Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 15,
@@ -2316,25 +2672,11 @@
                     "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 4,
-                    "awayScore": 2
-                },
-                {
-                    "home": "Cf Esperança Lagos",
-                    "away": "Ad Geração Génios",
-                    "date": "9 mai",
-                    "time": "10:30",
-                    "stadium": "Estádio Municipal De Lagos N.º 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Associacao Fut. F.O.",
-                    "away": "Fc Ferreiras",
-                    "date": "9 mai",
-                    "time": "",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": 5,
-                    "awayScore": 2
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:10Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Internacional Ca",
@@ -2343,16 +2685,56 @@
                     "time": "",
                     "stadium": "Estadio Municipal De Almancil",
                     "homeScore": 2,
-                    "awayScore": 1
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:10Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Associacao Fut. F.O.",
+                    "away": "Fc Ferreiras",
+                    "date": "9 mai",
+                    "time": "",
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
+                    "homeScore": 5,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:10Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cf Esperança Lagos",
+                    "away": "Ad Geração Génios",
+                    "date": "9 mai",
+                    "time": "",
+                    "stadium": "Estádio Municipal De Lagos N.º 2",
+                    "homeScore": 8,
+                    "awayScore": 5,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:10Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Cd Odiáxere",
                     "away": "Silves Fc",
                     "date": "9 mai",
-                    "time": "11:00",
+                    "time": "",
                     "stadium": "Campo Eiras",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 4,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:10Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "time_changed"
+                    ]
                 }
             ],
             "classification": [
@@ -2392,12 +2774,12 @@
                 {
                     "position": 4,
                     "team": "Ad Geração Génios",
-                    "played": 14,
+                    "played": 15,
                     "wins": 8,
                     "draws": 1,
-                    "losses": 5,
-                    "goalsFor": 76,
-                    "goalsAgainst": 51,
+                    "losses": 6,
+                    "goalsFor": 81,
+                    "goalsAgainst": 59,
                     "points": 25
                 },
                 {
@@ -2425,16 +2807,27 @@
                 {
                     "position": 7,
                     "team": "Cd Odiáxere",
-                    "played": 14,
-                    "wins": 4,
+                    "played": 15,
+                    "wins": 5,
                     "draws": 2,
                     "losses": 8,
-                    "goalsFor": 45,
-                    "goalsAgainst": 74,
-                    "points": 14
+                    "goalsFor": 49,
+                    "goalsAgainst": 76,
+                    "points": 17
                 },
                 {
                     "position": 8,
+                    "team": "Cf Esperança Lagos",
+                    "played": 15,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 11,
+                    "goalsFor": 45,
+                    "goalsAgainst": 105,
+                    "points": 12
+                },
+                {
+                    "position": 9,
                     "team": "Fc Ferreiras",
                     "played": 15,
                     "wins": 3,
@@ -2445,28 +2838,22 @@
                     "points": 10
                 },
                 {
-                    "position": 9,
-                    "team": "Cf Esperança Lagos",
-                    "played": 14,
-                    "wins": 3,
-                    "draws": 0,
-                    "losses": 11,
-                    "goalsFor": 37,
-                    "goalsAgainst": 100,
-                    "points": 9
-                },
-                {
                     "position": 10,
                     "team": "Silves Fc",
-                    "played": 14,
+                    "played": 15,
                     "wins": 2,
                     "draws": 0,
-                    "losses": 12,
-                    "goalsFor": 29,
-                    "goalsAgainst": 101,
+                    "losses": 13,
+                    "goalsFor": 31,
+                    "goalsAgainst": 105,
                     "points": 6
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:58:10Z",
+            "lastSuccessAt": "2026-05-19T13:58:10Z",
+            "lastChangedAt": "2026-05-19T13:58:10Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 16,
@@ -2476,28 +2863,49 @@
                     "home": "Fc Ferreiras",
                     "away": "Cd Odiáxere",
                     "date": "16 mai",
-                    "time": "10:30",
+                    "time": "",
                     "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 1,
+                    "awayScore": 5,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:12Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Silves Fc",
                     "away": "Lusitano Fc Vrsa",
                     "date": "16 mai",
-                    "time": "12:00",
+                    "time": "",
                     "stadium": "Estádio Dr. Francisco Vieira",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 3,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:12Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Imortal Dc",
                     "away": "Associacao Fut. F.O.",
                     "date": "16 mai",
-                    "time": "16:00",
+                    "time": "",
                     "stadium": "Campo Da Palmeira Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 3,
+                    "awayScore": 5,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:12Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Cf Esperança Lagos",
@@ -2506,16 +2914,27 @@
                     "time": "11:00",
                     "stadium": "Estádio Municipal De Lagos N.º 2",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:12Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Ad Geração Génios",
                     "away": "Cf Os Armacenenses",
                     "date": "18 mai",
-                    "time": "18:30",
+                    "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
+                    "homeScore": 2,
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:12Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "time_changed"
+                    ]
                 }
             ],
             "classification": [
@@ -2533,103 +2952,108 @@
                 {
                     "position": 2,
                     "team": "Lusitano Fc Vrsa",
-                    "played": 15,
+                    "played": 16,
                     "wins": 12,
                     "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 97,
-                    "goalsAgainst": 32,
+                    "losses": 2,
+                    "goalsFor": 99,
+                    "goalsAgainst": 35,
                     "points": 38
                 },
                 {
                     "position": 3,
                     "team": "Cf Os Armacenenses",
-                    "played": 15,
-                    "wins": 8,
+                    "played": 16,
+                    "wins": 9,
                     "draws": 2,
                     "losses": 5,
-                    "goalsFor": 70,
-                    "goalsAgainst": 51,
-                    "points": 26
+                    "goalsFor": 73,
+                    "goalsAgainst": 53,
+                    "points": 29
                 },
                 {
                     "position": 4,
-                    "team": "Ad Geração Génios",
-                    "played": 14,
+                    "team": "Associacao Fut. F.O.",
+                    "played": 16,
                     "wins": 8,
-                    "draws": 1,
-                    "losses": 5,
-                    "goalsFor": 76,
-                    "goalsAgainst": 51,
-                    "points": 25
+                    "draws": 2,
+                    "losses": 6,
+                    "goalsFor": 87,
+                    "goalsAgainst": 72,
+                    "points": 26
                 },
                 {
                     "position": 5,
-                    "team": "Associacao Fut. F.O.",
-                    "played": 15,
-                    "wins": 7,
-                    "draws": 2,
-                    "losses": 6,
-                    "goalsFor": 82,
-                    "goalsAgainst": 69,
-                    "points": 23
+                    "team": "Ad Geração Génios",
+                    "played": 16,
+                    "wins": 8,
+                    "draws": 1,
+                    "losses": 7,
+                    "goalsFor": 83,
+                    "goalsAgainst": 62,
+                    "points": 25
                 },
                 {
                     "position": 6,
                     "team": "Imortal Dc",
-                    "played": 15,
+                    "played": 16,
                     "wins": 7,
                     "draws": 2,
-                    "losses": 6,
-                    "goalsFor": 58,
-                    "goalsAgainst": 58,
+                    "losses": 7,
+                    "goalsFor": 61,
+                    "goalsAgainst": 63,
                     "points": 23
                 },
                 {
                     "position": 7,
                     "team": "Cd Odiáxere",
-                    "played": 14,
-                    "wins": 4,
+                    "played": 16,
+                    "wins": 6,
                     "draws": 2,
                     "losses": 8,
-                    "goalsFor": 45,
-                    "goalsAgainst": 74,
-                    "points": 14
+                    "goalsFor": 54,
+                    "goalsAgainst": 77,
+                    "points": 20
                 },
                 {
                     "position": 8,
-                    "team": "Fc Ferreiras",
+                    "team": "Cf Esperança Lagos",
                     "played": 15,
-                    "wins": 3,
-                    "draws": 1,
+                    "wins": 4,
+                    "draws": 0,
                     "losses": 11,
-                    "goalsFor": 55,
-                    "goalsAgainst": 76,
-                    "points": 10
+                    "goalsFor": 45,
+                    "goalsAgainst": 105,
+                    "points": 12
                 },
                 {
                     "position": 9,
-                    "team": "Cf Esperança Lagos",
-                    "played": 14,
+                    "team": "Fc Ferreiras",
+                    "played": 16,
                     "wins": 3,
-                    "draws": 0,
-                    "losses": 11,
-                    "goalsFor": 37,
-                    "goalsAgainst": 100,
-                    "points": 9
+                    "draws": 1,
+                    "losses": 12,
+                    "goalsFor": 56,
+                    "goalsAgainst": 81,
+                    "points": 10
                 },
                 {
                     "position": 10,
                     "team": "Silves Fc",
-                    "played": 14,
-                    "wins": 2,
+                    "played": 16,
+                    "wins": 3,
                     "draws": 0,
-                    "losses": 12,
-                    "goalsFor": 29,
-                    "goalsAgainst": 101,
-                    "points": 6
+                    "losses": 13,
+                    "goalsFor": 34,
+                    "goalsAgainst": 107,
+                    "points": 9
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:58:12Z",
+            "lastSuccessAt": "2026-05-19T13:58:12Z",
+            "lastChangedAt": "2026-05-19T13:58:12Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 17,
@@ -2642,7 +3066,11 @@
                     "time": "09:00",
                     "stadium": "Campo Eiras",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:15Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Associacao Fut. F.O.",
@@ -2651,16 +3079,11 @@
                     "time": "11:00",
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Cf Esperança Lagos",
-                    "date": "23 mai",
-                    "time": "12:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:15Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Lusitano Fc Vrsa",
@@ -2669,7 +3092,11 @@
                     "time": "12:00",
                     "stadium": "Campo Francisco Gomes Socorro",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:15Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Silves Fc",
@@ -2678,7 +3105,24 @@
                     "time": "12:00",
                     "stadium": "Estádio Dr. Francisco Vieira",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:15Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Cf Esperança Lagos",
+                    "date": "23 mai",
+                    "time": "12:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:15Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -2696,103 +3140,108 @@
                 {
                     "position": 2,
                     "team": "Lusitano Fc Vrsa",
-                    "played": 15,
+                    "played": 16,
                     "wins": 12,
                     "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 97,
-                    "goalsAgainst": 32,
+                    "losses": 2,
+                    "goalsFor": 99,
+                    "goalsAgainst": 35,
                     "points": 38
                 },
                 {
                     "position": 3,
                     "team": "Cf Os Armacenenses",
-                    "played": 15,
-                    "wins": 8,
+                    "played": 16,
+                    "wins": 9,
                     "draws": 2,
                     "losses": 5,
-                    "goalsFor": 70,
-                    "goalsAgainst": 51,
-                    "points": 26
+                    "goalsFor": 73,
+                    "goalsAgainst": 53,
+                    "points": 29
                 },
                 {
                     "position": 4,
-                    "team": "Ad Geração Génios",
-                    "played": 14,
+                    "team": "Associacao Fut. F.O.",
+                    "played": 16,
                     "wins": 8,
-                    "draws": 1,
-                    "losses": 5,
-                    "goalsFor": 76,
-                    "goalsAgainst": 51,
-                    "points": 25
+                    "draws": 2,
+                    "losses": 6,
+                    "goalsFor": 87,
+                    "goalsAgainst": 72,
+                    "points": 26
                 },
                 {
                     "position": 5,
-                    "team": "Associacao Fut. F.O.",
-                    "played": 15,
-                    "wins": 7,
-                    "draws": 2,
-                    "losses": 6,
-                    "goalsFor": 82,
-                    "goalsAgainst": 69,
-                    "points": 23
+                    "team": "Ad Geração Génios",
+                    "played": 16,
+                    "wins": 8,
+                    "draws": 1,
+                    "losses": 7,
+                    "goalsFor": 83,
+                    "goalsAgainst": 62,
+                    "points": 25
                 },
                 {
                     "position": 6,
                     "team": "Imortal Dc",
-                    "played": 15,
+                    "played": 16,
                     "wins": 7,
                     "draws": 2,
-                    "losses": 6,
-                    "goalsFor": 58,
-                    "goalsAgainst": 58,
+                    "losses": 7,
+                    "goalsFor": 61,
+                    "goalsAgainst": 63,
                     "points": 23
                 },
                 {
                     "position": 7,
                     "team": "Cd Odiáxere",
-                    "played": 14,
-                    "wins": 4,
+                    "played": 16,
+                    "wins": 6,
                     "draws": 2,
                     "losses": 8,
-                    "goalsFor": 45,
-                    "goalsAgainst": 74,
-                    "points": 14
+                    "goalsFor": 54,
+                    "goalsAgainst": 77,
+                    "points": 20
                 },
                 {
                     "position": 8,
-                    "team": "Fc Ferreiras",
+                    "team": "Cf Esperança Lagos",
                     "played": 15,
-                    "wins": 3,
-                    "draws": 1,
+                    "wins": 4,
+                    "draws": 0,
                     "losses": 11,
-                    "goalsFor": 55,
-                    "goalsAgainst": 76,
-                    "points": 10
+                    "goalsFor": 45,
+                    "goalsAgainst": 105,
+                    "points": 12
                 },
                 {
                     "position": 9,
-                    "team": "Cf Esperança Lagos",
-                    "played": 14,
+                    "team": "Fc Ferreiras",
+                    "played": 16,
                     "wins": 3,
-                    "draws": 0,
-                    "losses": 11,
-                    "goalsFor": 37,
-                    "goalsAgainst": 100,
-                    "points": 9
+                    "draws": 1,
+                    "losses": 12,
+                    "goalsFor": 56,
+                    "goalsAgainst": 81,
+                    "points": 10
                 },
                 {
                     "position": 10,
                     "team": "Silves Fc",
-                    "played": 14,
-                    "wins": 2,
+                    "played": 16,
+                    "wins": 3,
                     "draws": 0,
-                    "losses": 12,
-                    "goalsFor": 29,
-                    "goalsAgainst": 101,
-                    "points": 6
+                    "losses": 13,
+                    "goalsFor": 34,
+                    "goalsAgainst": 107,
+                    "points": 9
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:58:15Z",
+            "lastSuccessAt": "2026-05-19T13:58:15Z",
+            "lastChangedAt": "2026-05-19T13:58:15Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         },
         {
             "index": 18,
@@ -2805,34 +3254,11 @@
                     "time": "10:30",
                     "stadium": "Estádio Municipal De Lagos N.º 2",
                     "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Internacional Ca",
-                    "away": "Cf Os Armacenenses",
-                    "date": "30 mai",
-                    "time": "10:30",
-                    "stadium": "Estadio Municipal De Almancil",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Fc Ferreiras",
-                    "away": "Silves Fc",
-                    "date": "30 mai",
-                    "time": "10:30",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null
-                },
-                {
-                    "home": "Ad Geração Génios",
-                    "away": "Cd Odiáxere",
-                    "date": "30 mai",
-                    "time": "10:30",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:19Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Imortal Dc",
@@ -2841,7 +3267,50 @@
                     "time": "10:30",
                     "stadium": "Campo Da Palmeira Nº 2",
                     "homeScore": null,
-                    "awayScore": null
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:19Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Silves Fc",
+                    "date": "30 mai",
+                    "time": "10:30",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": null,
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:19Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Internacional Ca",
+                    "away": "Cf Os Armacenenses",
+                    "date": "30 mai",
+                    "time": "10:30",
+                    "stadium": "Estadio Municipal De Almancil",
+                    "homeScore": null,
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:19Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Ad Geração Génios",
+                    "away": "Cd Odiáxere",
+                    "date": "30 mai",
+                    "time": "10:30",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:58:19Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -2859,103 +3328,108 @@
                 {
                     "position": 2,
                     "team": "Lusitano Fc Vrsa",
-                    "played": 15,
+                    "played": 16,
                     "wins": 12,
                     "draws": 2,
-                    "losses": 1,
-                    "goalsFor": 97,
-                    "goalsAgainst": 32,
+                    "losses": 2,
+                    "goalsFor": 99,
+                    "goalsAgainst": 35,
                     "points": 38
                 },
                 {
                     "position": 3,
                     "team": "Cf Os Armacenenses",
-                    "played": 15,
-                    "wins": 8,
+                    "played": 16,
+                    "wins": 9,
                     "draws": 2,
                     "losses": 5,
-                    "goalsFor": 70,
-                    "goalsAgainst": 51,
-                    "points": 26
+                    "goalsFor": 73,
+                    "goalsAgainst": 53,
+                    "points": 29
                 },
                 {
                     "position": 4,
-                    "team": "Ad Geração Génios",
-                    "played": 14,
+                    "team": "Associacao Fut. F.O.",
+                    "played": 16,
                     "wins": 8,
-                    "draws": 1,
-                    "losses": 5,
-                    "goalsFor": 76,
-                    "goalsAgainst": 51,
-                    "points": 25
+                    "draws": 2,
+                    "losses": 6,
+                    "goalsFor": 87,
+                    "goalsAgainst": 72,
+                    "points": 26
                 },
                 {
                     "position": 5,
-                    "team": "Associacao Fut. F.O.",
-                    "played": 15,
-                    "wins": 7,
-                    "draws": 2,
-                    "losses": 6,
-                    "goalsFor": 82,
-                    "goalsAgainst": 69,
-                    "points": 23
+                    "team": "Ad Geração Génios",
+                    "played": 16,
+                    "wins": 8,
+                    "draws": 1,
+                    "losses": 7,
+                    "goalsFor": 83,
+                    "goalsAgainst": 62,
+                    "points": 25
                 },
                 {
                     "position": 6,
                     "team": "Imortal Dc",
-                    "played": 15,
+                    "played": 16,
                     "wins": 7,
                     "draws": 2,
-                    "losses": 6,
-                    "goalsFor": 58,
-                    "goalsAgainst": 58,
+                    "losses": 7,
+                    "goalsFor": 61,
+                    "goalsAgainst": 63,
                     "points": 23
                 },
                 {
                     "position": 7,
                     "team": "Cd Odiáxere",
-                    "played": 14,
-                    "wins": 4,
+                    "played": 16,
+                    "wins": 6,
                     "draws": 2,
                     "losses": 8,
-                    "goalsFor": 45,
-                    "goalsAgainst": 74,
-                    "points": 14
+                    "goalsFor": 54,
+                    "goalsAgainst": 77,
+                    "points": 20
                 },
                 {
                     "position": 8,
-                    "team": "Fc Ferreiras",
+                    "team": "Cf Esperança Lagos",
                     "played": 15,
-                    "wins": 3,
-                    "draws": 1,
+                    "wins": 4,
+                    "draws": 0,
                     "losses": 11,
-                    "goalsFor": 55,
-                    "goalsAgainst": 76,
-                    "points": 10
+                    "goalsFor": 45,
+                    "goalsAgainst": 105,
+                    "points": 12
                 },
                 {
                     "position": 9,
-                    "team": "Cf Esperança Lagos",
-                    "played": 14,
+                    "team": "Fc Ferreiras",
+                    "played": 16,
                     "wins": 3,
-                    "draws": 0,
-                    "losses": 11,
-                    "goalsFor": 37,
-                    "goalsAgainst": 100,
-                    "points": 9
+                    "draws": 1,
+                    "losses": 12,
+                    "goalsFor": 56,
+                    "goalsAgainst": 81,
+                    "points": 10
                 },
                 {
                     "position": 10,
                     "team": "Silves Fc",
-                    "played": 14,
-                    "wins": 2,
+                    "played": 16,
+                    "wins": 3,
                     "draws": 0,
-                    "losses": 12,
-                    "goalsFor": 29,
-                    "goalsAgainst": 101,
-                    "points": 6
+                    "losses": 13,
+                    "goalsFor": 34,
+                    "goalsAgainst": 107,
+                    "points": 9
                 }
-            ]
+            ],
+            "lastAttemptAt": "2026-05-19T13:58:19Z",
+            "lastSuccessAt": "2026-05-19T13:58:19Z",
+            "lastChangedAt": "2026-05-19T13:58:19Z",
+            "sourceStatus": "ok",
+            "sourceIssue": null
         }
     ]
 }
