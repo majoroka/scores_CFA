@@ -1,24 +1,7 @@
 name: Sync data
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - "fetch_*.py"
-      - "fpf_http.py"
-      - "run_fetchers.py"
-      - "plan_fetchers.py"
-      - "build_calendar.py"
-      - "build_status.py"
-      - "requirements.txt"
-      - "competition_configs.py"
-      - "competition_sync.py"
-      - ".github/workflows/update-data.yml"
-      - ".github/workflows/retry-pending-results.yml"
   workflow_dispatch: {}
-  schedule:
-    - cron: "17 * * * *"
 
 permissions:
   contents: write
