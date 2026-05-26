@@ -1,13 +1,13 @@
 {
     "schemaVersion": 2,
-    "generatedAt": "2026-05-19T13:41:59Z",
-    "lastAttemptAt": "2026-05-19T13:41:40Z",
-    "lastSuccessAt": null,
-    "lastChangedAt": null,
-    "lastPublishedAt": "2026-05-19T13:41:59Z",
-    "defaultRoundIndex": 10,
-    "defaultRoundNumber": 11,
-    "lastUpdatedAt": "2026-05-19T13:41:59Z",
+    "generatedAt": "2026-05-26T14:43:54Z",
+    "lastAttemptAt": "2026-05-26T14:43:34Z",
+    "lastSuccessAt": "2026-05-19T13:41:40Z",
+    "lastChangedAt": "2026-05-19T13:41:40Z",
+    "lastPublishedAt": "2026-05-26T14:43:54Z",
+    "defaultRoundIndex": 4,
+    "defaultRoundNumber": 5,
+    "lastUpdatedAt": "2026-05-26T14:43:54Z",
     "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0,
@@ -18,11 +18,11 @@
         "matchCount": 56,
         "classificationCount": 112,
         "teamCount": 8,
-        "completedMatchCount": 44,
-        "matchesWithoutScore": 12,
-        "pastMatchCount": 44,
+        "completedMatchCount": 47,
+        "matchesWithoutScore": 9,
+        "pastMatchCount": 47,
         "pastMatchesWithoutScore": 0,
-        "futureMatchCount": 12,
+        "futureMatchCount": 9,
         "roundsWithMatches": 14,
         "roundsWithClassification": 14,
         "roundsWithCompletedMatches": 12,
@@ -34,12 +34,12 @@
             "fixtureId": "641030",
             "matches": [
                 {
-                    "home": "Cf Os Armacenenses - A",
-                    "away": "Cf Os Armacenenses - B",
-                    "date": "5 - 1                            \r\n                \r\n                    1 mar",
+                    "home": "Aef João Moutinho",
+                    "away": "Ud Messinense",
+                    "date": "2 - 1                            \r\n                \r\n                    1 mar",
                     "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 5,
+                    "stadium": "Parque Desportivo Municipal Estombar",
+                    "homeScore": 2,
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
@@ -47,12 +47,12 @@
                     "changeFlags": []
                 },
                 {
-                    "home": "Aef João Moutinho",
-                    "away": "Ud Messinense",
-                    "date": "2 - 1                            \r\n                \r\n                    1 mar",
+                    "home": "Cf Os Armacenenses - A",
+                    "away": "Cf Os Armacenenses - B",
+                    "date": "5 - 1                            \r\n                \r\n                    1 mar",
                     "time": "",
-                    "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": 2,
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 5,
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
@@ -176,8 +176,8 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:40Z",
-            "lastSuccessAt": "2026-05-19T13:41:40Z",
+            "lastAttemptAt": "2026-05-26T14:43:34Z",
+            "lastSuccessAt": "2026-05-26T14:43:34Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -200,19 +200,6 @@
                     "changeFlags": []
                 },
                 {
-                    "home": "Ud Messinense",
-                    "away": "Cf Os Armacenenses - A",
-                    "date": "1 - 1                            \r\n                \r\n                    8 mar",
-                    "time": "",
-                    "stadium": "Estádio Municipal Messines",
-                    "homeScore": 1,
-                    "awayScore": 1,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": null,
-                    "changeFlags": []
-                },
-                {
                     "home": "Padernense Clube",
                     "away": "Jc Aljezurense",
                     "date": "2 - 3                            \r\n                \r\n                    8 mar",
@@ -220,6 +207,19 @@
                     "stadium": "Campo Montes Elois",
                     "homeScore": 2,
                     "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Ud Messinense",
+                    "away": "Cf Os Armacenenses - A",
+                    "date": "1 - 1                            \r\n                \r\n                    8 mar",
+                    "time": "",
+                    "stadium": "Estádio Municipal Messines",
+                    "homeScore": 1,
+                    "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": null,
@@ -329,8 +329,8 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:41Z",
-            "lastSuccessAt": "2026-05-19T13:41:41Z",
+            "lastAttemptAt": "2026-05-26T14:43:35Z",
+            "lastSuccessAt": "2026-05-26T14:43:35Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -389,11 +389,7 @@
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": "2026-05-19T13:41:43Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "date_changed",
-                        "time_changed"
-                    ]
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -486,8 +482,8 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:43Z",
-            "lastSuccessAt": "2026-05-19T13:41:43Z",
+            "lastAttemptAt": "2026-05-26T14:43:36Z",
+            "lastSuccessAt": "2026-05-26T14:43:36Z",
             "lastChangedAt": "2026-05-19T13:41:43Z",
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -504,6 +500,19 @@
                     "stadium": "Campo Horta Da Areia",
                     "homeScore": 7,
                     "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:41:44Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Padernense Clube",
+                    "away": "Cf Os Armacenenses - A",
+                    "date": "6 - 0                            \r\n                \r\n                    22 mar",
+                    "time": "",
+                    "stadium": "Campo Montes Elois",
+                    "homeScore": 6,
+                    "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": "2026-05-19T13:41:44Z",
@@ -530,19 +539,6 @@
                     "stadium": "Campo Municipal Aljezur",
                     "homeScore": 1,
                     "awayScore": 3,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:44Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Padernense Clube",
-                    "away": "Cf Os Armacenenses - A",
-                    "date": "6 - 0                            \r\n                \r\n                    22 mar",
-                    "time": "",
-                    "stadium": "Campo Montes Elois",
-                    "homeScore": 6,
-                    "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": "2026-05-19T13:41:44Z",
@@ -639,8 +635,8 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:44Z",
-            "lastSuccessAt": "2026-05-19T13:41:44Z",
+            "lastAttemptAt": "2026-05-26T14:43:38Z",
+            "lastSuccessAt": "2026-05-26T14:43:38Z",
             "lastChangedAt": "2026-05-19T13:41:44Z",
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -659,7 +655,7 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:45Z",
+                    "lastChangedAt": "2026-05-26T14:43:39Z",
                     "changeFlags": []
                 },
                 {
@@ -672,7 +668,7 @@
                     "awayScore": 8,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:45Z",
+                    "lastChangedAt": "2026-05-26T14:43:39Z",
                     "changeFlags": []
                 },
                 {
@@ -685,37 +681,30 @@
                     "awayScore": 4,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:45Z",
+                    "lastChangedAt": "2026-05-26T14:43:39Z",
                     "changeFlags": []
                 },
                 {
                     "home": "Ud Messinense",
                     "away": "Cd Montenegro",
-                    "date": "24 mai",
-                    "time": "11:00",
+                    "date": "7 - 1                            \r\n                \r\n                    24 mai",
+                    "time": "",
                     "stadium": "Estádio Municipal Messines",
-                    "homeScore": null,
-                    "awayScore": null,
-                    "scoreSource": null,
+                    "homeScore": 7,
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:45Z",
-                    "changeFlags": []
+                    "lastChangedAt": "2026-05-26T14:43:39Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 }
             ],
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cd Montenegro",
-                    "played": 5,
-                    "wins": 5,
-                    "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 17,
-                    "goalsAgainst": 2,
-                    "points": 15
-                },
-                {
-                    "position": 2,
                     "team": "Jd Monchiquense",
                     "played": 5,
                     "wins": 4,
@@ -724,6 +713,17 @@
                     "goalsFor": 23,
                     "goalsAgainst": 3,
                     "points": 13
+                },
+                {
+                    "position": 2,
+                    "team": "Cd Montenegro",
+                    "played": 5,
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 1,
+                    "goalsFor": 14,
+                    "goalsAgainst": 9,
+                    "points": 12
                 },
                 {
                     "position": 3,
@@ -738,6 +738,17 @@
                 },
                 {
                     "position": 4,
+                    "team": "Ud Messinense",
+                    "played": 5,
+                    "wins": 2,
+                    "draws": 2,
+                    "losses": 1,
+                    "goalsFor": 16,
+                    "goalsAgainst": 4,
+                    "points": 8
+                },
+                {
+                    "position": 5,
                     "team": "Jc Aljezurense",
                     "played": 5,
                     "wins": 2,
@@ -748,7 +759,7 @@
                     "points": 6
                 },
                 {
-                    "position": 5,
+                    "position": 6,
                     "team": "Padernense Clube",
                     "played": 5,
                     "wins": 2,
@@ -757,17 +768,6 @@
                     "goalsFor": 20,
                     "goalsAgainst": 14,
                     "points": 6
-                },
-                {
-                    "position": 6,
-                    "team": "Ud Messinense",
-                    "played": 5,
-                    "wins": 1,
-                    "draws": 2,
-                    "losses": 2,
-                    "goalsFor": 9,
-                    "goalsAgainst": 7,
-                    "points": 5
                 },
                 {
                     "position": 7,
@@ -792,9 +792,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:45Z",
-            "lastSuccessAt": "2026-05-19T13:41:45Z",
-            "lastChangedAt": "2026-05-19T13:41:45Z",
+            "lastAttemptAt": "2026-05-26T14:43:39Z",
+            "lastSuccessAt": "2026-05-26T14:43:39Z",
+            "lastChangedAt": "2026-05-26T14:43:39Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -812,20 +812,7 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:47Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Jd Monchiquense",
-                    "away": "Cd Montenegro",
-                    "date": "0 - 3                            \r\n                \r\n                    12 abr",
-                    "time": "",
-                    "stadium": "Parque Desportivo Jd Monchiquense",
-                    "homeScore": 0,
-                    "awayScore": 3,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:47Z",
+                    "lastChangedAt": "2026-05-26T14:43:41Z",
                     "changeFlags": []
                 },
                 {
@@ -838,7 +825,20 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:47Z",
+                    "lastChangedAt": "2026-05-26T14:43:41Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Jd Monchiquense",
+                    "away": "Cd Montenegro",
+                    "date": "0 - 3                            \r\n                \r\n                    12 abr",
+                    "time": "",
+                    "stadium": "Parque Desportivo Jd Monchiquense",
+                    "homeScore": 0,
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:43:41Z",
                     "changeFlags": []
                 },
                 {
@@ -851,7 +851,7 @@
                     "awayScore": 4,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:47Z",
+                    "lastChangedAt": "2026-05-26T14:43:41Z",
                     "changeFlags": []
                 }
             ],
@@ -860,12 +860,12 @@
                     "position": 1,
                     "team": "Cd Montenegro",
                     "played": 6,
-                    "wins": 6,
+                    "wins": 5,
                     "draws": 0,
-                    "losses": 0,
-                    "goalsFor": 20,
-                    "goalsAgainst": 2,
-                    "points": 18
+                    "losses": 1,
+                    "goalsFor": 17,
+                    "goalsAgainst": 9,
+                    "points": 15
                 },
                 {
                     "position": 2,
@@ -891,6 +891,17 @@
                 },
                 {
                     "position": 4,
+                    "team": "Ud Messinense",
+                    "played": 6,
+                    "wins": 3,
+                    "draws": 2,
+                    "losses": 1,
+                    "goalsFor": 20,
+                    "goalsAgainst": 6,
+                    "points": 11
+                },
+                {
+                    "position": 5,
                     "team": "Jc Aljezurense",
                     "played": 6,
                     "wins": 3,
@@ -899,17 +910,6 @@
                     "goalsFor": 14,
                     "goalsAgainst": 9,
                     "points": 9
-                },
-                {
-                    "position": 5,
-                    "team": "Ud Messinense",
-                    "played": 6,
-                    "wins": 2,
-                    "draws": 2,
-                    "losses": 2,
-                    "goalsFor": 13,
-                    "goalsAgainst": 9,
-                    "points": 8
                 },
                 {
                     "position": 6,
@@ -945,9 +945,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:47Z",
-            "lastSuccessAt": "2026-05-19T13:41:47Z",
-            "lastChangedAt": "2026-05-19T13:41:47Z",
+            "lastAttemptAt": "2026-05-26T14:43:41Z",
+            "lastSuccessAt": "2026-05-26T14:43:41Z",
+            "lastChangedAt": "2026-05-26T14:43:41Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -965,7 +965,7 @@
                     "awayScore": 5,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:48Z",
+                    "lastChangedAt": "2026-05-26T14:43:42Z",
                     "changeFlags": []
                 },
                 {
@@ -978,7 +978,7 @@
                     "awayScore": 11,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:48Z",
+                    "lastChangedAt": "2026-05-26T14:43:42Z",
                     "changeFlags": []
                 },
                 {
@@ -991,7 +991,7 @@
                     "awayScore": 5,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:48Z",
+                    "lastChangedAt": "2026-05-26T14:43:42Z",
                     "changeFlags": []
                 },
                 {
@@ -1004,24 +1004,13 @@
                     "awayScore": 4,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:48Z",
+                    "lastChangedAt": "2026-05-26T14:43:42Z",
                     "changeFlags": []
                 }
             ],
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cd Montenegro",
-                    "played": 7,
-                    "wins": 6,
-                    "draws": 0,
-                    "losses": 1,
-                    "goalsFor": 22,
-                    "goalsAgainst": 7,
-                    "points": 18
-                },
-                {
-                    "position": 2,
                     "team": "Jd Monchiquense",
                     "played": 7,
                     "wins": 5,
@@ -1030,6 +1019,17 @@
                     "goalsFor": 27,
                     "goalsAgainst": 9,
                     "points": 16
+                },
+                {
+                    "position": 2,
+                    "team": "Cd Montenegro",
+                    "played": 7,
+                    "wins": 5,
+                    "draws": 0,
+                    "losses": 2,
+                    "goalsFor": 19,
+                    "goalsAgainst": 14,
+                    "points": 15
                 },
                 {
                     "position": 3,
@@ -1055,6 +1055,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Ud Messinense",
+                    "played": 7,
+                    "wins": 3,
+                    "draws": 2,
+                    "losses": 2,
+                    "goalsFor": 21,
+                    "goalsAgainst": 11,
+                    "points": 11
+                },
+                {
+                    "position": 6,
                     "team": "Padernense Clube",
                     "played": 7,
                     "wins": 3,
@@ -1063,17 +1074,6 @@
                     "goalsFor": 27,
                     "goalsAgainst": 20,
                     "points": 9
-                },
-                {
-                    "position": 6,
-                    "team": "Ud Messinense",
-                    "played": 7,
-                    "wins": 2,
-                    "draws": 2,
-                    "losses": 3,
-                    "goalsFor": 14,
-                    "goalsAgainst": 14,
-                    "points": 8
                 },
                 {
                     "position": 7,
@@ -1098,9 +1098,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:48Z",
-            "lastSuccessAt": "2026-05-19T13:41:48Z",
-            "lastChangedAt": "2026-05-19T13:41:48Z",
+            "lastAttemptAt": "2026-05-26T14:43:42Z",
+            "lastSuccessAt": "2026-05-26T14:43:42Z",
+            "lastChangedAt": "2026-05-26T14:43:42Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -1118,7 +1118,7 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:50Z",
+                    "lastChangedAt": "2026-05-26T14:43:43Z",
                     "changeFlags": []
                 },
                 {
@@ -1131,20 +1131,7 @@
                     "awayScore": 4,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:50Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Ud Messinense",
-                    "away": "Aef João Moutinho",
-                    "date": "2 - 5                            \r\n                \r\n                    26 abr",
-                    "time": "",
-                    "stadium": "Estádio Municipal Messines",
-                    "homeScore": 2,
-                    "awayScore": 5,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:50Z",
+                    "lastChangedAt": "2026-05-26T14:43:43Z",
                     "changeFlags": []
                 },
                 {
@@ -1157,24 +1144,26 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:50Z",
+                    "lastChangedAt": "2026-05-26T14:43:43Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Ud Messinense",
+                    "away": "Aef João Moutinho",
+                    "date": "2 - 5                            \r\n                \r\n                    26 abr",
+                    "time": "",
+                    "stadium": "Estádio Municipal Messines",
+                    "homeScore": 2,
+                    "awayScore": 5,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:43:43Z",
                     "changeFlags": []
                 }
             ],
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cd Montenegro",
-                    "played": 8,
-                    "wins": 6,
-                    "draws": 1,
-                    "losses": 1,
-                    "goalsFor": 23,
-                    "goalsAgainst": 8,
-                    "points": 19
-                },
-                {
-                    "position": 2,
                     "team": "Aef João Moutinho",
                     "played": 8,
                     "wins": 6,
@@ -1183,6 +1172,17 @@
                     "goalsFor": 36,
                     "goalsAgainst": 12,
                     "points": 18
+                },
+                {
+                    "position": 2,
+                    "team": "Cd Montenegro",
+                    "played": 8,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 2,
+                    "goalsFor": 20,
+                    "goalsAgainst": 15,
+                    "points": 16
                 },
                 {
                     "position": 3,
@@ -1221,12 +1221,12 @@
                     "position": 6,
                     "team": "Ud Messinense",
                     "played": 8,
-                    "wins": 2,
+                    "wins": 3,
                     "draws": 2,
-                    "losses": 4,
-                    "goalsFor": 16,
-                    "goalsAgainst": 19,
-                    "points": 8
+                    "losses": 3,
+                    "goalsFor": 23,
+                    "goalsAgainst": 16,
+                    "points": 11
                 },
                 {
                     "position": 7,
@@ -1251,9 +1251,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:50Z",
-            "lastSuccessAt": "2026-05-19T13:41:50Z",
-            "lastChangedAt": "2026-05-19T13:41:50Z",
+            "lastAttemptAt": "2026-05-26T14:43:43Z",
+            "lastSuccessAt": "2026-05-26T14:43:43Z",
+            "lastChangedAt": "2026-05-26T14:43:43Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -1271,7 +1271,7 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:51Z",
+                    "lastChangedAt": "2026-05-26T14:43:45Z",
                     "changeFlags": []
                 },
                 {
@@ -1284,7 +1284,7 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:51Z",
+                    "lastChangedAt": "2026-05-26T14:43:45Z",
                     "changeFlags": []
                 },
                 {
@@ -1297,7 +1297,7 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:51Z",
+                    "lastChangedAt": "2026-05-26T14:43:45Z",
                     "changeFlags": []
                 },
                 {
@@ -1310,7 +1310,7 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:51Z",
+                    "lastChangedAt": "2026-05-26T14:43:45Z",
                     "changeFlags": []
                 }
             ],
@@ -1328,17 +1328,6 @@
                 },
                 {
                     "position": 2,
-                    "team": "Cd Montenegro",
-                    "played": 9,
-                    "wins": 6,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 25,
-                    "goalsAgainst": 13,
-                    "points": 19
-                },
-                {
-                    "position": 3,
                     "team": "Jd Monchiquense",
                     "played": 9,
                     "wins": 6,
@@ -1347,6 +1336,17 @@
                     "goalsFor": 31,
                     "goalsAgainst": 14,
                     "points": 19
+                },
+                {
+                    "position": 3,
+                    "team": "Cd Montenegro",
+                    "played": 9,
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 3,
+                    "goalsFor": 22,
+                    "goalsAgainst": 20,
+                    "points": 16
                 },
                 {
                     "position": 4,
@@ -1372,6 +1372,17 @@
                 },
                 {
                     "position": 6,
+                    "team": "Ud Messinense",
+                    "played": 9,
+                    "wins": 3,
+                    "draws": 2,
+                    "losses": 4,
+                    "goalsFor": 23,
+                    "goalsAgainst": 22,
+                    "points": 11
+                },
+                {
+                    "position": 7,
                     "team": "Cf Os Armacenenses - A",
                     "played": 9,
                     "wins": 3,
@@ -1380,17 +1391,6 @@
                     "goalsFor": 21,
                     "goalsAgainst": 29,
                     "points": 10
-                },
-                {
-                    "position": 7,
-                    "team": "Ud Messinense",
-                    "played": 9,
-                    "wins": 2,
-                    "draws": 2,
-                    "losses": 5,
-                    "goalsFor": 16,
-                    "goalsAgainst": 25,
-                    "points": 8
                 },
                 {
                     "position": 8,
@@ -1404,9 +1404,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:51Z",
-            "lastSuccessAt": "2026-05-19T13:41:51Z",
-            "lastChangedAt": "2026-05-19T13:41:51Z",
+            "lastAttemptAt": "2026-05-26T14:43:45Z",
+            "lastSuccessAt": "2026-05-26T14:43:45Z",
+            "lastChangedAt": "2026-05-26T14:43:45Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -1424,20 +1424,7 @@
                     "awayScore": 3,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:52Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Cd Montenegro",
-                    "away": "Cf Os Armacenenses - A",
-                    "date": "5 - 2                            \r\n                \r\n                    10 mai",
-                    "time": "",
-                    "stadium": "Campo Horta Da Areia",
-                    "homeScore": 5,
-                    "awayScore": 2,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:52Z",
+                    "lastChangedAt": "2026-05-26T14:43:46Z",
                     "changeFlags": []
                 },
                 {
@@ -1450,12 +1437,21 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:52Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "date_changed",
-                        "time_changed"
-                    ]
+                    "lastChangedAt": "2026-05-26T14:43:46Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cd Montenegro",
+                    "away": "Cf Os Armacenenses - A",
+                    "date": "5 - 2                            \r\n                \r\n                    10 mai",
+                    "time": "",
+                    "stadium": "Campo Horta Da Areia",
+                    "homeScore": 5,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:43:46Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Jc Aljezurense",
@@ -1467,12 +1463,8 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:52Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "date_changed",
-                        "time_changed"
-                    ]
+                    "lastChangedAt": "2026-05-26T14:43:46Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1491,12 +1483,12 @@
                     "position": 2,
                     "team": "Cd Montenegro",
                     "played": 10,
-                    "wins": 7,
+                    "wins": 6,
                     "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 30,
-                    "goalsAgainst": 15,
-                    "points": 22
+                    "losses": 3,
+                    "goalsFor": 27,
+                    "goalsAgainst": 22,
+                    "points": 19
                 },
                 {
                     "position": 3,
@@ -1522,6 +1514,17 @@
                 },
                 {
                     "position": 5,
+                    "team": "Ud Messinense",
+                    "played": 10,
+                    "wins": 4,
+                    "draws": 2,
+                    "losses": 4,
+                    "goalsFor": 29,
+                    "goalsAgainst": 22,
+                    "points": 14
+                },
+                {
+                    "position": 6,
                     "team": "Padernense Clube",
                     "played": 10,
                     "wins": 4,
@@ -1530,17 +1533,6 @@
                     "goalsFor": 32,
                     "goalsAgainst": 23,
                     "points": 13
-                },
-                {
-                    "position": 6,
-                    "team": "Ud Messinense",
-                    "played": 10,
-                    "wins": 3,
-                    "draws": 2,
-                    "losses": 5,
-                    "goalsFor": 22,
-                    "goalsAgainst": 25,
-                    "points": 11
                 },
                 {
                     "position": 7,
@@ -1565,9 +1557,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:52Z",
-            "lastSuccessAt": "2026-05-19T13:41:52Z",
-            "lastChangedAt": "2026-05-19T13:41:52Z",
+            "lastAttemptAt": "2026-05-26T14:43:46Z",
+            "lastSuccessAt": "2026-05-26T14:43:46Z",
+            "lastChangedAt": "2026-05-26T14:43:46Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -1585,12 +1577,8 @@
                     "awayScore": 5,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:54Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "date_changed",
-                        "time_changed"
-                    ]
+                    "lastChangedAt": "2026-05-26T14:43:48Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Jd Monchiquense",
@@ -1602,12 +1590,8 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:54Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "date_changed",
-                        "time_changed"
-                    ]
+                    "lastChangedAt": "2026-05-26T14:43:48Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses - B",
@@ -1619,12 +1603,8 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:54Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "date_changed",
-                        "time_changed"
-                    ]
+                    "lastChangedAt": "2026-05-26T14:43:48Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Aef João Moutinho",
@@ -1636,28 +1616,13 @@
                     "awayScore": 3,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:54Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "date_changed",
-                        "time_changed"
-                    ]
+                    "lastChangedAt": "2026-05-26T14:43:48Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
                 {
                     "position": 1,
-                    "team": "Cd Montenegro",
-                    "played": 11,
-                    "wins": 8,
-                    "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 31,
-                    "goalsAgainst": 15,
-                    "points": 25
-                },
-                {
-                    "position": 2,
                     "team": "Aef João Moutinho",
                     "played": 11,
                     "wins": 8,
@@ -1666,6 +1631,17 @@
                     "goalsFor": 45,
                     "goalsAgainst": 18,
                     "points": 24
+                },
+                {
+                    "position": 2,
+                    "team": "Cd Montenegro",
+                    "played": 11,
+                    "wins": 7,
+                    "draws": 1,
+                    "losses": 3,
+                    "goalsFor": 28,
+                    "goalsAgainst": 22,
+                    "points": 22
                 },
                 {
                     "position": 3,
@@ -1704,12 +1680,12 @@
                     "position": 6,
                     "team": "Ud Messinense",
                     "played": 11,
-                    "wins": 3,
+                    "wins": 4,
                     "draws": 3,
-                    "losses": 5,
-                    "goalsFor": 24,
-                    "goalsAgainst": 27,
-                    "points": 12
+                    "losses": 4,
+                    "goalsFor": 31,
+                    "goalsAgainst": 24,
+                    "points": 15
                 },
                 {
                     "position": 7,
@@ -1734,9 +1710,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:54Z",
-            "lastSuccessAt": "2026-05-19T13:41:54Z",
-            "lastChangedAt": "2026-05-19T13:41:54Z",
+            "lastAttemptAt": "2026-05-26T14:43:48Z",
+            "lastSuccessAt": "2026-05-26T14:43:48Z",
+            "lastChangedAt": "2026-05-26T14:43:48Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -1754,93 +1730,104 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:55Z",
+                    "lastChangedAt": "2026-05-26T14:43:49Z",
                     "changeFlags": []
                 },
                 {
                     "home": "Jc Aljezurense",
                     "away": "Cf Os Armacenenses - A",
-                    "date": "24 mai",
-                    "time": "11:00",
+                    "date": "2 - 1                            \r\n                \r\n                    24 mai",
+                    "time": "",
                     "stadium": "Campo Municipal Aljezur",
-                    "homeScore": null,
-                    "awayScore": null,
-                    "scoreSource": null,
+                    "homeScore": 2,
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:55Z",
-                    "changeFlags": []
+                    "lastChangedAt": "2026-05-26T14:43:49Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
+                },
+                {
+                    "home": "Aef João Moutinho",
+                    "away": "Jd Monchiquense",
+                    "date": "2 - 4                            \r\n                \r\n                    24 mai",
+                    "time": "",
+                    "stadium": "Parque Desportivo Municipal Estombar",
+                    "homeScore": 2,
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:43:49Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Padernense Clube",
                     "away": "Cf Os Armacenenses - B",
-                    "date": "24 mai",
-                    "time": "11:00",
+                    "date": "27 mai",
+                    "time": "19:30",
                     "stadium": "Campo Montes Elois",
                     "homeScore": null,
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:55Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Aef João Moutinho",
-                    "away": "Jd Monchiquense",
-                    "date": "24 mai",
-                    "time": "16:00",
-                    "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": null,
-                    "awayScore": null,
-                    "scoreSource": null,
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:55Z",
-                    "changeFlags": []
+                    "lastChangedAt": "2026-05-26T14:43:49Z",
+                    "changeFlags": [
+                        "date_changed",
+                        "time_changed"
+                    ]
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Cd Montenegro",
-                    "played": 11,
+                    "played": 12,
                     "wins": 8,
                     "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 31,
-                    "goalsAgainst": 15,
+                    "losses": 3,
+                    "goalsFor": 32,
+                    "goalsAgainst": 22,
                     "points": 25
                 },
                 {
                     "position": 2,
                     "team": "Aef João Moutinho",
-                    "played": 11,
+                    "played": 12,
                     "wins": 8,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 45,
-                    "goalsAgainst": 18,
+                    "losses": 4,
+                    "goalsFor": 47,
+                    "goalsAgainst": 22,
                     "points": 24
                 },
                 {
                     "position": 3,
                     "team": "Jd Monchiquense",
-                    "played": 11,
-                    "wins": 6,
+                    "played": 12,
+                    "wins": 7,
                     "draws": 2,
                     "losses": 3,
-                    "goalsFor": 33,
-                    "goalsAgainst": 17,
-                    "points": 20
+                    "goalsFor": 37,
+                    "goalsAgainst": 19,
+                    "points": 23
                 },
                 {
                     "position": 4,
                     "team": "Jc Aljezurense",
-                    "played": 11,
-                    "wins": 6,
+                    "played": 12,
+                    "wins": 7,
                     "draws": 2,
                     "losses": 3,
-                    "goalsFor": 24,
-                    "goalsAgainst": 12,
-                    "points": 20
+                    "goalsFor": 26,
+                    "goalsAgainst": 13,
+                    "points": 23
                 },
                 {
                     "position": 5,
@@ -1856,23 +1843,23 @@
                 {
                     "position": 6,
                     "team": "Ud Messinense",
-                    "played": 11,
-                    "wins": 3,
+                    "played": 12,
+                    "wins": 4,
                     "draws": 3,
                     "losses": 5,
-                    "goalsFor": 24,
-                    "goalsAgainst": 27,
-                    "points": 12
+                    "goalsFor": 31,
+                    "goalsAgainst": 28,
+                    "points": 15
                 },
                 {
                     "position": 7,
                     "team": "Cf Os Armacenenses - A",
-                    "played": 11,
+                    "played": 12,
                     "wins": 3,
                     "draws": 1,
-                    "losses": 7,
-                    "goalsFor": 23,
-                    "goalsAgainst": 39,
+                    "losses": 8,
+                    "goalsFor": 24,
+                    "goalsAgainst": 41,
                     "points": 10
                 },
                 {
@@ -1887,9 +1874,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:55Z",
-            "lastSuccessAt": "2026-05-19T13:41:55Z",
-            "lastChangedAt": "2026-05-19T13:41:55Z",
+            "lastAttemptAt": "2026-05-26T14:43:49Z",
+            "lastSuccessAt": "2026-05-26T14:43:49Z",
+            "lastChangedAt": "2026-05-26T14:43:49Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -1901,14 +1888,17 @@
                     "home": "Cd Montenegro",
                     "away": "Jd Monchiquense",
                     "date": "31 mai",
-                    "time": "11:00",
-                    "stadium": "A Indicar",
+                    "time": "09:00",
+                    "stadium": "Campo Horta Da Areia",
                     "homeScore": null,
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:56Z",
-                    "changeFlags": []
+                    "lastChangedAt": "2026-05-26T14:43:51Z",
+                    "changeFlags": [
+                        "time_changed",
+                        "stadium_changed"
+                    ]
                 },
                 {
                     "home": "Cf Os Armacenenses - B",
@@ -1920,20 +1910,7 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:56Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Cf Os Armacenenses - A",
-                    "away": "Aef João Moutinho",
-                    "date": "31 mai",
-                    "time": "11:00",
-                    "stadium": "A Indicar",
-                    "homeScore": null,
-                    "awayScore": null,
-                    "scoreSource": null,
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:56Z",
+                    "lastChangedAt": "2026-05-26T14:43:51Z",
                     "changeFlags": []
                 },
                 {
@@ -1946,7 +1923,20 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:56Z",
+                    "lastChangedAt": "2026-05-26T14:43:51Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cf Os Armacenenses - A",
+                    "away": "Aef João Moutinho",
+                    "date": "31 mai",
+                    "time": "11:00",
+                    "stadium": "A Indicar",
+                    "homeScore": null,
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:43:51Z",
                     "changeFlags": []
                 }
             ],
@@ -1954,46 +1944,46 @@
                 {
                     "position": 1,
                     "team": "Cd Montenegro",
-                    "played": 11,
+                    "played": 12,
                     "wins": 8,
                     "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 31,
-                    "goalsAgainst": 15,
+                    "losses": 3,
+                    "goalsFor": 32,
+                    "goalsAgainst": 22,
                     "points": 25
                 },
                 {
                     "position": 2,
                     "team": "Aef João Moutinho",
-                    "played": 11,
+                    "played": 12,
                     "wins": 8,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 45,
-                    "goalsAgainst": 18,
+                    "losses": 4,
+                    "goalsFor": 47,
+                    "goalsAgainst": 22,
                     "points": 24
                 },
                 {
                     "position": 3,
                     "team": "Jd Monchiquense",
-                    "played": 11,
-                    "wins": 6,
+                    "played": 12,
+                    "wins": 7,
                     "draws": 2,
                     "losses": 3,
-                    "goalsFor": 33,
-                    "goalsAgainst": 17,
-                    "points": 20
+                    "goalsFor": 37,
+                    "goalsAgainst": 19,
+                    "points": 23
                 },
                 {
                     "position": 4,
                     "team": "Jc Aljezurense",
-                    "played": 11,
-                    "wins": 6,
+                    "played": 12,
+                    "wins": 7,
                     "draws": 2,
                     "losses": 3,
-                    "goalsFor": 24,
-                    "goalsAgainst": 12,
-                    "points": 20
+                    "goalsFor": 26,
+                    "goalsAgainst": 13,
+                    "points": 23
                 },
                 {
                     "position": 5,
@@ -2009,23 +1999,23 @@
                 {
                     "position": 6,
                     "team": "Ud Messinense",
-                    "played": 11,
-                    "wins": 3,
+                    "played": 12,
+                    "wins": 4,
                     "draws": 3,
                     "losses": 5,
-                    "goalsFor": 24,
-                    "goalsAgainst": 27,
-                    "points": 12
+                    "goalsFor": 31,
+                    "goalsAgainst": 28,
+                    "points": 15
                 },
                 {
                     "position": 7,
                     "team": "Cf Os Armacenenses - A",
-                    "played": 11,
+                    "played": 12,
                     "wins": 3,
                     "draws": 1,
-                    "losses": 7,
-                    "goalsFor": 23,
-                    "goalsAgainst": 39,
+                    "losses": 8,
+                    "goalsFor": 24,
+                    "goalsAgainst": 41,
                     "points": 10
                 },
                 {
@@ -2040,9 +2030,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:56Z",
-            "lastSuccessAt": "2026-05-19T13:41:56Z",
-            "lastChangedAt": "2026-05-19T13:41:56Z",
+            "lastAttemptAt": "2026-05-26T14:43:51Z",
+            "lastSuccessAt": "2026-05-26T14:43:51Z",
+            "lastChangedAt": "2026-05-26T14:43:51Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -2051,16 +2041,16 @@
             "fixtureId": "641043",
             "matches": [
                 {
-                    "home": "Jd Monchiquense",
-                    "away": "Cf Os Armacenenses - A",
+                    "home": "Padernense Clube",
+                    "away": "Cd Montenegro",
                     "date": "6 jun",
                     "time": "11:00",
-                    "stadium": "Parque Desportivo Jd Monchiquense",
+                    "stadium": "Campo Montes Elois",
                     "homeScore": null,
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:57Z",
+                    "lastChangedAt": "2026-05-26T14:43:53Z",
                     "changeFlags": []
                 },
                 {
@@ -2073,20 +2063,20 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:57Z",
+                    "lastChangedAt": "2026-05-26T14:43:53Z",
                     "changeFlags": []
                 },
                 {
-                    "home": "Padernense Clube",
-                    "away": "Cd Montenegro",
+                    "home": "Jd Monchiquense",
+                    "away": "Cf Os Armacenenses - A",
                     "date": "6 jun",
                     "time": "11:00",
-                    "stadium": "Campo Montes Elois",
+                    "stadium": "Parque Desportivo Jd Monchiquense",
                     "homeScore": null,
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:57Z",
+                    "lastChangedAt": "2026-05-26T14:43:53Z",
                     "changeFlags": []
                 },
                 {
@@ -2099,7 +2089,7 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:57Z",
+                    "lastChangedAt": "2026-05-26T14:43:53Z",
                     "changeFlags": []
                 }
             ],
@@ -2107,46 +2097,46 @@
                 {
                     "position": 1,
                     "team": "Cd Montenegro",
-                    "played": 11,
+                    "played": 12,
                     "wins": 8,
                     "draws": 1,
-                    "losses": 2,
-                    "goalsFor": 31,
-                    "goalsAgainst": 15,
+                    "losses": 3,
+                    "goalsFor": 32,
+                    "goalsAgainst": 22,
                     "points": 25
                 },
                 {
                     "position": 2,
                     "team": "Aef João Moutinho",
-                    "played": 11,
+                    "played": 12,
                     "wins": 8,
                     "draws": 0,
-                    "losses": 3,
-                    "goalsFor": 45,
-                    "goalsAgainst": 18,
+                    "losses": 4,
+                    "goalsFor": 47,
+                    "goalsAgainst": 22,
                     "points": 24
                 },
                 {
                     "position": 3,
                     "team": "Jd Monchiquense",
-                    "played": 11,
-                    "wins": 6,
+                    "played": 12,
+                    "wins": 7,
                     "draws": 2,
                     "losses": 3,
-                    "goalsFor": 33,
-                    "goalsAgainst": 17,
-                    "points": 20
+                    "goalsFor": 37,
+                    "goalsAgainst": 19,
+                    "points": 23
                 },
                 {
                     "position": 4,
                     "team": "Jc Aljezurense",
-                    "played": 11,
-                    "wins": 6,
+                    "played": 12,
+                    "wins": 7,
                     "draws": 2,
                     "losses": 3,
-                    "goalsFor": 24,
-                    "goalsAgainst": 12,
-                    "points": 20
+                    "goalsFor": 26,
+                    "goalsAgainst": 13,
+                    "points": 23
                 },
                 {
                     "position": 5,
@@ -2162,23 +2152,23 @@
                 {
                     "position": 6,
                     "team": "Ud Messinense",
-                    "played": 11,
-                    "wins": 3,
+                    "played": 12,
+                    "wins": 4,
                     "draws": 3,
                     "losses": 5,
-                    "goalsFor": 24,
-                    "goalsAgainst": 27,
-                    "points": 12
+                    "goalsFor": 31,
+                    "goalsAgainst": 28,
+                    "points": 15
                 },
                 {
                     "position": 7,
                     "team": "Cf Os Armacenenses - A",
-                    "played": 11,
+                    "played": 12,
                     "wins": 3,
                     "draws": 1,
-                    "losses": 7,
-                    "goalsFor": 23,
-                    "goalsAgainst": 39,
+                    "losses": 8,
+                    "goalsFor": 24,
+                    "goalsAgainst": 41,
                     "points": 10
                 },
                 {
@@ -2193,9 +2183,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:57Z",
-            "lastSuccessAt": "2026-05-19T13:41:57Z",
-            "lastChangedAt": "2026-05-19T13:41:57Z",
+            "lastAttemptAt": "2026-05-26T14:43:53Z",
+            "lastSuccessAt": "2026-05-26T14:43:53Z",
+            "lastChangedAt": "2026-05-26T14:43:53Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         }
