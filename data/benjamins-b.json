@@ -1,15 +1,15 @@
 {
     "schemaVersion": 2,
-    "generatedAt": "2026-05-19T13:55:55Z",
-    "lastAttemptAt": "2026-05-19T13:55:14Z",
-    "lastSuccessAt": null,
-    "lastChangedAt": null,
-    "lastPublishedAt": "2026-05-19T13:55:55Z",
-    "defaultRoundIndex": 15,
-    "defaultRoundNumber": 16,
-    "lastUpdatedAt": "2026-05-19T13:55:55Z",
+    "generatedAt": "2026-05-26T14:59:40Z",
+    "lastAttemptAt": "2026-05-26T14:59:16Z",
+    "lastSuccessAt": "2026-05-19T13:55:14Z",
+    "lastChangedAt": "2026-05-19T13:55:14Z",
+    "lastPublishedAt": "2026-05-26T14:59:40Z",
+    "defaultRoundIndex": 16,
+    "defaultRoundNumber": 17,
+    "lastUpdatedAt": "2026-05-26T14:59:40Z",
     "sourceHealth": {
-        "status": "ok",
+        "status": "partial",
         "fallbackReuseCount": 0,
         "issues": []
     },
@@ -18,14 +18,14 @@
         "matchCount": 90,
         "classificationCount": 180,
         "teamCount": 10,
-        "completedMatchCount": 80,
-        "matchesWithoutScore": 10,
-        "pastMatchCount": 80,
-        "pastMatchesWithoutScore": 0,
-        "futureMatchCount": 10,
+        "completedMatchCount": 84,
+        "matchesWithoutScore": 6,
+        "pastMatchCount": 86,
+        "pastMatchesWithoutScore": 2,
+        "futureMatchCount": 4,
         "roundsWithMatches": 18,
         "roundsWithClassification": 18,
-        "roundsWithCompletedMatches": 16,
+        "roundsWithCompletedMatches": 17,
         "roundsWithoutData": 0
     },
     "rounds": [
@@ -33,19 +33,6 @@
             "index": 1,
             "fixtureId": "635332",
             "matches": [
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Imortal Dc",
-                    "date": "24 jan",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 2,
-                    "awayScore": 6,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:18Z",
-                    "changeFlags": []
-                },
                 {
                     "home": "Vilamoura Saa",
                     "away": "Gd Lagoa",
@@ -56,7 +43,20 @@
                     "awayScore": 8,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:18Z",
+                    "lastChangedAt": "2026-05-26T14:59:17Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Imortal Dc",
+                    "date": "24 jan",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 2,
+                    "awayScore": 6,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:59:17Z",
                     "changeFlags": []
                 },
                 {
@@ -69,7 +69,7 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:18Z",
+                    "lastChangedAt": "2026-05-26T14:59:17Z",
                     "changeFlags": []
                 },
                 {
@@ -82,7 +82,7 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:18Z",
+                    "lastChangedAt": "2026-05-26T14:59:17Z",
                     "changeFlags": []
                 },
                 {
@@ -95,7 +95,7 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:18Z",
+                    "lastChangedAt": "2026-05-26T14:59:17Z",
                     "changeFlags": []
                 }
             ],
@@ -211,9 +211,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:55:18Z",
-            "lastSuccessAt": "2026-05-19T13:55:18Z",
-            "lastChangedAt": "2026-05-19T13:55:18Z",
+            "lastAttemptAt": "2026-05-26T14:59:17Z",
+            "lastSuccessAt": "2026-05-26T14:59:17Z",
+            "lastChangedAt": "2026-05-26T14:59:17Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -231,7 +231,7 @@
                     "awayScore": 5,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:23Z",
+                    "lastChangedAt": "2026-05-26T14:59:18Z",
                     "changeFlags": []
                 },
                 {
@@ -244,7 +244,7 @@
                     "awayScore": 13,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:23Z",
+                    "lastChangedAt": "2026-05-26T14:59:18Z",
                     "changeFlags": []
                 },
                 {
@@ -257,7 +257,7 @@
                     "awayScore": 3,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:23Z",
+                    "lastChangedAt": "2026-05-26T14:59:18Z",
                     "changeFlags": []
                 },
                 {
@@ -270,7 +270,7 @@
                     "awayScore": 7,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:23Z",
+                    "lastChangedAt": "2026-05-26T14:59:18Z",
                     "changeFlags": []
                 },
                 {
@@ -283,7 +283,7 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:23Z",
+                    "lastChangedAt": "2026-05-26T14:59:18Z",
                     "changeFlags": []
                 }
             ],
@@ -399,9 +399,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:55:23Z",
-            "lastSuccessAt": "2026-05-19T13:55:23Z",
-            "lastChangedAt": "2026-05-19T13:55:23Z",
+            "lastAttemptAt": "2026-05-26T14:59:18Z",
+            "lastSuccessAt": "2026-05-26T14:59:18Z",
+            "lastChangedAt": "2026-05-26T14:59:18Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -419,7 +419,7 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:24Z",
+                    "lastChangedAt": "2026-05-26T14:59:19Z",
                     "changeFlags": []
                 },
                 {
@@ -432,7 +432,7 @@
                     "awayScore": 3,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:24Z",
+                    "lastChangedAt": "2026-05-26T14:59:19Z",
                     "changeFlags": []
                 },
                 {
@@ -445,7 +445,7 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:24Z",
+                    "lastChangedAt": "2026-05-26T14:59:19Z",
                     "changeFlags": []
                 },
                 {
@@ -458,7 +458,7 @@
                     "awayScore": 3,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:24Z",
+                    "lastChangedAt": "2026-05-26T14:59:19Z",
                     "changeFlags": []
                 },
                 {
@@ -471,7 +471,7 @@
                     "awayScore": 3,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:24Z",
+                    "lastChangedAt": "2026-05-26T14:59:19Z",
                     "changeFlags": []
                 }
             ],
@@ -587,9 +587,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:55:24Z",
-            "lastSuccessAt": "2026-05-19T13:55:24Z",
-            "lastChangedAt": "2026-05-19T13:55:24Z",
+            "lastAttemptAt": "2026-05-26T14:59:19Z",
+            "lastSuccessAt": "2026-05-26T14:59:19Z",
+            "lastChangedAt": "2026-05-26T14:59:19Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -607,7 +607,7 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:26Z",
+                    "lastChangedAt": "2026-05-26T14:59:21Z",
                     "changeFlags": []
                 },
                 {
@@ -620,20 +620,7 @@
                     "awayScore": 12,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:26Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Aef Monte Gordo 2019",
-                    "away": "Nucleo Sporting C.P. Olhao",
-                    "date": "14 fev",
-                    "time": "",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": 1,
-                    "awayScore": 6,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:26Z",
+                    "lastChangedAt": "2026-05-26T14:59:21Z",
                     "changeFlags": []
                 },
                 {
@@ -646,7 +633,20 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:26Z",
+                    "lastChangedAt": "2026-05-26T14:59:21Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Aef Monte Gordo 2019",
+                    "away": "Nucleo Sporting C.P. Olhao",
+                    "date": "14 fev",
+                    "time": "",
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
+                    "homeScore": 1,
+                    "awayScore": 6,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:59:21Z",
                     "changeFlags": []
                 },
                 {
@@ -659,7 +659,7 @@
                     "awayScore": 9,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:26Z",
+                    "lastChangedAt": "2026-05-26T14:59:21Z",
                     "changeFlags": []
                 }
             ],
@@ -775,9 +775,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:55:26Z",
-            "lastSuccessAt": "2026-05-19T13:55:26Z",
-            "lastChangedAt": "2026-05-19T13:55:26Z",
+            "lastAttemptAt": "2026-05-26T14:59:21Z",
+            "lastSuccessAt": "2026-05-26T14:59:21Z",
+            "lastChangedAt": "2026-05-26T14:59:21Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -795,7 +795,7 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:28Z",
+                    "lastChangedAt": "2026-05-26T14:59:22Z",
                     "changeFlags": []
                 },
                 {
@@ -808,7 +808,7 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:28Z",
+                    "lastChangedAt": "2026-05-26T14:59:22Z",
                     "changeFlags": []
                 },
                 {
@@ -821,7 +821,7 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:28Z",
+                    "lastChangedAt": "2026-05-26T14:59:22Z",
                     "changeFlags": []
                 },
                 {
@@ -834,7 +834,7 @@
                     "awayScore": 11,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:28Z",
+                    "lastChangedAt": "2026-05-26T14:59:22Z",
                     "changeFlags": []
                 },
                 {
@@ -847,7 +847,7 @@
                     "awayScore": 5,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:28Z",
+                    "lastChangedAt": "2026-05-26T14:59:22Z",
                     "changeFlags": []
                 }
             ],
@@ -963,9 +963,9 @@
                     "points": 3
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:55:28Z",
-            "lastSuccessAt": "2026-05-19T13:55:28Z",
-            "lastChangedAt": "2026-05-19T13:55:28Z",
+            "lastAttemptAt": "2026-05-26T14:59:22Z",
+            "lastSuccessAt": "2026-05-26T14:59:22Z",
+            "lastChangedAt": "2026-05-26T14:59:22Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -973,19 +973,6 @@
             "index": 6,
             "fixtureId": "635337",
             "matches": [
-                {
-                    "home": "Sc Olhanense",
-                    "away": "Cdr Quarteirense",
-                    "date": "28 fev",
-                    "time": "",
-                    "stadium": "Estádio José Arcanjo",
-                    "homeScore": 10,
-                    "awayScore": 0,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:31Z",
-                    "changeFlags": []
-                },
                 {
                     "home": "Nucleo Sporting C.P. Olhao",
                     "away": "Aef Faro",
@@ -996,33 +983,20 @@
                     "awayScore": 3,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:31Z",
+                    "lastChangedAt": "2026-05-26T14:59:23Z",
                     "changeFlags": []
                 },
                 {
-                    "home": "Aef Monte Gordo 2019",
-                    "away": "Cf Os Armacenenses",
+                    "home": "Sc Olhanense",
+                    "away": "Cdr Quarteirense",
                     "date": "28 fev",
                     "time": "",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": 1,
-                    "awayScore": 2,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:31Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Gd Lagoa",
-                    "away": "Imortal Dc",
-                    "date": "28 fev",
-                    "time": "",
-                    "stadium": "Campo De Futebol Sete - Espamol",
-                    "homeScore": 1,
+                    "stadium": "Estádio José Arcanjo",
+                    "homeScore": 10,
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:31Z",
+                    "lastChangedAt": "2026-05-26T14:59:23Z",
                     "changeFlags": []
                 },
                 {
@@ -1035,7 +1009,33 @@
                     "awayScore": 6,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:31Z",
+                    "lastChangedAt": "2026-05-26T14:59:23Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Gd Lagoa",
+                    "away": "Imortal Dc",
+                    "date": "28 fev",
+                    "time": "",
+                    "stadium": "Campo De Futebol Sete - Espamol",
+                    "homeScore": 1,
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:59:23Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Aef Monte Gordo 2019",
+                    "away": "Cf Os Armacenenses",
+                    "date": "28 fev",
+                    "time": "",
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
+                    "homeScore": 1,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:59:23Z",
                     "changeFlags": []
                 }
             ],
@@ -1151,9 +1151,9 @@
                     "points": 3
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:55:31Z",
-            "lastSuccessAt": "2026-05-19T13:55:31Z",
-            "lastChangedAt": "2026-05-19T13:55:31Z",
+            "lastAttemptAt": "2026-05-26T14:59:23Z",
+            "lastSuccessAt": "2026-05-26T14:59:23Z",
+            "lastChangedAt": "2026-05-26T14:59:23Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -1171,7 +1171,7 @@
                     "awayScore": 7,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:33Z",
+                    "lastChangedAt": "2026-05-26T14:59:25Z",
                     "changeFlags": []
                 },
                 {
@@ -1184,7 +1184,7 @@
                     "awayScore": 3,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:33Z",
+                    "lastChangedAt": "2026-05-26T14:59:25Z",
                     "changeFlags": []
                 },
                 {
@@ -1197,20 +1197,7 @@
                     "awayScore": 11,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:33Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Imortal Dc",
-                    "away": "Aef Monte Gordo 2019",
-                    "date": "7 mar",
-                    "time": "",
-                    "stadium": "Campo Da Palmeira Nº 2",
-                    "homeScore": 11,
-                    "awayScore": 2,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:33Z",
+                    "lastChangedAt": "2026-05-26T14:59:25Z",
                     "changeFlags": []
                 },
                 {
@@ -1223,7 +1210,20 @@
                     "awayScore": 11,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:33Z",
+                    "lastChangedAt": "2026-05-26T14:59:25Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Imortal Dc",
+                    "away": "Aef Monte Gordo 2019",
+                    "date": "7 mar",
+                    "time": "",
+                    "stadium": "Campo Da Palmeira Nº 2",
+                    "homeScore": 11,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:59:25Z",
                     "changeFlags": []
                 }
             ],
@@ -1339,9 +1339,9 @@
                     "points": 3
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:55:33Z",
-            "lastSuccessAt": "2026-05-19T13:55:33Z",
-            "lastChangedAt": "2026-05-19T13:55:33Z",
+            "lastAttemptAt": "2026-05-26T14:59:25Z",
+            "lastSuccessAt": "2026-05-26T14:59:25Z",
+            "lastChangedAt": "2026-05-26T14:59:25Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -1349,19 +1349,6 @@
             "index": 8,
             "fixtureId": "635339",
             "matches": [
-                {
-                    "home": "Gd Lagoa",
-                    "away": "Mexilhoeira Grande Fc",
-                    "date": "14 mar",
-                    "time": "",
-                    "stadium": "Campo De Futebol Sete - Espamol",
-                    "homeScore": 9,
-                    "awayScore": 6,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:35Z",
-                    "changeFlags": []
-                },
                 {
                     "home": "Aef Faro",
                     "away": "Cf Os Armacenenses",
@@ -1372,7 +1359,20 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:35Z",
+                    "lastChangedAt": "2026-05-26T14:59:26Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Gd Lagoa",
+                    "away": "Mexilhoeira Grande Fc",
+                    "date": "14 mar",
+                    "time": "",
+                    "stadium": "Campo De Futebol Sete - Espamol",
+                    "homeScore": 9,
+                    "awayScore": 6,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:59:26Z",
                     "changeFlags": []
                 },
                 {
@@ -1385,7 +1385,7 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:35Z",
+                    "lastChangedAt": "2026-05-26T14:59:26Z",
                     "changeFlags": []
                 },
                 {
@@ -1398,7 +1398,7 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:35Z",
+                    "lastChangedAt": "2026-05-26T14:59:26Z",
                     "changeFlags": []
                 },
                 {
@@ -1411,7 +1411,7 @@
                     "awayScore": 5,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:35Z",
+                    "lastChangedAt": "2026-05-26T14:59:26Z",
                     "changeFlags": []
                 }
             ],
@@ -1527,9 +1527,9 @@
                     "points": 3
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:55:35Z",
-            "lastSuccessAt": "2026-05-19T13:55:35Z",
-            "lastChangedAt": "2026-05-19T13:55:35Z",
+            "lastAttemptAt": "2026-05-26T14:59:26Z",
+            "lastSuccessAt": "2026-05-26T14:59:26Z",
+            "lastChangedAt": "2026-05-26T14:59:26Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -1547,7 +1547,7 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:36Z",
+                    "lastChangedAt": "2026-05-26T14:59:27Z",
                     "changeFlags": []
                 },
                 {
@@ -1560,20 +1560,7 @@
                     "awayScore": 6,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:36Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Sc Olhanense",
-                    "away": "Gd Lagoa",
-                    "date": "21 mar",
-                    "time": "",
-                    "stadium": "Estádio José Arcanjo",
-                    "homeScore": 2,
-                    "awayScore": 2,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:36Z",
+                    "lastChangedAt": "2026-05-26T14:59:27Z",
                     "changeFlags": []
                 },
                 {
@@ -1586,7 +1573,20 @@
                     "awayScore": 11,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:36Z",
+                    "lastChangedAt": "2026-05-26T14:59:27Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Sc Olhanense",
+                    "away": "Gd Lagoa",
+                    "date": "21 mar",
+                    "time": "",
+                    "stadium": "Estádio José Arcanjo",
+                    "homeScore": 2,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:59:27Z",
                     "changeFlags": []
                 },
                 {
@@ -1599,7 +1599,7 @@
                     "awayScore": 8,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:36Z",
+                    "lastChangedAt": "2026-05-26T14:59:27Z",
                     "changeFlags": []
                 }
             ],
@@ -1715,9 +1715,9 @@
                     "points": 3
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:55:36Z",
-            "lastSuccessAt": "2026-05-19T13:55:36Z",
-            "lastChangedAt": "2026-05-19T13:55:36Z",
+            "lastAttemptAt": "2026-05-26T14:59:27Z",
+            "lastSuccessAt": "2026-05-26T14:59:27Z",
+            "lastChangedAt": "2026-05-26T14:59:27Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -1735,7 +1735,7 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:38Z",
+                    "lastChangedAt": "2026-05-26T14:59:29Z",
                     "changeFlags": []
                 },
                 {
@@ -1748,7 +1748,7 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:38Z",
+                    "lastChangedAt": "2026-05-26T14:59:29Z",
                     "changeFlags": []
                 },
                 {
@@ -1761,7 +1761,7 @@
                     "awayScore": 13,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:38Z",
+                    "lastChangedAt": "2026-05-26T14:59:29Z",
                     "changeFlags": []
                 },
                 {
@@ -1774,7 +1774,7 @@
                     "awayScore": 9,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:38Z",
+                    "lastChangedAt": "2026-05-26T14:59:29Z",
                     "changeFlags": []
                 },
                 {
@@ -1787,7 +1787,7 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:38Z",
+                    "lastChangedAt": "2026-05-26T14:59:29Z",
                     "changeFlags": []
                 }
             ],
@@ -1903,9 +1903,9 @@
                     "points": 3
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:55:38Z",
-            "lastSuccessAt": "2026-05-19T13:55:38Z",
-            "lastChangedAt": "2026-05-19T13:55:38Z",
+            "lastAttemptAt": "2026-05-26T14:59:29Z",
+            "lastSuccessAt": "2026-05-26T14:59:29Z",
+            "lastChangedAt": "2026-05-26T14:59:29Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -1913,19 +1913,6 @@
             "index": 11,
             "fixtureId": "635342",
             "matches": [
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Cdr Quarteirense",
-                    "date": "11 abr",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 6,
-                    "awayScore": 3,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:39Z",
-                    "changeFlags": []
-                },
                 {
                     "home": "Aef Faro",
                     "away": "Mexilhoeira Grande Fc",
@@ -1936,7 +1923,7 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:39Z",
+                    "lastChangedAt": "2026-05-26T14:59:30Z",
                     "changeFlags": []
                 },
                 {
@@ -1949,7 +1936,20 @@
                     "awayScore": 5,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:39Z",
+                    "lastChangedAt": "2026-05-26T14:59:30Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Cdr Quarteirense",
+                    "date": "11 abr",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 6,
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:59:30Z",
                     "changeFlags": []
                 },
                 {
@@ -1962,7 +1962,7 @@
                     "awayScore": 5,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:39Z",
+                    "lastChangedAt": "2026-05-26T14:59:30Z",
                     "changeFlags": []
                 },
                 {
@@ -1975,7 +1975,7 @@
                     "awayScore": 10,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:39Z",
+                    "lastChangedAt": "2026-05-26T14:59:30Z",
                     "changeFlags": []
                 }
             ],
@@ -2091,9 +2091,9 @@
                     "points": 3
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:55:39Z",
-            "lastSuccessAt": "2026-05-19T13:55:39Z",
-            "lastChangedAt": "2026-05-19T13:55:39Z",
+            "lastAttemptAt": "2026-05-26T14:59:30Z",
+            "lastSuccessAt": "2026-05-26T14:59:30Z",
+            "lastChangedAt": "2026-05-26T14:59:30Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -2101,32 +2101,6 @@
             "index": 12,
             "fixtureId": "635343",
             "matches": [
-                {
-                    "home": "Sc Olhanense",
-                    "away": "Aef Faro",
-                    "date": "18 abr",
-                    "time": "",
-                    "stadium": "Estádio José Arcanjo",
-                    "homeScore": 0,
-                    "awayScore": 4,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:41Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Cdr Quarteirense",
-                    "away": "Imortal Dc",
-                    "date": "18 abr",
-                    "time": "",
-                    "stadium": "Estadio Municipal Quarteira Nº 2",
-                    "homeScore": 2,
-                    "awayScore": 11,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:41Z",
-                    "changeFlags": []
-                },
                 {
                     "home": "Gd Lagoa",
                     "away": "Nucleo Sporting C.P. Olhao",
@@ -2137,7 +2111,20 @@
                     "awayScore": 5,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:41Z",
+                    "lastChangedAt": "2026-05-26T14:59:31Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Sc Olhanense",
+                    "away": "Aef Faro",
+                    "date": "18 abr",
+                    "time": "",
+                    "stadium": "Estádio José Arcanjo",
+                    "homeScore": 0,
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:59:31Z",
                     "changeFlags": []
                 },
                 {
@@ -2150,7 +2137,20 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:41Z",
+                    "lastChangedAt": "2026-05-26T14:59:31Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cdr Quarteirense",
+                    "away": "Imortal Dc",
+                    "date": "18 abr",
+                    "time": "",
+                    "stadium": "Estadio Municipal Quarteira Nº 2",
+                    "homeScore": 2,
+                    "awayScore": 11,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:59:31Z",
                     "changeFlags": []
                 },
                 {
@@ -2163,7 +2163,7 @@
                     "awayScore": 7,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:41Z",
+                    "lastChangedAt": "2026-05-26T14:59:31Z",
                     "changeFlags": []
                 }
             ],
@@ -2279,9 +2279,9 @@
                     "points": 3
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:55:41Z",
-            "lastSuccessAt": "2026-05-19T13:55:41Z",
-            "lastChangedAt": "2026-05-19T13:55:41Z",
+            "lastAttemptAt": "2026-05-26T14:59:31Z",
+            "lastSuccessAt": "2026-05-26T14:59:31Z",
+            "lastChangedAt": "2026-05-26T14:59:31Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -2289,19 +2289,6 @@
             "index": 13,
             "fixtureId": "635344",
             "matches": [
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Sc Olhanense",
-                    "date": "25 abr",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 5,
-                    "awayScore": 6,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:42Z",
-                    "changeFlags": []
-                },
                 {
                     "home": "Aef Faro",
                     "away": "Gd Lagoa",
@@ -2312,20 +2299,20 @@
                     "awayScore": 3,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:42Z",
+                    "lastChangedAt": "2026-05-26T14:59:32Z",
                     "changeFlags": []
                 },
                 {
-                    "home": "Imortal Dc",
-                    "away": "Mexilhoeira Grande Fc",
+                    "home": "Cf Os Armacenenses",
+                    "away": "Sc Olhanense",
                     "date": "25 abr",
                     "time": "",
-                    "stadium": "Campo Da Palmeira Nº 2",
-                    "homeScore": 18,
-                    "awayScore": 0,
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 5,
+                    "awayScore": 6,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:42Z",
+                    "lastChangedAt": "2026-05-26T14:59:32Z",
                     "changeFlags": []
                 },
                 {
@@ -2338,7 +2325,20 @@
                     "awayScore": 4,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:42Z",
+                    "lastChangedAt": "2026-05-26T14:59:32Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Imortal Dc",
+                    "away": "Mexilhoeira Grande Fc",
+                    "date": "25 abr",
+                    "time": "",
+                    "stadium": "Campo Da Palmeira Nº 2",
+                    "homeScore": 18,
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:59:32Z",
                     "changeFlags": []
                 },
                 {
@@ -2351,7 +2351,7 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:42Z",
+                    "lastChangedAt": "2026-05-26T14:59:32Z",
                     "changeFlags": []
                 }
             ],
@@ -2467,9 +2467,9 @@
                     "points": 3
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:55:42Z",
-            "lastSuccessAt": "2026-05-19T13:55:42Z",
-            "lastChangedAt": "2026-05-19T13:55:42Z",
+            "lastAttemptAt": "2026-05-26T14:59:32Z",
+            "lastSuccessAt": "2026-05-26T14:59:32Z",
+            "lastChangedAt": "2026-05-26T14:59:32Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -2487,20 +2487,7 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:44Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Sc Olhanense",
-                    "away": "Imortal Dc",
-                    "date": "2 mai",
-                    "time": "",
-                    "stadium": "Estádio José Arcanjo",
-                    "homeScore": 5,
-                    "awayScore": 1,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:44Z",
+                    "lastChangedAt": "2026-05-26T14:59:34Z",
                     "changeFlags": []
                 },
                 {
@@ -2513,7 +2500,20 @@
                     "awayScore": 14,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:44Z",
+                    "lastChangedAt": "2026-05-26T14:59:34Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Sc Olhanense",
+                    "away": "Imortal Dc",
+                    "date": "2 mai",
+                    "time": "",
+                    "stadium": "Estádio José Arcanjo",
+                    "homeScore": 5,
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:59:34Z",
                     "changeFlags": []
                 },
                 {
@@ -2526,7 +2526,7 @@
                     "awayScore": 17,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:44Z",
+                    "lastChangedAt": "2026-05-26T14:59:34Z",
                     "changeFlags": []
                 },
                 {
@@ -2539,7 +2539,7 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:44Z",
+                    "lastChangedAt": "2026-05-26T14:59:34Z",
                     "changeFlags": []
                 }
             ],
@@ -2655,9 +2655,9 @@
                     "points": 4
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:55:44Z",
-            "lastSuccessAt": "2026-05-19T13:55:44Z",
-            "lastChangedAt": "2026-05-19T13:55:44Z",
+            "lastAttemptAt": "2026-05-26T14:59:34Z",
+            "lastSuccessAt": "2026-05-26T14:59:34Z",
+            "lastChangedAt": "2026-05-26T14:59:34Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -2665,6 +2665,19 @@
             "index": 15,
             "fixtureId": "635346",
             "matches": [
+                {
+                    "home": "Vilamoura Saa",
+                    "away": "Mexilhoeira Grande Fc",
+                    "date": "9 mai",
+                    "time": "",
+                    "stadium": "Campo Montes Elois",
+                    "homeScore": 2,
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:59:35Z",
+                    "changeFlags": []
+                },
                 {
                     "home": "Imortal Dc",
                     "away": "Gd Lagoa",
@@ -2675,7 +2688,7 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:47Z",
+                    "lastChangedAt": "2026-05-26T14:59:35Z",
                     "changeFlags": []
                 },
                 {
@@ -2688,11 +2701,8 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:47Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "time_changed"
-                    ]
+                    "lastChangedAt": "2026-05-26T14:59:35Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -2704,20 +2714,7 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:47Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Vilamoura Saa",
-                    "away": "Mexilhoeira Grande Fc",
-                    "date": "9 mai",
-                    "time": "",
-                    "stadium": "Campo Montes Elois",
-                    "homeScore": 2,
-                    "awayScore": 3,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:47Z",
+                    "lastChangedAt": "2026-05-26T14:59:35Z",
                     "changeFlags": []
                 },
                 {
@@ -2730,11 +2727,8 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:47Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "time_changed"
-                    ]
+                    "lastChangedAt": "2026-05-26T14:59:35Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -2849,9 +2843,9 @@
                     "points": 7
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:55:47Z",
-            "lastSuccessAt": "2026-05-19T13:55:47Z",
-            "lastChangedAt": "2026-05-19T13:55:47Z",
+            "lastAttemptAt": "2026-05-26T14:59:35Z",
+            "lastSuccessAt": "2026-05-26T14:59:35Z",
+            "lastChangedAt": "2026-05-26T14:59:35Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -2869,7 +2863,7 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:49Z",
+                    "lastChangedAt": "2026-05-26T14:59:36Z",
                     "changeFlags": []
                 },
                 {
@@ -2882,11 +2876,8 @@
                     "awayScore": 4,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:49Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "time_changed"
-                    ]
+                    "lastChangedAt": "2026-05-26T14:59:36Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Aef Monte Gordo 2019",
@@ -2898,11 +2889,8 @@
                     "awayScore": 4,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:49Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "time_changed"
-                    ]
+                    "lastChangedAt": "2026-05-26T14:59:36Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Sc Olhanense",
@@ -2914,11 +2902,8 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:49Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "time_changed"
-                    ]
+                    "lastChangedAt": "2026-05-26T14:59:36Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Gd Lagoa",
@@ -2930,11 +2915,8 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:49Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "time_changed"
-                    ]
+                    "lastChangedAt": "2026-05-26T14:59:36Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -3049,9 +3031,9 @@
                     "points": 7
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:55:49Z",
-            "lastSuccessAt": "2026-05-19T13:55:49Z",
-            "lastChangedAt": "2026-05-19T13:55:49Z",
+            "lastAttemptAt": "2026-05-26T14:59:36Z",
+            "lastSuccessAt": "2026-05-26T14:59:36Z",
+            "lastChangedAt": "2026-05-26T14:59:36Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -3063,40 +3045,33 @@
                     "home": "Cf Os Armacenenses",
                     "away": "Aef Faro",
                     "date": "23 mai",
-                    "time": "09:00",
+                    "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null,
-                    "scoreSource": null,
+                    "homeScore": 1,
+                    "awayScore": 17,
+                    "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:51Z",
-                    "changeFlags": []
+                    "lastChangedAt": "2026-05-26T14:59:38Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Mexilhoeira Grande Fc",
                     "away": "Gd Lagoa",
                     "date": "23 mai",
-                    "time": "10:30",
+                    "time": "",
                     "stadium": "Campo Municipal Mexilhoeira Grande",
-                    "homeScore": null,
-                    "awayScore": null,
-                    "scoreSource": null,
+                    "homeScore": 7,
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:51Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Imortal Dc",
-                    "away": "Nucleo Sporting C.P. Olhao",
-                    "date": "23 mai",
-                    "time": "10:30",
-                    "stadium": "Campo Da Palmeira Nº 2",
-                    "homeScore": null,
-                    "awayScore": null,
-                    "scoreSource": null,
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:51Z",
-                    "changeFlags": []
+                    "lastChangedAt": "2026-05-26T14:59:38Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Sc Olhanense",
@@ -3108,66 +3083,85 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:51Z",
+                    "lastChangedAt": "2026-05-26T14:59:38Z",
                     "changeFlags": []
                 },
                 {
                     "home": "Cdr Quarteirense",
                     "away": "Aef Monte Gordo 2019",
                     "date": "23 mai",
-                    "time": "10:30",
+                    "time": "",
                     "stadium": "Estadio Municipal Quarteira Nº 2",
-                    "homeScore": null,
-                    "awayScore": null,
-                    "scoreSource": null,
+                    "homeScore": 2,
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:51Z",
-                    "changeFlags": []
+                    "lastChangedAt": "2026-05-26T14:59:38Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "time_changed"
+                    ]
+                },
+                {
+                    "home": "Imortal Dc",
+                    "away": "Nucleo Sporting C.P. Olhao",
+                    "date": "23 mai",
+                    "time": "",
+                    "stadium": "Campo Da Palmeira Nº 2",
+                    "homeScore": 10,
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:59:38Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "time_changed"
+                    ]
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Aef Faro",
-                    "played": 16,
-                    "wins": 16,
+                    "played": 17,
+                    "wins": 17,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 161,
-                    "goalsAgainst": 18,
-                    "points": 48
+                    "goalsFor": 178,
+                    "goalsAgainst": 19,
+                    "points": 51
                 },
                 {
                     "position": 2,
                     "team": "Imortal Dc",
-                    "played": 16,
-                    "wins": 12,
+                    "played": 17,
+                    "wins": 13,
                     "draws": 1,
                     "losses": 3,
-                    "goalsFor": 122,
-                    "goalsAgainst": 36,
-                    "points": 37
+                    "goalsFor": 132,
+                    "goalsAgainst": 40,
+                    "points": 40
                 },
                 {
                     "position": 3,
                     "team": "Nucleo Sporting C.P. Olhao",
-                    "played": 16,
+                    "played": 17,
                     "wins": 10,
                     "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 101,
-                    "goalsAgainst": 45,
+                    "losses": 7,
+                    "goalsFor": 105,
+                    "goalsAgainst": 55,
                     "points": 30
                 },
                 {
                     "position": 4,
                     "team": "Cf Os Armacenenses",
-                    "played": 16,
+                    "played": 17,
                     "wins": 10,
                     "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 86,
-                    "goalsAgainst": 55,
+                    "losses": 7,
+                    "goalsFor": 87,
+                    "goalsAgainst": 72,
                     "points": 30
                 },
                 {
@@ -3184,23 +3178,23 @@
                 {
                     "position": 6,
                     "team": "Aef Monte Gordo 2019",
-                    "played": 16,
-                    "wins": 6,
+                    "played": 17,
+                    "wins": 7,
                     "draws": 1,
                     "losses": 9,
-                    "goalsFor": 63,
-                    "goalsAgainst": 82,
-                    "points": 19
+                    "goalsFor": 66,
+                    "goalsAgainst": 84,
+                    "points": 22
                 },
                 {
                     "position": 7,
                     "team": "Gd Lagoa",
-                    "played": 16,
+                    "played": 17,
                     "wins": 5,
                     "draws": 1,
-                    "losses": 10,
-                    "goalsFor": 54,
-                    "goalsAgainst": 105,
+                    "losses": 11,
+                    "goalsFor": 58,
+                    "goalsAgainst": 112,
                     "points": 16
                 },
                 {
@@ -3216,30 +3210,30 @@
                 },
                 {
                     "position": 9,
-                    "team": "Cdr Quarteirense",
-                    "played": 16,
-                    "wins": 2,
-                    "draws": 2,
-                    "losses": 12,
-                    "goalsFor": 34,
-                    "goalsAgainst": 121,
-                    "points": 8
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 17,
+                    "wins": 3,
+                    "draws": 1,
+                    "losses": 13,
+                    "goalsFor": 47,
+                    "goalsAgainst": 152,
+                    "points": 10
                 },
                 {
                     "position": 10,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 16,
+                    "team": "Cdr Quarteirense",
+                    "played": 17,
                     "wins": 2,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 13,
-                    "goalsFor": 40,
-                    "goalsAgainst": 148,
-                    "points": 7
+                    "goalsFor": 36,
+                    "goalsAgainst": 124,
+                    "points": 8
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:55:51Z",
-            "lastSuccessAt": "2026-05-19T13:55:51Z",
-            "lastChangedAt": "2026-05-19T13:55:51Z",
+            "lastAttemptAt": "2026-05-26T14:59:38Z",
+            "lastSuccessAt": "2026-05-26T14:59:38Z",
+            "lastChangedAt": "2026-05-26T14:59:38Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -3257,37 +3251,36 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:53Z",
-                    "changeFlags": [
-                        "date_changed",
-                        "time_changed",
-                        "stadium_changed"
-                    ]
-                },
-                {
-                    "home": "Aef Monte Gordo 2019",
-                    "away": "Mexilhoeira Grande Fc",
-                    "date": "30 mai",
-                    "time": "10:30",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
-                    "homeScore": null,
-                    "awayScore": null,
-                    "scoreSource": null,
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:53Z",
+                    "lastChangedAt": "2026-05-26T14:59:39Z",
                     "changeFlags": []
                 },
                 {
                     "home": "Vilamoura Saa",
                     "away": "Cf Os Armacenenses",
-                    "date": "30 mai",
-                    "time": "10:30",
+                    "date": "28 mai",
+                    "time": "19:00",
                     "stadium": "Campo Montes Elois",
                     "homeScore": null,
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:53Z",
+                    "lastChangedAt": "2026-05-26T14:59:39Z",
+                    "changeFlags": [
+                        "date_changed",
+                        "time_changed"
+                    ]
+                },
+                {
+                    "home": "Aef Faro",
+                    "away": "Imortal Dc",
+                    "date": "30 mai",
+                    "time": "10:30",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": null,
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:59:39Z",
                     "changeFlags": []
                 },
                 {
@@ -3300,66 +3293,68 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:53Z",
+                    "lastChangedAt": "2026-05-26T14:59:39Z",
                     "changeFlags": []
                 },
                 {
-                    "home": "Aef Faro",
-                    "away": "Imortal Dc",
+                    "home": "Aef Monte Gordo 2019",
+                    "away": "Mexilhoeira Grande Fc",
                     "date": "30 mai",
                     "time": "10:30",
-                    "stadium": "Campo Complexo Desportivo Penha",
+                    "stadium": "Complexo Desportivo Monte Gordo Nº F7",
                     "homeScore": null,
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:55:53Z",
-                    "changeFlags": []
+                    "lastChangedAt": "2026-05-26T14:59:39Z",
+                    "changeFlags": [
+                        "stadium_changed"
+                    ]
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Aef Faro",
-                    "played": 16,
-                    "wins": 16,
+                    "played": 17,
+                    "wins": 17,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 161,
-                    "goalsAgainst": 18,
-                    "points": 48
+                    "goalsFor": 178,
+                    "goalsAgainst": 19,
+                    "points": 51
                 },
                 {
                     "position": 2,
                     "team": "Imortal Dc",
-                    "played": 16,
-                    "wins": 12,
+                    "played": 17,
+                    "wins": 13,
                     "draws": 1,
                     "losses": 3,
-                    "goalsFor": 122,
-                    "goalsAgainst": 36,
-                    "points": 37
+                    "goalsFor": 132,
+                    "goalsAgainst": 40,
+                    "points": 40
                 },
                 {
                     "position": 3,
                     "team": "Nucleo Sporting C.P. Olhao",
-                    "played": 16,
+                    "played": 17,
                     "wins": 10,
                     "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 101,
-                    "goalsAgainst": 45,
+                    "losses": 7,
+                    "goalsFor": 105,
+                    "goalsAgainst": 55,
                     "points": 30
                 },
                 {
                     "position": 4,
                     "team": "Cf Os Armacenenses",
-                    "played": 16,
+                    "played": 17,
                     "wins": 10,
                     "draws": 0,
-                    "losses": 6,
-                    "goalsFor": 86,
-                    "goalsAgainst": 55,
+                    "losses": 7,
+                    "goalsFor": 87,
+                    "goalsAgainst": 72,
                     "points": 30
                 },
                 {
@@ -3376,23 +3371,23 @@
                 {
                     "position": 6,
                     "team": "Aef Monte Gordo 2019",
-                    "played": 16,
-                    "wins": 6,
+                    "played": 17,
+                    "wins": 7,
                     "draws": 1,
                     "losses": 9,
-                    "goalsFor": 63,
-                    "goalsAgainst": 82,
-                    "points": 19
+                    "goalsFor": 66,
+                    "goalsAgainst": 84,
+                    "points": 22
                 },
                 {
                     "position": 7,
                     "team": "Gd Lagoa",
-                    "played": 16,
+                    "played": 17,
                     "wins": 5,
                     "draws": 1,
-                    "losses": 10,
-                    "goalsFor": 54,
-                    "goalsAgainst": 105,
+                    "losses": 11,
+                    "goalsFor": 58,
+                    "goalsAgainst": 112,
                     "points": 16
                 },
                 {
@@ -3408,30 +3403,30 @@
                 },
                 {
                     "position": 9,
-                    "team": "Cdr Quarteirense",
-                    "played": 16,
-                    "wins": 2,
-                    "draws": 2,
-                    "losses": 12,
-                    "goalsFor": 34,
-                    "goalsAgainst": 121,
-                    "points": 8
+                    "team": "Mexilhoeira Grande Fc",
+                    "played": 17,
+                    "wins": 3,
+                    "draws": 1,
+                    "losses": 13,
+                    "goalsFor": 47,
+                    "goalsAgainst": 152,
+                    "points": 10
                 },
                 {
                     "position": 10,
-                    "team": "Mexilhoeira Grande Fc",
-                    "played": 16,
+                    "team": "Cdr Quarteirense",
+                    "played": 17,
                     "wins": 2,
-                    "draws": 1,
+                    "draws": 2,
                     "losses": 13,
-                    "goalsFor": 40,
-                    "goalsAgainst": 148,
-                    "points": 7
+                    "goalsFor": 36,
+                    "goalsAgainst": 124,
+                    "points": 8
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:55:53Z",
-            "lastSuccessAt": "2026-05-19T13:55:53Z",
-            "lastChangedAt": "2026-05-19T13:55:53Z",
+            "lastAttemptAt": "2026-05-26T14:59:39Z",
+            "lastSuccessAt": "2026-05-26T14:59:39Z",
+            "lastChangedAt": "2026-05-26T14:59:39Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         }
