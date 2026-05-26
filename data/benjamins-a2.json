@@ -1,13 +1,13 @@
 {
     "schemaVersion": 2,
-    "generatedAt": "2026-05-19T13:54:00Z",
-    "lastAttemptAt": "2026-05-19T13:53:32Z",
-    "lastSuccessAt": null,
-    "lastChangedAt": null,
-    "lastPublishedAt": "2026-05-19T13:54:00Z",
-    "defaultRoundIndex": 3,
-    "defaultRoundNumber": 4,
-    "lastUpdatedAt": "2026-05-19T13:54:00Z",
+    "generatedAt": "2026-05-26T14:59:06Z",
+    "lastAttemptAt": "2026-05-26T14:58:52Z",
+    "lastSuccessAt": "2026-05-19T13:53:32Z",
+    "lastChangedAt": "2026-05-19T13:53:32Z",
+    "lastPublishedAt": "2026-05-26T14:59:06Z",
+    "defaultRoundIndex": 9,
+    "defaultRoundNumber": 10,
+    "lastUpdatedAt": "2026-05-26T14:59:06Z",
     "sourceHealth": {
         "status": "partial",
         "fallbackReuseCount": 0,
@@ -18,14 +18,14 @@
         "matchCount": 30,
         "classificationCount": 50,
         "teamCount": 6,
-        "completedMatchCount": 18,
-        "matchesWithoutScore": 12,
-        "pastMatchCount": 27,
-        "pastMatchesWithoutScore": 9,
-        "futureMatchCount": 3,
+        "completedMatchCount": 20,
+        "matchesWithoutScore": 10,
+        "pastMatchCount": 30,
+        "pastMatchesWithoutScore": 10,
+        "futureMatchCount": 0,
         "roundsWithMatches": 10,
         "roundsWithClassification": 10,
-        "roundsWithCompletedMatches": 9,
+        "roundsWithCompletedMatches": 10,
         "roundsWithoutData": 0
     },
     "rounds": [
@@ -43,7 +43,7 @@
                     "awayScore": 6,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:32Z",
+                    "lastChangedAt": "2026-05-26T14:58:52Z",
                     "changeFlags": []
                 },
                 {
@@ -56,7 +56,7 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:32Z",
+                    "lastChangedAt": "2026-05-26T14:58:52Z",
                     "changeFlags": []
                 },
                 {
@@ -69,7 +69,7 @@
                     "awayScore": 10,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:32Z",
+                    "lastChangedAt": "2026-05-26T14:58:52Z",
                     "changeFlags": []
                 }
             ],
@@ -130,9 +130,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:53:32Z",
-            "lastSuccessAt": "2026-05-19T13:53:32Z",
-            "lastChangedAt": "2026-05-19T13:53:32Z",
+            "lastAttemptAt": "2026-05-26T14:58:52Z",
+            "lastSuccessAt": "2026-05-26T14:58:52Z",
+            "lastChangedAt": "2026-05-26T14:58:52Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -150,7 +150,7 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:34Z",
+                    "lastChangedAt": "2026-05-26T14:58:54Z",
                     "changeFlags": []
                 },
                 {
@@ -163,7 +163,7 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:34Z",
+                    "lastChangedAt": "2026-05-26T14:58:54Z",
                     "changeFlags": []
                 },
                 {
@@ -176,7 +176,7 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:34Z",
+                    "lastChangedAt": "2026-05-26T14:58:54Z",
                     "changeFlags": []
                 }
             ],
@@ -237,9 +237,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:53:34Z",
-            "lastSuccessAt": "2026-05-19T13:53:34Z",
-            "lastChangedAt": "2026-05-19T13:53:34Z",
+            "lastAttemptAt": "2026-05-26T14:58:54Z",
+            "lastSuccessAt": "2026-05-26T14:58:54Z",
+            "lastChangedAt": "2026-05-26T14:58:54Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -257,7 +257,7 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:37Z",
+                    "lastChangedAt": "2026-05-26T14:58:55Z",
                     "changeFlags": []
                 },
                 {
@@ -270,7 +270,7 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:37Z",
+                    "lastChangedAt": "2026-05-26T14:58:55Z",
                     "changeFlags": []
                 },
                 {
@@ -283,7 +283,7 @@
                     "awayScore": 6,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:37Z",
+                    "lastChangedAt": "2026-05-26T14:58:55Z",
                     "changeFlags": []
                 }
             ],
@@ -344,9 +344,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:53:37Z",
-            "lastSuccessAt": "2026-05-19T13:53:37Z",
-            "lastChangedAt": "2026-05-19T13:53:37Z",
+            "lastAttemptAt": "2026-05-26T14:58:55Z",
+            "lastSuccessAt": "2026-05-26T14:58:55Z",
+            "lastChangedAt": "2026-05-26T14:58:55Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -364,7 +364,7 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:41Z",
+                    "lastChangedAt": "2026-05-26T14:58:56Z",
                     "changeFlags": []
                 },
                 {
@@ -377,7 +377,7 @@
                     "awayScore": 4,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:41Z",
+                    "lastChangedAt": "2026-05-26T14:58:56Z",
                     "changeFlags": []
                 },
                 {
@@ -390,11 +390,8 @@
                     "awayScore": 12,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:41Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "time_changed"
-                    ]
+                    "lastChangedAt": "2026-05-26T14:58:56Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -454,9 +451,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:53:41Z",
-            "lastSuccessAt": "2026-05-19T13:53:41Z",
-            "lastChangedAt": "2026-05-19T13:53:41Z",
+            "lastAttemptAt": "2026-05-26T14:58:56Z",
+            "lastSuccessAt": "2026-05-26T14:58:56Z",
+            "lastChangedAt": "2026-05-26T14:58:56Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -474,7 +471,7 @@
                     "awayScore": 4,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:43Z",
+                    "lastChangedAt": "2026-05-26T14:58:58Z",
                     "changeFlags": []
                 },
                 {
@@ -487,7 +484,7 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:43Z",
+                    "lastChangedAt": "2026-05-26T14:58:58Z",
                     "changeFlags": []
                 },
                 {
@@ -500,7 +497,7 @@
                     "awayScore": 7,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:43Z",
+                    "lastChangedAt": "2026-05-26T14:58:58Z",
                     "changeFlags": []
                 }
             ],
@@ -561,9 +558,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:53:43Z",
-            "lastSuccessAt": "2026-05-19T13:53:43Z",
-            "lastChangedAt": "2026-05-19T13:53:43Z",
+            "lastAttemptAt": "2026-05-26T14:58:58Z",
+            "lastSuccessAt": "2026-05-26T14:58:58Z",
+            "lastChangedAt": "2026-05-26T14:58:58Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -571,19 +568,6 @@
             "index": 6,
             "fixtureId": "641099",
             "matches": [
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Fc Ferreiras - B",
-                    "date": "18 abr",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 12,
-                    "awayScore": 2,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:47Z",
-                    "changeFlags": []
-                },
                 {
                     "home": "Gdr Alvorense",
                     "away": "A Indicar",
@@ -594,7 +578,20 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:47Z",
+                    "lastChangedAt": "2026-05-26T14:58:59Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Fc Ferreiras - B",
+                    "date": "18 abr",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 12,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:58:59Z",
                     "changeFlags": []
                 },
                 {
@@ -607,7 +604,7 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:47Z",
+                    "lastChangedAt": "2026-05-26T14:58:59Z",
                     "changeFlags": []
                 }
             ],
@@ -668,9 +665,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:53:47Z",
-            "lastSuccessAt": "2026-05-19T13:53:47Z",
-            "lastChangedAt": "2026-05-19T13:53:47Z",
+            "lastAttemptAt": "2026-05-26T14:58:59Z",
+            "lastSuccessAt": "2026-05-26T14:58:59Z",
+            "lastChangedAt": "2026-05-26T14:58:59Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -688,7 +685,7 @@
                     "awayScore": 8,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:52Z",
+                    "lastChangedAt": "2026-05-26T14:59:00Z",
                     "changeFlags": []
                 },
                 {
@@ -701,7 +698,7 @@
                     "awayScore": 13,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:52Z",
+                    "lastChangedAt": "2026-05-26T14:59:00Z",
                     "changeFlags": []
                 },
                 {
@@ -714,7 +711,7 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:52Z",
+                    "lastChangedAt": "2026-05-26T14:59:00Z",
                     "changeFlags": []
                 }
             ],
@@ -775,9 +772,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:53:52Z",
-            "lastSuccessAt": "2026-05-19T13:53:52Z",
-            "lastChangedAt": "2026-05-19T13:53:52Z",
+            "lastAttemptAt": "2026-05-26T14:59:00Z",
+            "lastSuccessAt": "2026-05-26T14:59:00Z",
+            "lastChangedAt": "2026-05-26T14:59:00Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -795,7 +792,7 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:54Z",
+                    "lastChangedAt": "2026-05-26T14:59:01Z",
                     "changeFlags": []
                 },
                 {
@@ -808,7 +805,7 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:54Z",
+                    "lastChangedAt": "2026-05-26T14:59:01Z",
                     "changeFlags": []
                 },
                 {
@@ -821,7 +818,7 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:54Z",
+                    "lastChangedAt": "2026-05-26T14:59:01Z",
                     "changeFlags": []
                 }
             ],
@@ -882,9 +879,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:53:54Z",
-            "lastSuccessAt": "2026-05-19T13:53:54Z",
-            "lastChangedAt": "2026-05-19T13:53:54Z",
+            "lastAttemptAt": "2026-05-26T14:59:01Z",
+            "lastSuccessAt": "2026-05-26T14:59:01Z",
+            "lastChangedAt": "2026-05-26T14:59:01Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -902,7 +899,7 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:55Z",
+                    "lastChangedAt": "2026-05-26T14:59:03Z",
                     "changeFlags": []
                 },
                 {
@@ -915,11 +912,8 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:55Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "time_changed"
-                    ]
+                    "lastChangedAt": "2026-05-26T14:59:03Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras - B",
@@ -931,7 +925,7 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:55Z",
+                    "lastChangedAt": "2026-05-26T14:59:03Z",
                     "changeFlags": []
                 }
             ],
@@ -992,9 +986,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:53:55Z",
-            "lastSuccessAt": "2026-05-19T13:53:55Z",
-            "lastChangedAt": "2026-05-19T13:53:55Z",
+            "lastAttemptAt": "2026-05-26T14:59:03Z",
+            "lastSuccessAt": "2026-05-26T14:59:03Z",
+            "lastChangedAt": "2026-05-26T14:59:03Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -1003,30 +997,36 @@
             "fixtureId": "641103",
             "matches": [
                 {
-                    "home": "Jd Monchiquense",
-                    "away": "Fc Ferreiras - B",
-                    "date": "23 mai",
-                    "time": "10:30",
-                    "stadium": "Parque Desportivo Jd Monchiquense",
-                    "homeScore": null,
-                    "awayScore": null,
-                    "scoreSource": null,
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:57Z",
-                    "changeFlags": []
-                },
-                {
                     "home": "Fc Ferreiras - A",
                     "away": "Gdr Alvorense",
                     "date": "23 mai",
-                    "time": "10:30",
+                    "time": "",
                     "stadium": "Estádio Nora Nº 2",
-                    "homeScore": null,
-                    "awayScore": null,
-                    "scoreSource": null,
+                    "homeScore": 5,
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:57Z",
-                    "changeFlags": []
+                    "lastChangedAt": "2026-05-26T14:59:04Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "time_changed"
+                    ]
+                },
+                {
+                    "home": "Jd Monchiquense",
+                    "away": "Fc Ferreiras - B",
+                    "date": "23 mai",
+                    "time": "",
+                    "stadium": "Parque Desportivo Jd Monchiquense",
+                    "homeScore": 5,
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:59:04Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "A Indicar",
@@ -1038,7 +1038,7 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:53:57Z",
+                    "lastChangedAt": "2026-05-26T14:59:04Z",
                     "changeFlags": []
                 }
             ],
@@ -1057,51 +1057,51 @@
                 {
                     "position": 2,
                     "team": "Gdr Alvorense",
-                    "played": 7,
+                    "played": 8,
                     "wins": 6,
                     "draws": 1,
-                    "losses": 0,
-                    "goalsFor": 60,
-                    "goalsAgainst": 13,
+                    "losses": 1,
+                    "goalsFor": 64,
+                    "goalsAgainst": 18,
                     "points": 19
                 },
                 {
                     "position": 3,
                     "team": "Fc Ferreiras - A",
-                    "played": 7,
-                    "wins": 4,
+                    "played": 8,
+                    "wins": 5,
                     "draws": 0,
                     "losses": 3,
-                    "goalsFor": 33,
-                    "goalsAgainst": 23,
-                    "points": 12
+                    "goalsFor": 38,
+                    "goalsAgainst": 27,
+                    "points": 15
                 },
                 {
                     "position": 4,
                     "team": "Jd Monchiquense",
-                    "played": 7,
-                    "wins": 1,
+                    "played": 8,
+                    "wins": 2,
                     "draws": 0,
                     "losses": 6,
-                    "goalsFor": 16,
-                    "goalsAgainst": 75,
-                    "points": 3
+                    "goalsFor": 21,
+                    "goalsAgainst": 78,
+                    "points": 6
                 },
                 {
                     "position": 5,
                     "team": "Fc Ferreiras - B",
-                    "played": 7,
+                    "played": 8,
                     "wins": 0,
                     "draws": 0,
-                    "losses": 7,
-                    "goalsFor": 13,
-                    "goalsAgainst": 64,
+                    "losses": 8,
+                    "goalsFor": 16,
+                    "goalsAgainst": 69,
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:53:57Z",
-            "lastSuccessAt": "2026-05-19T13:53:57Z",
-            "lastChangedAt": "2026-05-19T13:53:57Z",
+            "lastAttemptAt": "2026-05-26T14:59:04Z",
+            "lastSuccessAt": "2026-05-26T14:59:04Z",
+            "lastChangedAt": "2026-05-26T14:59:04Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         }
