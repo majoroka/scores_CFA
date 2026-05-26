@@ -1,13 +1,13 @@
 {
     "schemaVersion": 2,
-    "generatedAt": "2026-05-19T13:50:37Z",
-    "lastAttemptAt": "2026-05-19T13:50:16Z",
-    "lastSuccessAt": null,
-    "lastChangedAt": null,
-    "lastPublishedAt": "2026-05-19T13:50:37Z",
+    "generatedAt": "2026-05-26T14:58:05Z",
+    "lastAttemptAt": "2026-05-26T14:57:45Z",
+    "lastSuccessAt": "2026-05-19T13:50:16Z",
+    "lastChangedAt": "2026-05-19T13:50:16Z",
+    "lastPublishedAt": "2026-05-26T14:58:05Z",
     "defaultRoundIndex": 13,
     "defaultRoundNumber": 14,
-    "lastUpdatedAt": "2026-05-19T13:50:37Z",
+    "lastUpdatedAt": "2026-05-26T14:58:05Z",
     "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0,
@@ -176,8 +176,8 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:50:16Z",
-            "lastSuccessAt": "2026-05-19T13:50:16Z",
+            "lastAttemptAt": "2026-05-26T14:57:46Z",
+            "lastSuccessAt": "2026-05-26T14:57:46Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -213,11 +213,11 @@
                     "changeFlags": []
                 },
                 {
-                    "home": "Cd Montenegro",
-                    "away": "Sc Olhanense",
+                    "home": "Sc Farense",
+                    "away": "Js Campinense",
                     "date": "6 - 0                            \r\n                \r\n                    31 jan",
                     "time": "",
-                    "stadium": "Campo Futebol 7 Montenegro",
+                    "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 6,
                     "awayScore": 0,
                     "scoreSource": "fpf",
@@ -226,11 +226,11 @@
                     "changeFlags": []
                 },
                 {
-                    "home": "Sc Farense",
-                    "away": "Js Campinense",
+                    "home": "Cd Montenegro",
+                    "away": "Sc Olhanense",
                     "date": "6 - 0                            \r\n                \r\n                    31 jan",
                     "time": "",
-                    "stadium": "Campo Complexo Desportivo Penha",
+                    "stadium": "Campo Futebol 7 Montenegro",
                     "homeScore": 6,
                     "awayScore": 0,
                     "scoreSource": "fpf",
@@ -329,8 +329,8 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:50:18Z",
-            "lastSuccessAt": "2026-05-19T13:50:18Z",
+            "lastAttemptAt": "2026-05-26T14:57:47Z",
+            "lastSuccessAt": "2026-05-26T14:57:47Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -482,8 +482,8 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:50:20Z",
-            "lastSuccessAt": "2026-05-19T13:50:20Z",
+            "lastAttemptAt": "2026-05-26T14:57:48Z",
+            "lastSuccessAt": "2026-05-26T14:57:48Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -493,19 +493,6 @@
             "fixtureId": "635235",
             "matches": [
                 {
-                    "home": "Sc Farense",
-                    "away": "Sc Olhanense",
-                    "date": "2 - 2                            \r\n                \r\n                    14 fev",
-                    "time": "",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": 2,
-                    "awayScore": 2,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": null,
-                    "changeFlags": []
-                },
-                {
                     "home": "Gd Lagoa",
                     "away": "Cd Montenegro",
                     "date": "6 - 3                            \r\n                \r\n                    14 fev",
@@ -513,6 +500,19 @@
                     "stadium": "Campo De Futebol Sete - Espamol",
                     "homeScore": 6,
                     "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Sc Farense",
+                    "away": "Sc Olhanense",
+                    "date": "2 - 2                            \r\n                \r\n                    14 fev",
+                    "time": "",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": 2,
+                    "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": null,
@@ -635,8 +635,8 @@
                     "points": 1
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:50:21Z",
-            "lastSuccessAt": "2026-05-19T13:50:21Z",
+            "lastAttemptAt": "2026-05-26T14:57:50Z",
+            "lastSuccessAt": "2026-05-26T14:57:50Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -645,6 +645,19 @@
             "index": 5,
             "fixtureId": "635236",
             "matches": [
+                {
+                    "home": "Js Campinense",
+                    "away": "Portimonense Sc",
+                    "date": "3 - 4                            \r\n                \r\n                    28 fev",
+                    "time": "",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": 3,
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
                 {
                     "home": "Sc Farense",
                     "away": "Gd Lagoa",
@@ -666,19 +679,6 @@
                     "stadium": "Estádio José Arcanjo",
                     "homeScore": 0,
                     "awayScore": 8,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": null,
-                    "changeFlags": []
-                },
-                {
-                    "home": "Js Campinense",
-                    "away": "Portimonense Sc",
-                    "date": "3 - 4                            \r\n                \r\n                    28 fev",
-                    "time": "",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": 3,
-                    "awayScore": 4,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": null,
@@ -788,8 +788,8 @@
                     "points": 1
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:50:23Z",
-            "lastSuccessAt": "2026-05-19T13:50:23Z",
+            "lastAttemptAt": "2026-05-26T14:57:51Z",
+            "lastSuccessAt": "2026-05-26T14:57:51Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -941,8 +941,8 @@
                     "points": 1
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:50:25Z",
-            "lastSuccessAt": "2026-05-19T13:50:25Z",
+            "lastAttemptAt": "2026-05-26T14:57:52Z",
+            "lastSuccessAt": "2026-05-26T14:57:52Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -1094,8 +1094,8 @@
                     "points": 2
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:50:26Z",
-            "lastSuccessAt": "2026-05-19T13:50:26Z",
+            "lastAttemptAt": "2026-05-26T14:57:54Z",
+            "lastSuccessAt": "2026-05-26T14:57:54Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -1247,8 +1247,8 @@
                     "points": 2
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:50:27Z",
-            "lastSuccessAt": "2026-05-19T13:50:27Z",
+            "lastAttemptAt": "2026-05-26T14:57:55Z",
+            "lastSuccessAt": "2026-05-26T14:57:55Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -1258,19 +1258,6 @@
             "fixtureId": "635240",
             "matches": [
                 {
-                    "home": "Js Campinense",
-                    "away": "Sc Farense",
-                    "date": "3 - 3                            \r\n                \r\n                    28 mar",
-                    "time": "",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": 3,
-                    "awayScore": 3,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": null,
-                    "changeFlags": []
-                },
-                {
                     "home": "Aef Faro",
                     "away": "Gd Lagoa",
                     "date": "3 - 2                            \r\n                \r\n                    28 mar",
@@ -1278,6 +1265,19 @@
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": 3,
                     "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Js Campinense",
+                    "away": "Sc Farense",
+                    "date": "3 - 3                            \r\n                \r\n                    28 mar",
+                    "time": "",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": 3,
+                    "awayScore": 3,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": null,
@@ -1400,8 +1400,8 @@
                     "points": 2
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:50:29Z",
-            "lastSuccessAt": "2026-05-19T13:50:29Z",
+            "lastAttemptAt": "2026-05-26T14:57:56Z",
+            "lastSuccessAt": "2026-05-26T14:57:56Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -1411,19 +1411,6 @@
             "fixtureId": "635241",
             "matches": [
                 {
-                    "home": "Portimonense Sc",
-                    "away": "Sc Olhanense",
-                    "date": "4 - 1                            \r\n                \r\n                    11 abr",
-                    "time": "",
-                    "stadium": "Campo Major David Neto 2",
-                    "homeScore": 4,
-                    "awayScore": 1,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": null,
-                    "changeFlags": []
-                },
-                {
                     "home": "Cf Os Armacenenses",
                     "away": "Aef Faro",
                     "date": "0 - 9                            \r\n                \r\n                    11 abr",
@@ -1431,6 +1418,19 @@
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 0,
                     "awayScore": 9,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Portimonense Sc",
+                    "away": "Sc Olhanense",
+                    "date": "4 - 1                            \r\n                \r\n                    11 abr",
+                    "time": "",
+                    "stadium": "Campo Major David Neto 2",
+                    "homeScore": 4,
+                    "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": null,
@@ -1553,8 +1553,8 @@
                     "points": 2
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:50:30Z",
-            "lastSuccessAt": "2026-05-19T13:50:30Z",
+            "lastAttemptAt": "2026-05-26T14:57:58Z",
+            "lastSuccessAt": "2026-05-26T14:57:58Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -1706,8 +1706,8 @@
                     "points": 2
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:50:32Z",
-            "lastSuccessAt": "2026-05-19T13:50:32Z",
+            "lastAttemptAt": "2026-05-26T14:57:59Z",
+            "lastSuccessAt": "2026-05-26T14:57:59Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -1859,8 +1859,8 @@
                     "points": 2
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:50:33Z",
-            "lastSuccessAt": "2026-05-19T13:50:33Z",
+            "lastAttemptAt": "2026-05-26T14:58:00Z",
+            "lastSuccessAt": "2026-05-26T14:58:00Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -1870,23 +1870,6 @@
             "fixtureId": "635244",
             "matches": [
                 {
-                    "home": "Sc Farense",
-                    "away": "Cf Os Armacenenses",
-                    "date": "7 - 1                            \r\n                \r\n                    9 mai",
-                    "time": "",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": 7,
-                    "awayScore": 1,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:50:35Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "date_changed",
-                        "time_changed"
-                    ]
-                },
-                {
                     "home": "Js Campinense",
                     "away": "Aef Faro",
                     "date": "0 - 6                            \r\n                \r\n                    9 mai",
@@ -1894,6 +1877,19 @@
                     "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": 0,
                     "awayScore": 6,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:50:35Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Sc Farense",
+                    "away": "Cf Os Armacenenses",
+                    "date": "7 - 1                            \r\n                \r\n                    9 mai",
+                    "time": "",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": 7,
+                    "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": "2026-05-19T13:50:35Z",
@@ -1923,11 +1919,7 @@
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": "2026-05-19T13:50:35Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "date_changed",
-                        "time_changed"
-                    ]
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -2020,8 +2012,8 @@
                     "points": 2
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:50:35Z",
-            "lastSuccessAt": "2026-05-19T13:50:35Z",
+            "lastAttemptAt": "2026-05-26T14:58:02Z",
+            "lastSuccessAt": "2026-05-26T14:58:02Z",
             "lastChangedAt": "2026-05-19T13:50:35Z",
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -2030,40 +2022,6 @@
             "index": 14,
             "fixtureId": "635245",
             "matches": [
-                {
-                    "home": "Portimonense Sc",
-                    "away": "Sc Farense",
-                    "date": "4 - 1                            \r\n                \r\n                    16 mai",
-                    "time": "",
-                    "stadium": "Campo Major David Neto 2",
-                    "homeScore": 4,
-                    "awayScore": 1,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:50:36Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "date_changed",
-                        "time_changed"
-                    ]
-                },
-                {
-                    "home": "Sc Olhanense",
-                    "away": "Js Campinense",
-                    "date": "2 - 2                            \r\n                \r\n                    16 mai",
-                    "time": "",
-                    "stadium": "Estádio José Arcanjo",
-                    "homeScore": 2,
-                    "awayScore": 2,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:50:36Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "date_changed",
-                        "time_changed"
-                    ]
-                },
                 {
                     "home": "Cf Os Armacenenses",
                     "away": "Gd Lagoa",
@@ -2075,11 +2033,20 @@
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": "2026-05-19T13:50:36Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "date_changed",
-                        "time_changed"
-                    ]
+                    "changeFlags": []
+                },
+                {
+                    "home": "Portimonense Sc",
+                    "away": "Sc Farense",
+                    "date": "4 - 1                            \r\n                \r\n                    16 mai",
+                    "time": "",
+                    "stadium": "Campo Major David Neto 2",
+                    "homeScore": 4,
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:50:36Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Aef Faro",
@@ -2092,11 +2059,20 @@
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": "2026-05-19T13:50:36Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "date_changed",
-                        "time_changed"
-                    ]
+                    "changeFlags": []
+                },
+                {
+                    "home": "Sc Olhanense",
+                    "away": "Js Campinense",
+                    "date": "2 - 2                            \r\n                \r\n                    16 mai",
+                    "time": "",
+                    "stadium": "Estádio José Arcanjo",
+                    "homeScore": 2,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:50:36Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -2189,8 +2165,8 @@
                     "points": 3
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:50:36Z",
-            "lastSuccessAt": "2026-05-19T13:50:36Z",
+            "lastAttemptAt": "2026-05-26T14:58:03Z",
+            "lastSuccessAt": "2026-05-26T14:58:03Z",
             "lastChangedAt": "2026-05-19T13:50:36Z",
             "sourceStatus": "ok",
             "sourceIssue": null
