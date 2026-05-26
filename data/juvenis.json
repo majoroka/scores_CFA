@@ -1,13 +1,13 @@
 {
     "schemaVersion": 2,
-    "generatedAt": "2026-05-19T13:40:53Z",
-    "lastAttemptAt": "2026-05-19T13:40:33Z",
-    "lastSuccessAt": null,
-    "lastChangedAt": null,
-    "lastPublishedAt": "2026-05-19T13:40:53Z",
+    "generatedAt": "2026-05-26T14:42:36Z",
+    "lastAttemptAt": "2026-05-26T14:42:10Z",
+    "lastSuccessAt": "2026-05-19T13:40:33Z",
+    "lastChangedAt": "2026-05-19T13:40:33Z",
+    "lastPublishedAt": "2026-05-26T14:42:36Z",
     "defaultRoundIndex": 13,
     "defaultRoundNumber": 14,
-    "lastUpdatedAt": "2026-05-19T13:40:53Z",
+    "lastUpdatedAt": "2026-05-26T14:42:36Z",
     "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0,
@@ -34,19 +34,6 @@
             "fixtureId": "626034",
             "matches": [
                 {
-                    "home": "Fc São Luís",
-                    "away": "Cr Infante Sagres",
-                    "date": "0 - 7                            \r\n                \r\n                    11 jan",
-                    "time": "",
-                    "stadium": "Campo Horta Da Areia",
-                    "homeScore": 0,
-                    "awayScore": 7,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": null,
-                    "changeFlags": []
-                },
-                {
                     "home": "Cf Os Armacenenses",
                     "away": "Ud Messinense",
                     "date": "3 - 1                            \r\n                \r\n                    11 jan",
@@ -60,13 +47,13 @@
                     "changeFlags": []
                 },
                 {
-                    "home": "Padernense Clube",
-                    "away": "Lgc Moncarapachense",
-                    "date": "10 - 0                            \r\n                \r\n                    11 jan",
+                    "home": "Fc São Luís",
+                    "away": "Cr Infante Sagres",
+                    "date": "0 - 7                            \r\n                \r\n                    11 jan",
                     "time": "",
-                    "stadium": "Campo Montes Elois",
-                    "homeScore": 10,
-                    "awayScore": 0,
+                    "stadium": "Campo Horta Da Areia",
+                    "homeScore": 0,
+                    "awayScore": 7,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": null,
@@ -80,6 +67,19 @@
                     "stadium": "Estádio Municipal De Lagos N.º 2",
                     "homeScore": 3,
                     "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Padernense Clube",
+                    "away": "Lgc Moncarapachense",
+                    "date": "10 - 0                            \r\n                \r\n                    11 jan",
+                    "time": "",
+                    "stadium": "Campo Montes Elois",
+                    "homeScore": 10,
+                    "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": null,
@@ -176,8 +176,8 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:40:34Z",
-            "lastSuccessAt": "2026-05-19T13:40:34Z",
+            "lastAttemptAt": "2026-05-26T14:42:11Z",
+            "lastSuccessAt": "2026-05-26T14:42:11Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -187,19 +187,6 @@
             "fixtureId": "626035",
             "matches": [
                 {
-                    "home": "Lgc Moncarapachense",
-                    "away": "Cf Esperança Lagos",
-                    "date": "2 - 7                            \r\n                \r\n                    18 jan",
-                    "time": "",
-                    "stadium": "Estádio Dr.António Joao Eusebio",
-                    "homeScore": 2,
-                    "awayScore": 7,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": null,
-                    "changeFlags": []
-                },
-                {
                     "home": "Ud Messinense",
                     "away": "Fc São Luís",
                     "date": "12 - 1                            \r\n                \r\n                    18 jan",
@@ -207,6 +194,19 @@
                     "stadium": "Estádio Municipal Messines",
                     "homeScore": 12,
                     "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Lgc Moncarapachense",
+                    "away": "Cf Esperança Lagos",
+                    "date": "2 - 7                            \r\n                \r\n                    18 jan",
+                    "time": "",
+                    "stadium": "Estádio Dr.António Joao Eusebio",
+                    "homeScore": 2,
+                    "awayScore": 7,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": null,
@@ -329,8 +329,8 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:40:35Z",
-            "lastSuccessAt": "2026-05-19T13:40:35Z",
+            "lastAttemptAt": "2026-05-26T14:42:13Z",
+            "lastSuccessAt": "2026-05-26T14:42:13Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -366,19 +366,6 @@
                     "changeFlags": []
                 },
                 {
-                    "home": "Ud Messinense",
-                    "away": "Ac Salir",
-                    "date": "5 - 2                            \r\n                \r\n                    25 jan",
-                    "time": "",
-                    "stadium": "Estádio Municipal Messines",
-                    "homeScore": 5,
-                    "awayScore": 2,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": null,
-                    "changeFlags": []
-                },
-                {
                     "home": "Cf Esperança Lagos",
                     "away": "Cr Infante Sagres",
                     "date": "2 - 3                            \r\n                \r\n                    25 jan",
@@ -386,6 +373,19 @@
                     "stadium": "Estádio Municipal De Lagos N.º 2",
                     "homeScore": 2,
                     "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Ud Messinense",
+                    "away": "Ac Salir",
+                    "date": "5 - 2                            \r\n                \r\n                    25 jan",
+                    "time": "",
+                    "stadium": "Estádio Municipal Messines",
+                    "homeScore": 5,
+                    "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": null,
@@ -482,8 +482,8 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:40:36Z",
-            "lastSuccessAt": "2026-05-19T13:40:36Z",
+            "lastAttemptAt": "2026-05-26T14:42:15Z",
+            "lastSuccessAt": "2026-05-26T14:42:15Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -635,8 +635,8 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:40:38Z",
-            "lastSuccessAt": "2026-05-19T13:40:38Z",
+            "lastAttemptAt": "2026-05-26T14:42:16Z",
+            "lastSuccessAt": "2026-05-26T14:42:16Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -645,19 +645,6 @@
             "index": 5,
             "fixtureId": "626038",
             "matches": [
-                {
-                    "home": "Fc São Luís",
-                    "away": "Cf Esperança Lagos",
-                    "date": "0 - 7                            \r\n                \r\n                    8 fev",
-                    "time": "",
-                    "stadium": "Campo Horta Da Areia",
-                    "homeScore": 0,
-                    "awayScore": 7,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": null,
-                    "changeFlags": []
-                },
                 {
                     "home": "Cf Os Armacenenses",
                     "away": "Padernense Clube",
@@ -672,13 +659,13 @@
                     "changeFlags": []
                 },
                 {
-                    "home": "Ac Salir",
-                    "away": "Lgc Moncarapachense",
-                    "date": "3 - 3                            \r\n                \r\n                    8 fev",
+                    "home": "Fc São Luís",
+                    "away": "Cf Esperança Lagos",
+                    "date": "0 - 7                            \r\n                \r\n                    8 fev",
                     "time": "",
-                    "stadium": "Parque Desp. Joaquim António Teixeira",
-                    "homeScore": 3,
-                    "awayScore": 3,
+                    "stadium": "Campo Horta Da Areia",
+                    "homeScore": 0,
+                    "awayScore": 7,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": null,
@@ -692,6 +679,19 @@
                     "stadium": "Estádio Municipal Messines",
                     "homeScore": 3,
                     "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Ac Salir",
+                    "away": "Lgc Moncarapachense",
+                    "date": "3 - 3                            \r\n                \r\n                    8 fev",
+                    "time": "",
+                    "stadium": "Parque Desp. Joaquim António Teixeira",
+                    "homeScore": 3,
+                    "awayScore": 3,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": null,
@@ -788,8 +788,8 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:40:39Z",
-            "lastSuccessAt": "2026-05-19T13:40:39Z",
+            "lastAttemptAt": "2026-05-26T14:42:18Z",
+            "lastSuccessAt": "2026-05-26T14:42:18Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -799,13 +799,13 @@
             "fixtureId": "626039",
             "matches": [
                 {
-                    "home": "Cf Esperança Lagos",
-                    "away": "Cf Os Armacenenses",
-                    "date": "1 - 2                            \r\n                \r\n                    22 fev",
+                    "home": "Padernense Clube",
+                    "away": "Ud Messinense",
+                    "date": "4 - 3                            \r\n                \r\n                    22 fev",
                     "time": "",
-                    "stadium": "Estádio Municipal De Lagos N.º 2",
-                    "homeScore": 1,
-                    "awayScore": 2,
+                    "stadium": "Campo Montes Elois",
+                    "homeScore": 4,
+                    "awayScore": 3,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": null,
@@ -825,13 +825,13 @@
                     "changeFlags": []
                 },
                 {
-                    "home": "Padernense Clube",
-                    "away": "Ud Messinense",
-                    "date": "4 - 3                            \r\n                \r\n                    22 fev",
+                    "home": "Cf Esperança Lagos",
+                    "away": "Cf Os Armacenenses",
+                    "date": "1 - 2                            \r\n                \r\n                    22 fev",
                     "time": "",
-                    "stadium": "Campo Montes Elois",
-                    "homeScore": 4,
-                    "awayScore": 3,
+                    "stadium": "Estádio Municipal De Lagos N.º 2",
+                    "homeScore": 1,
+                    "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": null,
@@ -941,8 +941,8 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:40:41Z",
-            "lastSuccessAt": "2026-05-19T13:40:41Z",
+            "lastAttemptAt": "2026-05-26T14:42:21Z",
+            "lastSuccessAt": "2026-05-26T14:42:21Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -952,19 +952,6 @@
             "fixtureId": "626040",
             "matches": [
                 {
-                    "home": "Lgc Moncarapachense",
-                    "away": "Cr Infante Sagres",
-                    "date": "0 - 9                            \r\n                \r\n                    1 mar",
-                    "time": "",
-                    "stadium": "Estádio Dr.António Joao Eusebio",
-                    "homeScore": 0,
-                    "awayScore": 9,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": null,
-                    "changeFlags": []
-                },
-                {
                     "home": "Ac Salir",
                     "away": "Padernense Clube",
                     "date": "1 - 2                            \r\n                \r\n                    1 mar",
@@ -972,6 +959,19 @@
                     "stadium": "Parque Desp. Joaquim António Teixeira",
                     "homeScore": 1,
                     "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Lgc Moncarapachense",
+                    "away": "Cr Infante Sagres",
+                    "date": "0 - 9                            \r\n                \r\n                    1 mar",
+                    "time": "",
+                    "stadium": "Estádio Dr.António Joao Eusebio",
+                    "homeScore": 0,
+                    "awayScore": 9,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": null,
@@ -1094,8 +1094,8 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:40:42Z",
-            "lastSuccessAt": "2026-05-19T13:40:42Z",
+            "lastAttemptAt": "2026-05-26T14:42:22Z",
+            "lastSuccessAt": "2026-05-26T14:42:22Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -1247,8 +1247,8 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:40:43Z",
-            "lastSuccessAt": "2026-05-19T13:40:43Z",
+            "lastAttemptAt": "2026-05-26T14:42:24Z",
+            "lastSuccessAt": "2026-05-26T14:42:24Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -1400,8 +1400,8 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:40:45Z",
-            "lastSuccessAt": "2026-05-19T13:40:45Z",
+            "lastAttemptAt": "2026-05-26T14:42:25Z",
+            "lastSuccessAt": "2026-05-26T14:42:25Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -1410,32 +1410,6 @@
             "index": 10,
             "fixtureId": "626043",
             "matches": [
-                {
-                    "home": "Lgc Moncarapachense",
-                    "away": "Cf Os Armacenenses",
-                    "date": "1 - 13                            \r\n                \r\n                    29 mar",
-                    "time": "",
-                    "stadium": "Estádio Dr.António Joao Eusebio",
-                    "homeScore": 1,
-                    "awayScore": 13,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": null,
-                    "changeFlags": []
-                },
-                {
-                    "home": "Cr Infante Sagres",
-                    "away": "Cf Esperança Lagos",
-                    "date": "5 - 1                            \r\n                \r\n                    29 mar",
-                    "time": "",
-                    "stadium": "Complexo Desportivo 1º Maio",
-                    "homeScore": 5,
-                    "awayScore": 1,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": null,
-                    "changeFlags": []
-                },
                 {
                     "home": "Ac Salir",
                     "away": "Ud Messinense",
@@ -1450,12 +1424,38 @@
                     "changeFlags": []
                 },
                 {
+                    "home": "Lgc Moncarapachense",
+                    "away": "Cf Os Armacenenses",
+                    "date": "1 - 13                            \r\n                \r\n                    29 mar",
+                    "time": "",
+                    "stadium": "Estádio Dr.António Joao Eusebio",
+                    "homeScore": 1,
+                    "awayScore": 13,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
                     "home": "Padernense Clube",
                     "away": "Fc São Luís",
                     "date": "4 - 1                            \r\n                \r\n                    29 mar",
                     "time": "",
                     "stadium": "Campo Montes Elois",
                     "homeScore": 4,
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cr Infante Sagres",
+                    "away": "Cf Esperança Lagos",
+                    "date": "5 - 1                            \r\n                \r\n                    29 mar",
+                    "time": "",
+                    "stadium": "Complexo Desportivo 1º Maio",
+                    "homeScore": 5,
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
@@ -1553,8 +1553,8 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:40:46Z",
-            "lastSuccessAt": "2026-05-19T13:40:46Z",
+            "lastAttemptAt": "2026-05-26T14:42:27Z",
+            "lastSuccessAt": "2026-05-26T14:42:27Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -1590,19 +1590,6 @@
                     "changeFlags": []
                 },
                 {
-                    "home": "Ud Messinense",
-                    "away": "Lgc Moncarapachense",
-                    "date": "13 - 2                            \r\n                \r\n                    12 abr",
-                    "time": "",
-                    "stadium": "Estádio Municipal Messines",
-                    "homeScore": 13,
-                    "awayScore": 2,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": null,
-                    "changeFlags": []
-                },
-                {
                     "home": "Cf Esperança Lagos",
                     "away": "Padernense Clube",
                     "date": "0 - 1                            \r\n                \r\n                    12 abr",
@@ -1610,6 +1597,19 @@
                     "stadium": "Estádio Municipal De Lagos N.º 2",
                     "homeScore": 0,
                     "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Ud Messinense",
+                    "away": "Lgc Moncarapachense",
+                    "date": "13 - 2                            \r\n                \r\n                    12 abr",
+                    "time": "",
+                    "stadium": "Estádio Municipal Messines",
+                    "homeScore": 13,
+                    "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": null,
@@ -1706,8 +1706,8 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:40:47Z",
-            "lastSuccessAt": "2026-05-19T13:40:47Z",
+            "lastAttemptAt": "2026-05-26T14:42:28Z",
+            "lastSuccessAt": "2026-05-26T14:42:28Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -1730,19 +1730,6 @@
                     "changeFlags": []
                 },
                 {
-                    "home": "Cr Infante Sagres",
-                    "away": "Ud Messinense",
-                    "date": "2 - 2                            \r\n                \r\n                    19 abr",
-                    "time": "",
-                    "stadium": "Complexo Desportivo 1º Maio",
-                    "homeScore": 2,
-                    "awayScore": 2,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": null,
-                    "changeFlags": []
-                },
-                {
                     "home": "Padernense Clube",
                     "away": "Cf Os Armacenenses",
                     "date": "3 - 5                            \r\n                \r\n                    19 abr",
@@ -1750,6 +1737,19 @@
                     "stadium": "Campo Montes Elois",
                     "homeScore": 3,
                     "awayScore": 5,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cr Infante Sagres",
+                    "away": "Ud Messinense",
+                    "date": "2 - 2                            \r\n                \r\n                    19 abr",
+                    "time": "",
+                    "stadium": "Complexo Desportivo 1º Maio",
+                    "homeScore": 2,
+                    "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": null,
@@ -1859,8 +1859,8 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:40:48Z",
-            "lastSuccessAt": "2026-05-19T13:40:48Z",
+            "lastAttemptAt": "2026-05-26T14:42:30Z",
+            "lastSuccessAt": "2026-05-26T14:42:30Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -1896,19 +1896,6 @@
                     "changeFlags": []
                 },
                 {
-                    "home": "Lgc Moncarapachense",
-                    "away": "Fc São Luís",
-                    "date": "4 - 0                            \r\n                \r\n                    3 mai",
-                    "time": "",
-                    "stadium": "Estádio Dr.António Joao Eusebio",
-                    "homeScore": 4,
-                    "awayScore": 0,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": null,
-                    "changeFlags": []
-                },
-                {
                     "home": "Ud Messinense",
                     "away": "Padernense Clube",
                     "date": "2 - 2                            \r\n                \r\n                    3 mai",
@@ -1916,6 +1903,19 @@
                     "stadium": "Estádio Municipal Messines",
                     "homeScore": 2,
                     "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Lgc Moncarapachense",
+                    "away": "Fc São Luís",
+                    "date": "4 - 0                            \r\n                \r\n                    3 mai",
+                    "time": "",
+                    "stadium": "Estádio Dr.António Joao Eusebio",
+                    "homeScore": 4,
+                    "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": null,
@@ -2012,8 +2012,8 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:40:50Z",
-            "lastSuccessAt": "2026-05-19T13:40:50Z",
+            "lastAttemptAt": "2026-05-26T14:42:31Z",
+            "lastSuccessAt": "2026-05-26T14:42:31Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -2033,28 +2033,7 @@
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": "2026-05-19T13:40:51Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "date_changed",
-                        "time_changed"
-                    ]
-                },
-                {
-                    "home": "Cr Infante Sagres",
-                    "away": "Lgc Moncarapachense",
-                    "date": "9 - 1                            \r\n                \r\n                    10 mai",
-                    "time": "",
-                    "stadium": "Complexo Desportivo 1º Maio",
-                    "homeScore": 9,
-                    "awayScore": 1,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:40:51Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "date_changed",
-                        "time_changed"
-                    ]
+                    "changeFlags": []
                 },
                 {
                     "home": "Padernense Clube",
@@ -2064,6 +2043,19 @@
                     "stadium": "Campo Montes Elois",
                     "homeScore": 2,
                     "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-19T13:40:51Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cr Infante Sagres",
+                    "away": "Lgc Moncarapachense",
+                    "date": "9 - 1                            \r\n                \r\n                    10 mai",
+                    "time": "",
+                    "stadium": "Complexo Desportivo 1º Maio",
+                    "homeScore": 9,
+                    "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": "2026-05-19T13:40:51Z",
@@ -2080,11 +2072,7 @@
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": "2026-05-19T13:40:51Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "date_changed",
-                        "time_changed"
-                    ]
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -2177,8 +2165,8 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:40:51Z",
-            "lastSuccessAt": "2026-05-19T13:40:51Z",
+            "lastAttemptAt": "2026-05-26T14:42:34Z",
+            "lastSuccessAt": "2026-05-26T14:42:34Z",
             "lastChangedAt": "2026-05-19T13:40:51Z",
             "sourceStatus": "ok",
             "sourceIssue": null
