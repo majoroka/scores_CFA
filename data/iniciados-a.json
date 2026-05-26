@@ -1,15 +1,15 @@
 {
     "schemaVersion": 2,
-    "generatedAt": "2026-05-19T13:41:27Z",
-    "lastAttemptAt": "2026-05-19T13:41:08Z",
-    "lastSuccessAt": null,
-    "lastChangedAt": null,
-    "lastPublishedAt": "2026-05-19T13:41:27Z",
-    "defaultRoundIndex": 10,
-    "defaultRoundNumber": 11,
-    "lastUpdatedAt": "2026-05-19T13:41:27Z",
+    "generatedAt": "2026-05-26T14:43:17Z",
+    "lastAttemptAt": "2026-05-26T14:42:48Z",
+    "lastSuccessAt": "2026-05-19T13:41:08Z",
+    "lastChangedAt": "2026-05-19T13:41:08Z",
+    "lastPublishedAt": "2026-05-26T14:43:17Z",
+    "defaultRoundIndex": 4,
+    "defaultRoundNumber": 5,
+    "lastUpdatedAt": "2026-05-26T14:43:17Z",
     "sourceHealth": {
-        "status": "partial",
+        "status": "ok",
         "fallbackReuseCount": 0,
         "issues": []
     },
@@ -18,11 +18,11 @@
         "matchCount": 56,
         "classificationCount": 112,
         "teamCount": 8,
-        "completedMatchCount": 43,
-        "matchesWithoutScore": 13,
-        "pastMatchCount": 44,
-        "pastMatchesWithoutScore": 1,
-        "futureMatchCount": 12,
+        "completedMatchCount": 48,
+        "matchesWithoutScore": 8,
+        "pastMatchCount": 48,
+        "pastMatchesWithoutScore": 0,
+        "futureMatchCount": 8,
         "roundsWithMatches": 14,
         "roundsWithClassification": 14,
         "roundsWithCompletedMatches": 12,
@@ -33,32 +33,6 @@
             "index": 1,
             "fixtureId": "640944",
             "matches": [
-                {
-                    "home": "Gd Lagoa",
-                    "away": "Fc Ferreiras",
-                    "date": "2 - 1                            \r\n                \r\n                    1 mar",
-                    "time": "",
-                    "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": 2,
-                    "awayScore": 1,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": null,
-                    "changeFlags": []
-                },
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Js Campinense",
-                    "date": "1 - 3                            \r\n                \r\n                    1 mar",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 1,
-                    "awayScore": 3,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": null,
-                    "changeFlags": []
-                },
                 {
                     "home": "Aa Belavista",
                     "away": "Internacional Ca",
@@ -73,6 +47,19 @@
                     "changeFlags": []
                 },
                 {
+                    "home": "Gd Lagoa",
+                    "away": "Fc Ferreiras",
+                    "date": "2 - 1                            \r\n                \r\n                    1 mar",
+                    "time": "",
+                    "stadium": "Parque Desportivo Municipal Estombar",
+                    "homeScore": 2,
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
                     "home": "Aef Monte Gordo 2019",
                     "away": "Sc Farense",
                     "date": "4 - 1                            \r\n                \r\n                    1 mar",
@@ -80,6 +67,19 @@
                     "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": 4,
                     "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Js Campinense",
+                    "date": "1 - 3                            \r\n                \r\n                    1 mar",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 1,
+                    "awayScore": 3,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": null,
@@ -176,8 +176,8 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:09Z",
-            "lastSuccessAt": "2026-05-19T13:41:09Z",
+            "lastAttemptAt": "2026-05-26T14:42:50Z",
+            "lastSuccessAt": "2026-05-26T14:42:50Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -200,19 +200,6 @@
                     "changeFlags": []
                 },
                 {
-                    "home": "Fc Ferreiras",
-                    "away": "Aa Belavista",
-                    "date": "1 - 5                            \r\n                \r\n                    8 mar",
-                    "time": "",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": 1,
-                    "awayScore": 5,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": null,
-                    "changeFlags": []
-                },
-                {
                     "home": "Internacional Ca",
                     "away": "Cf Os Armacenenses",
                     "date": "3 - 3                            \r\n                \r\n                    8 mar",
@@ -220,6 +207,19 @@
                     "stadium": "Estadio Municipal De Almancil",
                     "homeScore": 3,
                     "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Aa Belavista",
+                    "date": "1 - 5                            \r\n                \r\n                    8 mar",
+                    "time": "",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": 1,
+                    "awayScore": 5,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": null,
@@ -329,8 +329,8 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:10Z",
-            "lastSuccessAt": "2026-05-19T13:41:10Z",
+            "lastAttemptAt": "2026-05-26T14:42:53Z",
+            "lastSuccessAt": "2026-05-26T14:42:53Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -339,19 +339,6 @@
             "index": 3,
             "fixtureId": "640946",
             "matches": [
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Aef Monte Gordo 2019",
-                    "date": "3 - 3                            \r\n                \r\n                    15 mar",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 3,
-                    "awayScore": 3,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": null,
-                    "changeFlags": []
-                },
                 {
                     "home": "Internacional Ca",
                     "away": "Fc Ferreiras",
@@ -373,6 +360,19 @@
                     "stadium": "Estádio Municipal Da Bela Vista",
                     "homeScore": 6,
                     "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Aef Monte Gordo 2019",
+                    "date": "3 - 3                            \r\n                \r\n                    15 mar",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 3,
+                    "awayScore": 3,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": null,
@@ -482,8 +482,8 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:11Z",
-            "lastSuccessAt": "2026-05-19T13:41:11Z",
+            "lastAttemptAt": "2026-05-26T14:42:54Z",
+            "lastSuccessAt": "2026-05-26T14:42:54Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -506,13 +506,13 @@
                     "changeFlags": []
                 },
                 {
-                    "home": "Js Campinense",
-                    "away": "Aa Belavista",
-                    "date": "1 - 4                            \r\n                \r\n                    22 mar",
+                    "home": "Aef Monte Gordo 2019",
+                    "away": "Gd Lagoa",
+                    "date": "1 - 2                            \r\n                \r\n                    22 mar",
                     "time": "",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
                     "homeScore": 1,
-                    "awayScore": 4,
+                    "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": null,
@@ -532,13 +532,13 @@
                     "changeFlags": []
                 },
                 {
-                    "home": "Aef Monte Gordo 2019",
-                    "away": "Gd Lagoa",
-                    "date": "1 - 2                            \r\n                \r\n                    22 mar",
+                    "home": "Js Campinense",
+                    "away": "Aa Belavista",
+                    "date": "1 - 4                            \r\n                \r\n                    22 mar",
                     "time": "",
-                    "stadium": "Campo Nº 1 Complexo Desp Monte Gordo",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": 1,
-                    "awayScore": 2,
+                    "awayScore": 4,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": null,
@@ -635,8 +635,8 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:13Z",
-            "lastSuccessAt": "2026-05-19T13:41:13Z",
+            "lastAttemptAt": "2026-05-26T14:42:56Z",
+            "lastSuccessAt": "2026-05-26T14:42:56Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -655,20 +655,7 @@
                     "awayScore": 8,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": null,
-                    "changeFlags": []
-                },
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Gd Lagoa",
-                    "date": "1 - 3                            \r\n                \r\n                    29 mar",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 1,
-                    "awayScore": 3,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": null,
+                    "lastChangedAt": "2026-05-26T14:42:58Z",
                     "changeFlags": []
                 },
                 {
@@ -681,21 +668,38 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": null,
+                    "lastChangedAt": "2026-05-26T14:42:58Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Gd Lagoa",
+                    "date": "1 - 3                            \r\n                \r\n                    29 mar",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 1,
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:42:58Z",
                     "changeFlags": []
                 },
                 {
                     "home": "Aa Belavista",
                     "away": "Aef Monte Gordo 2019",
-                    "date": "24 mai",
-                    "time": "16:00",
+                    "date": "3 - 2                            \r\n                \r\n                    24 mai",
+                    "time": "",
                     "stadium": "Estádio Municipal Da Bela Vista",
-                    "homeScore": null,
-                    "awayScore": null,
-                    "scoreSource": null,
+                    "homeScore": 3,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": null,
-                    "changeFlags": []
+                    "lastChangedAt": "2026-05-26T14:42:58Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 }
             ],
             "classification": [
@@ -707,7 +711,7 @@
                     "draws": 0,
                     "losses": 0,
                     "goalsFor": 26,
-                    "goalsAgainst": 5,
+                    "goalsAgainst": 6,
                     "points": 15
                 },
                 {
@@ -750,7 +754,7 @@
                     "wins": 1,
                     "draws": 1,
                     "losses": 3,
-                    "goalsFor": 11,
+                    "goalsFor": 12,
                     "goalsAgainst": 13,
                     "points": 4
                 },
@@ -788,9 +792,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:14Z",
-            "lastSuccessAt": "2026-05-19T13:41:14Z",
-            "lastChangedAt": null,
+            "lastAttemptAt": "2026-05-26T14:42:58Z",
+            "lastSuccessAt": "2026-05-26T14:42:58Z",
+            "lastChangedAt": "2026-05-26T14:42:58Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -808,7 +812,7 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": null,
+                    "lastChangedAt": "2026-05-26T14:43:01Z",
                     "changeFlags": []
                 },
                 {
@@ -821,7 +825,7 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": null,
+                    "lastChangedAt": "2026-05-26T14:43:01Z",
                     "changeFlags": []
                 },
                 {
@@ -834,7 +838,7 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": null,
+                    "lastChangedAt": "2026-05-26T14:43:01Z",
                     "changeFlags": []
                 },
                 {
@@ -847,7 +851,7 @@
                     "awayScore": 4,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": null,
+                    "lastChangedAt": "2026-05-26T14:43:01Z",
                     "changeFlags": []
                 }
             ],
@@ -860,7 +864,7 @@
                     "draws": 0,
                     "losses": 0,
                     "goalsFor": 30,
-                    "goalsAgainst": 7,
+                    "goalsAgainst": 8,
                     "points": 18
                 },
                 {
@@ -903,7 +907,7 @@
                     "wins": 2,
                     "draws": 1,
                     "losses": 3,
-                    "goalsFor": 14,
+                    "goalsFor": 15,
                     "goalsAgainst": 15,
                     "points": 7
                 },
@@ -941,9 +945,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:15Z",
-            "lastSuccessAt": "2026-05-19T13:41:15Z",
-            "lastChangedAt": null,
+            "lastAttemptAt": "2026-05-26T14:43:01Z",
+            "lastSuccessAt": "2026-05-26T14:43:01Z",
+            "lastChangedAt": "2026-05-26T14:43:01Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -961,7 +965,7 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": null,
+                    "lastChangedAt": "2026-05-26T14:43:03Z",
                     "changeFlags": []
                 },
                 {
@@ -974,7 +978,7 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": null,
+                    "lastChangedAt": "2026-05-26T14:43:03Z",
                     "changeFlags": []
                 },
                 {
@@ -987,7 +991,7 @@
                     "awayScore": 4,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": null,
+                    "lastChangedAt": "2026-05-26T14:43:03Z",
                     "changeFlags": []
                 },
                 {
@@ -1000,7 +1004,7 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": null,
+                    "lastChangedAt": "2026-05-26T14:43:03Z",
                     "changeFlags": []
                 }
             ],
@@ -1013,7 +1017,7 @@
                     "draws": 0,
                     "losses": 0,
                     "goalsFor": 38,
-                    "goalsAgainst": 8,
+                    "goalsAgainst": 9,
                     "points": 21
                 },
                 {
@@ -1056,7 +1060,7 @@
                     "wins": 3,
                     "draws": 1,
                     "losses": 3,
-                    "goalsFor": 18,
+                    "goalsFor": 19,
                     "goalsAgainst": 17,
                     "points": 10
                 },
@@ -1094,9 +1098,9 @@
                     "points": 1
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:16Z",
-            "lastSuccessAt": "2026-05-19T13:41:16Z",
-            "lastChangedAt": null,
+            "lastAttemptAt": "2026-05-26T14:43:03Z",
+            "lastSuccessAt": "2026-05-26T14:43:03Z",
+            "lastChangedAt": "2026-05-26T14:43:03Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -1114,7 +1118,7 @@
                     "awayScore": 7,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": null,
+                    "lastChangedAt": "2026-05-26T14:43:06Z",
                     "changeFlags": []
                 },
                 {
@@ -1127,20 +1131,7 @@
                     "awayScore": 3,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": null,
-                    "changeFlags": []
-                },
-                {
-                    "home": "Fc Ferreiras",
-                    "away": "Gd Lagoa",
-                    "date": "2 - 0                            \r\n                \r\n                    26 abr",
-                    "time": "",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": 2,
-                    "awayScore": 0,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": null,
+                    "lastChangedAt": "2026-05-26T14:43:06Z",
                     "changeFlags": []
                 },
                 {
@@ -1153,7 +1144,20 @@
                     "awayScore": 11,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": null,
+                    "lastChangedAt": "2026-05-26T14:43:06Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Gd Lagoa",
+                    "date": "2 - 0                            \r\n                \r\n                    26 abr",
+                    "time": "",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": 2,
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:43:06Z",
                     "changeFlags": []
                 }
             ],
@@ -1166,7 +1170,7 @@
                     "draws": 0,
                     "losses": 0,
                     "goalsFor": 49,
-                    "goalsAgainst": 10,
+                    "goalsAgainst": 11,
                     "points": 24
                 },
                 {
@@ -1209,7 +1213,7 @@
                     "wins": 4,
                     "draws": 1,
                     "losses": 3,
-                    "goalsFor": 25,
+                    "goalsFor": 26,
                     "goalsAgainst": 19,
                     "points": 13
                 },
@@ -1247,9 +1251,9 @@
                     "points": 1
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:18Z",
-            "lastSuccessAt": "2026-05-19T13:41:18Z",
-            "lastChangedAt": null,
+            "lastAttemptAt": "2026-05-26T14:43:06Z",
+            "lastSuccessAt": "2026-05-26T14:43:06Z",
+            "lastChangedAt": "2026-05-26T14:43:06Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -1257,19 +1261,6 @@
             "index": 9,
             "fixtureId": "640952",
             "matches": [
-                {
-                    "home": "Gd Lagoa",
-                    "away": "Sc Farense",
-                    "date": "1 - 0                            \r\n                \r\n                    3 mai",
-                    "time": "",
-                    "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": 1,
-                    "awayScore": 0,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:19Z",
-                    "changeFlags": []
-                },
                 {
                     "home": "Aa Belavista",
                     "away": "Fc Ferreiras",
@@ -1280,7 +1271,20 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:19Z",
+                    "lastChangedAt": "2026-05-26T14:43:07Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Gd Lagoa",
+                    "away": "Sc Farense",
+                    "date": "1 - 0                            \r\n                \r\n                    3 mai",
+                    "time": "",
+                    "stadium": "Parque Desportivo Municipal Estombar",
+                    "homeScore": 1,
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:43:07Z",
                     "changeFlags": []
                 },
                 {
@@ -1293,7 +1297,7 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:19Z",
+                    "lastChangedAt": "2026-05-26T14:43:07Z",
                     "changeFlags": []
                 },
                 {
@@ -1306,12 +1310,8 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:19Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "date_changed",
-                        "time_changed"
-                    ]
+                    "lastChangedAt": "2026-05-26T14:43:07Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1323,7 +1323,7 @@
                     "draws": 0,
                     "losses": 0,
                     "goalsFor": 51,
-                    "goalsAgainst": 11,
+                    "goalsAgainst": 12,
                     "points": 27
                 },
                 {
@@ -1355,7 +1355,7 @@
                     "wins": 5,
                     "draws": 1,
                     "losses": 3,
-                    "goalsFor": 31,
+                    "goalsFor": 32,
                     "goalsAgainst": 19,
                     "points": 16
                 },
@@ -1404,9 +1404,9 @@
                     "points": 1
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:19Z",
-            "lastSuccessAt": "2026-05-19T13:41:19Z",
-            "lastChangedAt": "2026-05-19T13:41:19Z",
+            "lastAttemptAt": "2026-05-26T14:43:07Z",
+            "lastSuccessAt": "2026-05-26T14:43:07Z",
+            "lastChangedAt": "2026-05-26T14:43:07Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -1424,12 +1424,8 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:20Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "date_changed",
-                        "time_changed"
-                    ]
+                    "lastChangedAt": "2026-05-26T14:43:09Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Aef Monte Gordo 2019",
@@ -1441,12 +1437,8 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:20Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "date_changed",
-                        "time_changed"
-                    ]
+                    "lastChangedAt": "2026-05-26T14:43:09Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Sc Farense",
@@ -1458,12 +1450,8 @@
                     "awayScore": 5,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:20Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "date_changed",
-                        "time_changed"
-                    ]
+                    "lastChangedAt": "2026-05-26T14:43:09Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Js Campinense",
@@ -1475,7 +1463,7 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:20Z",
+                    "lastChangedAt": "2026-05-26T14:43:09Z",
                     "changeFlags": []
                 }
             ],
@@ -1488,7 +1476,7 @@
                     "draws": 0,
                     "losses": 0,
                     "goalsFor": 56,
-                    "goalsAgainst": 11,
+                    "goalsAgainst": 12,
                     "points": 30
                 },
                 {
@@ -1498,7 +1486,7 @@
                     "wins": 6,
                     "draws": 1,
                     "losses": 3,
-                    "goalsFor": 38,
+                    "goalsFor": 39,
                     "goalsAgainst": 20,
                     "points": 19
                 },
@@ -1569,9 +1557,9 @@
                     "points": 1
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:20Z",
-            "lastSuccessAt": "2026-05-19T13:41:20Z",
-            "lastChangedAt": "2026-05-19T13:41:20Z",
+            "lastAttemptAt": "2026-05-26T14:43:09Z",
+            "lastSuccessAt": "2026-05-26T14:43:09Z",
+            "lastChangedAt": "2026-05-26T14:43:09Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -1582,15 +1570,19 @@
                 {
                     "home": "Internacional Ca",
                     "away": "Sc Farense",
-                    "date": "17 mai",
-                    "time": "09:00",
+                    "date": "4 - 1                            \r\n                \r\n                    17 mai",
+                    "time": "",
                     "stadium": "Estadio Municipal De Almancil",
-                    "homeScore": null,
-                    "awayScore": null,
-                    "scoreSource": null,
+                    "homeScore": 4,
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:22Z",
-                    "changeFlags": []
+                    "lastChangedAt": "2026-05-26T14:43:11Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Aa Belavista",
@@ -1602,12 +1594,8 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:22Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "date_changed",
-                        "time_changed"
-                    ]
+                    "lastChangedAt": "2026-05-26T14:43:11Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Gd Lagoa",
@@ -1619,12 +1607,8 @@
                     "awayScore": 7,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:22Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "date_changed",
-                        "time_changed"
-                    ]
+                    "lastChangedAt": "2026-05-26T14:43:11Z",
+                    "changeFlags": []
                 },
                 {
                     "home": "Cf Os Armacenenses",
@@ -1636,12 +1620,8 @@
                     "awayScore": 3,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:22Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "date_changed",
-                        "time_changed"
-                    ]
+                    "lastChangedAt": "2026-05-26T14:43:11Z",
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -1653,7 +1633,7 @@
                     "draws": 0,
                     "losses": 0,
                     "goalsFor": 62,
-                    "goalsAgainst": 11,
+                    "goalsAgainst": 12,
                     "points": 33
                 },
                 {
@@ -1663,7 +1643,7 @@
                     "wins": 7,
                     "draws": 1,
                     "losses": 3,
-                    "goalsFor": 45,
+                    "goalsFor": 46,
                     "goalsAgainst": 20,
                     "points": 22
                 },
@@ -1714,29 +1694,29 @@
                 {
                     "position": 7,
                     "team": "Internacional Ca",
-                    "played": 10,
-                    "wins": 1,
+                    "played": 11,
+                    "wins": 2,
                     "draws": 2,
                     "losses": 7,
-                    "goalsFor": 17,
-                    "goalsAgainst": 55,
-                    "points": 5
+                    "goalsFor": 21,
+                    "goalsAgainst": 56,
+                    "points": 8
                 },
                 {
                     "position": 8,
                     "team": "Sc Farense",
-                    "played": 10,
+                    "played": 11,
                     "wins": 0,
                     "draws": 1,
-                    "losses": 9,
-                    "goalsFor": 6,
-                    "goalsAgainst": 43,
+                    "losses": 10,
+                    "goalsFor": 7,
+                    "goalsAgainst": 47,
                     "points": 1
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:22Z",
-            "lastSuccessAt": "2026-05-19T13:41:22Z",
-            "lastChangedAt": "2026-05-19T13:41:22Z",
+            "lastAttemptAt": "2026-05-26T14:43:11Z",
+            "lastSuccessAt": "2026-05-26T14:43:11Z",
+            "lastChangedAt": "2026-05-26T14:43:11Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -1754,142 +1734,154 @@
                     "awayScore": 3,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:23Z",
+                    "lastChangedAt": "2026-05-26T14:43:12Z",
                     "changeFlags": []
                 },
                 {
                     "home": "Gd Lagoa",
                     "away": "Cf Os Armacenenses",
-                    "date": "24 mai",
-                    "time": "11:00",
+                    "date": "0 - 2                            \r\n                \r\n                    24 mai",
+                    "time": "",
                     "stadium": "Parque Desportivo Municipal Estombar",
-                    "homeScore": null,
-                    "awayScore": null,
-                    "scoreSource": null,
+                    "homeScore": 0,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:23Z",
-                    "changeFlags": []
+                    "lastChangedAt": "2026-05-26T14:43:12Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Js Campinense",
                     "away": "Internacional Ca",
-                    "date": "24 mai",
-                    "time": "18:00",
+                    "date": "4 - 1                            \r\n                \r\n                    24 mai",
+                    "time": "",
                     "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": null,
-                    "awayScore": null,
-                    "scoreSource": null,
+                    "homeScore": 4,
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:23Z",
-                    "changeFlags": []
+                    "lastChangedAt": "2026-05-26T14:43:12Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Sc Farense",
                     "away": "Fc Ferreiras",
-                    "date": "24 mai",
-                    "time": "20:00",
+                    "date": "0 - 3                            \r\n                \r\n                    24 mai",
+                    "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null,
-                    "scoreSource": null,
+                    "homeScore": 0,
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:23Z",
-                    "changeFlags": []
+                    "lastChangedAt": "2026-05-26T14:43:12Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Aa Belavista",
-                    "played": 11,
-                    "wins": 11,
+                    "played": 12,
+                    "wins": 12,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 62,
-                    "goalsAgainst": 11,
-                    "points": 33
+                    "goalsFor": 65,
+                    "goalsAgainst": 13,
+                    "points": 36
                 },
                 {
                     "position": 2,
-                    "team": "Aef Monte Gordo 2019",
-                    "played": 11,
-                    "wins": 7,
-                    "draws": 1,
-                    "losses": 3,
-                    "goalsFor": 45,
-                    "goalsAgainst": 20,
-                    "points": 22
+                    "team": "Fc Ferreiras",
+                    "played": 12,
+                    "wins": 8,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 40,
+                    "goalsAgainst": 16,
+                    "points": 24
                 },
                 {
                     "position": 3,
-                    "team": "Fc Ferreiras",
-                    "played": 11,
+                    "team": "Aef Monte Gordo 2019",
+                    "played": 12,
                     "wins": 7,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 4,
-                    "goalsFor": 37,
-                    "goalsAgainst": 16,
-                    "points": 21
+                    "goalsFor": 47,
+                    "goalsAgainst": 23,
+                    "points": 22
                 },
                 {
                     "position": 4,
                     "team": "Js Campinense",
-                    "played": 11,
-                    "wins": 6,
+                    "played": 12,
+                    "wins": 7,
                     "draws": 1,
                     "losses": 4,
-                    "goalsFor": 28,
-                    "goalsAgainst": 28,
-                    "points": 19
+                    "goalsFor": 32,
+                    "goalsAgainst": 29,
+                    "points": 22
                 },
                 {
                     "position": 5,
                     "team": "Gd Lagoa",
-                    "played": 11,
+                    "played": 12,
                     "wins": 5,
                     "draws": 1,
-                    "losses": 5,
+                    "losses": 6,
                     "goalsFor": 17,
-                    "goalsAgainst": 25,
+                    "goalsAgainst": 27,
                     "points": 16
                 },
                 {
                     "position": 6,
                     "team": "Cf Os Armacenenses",
-                    "played": 11,
-                    "wins": 2,
+                    "played": 12,
+                    "wins": 3,
                     "draws": 2,
                     "losses": 7,
-                    "goalsFor": 28,
+                    "goalsFor": 30,
                     "goalsAgainst": 42,
-                    "points": 8
+                    "points": 11
                 },
                 {
                     "position": 7,
                     "team": "Internacional Ca",
-                    "played": 10,
-                    "wins": 1,
+                    "played": 12,
+                    "wins": 2,
                     "draws": 2,
-                    "losses": 7,
-                    "goalsFor": 17,
-                    "goalsAgainst": 55,
-                    "points": 5
+                    "losses": 8,
+                    "goalsFor": 22,
+                    "goalsAgainst": 60,
+                    "points": 8
                 },
                 {
                     "position": 8,
                     "team": "Sc Farense",
-                    "played": 10,
+                    "played": 12,
                     "wins": 0,
                     "draws": 1,
-                    "losses": 9,
-                    "goalsFor": 6,
-                    "goalsAgainst": 43,
+                    "losses": 11,
+                    "goalsFor": 7,
+                    "goalsAgainst": 50,
                     "points": 1
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:23Z",
-            "lastSuccessAt": "2026-05-19T13:41:23Z",
-            "lastChangedAt": "2026-05-19T13:41:23Z",
+            "lastAttemptAt": "2026-05-26T14:43:12Z",
+            "lastSuccessAt": "2026-05-26T14:43:12Z",
+            "lastChangedAt": "2026-05-26T14:43:12Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -1907,7 +1899,7 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:25Z",
+                    "lastChangedAt": "2026-05-26T14:43:14Z",
                     "changeFlags": []
                 },
                 {
@@ -1920,129 +1912,133 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:25Z",
+                    "lastChangedAt": "2026-05-26T14:43:14Z",
                     "changeFlags": []
                 },
                 {
                     "home": "Fc Ferreiras",
                     "away": "Js Campinense",
                     "date": "31 mai",
-                    "time": "11:00",
+                    "time": "17:00",
                     "stadium": "Estádio Nora Nº 2",
                     "homeScore": null,
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:25Z",
-                    "changeFlags": []
+                    "lastChangedAt": "2026-05-26T14:43:14Z",
+                    "changeFlags": [
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Sc Farense",
                     "away": "Cf Os Armacenenses",
-                    "date": "31 mai",
+                    "date": "4 jun",
                     "time": "16:00",
                     "stadium": "Campo Complexo Desportivo Penha",
                     "homeScore": null,
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:25Z",
-                    "changeFlags": []
+                    "lastChangedAt": "2026-05-26T14:43:14Z",
+                    "changeFlags": [
+                        "date_changed"
+                    ]
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Aa Belavista",
-                    "played": 11,
-                    "wins": 11,
+                    "played": 12,
+                    "wins": 12,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 62,
-                    "goalsAgainst": 11,
-                    "points": 33
+                    "goalsFor": 65,
+                    "goalsAgainst": 13,
+                    "points": 36
                 },
                 {
                     "position": 2,
-                    "team": "Aef Monte Gordo 2019",
-                    "played": 11,
-                    "wins": 7,
-                    "draws": 1,
-                    "losses": 3,
-                    "goalsFor": 45,
-                    "goalsAgainst": 20,
-                    "points": 22
+                    "team": "Fc Ferreiras",
+                    "played": 12,
+                    "wins": 8,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 40,
+                    "goalsAgainst": 16,
+                    "points": 24
                 },
                 {
                     "position": 3,
-                    "team": "Fc Ferreiras",
-                    "played": 11,
+                    "team": "Aef Monte Gordo 2019",
+                    "played": 12,
                     "wins": 7,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 4,
-                    "goalsFor": 37,
-                    "goalsAgainst": 16,
-                    "points": 21
+                    "goalsFor": 47,
+                    "goalsAgainst": 23,
+                    "points": 22
                 },
                 {
                     "position": 4,
                     "team": "Js Campinense",
-                    "played": 11,
-                    "wins": 6,
+                    "played": 12,
+                    "wins": 7,
                     "draws": 1,
                     "losses": 4,
-                    "goalsFor": 28,
-                    "goalsAgainst": 28,
-                    "points": 19
+                    "goalsFor": 32,
+                    "goalsAgainst": 29,
+                    "points": 22
                 },
                 {
                     "position": 5,
                     "team": "Gd Lagoa",
-                    "played": 11,
+                    "played": 12,
                     "wins": 5,
                     "draws": 1,
-                    "losses": 5,
+                    "losses": 6,
                     "goalsFor": 17,
-                    "goalsAgainst": 25,
+                    "goalsAgainst": 27,
                     "points": 16
                 },
                 {
                     "position": 6,
                     "team": "Cf Os Armacenenses",
-                    "played": 11,
-                    "wins": 2,
+                    "played": 12,
+                    "wins": 3,
                     "draws": 2,
                     "losses": 7,
-                    "goalsFor": 28,
+                    "goalsFor": 30,
                     "goalsAgainst": 42,
-                    "points": 8
+                    "points": 11
                 },
                 {
                     "position": 7,
                     "team": "Internacional Ca",
-                    "played": 10,
-                    "wins": 1,
+                    "played": 12,
+                    "wins": 2,
                     "draws": 2,
-                    "losses": 7,
-                    "goalsFor": 17,
-                    "goalsAgainst": 55,
-                    "points": 5
+                    "losses": 8,
+                    "goalsFor": 22,
+                    "goalsAgainst": 60,
+                    "points": 8
                 },
                 {
                     "position": 8,
                     "team": "Sc Farense",
-                    "played": 10,
+                    "played": 12,
                     "wins": 0,
                     "draws": 1,
-                    "losses": 9,
-                    "goalsFor": 6,
-                    "goalsAgainst": 43,
+                    "losses": 11,
+                    "goalsFor": 7,
+                    "goalsAgainst": 50,
                     "points": 1
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:25Z",
-            "lastSuccessAt": "2026-05-19T13:41:25Z",
-            "lastChangedAt": "2026-05-19T13:41:25Z",
+            "lastAttemptAt": "2026-05-26T14:43:14Z",
+            "lastSuccessAt": "2026-05-26T14:43:14Z",
+            "lastChangedAt": "2026-05-26T14:43:14Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -2060,33 +2056,7 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:26Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Js Campinense",
-                    "away": "Sc Farense",
-                    "date": "6 jun",
-                    "time": "11:00",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": null,
-                    "awayScore": null,
-                    "scoreSource": null,
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:26Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Aa Belavista",
-                    "date": "6 jun",
-                    "time": "11:00",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null,
-                    "scoreSource": null,
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:26Z",
+                    "lastChangedAt": "2026-05-26T14:43:15Z",
                     "changeFlags": []
                 },
                 {
@@ -2099,7 +2069,33 @@
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:41:26Z",
+                    "lastChangedAt": "2026-05-26T14:43:15Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Js Campinense",
+                    "away": "Sc Farense",
+                    "date": "6 jun",
+                    "time": "11:00",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": null,
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:43:15Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Aa Belavista",
+                    "date": "6 jun",
+                    "time": "11:00",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": null,
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:43:15Z",
                     "changeFlags": []
                 }
             ],
@@ -2107,95 +2103,95 @@
                 {
                     "position": 1,
                     "team": "Aa Belavista",
-                    "played": 11,
-                    "wins": 11,
+                    "played": 12,
+                    "wins": 12,
                     "draws": 0,
                     "losses": 0,
-                    "goalsFor": 62,
-                    "goalsAgainst": 11,
-                    "points": 33
+                    "goalsFor": 65,
+                    "goalsAgainst": 13,
+                    "points": 36
                 },
                 {
                     "position": 2,
-                    "team": "Aef Monte Gordo 2019",
-                    "played": 11,
-                    "wins": 7,
-                    "draws": 1,
-                    "losses": 3,
-                    "goalsFor": 45,
-                    "goalsAgainst": 20,
-                    "points": 22
+                    "team": "Fc Ferreiras",
+                    "played": 12,
+                    "wins": 8,
+                    "draws": 0,
+                    "losses": 4,
+                    "goalsFor": 40,
+                    "goalsAgainst": 16,
+                    "points": 24
                 },
                 {
                     "position": 3,
-                    "team": "Fc Ferreiras",
-                    "played": 11,
+                    "team": "Aef Monte Gordo 2019",
+                    "played": 12,
                     "wins": 7,
-                    "draws": 0,
+                    "draws": 1,
                     "losses": 4,
-                    "goalsFor": 37,
-                    "goalsAgainst": 16,
-                    "points": 21
+                    "goalsFor": 47,
+                    "goalsAgainst": 23,
+                    "points": 22
                 },
                 {
                     "position": 4,
                     "team": "Js Campinense",
-                    "played": 11,
-                    "wins": 6,
+                    "played": 12,
+                    "wins": 7,
                     "draws": 1,
                     "losses": 4,
-                    "goalsFor": 28,
-                    "goalsAgainst": 28,
-                    "points": 19
+                    "goalsFor": 32,
+                    "goalsAgainst": 29,
+                    "points": 22
                 },
                 {
                     "position": 5,
                     "team": "Gd Lagoa",
-                    "played": 11,
+                    "played": 12,
                     "wins": 5,
                     "draws": 1,
-                    "losses": 5,
+                    "losses": 6,
                     "goalsFor": 17,
-                    "goalsAgainst": 25,
+                    "goalsAgainst": 27,
                     "points": 16
                 },
                 {
                     "position": 6,
                     "team": "Cf Os Armacenenses",
-                    "played": 11,
-                    "wins": 2,
+                    "played": 12,
+                    "wins": 3,
                     "draws": 2,
                     "losses": 7,
-                    "goalsFor": 28,
+                    "goalsFor": 30,
                     "goalsAgainst": 42,
-                    "points": 8
+                    "points": 11
                 },
                 {
                     "position": 7,
                     "team": "Internacional Ca",
-                    "played": 10,
-                    "wins": 1,
+                    "played": 12,
+                    "wins": 2,
                     "draws": 2,
-                    "losses": 7,
-                    "goalsFor": 17,
-                    "goalsAgainst": 55,
-                    "points": 5
+                    "losses": 8,
+                    "goalsFor": 22,
+                    "goalsAgainst": 60,
+                    "points": 8
                 },
                 {
                     "position": 8,
                     "team": "Sc Farense",
-                    "played": 10,
+                    "played": 12,
                     "wins": 0,
                     "draws": 1,
-                    "losses": 9,
-                    "goalsFor": 6,
-                    "goalsAgainst": 43,
+                    "losses": 11,
+                    "goalsFor": 7,
+                    "goalsAgainst": 50,
                     "points": 1
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:41:26Z",
-            "lastSuccessAt": "2026-05-19T13:41:26Z",
-            "lastChangedAt": "2026-05-19T13:41:26Z",
+            "lastAttemptAt": "2026-05-26T14:43:15Z",
+            "lastSuccessAt": "2026-05-26T14:43:15Z",
+            "lastChangedAt": "2026-05-26T14:43:15Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         }
