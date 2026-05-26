@@ -1,13 +1,13 @@
 {
     "schemaVersion": 2,
-    "generatedAt": "2026-05-19T13:39:06Z",
-    "lastAttemptAt": "2026-05-19T13:38:51Z",
-    "lastSuccessAt": "2026-05-18T19:56:06Z",
-    "lastChangedAt": "2026-05-18T19:56:06Z",
-    "lastPublishedAt": "2026-05-19T13:39:06Z",
-    "defaultRoundIndex": 7,
-    "defaultRoundNumber": 8,
-    "lastUpdatedAt": "2026-05-19T13:39:06Z",
+    "generatedAt": "2026-05-26T14:41:08Z",
+    "lastAttemptAt": "2026-05-26T14:40:52Z",
+    "lastSuccessAt": "2026-05-19T13:38:51Z",
+    "lastChangedAt": "2026-05-19T13:38:51Z",
+    "lastPublishedAt": "2026-05-26T14:41:08Z",
+    "defaultRoundIndex": 8,
+    "defaultRoundNumber": 9,
+    "lastUpdatedAt": "2026-05-26T14:41:08Z",
     "sourceHealth": {
         "status": "ok",
         "fallbackReuseCount": 0,
@@ -18,14 +18,14 @@
         "matchCount": 30,
         "classificationCount": 60,
         "teamCount": 6,
-        "completedMatchCount": 24,
-        "matchesWithoutScore": 6,
-        "pastMatchCount": 24,
+        "completedMatchCount": 27,
+        "matchesWithoutScore": 3,
+        "pastMatchCount": 27,
         "pastMatchesWithoutScore": 0,
-        "futureMatchCount": 6,
+        "futureMatchCount": 3,
         "roundsWithMatches": 10,
         "roundsWithClassification": 10,
-        "roundsWithCompletedMatches": 8,
+        "roundsWithCompletedMatches": 9,
         "roundsWithoutData": 0
     },
     "rounds": [
@@ -33,19 +33,6 @@
             "index": 1,
             "fixtureId": "645292",
             "matches": [
-                {
-                    "home": "Louletano Dc",
-                    "away": "Cd Odiáxere",
-                    "date": "1 - 3                            \r\n                \r\n                    21 mar",
-                    "time": "",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
-                    "homeScore": 1,
-                    "awayScore": 3,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": null,
-                    "changeFlags": []
-                },
                 {
                     "home": "Clube U Culatrense",
                     "away": "Ud Messinense",
@@ -67,6 +54,19 @@
                     "stadium": "Estádio Municipal Armação De Pêra",
                     "homeScore": 2,
                     "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": null,
+                    "changeFlags": []
+                },
+                {
+                    "home": "Louletano Dc",
+                    "away": "Cd Odiáxere",
+                    "date": "1 - 3                            \r\n                \r\n                    21 mar",
+                    "time": "",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "homeScore": 1,
+                    "awayScore": 3,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": null,
@@ -141,8 +141,8 @@
                     "points": 16
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:38:52Z",
-            "lastSuccessAt": "2026-05-19T13:38:52Z",
+            "lastAttemptAt": "2026-05-26T14:40:54Z",
+            "lastSuccessAt": "2026-05-26T14:40:54Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -259,8 +259,8 @@
                     "points": 17
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:38:53Z",
-            "lastSuccessAt": "2026-05-19T13:38:53Z",
+            "lastAttemptAt": "2026-05-26T14:40:56Z",
+            "lastSuccessAt": "2026-05-26T14:40:56Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -377,8 +377,8 @@
                     "points": 17
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:38:54Z",
-            "lastSuccessAt": "2026-05-19T13:38:54Z",
+            "lastAttemptAt": "2026-05-26T14:40:57Z",
+            "lastSuccessAt": "2026-05-26T14:40:57Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -388,11 +388,11 @@
             "fixtureId": "645295",
             "matches": [
                 {
-                    "home": "Louletano Dc",
-                    "away": "Cf Os Armacenenses",
+                    "home": "Ud Messinense",
+                    "away": "Fc Os 11 Esperanças",
                     "date": "0 - 2                            \r\n                \r\n                    18 abr",
                     "time": "",
-                    "stadium": "Campo Municipal Nº 2 De Loule",
+                    "stadium": "Estádio Municipal Messines",
                     "homeScore": 0,
                     "awayScore": 2,
                     "scoreSource": "fpf",
@@ -414,11 +414,11 @@
                     "changeFlags": []
                 },
                 {
-                    "home": "Ud Messinense",
-                    "away": "Fc Os 11 Esperanças",
+                    "home": "Louletano Dc",
+                    "away": "Cf Os Armacenenses",
                     "date": "0 - 2                            \r\n                \r\n                    18 abr",
                     "time": "",
-                    "stadium": "Estádio Municipal Messines",
+                    "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": 0,
                     "awayScore": 2,
                     "scoreSource": "fpf",
@@ -495,8 +495,8 @@
                     "points": 17
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:38:56Z",
-            "lastSuccessAt": "2026-05-19T13:38:56Z",
+            "lastAttemptAt": "2026-05-26T14:40:58Z",
+            "lastSuccessAt": "2026-05-26T14:40:58Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -613,8 +613,8 @@
                     "points": 17
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:38:58Z",
-            "lastSuccessAt": "2026-05-19T13:38:58Z",
+            "lastAttemptAt": "2026-05-26T14:41:00Z",
+            "lastSuccessAt": "2026-05-26T14:41:00Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -624,13 +624,13 @@
             "fixtureId": "645297",
             "matches": [
                 {
-                    "home": "Fc Os 11 Esperanças",
-                    "away": "Cf Os Armacenenses",
-                    "date": "1 - 0                            \r\n                \r\n                    2 mai",
+                    "home": "Cd Odiáxere",
+                    "away": "Louletano Dc",
+                    "date": "0 - 2                            \r\n                \r\n                    2 mai",
                     "time": "",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": 1,
-                    "awayScore": 0,
+                    "stadium": "Campo Eiras",
+                    "homeScore": 0,
+                    "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": null,
@@ -650,13 +650,13 @@
                     "changeFlags": []
                 },
                 {
-                    "home": "Cd Odiáxere",
-                    "away": "Louletano Dc",
-                    "date": "0 - 2                            \r\n                \r\n                    2 mai",
+                    "home": "Fc Os 11 Esperanças",
+                    "away": "Cf Os Armacenenses",
+                    "date": "1 - 0                            \r\n                \r\n                    2 mai",
                     "time": "",
-                    "stadium": "Campo Eiras",
-                    "homeScore": 0,
-                    "awayScore": 2,
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": 1,
+                    "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": null,
@@ -731,8 +731,8 @@
                     "points": 18
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:38:59Z",
-            "lastSuccessAt": "2026-05-19T13:38:59Z",
+            "lastAttemptAt": "2026-05-26T14:41:01Z",
+            "lastSuccessAt": "2026-05-26T14:41:01Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -849,8 +849,8 @@
                     "points": 18
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:39:00Z",
-            "lastSuccessAt": "2026-05-19T13:39:00Z",
+            "lastAttemptAt": "2026-05-26T14:41:02Z",
+            "lastSuccessAt": "2026-05-26T14:41:02Z",
             "lastChangedAt": null,
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -896,11 +896,7 @@
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
                     "lastChangedAt": "2026-05-19T13:39:02Z",
-                    "changeFlags": [
-                        "score_changed",
-                        "date_changed",
-                        "time_changed"
-                    ]
+                    "changeFlags": []
                 }
             ],
             "classification": [
@@ -971,8 +967,8 @@
                     "points": 19
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:39:02Z",
-            "lastSuccessAt": "2026-05-19T13:39:02Z",
+            "lastAttemptAt": "2026-05-26T14:41:04Z",
+            "lastSuccessAt": "2026-05-26T14:41:04Z",
             "lastChangedAt": "2026-05-19T13:39:02Z",
             "sourceStatus": "ok",
             "sourceIssue": null
@@ -984,114 +980,126 @@
                 {
                     "home": "Cd Odiáxere",
                     "away": "Clube U Culatrense",
-                    "date": "23 mai",
-                    "time": "16:00",
+                    "date": "5 - 2                            \r\n                \r\n                    23 mai",
+                    "time": "",
                     "stadium": "Campo Eiras",
-                    "homeScore": null,
-                    "awayScore": null,
-                    "scoreSource": null,
+                    "homeScore": 5,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:39:03Z",
-                    "changeFlags": []
+                    "lastChangedAt": "2026-05-26T14:41:05Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Cf Os Armacenenses",
                     "away": "Louletano Dc",
-                    "date": "23 mai",
-                    "time": "17:00",
+                    "date": "2 - 0                            \r\n                \r\n                    23 mai",
+                    "time": "",
                     "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": null,
-                    "awayScore": null,
-                    "scoreSource": null,
+                    "homeScore": 2,
+                    "awayScore": 0,
+                    "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:39:03Z",
-                    "changeFlags": []
+                    "lastChangedAt": "2026-05-26T14:41:05Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Fc Os 11 Esperanças",
                     "away": "Ud Messinense",
-                    "date": "23 mai",
-                    "time": "17:00",
+                    "date": "3 - 3                            \r\n                \r\n                    23 mai",
+                    "time": "",
                     "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": null,
-                    "awayScore": null,
-                    "scoreSource": null,
+                    "homeScore": 3,
+                    "awayScore": 3,
+                    "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:39:03Z",
-                    "changeFlags": []
+                    "lastChangedAt": "2026-05-26T14:41:05Z",
+                    "changeFlags": [
+                        "score_changed",
+                        "date_changed",
+                        "time_changed"
+                    ]
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Cd Odiáxere",
-                    "played": 8,
-                    "wins": 6,
+                    "played": 9,
+                    "wins": 7,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 23,
-                    "goalsAgainst": 14,
-                    "points": 41
+                    "goalsFor": 28,
+                    "goalsAgainst": 16,
+                    "points": 44
                 },
                 {
                     "position": 2,
                     "team": "Cf Os Armacenenses",
-                    "played": 8,
-                    "wins": 4,
+                    "played": 9,
+                    "wins": 5,
                     "draws": 2,
                     "losses": 2,
-                    "goalsFor": 10,
+                    "goalsFor": 12,
                     "goalsAgainst": 10,
-                    "points": 36
+                    "points": 39
                 },
                 {
                     "position": 3,
                     "team": "Louletano Dc",
-                    "played": 8,
+                    "played": 9,
                     "wins": 2,
                     "draws": 2,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 11,
-                    "goalsAgainst": 12,
+                    "goalsAgainst": 14,
                     "points": 35
                 },
                 {
                     "position": 4,
                     "team": "Fc Os 11 Esperanças",
-                    "played": 8,
+                    "played": 9,
                     "wins": 4,
-                    "draws": 2,
+                    "draws": 3,
                     "losses": 2,
-                    "goalsFor": 14,
-                    "goalsAgainst": 12,
-                    "points": 29
+                    "goalsFor": 17,
+                    "goalsAgainst": 15,
+                    "points": 30
                 },
                 {
                     "position": 5,
                     "team": "Ud Messinense",
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
-                    "draws": 4,
+                    "draws": 5,
                     "losses": 3,
-                    "goalsFor": 11,
-                    "goalsAgainst": 15,
-                    "points": 27
+                    "goalsFor": 14,
+                    "goalsAgainst": 18,
+                    "points": 28
                 },
                 {
                     "position": 6,
                     "team": "Clube U Culatrense",
-                    "played": 8,
+                    "played": 9,
                     "wins": 0,
                     "draws": 4,
-                    "losses": 4,
-                    "goalsFor": 11,
-                    "goalsAgainst": 17,
+                    "losses": 5,
+                    "goalsFor": 13,
+                    "goalsAgainst": 22,
                     "points": 19
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:39:03Z",
-            "lastSuccessAt": "2026-05-19T13:39:03Z",
-            "lastChangedAt": "2026-05-19T13:39:03Z",
+            "lastAttemptAt": "2026-05-26T14:41:05Z",
+            "lastSuccessAt": "2026-05-26T14:41:05Z",
+            "lastChangedAt": "2026-05-26T14:41:05Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -1102,114 +1110,123 @@
                 {
                     "home": "Louletano Dc",
                     "away": "Fc Os 11 Esperanças",
-                    "date": "30 mai",
-                    "time": "17:00",
+                    "date": "28 mai",
+                    "time": "21:00",
                     "stadium": "Campo Municipal Nº 2 De Loule",
                     "homeScore": null,
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:39:04Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Clube U Culatrense",
-                    "away": "Cf Os Armacenenses",
-                    "date": "30 mai",
-                    "time": "17:00",
-                    "stadium": "Campo Horta Da Areia",
-                    "homeScore": null,
-                    "awayScore": null,
-                    "scoreSource": null,
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:39:04Z",
-                    "changeFlags": []
+                    "lastChangedAt": "2026-05-26T14:41:07Z",
+                    "changeFlags": [
+                        "date_changed",
+                        "time_changed"
+                    ]
                 },
                 {
                     "home": "Ud Messinense",
                     "away": "Cd Odiáxere",
-                    "date": "30 mai",
-                    "time": "17:00",
+                    "date": "29 mai",
+                    "time": "20:30",
                     "stadium": "Estádio Municipal Messines",
                     "homeScore": null,
                     "awayScore": null,
                     "scoreSource": null,
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:39:04Z",
-                    "changeFlags": []
+                    "lastChangedAt": "2026-05-26T14:41:07Z",
+                    "changeFlags": [
+                        "date_changed",
+                        "time_changed"
+                    ]
+                },
+                {
+                    "home": "Clube U Culatrense",
+                    "away": "Cf Os Armacenenses",
+                    "date": "29 mai",
+                    "time": "20:30",
+                    "stadium": "Campo Horta Da Areia",
+                    "homeScore": null,
+                    "awayScore": null,
+                    "scoreSource": null,
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:41:07Z",
+                    "changeFlags": [
+                        "date_changed",
+                        "time_changed"
+                    ]
                 }
             ],
             "classification": [
                 {
                     "position": 1,
                     "team": "Cd Odiáxere",
-                    "played": 8,
-                    "wins": 6,
+                    "played": 9,
+                    "wins": 7,
                     "draws": 0,
                     "losses": 2,
-                    "goalsFor": 23,
-                    "goalsAgainst": 14,
-                    "points": 41
+                    "goalsFor": 28,
+                    "goalsAgainst": 16,
+                    "points": 44
                 },
                 {
                     "position": 2,
                     "team": "Cf Os Armacenenses",
-                    "played": 8,
-                    "wins": 4,
+                    "played": 9,
+                    "wins": 5,
                     "draws": 2,
                     "losses": 2,
-                    "goalsFor": 10,
+                    "goalsFor": 12,
                     "goalsAgainst": 10,
-                    "points": 36
+                    "points": 39
                 },
                 {
                     "position": 3,
                     "team": "Louletano Dc",
-                    "played": 8,
+                    "played": 9,
                     "wins": 2,
                     "draws": 2,
-                    "losses": 4,
+                    "losses": 5,
                     "goalsFor": 11,
-                    "goalsAgainst": 12,
+                    "goalsAgainst": 14,
                     "points": 35
                 },
                 {
                     "position": 4,
                     "team": "Fc Os 11 Esperanças",
-                    "played": 8,
+                    "played": 9,
                     "wins": 4,
-                    "draws": 2,
+                    "draws": 3,
                     "losses": 2,
-                    "goalsFor": 14,
-                    "goalsAgainst": 12,
-                    "points": 29
+                    "goalsFor": 17,
+                    "goalsAgainst": 15,
+                    "points": 30
                 },
                 {
                     "position": 5,
                     "team": "Ud Messinense",
-                    "played": 8,
+                    "played": 9,
                     "wins": 1,
-                    "draws": 4,
+                    "draws": 5,
                     "losses": 3,
-                    "goalsFor": 11,
-                    "goalsAgainst": 15,
-                    "points": 27
+                    "goalsFor": 14,
+                    "goalsAgainst": 18,
+                    "points": 28
                 },
                 {
                     "position": 6,
                     "team": "Clube U Culatrense",
-                    "played": 8,
+                    "played": 9,
                     "wins": 0,
                     "draws": 4,
-                    "losses": 4,
-                    "goalsFor": 11,
-                    "goalsAgainst": 17,
+                    "losses": 5,
+                    "goalsFor": 13,
+                    "goalsAgainst": 22,
                     "points": 19
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:39:04Z",
-            "lastSuccessAt": "2026-05-19T13:39:04Z",
-            "lastChangedAt": "2026-05-19T13:39:04Z",
+            "lastAttemptAt": "2026-05-26T14:41:07Z",
+            "lastSuccessAt": "2026-05-26T14:41:07Z",
+            "lastChangedAt": "2026-05-26T14:41:07Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         }
