@@ -1,17 +1,22 @@
 {
     "schemaVersion": 2,
-    "generatedAt": "2026-05-19T13:58:20Z",
-    "lastAttemptAt": "2026-05-19T13:57:31Z",
-    "lastSuccessAt": null,
-    "lastChangedAt": null,
-    "lastPublishedAt": "2026-05-19T13:58:20Z",
-    "defaultRoundIndex": 15,
-    "defaultRoundNumber": 16,
-    "lastUpdatedAt": "2026-05-19T13:58:20Z",
+    "generatedAt": "2026-05-26T15:08:28Z",
+    "lastAttemptAt": "2026-05-26T14:59:49Z",
+    "lastSuccessAt": "2026-05-19T13:57:31Z",
+    "lastChangedAt": "2026-05-19T13:57:31Z",
+    "lastPublishedAt": "2026-05-26T15:08:28Z",
+    "defaultRoundIndex": 16,
+    "defaultRoundNumber": 17,
+    "lastUpdatedAt": "2026-05-26T15:08:28Z",
     "sourceHealth": {
-        "status": "partial",
-        "fallbackReuseCount": 0,
-        "issues": []
+        "status": "degraded",
+        "fallbackReuseCount": 4,
+        "issues": [
+            "fixture 635389: fallback to existing round",
+            "fixture 635391: fallback to existing round",
+            "fixture 635394: fallback to existing round",
+            "fixture 635397: fallback to existing round"
+        ]
     },
     "dataQuality": {
         "roundCount": 18,
@@ -20,9 +25,9 @@
         "teamCount": 10,
         "completedMatchCount": 79,
         "matchesWithoutScore": 11,
-        "pastMatchCount": 80,
-        "pastMatchesWithoutScore": 1,
-        "futureMatchCount": 10,
+        "pastMatchCount": 85,
+        "pastMatchesWithoutScore": 6,
+        "futureMatchCount": 5,
         "roundsWithMatches": 18,
         "roundsWithClassification": 18,
         "roundsWithCompletedMatches": 16,
@@ -43,7 +48,7 @@
                     "awayScore": 6,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:32Z",
+                    "lastChangedAt": "2026-05-26T14:59:51Z",
                     "changeFlags": []
                 },
                 {
@@ -56,20 +61,7 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:32Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Associacao Fut. F.O.",
-                    "date": "24 jan",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 5,
-                    "awayScore": 2,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:32Z",
+                    "lastChangedAt": "2026-05-26T14:59:51Z",
                     "changeFlags": []
                 },
                 {
@@ -82,7 +74,20 @@
                     "awayScore": 6,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:32Z",
+                    "lastChangedAt": "2026-05-26T14:59:51Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Associacao Fut. F.O.",
+                    "date": "24 jan",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 5,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:59:51Z",
                     "changeFlags": []
                 },
                 {
@@ -95,7 +100,7 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:32Z",
+                    "lastChangedAt": "2026-05-26T14:59:51Z",
                     "changeFlags": []
                 }
             ],
@@ -211,9 +216,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:57:32Z",
-            "lastSuccessAt": "2026-05-19T13:57:32Z",
-            "lastChangedAt": "2026-05-19T13:57:32Z",
+            "lastAttemptAt": "2026-05-26T14:59:51Z",
+            "lastSuccessAt": "2026-05-26T14:59:51Z",
+            "lastChangedAt": "2026-05-26T14:59:51Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -231,7 +236,7 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:36Z",
+                    "lastChangedAt": "2026-05-26T14:59:53Z",
                     "changeFlags": []
                 },
                 {
@@ -244,7 +249,7 @@
                     "awayScore": 5,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:36Z",
+                    "lastChangedAt": "2026-05-26T14:59:53Z",
                     "changeFlags": []
                 },
                 {
@@ -257,20 +262,7 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:36Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Fc Ferreiras",
-                    "away": "Imortal Dc",
-                    "date": "31 jan",
-                    "time": "",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": 0,
-                    "awayScore": 6,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:36Z",
+                    "lastChangedAt": "2026-05-26T14:59:53Z",
                     "changeFlags": []
                 },
                 {
@@ -283,7 +275,20 @@
                     "awayScore": 5,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:36Z",
+                    "lastChangedAt": "2026-05-26T14:59:53Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Imortal Dc",
+                    "date": "31 jan",
+                    "time": "",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": 0,
+                    "awayScore": 6,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:59:53Z",
                     "changeFlags": []
                 }
             ],
@@ -399,9 +404,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:57:36Z",
-            "lastSuccessAt": "2026-05-19T13:57:36Z",
-            "lastChangedAt": "2026-05-19T13:57:36Z",
+            "lastAttemptAt": "2026-05-26T14:59:53Z",
+            "lastSuccessAt": "2026-05-26T14:59:53Z",
+            "lastChangedAt": "2026-05-26T14:59:53Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -419,46 +424,7 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:39Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Lusitano Fc Vrsa",
-                    "date": "17 fev",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 1,
-                    "awayScore": 4,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:39Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Internacional Ca",
-                    "away": "Imortal Dc",
-                    "date": "17 fev",
-                    "time": "",
-                    "stadium": "Estadio Municipal De Almancil",
-                    "homeScore": 7,
-                    "awayScore": 2,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:39Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Ad Geração Génios",
-                    "away": "Fc Ferreiras",
-                    "date": "17 fev",
-                    "time": "",
-                    "stadium": "Campo Complexo Desportivo Penha",
-                    "homeScore": 4,
-                    "awayScore": 2,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:39Z",
+                    "lastChangedAt": "2026-05-26T14:59:54Z",
                     "changeFlags": []
                 },
                 {
@@ -471,7 +437,46 @@
                     "awayScore": 6,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:39Z",
+                    "lastChangedAt": "2026-05-26T14:59:54Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Ad Geração Génios",
+                    "away": "Fc Ferreiras",
+                    "date": "17 fev",
+                    "time": "",
+                    "stadium": "Campo Complexo Desportivo Penha",
+                    "homeScore": 4,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:59:54Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Lusitano Fc Vrsa",
+                    "date": "17 fev",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 1,
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:59:54Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Internacional Ca",
+                    "away": "Imortal Dc",
+                    "date": "17 fev",
+                    "time": "",
+                    "stadium": "Estadio Municipal De Almancil",
+                    "homeScore": 7,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:59:54Z",
                     "changeFlags": []
                 }
             ],
@@ -587,9 +592,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:57:39Z",
-            "lastSuccessAt": "2026-05-19T13:57:39Z",
-            "lastChangedAt": "2026-05-19T13:57:39Z",
+            "lastAttemptAt": "2026-05-26T14:59:54Z",
+            "lastSuccessAt": "2026-05-26T14:59:54Z",
+            "lastChangedAt": "2026-05-26T14:59:54Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -607,20 +612,7 @@
                     "awayScore": 3,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:43Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Lusitano Fc Vrsa",
-                    "away": "Associacao Fut. F.O.",
-                    "date": "14 fev",
-                    "time": "",
-                    "stadium": "Campo Francisco Gomes Socorro",
-                    "homeScore": 6,
-                    "awayScore": 1,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:43Z",
+                    "lastChangedAt": "2026-05-26T14:59:55Z",
                     "changeFlags": []
                 },
                 {
@@ -633,7 +625,20 @@
                     "awayScore": 7,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:43Z",
+                    "lastChangedAt": "2026-05-26T14:59:55Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Lusitano Fc Vrsa",
+                    "away": "Associacao Fut. F.O.",
+                    "date": "14 fev",
+                    "time": "",
+                    "stadium": "Campo Francisco Gomes Socorro",
+                    "homeScore": 6,
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T14:59:55Z",
                     "changeFlags": []
                 },
                 {
@@ -646,7 +651,7 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:43Z",
+                    "lastChangedAt": "2026-05-26T14:59:55Z",
                     "changeFlags": []
                 },
                 {
@@ -659,7 +664,7 @@
                     "awayScore": 3,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:43Z",
+                    "lastChangedAt": "2026-05-26T14:59:55Z",
                     "changeFlags": []
                 }
             ],
@@ -775,9 +780,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:57:43Z",
-            "lastSuccessAt": "2026-05-19T13:57:43Z",
-            "lastChangedAt": "2026-05-19T13:57:43Z",
+            "lastAttemptAt": "2026-05-26T14:59:55Z",
+            "lastSuccessAt": "2026-05-26T14:59:55Z",
+            "lastChangedAt": "2026-05-26T14:59:55Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -795,7 +800,7 @@
                     "awayScore": 6,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:45Z",
+                    "lastChangedAt": "2026-05-26T14:59:57Z",
                     "changeFlags": []
                 },
                 {
@@ -808,7 +813,7 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:45Z",
+                    "lastChangedAt": "2026-05-26T14:59:57Z",
                     "changeFlags": []
                 },
                 {
@@ -821,7 +826,7 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:45Z",
+                    "lastChangedAt": "2026-05-26T14:59:57Z",
                     "changeFlags": []
                 },
                 {
@@ -834,7 +839,7 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:45Z",
+                    "lastChangedAt": "2026-05-26T14:59:57Z",
                     "changeFlags": []
                 },
                 {
@@ -847,7 +852,7 @@
                     "awayScore": 9,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:45Z",
+                    "lastChangedAt": "2026-05-26T14:59:57Z",
                     "changeFlags": []
                 }
             ],
@@ -963,9 +968,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:57:45Z",
-            "lastSuccessAt": "2026-05-19T13:57:45Z",
-            "lastChangedAt": "2026-05-19T13:57:45Z",
+            "lastAttemptAt": "2026-05-26T14:59:57Z",
+            "lastSuccessAt": "2026-05-26T14:59:57Z",
+            "lastChangedAt": "2026-05-26T14:59:57Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -983,7 +988,7 @@
                     "awayScore": 5,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:46Z",
+                    "lastChangedAt": "2026-05-26T14:59:58Z",
                     "changeFlags": []
                 },
                 {
@@ -996,7 +1001,7 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:46Z",
+                    "lastChangedAt": "2026-05-26T14:59:58Z",
                     "changeFlags": []
                 },
                 {
@@ -1009,7 +1014,7 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:46Z",
+                    "lastChangedAt": "2026-05-26T14:59:58Z",
                     "changeFlags": []
                 },
                 {
@@ -1022,7 +1027,7 @@
                     "awayScore": 7,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:46Z",
+                    "lastChangedAt": "2026-05-26T14:59:58Z",
                     "changeFlags": []
                 },
                 {
@@ -1035,7 +1040,7 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:46Z",
+                    "lastChangedAt": "2026-05-26T14:59:58Z",
                     "changeFlags": []
                 }
             ],
@@ -1151,9 +1156,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:57:46Z",
-            "lastSuccessAt": "2026-05-19T13:57:46Z",
-            "lastChangedAt": "2026-05-19T13:57:46Z",
+            "lastAttemptAt": "2026-05-26T14:59:58Z",
+            "lastSuccessAt": "2026-05-26T14:59:58Z",
+            "lastChangedAt": "2026-05-26T14:59:58Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -1171,7 +1176,7 @@
                     "awayScore": 7,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:48Z",
+                    "lastChangedAt": "2026-05-26T15:00:00Z",
                     "changeFlags": []
                 },
                 {
@@ -1184,20 +1189,7 @@
                     "awayScore": 9,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:48Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Cd Odiáxere",
-                    "away": "Fc Ferreiras",
-                    "date": "7 mar",
-                    "time": "",
-                    "stadium": "Campo Eiras",
-                    "homeScore": 1,
-                    "awayScore": 10,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:48Z",
+                    "lastChangedAt": "2026-05-26T15:00:00Z",
                     "changeFlags": []
                 },
                 {
@@ -1210,7 +1202,20 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:48Z",
+                    "lastChangedAt": "2026-05-26T15:00:00Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cd Odiáxere",
+                    "away": "Fc Ferreiras",
+                    "date": "7 mar",
+                    "time": "",
+                    "stadium": "Campo Eiras",
+                    "homeScore": 1,
+                    "awayScore": 10,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T15:00:00Z",
                     "changeFlags": []
                 },
                 {
@@ -1223,7 +1228,7 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:48Z",
+                    "lastChangedAt": "2026-05-26T15:00:00Z",
                     "changeFlags": []
                 }
             ],
@@ -1339,9 +1344,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:57:48Z",
-            "lastSuccessAt": "2026-05-19T13:57:48Z",
-            "lastChangedAt": "2026-05-19T13:57:48Z",
+            "lastAttemptAt": "2026-05-26T15:00:00Z",
+            "lastSuccessAt": "2026-05-26T15:00:00Z",
+            "lastChangedAt": "2026-05-26T15:00:00Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -1359,7 +1364,7 @@
                     "awayScore": 9,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:49Z",
+                    "lastChangedAt": "2026-05-26T15:00:01Z",
                     "changeFlags": []
                 },
                 {
@@ -1372,7 +1377,7 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:49Z",
+                    "lastChangedAt": "2026-05-26T15:00:01Z",
                     "changeFlags": []
                 },
                 {
@@ -1385,20 +1390,7 @@
                     "awayScore": 3,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:49Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Fc Ferreiras",
-                    "away": "Lusitano Fc Vrsa",
-                    "date": "14 mar",
-                    "time": "",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": 2,
-                    "awayScore": 8,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:49Z",
+                    "lastChangedAt": "2026-05-26T15:00:01Z",
                     "changeFlags": []
                 },
                 {
@@ -1411,7 +1403,20 @@
                     "awayScore": 0,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:49Z",
+                    "lastChangedAt": "2026-05-26T15:00:01Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Lusitano Fc Vrsa",
+                    "date": "14 mar",
+                    "time": "",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": 2,
+                    "awayScore": 8,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T15:00:01Z",
                     "changeFlags": []
                 }
             ],
@@ -1527,9 +1532,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:57:49Z",
-            "lastSuccessAt": "2026-05-19T13:57:49Z",
-            "lastChangedAt": "2026-05-19T13:57:49Z",
+            "lastAttemptAt": "2026-05-26T15:00:01Z",
+            "lastSuccessAt": "2026-05-26T15:00:01Z",
+            "lastChangedAt": "2026-05-26T15:00:01Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -1537,19 +1542,6 @@
             "index": 9,
             "fixtureId": "635377",
             "matches": [
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Internacional Ca",
-                    "date": "21 mar",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 2,
-                    "awayScore": 3,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:50Z",
-                    "changeFlags": []
-                },
                 {
                     "home": "Cd Odiáxere",
                     "away": "Ad Geração Génios",
@@ -1560,20 +1552,20 @@
                     "awayScore": 3,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:50Z",
+                    "lastChangedAt": "2026-05-26T15:00:03Z",
                     "changeFlags": []
                 },
                 {
-                    "home": "Lusitano Fc Vrsa",
-                    "away": "Imortal Dc",
+                    "home": "Cf Os Armacenenses",
+                    "away": "Internacional Ca",
                     "date": "21 mar",
                     "time": "",
-                    "stadium": "Campo Francisco Gomes Socorro",
-                    "homeScore": 1,
-                    "awayScore": 1,
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 2,
+                    "awayScore": 3,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:50Z",
+                    "lastChangedAt": "2026-05-26T15:00:03Z",
                     "changeFlags": []
                 },
                 {
@@ -1586,7 +1578,20 @@
                     "awayScore": 9,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:50Z",
+                    "lastChangedAt": "2026-05-26T15:00:03Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Lusitano Fc Vrsa",
+                    "away": "Imortal Dc",
+                    "date": "21 mar",
+                    "time": "",
+                    "stadium": "Campo Francisco Gomes Socorro",
+                    "homeScore": 1,
+                    "awayScore": 1,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T15:00:03Z",
                     "changeFlags": []
                 },
                 {
@@ -1599,7 +1604,7 @@
                     "awayScore": 4,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:50Z",
+                    "lastChangedAt": "2026-05-26T15:00:03Z",
                     "changeFlags": []
                 }
             ],
@@ -1715,9 +1720,9 @@
                     "points": 0
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:57:50Z",
-            "lastSuccessAt": "2026-05-19T13:57:50Z",
-            "lastChangedAt": "2026-05-19T13:57:50Z",
+            "lastAttemptAt": "2026-05-26T15:00:03Z",
+            "lastSuccessAt": "2026-05-26T15:00:03Z",
+            "lastChangedAt": "2026-05-26T15:00:03Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -1735,20 +1740,7 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:52Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Lusitano Fc Vrsa",
-                    "away": "Ad Geração Génios",
-                    "date": "28 mar",
-                    "time": "",
-                    "stadium": "Campo Francisco Gomes Socorro",
-                    "homeScore": 7,
-                    "awayScore": 4,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:52Z",
+                    "lastChangedAt": "2026-05-26T15:00:04Z",
                     "changeFlags": []
                 },
                 {
@@ -1761,7 +1753,20 @@
                     "awayScore": 6,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:52Z",
+                    "lastChangedAt": "2026-05-26T15:00:04Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Lusitano Fc Vrsa",
+                    "away": "Ad Geração Génios",
+                    "date": "28 mar",
+                    "time": "",
+                    "stadium": "Campo Francisco Gomes Socorro",
+                    "homeScore": 7,
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T15:00:04Z",
                     "changeFlags": []
                 },
                 {
@@ -1774,7 +1779,7 @@
                     "awayScore": 3,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:52Z",
+                    "lastChangedAt": "2026-05-26T15:00:04Z",
                     "changeFlags": []
                 },
                 {
@@ -1787,7 +1792,7 @@
                     "awayScore": 2,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:52Z",
+                    "lastChangedAt": "2026-05-26T15:00:04Z",
                     "changeFlags": []
                 }
             ],
@@ -1903,9 +1908,9 @@
                     "points": 3
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:57:52Z",
-            "lastSuccessAt": "2026-05-19T13:57:52Z",
-            "lastChangedAt": "2026-05-19T13:57:52Z",
+            "lastAttemptAt": "2026-05-26T15:00:04Z",
+            "lastSuccessAt": "2026-05-26T15:00:04Z",
+            "lastChangedAt": "2026-05-26T15:00:04Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -1913,19 +1918,6 @@
             "index": 11,
             "fixtureId": "635380",
             "matches": [
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Cd Odiáxere",
-                    "date": "11 abr",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 7,
-                    "awayScore": 4,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:54Z",
-                    "changeFlags": []
-                },
                 {
                     "home": "Ad Geração Génios",
                     "away": "Silves Fc",
@@ -1936,7 +1928,20 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:54Z",
+                    "lastChangedAt": "2026-05-26T15:00:06Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Cd Odiáxere",
+                    "date": "11 abr",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 7,
+                    "awayScore": 4,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T15:00:06Z",
                     "changeFlags": []
                 },
                 {
@@ -1949,7 +1954,7 @@
                     "awayScore": 5,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:54Z",
+                    "lastChangedAt": "2026-05-26T15:00:06Z",
                     "changeFlags": []
                 },
                 {
@@ -1962,7 +1967,7 @@
                     "awayScore": 10,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:54Z",
+                    "lastChangedAt": "2026-05-26T15:00:06Z",
                     "changeFlags": []
                 },
                 {
@@ -1975,7 +1980,7 @@
                     "awayScore": 3,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:54Z",
+                    "lastChangedAt": "2026-05-26T15:00:06Z",
                     "changeFlags": []
                 }
             ],
@@ -2091,9 +2096,9 @@
                     "points": 3
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:57:54Z",
-            "lastSuccessAt": "2026-05-19T13:57:54Z",
-            "lastChangedAt": "2026-05-19T13:57:54Z",
+            "lastAttemptAt": "2026-05-26T15:00:06Z",
+            "lastSuccessAt": "2026-05-26T15:00:06Z",
+            "lastChangedAt": "2026-05-26T15:00:06Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -2111,20 +2116,7 @@
                     "awayScore": 5,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:56Z",
-                    "changeFlags": []
-                },
-                {
-                    "home": "Fc Ferreiras",
-                    "away": "Ad Geração Génios",
-                    "date": "18 abr",
-                    "time": "",
-                    "stadium": "Estádio Nora Nº 2",
-                    "homeScore": 1,
-                    "awayScore": 8,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:56Z",
+                    "lastChangedAt": "2026-05-26T15:00:08Z",
                     "changeFlags": []
                 },
                 {
@@ -2137,7 +2129,20 @@
                     "awayScore": 8,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:56Z",
+                    "lastChangedAt": "2026-05-26T15:00:08Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Fc Ferreiras",
+                    "away": "Ad Geração Génios",
+                    "date": "18 abr",
+                    "time": "",
+                    "stadium": "Estádio Nora Nº 2",
+                    "homeScore": 1,
+                    "awayScore": 8,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T15:00:08Z",
                     "changeFlags": []
                 },
                 {
@@ -2150,7 +2155,7 @@
                     "awayScore": 6,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:56Z",
+                    "lastChangedAt": "2026-05-26T15:00:08Z",
                     "changeFlags": []
                 },
                 {
@@ -2163,7 +2168,7 @@
                     "awayScore": 8,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:57:56Z",
+                    "lastChangedAt": "2026-05-26T15:00:08Z",
                     "changeFlags": []
                 }
             ],
@@ -2279,9 +2284,9 @@
                     "points": 6
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:57:56Z",
-            "lastSuccessAt": "2026-05-19T13:57:56Z",
-            "lastChangedAt": "2026-05-19T13:57:56Z",
+            "lastAttemptAt": "2026-05-26T15:00:08Z",
+            "lastSuccessAt": "2026-05-26T15:00:08Z",
+            "lastChangedAt": "2026-05-26T15:00:08Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -2289,19 +2294,6 @@
             "index": 13,
             "fixtureId": "635384",
             "matches": [
-                {
-                    "home": "Cf Os Armacenenses",
-                    "away": "Silves Fc",
-                    "date": "25 abr",
-                    "time": "",
-                    "stadium": "Estádio Municipal Armação De Pêra",
-                    "homeScore": 8,
-                    "awayScore": 2,
-                    "scoreSource": "fpf",
-                    "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:58:01Z",
-                    "changeFlags": []
-                },
                 {
                     "home": "Ad Geração Génios",
                     "away": "Imortal Dc",
@@ -2312,7 +2304,20 @@
                     "awayScore": 4,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:58:01Z",
+                    "lastChangedAt": "2026-05-26T15:00:09Z",
+                    "changeFlags": []
+                },
+                {
+                    "home": "Cf Os Armacenenses",
+                    "away": "Silves Fc",
+                    "date": "25 abr",
+                    "time": "",
+                    "stadium": "Estádio Municipal Armação De Pêra",
+                    "homeScore": 8,
+                    "awayScore": 2,
+                    "scoreSource": "fpf",
+                    "calendarSource": "fpf",
+                    "lastChangedAt": "2026-05-26T15:00:09Z",
                     "changeFlags": []
                 },
                 {
@@ -2325,7 +2330,7 @@
                     "awayScore": 8,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:58:01Z",
+                    "lastChangedAt": "2026-05-26T15:00:09Z",
                     "changeFlags": []
                 },
                 {
@@ -2338,7 +2343,7 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:58:01Z",
+                    "lastChangedAt": "2026-05-26T15:00:09Z",
                     "changeFlags": []
                 },
                 {
@@ -2351,7 +2356,7 @@
                     "awayScore": 4,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:58:01Z",
+                    "lastChangedAt": "2026-05-26T15:00:09Z",
                     "changeFlags": []
                 }
             ],
@@ -2467,9 +2472,9 @@
                     "points": 6
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:58:01Z",
-            "lastSuccessAt": "2026-05-19T13:58:01Z",
-            "lastChangedAt": "2026-05-19T13:58:01Z",
+            "lastAttemptAt": "2026-05-26T15:00:09Z",
+            "lastSuccessAt": "2026-05-26T15:00:09Z",
+            "lastChangedAt": "2026-05-26T15:00:09Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -2487,7 +2492,7 @@
                     "awayScore": 7,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:58:07Z",
+                    "lastChangedAt": "2026-05-26T15:00:11Z",
                     "changeFlags": []
                 },
                 {
@@ -2500,7 +2505,7 @@
                     "awayScore": 5,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:58:07Z",
+                    "lastChangedAt": "2026-05-26T15:00:11Z",
                     "changeFlags": []
                 },
                 {
@@ -2513,7 +2518,7 @@
                     "awayScore": 1,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:58:07Z",
+                    "lastChangedAt": "2026-05-26T15:00:11Z",
                     "changeFlags": []
                 },
                 {
@@ -2526,7 +2531,7 @@
                     "awayScore": 3,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:58:07Z",
+                    "lastChangedAt": "2026-05-26T15:00:11Z",
                     "changeFlags": []
                 },
                 {
@@ -2539,7 +2544,7 @@
                     "awayScore": 14,
                     "scoreSource": "fpf",
                     "calendarSource": "fpf",
-                    "lastChangedAt": "2026-05-19T13:58:07Z",
+                    "lastChangedAt": "2026-05-26T15:00:11Z",
                     "changeFlags": []
                 }
             ],
@@ -2655,9 +2660,9 @@
                     "points": 6
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:58:07Z",
-            "lastSuccessAt": "2026-05-19T13:58:07Z",
-            "lastChangedAt": "2026-05-19T13:58:07Z",
+            "lastAttemptAt": "2026-05-26T15:00:11Z",
+            "lastSuccessAt": "2026-05-26T15:00:11Z",
+            "lastChangedAt": "2026-05-26T15:00:11Z",
             "sourceStatus": "ok",
             "sourceIssue": null
         },
@@ -2849,11 +2854,11 @@
                     "points": 6
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:58:10Z",
+            "lastAttemptAt": "2026-05-26T15:00:12Z",
             "lastSuccessAt": "2026-05-19T13:58:10Z",
             "lastChangedAt": "2026-05-19T13:58:10Z",
-            "sourceStatus": "ok",
-            "sourceIssue": null
+            "sourceStatus": "fallback_reused",
+            "sourceIssue": "http_403"
         },
         {
             "index": 16,
@@ -3049,11 +3054,11 @@
                     "points": 9
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:58:12Z",
+            "lastAttemptAt": "2026-05-26T15:01:43Z",
             "lastSuccessAt": "2026-05-19T13:58:12Z",
             "lastChangedAt": "2026-05-19T13:58:12Z",
-            "sourceStatus": "ok",
-            "sourceIssue": null
+            "sourceStatus": "fallback_reused",
+            "sourceIssue": "http_403"
         },
         {
             "index": 17,
@@ -3237,11 +3242,11 @@
                     "points": 9
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:58:15Z",
+            "lastAttemptAt": "2026-05-26T15:03:58Z",
             "lastSuccessAt": "2026-05-19T13:58:15Z",
             "lastChangedAt": "2026-05-19T13:58:15Z",
-            "sourceStatus": "ok",
-            "sourceIssue": null
+            "sourceStatus": "fallback_reused",
+            "sourceIssue": "http_403"
         },
         {
             "index": 18,
@@ -3425,11 +3430,11 @@
                     "points": 9
                 }
             ],
-            "lastAttemptAt": "2026-05-19T13:58:19Z",
+            "lastAttemptAt": "2026-05-26T15:06:13Z",
             "lastSuccessAt": "2026-05-19T13:58:19Z",
             "lastChangedAt": "2026-05-19T13:58:19Z",
-            "sourceStatus": "ok",
-            "sourceIssue": null
+            "sourceStatus": "fallback_reused",
+            "sourceIssue": "http_403"
         }
     ]
 }
