@@ -1,34 +1,27 @@
 # Roadmap
 
-## Objetivos imediatos (0-1 mês)
+## Concluído
 
-- ✅ Corrigir o parser de classificação dos scrapers para garantir que todas as equipas aparecem nos JSON locais (resolvido em nov/2023).
-- ✅ Refatorizar cabeçalho das páginas de detalhe (CSS Grid) para suportar subtítulos de fases extensos (resolvido em jan/2025).
-- ✅ Atualizar scrapers para as novas fases das competições (Infantis, Femininos) (resolvido em jan/2025).
-- ✅ Consolidar um motor único de sincronização e configuração central por competição (`competition_sync.py` + `competition_configs.py`).
-- ✅ Adicionar validações automáticas, retries e relatório por fetcher através de `run_fetchers.py`.
-- ✅ Publicar metadata de sincronização nos JSON (`defaultRoundIndex`, `defaultRoundNumber`, `lastUpdatedAt`, `sourceHealth`).
-- ✅ Introduzir testes unitários e testes de regressão com snapshots reais da FPF.
-- ✅ Desligar scraping automático em GitHub-hosted runners e passar temporariamente para operação manual local.
-- Monitorizar e adaptar scrapers para futuras fases e competições (ex: Taças Nacionais, Fases de Manutenção).
-- Rever o manifesto de emblemas, garantindo que todos os clubes presentes nos JSON têm correspondência em `data/crests.json`.
+- eliminar fetchers, scraping, retries e workflows de sincronização;
+- substituir páginas individuais por um template genérico;
+- organizar os dados por época;
+- criar catálogo central de competições;
+- gerar lista principal, Agenda e diagnóstico diretamente dos JSON;
+- manter apenas o deploy estático no GitHub Pages.
 
-## Próximos passos (1-3 meses)
+## Próximos Passos
 
-- Consolidar um fluxo manual simples e disciplinado: `fetch_<competicao>.py` -> `build_calendar.py` -> `build_status.py` -> `git push`.
-- Reduzir documentação de fases automáticas antigas e manter apenas a que reflete o estado real.
-- Decidir a próxima estratégia de execução do scraping:
-  - manter manual local por algum tempo;
-  - migrar para self-hosted runner;
-  - migrar para VM/cloud com cron.
-- Mostrar `lastUpdatedAt` e `sourceHealth` na UI para dar visibilidade ao estado real dos dados.
-- Alargar a biblioteca de snapshots reais da FPF a mais famílias de competição e mais casos-limite.
-- Criar uma camada de serviço em `main.js` que armazene em `localStorage` a última versão dos dados carregados, permitindo fallback em modo offline.
-- Melhorar a acessibilidade: acrescentar textos alternativos descritivos, focos visuais para navegação por teclado e labels claras nas tabs.
+- validar visualmente as 10 competições da época 2026-2027 em desktop e mobile;
+- acrescentar novas competições à medida que os respetivos JSON estejam disponíveis;
+- documentar exemplos válidos e inválidos do schema;
+- acrescentar validação automática dos JSON antes do deploy;
+- melhorar correspondência de emblemas para equipas novas;
+- apresentar avisos mais específicos quando um ficheiro estiver incompleto;
+- avaliar paginação ou carregamento progressivo se o número de competições crescer significativamente.
 
-## Visão futura (3+ meses)
+## Fora De Âmbito
 
-- Internacionalização dos textos da interface e possibilidade de alternar entre português e inglês sem duplicar páginas.
-- Permitir seleção de equipa favorita com vista filtrada (apenas jogos dessa equipa em todas as competições).
-- Expor os dados num formato API (JSON estático ou endpoints serverless) para integração com outras plataformas do clube.
-- Automatizar notificações (e-mail ou webhook) sempre que o processo escolhido de scraping/publicação falhar, reduzindo tempo de reação da equipa.
+- scraping no repositório;
+- sincronização automática com fontes externas;
+- criação automática de commits de dados;
+- manutenção de competições sem JSON ativo.

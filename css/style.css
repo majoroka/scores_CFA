@@ -427,6 +427,7 @@ body::after {
     border-top: 1px solid var(--border-color);
 }
 .match-item:last-child { border-bottom: none; }
+.match-datetime, .match-teams-mobile, .match-score-mobile { display: none; }
 .team-home { text-align: right; display: flex; justify-content: flex-end; align-items: center; }
 .team-away { text-align: left; display: flex; justify-content: flex-start; align-items: center; }
 .team-crest { display: inline-block; width: 30px; height: 30px; }
@@ -464,6 +465,7 @@ body::after {
         color: var(--secondary-color);
     }
     .team-home, .team-away { display: none; }
+    .match-score-desktop { display: none; }
 
     /* Cria um novo container para as equipas no mobile */
     .match-teams-mobile {
@@ -472,6 +474,7 @@ body::after {
         flex-direction: column;
         gap: 0.2rem;
     }
+    .match-score.match-score-mobile { display: flex; }
     .team-line {
         display: flex;
         align-items: center;
@@ -534,6 +537,7 @@ body::after {
     font-weight: 600;
     color: var(--primary-color);
 }
+.classification-table .team-name-col.highlight { color: var(--accent-blue); }
 
 /* --- AGENDA GLOBAL --- */
 .agenda-page {

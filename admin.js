@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const statusBody = document.getElementById('admin-status-body');
     const dataStatus = document.getElementById('admin-data-status');
 
+    const escapeHTML = (value = '') => String(value)
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;').replace(/'/g, '&#039;');
+
     const formatTimestamp = (value) => {
         if (!value) return '-';
         const parsed = new Date(value);
@@ -13,69 +17,34 @@ document.addEventListener('DOMContentLoaded', () => {
         }).format(parsed);
     };
 
-    const renderSummary = (payload) => {
-        const counts = payload.statusCounts || {};
+    const renderSummary = (entries) => {
+        const complete = entries.filter(({ payload }) => payload.validation.complete !== false).length;
+        const incomplete = entries.length - complete;
+        const matches = entries.reduce((total, { payload }) => total + payload.dataQuality.matchCount, 0);
+        const results = entries.reduce((total, { payload }) => total + payload.dataQuality.completedMatchCount, 0);
         summaryGrid.innerHTML = `
-            <article class="admin-summary-card">
-                <span class="admin-summary-card__label">Competições</span>
-                <strong class="admin-summary-card__value">${payload.competitionCount || 0}</strong>
-            </article>
-            <article class="admin-summary-card admin-summary-card--ok">
-                <span class="admin-summary-card__label">OK</span>
-                <strong class="admin-summary-card__value">${counts.ok || 0}</strong>
-            </article>
-            <article class="admin-summary-card admin-summary-card--partial">
-                <span class="admin-summary-card__label">Partial</span>
-                <strong class="admin-summary-card__value">${counts.partial || 0}</strong>
-            </article>
-            <article class="admin-summary-card admin-summary-card--degraded">
-                <span class="admin-summary-card__label">Degraded</span>
-                <strong class="admin-summary-card__value">${counts.degraded || 0}</strong>
-            </article>
+            <article class="admin-summary-card"><span class="admin-summary-card__label">Competições</span><strong class="admin-summary-card__value">${entries.length}</strong></article>
+            <article class="admin-summary-card admin-summary-card--ok"><span class="admin-summary-card__label">Ficheiros completos</span><strong class="admin-summary-card__value">${complete}</strong></article>
+            <article class="admin-summary-card ${incomplete ? 'admin-summary-card--degraded' : ''}"><span class="admin-summary-card__label">Incompletos</span><strong class="admin-summary-card__value">${incomplete}</strong></article>
+            <article class="admin-summary-card"><span class="admin-summary-card__label">Resultados / jogos</span><strong class="admin-summary-card__value">${results}/${matches}</strong></article>
         `;
     };
 
-    const renderDataStatus = (payload) => {
-        const generatedAt = formatTimestamp(payload.generatedAt);
-        dataStatus.innerHTML = `<span class="data-status__item">Estado global gerado: ${generatedAt}</span>`;
-        dataStatus.classList.remove('hidden');
-    };
-
-    const renderTable = (payload) => {
-        const competitions = Object.entries(payload.competitions || {});
-        if (!competitions.length) {
-            statusBody.innerHTML = '<tr><td colspan="7">Sem dados de estado disponíveis.</td></tr>';
-            return;
-        }
-
-        competitions.sort((left, right) => {
-            const leftEntry = left[1] || {};
-            const rightEntry = right[1] || {};
-            const statusOrder = { degraded: 0, partial: 1, missing: 2, ok: 3 };
-            const leftStatus = statusOrder[leftEntry.status] ?? 99;
-            const rightStatus = statusOrder[rightEntry.status] ?? 99;
-            if (leftStatus !== rightStatus) return leftStatus - rightStatus;
-            return (leftEntry.title || left[0]).localeCompare(rightEntry.title || right[0], 'pt');
-        });
-
-        statusBody.innerHTML = competitions.map(([key, entry]) => {
-            const issues = Array.isArray(entry.issues) && entry.issues.length
-                ? `<div class="admin-status-table__issues">${entry.issues.join(' · ')}</div>`
-                : '';
-            const pagePath = entry.pagePath || '#';
+    const renderTable = (entries) => {
+        statusBody.innerHTML = entries.map(({ meta, payload }) => {
+            const complete = payload.validation.complete !== false;
             return `
                 <tr>
                     <td>
-                        <a href="${pagePath}" class="admin-status-table__link">${entry.title || key}</a>
-                        <div class="admin-status-table__subtitle">${entry.subtitle || ''}</div>
-                        ${issues}
+                        <a href="competition.html?key=${encodeURIComponent(meta.key)}" class="admin-status-table__link">${escapeHTML(meta.title)}</a>
+                        <div class="admin-status-table__subtitle">${escapeHTML(meta.subtitle)}</div>
                     </td>
-                    <td><span class="admin-badge admin-badge--${entry.status || 'missing'}">${entry.status || 'missing'}</span></td>
-                    <td>${formatTimestamp(entry.lastUpdatedAt)}</td>
-                    <td>${entry.fallbackReuseCount || 0}</td>
-                    <td>${entry.pastMatchesWithoutScore || 0}</td>
-                    <td>${entry.completedMatchCount || 0}/${entry.matchCount || 0}</td>
-                    <td>${entry.teamCount || 0}</td>
+                    <td><span class="admin-badge admin-badge--${complete ? 'ok' : 'degraded'}">${complete ? 'completo' : 'incompleto'}</span></td>
+                    <td>${escapeHTML(formatTimestamp(payload.capturedAt))}</td>
+                    <td>${payload.rounds.length}</td>
+                    <td>${payload.dataQuality.completedMatchCount}/${payload.dataQuality.matchCount}</td>
+                    <td>${payload.dataQuality.matchesWithoutScore}</td>
+                    <td>${payload.dataQuality.teamCount}</td>
                 </tr>
             `;
         }).join('');
@@ -83,17 +52,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const bootstrap = async () => {
         try {
-            const response = await fetch('data/status.json', { cache: 'no-cache' });
-            if (!response.ok) {
-                throw new Error(`Falha ao obter status.json (${response.status})`);
-            }
-            const payload = await response.json();
-            renderDataStatus(payload);
-            renderSummary(payload);
-            renderTable(payload);
+            const entries = await window.CFAData.loadAllCompetitions();
+            renderSummary(entries);
+            renderTable(entries);
+            dataStatus.innerHTML = '<span class="data-status__item">Diagnóstico calculado diretamente a partir dos ficheiros JSON ativos.</span>';
+            dataStatus.classList.remove('hidden');
         } catch (error) {
-            console.error('Erro ao carregar estado global:', error);
-            statusBody.innerHTML = '<tr><td colspan="7">Não foi possível carregar o estado das competições.</td></tr>';
+            console.error('Erro ao carregar o diagnóstico:', error);
+            statusBody.innerHTML = `<tr><td colspan="7">Não foi possível carregar os ficheiros: ${escapeHTML(error.message)}</td></tr>`;
         }
     };
 

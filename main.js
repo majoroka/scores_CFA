@@ -1,41 +1,26 @@
 const ThemeManager = (() => {
     const STORAGE_KEY = 'cfa-theme';
-    const prefersDark = typeof window !== 'undefined' && window.matchMedia
-        ? window.matchMedia('(prefers-color-scheme: dark)')
-        : null;
+    const media = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
 
-    const readStoredTheme = () => {
+    const readTheme = () => {
         try {
             const value = window.localStorage.getItem(STORAGE_KEY);
             return value === 'light' || value === 'dark' ? value : null;
-        } catch (err) {
+        } catch (error) {
             return null;
         }
     };
 
-    const writeStoredTheme = (value) => {
-        try {
-            window.localStorage.setItem(STORAGE_KEY, value);
-        } catch (err) {
-            // storage might be unavailable (private mode, etc)
-        }
-    };
-
+    const storedTheme = readTheme();
+    let hasManualTheme = Boolean(storedTheme);
+    let currentTheme = storedTheme || (media?.matches ? 'dark' : 'light');
     const buttons = new Map();
-    const ICONS = {
-        light: 'img/sun.png',
-        dark: 'img/moon.png',
-    };
-
-    const storedTheme = readStoredTheme();
-    let manualOverride = Boolean(storedTheme);
-    let currentTheme = storedTheme || ((prefersDark && prefersDark.matches) ? 'dark' : 'light');
 
     const updateButtons = () => {
         buttons.forEach((button, theme) => {
-            const isActive = currentTheme === theme;
-            button.classList.toggle('is-active', isActive);
-            button.setAttribute('aria-pressed', String(isActive));
+            const active = theme === currentTheme;
+            button.classList.toggle('is-active', active);
+            button.setAttribute('aria-pressed', String(active));
         });
     };
 
@@ -43,1131 +28,291 @@ const ThemeManager = (() => {
         currentTheme = theme === 'light' ? 'light' : 'dark';
         document.documentElement.dataset.theme = currentTheme;
         if (persist) {
-            manualOverride = true;
-            writeStoredTheme(currentTheme);
+            hasManualTheme = true;
+            try {
+                window.localStorage.setItem(STORAGE_KEY, currentTheme);
+            } catch (error) {
+                // localStorage can be unavailable in private browsing.
+            }
         }
         updateButtons();
-    };
-
-    const handleButtonClick = (theme) => {
-        if (theme === currentTheme) return;
-        applyTheme(theme, true);
     };
 
     const createButton = (theme) => {
         const button = document.createElement('button');
         button.type = 'button';
         button.className = 'theme-toggle__btn';
-        button.dataset.theme = theme;
         button.setAttribute('aria-label', theme === 'light' ? 'Ativar tema claro' : 'Ativar tema escuro');
-        const icon = document.createElement('img');
-        icon.src = ICONS[theme];
-        icon.alt = theme === 'light' ? 'Tema claro' : 'Tema escuro';
-        icon.className = 'theme-toggle__icon';
-        button.appendChild(icon);
-        button.addEventListener('click', () => handleButtonClick(theme));
+        button.innerHTML = `<img src="img/${theme === 'light' ? 'sun' : 'moon'}.png" alt="" aria-hidden="true">`;
+        button.addEventListener('click', () => applyTheme(theme, true));
         buttons.set(theme, button);
         return button;
     };
 
-    const createToggle = () => {
+    const initToggle = () => {
+        const header = document.querySelector('.details-header, .site-header');
+        if (!header || header.querySelector('.theme-toggle-wrapper')) return;
+
         const wrapper = document.createElement('div');
         wrapper.className = 'theme-toggle-wrapper';
-
-        const container = document.createElement('div');
-        container.className = 'theme-toggle';
-
-        container.appendChild(createButton('light'));
-        container.appendChild(createButton('dark'));
-        wrapper.appendChild(container);
-
+        const toggle = document.createElement('div');
+        toggle.className = 'theme-toggle';
+        toggle.append(createButton('light'), createButton('dark'));
+        wrapper.appendChild(toggle);
+        header.appendChild(wrapper);
         updateButtons();
-        return wrapper;
     };
 
-    if (prefersDark) {
-        const listener = (event) => {
-            if (!manualOverride) {
-                applyTheme(event.matches ? 'dark' : 'light');
-            }
-        };
-        if (typeof prefersDark.addEventListener === 'function') {
-            prefersDark.addEventListener('change', listener);
-        } else if (typeof prefersDark.addListener === 'function') {
-            prefersDark.addListener(listener);
-        }
+    if (media) {
+        media.addEventListener?.('change', (event) => {
+            if (!hasManualTheme) applyTheme(event.matches ? 'dark' : 'light');
+        });
     }
-
     applyTheme(currentTheme);
-
-    return {
-        initToggle() {
-            const header = document.querySelector('.details-header') || document.querySelector('.site-header');
-            if (!header) return;
-            let wrapper = header.querySelector('.theme-toggle-wrapper');
-            if (!wrapper) {
-                wrapper = createToggle();
-                header.appendChild(wrapper);
-            } else {
-                buttons.clear();
-                const container = wrapper.querySelector('.theme-toggle');
-                if (container) {
-                    container.innerHTML = '';
-                    container.appendChild(createButton('light'));
-                    container.appendChild(createButton('dark'));
-                    updateButtons();
-                }
-            }
-        }
-    };
+    return { initToggle };
 })();
 
+const escapeHTML = (value = '') => String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+
+const loadCrests = async () => {
+    try {
+        const response = await fetch('data/crests.json', { cache: 'no-cache' });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return await response.json();
+    } catch (error) {
+        console.warn('Não foi possível carregar os emblemas:', error);
+        return {};
+    }
+};
+
+const getCrestUrl = (teamName, crests) => {
+    const fallback = 'img/crests/jornada.png';
+    const normalized = window.CFAData.canonicalTeamName(teamName);
+    return crests[normalized] || crests[window.CFAData.normalizeName(teamName)] || fallback;
+};
+
+const formatCapturedAt = (value) => {
+    if (!value) return null;
+    const parsed = new Date(value);
+    if (Number.isNaN(parsed.getTime())) return null;
+    return new Intl.DateTimeFormat('pt-PT', {
+        dateStyle: 'short',
+        timeStyle: 'short',
+    }).format(parsed);
+};
+
+const bootstrapHome = async () => {
+    const list = document.getElementById('competitions-list');
+    if (!list) return;
+
+    const loading = document.getElementById('competitions-loading');
+    try {
+        const index = await window.CFAData.loadIndex();
+        const competitions = index.competitions.filter((competition) => competition.enabled !== false);
+        const seasonTitle = document.getElementById('active-season-title');
+        if (seasonTitle) seasonTitle.textContent = `Competições ${index.activeSeason}`;
+
+        const cards = competitions.map((competition) => `
+            <a class="competition-card" href="competition.html?key=${encodeURIComponent(competition.key)}" style="--card-accent: ${escapeHTML(competition.accent)};">
+                <div class="competition-info">
+                    <h3>${escapeHTML(competition.title)}</h3>
+                    <p>${escapeHTML(competition.subtitle)}</p>
+                </div>
+                <img alt="Aceder" class="arrow-icon" src="img/seta.png">
+            </a>
+        `).join('');
+        loading?.remove();
+        list.insertAdjacentHTML('beforeend', cards);
+    } catch (error) {
+        console.error('Erro ao carregar o catálogo:', error);
+        if (loading) loading.textContent = 'Não foi possível carregar as competições.';
+    }
+};
+
+const bootstrapCompetition = async () => {
+    if (document.body.dataset.page !== 'competition') return;
+
+    const params = new URLSearchParams(window.location.search);
+    const competitionKey = params.get('key');
+    const status = document.getElementById('competition-data-status');
+    const matchesContainer = document.getElementById('matches-container');
+    const classificationContainer = document.getElementById('classification-container');
+
+    try {
+        const meta = await window.CFAData.getCompetitionMeta(competitionKey);
+        if (!meta) throw new Error('A competição pedida não existe no catálogo ativo.');
+
+        const [competition, crests] = await Promise.all([
+            window.CFAData.loadCompetition(meta),
+            loadCrests(),
+        ]);
+        if (!competition.rounds.length) throw new Error('A competição não contém jornadas.');
+
+        document.title = `${meta.title} - CF Os Armacenenses`;
+        document.documentElement.style.setProperty('--accent-blue', meta.accent || '#00aaff');
+        document.getElementById('competition-heading').childNodes[0].nodeValue = `${meta.title} `;
+        document.getElementById('competition-subtitle').textContent = `${meta.subtitle} · ${meta.season}`;
+
+        const capturedAt = formatCapturedAt(competition.capturedAt);
+        status.innerHTML = capturedAt
+            ? `<span class="data-status__item">Ficheiro atualizado: ${escapeHTML(capturedAt)}</span>`
+            : '<span class="data-status__item">Dados carregados do ficheiro da competição</span>';
+        status.classList.remove('hidden');
+
+        let currentRoundIndex = Math.min(
+            Math.max(competition.defaultRoundIndex || 0, 0),
+            competition.rounds.length - 1
+        );
+
+        const scoreMarkup = (match) => {
+            if (Number.isInteger(match.homeScore) && Number.isInteger(match.awayScore)) {
+                return {
+                    desktop: `${match.homeScore} - ${match.awayScore}`,
+                    mobile: `<span class="score-line"><span class="score-number">${match.homeScore}</span></span><span class="score-line"><span class="score-number">${match.awayScore}</span></span>`,
+                };
+            }
+            const time = match.time || '-';
+            return { desktop: escapeHTML(time), mobile: escapeHTML(time) };
+        };
+
+        const renderMatches = (round) => {
+            document.getElementById('round-title').textContent = `Jornada ${round.index}`;
+            if (!round.matches.length) {
+                matchesContainer.innerHTML = '<p class="agenda-empty-state">Sem jogos nesta jornada.</p>';
+                return;
+            }
+
+            matchesContainer.innerHTML = round.matches.map((match) => {
+                const homeName = window.CFAData.displayTeamName(match.home);
+                const awayName = window.CFAData.displayTeamName(match.away);
+                const homeHighlighted = window.CFAData.isClubTeam(match.home, meta);
+                const awayHighlighted = window.CFAData.isClubTeam(match.away, meta);
+                const homeCrest = getCrestUrl(match.home, crests);
+                const awayCrest = getCrestUrl(match.away, crests);
+                const score = scoreMarkup(match);
+                const dateAndTime = [match.date, match.time].filter(Boolean).join(' · ');
+
+                return `
+                    <article class="match-item">
+                        <div class="match-datetime"><span>${escapeHTML(match.time || '')}</span><span>${escapeHTML(match.date)}</span></div>
+                        <div class="team-home">
+                            <span class="team-block">
+                                <span class="team-name ${homeHighlighted ? 'highlight' : ''}">${escapeHTML(homeName)}</span>
+                                <img src="${escapeHTML(homeCrest)}" alt="" class="team-crest">
+                            </span>
+                        </div>
+                        <div class="match-score match-score-desktop">${score.desktop}</div>
+                        <div class="team-away">
+                            <span class="team-block">
+                                <img src="${escapeHTML(awayCrest)}" alt="" class="team-crest">
+                                <span class="team-name ${awayHighlighted ? 'highlight' : ''}">${escapeHTML(awayName)}</span>
+                            </span>
+                        </div>
+                        <div class="match-teams-mobile">
+                            <div class="team-line"><img src="${escapeHTML(homeCrest)}" alt="" class="team-crest"><span class="team-name ${homeHighlighted ? 'highlight' : ''}">${escapeHTML(homeName)}</span></div>
+                            <div class="team-line"><img src="${escapeHTML(awayCrest)}" alt="" class="team-crest"><span class="team-name ${awayHighlighted ? 'highlight' : ''}">${escapeHTML(awayName)}</span></div>
+                        </div>
+                        <div class="match-score match-score-mobile">${score.mobile}</div>
+                        <div class="match-meta"><span class="meta-date">${escapeHTML(dateAndTime)}</span><span>${escapeHTML(match.stadium)}</span></div>
+                    </article>
+                `;
+            }).join('');
+        };
+
+        const renderClassification = (round) => {
+            document.getElementById('classification-round-title').textContent = `Classificação · Jornada ${round.index}`;
+            if (!round.classification.length) {
+                classificationContainer.innerHTML = '<p class="agenda-empty-state">Classificação ainda indisponível.</p>';
+                return;
+            }
+
+            const rows = round.classification.map((entry) => {
+                const highlighted = window.CFAData.isClubTeam(entry.team, meta);
+                return `
+                    <tr>
+                        <td class="pos">${entry.position}</td>
+                        <td class="team-name-col ${highlighted ? 'highlight' : ''}"><img src="${escapeHTML(getCrestUrl(entry.team, crests))}" alt="" class="team-crest-mini">${escapeHTML(window.CFAData.displayTeamName(entry.team))}</td>
+                        <td>${entry.played}</td><td>${entry.wins}</td><td>${entry.draws}</td><td>${entry.losses}</td>
+                        <td>${entry.goalsFor}-${entry.goalsAgainst}</td><td class="pts">${entry.points}</td>
+                    </tr>
+                `;
+            }).join('');
+
+            classificationContainer.innerHTML = `
+                <table class="classification-table">
+                    <thead><tr><th>#</th><th>Equipa</th><th>J</th><th>V</th><th>E</th><th>D</th><th>G</th><th>Pts</th></tr></thead>
+                    <tbody>${rows}</tbody>
+                </table>
+            `;
+        };
+
+        const renderRound = () => {
+            const round = competition.rounds[currentRoundIndex];
+            renderMatches(round);
+            renderClassification(round);
+            ['prev-round', 'prev-round-class'].forEach((id) => {
+                document.getElementById(id).disabled = currentRoundIndex === 0;
+            });
+            ['next-round', 'next-round-class'].forEach((id) => {
+                document.getElementById(id).disabled = currentRoundIndex === competition.rounds.length - 1;
+            });
+        };
+
+        const changeRound = (offset) => {
+            currentRoundIndex = Math.min(
+                Math.max(currentRoundIndex + offset, 0),
+                competition.rounds.length - 1
+            );
+            renderRound();
+        };
+
+        document.getElementById('prev-round').addEventListener('click', () => changeRound(-1));
+        document.getElementById('next-round').addEventListener('click', () => changeRound(1));
+        document.getElementById('prev-round-class').addEventListener('click', () => changeRound(-1));
+        document.getElementById('next-round-class').addEventListener('click', () => changeRound(1));
+
+        const setActiveTab = (tab) => {
+            const showResults = tab === 'resultados';
+            document.getElementById('content-resultados').classList.toggle('hidden', !showResults);
+            document.getElementById('content-classificacao').classList.toggle('hidden', showResults);
+            document.getElementById('tab-resultados').classList.toggle('active', showResults);
+            document.getElementById('tab-classificacao').classList.toggle('active', !showResults);
+            document.getElementById('tab-resultados').setAttribute('aria-selected', String(showResults));
+            document.getElementById('tab-classificacao').setAttribute('aria-selected', String(!showResults));
+        };
+
+        document.getElementById('tab-resultados').addEventListener('click', (event) => {
+            event.preventDefault();
+            setActiveTab('resultados');
+        });
+        document.getElementById('tab-classificacao').addEventListener('click', (event) => {
+            event.preventDefault();
+            setActiveTab('classificacao');
+        });
+
+        const hashMatch = window.location.hash.match(/resultados-j(\d+)/);
+        if (hashMatch) {
+            const requestedRound = competition.rounds.findIndex((round) => round.index === Number(hashMatch[1]));
+            if (requestedRound >= 0) currentRoundIndex = requestedRound;
+        }
+        setActiveTab(window.location.hash === '#classificacao' ? 'classificacao' : 'resultados');
+        renderRound();
+    } catch (error) {
+        console.error('Erro ao carregar competição:', error);
+        status.innerHTML = `<span class="data-status__item data-status__item--warning">${escapeHTML(error.message)}</span>`;
+        status.classList.remove('hidden');
+        matchesContainer.innerHTML = '<p class="agenda-empty-state">Não foi possível carregar esta competição.</p>';
+        classificationContainer.innerHTML = '';
+    }
+};
 
 document.addEventListener('DOMContentLoaded', () => {
     ThemeManager.initToggle();
-    // Verifica se estamos na página de detalhes
-    if (!document.getElementById('content-resultados')) {
-        return;
-    }
-
-    // --- ESTADO DA APLICAÇÃO ---
-    const competitionKey = document.body.dataset.competition || 'seniores';
-    let competitionData = null;
-    let crestsData = null;
-    let competitionDataSource = 'published';
-    let currentRoundIndex = 0;
-    let activeTab = 'resultados'; // 'resultados' ou 'classificacao'
-    let userHasManualRoundSelection = false;
-
-    // --- ELEMENTOS DO DOM ---
-    const tabResultados = document.getElementById('tab-resultados');
-    const tabClassificacao = document.getElementById('tab-classificacao');
-    const contentResultados = document.getElementById('content-resultados');
-    const contentClassificacao = document.getElementById('content-classificacao');
-    const prevRoundBtn = document.getElementById('prev-round');
-    const nextRoundBtn = document.getElementById('next-round');
-    const prevRoundBtnClass = document.getElementById('prev-round-class');
-    const nextRoundBtnClass = document.getElementById('next-round-class');
-    const roundTitle = document.getElementById('round-title');
-    const classificationRoundTitle = document.getElementById('classification-round-title');
-    const matchesContainer = document.getElementById('matches-container');
-    const classificationContainer = document.getElementById('classification-container');
-    let dataStatusContainer = null;
-    const COMPETITION_CACHE_PREFIX = 'cfa-competition-cache-v1:';
-    const CRESTS_CACHE_KEY = 'cfa-crests-cache-v1';
-    const COMPETITION_CACHE_MAX_AGE_MS = 2 * 60 * 60 * 1000;
-
-    // Utilitário simples para decodificar HTML vindo da FPF
-    const htmlDecoder = document.createElement('textarea');
-    const decodeHTML = (value = '') => {
-        htmlDecoder.innerHTML = value;
-        return htmlDecoder.value;
-    };
-
-    const cleanHTMLText = (value = '') => {
-        if (!value) return '';
-        return decodeHTML(
-            value
-                .replace(/<br\s*\/?>/gi, ' ')
-                .replace(/<[^>]*>/g, ' ')
-        ).replace(/\s+/g, ' ').trim();
-    };
-
-    const textFromNode = (node) => (node ? cleanHTMLText(node.textContent || '') : '');
-
-    const ensureDataStatusContainer = () => {
-        if (dataStatusContainer) return dataStatusContainer;
-        const parent = document.querySelector('.container');
-        const tabs = document.querySelector('.tabs');
-        if (!parent || !tabs) return null;
-        const container = document.createElement('div');
-        container.className = 'data-status';
-        container.setAttribute('aria-live', 'polite');
-        tabs.insertAdjacentElement('afterend', container);
-        dataStatusContainer = container;
-        return dataStatusContainer;
-    };
-
-    const formatTimestamp = (value) => {
-        if (!value) return null;
-        const parsed = new Date(value);
-        if (Number.isNaN(parsed.getTime())) return null;
-        return new Intl.DateTimeFormat('pt-PT', {
-            dateStyle: 'short',
-            timeStyle: 'short',
-        }).format(parsed);
-    };
-
-    const renderDataStatus = () => {
-        const container = ensureDataStatusContainer();
-        if (!container || !competitionData) return;
-
-        const parts = [];
-        const formattedTimestamp = formatTimestamp(competitionData.lastUpdatedAt);
-        if (formattedTimestamp) {
-            parts.push(`<span class="data-status__item">Atualizado: ${formattedTimestamp}</span>`);
-        }
-
-        const sourceHealth = competitionData.sourceHealth || {};
-        const dataQuality = competitionData.dataQuality || {};
-        const deriveSourceStatus = () => {
-            if (Number.isInteger(sourceHealth.fallbackReuseCount) && sourceHealth.fallbackReuseCount > 0) {
-                return 'degraded';
-            }
-            if (Number.isInteger(dataQuality.pastMatchesWithoutScore) && dataQuality.pastMatchesWithoutScore > 0) {
-                return 'partial';
-            }
-            return sourceHealth.status || 'ok';
-        };
-        const status = deriveSourceStatus();
-        const fallbackReuseCount = Number.isInteger(sourceHealth.fallbackReuseCount)
-            ? sourceHealth.fallbackReuseCount
-            : 0;
-        const pastMatchesWithoutScore = Number.isInteger(dataQuality.pastMatchesWithoutScore)
-            ? dataQuality.pastMatchesWithoutScore
-            : 0;
-
-        if (competitionDataSource === 'local-cache') {
-            parts.push(
-                '<span class="data-status__item data-status__item--warning">Não foi possível obter a versão mais recente. Estás a ver dados guardados neste dispositivo.</span>'
-            );
-        } else if (status === 'degraded') {
-            parts.push(
-                `<span class="data-status__item data-status__item--warning">Atenção: alguns dados foram reaproveitados da última sincronização (${fallbackReuseCount} reutilizações).</span>`
-            );
-        } else if (status === 'partial') {
-            parts.push(
-                `<span class="data-status__item data-status__item--warning">Alguns resultados ainda não estão publicados (${pastMatchesWithoutScore} jogo(s) passado(s) sem score).</span>`
-            );
-        } else if (status === 'ok') {
-            parts.push('<span class="data-status__item">Origem: estável</span>');
-        }
-
-        if (!parts.length) {
-            container.innerHTML = '';
-            container.classList.add('hidden');
-            return;
-        }
-
-        container.innerHTML = parts.join('');
-        container.classList.remove('hidden');
-    };
-
-    const readStorageEntry = (key) => {
-        try {
-            const raw = window.localStorage.getItem(key);
-            if (!raw) return null;
-            const parsed = JSON.parse(raw);
-            if (
-                parsed &&
-                typeof parsed === 'object' &&
-                parsed.__cacheMeta &&
-                Object.prototype.hasOwnProperty.call(parsed, 'payload')
-            ) {
-                return {
-                    payload: parsed.payload,
-                    savedAt: Number(parsed.__cacheMeta.savedAt) || 0,
-                };
-            }
-            return {
-                payload: parsed,
-                savedAt: 0,
-            };
-        } catch (error) {
-            return null;
-        }
-    };
-
-    const readJSONFromStorage = (key, { maxAgeMs = null } = {}) => {
-        const entry = readStorageEntry(key);
-        if (!entry) return null;
-        if (maxAgeMs !== null && entry.savedAt && (Date.now() - entry.savedAt) > maxAgeMs) {
-            return null;
-        }
-        return entry.payload;
-    };
-
-    const writeJSONToStorage = (key, value) => {
-        try {
-            window.localStorage.setItem(key, JSON.stringify({
-                __cacheMeta: {
-                    savedAt: Date.now(),
-                },
-                payload: value,
-            }));
-        } catch (error) {
-            // localStorage may be unavailable or full
-        }
-    };
-
-    const getCompetitionCacheKey = () => `${COMPETITION_CACHE_PREFIX}${competitionKey}`;
-
-    const isValidCompetitionPayload = (payload) => {
-        return Boolean(
-            payload &&
-            Array.isArray(payload.rounds) &&
-            payload.rounds.length &&
-            payload.rounds.every((round) => round && Array.isArray(round.matches) && Array.isArray(round.classification))
-        );
-    };
-
-    const hasCompetitionPayloadChanged = (nextPayload) => {
-        if (!competitionData) return true;
-        return (
-            competitionData.lastUpdatedAt !== nextPayload.lastUpdatedAt ||
-            competitionData.defaultRoundIndex !== nextPayload.defaultRoundIndex ||
-            JSON.stringify(competitionData.rounds) !== JSON.stringify(nextPayload.rounds)
-        );
-    };
-
-    const LIVE_DATA_ENDPOINT = 'https://resultados.fpf.pt/Competition/GetClassificationAndMatchesByFixture?fixtureId=';
-    const LIVE_DATA_SOURCES = [
-        (fixtureId) => `${LIVE_DATA_ENDPOINT}${fixtureId}`,
-        (fixtureId) => `https://corsproxy.io/?${LIVE_DATA_ENDPOINT}${fixtureId}`,
-        (fixtureId) => `https://r.jina.ai/https://resultados.fpf.pt/Competition/GetClassificationAndMatchesByFixture?fixtureId=${fixtureId}`,
-    ];
-    const remoteRoundCache = new Map();
-
-const MONTH_MAP = {
-    jan: 0, fev: 1, mar: 2, abr: 3, mai: 4, jun: 5,
-    jul: 6, ago: 7, set: 8, out: 9, nov: 10, dez: 11,
-};
-
-const normalizeMonthToken = (value = '') => {
-    if (!value) return null;
-    const normalized = value
-        .toLowerCase()
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '')
-        .replace(/[^a-z]/g, '');
-    if (!normalized) return null;
-    return normalized.slice(0, 3);
-};
-
-const parseMatchDate = (value = '') => {
-    const trimmed = (value || '').trim();
-    if (!trimmed) return null;
-    // Remove resultados embebidos no texto para evitar confundir o dia com o score.
-    const sanitized = trimmed
-        .replace(/\b\d{1,2}\s*[-–]\s*\d{1,2}\b/g, ' ')
-        .replace(/\s+/g, ' ')
-        .trim();
-    if (!sanitized) return null;
-
-    const directMatches = Array.from(
-        sanitized.matchAll(/(\d{1,2})\s+([A-Za-zÀ-ÿ]{3,})/g)
-    );
-    if (directMatches.length) {
-        const latestMatch = directMatches[directMatches.length - 1];
-        const day = Number.parseInt(latestMatch[1], 10);
-        const monthKey = normalizeMonthToken(latestMatch[2]);
-        if (monthKey && Number.isInteger(day)) {
-            const month = MONTH_MAP[monthKey];
-            const today = new Date();
-            const currentMonth = today.getMonth();
-            let year = today.getFullYear();
-            const diff = month - currentMonth;
-            if (diff <= -6) {
-                year += 1;
-            } else if (diff >= 6) {
-                year -= 1;
-            }
-            const result = new Date(year, month, day, 12, 0, 0, 0);
-            return Number.isNaN(result.getTime()) ? null : result;
-        }
-    }
-
-    const tokens = sanitized.split(/\s+/).filter(Boolean);
-    if (!tokens.length) return null;
-
-    let monthKey = null;
-    let day = null;
-
-    for (let i = 0; i < tokens.length; i += 1) {
-        const normalized = normalizeMonthToken(tokens[i]);
-        if (!normalized || !Object.prototype.hasOwnProperty.call(MONTH_MAP, normalized)) {
-            continue;
-        }
-        monthKey = normalized;
-        for (let j = i - 1; j >= 0; j -= 1) {
-            const match = tokens[j].match(/(\d{1,2})/);
-            if (match) {
-                day = Number.parseInt(match[1], 10);
-                break;
-            }
-        }
-        if (day === null && tokens[i + 1]) {
-            const match = tokens[i + 1].match(/(\d{1,2})/);
-            if (match) {
-                day = Number.parseInt(match[1], 10);
-            }
-        }
-        if (day !== null) {
-            break;
-        }
-    }
-
-    if (!monthKey || day === null || !Number.isInteger(day)) return null;
-    const month = MONTH_MAP[monthKey];
-    const today = new Date();
-    const currentMonth = today.getMonth();
-    let year = today.getFullYear();
-    const diff = month - currentMonth;
-    if (diff <= -6) {
-        year += 1;
-    } else if (diff >= 6) {
-        year -= 1;
-    }
-    const result = new Date(year, month, day, 12, 0, 0, 0);
-    return Number.isNaN(result.getTime()) ? null : result;
-};
-
-const getRoundReferenceDate = (round) => {
-    if (!round || !Array.isArray(round.matches)) return null;
-    let latestCompleted = null;
-    let latestAny = null;
-    for (const match of round.matches) {
-        const parsed = parseMatchDate(match?.date);
-        if (!parsed) continue;
-        const hasScore = Number.isInteger(match?.homeScore) && Number.isInteger(match?.awayScore);
-        if (hasScore && (!latestCompleted || parsed > latestCompleted)) {
-            latestCompleted = parsed;
-        }
-        if (!latestAny || parsed > latestAny) {
-            latestAny = parsed;
-        }
-    }
-    return latestCompleted || latestAny;
-};
-
-const getPublishedDefaultRoundIndex = () => {
-    if (!competitionData || !Array.isArray(competitionData.rounds) || !competitionData.rounds.length) {
-        return null;
-    }
-    const value = competitionData.defaultRoundIndex;
-    if (!Number.isInteger(value)) {
-        return null;
-    }
-    if (value < 0 || value >= competitionData.rounds.length) {
-        return null;
-    }
-    return value;
-};
-
-const findBestRoundIndexByDate = () => {
-    if (!competitionData || !Array.isArray(competitionData.rounds)) return null;
-    const rounds = competitionData.rounds;
-    if (!rounds.length) return null;
-    const today = new Date();
-    today.setHours(12, 0, 0, 0);
-    let previousOrCurrent = null;
-    let previousOrCurrentDate = null;
-    let firstFuture = null;
-    let firstFutureDate = null;
-    rounds.forEach((round, idx) => {
-        const reference = getRoundReferenceDate(round);
-        if (!reference) return;
-        if (reference <= today) {
-            if (!previousOrCurrentDate || reference > previousOrCurrentDate) {
-                previousOrCurrent = idx;
-                previousOrCurrentDate = reference;
-            }
-        } else if (!firstFutureDate || reference < firstFutureDate) {
-            firstFuture = idx;
-            firstFutureDate = reference;
-        }
-    });
-    if (previousOrCurrent !== null) return previousOrCurrent;
-    if (firstFuture !== null) return firstFuture;
-    return null;
-};
-
-const findLatestCompletedRoundIndex = () => {
-    if (!competitionData || !Array.isArray(competitionData.rounds)) return null;
-    const today = new Date();
-    today.setHours(12, 0, 0, 0);
-
-    let bestPastIndex = null;
-    let smallestPastDiff = Number.POSITIVE_INFINITY;
-    let closestAnyIndex = null;
-    let closestAnyDiff = Number.POSITIVE_INFINITY;
-
-    competitionData.rounds.forEach((round, idx) => {
-        if (!round || !Array.isArray(round.matches)) return;
-        const hasCompletedMatch = round.matches.some((match) => (
-            Number.isInteger(match?.homeScore) && Number.isInteger(match?.awayScore)
-        ));
-        if (!hasCompletedMatch) return;
-        const reference = getRoundReferenceDate(round);
-        if (!reference) return;
-
-        const diff = today.getTime() - reference.getTime();
-        const absDiff = Math.abs(diff);
-
-        if (absDiff < closestAnyDiff) {
-            closestAnyDiff = absDiff;
-            closestAnyIndex = idx;
-        }
-
-        if (diff >= 0 && diff < smallestPastDiff) {
-            smallestPastDiff = diff;
-            bestPastIndex = idx;
-        }
-    });
-
-    if (bestPastIndex !== null) return bestPastIndex;
-    if (closestAnyIndex !== null) return closestAnyIndex;
-    return null;
-};
-
-const findBestRoundIndex = () => {
-    const closestByDate = findBestRoundIndexByDate();
-    if (closestByDate !== null) {
-        return closestByDate;
-    }
-    const latestCompleted = findLatestCompletedRoundIndex();
-    if (latestCompleted !== null) {
-        return latestCompleted;
-    }
-    const publishedDefault = getPublishedDefaultRoundIndex();
-    if (publishedDefault !== null) {
-        return publishedDefault;
-    }
-    return 0;
-};
-
-const initializeRoundBasedOnDate = () => {
-    if (!competitionData || !Array.isArray(competitionData.rounds) || !competitionData.rounds.length) return;
-    const hash = (window.location.hash || '').toLowerCase();
-    const targetTab = /^#classificacao/.test(hash) ? 'classificacao' : 'resultados';
-    const suggestedIndex = findBestRoundIndex();
-    const safeIndex = Math.max(0, Math.min(competitionData.rounds.length - 1, suggestedIndex));
-
-    if (safeIndex === currentRoundIndex && activeTab === targetTab) {
-        userHasManualRoundSelection = false;
-        const currentRoundNumber = competitionData.rounds[currentRoundIndex]?.index || (currentRoundIndex + 1);
-        history.replaceState(null, '', `#${targetTab}-j${currentRoundNumber}`);
-        return;
-    }
-
-    currentRoundIndex = safeIndex;
-    activeTab = targetTab;
-    userHasManualRoundSelection = false;
-    const roundNumber = competitionData.rounds[currentRoundIndex]?.index || (currentRoundIndex + 1);
-    const nextHash = `#${targetTab}-j${roundNumber}`;
-    history.replaceState(null, '', nextHash);
-};
-
-    const renderCompetition = ({ preferredRoundNumber = null } = {}) => {
-        if (!competitionData || !Array.isArray(competitionData.rounds) || !competitionData.rounds.length) {
-            return;
-        }
-
-        if (preferredRoundNumber !== null) {
-            const nextRoundIndex = competitionData.rounds.findIndex((round) => round.index === preferredRoundNumber);
-            if (nextRoundIndex !== -1) {
-                currentRoundIndex = nextRoundIndex;
-                const nextHash = `#${activeTab}-j${competitionData.rounds[currentRoundIndex].index}`;
-                history.replaceState(null, '', nextHash);
-                renderDataStatus();
-                updateUI();
-                return;
-            }
-        }
-
-        initializeRoundBasedOnDate();
-        renderDataStatus();
-        handleHashChange();
-    };
-
-    const parseMatchesFragment = (htmlFragment = '') => {
-        if (!htmlFragment) return [];
-        const wrapper = document.createElement('div');
-        wrapper.innerHTML = htmlFragment;
-        const matchesSection = wrapper.querySelector('#matches');
-        if (!matchesSection) return [];
-
-        const matches = [];
-        matchesSection.querySelectorAll('.game').forEach((game) => {
-            const home = textFromNode(game.querySelector('.home-team'));
-            const away = textFromNode(game.querySelector('.away-team'));
-
-            const scoreBlock = game.querySelector('.score, .text-center');
-            let scheduleText = '';
-            let centralText = '';
-
-            if (scoreBlock) {
-                scheduleText = textFromNode(scoreBlock.querySelector('.game-schedule'));
-                centralText = cleanHTMLText(scoreBlock.innerHTML || scoreBlock.textContent || '');
-                if (scheduleText) {
-                    centralText = centralText.replace(scheduleText, '').trim();
-                }
-            }
-
-            let time = '';
-            let date = '';
-            if (scheduleText) {
-                const timeMatch = scheduleText.match(/\b\d{1,2}:\d{2}\b/);
-                if (timeMatch) {
-                    time = timeMatch[0];
-                    scheduleText = scheduleText.replace(timeMatch[0], '').trim();
-                }
-                date = scheduleText.trim();
-            }
-
-            if (!time && centralText) {
-                const timeMatch = centralText.match(/\b\d{1,2}:\d{2}\b/);
-                if (timeMatch) {
-                    time = timeMatch[0];
-                    centralText = centralText.replace(timeMatch[0], '').trim();
-                }
-            }
-
-            let homeScore = null;
-            let awayScore = null;
-            if (centralText) {
-                const scoreMatch = centralText.match(/(\d{1,2})\s*[-–]\s*(\d{1,2})/);
-                if (scoreMatch) {
-                    homeScore = Number.parseInt(scoreMatch[1], 10);
-                    awayScore = Number.parseInt(scoreMatch[2], 10);
-                    centralText = centralText.replace(scoreMatch[0], '').trim();
-                }
-            }
-
-            if (!date) {
-                date = centralText.trim();
-            }
-
-            const stadiumNode = game.nextElementSibling && game.nextElementSibling.classList.contains('game-list-stadium')
-                ? game.nextElementSibling
-                : null;
-            const stadium = stadiumNode ? textFromNode(stadiumNode.querySelector('small')) : '';
-
-            matches.push({
-                home,
-                away,
-                date,
-                time,
-                stadium,
-                homeScore,
-                awayScore,
-            });
-        });
-
-        return matches;
-    };
-
-    const parseClassificationFragment = (htmlFragment = '') => {
-        if (!htmlFragment) return [];
-        const wrapper = document.createElement('div');
-        wrapper.innerHTML = htmlFragment;
-        const classificationSection = wrapper.querySelector('#classification');
-        if (!classificationSection) return [];
-
-        const entries = [];
-        classificationSection.querySelectorAll('.game.classification').forEach((row) => {
-            const columns = Array.from(row.children).filter((child) =>
-                child.className && child.className.includes('col-')
-            );
-            if (columns.length < 9) return;
-
-            const toNumber = (value) => {
-                const parsed = Number.parseInt(cleanHTMLText(value), 10);
-                return Number.isNaN(parsed) ? 0 : parsed;
-            };
-
-            entries.push({
-                position: toNumber(columns[0].textContent),
-                team: cleanHTMLText(columns[1].textContent),
-                played: toNumber(columns[2].textContent),
-                wins: toNumber(columns[3].textContent),
-                draws: toNumber(columns[4].textContent),
-                losses: toNumber(columns[5].textContent),
-                goalsFor: toNumber(columns[6].textContent),
-                goalsAgainst: toNumber(columns[7].textContent),
-                points: toNumber(columns[8].textContent),
-            });
-        });
-
-        return entries;
-    };
-
-    const mergeMatches = (existing = [], incoming = []) => {
-        if (!existing.length) return incoming;
-        if (!incoming.length) return existing;
-        const existingMap = new Map(
-            existing.map((match) => [
-                `${normalizeName(match.home)}|${normalizeName(match.away)}`,
-                match,
-            ])
-        );
-        const seenKeys = new Set();
-        const merged = incoming.map((match) => {
-            const key = `${normalizeName(match.home)}|${normalizeName(match.away)}`;
-            seenKeys.add(key);
-            const previous = existingMap.get(key) || {};
-            return {
-                ...previous,
-                ...match,
-            };
-        });
-        existing.forEach((match) => {
-            const key = `${normalizeName(match.home)}|${normalizeName(match.away)}`;
-            if (!seenKeys.has(key)) {
-                merged.push(match);
-            }
-        });
-        return merged;
-    };
-
-    const fetchRoundFromRemote = async (fixtureId) => {
-        if (!fixtureId) return null;
-        if (remoteRoundCache.has(fixtureId)) {
-            return remoteRoundCache.get(fixtureId);
-        }
-
-        let lastError = null;
-
-        for (const buildUrl of LIVE_DATA_SOURCES) {
-            const targetUrl = buildUrl(fixtureId);
-            try {
-                const response = await fetch(targetUrl, {
-                    headers: {
-                        'Accept': 'text/html,application/xhtml+xml',
-                    },
-                    cache: 'no-store',
-                    mode: 'cors',
-                });
-
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}`);
-                }
-
-                const html = await response.text();
-                const matches = parseMatchesFragment(html);
-                const classification = parseClassificationFragment(html);
-
-                if (!matches.length && !classification.length) {
-                    throw new Error('Resposta sem dados utilizáveis');
-                }
-
-                const result = { matches, classification };
-                console.info(`Resultados atualizados (fixture ${fixtureId}) via ${targetUrl}`);
-                remoteRoundCache.set(fixtureId, result);
-                return result;
-            } catch (err) {
-                lastError = err;
-                continue;
-            }
-        }
-
-        if (lastError) {
-            console.warn(`Falha ao carregar dados remotos para fixture ${fixtureId}:`, lastError);
-        }
-        remoteRoundCache.set(fixtureId, null);
-        return null;
-    };
-
-    const hydrateRoundWithLiveData = async (roundIndex) => {
-        if (!competitionData || !Array.isArray(competitionData.rounds)) return;
-        if (roundIndex < 0 || roundIndex >= competitionData.rounds.length) return;
-
-        const round = competitionData.rounds[roundIndex];
-        if (!round || !round.fixtureId) return;
-
-        const liveData = await fetchRoundFromRemote(round.fixtureId);
-        if (!liveData) return;
-
-        let changed = false;
-
-        if (Array.isArray(liveData.matches) && liveData.matches.length) {
-            const mergedMatches = mergeMatches(round.matches, liveData.matches);
-            if (JSON.stringify(mergedMatches) !== JSON.stringify(round.matches)) {
-                round.matches = mergedMatches;
-                changed = true;
-            }
-        }
-        if (Array.isArray(liveData.classification) && liveData.classification.length) {
-            const nextClassification = liveData.classification;
-            if (JSON.stringify(nextClassification) !== JSON.stringify(round.classification)) {
-                round.classification = nextClassification;
-                changed = true;
-            }
-        }
-
-        if (!changed) return;
-
-        if (Number.isInteger(currentRoundIndex) && currentRoundIndex === roundIndex) {
-            updateUI();
-        }
-
-        writeJSONToStorage(getCompetitionCacheKey(), competitionData);
-    };
-
-    // --- FUNÇÕES DE RENDERIZAÇÃO ---
-
-    const normalizeName = (name) => {
-        if (!name) return '';
-        // Remove diacríticos, normaliza espaços e remove pontuação
-        const noDiacritics = name.normalize('NFD').replace(/[\u0300-\u036f]+/g, '');
-        return noDiacritics
-            .toLowerCase()
-            .replace(/[\-_]+/g, ' ')
-            .replace(/[^a-z0-9 ]+/g, '')
-            .replace(/\s+/g, ' ')
-            .trim();
-    };
-
-    const canonicalTeamName = (teamName) => {
-        const normalized = normalizeName(teamName);
-        if (normalized === 'casa benfica tavira') {
-            return 'casa slb tavira';
-        }
-        if (normalized === 'clube u culatrense') {
-            return 'cu culatrense';
-        }
-        if (normalized === 'cf os armacenenses a' || normalized === 'cf os armacenenses b') {
-            return 'cf os armacenenses';
-        }
-        return normalized;
-    };
-
-    const isFemininoSub17Competition = competitionKey === 'feminino-sub17';
-    const isIniciadosBCompetition = competitionKey === 'iniciados-b';
-
-    const displayTeamName = (teamName) => {
-        const normalized = normalizeName(teamName);
-        if (
-            isFemininoSub17Competition &&
-            (normalized === 'cf os armacenenses a' || normalized === 'cf os armacenenses b')
-        ) {
-            return 'CF Os Armacenenses (Fem-Sub17)';
-        }
-        return teamName;
-    };
-
-    const isArmacenensesTeam = (teamName) => {
-        const normalized = normalizeName(teamName);
-        if (isFemininoSub17Competition) {
-            return normalized === 'cf os armacenenses a' || normalized === 'cf os armacenenses b';
-        }
-        if (isIniciadosBCompetition) {
-            return normalized === 'cf os armacenenses a';
-        }
-        return normalized === 'cf os armacenenses' || normalized === 'cf os armacenenses a';
-    };
-
-    const getCrestUrl = (teamName) => {
-        const fallback = 'img/crests/jornada.png';
-        if (!crestsData) return fallback;
-        const normalizedName = canonicalTeamName(teamName);
-        return crestsData[normalizedName] || fallback;
-    };
-
-    const renderResults = (round) => {
-        matchesContainer.innerHTML = '';
-        if (!round || !round.matches) return;
-
-        const isMobile = window.innerWidth <= 480;
-
-        const parts = [];
-        round.matches.forEach(match => {
-            const homeDisplayName = displayTeamName(match.home);
-            const awayDisplayName = displayTeamName(match.away);
-            const homeCrest = getCrestUrl(match.home);
-            const awayCrest = getCrestUrl(match.away);
-            const hasScore = (match.homeScore !== null && match.awayScore !== null);
-            const scoreDesktop = hasScore
-                ? `${match.homeScore} - ${match.awayScore}`
-                : (match.time || '-');
-            const scoreMobileContent = hasScore
-                ? `
-                    <div class="score-line"><span class="score-number">${match.homeScore}</span></div>
-                    <div class="score-line"><span class="score-number">${match.awayScore}</span></div>
-                `
-                : (match.time || '-');
-            const homeHighlighted = isArmacenensesTeam(match.home);
-            const awayHighlighted = isArmacenensesTeam(match.away);
-
-            let matchHTML;
-            if (isMobile) {
-                matchHTML = `
-                    <div class="match-item">
-                        <div class="match-datetime">
-                            <span>${match.time || ''}</span>
-                            <span>${match.date || ''}</span>
-                        </div>
-                        <div class="match-teams-mobile">
-                            <div class="team-line">
-                                <img src="${homeCrest}" alt="${homeDisplayName}" class="team-crest">
-                                <span class="team-name ${homeHighlighted ? 'highlight' : ''}">${homeDisplayName}</span>
-                            </div>
-                            <div class="team-line">
-                                <img src="${awayCrest}" alt="${awayDisplayName}" class="team-crest">
-                                <span class="team-name ${awayHighlighted ? 'highlight' : ''}">${awayDisplayName}</span>
-                            </div>
-                        </div>
-                        <div class="match-score ${hasScore ? 'match-score-mobile' : ''}">${scoreMobileContent}</div>
-                        <div class="match-meta"><span class="meta-stadium">${match.stadium || ''}</span></div>
-                    </div>
-                `;
-            } else {
-                matchHTML = `
-                    <div class="match-item">
-                        <div class="team-home">
-                            <span class="team-block">
-                                <span class="team-name ${homeHighlighted ? 'highlight' : ''}">${homeDisplayName}</span>
-                                <img src="${homeCrest}" alt="${homeDisplayName}" class="team-crest">
-                            </span>
-                        </div>
-                        <div class="match-score">${scoreDesktop}</div>
-                        <div class="team-away">
-                            <span class="team-block">
-                                <img src="${awayCrest}" alt="${awayDisplayName}" class="team-crest">
-                                <span class="team-name ${awayHighlighted ? 'highlight' : ''}">${awayDisplayName}</span>
-                            </span>
-                        </div>
-                        <div class="match-meta">
-                            <span class="meta-date">${(match.date || '')}${match.time ? ' ' + match.time : ''}</span>
-                            <span class="meta-stadium">${match.stadium || ''}</span>
-                        </div>
-                    </div>
-                `;
-            }
-            parts.push(matchHTML);
-        });
-        matchesContainer.innerHTML = parts.join('');
-    };
-
-    const renderClassification = (round) => {
-        classificationContainer.innerHTML = '';
-        if (!round || !round.classification) return;
-
-        let tableHTML = `
-            <table class="classification-table">
-                <thead>
-                    <tr>
-                        <th class="pos">#</th>
-                        <th class="team-name-col">Equipa</th>
-                        <th>J</th>
-                        <th>V</th>
-                        <th>E</th>
-                        <th>D</th>
-                        <th>GM:GS</th>
-                        <th class="pts">Pts</th>
-                    </tr>
-                </thead>
-                <tbody>
-        `;
-        round.classification.forEach(entry => {
-            const teamDisplayName = displayTeamName(entry.team);
-            const crestUrl = getCrestUrl(entry.team);
-            const isHighlighted = isArmacenensesTeam(entry.team);
-            const highlightClass = isHighlighted ? ' highlight' : '';
-            tableHTML += `
-                <tr>
-                    <td class="pos">${entry.position}</td>
-                    <td class="team-name-col">
-                        <img src="${crestUrl}" alt="${teamDisplayName}" class="team-crest-mini">
-                        <span class="team-name${highlightClass}">${teamDisplayName}</span>
-                    </td>
-                    <td>${entry.played}</td>
-                    <td>${entry.wins}</td>
-                    <td>${entry.draws}</td>
-                    <td>${entry.losses}</td>
-                    <td>${entry.goalsFor}:${entry.goalsAgainst}</td>
-                    <td class="pts">${entry.points}</td>
-                </tr>
-            `;
-        });
-        tableHTML += `</tbody></table>`;
-        classificationContainer.innerHTML = tableHTML;
-    };
-
-    const updateUI = () => {
-        if (!competitionData) return;
-
-        // Atualiza estado dos tabs
-        if (activeTab === 'resultados') {
-            tabResultados.classList.add('active');
-            tabClassificacao.classList.remove('active');
-            tabResultados.setAttribute('aria-selected', 'true');
-            tabClassificacao.setAttribute('aria-selected', 'false');
-            tabResultados.setAttribute('tabindex', '0');
-            tabClassificacao.setAttribute('tabindex', '-1');
-            contentResultados.classList.remove('hidden');
-            contentClassificacao.classList.add('hidden');
-        } else {
-            tabResultados.classList.remove('active');
-            tabClassificacao.classList.add('active');
-            tabResultados.setAttribute('aria-selected', 'false');
-            tabClassificacao.setAttribute('aria-selected', 'true');
-            tabResultados.setAttribute('tabindex', '-1');
-            tabClassificacao.setAttribute('tabindex', '0');
-            contentResultados.classList.add('hidden');
-            contentClassificacao.classList.remove('hidden');
-        }
-
-        // Atualiza conteúdo da jornada
-        const currentRound = competitionData.rounds[currentRoundIndex];
-        const roundNumber = currentRound.index;
-        
-        roundTitle.textContent = `Jornada ${roundNumber}`;
-        classificationRoundTitle.textContent = `Classificação à Jornada ${roundNumber}`;
-
-        renderResults(currentRound);
-        renderClassification(currentRound);
-
-        // Atualiza estado dos botões de navegação
-        const atStart = currentRoundIndex === 0;
-        const atEnd = currentRoundIndex === competitionData.rounds.length - 1;
-        if (prevRoundBtn) prevRoundBtn.disabled = atStart;
-        if (nextRoundBtn) nextRoundBtn.disabled = atEnd;
-        if (prevRoundBtnClass) prevRoundBtnClass.disabled = atStart;
-        if (nextRoundBtnClass) nextRoundBtnClass.disabled = atEnd;
-    };
-
-    const navigate = (newRoundIndex, newTab, markManual = true) => {
-        const boundedIndex = Math.max(0, Math.min(competitionData.rounds.length - 1, newRoundIndex));
-        const previousIndex = currentRoundIndex;
-        currentRoundIndex = boundedIndex;
-        if (markManual && boundedIndex !== previousIndex) {
-            userHasManualRoundSelection = true;
-        }
-        activeTab = newTab || activeTab;
-
-        const roundNumber = competitionData.rounds[currentRoundIndex].index;
-
-        // Atualiza o hash sem disparar o evento hashchange
-        let newHash = `#${activeTab}`;
-        newHash += `-j${roundNumber}`;
-        history.replaceState(null, '', newHash);
-
-        updateUI();
-    };
-
-    const handleHashChange = () => {
-        const hash = window.location.hash || '#resultados-j1';
-        const parts = hash.substring(1).split('-j');
-        
-        const newTab = parts[0] || 'resultados';
-        const roundNumber = parts[1] ? parseInt(parts[1], 10) : 1;
-
-        const newRoundIndex = competitionData.rounds.findIndex(r => r.index === roundNumber);
-
-        currentRoundIndex = newRoundIndex !== -1 ? newRoundIndex : 0;
-        activeTab = (newTab === 'classificacao') ? 'classificacao' : 'resultados';
-
-        updateUI();
-    };
-
-    // --- BUSCA DE DADOS ---
-    const fetchData = async () => {
-        const cachedCompetitionEntry = readStorageEntry(getCompetitionCacheKey());
-        const cachedCompetitionData = (
-            cachedCompetitionEntry &&
-            (!cachedCompetitionEntry.savedAt || (Date.now() - cachedCompetitionEntry.savedAt) <= COMPETITION_CACHE_MAX_AGE_MS)
-        ) ? cachedCompetitionEntry.payload : null;
-
-        try {
-            const cachedCrestsData = readJSONFromStorage(CRESTS_CACHE_KEY);
-            if (cachedCrestsData && typeof cachedCrestsData === 'object') {
-                crestsData = cachedCrestsData;
-            }
-
-            const competitionPromise = fetch(`data/${competitionKey}.json`, {
-                cache: 'no-cache',
-            });
-            const crestsPromise = fetch('data/crests.json', {
-                cache: 'force-cache',
-            });
-
-            const competitionResponse = await competitionPromise;
-            if (!competitionResponse.ok) {
-                throw new Error(`Falha ao obter dados da competição (${competitionResponse.status})`);
-            }
-
-            const freshCompetitionData = await competitionResponse.json();
-            if (!isValidCompetitionPayload(freshCompetitionData)) {
-                throw new Error('Payload da competição inválido');
-            }
-
-            const previousRoundNumber = competitionData?.rounds?.[currentRoundIndex]?.index ?? null;
-            const preferredRoundNumber = userHasManualRoundSelection ? previousRoundNumber : null;
-            competitionDataSource = 'published';
-            if (!competitionData || hasCompetitionPayloadChanged(freshCompetitionData)) {
-                competitionData = freshCompetitionData;
-                writeJSONToStorage(getCompetitionCacheKey(), freshCompetitionData);
-                renderCompetition({ preferredRoundNumber });
-            } else if (!competitionData) {
-                competitionData = freshCompetitionData;
-                renderCompetition();
-            }
-
-            try {
-                const crestsResponse = await crestsPromise;
-                if (crestsResponse.ok) {
-                    crestsData = await crestsResponse.json();
-                    writeJSONToStorage(CRESTS_CACHE_KEY, crestsData);
-                    if (competitionData) {
-                        updateUI();
-                    }
-                }
-            } catch (crestError) {
-                console.warn('Falha ao carregar dados de emblemas:', crestError);
-            }
-
-        } catch (error) {
-            console.error('Erro ao carregar os dados da competição:', error);
-            if (isValidCompetitionPayload(cachedCompetitionData)) {
-                competitionDataSource = 'local-cache';
-                competitionData = cachedCompetitionData;
-                renderCompetition();
-                return;
-            }
-            if (!competitionData) {
-                matchesContainer.innerHTML = '<p>Não foi possível carregar os dados. Tente novamente mais tarde.</p>';
-            }
-        }
-    };
-
-    // --- EVENT LISTENERS ---
-    if (prevRoundBtn) prevRoundBtn.addEventListener('click', () => navigate(currentRoundIndex - 1));
-    if (nextRoundBtn) nextRoundBtn.addEventListener('click', () => navigate(currentRoundIndex + 1));
-    if (prevRoundBtnClass) prevRoundBtnClass.addEventListener('click', () => navigate(currentRoundIndex - 1, 'classificacao'));
-    if (nextRoundBtnClass) nextRoundBtnClass.addEventListener('click', () => navigate(currentRoundIndex + 1, 'classificacao'));
-    tabResultados.addEventListener('click', (event) => {
-        if (event) event.preventDefault();
-        const targetIndex = userHasManualRoundSelection ? currentRoundIndex : findBestRoundIndex();
-        navigate(targetIndex, 'resultados', userHasManualRoundSelection);
-    });
-    tabClassificacao.addEventListener('click', (event) => {
-        if (event) event.preventDefault();
-        const targetIndex = userHasManualRoundSelection ? currentRoundIndex : findBestRoundIndex();
-        navigate(targetIndex, 'classificacao', userHasManualRoundSelection);
-    });
-    // acessibilidade via teclado
-    [tabResultados, tabClassificacao].forEach(tab => {
-        tab.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                navigate(currentRoundIndex, tab.id === 'tab-resultados' ? 'resultados' : 'classificacao');
-            }
-        });
-    });
-    
-    // A navegação por tabs é feita via hashchange
-    window.addEventListener('hashchange', handleHashChange);
-    // re-render quando muda entre mobile/desktop
-    let lastIsMobile = window.innerWidth <= 480;
-    window.addEventListener('resize', () => {
-        const isMobile = window.innerWidth <= 480;
-        if (isMobile !== lastIsMobile) {
-            lastIsMobile = isMobile;
-            updateUI();
-        }
-    });
-
-    // Inicia a aplicação
-    fetchData();
+    bootstrapHome();
+    bootstrapCompetition();
 });

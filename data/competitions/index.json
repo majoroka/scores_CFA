@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "activeSeason": "2026-2027",
+  "club": {
+    "name": "CF Os Armacenenses",
+    "aliases": [
+      "Cf Os Armacenenses",
+      "Cf \"Os Armacenenses\"",
+      "Cf Os Armacenenses - A",
+      "Cf \"Os Armacenenses\" - A",
+      "Cf Os Armacenenses - B",
+      "Cf \"Os Armacenenses\" - B"
+    ]
+  },
+  "competitions": [
+    {
+      "key": "seniores",
+      "title": "Seniores",
+      "subtitle": "Liga 1 Algarve Futebol · 1.ª Fase",
+      "season": "2026-2027",
+      "file": "2026-2027/liga-1-algarve-futebol.json",
+      "teamNames": ["Cf \"Os Armacenenses\""],
+      "accent": "#0f59a7",
+      "enabled": true
+    },
+    {
+      "key": "juniores",
+      "title": "Juniores · Sub19",
+      "subtitle": "Liga 1 Algarve Futebol Juniores · 1.ª Fase",
+      "season": "2026-2027",
+      "file": "2026-2027/liga-1-algarve-futebol-juniores.json",
+      "teamNames": ["Cf \"Os Armacenenses\""],
+      "accent": "#383e42",
+      "enabled": true
+    },
+    {
+      "key": "juvenis",
+      "title": "Juvenis · Sub17",
+      "subtitle": "Liga 2 Algarve Futebol Juvenis · Série B",
+      "season": "2026-2027",
+      "file": "2026-2027/liga-2-algarve-futebol-juvenis-serie-b.json",
+      "teamNames": ["Cf \"Os Armacenenses\""],
+      "accent": "#55738c",
+      "enabled": true
+    },
+    {
+      "key": "iniciados-liga2",
+      "title": "Iniciados · Liga 2",
+      "subtitle": "Liga 2 Algarve Futebol Iniciados · Série A",
+      "season": "2026-2027",
+      "file": "2026-2027/liga-2-algarve-futebol-iniciados-serie-a.json",
+      "teamNames": ["Cf \"Os Armacenenses\""],
+      "accent": "#277e86",
+      "enabled": true
+    },
+    {
+      "key": "iniciados-liga3-c",
+      "title": "Iniciados A · Liga 3",
+      "subtitle": "Liga 3 Algarve Futebol Iniciados · Série C",
+      "season": "2026-2027",
+      "file": "2026-2027/liga-3-algarve-futebol-iniciados-serie-c.json",
+      "teamNames": ["Cf \"Os Armacenenses\" - A"],
+      "accent": "#277e86",
+      "enabled": true
+    },
+    {
+      "key": "iniciados-liga3-d",
+      "title": "Iniciados B · Liga 3",
+      "subtitle": "Liga 3 Algarve Futebol Iniciados · Série D",
+      "season": "2026-2027",
+      "file": "2026-2027/liga-3-algarve-futebol-iniciados-serie-d.json",
+      "teamNames": ["Cf \"Os Armacenenses\" - B"],
+      "accent": "#277e86",
+      "enabled": true
+    },
+    {
+      "key": "infantis-a",
+      "title": "Infantis A · Futebol 9",
+      "subtitle": "Liga Algarve Futebol 9 Infantis · Série 2",
+      "season": "2026-2027",
+      "file": "2026-2027/liga-algarve-futebol-9-infantis-serie-2.json",
+      "teamNames": ["Cf \"Os Armacenenses\""],
+      "accent": "#0db3d8",
+      "enabled": true
+    },
+    {
+      "key": "infantis-b",
+      "title": "Infantis B · Futebol 7 Sub13",
+      "subtitle": "Liga Algarve Futebol 7 Infantis Sub13 · Série A",
+      "season": "2026-2027",
+      "file": "2026-2027/liga-algarve-futebol-7-infantis-sub13-serie-a.json",
+      "teamNames": ["Cf \"Os Armacenenses\""],
+      "accent": "#0db3d8",
+      "enabled": true
+    },
+    {
+      "key": "infantis-c",
+      "title": "Infantis C · Futebol 7 Sub12",
+      "subtitle": "Liga Algarve Futebol 7 Infantis Sub12 · Série B",
+      "season": "2026-2027",
+      "file": "2026-2027/liga-algarve-futebol-7-infantis-sub12-serie-b.json",
+      "teamNames": ["Cf \"Os Armacenenses\""],
+      "accent": "#0db3d8",
+      "enabled": true
+    },
+    {
+      "key": "feminino-sub19",
+      "title": "Feminino · Sub19",
+      "subtitle": "Campeonato Nacional Feminino Sub-19 II Divisão · Série G",
+      "season": "2026-2027",
+      "file": "2026-2027/campeonato-nacional-feminino-sub-19-ii-divisao-serie-g.json",
+      "teamNames": ["Cf \"Os Armacenenses\""],
+      "accent": "#e678b1",
+      "enabled": true
+    }
+  ]
+}

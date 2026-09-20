@@ -15,7 +15,7 @@
         </a>
         <div class="competition-title">
             <img src="img/logo.png" alt="Logo CF Os Armacenenses" class="competition-logo">
-            <h1>Estado dos Dados <small>Diagnóstico global das competições</small></h1>
+            <h1>Estado dos Dados <small>Integridade dos ficheiros das competições</small></h1>
         </div>
     </header>
 
@@ -28,15 +28,15 @@
                 <strong class="admin-summary-card__value">-</strong>
             </article>
             <article class="admin-summary-card">
-                <span class="admin-summary-card__label">OK</span>
+                <span class="admin-summary-card__label">Ficheiros completos</span>
                 <strong class="admin-summary-card__value">-</strong>
             </article>
             <article class="admin-summary-card">
-                <span class="admin-summary-card__label">Partial</span>
+                <span class="admin-summary-card__label">Incompletos</span>
                 <strong class="admin-summary-card__value">-</strong>
             </article>
             <article class="admin-summary-card">
-                <span class="admin-summary-card__label">Degraded</span>
+                <span class="admin-summary-card__label">Resultados / jogos</span>
                 <strong class="admin-summary-card__value">-</strong>
             </article>
         </section>
@@ -46,11 +46,11 @@
                 <thead>
                     <tr>
                         <th>Competição</th>
-                        <th>Estado</th>
-                        <th>Atualizado</th>
-                        <th>Fallbacks</th>
-                        <th>Sem score</th>
-                        <th>Jogos</th>
+                        <th>Ficheiro</th>
+                        <th>Capturado</th>
+                        <th>Jornadas</th>
+                        <th>Resultados</th>
+                        <th>Sem resultado</th>
                         <th>Equipas</th>
                     </tr>
                 </thead>
@@ -63,6 +63,7 @@
         </section>
     </main>
 
+    <script src="data-service.js"></script>
     <script src="main.js"></script>
     <script src="admin.js"></script>
 </body>
