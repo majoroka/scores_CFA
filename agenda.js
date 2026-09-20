@@ -207,21 +207,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="agenda-calendar__grid">${cells.join('')}</div>
             </div>
         `;
-        elements.calendar.querySelectorAll('[data-date]').forEach((button) => {
-            button.addEventListener('click', (event) => {
-                // The calendar is rebuilt after each selection. Stop this click
-                // before the removed button can be mistaken for an outside click.
-                event.stopPropagation();
-                const date = parseInputDate(button.dataset.date);
-                if (!draftRange.start || draftRange.end || date < draftRange.start) {
-                    draftRange = { start: date, end: null };
-                } else {
-                    draftRange.end = date;
-                }
-                updateDraftInputs();
-                renderCalendar();
-            });
-        });
     };
 
     const openPicker = () => {
@@ -255,6 +240,26 @@ document.addEventListener('DOMContentLoaded', () => {
     elements.nextMonth.addEventListener('click', () => { pickerMonth.setMonth(pickerMonth.getMonth() + 1); renderCalendar(); });
     elements.month.addEventListener('change', () => { pickerMonth.setMonth(Number(elements.month.value)); renderCalendar(); });
     elements.year.addEventListener('change', () => { pickerMonth.setFullYear(Number(elements.year.value)); renderCalendar(); });
+    elements.calendar.addEventListener('click', (event) => {
+        const button = event.target.closest('[data-date]');
+        if (!button || !elements.calendar.contains(button)) return;
+
+        event.preventDefault();
+        event.stopPropagation();
+        const date = parseInputDate(button.dataset.date);
+        if (!date) return;
+
+        if (!draftRange.start || draftRange.end) {
+            draftRange = { start: date, end: null };
+        } else if (date < draftRange.start) {
+            draftRange = { start: date, end: draftRange.start };
+        } else {
+            draftRange.end = date;
+        }
+
+        updateDraftInputs();
+        renderCalendar();
+    });
     elements.startInput.addEventListener('change', () => { draftRange.start = parseInputDate(elements.startInput.value); updateDraftInputs(); renderCalendar(); });
     elements.endInput.addEventListener('change', () => { draftRange.end = parseInputDate(elements.endInput.value); updateDraftInputs(); renderCalendar(); });
     elements.apply.addEventListener('click', () => {
@@ -276,12 +281,6 @@ document.addEventListener('DOMContentLoaded', () => {
         renderAgenda();
         closePicker();
     });
-    document.addEventListener('click', (event) => {
-        const eventPath = typeof event.composedPath === 'function' ? event.composedPath() : [];
-        const clickedInsidePicker = eventPath.includes(elements.picker) || elements.picker.contains(event.target);
-        if (!elements.picker.classList.contains('hidden') && !clickedInsidePicker && event.target !== elements.rangeTrigger) closePicker();
-    });
-
     const bootstrap = async () => {
         try {
             const [agendaPayload, crestResponse] = await Promise.all([
