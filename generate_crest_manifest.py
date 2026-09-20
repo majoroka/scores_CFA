@@ -35,7 +35,10 @@ def main():
             normalized = normalize_name(filename)
             if normalized in IGNORED_CREST_KEYS:
                 continue
-            path = f"{CRESTS_DIR}/{filename}"
+            # macOS exposes accented filenames in decomposed Unicode (NFD),
+            # while GitHub Pages serves the NFC names stored by Git.
+            url_filename = unicodedata.normalize('NFC', filename)
+            path = f"{CRESTS_DIR}/{url_filename}"
             crest_map[normalized] = path
 
     # Aliases para variações de nomes que aparecem na FPF
