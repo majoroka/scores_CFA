@@ -224,6 +224,53 @@ const bootstrapCompetition = async () => {
             }).join('');
         };
 
+        const getTeamForm = (teamName) => {
+            const teamKey = window.CFAData.canonicalTeamName(teamName);
+            const completedMatches = competition.rounds
+                .slice(0, currentRoundIndex + 1)
+                .flatMap((competitionRound, roundPosition) => competitionRound.matches.map((match) => ({
+                    ...match,
+                    roundPosition,
+                })))
+                .filter((match) => (
+                    Number.isInteger(match.homeScore) &&
+                    Number.isInteger(match.awayScore) &&
+                    (
+                        window.CFAData.canonicalTeamName(match.home) === teamKey ||
+                        window.CFAData.canonicalTeamName(match.away) === teamKey
+                    )
+                ))
+                .sort((left, right) => {
+                    const leftDate = Date.parse(left.dateISO || '') || 0;
+                    const rightDate = Date.parse(right.dateISO || '') || 0;
+                    if (leftDate !== rightDate) return leftDate - rightDate;
+                    if (left.roundPosition !== right.roundPosition) return left.roundPosition - right.roundPosition;
+                    return (left.order || 0) - (right.order || 0);
+                })
+                .slice(-5);
+
+            return completedMatches.map((match) => {
+                const isHome = window.CFAData.canonicalTeamName(match.home) === teamKey;
+                const teamScore = isHome ? match.homeScore : match.awayScore;
+                const opponentScore = isHome ? match.awayScore : match.homeScore;
+                if (teamScore > opponentScore) return 'win';
+                if (teamScore < opponentScore) return 'loss';
+                return 'draw';
+            });
+        };
+
+        const renderForm = (teamName) => {
+            const form = getTeamForm(teamName);
+            if (!form.length) return '<span class="form-empty" aria-label="Sem jogos concluídos">-</span>';
+
+            const labels = { win: 'vitória', draw: 'empate', loss: 'derrota' };
+            const description = form.map((result) => labels[result]).join(', ');
+            const dots = form.map((result) => (
+                `<span class="form-dot form-dot--${result}" title="${labels[result]}" aria-hidden="true"></span>`
+            )).join('');
+            return `<span class="form-indicator" role="img" aria-label="Forma: ${description}">${dots}</span>`;
+        };
+
         const renderClassification = (round) => {
             document.getElementById('classification-round-title').textContent = `Classificação · Jornada ${round.index}`;
             if (!round.classification.length) {
@@ -238,14 +285,15 @@ const bootstrapCompetition = async () => {
                         <td class="pos">${entry.position}</td>
                         <td class="team-name-col ${highlighted ? 'highlight' : ''}"><img src="${escapeHTML(getCrestUrl(entry.team, crests))}" alt="" class="team-crest-mini">${escapeHTML(window.CFAData.displayTeamName(entry.team))}</td>
                         <td>${entry.played}</td><td>${entry.wins}</td><td>${entry.draws}</td><td>${entry.losses}</td>
-                        <td>${entry.goalsFor}-${entry.goalsAgainst}</td><td class="pts">${entry.points}</td>
+                        <td class="form-col">${renderForm(entry.team)}</td>
+                        <td class="goals-col">${entry.goalsFor}&#8209;${entry.goalsAgainst}</td><td class="pts">${entry.points}</td>
                     </tr>
                 `;
             }).join('');
 
             classificationContainer.innerHTML = `
                 <table class="classification-table">
-                    <thead><tr><th>#</th><th>Equipa</th><th>J</th><th>V</th><th>E</th><th>D</th><th>G</th><th>Pts</th></tr></thead>
+                    <thead><tr><th>#</th><th>Equipa</th><th>J</th><th>V</th><th>E</th><th>D</th><th class="form-col">Forma</th><th class="goals-col">G</th><th>Pts</th></tr></thead>
                     <tbody>${rows}</tbody>
                 </table>
             `;

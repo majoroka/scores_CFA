@@ -515,6 +515,10 @@ body::after {
 }
 
 /* --- DETALHE: TABELA DE CLASSIFICAÇÃO --- */
+.classification-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
 .classification-table {
     width: 100%;
     border-collapse: collapse;
@@ -538,6 +542,50 @@ body::after {
     color: var(--primary-color);
 }
 .classification-table .team-name-col.highlight { color: var(--accent-blue); }
+.classification-table .goals-col {
+    white-space: nowrap;
+    min-width: 2.6rem;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+}
+.classification-table .form-col {
+    white-space: nowrap;
+    min-width: 4.6rem;
+    text-align: center;
+}
+.form-indicator {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.28rem;
+    vertical-align: middle;
+}
+.form-dot {
+    display: inline-block;
+    width: 0.62rem;
+    height: 0.62rem;
+    flex: 0 0 0.62rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.14);
+}
+.form-dot--win { background-color: #2da44e; }
+.form-dot--draw { background-color: #8c959f; }
+.form-dot--loss { background-color: #cf222e; }
+.form-empty { color: var(--secondary-color); }
+
+@media (max-width: 480px) {
+    .classification-table {
+        min-width: 620px;
+        font-size: 0.9rem;
+    }
+    .classification-table th,
+    .classification-table td {
+        padding: 0.7rem 0.35rem;
+    }
+    .classification-table .team-name-col {
+        min-width: 10.5rem;
+    }
+}
 
 /* --- AGENDA GLOBAL --- */
 .agenda-page {
