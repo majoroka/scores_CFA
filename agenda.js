@@ -208,7 +208,10 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
         elements.calendar.querySelectorAll('[data-date]').forEach((button) => {
-            button.addEventListener('click', () => {
+            button.addEventListener('click', (event) => {
+                // The calendar is rebuilt after each selection. Stop this click
+                // before the removed button can be mistaken for an outside click.
+                event.stopPropagation();
                 const date = parseInputDate(button.dataset.date);
                 if (!draftRange.start || draftRange.end || date < draftRange.start) {
                     draftRange = { start: date, end: null };
@@ -274,7 +277,9 @@ document.addEventListener('DOMContentLoaded', () => {
         closePicker();
     });
     document.addEventListener('click', (event) => {
-        if (!elements.picker.classList.contains('hidden') && !elements.picker.contains(event.target) && event.target !== elements.rangeTrigger) closePicker();
+        const eventPath = typeof event.composedPath === 'function' ? event.composedPath() : [];
+        const clickedInsidePicker = eventPath.includes(elements.picker) || elements.picker.contains(event.target);
+        if (!elements.picker.classList.contains('hidden') && !clickedInsidePicker && event.target !== elements.rangeTrigger) closePicker();
     });
 
     const bootstrap = async () => {

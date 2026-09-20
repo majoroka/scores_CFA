@@ -199,7 +199,7 @@ const bootstrapCompetition = async () => {
 
                 return `
                     <article class="match-item">
-                        <div class="match-datetime"><span>${escapeHTML(match.time || '')}</span><span>${escapeHTML(match.date)}</span></div>
+                        <div class="match-datetime"><span>${escapeHTML(match.date)}</span></div>
                         <div class="team-home">
                             <span class="team-block">
                                 <span class="team-name ${homeHighlighted ? 'highlight' : ''}">${escapeHTML(homeName)}</span>
@@ -218,7 +218,7 @@ const bootstrapCompetition = async () => {
                             <div class="team-line"><img src="${escapeHTML(awayCrest)}" alt="" class="team-crest"><span class="team-name ${awayHighlighted ? 'highlight' : ''}">${escapeHTML(awayName)}</span></div>
                         </div>
                         <div class="match-score match-score-mobile">${score.mobile}</div>
-                        <div class="match-meta"><span class="meta-date">${escapeHTML(dateAndTime)}</span><span>${escapeHTML(match.stadium)}</span></div>
+                        <div class="match-meta"><span class="meta-date">${escapeHTML(dateAndTime)}</span><span class="meta-stadium">${escapeHTML(match.stadium)}</span></div>
                     </article>
                 `;
             }).join('');

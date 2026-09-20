@@ -512,6 +512,8 @@ body::after {
     }
     /* meta ocupa largura total no mobile também */
     .match-meta { grid-column: 1 / -1; font-size: 0.85rem; }
+    .match-meta .meta-date { display: none; }
+    .match-meta .meta-stadium { display: block; width: 100%; }
 }
 
 /* --- DETALHE: TABELA DE CLASSIFICAÇÃO --- */
