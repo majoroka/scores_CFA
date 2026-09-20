@@ -42,7 +42,7 @@ def main():
     aliases = {
         'fc 11 esperancas': ['fc os 11 esperancas'],
         'cu culatrense': ['clube u culatrense'],
-        'casa slb albufeira': ['casa benfica albufeira'],
+        'casa slb albufeira': ['casa benfica albufeira', 'cb albufeira'],
         'casa slb tavira': ['casa benfica tavira'],
         'nucleo scp olhao': ['nucleo sporting cp olhao'],
         'fc ferreiras': ['fc ferreiras a', 'fc ferreiras b'],
@@ -51,6 +51,17 @@ def main():
         'lusitano fc': ['lusitano fc vrsa'],
         'ef monte gordo': ['aef monte gordo 2019'],
         'ad tavira': ['adt ass desp tavira'],
+        'vilamoura saa': ['vilamoura sa', 'vilamoura ssa'],
+        'carvoeiro united fccu': ['fc carvoeiro united'],
+        'guia fc': ['guia fc a', 'guia fc b'],
+        'louletano dc': ['louletano dc a'],
+        'gd lagoa': ['gd lagoa a', 'gd lagoa b'],
+        'imortal dc': ['imortal dc a'],
+        'portimonense sc': ['portimonense sc a', 'portimonense sc b'],
+        'aef faro': ['aef faro a'],
+        'gdr alvorense': ['gdr alvorense a', 'gdr alvorense b'],
+        'silves fc': ['silves fc a'],
+        'estrela st andre acdr': ['estrela s andre acrd'],
     }
     for canon, alts in aliases.items():
         if canon in crest_map:
